@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독저팅™ - 필아카데미</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            padding: 1rem 0;
+            top: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 0.8rem 1.5rem;
+            display: block;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(78, 205, 196, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">📚 필아카데미</div>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="author.html">작가소개</a></li>
+                <li><a href="dokjeoting.html">독저팅™</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="index.html#people-insight">피플인사이트</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">SNS</a>
+                    <div class="dropdown-content">
+                        <a href="https://blog.naver.com/tothemoon_park" target="_blank">📝 블로그</a>
+                        <a href="https://brunch.co.kr/@tothemoonpark" target="_blank">✍️ 브런치</a>
+                        <a href="https://www.youtube.com/@tothemoonpark" target="_blank">🎥 유튜브</a>
+                    </div>
+                </li>
+                <li><a href="index.html#contact">상담신청</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="height: 80px;"></div>
+
+    <div style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;">
+        <!-- 독저팅 상세 안내 섹션 -->
+        <div>
+            <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50;">📋 독저팅</h2>
+            
+            <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+                <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail1')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">1. 독저팅 상세 안내</h3>
+                        <span id="arrow1" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
+                    </div>
+                </div>
+                
+                <div id="detail1" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
+                    <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
+                        
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">🧾 독저팅™이란?</h3>
+<p style="font-size: 1.2rem; font-weight: bold; color: #2c3e50; margin-bottom: 1rem;">"독자에서 저자가 되는 컨설팅"</p>
+<p style="margin-bottom: 2rem;">저의 경험·노하우·자료를 통해, 독자가 출간 가능한 책쓰기를 완성하도록 돕습니다.</p>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">📚 "독자에서 저자로, 당신의 첫 책을 현실로!"</h3>
+<p style="margin-bottom: 1rem;">책을 쓰고 싶은데 어디서부터 시작해야 할지 막막하신가요?</p>
+<p style="margin-bottom: 1rem;">저는 책 4권을 출간했고, 그중 한 권은 베스트셀러가 되었으며, 원고 없이 출간 계약을 성사시킨 경험이 있습니다.</p>
+<p style="margin-bottom: 2rem;">그 노하우를 담아 '기획'에 집중한 1:1 책쓰기 기획 컨설팅, 독저팅™을 정식 오픈합니다.</p>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">📚 5줄 요약</h3>
+<ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">📖 책 4권 출간 / 베스트셀러 작가</li>
+    <li style="margin-bottom: 0.5rem;">✍ 원고 없이 출간 계약 성사 (매우 이례적 사례)</li>
+    <li style="margin-bottom: 0.5rem;">💡 출판 계약의 80%를 차지하는 '기획' 집중 컨설팅</li>
+    <li style="margin-bottom: 0.5rem;">⏳ 8~16주 밀착 피드백 + 실전 자료 제공</li>
+    <li style="margin-bottom: 0.5rem;">🚀 출판사 러브콜을 받는 책 기획 완성</li>
+</ul>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">📍 독저팅™을 통해 이런 고민, 해결해드립니다</h3>
+<ul style="margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;">✔ 책을 쓰고 싶지만 감이 안 잡혀요</li>
+    <li style="margin-bottom: 0.5rem;">✔ 글은 써봤지만, '책' 형태로 완성할 자신이 없어요</li>
+    <li style="margin-bottom: 0.5rem;">✔ 출간을 꿈꾸지만 어디서부터 어떻게 시작해야 할지 막막해요</li>
+    <li style="margin-bottom: 0.5rem;">✔ 책 분야, 콘텐츠(주제, 소재, 콘셉트), 제목/부제, 목차, 출간기획서.. 모두 너무 어려워요</li>
+    <li style="margin-bottom: 0.5rem;">✔ 출판사의 러브콜을 받는 투고를 하고 싶어요</li>
+    <li style="margin-bottom: 0.5rem;">✔ 책쓰기에 "기획"이 중요하다는데, 기획을 어떻게 해야 하는지 모르겠어요</li>
+</ul>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">📘 책쓰기는 글쓰기와 다릅니다.</h3>
+<p style="margin-bottom: 1rem; font-weight: bold;">출판 계약에서 가장 중요한 건 원고가 아니라 '기획'입니다.</p>
+<p style="margin-bottom: 2rem;">저는 책쓰기에서 기획 80% / 원고 20% 비중을 둡니다.</p>
+
+<div style="background: #f8f9fa; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+    <h4 style="font-size: 1.2rem; color: #2c3e50; margin-bottom: 1rem;">기획 80%</h4>
+    <ul style="margin-bottom: 1.5rem;">
+        <li>콘텐츠(주제, 소재, 콘셉트), 제목과 부제</li>
+        <li>목차</li>
+        <li>출간기획서</li>
+        <li>저자 브랜딩 (포트폴리오, 전문성, 인지도 등)</li>
+    </ul>
+    
+    <h4 style="font-size: 1.2rem; color: #2c3e50; margin-bottom: 1rem;">원고 20%</h4>
+    <ul>
+        <li>내용·문장력 (편집자와 개선 가능)</li>
+    </ul>
+</div>
+
+<p style="margin-bottom: 1rem;">기획이 탄탄하면 원고는 결국 따라오게 되어 있습니다.</p>
+<p style="margin-bottom: 1rem;">시간이 얼마냐 걸리냐의 문제일 뿐, 이에 맞춰 쓰기만 하면 되니까요.</p>
+<p style="margin-bottom: 1rem;">수강생은 기획에 맞춰 열심히 쓰면 됩니다.</p>
+<p style="margin-bottom: 1rem;">내용이 빈약하거나 문장력이 부족해도 괜찮습니다.</p>
+<p style="margin-bottom: 1rem;">출판사는 필력보다 기획력을 우선 평가합니다.</p>
+<p style="margin-bottom: 1rem;">원고(초고)는 편집자와 함께 얼마든지 개선할 수 있으니까요.</p>
+<p style="margin-bottom: 2rem;">이는 단순히 제 개인의 의견이 아니며 실제 현직 출판사 대표와 편집자의 말이기도 합니다.</p>
+
+<p style="font-weight: bold; margin-bottom: 2rem;">본 컨설팅은 출판 계약 핵심인 "기획"부분을 1:1 맞춤으로 가이드 해드립니다.<br>즉, 기획에 초점을 둔 &lt;책쓰기 기획 컨설팅&gt;입니다.</p>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">📍 왜 이 독저팅™을 받아야 하나요?</h3>
+<ul style="margin-bottom: 2rem;">
+    <li>컨설턴트의 검증된 기획력</li>
+    <li>일반 컨설팅과 차별화된 코칭형 컨설팅</li>
+    <li>합리적 수강료</li>
+    <li>전폭적인 혜택(지원)</li>
+    <li>확실한 성과 기대</li>
+</ul>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">📍 독저팅™의 특징은 다음과 같습니다.</h3>
+<ul style="margin-bottom: 2rem;">
+    <li><strong>맞춤형</strong> : 수강생이 제출한 자료를 바탕으로 퍼스널 브랜딩을 고려해 컨설팅합니다.</li>
+    <li><strong>밀착형</strong> : 1:1 카톡 상담을 운영합니다.</li>
+    <li><strong>실속형(실전형)</strong> : 수강생은 컨설팅을 통해 얻은 것을 바로 책쓰기에 적용할 수 있습니다.</li>
+    <li><strong>단기형</strong> : 군더더기를 없애 불필요한 시간 낭비를 줄입니다.</li>
+</ul>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">🧠 실전 경험이 증명하는 코칭의 신뢰</h3>
+<p style="margin-bottom: 1rem;"><strong>두 번째 책(2024):</strong> 원고 없이 "출간기획서" 하나로 계약 (매우 이례적인 사례)</p>
+<p style="margin-bottom: 0.5rem; padding-left: 1rem;">→ 저의 기획력이 얼마나 뛰어난지를 잘 입증하는 사례입니다.</p>
+<p style="margin-bottom: 2rem; padding-left: 1rem;">→ 출판 계약은 원고보다 '기획'이 훨씬 중요하다는 걸 잘 보여주는 사례입니다.</p>
+
+<p style="margin-bottom: 1rem;"><strong>세 번째 책(2025):</strong> 선인세 조건 계약 (요즘 시장에선 흔치 않은 사례)</p>
+<p style="margin-bottom: 2rem; padding-left: 1rem;">→ &lt;마흔, 더 늦기 전에 생각의 틀을 리셋하라&gt;는 출간 후 베스트셀러가 되었습니다.</p>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">📍 독저팅™ 커리큘럼 (2中 택1)</h3>
+<p style="margin-bottom: 2rem;">1:1 맞춤형 진단과 처방을 통해 수강생만의 책 기획을 설계합니다.</p>
+
+<div style="background: #f0f8ff; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+    <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1.5rem;">1. STANDARD(스탠다드)</h4>
+    
+    <p style="margin-bottom: 1rem;"><strong>✔ 자기소개서 + 과제(약 60문항 설문지) 기반 맞춤형 "기획 리포트" 제공</strong></p>
+    <p style="padding-left: 1rem; margin-bottom: 0.5rem;">→ 자기소개서와 과제는 단순한 사전 작업이 아니라, 수강생이 어떤 책을 써야 할지 스스로 깨닫는 과정이기도 합니다.</p>
+    <p style="padding-left: 1rem; margin-bottom: 0.5rem;">→ 질문 개수가 많은 편입니다. 제 성격이 꼼꼼한 이유도 있지만, 대충 하고 싶지 않습니다.</p>
+    <p style="padding-left: 1rem; margin-bottom: 2rem;">→ 만약 자기소개서와 과제의 내용 충실도가 빈약하다면, 기획 리포트 등이 부실하게 제공될 수밖에 없습니다. 최대한 알차고 진솔하게 작성해 주세요.</p>
+    
+    <p style="margin-bottom: 1rem;"><strong>✔ "기획 리포트"를 통해 기획 뼈대와 방향성 확인</strong></p>
+    <p style="padding-left: 1rem; margin-bottom: 2rem;">기획 리포트에는 ① 출간 적합 분야 ② 콘텐츠(주제, 소재, 콘셉트) ③ 핵심 메시지 ④ 제목/부제 ⑤ 목차 개요(대략 5장으로 구성된 얼개) 등이 포함.</p>
+    
+    <p style="margin-bottom: 2rem;"><strong>✔ "기획 리포트"는 수강생으로부터 자기소개서와 과제(설문지)를 받은 후 2주 내로 제공</strong></p>
+    
+    <p style="margin-bottom: 2rem;"><strong>✔ 책쓰기 본질이 담긴 특강 자료 제공 (현재 유료로 판매 중인 VOD 4개, 22만원 상당)</strong></p>
+    
+    <p style="margin-bottom: 1rem;"><strong>✔ 카톡 책쓰기 상담권(8주)</strong></p>
+    <p style="padding-left: 1rem; margin-bottom: 0.5rem;">→ 책쓰기 중 떠오르는 아이디어에 대한 피드백, 막히는 부분에 대한 조언 등.</p>
+    <p style="padding-left: 1rem;">→ 제가 기획 리포트를 수강생에게 보내드리는 날로부터 8주.</p>
+</div>
+
+<div style="background: #fff8e1; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+    <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1.5rem;">2. PREMIUM(프리미엄)</h4>
+    
+    <p style="margin-bottom: 0.5rem;"><strong>✔ STANDARD 모든 과정, 혜택 포함</strong></p>
+    
+    <p style="text-align: center; font-size: 1.2rem; margin-bottom: 0.5rem;">+</p>
+    
+    <p style="margin-bottom: 2rem;"><strong>✔ 목차 개요(대략 5장으로 구성된 얼개 + 각 장마다 "꼭지" 추가 제공)</strong></p>
+    
+    <p style="margin-bottom: 1rem;"><strong>✔ 기획 리포트를 토대로한 "출간기획서 가이드" 제공</strong></p>
+    <p style="margin-bottom: 1rem;">다음 내용을 포함.</p>
+    <ol style="padding-left: 2rem; margin-bottom: 2rem;">
+        <li>기획 의도: 왜 이 책을 썼는가? 왜 이 책이 세상에 나와야 하는가?</li>
+        <li>타깃 독자: 누가 이 책을 읽을 것인가?</li>
+        <li>차별점(강점): 기존 책들과 무엇이 다른가? 기존 책들에 비해 강점은 무엇인가?</li>
+        <li>시장성(시의성): 왜 지금 이 책이 필요한가? 왜 하필 지금 이 책이 세상에 나와야 하나?</li>
+        <li>저자 소개: 왜 당신이 이 책을 써야 하는가? 독자가 왜 당신이 쓴 이 책을 읽어야 하는가?</li>
+        <li>마케팅 계획: 어떻게 홍보할 것인가?</li>
+    </ol>
+    
+    <p style="margin-bottom: 2rem;"><strong>✔ "기획 리포트"와 "출간기획서 가이드"는 수강생으로부터 자기소개서와 과제(설문지)를 받은 후 3주 내로 제공</strong></p>
+    
+    <p style="margin-bottom: 2rem;"><strong>✔ 1회 줌 화상 코칭(1시간에서 최대 2시간)</strong></p>
+    <p style="padding-left: 1rem; margin-bottom: 2rem;">→ 기획 리포트와 출간기획서 가이드 심층 분석 및 실행 전략 수립, 책쓰기 관련 궁금증 해결 등.</p>
+    
+    <p style="margin-bottom: 1rem;"><strong>✔ 카톡 책쓰기 상담권 기간을 16주로 연장</strong></p>
+    <p style="padding-left: 1rem; margin-bottom: 0.5rem;">→ 책쓰기 중 떠오르는 아이디어에 대한 피드백, 막히는 부분에 대한 조언 등.</p>
+    <p style="padding-left: 1rem; margin-bottom: 2rem;">→ 제가 기획 리포트와 출간기획서 가이드를 수강생에게 보내드리는 날로부터 16주.</p>
+    
+    <img src="dokjeoting-table.png" alt="독저팅 커리큘럼 비교표" style="width: 100%; max-width: 800px; display: block; margin: 2rem auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+    <p style="text-align: center; font-size: 0.9rem; color: #666; margin-top: 0.5rem;">* 실제 업로드 시 첨부 이미지로 교체 필요</p>
+</div>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">🎁 독저팅™ 수강생 공통 혜택</h3>
+<ul style="margin-bottom: 2rem;">
+    <li>* 제가 실제 투고 시 제출한 출간기획서 원본 제공</li>
+    <li>* 기타 출간기획서 샘플 추가 제공</li>
+    <li>* 제가 실제 사용한 투고 이메일 제목 및 원문 제공</li>
+    <li>* 출판사 이메일 리스트 제공</li>
+    <li>* 출간(출판 계약) 시 추천사 지원</li>
+    <li>* 출간(출판 계약) 시 &lt;박근필의 피플인사이트&gt; 유튜브 출연 기회 제공</li>
+    <li>* 출간(출판 계약) 시 SNS, 블로그 등 홍보 지원</li>
+</ul>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">📝 유의사항</h3>
+
+<div style="background: #e8f5e9; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+    <h4 style="font-size: 1.2rem; color: #2c3e50; margin-bottom: 1rem;">🟢 이런 분께 추천합니다</h4>
+    <ul>
+        <li>* 책을 써야겠다는 마음은 있지만 어디서부터 시작해야 할지 막막한 분</li>
+        <li>* 이미 글을 쓰고 있으나 출판 구조와 전략을 잘 모르는 분</li>
+        <li>* 분야/콘텐츠(주제, 소재, 콘셉트)/제목, 부제/목차/출간기획서 설정 및 작성이 어려운 분</li>
+        <li>* 혼자 책을 쓰다가 번번이 실패했거나 의욕이 꺾인 분</li>
+        <li>* 방향만 잡아주면 자신 있게 써내려갈 분</li>
+        <li>* 출간을 통해 브랜드를 만들고 싶은 분</li>
+        <li>* 책쓰기의 원리와 방법을 제대로 알고 싶은 분</li>
+        <li>* 외롭지 않게 책을 쓰고 싶은 분 (동행이 필요한 분)</li>
+    </ul>
+</div>
+
+<div style="background: #ffebee; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+    <h4 style="font-size: 1.2rem; color: #2c3e50; margin-bottom: 1rem;">🔴 이런 분께는 정중히 권하지 않습니다</h4>
+    <ul>
+        <li>* 글쓰기 경험이 전혀 없는 분</li>
+        <li>* 대필, 원고 첨삭, 퇴고를 기대하는 분</li>
+        <li>* 제가 A-Z까지 다 해주길 기대하는 분</li>
+        <li>* 책에 담길 자신의 이야기를 드러내기 싫은 분</li>
+        <li>* 책쓰기를 쉽고 가볍게 생각하거나 빠르게 뚝딱 만들고 싶은 분</li>
+        <li>* 비문학(에세이/자기계발 등 실용서)이 아닌 문학(소설, 시) 책쓰기를 고려하는 분</li>
+    </ul>
+</div>
+
+<div style="background: #f5f5f5; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+    <h4 style="font-size: 1.2rem; color: #2c3e50; margin-bottom: 1rem;">🔐 신뢰는 기본입니다</h4>
+    <ul>
+        <li>* 수강생의 개인정보, 창작 내용, 사적 이야기 비밀 보장</li>
+        <li>* 독저팅™ 시 제공해드리는 자료는 외부 유출(공유) 금지</li>
+        <li>* 상호 존중과 신뢰를 바탕으로 진행됩니다</li>
+    </ul>
+</div>
+
+<h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">📣 마지막으로</h3>
+<p style="margin-bottom: 1rem;">제가 평소에 늘 드렸던 말씀,</p>
+<p style="margin-bottom: 1rem; font-style: italic;">"여러분이 꾸준히 글을 쓰면 좋겠습니다. 나아가 책을 쓰면 좋겠습니다."</p>
+<p style="margin-bottom: 1rem; font-weight: bold;">이제, 그 바람을 '출간'이라는 결과로 연결해드리겠습니다.</p>
+<p style="margin-bottom: 1rem;">여러분의 이야기가 책으로 나오도록, 제가 함께하겠습니다.</p>
+<p style="font-size: 1.2rem; font-weight: bold; color: #4ECDC4;">독자에서 저자로 가는 첫걸음, 독저팅™으로 지금 시작하세요!</p>
+
+<!-- 독저팅 신청 방법 섹션 -->
+<div style="margin-top: 3rem; padding: 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.15);">
+    <h3 style="font-size: 1.8rem; color: white; margin-bottom: 1.5rem; text-align: center;">📋 독저팅 신청 방법</h3>
+    
+    <div style="background: rgba(255,255,255,0.95); padding: 2rem; border-radius: 10px; margin-bottom: 1.5rem;">
+        <ol style="line-height: 2; color: #2c3e50; font-size: 1.1rem; padding-left: 1.5rem;">
+            <li><strong>독저팅 신청하기</strong> 클릭 → 상담 신청으로 이동</li>
+            <li>이메일과 연락처 입력</li>
+            <li>신청 서비스에서 <strong style="color: #667eea;">독저팅</strong> 선택</li>
+            <li>문의 내용에 <strong style="color: #667eea;">"독저팅 신청(상담)"</strong> 입력</li>
+        </ol>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem;">
+        <p style="color: white; font-size: 1.1rem; line-height: 1.8; text-align: center;">
+            ✅ 신청 확인 후 독저팅 상세(비용 등) 내용이 포함된 신청서를 보내드립니다.
+        </p>
+    </div>
+    
+    <div style="text-align: center;">
+        <a href="index.html#contact" style="display: inline-block; padding: 1.2rem 3rem; background: white; color: #667eea; text-decoration: none; border-radius: 50px; font-size: 1.3rem; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: all 0.3s; border: 3px solid white;">
+            📝 독저팅 신청하기
+        </a>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        var arrow = document.getElementById('arrow' + id.replace('detail', ''));
+        
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            arrow.textContent = '▲';
+        } else {
+            content.style.display = 'none';
+            arrow.textContent = '▼';
+        }
+    }
+    </script>
+
+    <footer style="background: #2c3e50; color: white; padding: 3rem 0; margin-top: 5rem;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                <a href="https://litt.ly/tothemoonpark" target="_blank" style="color: white; text-decoration: none;">Litt.ly</a>
+                <a href="index.html" style="color: white; text-decoration: none;">홈</a>
+                <a href="index.html#author" style="color: white; text-decoration: none;">작가소개</a>
+                <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅™</a>
+                <a href="index.html#vod" style="color: white; text-decoration: none;">VOD 강의</a>
+                <a href="index.html#philbook" style="color: white; text-decoration: none;">필북</a>
+                <a href="index.html#people-insight" style="color: white; text-decoration: none;">피플인사이트</a>
+                <a href="index.html#contact" style="color: white; text-decoration: none;">상담신청</a>
+                <a href="notice.html" style="color: white; text-decoration: none;">공지사항</a>
+            </div>
+            <p>&copy; 2024 필아카데미 by 박근필. All rights reserved.</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">여러분의 읽고 쓰고 말하는 삶을 응원합니다</p>
+        </div>
+    </footer>
+</body>
+</html>
