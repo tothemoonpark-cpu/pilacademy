@@ -1344,6 +1344,73 @@
                 color: white;
             }
             
+            /* 히어로 섹션 모바일 최적화 */
+            .hero {
+                padding: 100px 1.5rem 60px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                word-break: keep-all;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+                line-height: 1.6;
+                word-break: keep-all;
+                padding: 0 0.5rem;
+            }
+            
+            /* 큰 검은색 텍스트 모바일 최적화 */
+            .hero p[style*="font-size: 2.6rem"] {
+                font-size: 1.5rem !important;
+                line-height: 1.4;
+                word-break: keep-all;
+                padding: 0 1rem;
+            }
+            
+            .cta-button {
+                font-size: 1rem;
+                padding: 0.9rem 2rem;
+            }
+            
+            /* 섹션 타이틀 모바일 최적화 */
+            .section-title {
+                font-size: 1.8rem !important;
+                word-break: keep-all;
+                line-height: 1.4;
+            }
+            
+            /* 섹션 패딩 조정 */
+            section {
+                padding: 60px 1.5rem !important;
+            }
+            
+            /* 카드 그리드 모바일 최적화 */
+            .author-grid,
+            .services-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+            
+            /* 텍스트 줄바꿈 최적화 */
+            h1, h2, h3, h4, h5, h6 {
+                word-break: keep-all;
+                line-height: 1.4;
+            }
+            
+            p, li {
+                word-break: keep-all;
+                line-height: 1.7;
+            }
+            
+            /* 버튼 최적화 */
+            button, .btn {
+                font-size: 1rem;
+                padding: 0.8rem 1.5rem;
+            }
+            
             .vod-detail-content {
                 margin: 0 1rem;
             }
@@ -1354,6 +1421,29 @@
             
             .vod-comparison {
                 grid-template-columns: 1fr;
+            }
+        }
+        
+        /* 추가 모바일 최적화 (작은 화면) */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            
+            .hero p[style*="font-size: 2.6rem"] {
+                font-size: 1.3rem !important;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            nav {
+                padding: 0 1rem;
+            }
+            
+            section {
+                padding: 40px 1rem !important;
             }
         }
 </style>
