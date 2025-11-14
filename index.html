@@ -1868,14 +1868,6 @@
         </div>
     </div>
 
-    <!-- VOD 상세 모달 -->
-    <div id="vodModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:2000; overflow-y:auto;">
-        <div style="max-width:900px; margin:2rem auto; background:white; border-radius:20px; position:relative;">
-            <button onclick="closeVodModal()" style="position:fixed; top:2rem; right:2rem; width:50px; height:50px; background:white; border-radius:50%; border:none; font-size:2rem; cursor:pointer; z-index:2001;">×</button>
-            <div id="vodContent"></div>
-        </div>
-    </div>
-
     <!-- 입금 안내 팝업 -->
     <div class="payment-modal" id="paymentModal">
         <div class="payment-content">
@@ -2012,25 +2004,163 @@
             document.getElementById('paymentModal').classList.remove('active');
         }
         
-        // VOD 상세 정보 함수들
+        // VOD 상세 모달 열기/닫기
+        function openVodDetail(vodData) {
+            const modal = document.getElementById('vodDetailModal');
+            document.getElementById('vodDetailTitle').textContent = vodData.title;
+            document.getElementById('vodDetailDuration').textContent = '⏱ ' + vodData.duration;
+            document.getElementById('vodDetailPrice').textContent = vodData.price.toLocaleString() + '원';
+            document.getElementById('vodDetailPriceBottom').textContent = vodData.price.toLocaleString() + '원';
+            
+            // 상세 내용 생성
+            let bodyHTML = '<div style="padding: 2rem;">';
+            bodyHTML += '<p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem; line-height: 1.8;">' + vodData.subtitle + '</p>';
+            
+            if (vodData.changes) {
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem;">💡 이 강의를 통해 얻게 되는 것</h3>';
+                bodyHTML += '<ul style="list-style: none; padding: 0;">';
+                vodData.changes.forEach(change => {
+                    bodyHTML += '<li style="padding: 0.8rem 0; border-bottom: 1px solid #eee;">✓ ' + change + '</li>';
+                });
+                bodyHTML += '</ul>';
+            }
+            
+            if (vodData.recommend) {
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem;">👥 이런 분들께 추천합니다</h3>';
+                bodyHTML += '<ul style="list-style: none; padding: 0;">';
+                vodData.recommend.forEach(rec => {
+                    bodyHTML += '<li style="padding: 0.8rem 0; border-bottom: 1px solid #eee;">• ' + rec + '</li>';
+                });
+                bodyHTML += '</ul>';
+            }
+            
+            bodyHTML += '</div>';
+            document.getElementById('vodDetailBody').innerHTML = bodyHTML;
+            
+            // 구매 버튼 이벤트
+            document.getElementById('vodDetailBuyBtn').onclick = function() {
+                closeVodDetail();
+                showPaymentInfo(vodData.title, vodData.price);
+            };
+            
+            modal.classList.add('active');
+        }
+        
+        function closeVodDetail() {
+            document.getElementById('vodDetailModal').classList.remove('active');
+        }
+        
+        // VOD 1: 책을 왜 써야 하는가?
         function openVod1() {
-            alert('VOD 1: 책을 왜 써야 하는가?\n\n상세 정보:\n- 시간: 1시간 30분\n- 가격: 29,000원\n\n구매하기 버튼을 클릭하면 입금 안내를 확인하실 수 있습니다.');
+            openVodDetail({
+                title: '책을 왜 써야 하는가?',
+                subtitle: '강의 시청 후 책쓰기에 관한 강력한 동기부여와 자신감을 얻으실 겁니다.',
+                duration: '1시간 30분',
+                price: 29000,
+                changes: [
+                    "'나는 글 못 써'라는 생각에서 완전히 벗어나 '나도 작가가 될 수 있다'는 확신을 갖게 됩니다.",
+                    "책 쓰기에 대한 강렬한 동기 부여와 '당장 시작하고 싶다'는 열정이 생깁니다.",
+                    "책 쓰기로 얻을 수 있는 경제적 혜택과 사회적 영향력에 대해 구체적으로 이해하게 됩니다.",
+                    "1인 2책 전략과 3B 공식 등 실제로 활용할 수 있는 책 쓰기 전략을 습득합니다.",
+                    "다양한 출판 방법을 알게 되어 자신에게 맞는 출간 루트를 선택할 수 있습니다."
+                ],
+                recommend: [
+                    "'언젠가는 책을 써보고 싶다'는 막연한 꿈을 가진 분",
+                    "책을 쓰면 무엇이 좋은지, 왜 써야 하는지 궁금한 분",
+                    "'내가 작가가 될 수 있을까?' 하는 의구심과 두려움을 가진 분",
+                    "퍼스널 브랜딩과 부수입 창출에 관심이 있는 직장인",
+                    "자아실현과 사회적 기여를 통해 의미 있는 삶을 살고 싶은 분"
+                ]
+            });
         }
         
+        // VOD 2: 책쓰기는 기획과 제작이다!
         function openVod2() {
-            alert('VOD 2: 책쓰기는 기획과 제작이다!\n\n상세 정보:\n- 시간: 1시간 50분\n- 가격: 79,000원\n\n구매하기 버튼을 클릭하면 입금 안내를 확인하실 수 있습니다.');
+            openVodDetail({
+                title: '책쓰기는 기획과 제작이다!',
+                subtitle: '책쓰기의 핵심과 본질을 파악해 출판 계약으로 이어지는 투고를 할 수 있습니다.',
+                duration: '1시간 50분',
+                price: 79000,
+                changes: [
+                    "80% 기획의 핵심을 이해하고 출판 계약 성공률을 획기적으로 높입니다.",
+                    "편집자가 '계약하고 싶어하는' 출간 기획서 작성법을 완전 습득합니다.",
+                    "나만의 독창적인 책 아이디어 발굴과 차별화 전략을 구체적으로 세웁니다.",
+                    "출간 후 저자 브랜딩과 수익화까지 연결하는 전체 로드맵을 얻습니다."
+                ],
+                recommend: [
+                    "막연히 '언젠가는 책을 써야지' 생각만 하고 있는 예비 작가",
+                    "여러 출판사에 투고했지만 계속 거절당해 좌절한 분",
+                    "글쓰기와 책쓰기의 차이를 모르고 원고부터 쓰려는 분",
+                    "전문직, 직장인으로서 자신의 경험을 책으로 만들고 싶은 분",
+                    "책을 통해 퍼스널 브랜딩과 N잡 기회를 만들고 싶은 분"
+                ]
+            });
         }
         
+        // VOD 3: 쉽게 이해하는 퍼스널 브랜딩
         function openVod3() {
-            alert('VOD 3: 쉽게 이해하는 퍼스널 브랜딩\n\n상세 정보:\n- 시간: 1시간\n- 가격: 79,000원\n\n구매하기 버튼을 클릭하면 입금 안내를 확인하실 수 있습니다.');
+            openVodDetail({
+                title: '쉽게 이해하는 퍼스널 브랜딩',
+                subtitle: '퍼스널 브랜딩의 정수를 알려드립니다.',
+                duration: '1시간',
+                price: 79000,
+                changes: [
+                    "퍼스널 브랜딩의 본질을 이해하고 자신만의 브랜드 정체성을 확립합니다.",
+                    "콘텐츠 생산자로서의 마인드셋과 실전 전략을 습득합니다.",
+                    "SNS와 블로그를 활용한 효과적인 브랜딩 방법을 배웁니다.",
+                    "전문가로 인정받는 포지셔닝 전략을 수립합니다."
+                ],
+                recommend: [
+                    "자신만의 브랜드를 만들고 싶은 모든 분",
+                    "SNS 활동은 하지만 방향성이 불명확한 분",
+                    "전문가로서의 입지를 다지고 싶은 직장인",
+                    "퍼스널 브랜딩을 통해 새로운 기회를 만들고 싶은 분"
+                ]
+            });
         }
         
+        // VOD 4: 직장인이 아닌 직업인으로
         function openVod4() {
-            alert('VOD 4: 직장인이 아닌 직업인으로\n\n상세 정보:\n- 시간: 1시간\n- 가격: 29,000원\n\n구매하기 버튼을 클릭하면 입금 안내를 확인하실 수 있습니다.');
+            openVodDetail({
+                title: '직장인이 아닌 직업인으로',
+                subtitle: '수의사에서 작가로 전환한 실제 경험을 바탕으로 커리어 전환 로드맵을 제시합니다.',
+                duration: '1시간',
+                price: 29000,
+                changes: [
+                    "직장인과 직업인의 근본적인 차이를 이해합니다.",
+                    "커리어 전환을 위한 구체적인 준비 과정과 전략을 배웁니다.",
+                    "자신의 전문성을 활용한 새로운 기회 창출 방법을 터득합니다.",
+                    "실패 없는 안전한 커리어 전환 로드맵을 수립합니다."
+                ],
+                recommend: [
+                    "현재 직장에 대한 회의감을 느끼는 분",
+                    "제2의 인생을 준비하고 싶은 분",
+                    "자신만의 길을 개척하고 싶은 분",
+                    "전문성을 바탕으로 독립을 꿈꾸는 분"
+                ]
+            });
         }
         
+        // 필북 상세 정보
         function openPhilbookDetail() {
-            alert('필북 (박근필의 동반성장 북클럽)\n\n- 시간: 매주 월요일 저녁 9시~11시(11시 반)\n- 장소: 온라인 Zoom\n- 기간: 4주 프로그램\n- 가격: 5만원 (직전 기수 4만원)\n\n참여 신청 버튼을 클릭하면 입금 안내를 확인하실 수 있습니다.');
+            openVodDetail({
+                title: '필북 (박근필의 동반성장 북클럽)',
+                subtitle: '책과 대화와 특강이 만나는 특별한 4주',
+                duration: '매주 월요일 저녁 9시~11시(11시 반)',
+                price: 50000,
+                changes: [
+                    "매주 선정 도서를 읽고 깊이 있는 토론을 나눕니다.",
+                    "박근필 작가의 특강과 베스트셀러 작가의 게스트 특강을 들을 수 있습니다.",
+                    "함께 읽고 쓰고 말하며 성장하는 경험을 합니다.",
+                    "독서를 넘어 실제 삶에 적용하는 아웃풋 독서를 실천합니다."
+                ],
+                recommend: [
+                    "단순한 독서가 아닌 성장을 원하는 분",
+                    "작가와 함께 책을 읽고 싶은 분",
+                    "같은 목표를 가진 동료들과 함께 하고 싶은 분",
+                    "책을 통해 삶의 변화를 만들고 싶은 분"
+                ]
+            });
         }
         
         window.addEventListener('load', function() {

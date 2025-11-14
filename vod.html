@@ -41,6 +41,9 @@
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
+            letter-spacing: -1px;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
         
         .nav-links {
@@ -57,65 +60,9 @@
         }
         
         .nav-links a:hover {
-
-        .dropdown {
-            position: relative;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 180px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            border-radius: 8px;
-            z-index: 1000;
-            top: 100% !important;
-            margin-top: -8px !important;
-            padding-top: 0.5rem;
-        }
-        
-        .dropdown-content::before {
-            content: "";
-            position: absolute;
-            top: -20px;
-            left: -10px;
-            right: -10px;
-            height: 28px;
-            background: transparent;
-        }
-        
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
-        
-        .dropdown-content a:first-child {
-            border-radius: 8px 8px 0 0;
-        }
-        
-        .dropdown-content a:last-child {
-            border-radius: 0 0 8px 8px;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-            opacity: 1;
-        }
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        
-        .dropbtn {
-            cursor: pointer;
-            padding-bottom: 1rem;
-        }
             opacity: 0.8;
-
+        }
+        
         .dropdown {
             position: relative;
         }
@@ -134,181 +81,43 @@
         }
         
         .dropdown-content::before {
-            content: "";
-            position: absolute;
-            top: -20px;
-            left: -10px;
-            right: -10px;
-            height: 28px;
-            background: transparent;
-        }
-        
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
-        
-        .dropdown-content a:first-child {
-            border-radius: 8px 8px 0 0;
-        }
-        
-        .dropdown-content a:last-child {
-            border-radius: 0 0 8px 8px;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-            opacity: 1;
-        }
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        
-        .dropbtn {
-            cursor: pointer;
-            padding-bottom: 1rem;
-        }
-        }
-
-        .dropdown {
-            position: relative;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 180px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            border-radius: 8px;
-            z-index: 1000;
-            top: 100% !important;
-            margin-top: -8px !important;
-            padding-top: 0.5rem;
-        }
-        
-        .dropdown-content::before {
-            content: "";
-            position: absolute;
-            top: -20px;
-            left: -10px;
-            right: -10px;
-            height: 28px;
-            background: transparent;
-        }
-        
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
-        
-        .dropdown-content a:first-child {
-            border-radius: 8px 8px 0 0;
-        }
-        
-        .dropdown-content a:last-child {
-            border-radius: 0 0 8px 8px;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-            opacity: 1;
-        }
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        
-        .dropbtn {
-            cursor: pointer;
-            padding-bottom: 1rem;
-        }
-
-
-        
-        
-            background-color: #f8f9fa;
-        
-        }
-        
             content: '';
-        
-        
-        
             position: absolute;
-        
-        
-        
             top: -20px;
-        
-        
-        
             left: -10px;
-        
-        
-        
             right: -10px;
-        
-        
-        
             height: 28px;
-        
-        
-        
             background: transparent;
-        
-        
-        
         }
         
-        
-        
-
-
-        .book-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: all 0.3s;
-            margin-bottom: 2rem;
-        }
-
-        .book-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-        }
-
-        .book-cover {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            object-fit: cover;
-        }
-
-        .buy-button {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
-            color: white;
+        .dropdown-content a {
+            color: #2c3e50;
+            padding: 12px 16px;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            margin: 0.5rem;
-            transition: all 0.4s ease;
-            box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+            display: block;
+            transition: background-color 0.3s;
         }
-
-        .buy-button:hover {
-            transform: scale(1.05) translateY(-3px);
-            box-shadow: 0 8px 25px rgba(78, 205, 196, 0.5);
+        
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            opacity: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn {
+            cursor: pointer;
+            padding-bottom: 1rem;
         }
         
         .menu-toggle {
@@ -332,14 +141,53 @@
         }
         
         @media (max-width: 768px) {
-            .menu-toggle { display: flex; z-index: 1001; }
-            nav { padding: 0 1rem; flex-wrap: nowrap !important; }
-            .logo { font-size: 1.5rem !important; transition: opacity 0.3s ease; }
-            .nav-links { display: none !important; position: fixed; top: 70px; left: 0; right: 0; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); flex-direction: column; padding: 1rem 0; z-index: 999; max-height: calc(100vh - 70px); overflow-y: auto; }
-            .nav-links.active { display: flex !important; }
-            .nav-links li { text-align: center; padding: 0.8rem 0; }
-            .dropdown-content { position: static; background: rgba(255,255,255,0.1); }
-            .dropdown-content a { color: white; }
+            .menu-toggle {
+                display: flex;
+                z-index: 1001;
+            }
+            
+            nav {
+                padding: 0 1rem;
+                flex-wrap: nowrap !important;
+            }
+            
+            .logo {
+                font-size: 1.5rem !important;
+                transition: opacity 0.3s ease;
+            }
+            
+            .nav-links {
+                display: none !important;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+                flex-direction: column;
+                padding: 1rem 0;
+                z-index: 999;
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+            }
+            
+            .nav-links.active {
+                display: flex !important;
+            }
+            
+            .nav-links li {
+                text-align: center;
+                padding: 0.8rem 0;
+            }
+            
+            .dropdown-content {
+                position: static;
+                background: rgba(255,255,255,0.1);
+                margin: 0.5rem 1rem;
+            }
+            
+            .dropdown-content a {
+                color: white;
+            }
         }
     </style>
 </head>
@@ -379,21 +227,37 @@
     <div style="height: 80px;"></div>
 
     <div style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;">
-        <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: #2c3e50; text-align: center;">🎥 VOD 특강</h2>
-        <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 4rem;">책 쓰기 기획과 제작의 모든 것을 담은 VOD 특강 (준비중)</p>
-
-
-        <!-- VOD 콘텐츠 -->
-        <div style="max-width: 800px; margin: 5rem auto; text-align: center; padding: 4rem 2rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-            <div style="font-size: 5rem; margin-bottom: 2rem;">🎬</div>
-            <h3 style="font-size: 2rem; color: #2c3e50; margin-bottom: 1.5rem;">VOD 특강 준비중입니다</h3>
-            <p style="font-size: 1.2rem; color: #666; line-height: 1.8; margin-bottom: 2rem;">
-                책 쓰기 기획과 제작의 모든 것을 담은<br>
-                프리미엄 온라인 강의를 준비하고 있습니다.
-            </p>
-            <p style="font-size: 1.1rem; color: #4ECDC4; font-weight: bold;">
-                📧 출시 알림을 받고 싶으시다면 상담신청을 통해 문의해주세요
-            </p>
+        <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50; text-align: center;">🎥 VOD 특강</h2>
+        
+        <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 2rem;">
+            <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail1')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="font-size: 1.3rem; color: #2c3e50;">1. VOD 특강 후기 모음</h3>
+                    <span id="arrow1" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
+                </div>
+            </div>
+            
+            <div id="detail1" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
+                <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
+                    <h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 2rem; text-align: center;">💬 VOD 특강 수강생 후기</h3>
+                    
+                    <div style="display: grid; gap: 1.5rem; max-width: 900px; margin: 0 auto;">
+                        <img src="vod-review-1.png" alt="VOD 후기 1" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-2.png" alt="VOD 후기 2" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-3.png" alt="VOD 후기 3" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-4.png" alt="VOD 후기 4" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-5.png" alt="VOD 후기 5" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-6.png" alt="VOD 후기 6" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-7.png" alt="VOD 후기 7" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-8.png" alt="VOD 후기 8" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-9.png" alt="VOD 후기 9" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-10.png" alt="VOD 후기 10" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-11.png" alt="VOD 후기 11" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-12.png" alt="VOD 후기 12" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-13.png" alt="VOD 후기 13" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -405,6 +269,19 @@
     </footer>
 
     <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const arrow = document.getElementById('arrow' + id.slice(-1));
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow.textContent = '▲';
+            } else {
+                content.style.display = 'none';
+                arrow.textContent = '▼';
+            }
+        }
+        
         function toggleMenu() {
             const navLinks = document.getElementById('navLinks');
             const logo = document.querySelector('.logo');
