@@ -66,25 +66,27 @@
 
         .dropdown-content {
             display: none;
-            position: fixed;
-            background: white;
-            min-width: 200px;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            border-radius: 10px;
-            padding: 1rem 0;
-            top: 70px;
-            margin-top: 0.5rem;
+            border-radius: 8px;
+            z-index: 1000;
+            top: 100%;
+            margin-top: -8px;
+            padding-top: 0.5rem;
+        }
+        
+        .dropdown-content::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            right: -10px;
+            height: 28px;
+            background: transparent;
         }
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            color: #333;
-            padding: 0.8rem 1.5rem;
-            display: block;
-        }
         
         .menu-toggle {
             display: none;
