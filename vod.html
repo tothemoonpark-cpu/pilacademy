@@ -275,42 +275,53 @@
         </div>
     </footer>
 
+
     <script>
-    function toggleContent(id) {
-        var content = document.getElementById(id);
-        var arrow = document.getElementById('arrow' + id.replace('detail', ''));
-        
-        if (content.style.display === 'none') {
-            content.style.display = 'block';
-            arrow.textContent = '▲';
-        } else {
-            content.style.display = 'none';
-            arrow.textContent = '▼';
-        }
-    }
-    </script>
-    <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById("navLinks");
-            const logo = document.querySelector(".logo");
-            navLinks.classList.toggle("active");
-            if (navLinks.classList.contains("active")) {
-                logo.classList.add("hidden");
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const arrow = document.getElementById('arrow' + id.slice(-1));
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow.textContent = '▲';
             } else {
-                logo.classList.remove("hidden");
+                content.style.display = 'none';
+                arrow.textContent = '▼';
             }
         }
         
-        window.addEventListener("load", function() {
-            const navLinks = document.getElementById("navLinks");
-            if (navLinks) navLinks.classList.remove("active");
-                        const logo = document.querySelector(".logo");
-                        if (logo) logo.classList.remove("hidden");
-            const logo = document.querySelector(".logo");
-            if (logo) logo.classList.remove("hidden");
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const logo = document.querySelector('.logo');
+            navLinks.classList.toggle('active');
+            
+            if (navLinks.classList.contains('active')) {
+                logo.classList.add('hidden');
+            } else {
+                logo.classList.remove('hidden');
+            }
+        }
+        
+        // 모든 메뉴 링크 클릭 시 메뉴 닫기
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuLinks = document.querySelectorAll('.nav-links a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        const navLinks = document.getElementById('navLinks');
+                        const logo = document.querySelector('.logo');
+                        if (navLinks) navLinks.classList.remove('active');
+                        if (logo) logo.classList.remove('hidden');
+                    }
+                });
+            });
         });
         
-            });
+        window.addEventListener('load', function() {
+            const navLinks = document.getElementById('navLinks');
+            const logo = document.querySelector('.logo');
+            if (navLinks) navLinks.classList.remove('active');
+            if (logo) logo.classList.remove('hidden');
         });
     </script>
 </body>
