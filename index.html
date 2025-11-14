@@ -2000,6 +2000,39 @@
             });
         });
         
+        // 입금 안내 팝업
+        function showPaymentInfo(itemName, price) {
+            const modal = document.getElementById('paymentModal');
+            document.getElementById('productName').textContent = itemName;
+            document.getElementById('productPrice').textContent = price.toLocaleString() + '원';
+            modal.classList.add('active');
+        }
+        
+        function closePaymentModal() {
+            document.getElementById('paymentModal').classList.remove('active');
+        }
+        
+        // VOD 상세 정보 함수들
+        function openVod1() {
+            alert('VOD 1: 책을 왜 써야 하는가?\n\n상세 정보:\n- 시간: 1시간 30분\n- 가격: 29,000원\n\n구매하기 버튼을 클릭하면 입금 안내를 확인하실 수 있습니다.');
+        }
+        
+        function openVod2() {
+            alert('VOD 2: 책쓰기는 기획과 제작이다!\n\n상세 정보:\n- 시간: 1시간 50분\n- 가격: 79,000원\n\n구매하기 버튼을 클릭하면 입금 안내를 확인하실 수 있습니다.');
+        }
+        
+        function openVod3() {
+            alert('VOD 3: 쉽게 이해하는 퍼스널 브랜딩\n\n상세 정보:\n- 시간: 1시간\n- 가격: 79,000원\n\n구매하기 버튼을 클릭하면 입금 안내를 확인하실 수 있습니다.');
+        }
+        
+        function openVod4() {
+            alert('VOD 4: 직장인이 아닌 직업인으로\n\n상세 정보:\n- 시간: 1시간\n- 가격: 29,000원\n\n구매하기 버튼을 클릭하면 입금 안내를 확인하실 수 있습니다.');
+        }
+        
+        function openPhilbookDetail() {
+            alert('필북 (박근필의 동반성장 북클럽)\n\n- 시간: 매주 월요일 저녁 9시~11시(11시 반)\n- 장소: 온라인 Zoom\n- 기간: 4주 프로그램\n- 가격: 5만원 (직전 기수 4만원)\n\n참여 신청 버튼을 클릭하면 입금 안내를 확인하실 수 있습니다.');
+        }
+        
         window.addEventListener('load', function() {
             const navLinks = document.getElementById('navLinks');
             const logo = document.querySelector('.logo');
