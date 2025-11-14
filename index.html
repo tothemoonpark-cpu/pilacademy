@@ -1322,8 +1322,11 @@
             
             nav {
                 padding: 0 1rem;
-                flex-wrap: nowrap;
+                flex-wrap: nowrap !important;
                 width: 100%;
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: center !important;
             }
             
             .menu-toggle {
@@ -1333,12 +1336,13 @@
             }
             
             .logo {
-                font-size: 1.5rem;
-                white-space: nowrap;
-                flex-shrink: 0;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                max-width: calc(100vw - 100px);
+                font-size: 1.5rem !important;
+                white-space: nowrap !important;
+                flex-shrink: 0 !important;
+                overflow: visible !important;
+                text-overflow: clip !important;
+                max-width: none !important;
+                display: inline-block !important;
             }
             
             .nav-links {
@@ -1458,6 +1462,10 @@
         
         /* 추가 모바일 최적화 (작은 화면) */
         @media (max-width: 480px) {
+            .logo {
+                font-size: 1.3rem !important;
+            }
+            
             .hero h1 {
                 font-size: 1.6rem;
             }
@@ -1480,7 +1488,7 @@
     <!-- 헤더 -->
     <header>
         <nav>
-            <a href="#" class="logo" style="text-decoration: none; color: inherit; cursor: pointer;" onclick="window.location.reload(); return false;">📚 필아카데미</a>
+            <a href="#" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;" onclick="window.location.reload(); return false;">📚 필아카데미</a>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
