@@ -2707,12 +2707,31 @@ function openVod4() {
             navLinks.classList.toggle('active');
         }
         
+        // 페이지 로드 시 메뉴 닫기
+        window.addEventListener('load', function() {
+            document.getElementById('navLinks').classList.remove('active');
+        });
+        
         // 메뉴 항목 클릭 시 메뉴 닫기
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
-                    document.getElementById('navLinks').classList.remove('active');
-                }
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // 메뉴 닫기
+                    setTimeout(() => {
+                        document.getElementById('navLinks').classList.remove('active');
+                    }, 100);
+                });
+            });
+            
+            // 드롭다운 항목도 클릭 시 메뉴 닫기
+            const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    setTimeout(() => {
+                        document.getElementById('navLinks').classList.remove('active');
+                    }, 100);
+                });
             });
         });
     </script>
