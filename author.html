@@ -85,13 +85,97 @@
             padding: 0.8rem 1.5rem;
             display: block;
         }
+        
+        /* 햄버거 메뉴 */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            flex-shrink: 0;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+        
+        /* 모바일 스타일 */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+                z-index: 1001;
+            }
+            
+            nav {
+                padding: 0 1rem;
+                flex-wrap: nowrap !important;
+            }
+            
+            .logo {
+                font-size: 1.5rem !important;
+                white-space: nowrap !important;
+                flex-shrink: 0 !important;
+                transition: opacity 0.3s ease;
+            }
+            
+            .logo.hidden {
+                opacity: 0;
+                pointer-events: none;
+            }
+            
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+                z-index: 999;
+                gap: 0;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                text-align: center;
+                padding: 0.8rem 0;
+            }
+            
+            .dropdown-content {
+                position: static;
+                box-shadow: none;
+                background: rgba(255,255,255,0.1);
+                margin: 0.5rem 1rem;
+                top: 0;
+            }
+            
+            .dropdown-content a {
+                color: white;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;">📚 필아카데미</a>
-            <ul class="nav-links">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">홈</a></li>
                 <li><a href="author.html">작가소개</a></li>
                 <li><a href="dokjeoting.html">독저팅™</a></li>
