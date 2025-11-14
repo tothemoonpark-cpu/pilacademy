@@ -151,12 +151,22 @@
     <script>
         function toggleMenu() {
             const navLinks = document.getElementById("navLinks");
+            const logo = document.querySelector(".logo");
             navLinks.classList.toggle("active");
+            if (navLinks.classList.contains("active")) {
+                logo.classList.add("hidden");
+            } else {
+                logo.classList.remove("hidden");
+            }
         }
         
         window.addEventListener("load", function() {
             const navLinks = document.getElementById("navLinks");
             if (navLinks) navLinks.classList.remove("active");
+                        const logo = document.querySelector(".logo");
+                        if (logo) logo.classList.remove("hidden");
+            const logo = document.querySelector(".logo");
+            if (logo) logo.classList.remove("hidden");
         });
         
         document.addEventListener("DOMContentLoaded", function() {
@@ -166,6 +176,10 @@
                     setTimeout(() => {
                         const navLinks = document.getElementById("navLinks");
                         if (navLinks) navLinks.classList.remove("active");
+                        const logo = document.querySelector(".logo");
+                        if (logo) logo.classList.remove("hidden");
+            const logo = document.querySelector(".logo");
+            if (logo) logo.classList.remove("hidden");
                     }, 100);
                 });
             });

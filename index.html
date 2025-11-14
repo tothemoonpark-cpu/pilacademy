@@ -1343,6 +1343,13 @@
                 text-overflow: clip !important;
                 max-width: none !important;
                 display: inline-block !important;
+                transition: opacity 0.3s ease;
+            }
+            
+            /* 메뉴 열렸을 때 로고 숨기기 */
+            .logo.hidden {
+                opacity: 0;
+                pointer-events: none;
             }
             
             .nav-links {
@@ -2704,22 +2711,36 @@ function openVod4() {
         // 모바일 메뉴 토글
         function toggleMenu() {
             const navLinks = document.getElementById('navLinks');
+            const logo = document.querySelector('.logo');
             navLinks.classList.toggle('active');
+            
+            // 메뉴가 열리면 로고 숨기기, 닫히면 보이기
+            if (navLinks.classList.contains('active')) {
+                logo.classList.add('hidden');
+            } else {
+                logo.classList.remove('hidden');
+            }
         }
         
         // 페이지 로드 시 메뉴 닫기
         window.addEventListener('load', function() {
-            document.getElementById('navLinks').classList.remove('active');
+            const navLinks = document.getElementById('navLinks');
+            const logo = document.querySelector('.logo');
+            navLinks.classList.remove('active');
+            logo.classList.remove('hidden');
         });
         
         // 메뉴 항목 클릭 시 메뉴 닫기
         document.addEventListener('DOMContentLoaded', function() {
             const navLinks = document.querySelectorAll('.nav-links a');
+            const logo = document.querySelector('.logo');
+            
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     // 메뉴 닫기
                     setTimeout(() => {
                         document.getElementById('navLinks').classList.remove('active');
+                        logo.classList.remove('hidden');
                     }, 100);
                 });
             });
@@ -2730,6 +2751,7 @@ function openVod4() {
                 link.addEventListener('click', function() {
                     setTimeout(() => {
                         document.getElementById('navLinks').classList.remove('active');
+                        logo.classList.remove('hidden');
                     }, 100);
                 });
             });
