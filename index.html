@@ -2729,33 +2729,6 @@ function openVod4() {
             navLinks.classList.remove('active');
             logo.classList.remove('hidden');
         });
-        
-        // 메뉴 항목 클릭 시 메뉴 닫기
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-links a');
-            const logo = document.querySelector('.logo');
-            
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    // 메뉴 닫기
-                    setTimeout(() => {
-                        document.getElementById('navLinks').classList.remove('active');
-                        logo.classList.remove('hidden');
-                    }, 100);
-                });
-            });
-            
-            // 드롭다운 항목도 클릭 시 메뉴 닫기
-            const dropdownLinks = document.querySelectorAll('.dropdown-content a');
-            dropdownLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    setTimeout(() => {
-                        document.getElementById('navLinks').classList.remove('active');
-                        logo.classList.remove('hidden');
-                    }, 100);
-                });
-            });
-        });
     </script>
 </body>
 </html>
