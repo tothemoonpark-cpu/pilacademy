@@ -2143,24 +2143,124 @@
         
         // 필북 상세 정보
         function openPhilbookDetail() {
-            openVodDetail({
-                title: '필북 (박근필의 동반성장 북클럽)',
-                subtitle: '책과 대화와 특강이 만나는 특별한 4주',
-                duration: '매주 월요일 저녁 9시~11시(11시 반)',
-                price: 50000,
-                changes: [
-                    "매주 선정 도서를 읽고 깊이 있는 토론을 나눕니다.",
-                    "박근필 작가의 특강과 베스트셀러 작가의 게스트 특강을 들을 수 있습니다.",
-                    "함께 읽고 쓰고 말하며 성장하는 경험을 합니다.",
-                    "독서를 넘어 실제 삶에 적용하는 아웃풋 독서를 실천합니다."
-                ],
-                recommend: [
-                    "단순한 독서가 아닌 성장을 원하는 분",
-                    "작가와 함께 책을 읽고 싶은 분",
-                    "같은 목표를 가진 동료들과 함께 하고 싶은 분",
-                    "책을 통해 삶의 변화를 만들고 싶은 분"
-                ]
-            });
+            const modal = document.getElementById('vodDetailModal');
+            document.getElementById('vodDetailTitle').textContent = '필북 (박근필의 동반성장 북클럽)';
+            document.getElementById('vodDetailDuration').textContent = '⏱ 매주 월요일 저녁 9시~11시(11시 반)';
+            document.getElementById('vodDetailPrice').textContent = '50,000원';
+            document.getElementById('vodDetailPriceBottom').textContent = '50,000원 (직전 기수 4만원)';
+            
+            // 상세 내용 생성
+            let bodyHTML = '<div style="padding: 2rem; line-height: 1.8;">';
+            
+            // 필북이 뭔가요?
+            bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem; font-size: 1.5rem;">📚 필북이 뭔가요?</h3>';
+            bodyHTML += '<p style="margin-bottom: 1rem; color: #555;">';
+            bodyHTML += '\'필북\'은 <strong>박근필의 \'필\'</strong>과 <strong>북클럽의 \'북\'</strong>을 합친 이름입니다.<br>';
+            bodyHTML += '짧고 기억하기 쉽지만, 그 안에 제가 하고 싶은 모든 걸 담았습니다.<br><br>';
+            bodyHTML += '평범한 독서모임이 아닌, <strong style="color: #4ECDC4;">"책 + 대화 + 특강"</strong>이 결합된 <strong style="color: #4ECDC4;">"동반성장 북클럽"</strong>.<br>';
+            bodyHTML += '바로 박근필의 \'필북\'입니다.';
+            bodyHTML += '</p>';
+            
+            // 정기 모임
+            bodyHTML += '<div style="background: #f0f9ff; border-left: 4px solid #4ECDC4; padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">';
+            bodyHTML += '<div style="font-weight: bold; margin-bottom: 0.8rem; color: #2c3e50;">📅 정기 모임</div>';
+            bodyHTML += '<div style="color: #555;">매주 월요일 저녁 9시~11시(11시 반) / 온라인 Zoom / 4주 프로그램</div>';
+            bodyHTML += '</div>';
+            
+            // 도서 구성
+            bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem; font-size: 1.3rem;">📖 도서 구성</h3>';
+            bodyHTML += '<ul style="list-style: none; padding: 0; margin-bottom: 2rem;">';
+            bodyHTML += '<li style="padding: 1rem; background: #f8f9fa; margin-bottom: 0.8rem; border-radius: 8px; border-left: 3px solid #4ECDC4;">';
+            bodyHTML += '<strong>공통도서</strong>: 제가 직접 엄선합니다. 자기계발, 에세이 중심이지만 제한은 없습니다.';
+            bodyHTML += '</li>';
+            bodyHTML += '<li style="padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 3px solid #667eea;">';
+            bodyHTML += '<strong>자유도서</strong>: 각자 읽고 싶은 책, 공유하고 싶은 책을 자유롭게 선택합니다.';
+            bodyHTML += '</li>';
+            bodyHTML += '</ul>';
+            
+            // 세션 구성
+            bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem; font-size: 1.3rem;">💡 세션 구성</h3>';
+            bodyHTML += '<div style="display: grid; gap: 1rem; margin-bottom: 2rem;">';
+            bodyHTML += '<div style="padding: 1.2rem; background: #fff8f0; border-radius: 10px; border: 2px solid #ffb74d;">';
+            bodyHTML += '<div style="font-weight: bold; color: #e65100; margin-bottom: 0.5rem;">📚 독서 토론 약 1시간</div>';
+            bodyHTML += '<div style="color: #666;">전원이 차례대로 준비한 문장과 의견 발표, 서로의 생각 나누기</div>';
+            bodyHTML += '</div>';
+            bodyHTML += '<div style="padding: 1.2rem; background: #f3e5f5; border-radius: 10px; border: 2px solid #ba68c8;">';
+            bodyHTML += '<div style="font-weight: bold; color: #7b1fa2; margin-bottom: 0.5rem;">🎤 특강 & QnA 약 1시간</div>';
+            bodyHTML += '<div style="color: #666;">자기계발·퍼스널 브랜딩·삶 인사이트 등 다양한 주제의 특강과 질의응답</div>';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
+            // 특강 강연자
+            bodyHTML += '<div style="background: #f0fff4; border: 2px solid #48bb78; border-radius: 12px; padding: 20px; margin: 2rem 0;">';
+            bodyHTML += '<div style="font-size: 1.1rem; color: #2f855a; font-weight: 600; margin-bottom: 8px;">✨ 특강 강연자</div>';
+            bodyHTML += '<div style="color: #276749;">저(박근필 작가), 저자, 인플루언서, 콘텐츠 생산자 등 인사이트 넘치는 분.</div>';
+            bodyHTML += '</div>';
+            
+            // 이렇게 진행됩니다
+            bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem; font-size: 1.3rem;">🔄 이렇게 진행됩니다</h3>';
+            bodyHTML += '<div style="display: grid; gap: 1rem; margin-bottom: 2rem;">';
+            bodyHTML += '<div style="display: flex; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">';
+            bodyHTML += '<div style="font-size: 1.5rem;">1️⃣</div>';
+            bodyHTML += '<div><strong>책 읽기</strong><br><span style="color: #666;">매주 선정 도서를 읽고 와닿는 문장과 의견 준비</span></div>';
+            bodyHTML += '</div>';
+            bodyHTML += '<div style="display: flex; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">';
+            bodyHTML += '<div style="font-size: 1.5rem;">2️⃣</div>';
+            bodyHTML += '<div><strong>대화 나누기</strong><br><span style="color: #666;">함께 모여 각자의 생각을 나누고 서로의 시야를 넓힘</span></div>';
+            bodyHTML += '</div>';
+            bodyHTML += '<div style="display: flex; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">';
+            bodyHTML += '<div style="font-size: 1.5rem;">3️⃣</div>';
+            bodyHTML += '<div><strong>특강 듣기</strong><br><span style="color: #666;">박근필 작가 or 특별 게스트의 강연으로 인사이트 습득</span></div>';
+            bodyHTML += '</div>';
+            bodyHTML += '<div style="display: flex; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">';
+            bodyHTML += '<div style="font-size: 1.5rem;">4️⃣</div>';
+            bodyHTML += '<div><strong>성장하기</strong><br><span style="color: #666;">아웃풋 독서를 통해 실제 삶에 적용하고 변화 만들기</span></div>';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
+            // 참가 혜택
+            bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem; font-size: 1.3rem;">🎁 참가 혜택</h3>';
+            bodyHTML += '<ul style="padding-left: 1.2rem; color: #555; margin-bottom: 2rem;">';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">불참 시 해당 주차 녹화본 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">박근필 작가와 1:1 카톡 상담권 (4주간 자기계발 관련)</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">실제 투고 시 제출한 출간기획서 원본 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">출간기획서 샘플 추가 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">실제 사용한 투고 이메일 제목 및 원문 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">출판사 이메일 리스트 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">&lt;박근필의 피플인사이트&gt; 유튜브 출연 기회 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem; font-weight: bold; color: #4ECDC4;">혜택 계속 늘려갈 예정!</li>';
+            bodyHTML += '</ul>';
+            
+            // 참가비
+            bodyHTML += '<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin-top: 2rem;">';
+            bodyHTML += '<div style="font-size: 1.2rem; opacity: 0.95; margin-bottom: 1.5rem;">4주간의 완전한 변화를 위한 투자</div>';
+            bodyHTML += '<div style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 10px;">';
+            bodyHTML += '<p style="font-size: 1.1rem; margin: 0;">🎁 <strong>직전 기수 특별 혜택</strong><br>만원 할인 → <strong style="font-size: 1.3rem;">4만원</strong></p>';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
+            // 4기 신청 예약 안내
+            bodyHTML += '<div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 12px; padding: 20px; margin: 2rem 0; text-align: center;">';
+            bodyHTML += '<div style="font-size: 1.2rem; color: #856404; font-weight: 700; margin-bottom: 12px;">💡 현재는 4기 신청 예약 가능합니다.</div>';
+            bodyHTML += '<div style="color: #856404; line-height: 1.8;">';
+            bodyHTML += '메인 화면의 하단에 <strong>\'상담 신청\'</strong>에서 필요한 정보 입력하시고<br>';
+            bodyHTML += '신청 서비스 중 <strong>필북</strong>을 선택하세요.<br>';
+            bodyHTML += '문의 내용에 <strong>"필북 4기 신청 예약"</strong>이라고 적어주세요.';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
+            bodyHTML += '</div>';
+            
+            document.getElementById('vodDetailBody').innerHTML = bodyHTML;
+            
+            // 구매 버튼 이벤트
+            document.getElementById('vodDetailBuyBtn').onclick = function() {
+                closeVodDetail();
+                showPaymentInfo('필북', 50000);
+            };
+            document.getElementById('vodDetailBuyBtn').textContent = '지금 바로 신청하기';
+            
+            modal.classList.add('active');
         }
         
         window.addEventListener('load', function() {
