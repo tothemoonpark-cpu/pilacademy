@@ -81,6 +81,22 @@
             opacity: 0.8;
         }
         
+        /* 햄버거 메뉴 버튼 */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+        
         /* 드롭다운 메뉴 */
         .dropdown {
             position: relative;
@@ -1292,6 +1308,42 @@
         }
         
         @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+            
+            .dropdown-content {
+                position: static;
+                box-shadow: none;
+                background: rgba(255,255,255,0.1);
+                margin: 0.5rem 1rem;
+            }
+            
+            .dropdown-content a {
+                color: white;
+            }
+            
             .vod-detail-content {
                 margin: 0 1rem;
             }
@@ -1311,7 +1363,12 @@
     <header>
         <nav>
             <a href="#" class="logo" style="text-decoration: none; color: inherit; cursor: pointer;" onclick="window.location.reload(); return false;">📚 필아카데미</a>
-            <ul class="nav-links">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">홈</a></li>
                 <li><a href="author.html">작가소개</a></li>
                 <li><a href="dokjeoting.html">독저팅™</a></li>
@@ -2514,6 +2571,23 @@ function openVod4() {
                 submitButton.textContent = originalText;
                 submitButton.disabled = false;
             }
+        });
+    </script>
+    
+    <script>
+        // 모바일 메뉴 토글
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // 메뉴 항목 클릭 시 메뉴 닫기
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
         });
     </script>
 </body>
