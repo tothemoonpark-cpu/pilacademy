@@ -57,13 +57,11 @@
         }
         
         .nav-links a:hover {
-            opacity: 0.8;
-        }
 
         .dropdown {
             position: relative;
         }
-
+        
         .dropdown-content {
             display: none;
             position: absolute;
@@ -78,6 +76,14 @@
         }
         
         .dropdown-content::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            right: -10px;
+            height: 28px;
+            background: transparent;
+        }
         
         .dropdown-content a {
             color: #2c3e50;
@@ -87,113 +93,183 @@
             transition: background-color 0.3s;
         }
         
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
         .dropdown-content a:hover {
             background-color: #f8f9fa;
+            opacity: 1;
         }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn {
+            cursor: pointer;
+            padding-bottom: 1rem;
+        }
+            opacity: 0.8;
+
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            z-index: 1000;
+            top: 100% !important;
+            margin-top: -8px !important;
+            padding-top: 0.5rem;
+        }
+        
+        .dropdown-content::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            right: -10px;
+            height: 28px;
+            background: transparent;
+        }
+        
+        .dropdown-content a {
+            color: #2c3e50;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            opacity: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn {
+            cursor: pointer;
+            padding-bottom: 1rem;
+        }
+        }
+
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            z-index: 1000;
+            top: 100% !important;
+            margin-top: -8px !important;
+            padding-top: 0.5rem;
+        }
+        
+        .dropdown-content::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            right: -10px;
+            height: 28px;
+            background: transparent;
+        }
+        
+        .dropdown-content a {
+            color: #2c3e50;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            opacity: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn {
+            cursor: pointer;
+            padding-bottom: 1rem;
+        }
+
+
+        
+        
+            background-color: #f8f9fa;
+        
+        }
+        
             content: '';
         
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
         
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-        }
+        
             position: absolute;
         
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
         
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-        }
+        
             top: -20px;
         
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
         
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-        }
+        
             left: -10px;
         
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
         
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-        }
+        
             right: -10px;
         
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
         
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-        }
+        
             height: 28px;
         
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
         
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-        }
+        
             background: transparent;
         
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
+        
+        
         }
         
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-        }
-        }
         
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
         
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-        }
 
         
         /* 햄버거 메뉴 */
