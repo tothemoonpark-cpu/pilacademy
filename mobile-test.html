@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 테스트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            flex-wrap: nowrap;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .menu-toggle {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+        }
+        
+        .nav-links {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            flex-direction: column;
+            padding: 1rem 0;
+            z-index: 999;
+        }
+        
+        .nav-links.active {
+            display: flex;
+        }
+        
+        .nav-links li {
+            list-style: none;
+            text-align: center;
+            padding: 0.8rem 0;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        main {
+            margin-top: 70px;
+            padding: 2rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">📚 필아카데미</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">작가소개</a></li>
+                <li><a href="#">독저팅™</a></li>
+                <li><a href="#">VOD 강의</a></li>
+                <li><a href="#">필북</a></li>
+                <li><a href="#">저서</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>모바일 테스트 페이지</h1>
+        <p>햄버거 메뉴를 클릭해보세요.</p>
+        <p>로고가 "📚 필아카데미"로 한 줄에 표시되는지 확인하세요.</p>
+    </main>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
