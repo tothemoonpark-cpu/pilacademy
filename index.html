@@ -114,7 +114,7 @@
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             border-radius: 8px;
             z-index: 1000;
-            top: 100%;
+            top: calc(100% - 5px);
             margin-top: 0;
             padding-top: 0.5rem;
         }
@@ -122,10 +122,10 @@
         .dropdown-content::before {
             content: '';
             position: absolute;
-            top: -0.5rem;
+            top: -10px;
             left: 0;
             right: 0;
-            height: 0.5rem;
+            height: 15px;
             background: transparent;
         }
         
