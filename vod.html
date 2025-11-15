@@ -291,33 +291,61 @@
                         <!-- VOD 1 -->
                         <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">📚 책을 왜 써야 하는가?</h4>
-                            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                                <iframe src="https://www.youtube.com/embed/LMJlXdB5EBk?rel=0&modestbranding=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div id="preview1Container">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                                    <iframe id="preview1" src="https://www.youtube.com/embed/LMJlXdB5EBk?rel=0&modestbranding=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </div>
+                            <div id="preview1Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
+                            </div>
+                            <a href="index.html#vod" style="display: block; margin-top: 1.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</a>
                         </div>
                         
                         <!-- VOD 2 -->
                         <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">✍️ 책쓰기는 기획이 80%다!</h4>
-                            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                                <iframe src="https://www.youtube.com/embed/FiG1ozu0Dqw?rel=0&modestbranding=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div id="preview2Container">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                                    <iframe id="preview2" src="https://www.youtube.com/embed/FiG1ozu0Dqw?rel=0&modestbranding=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </div>
+                            <div id="preview2Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
+                            </div>
+                            <a href="index.html#vod" style="display: block; margin-top: 1.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (79,000원)</a>
                         </div>
                         
                         <!-- VOD 3 -->
                         <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">💼 쉽게 이해하는 퍼스널 브랜딩</h4>
-                            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                                <iframe src="https://www.youtube.com/embed/2LbN3p42jaQ?rel=0&modestbranding=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div id="preview3Container">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                                    <iframe id="preview3" src="https://www.youtube.com/embed/2LbN3p42jaQ?rel=0&modestbranding=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </div>
+                            <div id="preview3Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
+                            </div>
+                            <a href="index.html#vod" style="display: block; margin-top: 1.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (79,000원)</a>
                         </div>
                         
                         <!-- VOD 4 -->
                         <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">🚀 직장인이 아닌 직업인으로</h4>
-                            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                                <iframe src="https://www.youtube.com/embed/ZN4COh8N43I?rel=0&modestbranding=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div id="preview4Container">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                                    <iframe id="preview4" src="https://www.youtube.com/embed/ZN4COh8N43I?rel=0&modestbranding=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </div>
+                            <div id="preview4Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
+                            </div>
+                            <a href="index.html#vod" style="display: block; margin-top: 1.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</a>
                         </div>
                     </div>
                 </div>
@@ -340,9 +368,28 @@
             if (content.style.display === 'none') {
                 content.style.display = 'block';
                 arrow.textContent = '▲';
+                
+                // detail2가 열릴 때 미리보기 타이머 시작
+                if (id === 'detail2') {
+                    startPreviewTimers();
+                }
             } else {
                 content.style.display = 'none';
                 arrow.textContent = '▼';
+            }
+        }
+        
+        function startPreviewTimers() {
+            // 각 미리보기 영상에 1분 타이머 설정
+            for (let i = 1; i <= 4; i++) {
+                setTimeout(function() {
+                    const iframe = document.getElementById('preview' + i);
+                    const message = document.getElementById('preview' + i + 'Message');
+                    if (iframe && message) {
+                        iframe.remove();
+                        message.style.display = 'block';
+                    }
+                }, 60000); // 60초 = 1분
             }
         }
         
