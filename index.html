@@ -1488,6 +1488,23 @@
             section {
                 padding: 40px 1rem !important;
             }
+            
+            /* VOD 상세 모달 모바일 최적화 */
+            #vodDetailModal .modal-content {
+                width: 95%;
+                max-height: 90vh;
+            }
+            
+            /* 비교 섹션 모바일에서 세로 배치 */
+            @media (max-width: 768px) {
+                div[style*="grid-template-columns: 1fr 1fr"] {
+                    display: block !important;
+                }
+                
+                div[style*="grid-template-columns: 1fr 1fr"] > div {
+                    margin-bottom: 1rem;
+                }
+            }
         }
 </style>
 </head>
@@ -2022,24 +2039,110 @@
             
             // 상세 내용 생성
             let bodyHTML = '<div style="padding: 2rem;">';
-            bodyHTML += '<p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem; line-height: 1.8;">' + vodData.subtitle + '</p>';
+            bodyHTML += '<p style="font-size: 1.15rem; color: #666; margin-bottom: 2.5rem; line-height: 1.8; font-weight: 500;">' + vodData.subtitle + '</p>';
             
+            // 이런 변화를 기대하세요
             if (vodData.changes) {
-                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem;">💡 이 강의를 통해 얻게 되는 것</h3>';
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">💡 이런 변화를 기대하세요</h3>';
                 bodyHTML += '<ul style="list-style: none; padding: 0;">';
                 vodData.changes.forEach(change => {
-                    bodyHTML += '<li style="padding: 0.8rem 0; border-bottom: 1px solid #eee;">✓ ' + change + '</li>';
+                    bodyHTML += '<li style="padding: 1rem; margin-bottom: 0.5rem; background: #f8f9fa; border-left: 4px solid #4ECDC4; border-radius: 4px; line-height: 1.7;">✓ ' + change + '</li>';
                 });
                 bodyHTML += '</ul>';
             }
             
+            // 이런 분께 추천합니다
             if (vodData.recommend) {
-                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem;">👥 이런 분들께 추천합니다</h3>';
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">👥 이런 분께 추천합니다</h3>';
                 bodyHTML += '<ul style="list-style: none; padding: 0;">';
                 vodData.recommend.forEach(rec => {
-                    bodyHTML += '<li style="padding: 0.8rem 0; border-bottom: 1px solid #eee;">• ' + rec + '</li>';
+                    bodyHTML += '<li style="padding: 1rem; margin-bottom: 0.5rem; background: #fff8e1; border-left: 4px solid #fbbf24; border-radius: 4px; line-height: 1.7;">• ' + rec + '</li>';
                 });
                 bodyHTML += '</ul>';
+            }
+            
+            // 잘못된 믿음 깨기
+            if (vodData.myths) {
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">❌ 잘못된 믿음 깨기</h3>';
+                bodyHTML += '<div style="background: #fff5f5; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">';
+                bodyHTML += '<h4 style="color: #dc2626; margin-bottom: 1rem; font-size: 1.1rem;">잘못된 생각</h4>';
+                bodyHTML += '<ul style="list-style: none; padding: 0;">';
+                vodData.myths.wrong.forEach(myth => {
+                    bodyHTML += '<li style="padding: 0.5rem 0; color: #666;">❌ ' + myth + '</li>';
+                });
+                bodyHTML += '</ul>';
+                bodyHTML += '<h4 style="color: #16a34a; margin: 1.5rem 0 1rem; font-size: 1.1rem;">놀라운 진실</h4>';
+                bodyHTML += '<ul style="list-style: none; padding: 0;">';
+                vodData.myths.truth.forEach(truth => {
+                    bodyHTML += '<li style="padding: 0.5rem 0; color: #666;">✅ ' + truth + '</li>';
+                });
+                bodyHTML += '</ul>';
+                bodyHTML += '</div>';
+            }
+            
+            // 추가 섹션들 (reality, principles, comparison, cases, faq, closing 등)
+            if (vodData.reality) {
+                bodyHTML += '<div style="background: #fef2f2; padding: 1.5rem; border-radius: 8px; border: 2px solid #ef4444; margin: 2rem 0;">';
+                bodyHTML += '<h4 style="color: #dc2626; margin-bottom: 1rem; font-size: 1.2rem;">⚠️ ' + vodData.reality.title + '</h4>';
+                vodData.reality.items.forEach(item => {
+                    bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7; color: #666;">' + item + '</p>';
+                });
+                bodyHTML += '</div>';
+            }
+            
+            if (vodData.principles) {
+                bodyHTML += '<div style="background: #f0fdf4; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">';
+                bodyHTML += '<h4 style="color: #16a34a; margin-bottom: 1rem; font-size: 1.2rem;">✨ ' + vodData.principles.title + '</h4>';
+                vodData.principles.items.forEach(item => {
+                    bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7; color: #666;">' + item + '</p>';
+                });
+                bodyHTML += '</div>';
+            }
+            
+            if (vodData.comparison) {
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">⚖️ ' + vodData.comparison.title + '</h3>';
+                bodyHTML += '<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">';
+                bodyHTML += '<div style="background: #fef2f2; padding: 1.5rem; border-radius: 8px;"><h4 style="color: #dc2626; margin-bottom: 1rem;">' + vodData.comparison.left.title + '</h4><ul style="list-style: none; padding: 0;">';
+                vodData.comparison.left.items.forEach(item => {
+                    bodyHTML += '<li style="padding: 0.3rem 0; color: #666;">❌ ' + item + '</li>';
+                });
+                bodyHTML += '</ul></div>';
+                bodyHTML += '<div style="background: #f0fdf4; padding: 1.5rem; border-radius: 8px;"><h4 style="color: #16a34a; margin-bottom: 1rem;">' + vodData.comparison.right.title + '</h4><ul style="list-style: none; padding: 0;">';
+                vodData.comparison.right.items.forEach(item => {
+                    bodyHTML += '<li style="padding: 0.3rem 0; color: #666;">✅ ' + item + '</li>';
+                });
+                bodyHTML += '</ul></div></div>';
+            }
+            
+            if (vodData.cases) {
+                bodyHTML += '<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; color: white; margin: 2rem 0;">';
+                bodyHTML += '<h4 style="margin-bottom: 1rem; font-size: 1.2rem;">🎯 ' + vodData.cases.title + '</h4>';
+                vodData.cases.items.forEach(item => {
+                    bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7;">' + item + '</p>';
+                });
+                if (vodData.cases.highlight) {
+                    bodyHTML += '<p style="margin-top: 1rem; font-size: 1.1rem; font-weight: bold; color: #FFD700;">' + vodData.cases.highlight + '</p>';
+                }
+                bodyHTML += '</div>';
+            }
+            
+            if (vodData.faq) {
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">❓ 자주 묻는 질문</h3>';
+                vodData.faq.forEach(item => {
+                    bodyHTML += '<div style="margin-bottom: 1.5rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">';
+                    bodyHTML += '<p style="font-weight: bold; color: #2c3e50; margin-bottom: 0.5rem;">Q. ' + item.q + '</p>';
+                    bodyHTML += '<p style="color: #666; line-height: 1.7;">A. ' + item.a + '</p>';
+                    bodyHTML += '</div>';
+                });
+            }
+            
+            if (vodData.closing) {
+                bodyHTML += '<div style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); padding: 2rem; border-radius: 12px; color: white; text-align: center; margin: 2rem 0;">';
+                bodyHTML += '<h4 style="font-size: 1.3rem; margin-bottom: 1rem;">' + vodData.closing.title + '</h4>';
+                vodData.closing.messages.forEach(msg => {
+                    bodyHTML += '<p style="line-height: 1.8; margin: 0.5rem 0;">' + msg + '</p>';
+                });
+                bodyHTML += '</div>';
             }
             
             bodyHTML += '</div>';
@@ -2077,8 +2180,22 @@
                     "책을 쓰면 무엇이 좋은지, 왜 써야 하는지 궁금한 분",
                     "'내가 작가가 될 수 있을까?' 하는 의구심과 두려움을 가진 분",
                     "퍼스널 브랜딩과 부수입 창출에 관심이 있는 직장인",
-                    "자아실현과 사회적 기여를 통해 의미 있는 삶을 살고 싶은 분"
-                ]
+                    "자아실현과 사회적 기여를 통해 의미 있는 삶을 살고 싶은 분",
+                    "은퇴 후 새로운 인생 2막을 준비하고 있는 분"
+                ],
+                myths: {
+                    wrong: [
+                        "내가 작가도 아닌데 무슨 책을 써",
+                        "작가는 타고나는 거야",
+                        "나는 글재주가 없어",
+                        "내 이야기는 평범해"
+                    ],
+                    truth: [
+                        "작가라서 책을 쓰는 게 아니라 책을 써서 작가가 되는 것!",
+                        "평범함이 곧 특별함입니다!",
+                        "당신의 경험과 지식이 소중한 자산입니다."
+                    ]
+                }
             });
         }
         
@@ -2100,8 +2217,64 @@
                     "여러 출판사에 투고했지만 계속 거절당해 좌절한 분",
                     "글쓰기와 책쓰기의 차이를 모르고 원고부터 쓰려는 분",
                     "전문직, 직장인으로서 자신의 경험을 책으로 만들고 싶은 분",
-                    "책을 통해 퍼스널 브랜딩과 N잡 기회를 만들고 싶은 분"
-                ]
+                    "책을 통해 퍼스널 브랜딩과 N잡 기회를 만들고 싶은 분",
+                    "체계적인 전략 없이 감으로만 책쓰기를 시도했다가 실패한 분"
+                ],
+                reality: {
+                    title: '충격적인 현실',
+                    items: [
+                        '대부분의 사람들이 원고부터 쓰기 시작하지만, 그래서 90% 이상 출판 계약에 실패합니다.'
+                    ]
+                },
+                principles: {
+                    title: '80% 기획의 핵심 원리',
+                    items: [
+                        '"성공하는 책 = 탄탄한 기획 + 기본 이상의 원고"',
+                        '편집자는 30초 만에 주제, 제목, 저자 프로필을 보고 3분 만에 목차와 출간기획서를 훑어보며 계약 여부를 결정합니다.',
+                        '기획이 약하면 아무리 좋은 원고도 빛을 잃습니다.'
+                    ]
+                },
+                comparison: {
+                    title: '글쓰기 vs 책쓰기',
+                    left: {
+                        title: '글쓰기',
+                        items: ['문장력이 핵심', '순간적 영감', '개인적 표현', '자유로운 형식', '즉흥적 창작']
+                    },
+                    right: {
+                        title: '책쓰기',
+                        items: ['기획력이 핵심', '체계적 설계', '독자 중심 사고', '상업적 고려', '전략적 접근']
+                    }
+                },
+                cases: {
+                    title: '박근필 작가의 실제 성공 사례',
+                    items: [
+                        '뛰어난 기획력으로 3권 연속 출간 성공',
+                        '첫 번째 책: 전자책을 투고해 출판 계약 성공',
+                        '두 번째 책: 원고 없이 "출간기획서"만으로 출판 계약 체결 (매우 이례적)',
+                        '세 번째 책: 선인세 조건으로 출판 계약 성사 (요즘 출판 시장에 흔하지 않음)'
+                    ],
+                    highlight: '기획만 탄탄하면 여러분도 할 수 있습니다!'
+                },
+                faq: [
+                    {
+                        q: '글쓰기 실력이 부족해도 책을 쓸 수 있나요?',
+                        a: '네, 가능합니다. 책쓰기에서 중요한 것은 문장력이 아니라 기획력입니다. 기본 이상의 글쓰기 실력만 있으면 충분하며, 탄탄한 기획이 있다면 누구나 투고에 성공해 출판 계약을 딸 수 있습니다.'
+                    },
+                    {
+                        q: '특별한 경험이나 전문성이 없어도 괜찮을까요?',
+                        a: '평범한 경험도 관점의 전환으로 특별한 이야기가 됩니다. 앞으로 책쓰기 1:1 코칭을 통해 여러분만의 독창적인 관점과 차별점을 찾아드립니다.'
+                    }
+                ],
+                closing: {
+                    title: '당신의 이야기가 세상을 만날 차례입니다',
+                    messages: [
+                        '기획이 탄탄하면 원고는 반드시 따라옵니다',
+                        '출판 계약도 분명히 가능합니다',
+                        '더 이상 막연한 꿈으로 남겨두지 마세요',
+                        '체계적인 전략으로 확실한 결과를 만들어보세요',
+                        '당신의 책이 세상에 나올 그날을 함께 만들어갑시다!'
+                    ]
+                }
             });
         }
         
@@ -2112,18 +2285,29 @@
                 subtitle: '퍼스널 브랜딩의 정수를 알려드립니다.',
                 duration: '1시간',
                 price: 79000,
-                changes: [
-                    "퍼스널 브랜딩의 본질을 이해하고 자신만의 브랜드 정체성을 확립합니다.",
-                    "콘텐츠 생산자로서의 마인드셋과 실전 전략을 습득합니다.",
-                    "SNS와 블로그를 활용한 효과적인 브랜딩 방법을 배웁니다.",
-                    "전문가로 인정받는 포지셔닝 전략을 수립합니다."
-                ],
                 recommend: [
-                    "자신만의 브랜드를 만들고 싶은 모든 분",
-                    "SNS 활동은 하지만 방향성이 불명확한 분",
-                    "전문가로서의 입지를 다지고 싶은 직장인",
-                    "퍼스널 브랜딩을 통해 새로운 기회를 만들고 싶은 분"
-                ]
+                    "자신만의 브랜드를 만들고 싶은 직장인",
+                    "부업이나 창업을 고민하는 분",
+                    "온라인에서 영향력을 키우고 싶은 분",
+                    "글쓰기를 통해 브랜딩하고 싶은 분",
+                    "나다운 삶을 살고 싶은 분",
+                    "퍼스널 브랜딩에 관심 있는 모든 분"
+                ],
+                changes: [
+                    "나만의 명확한 브랜드 정체성 확립",
+                    "온라인에서 일관성 있는 메시지 전달 능력",
+                    "콘텐츠 제작과 브랜딩 전략 수립 역량",
+                    "실패를 두려워하지 않는 도전 정신",
+                    "지속 가능한 퍼스널 브랜딩 로드맵"
+                ],
+                closing: {
+                    title: '당신의 브랜드 스토리를 시작하세요',
+                    messages: [
+                        '"오늘이 브랜딩 시작하기 가장 좋은 날이자 빠른 날입니다"',
+                        '나답게, 꾸준히, 진정성 있게!',
+                        '당신도 강력한 브랜드가 될 수 있습니다.'
+                    ]
+                }
             });
         }
         
@@ -2131,21 +2315,76 @@
         function openVod4() {
             openVodDetail({
                 title: '직장인이 아닌 직업인으로',
-                subtitle: '수의사에서 작가로 전환한 실제 경험을 바탕으로 커리어 전환 로드맵을 제시합니다.',
+                subtitle: '언제든 비자발적인 퇴사를 당할 수 있는 직장인에서 벗어나세요. 언제든 홀로서기가 가능한 직업인으로 살아가세요. 그 이유와 방법을 알려드립니다.',
                 duration: '1시간',
                 price: 29000,
                 changes: [
-                    "직장인과 직업인의 근본적인 차이를 이해합니다.",
-                    "커리어 전환을 위한 구체적인 준비 과정과 전략을 배웁니다.",
-                    "자신의 전문성을 활용한 새로운 기회 창출 방법을 터득합니다.",
-                    "실패 없는 안전한 커리어 전환 로드맵을 수립합니다."
+                    "직장인에서 직업인으로 전환해야 하는 이유에 대한 강렬한 동기 부여와 '당장 시작하고 싶다'는 열정이 생깁니다.",
+                    "직업인으로 살아가며 얻을 수 있는 경제적 혜택과 사회적 영향력에 대해 구체적으로 이해하게 됩니다.",
+                    "N잡 전략과 자발적 퇴사 준비 등 실제로 활용할 수 있는 생존 전략을 습득합니다.",
+                    "불안한 미래에 대비할 수 있는 구체적인 실행 계획과 로드맵을 얻게 됩니다."
                 ],
                 recommend: [
-                    "현재 직장에 대한 회의감을 느끼는 분",
-                    "제2의 인생을 준비하고 싶은 분",
-                    "자신만의 길을 개척하고 싶은 분",
-                    "전문성을 바탕으로 독립을 꿈꾸는 분"
-                ]
+                    "'언젠가는 직장을 벗어나 자유롭게 살고 싶다'는 막연한 꿈을 가진 분",
+                    "직장인과 직업인의 차이가 무엇인지, 왜 직업인이 되어야 하는지 궁금한 분",
+                    "'내가 정말 혼자서도 살아갈 수 있을까?' 하는 의구심과 두려움을 가진 분",
+                    "퍼스널 브랜딩과 부수입 창출에 관심이 있는 직장인",
+                    "자아실현과 사회적 기여를 통해 의미 있는 삶을 살고 싶은 분",
+                    "은퇴 후 새로운 인생 2막을 준비하고 있는 분"
+                ],
+                reality: {
+                    title: '충격적인 현실',
+                    items: [
+                        '한국 직장인의 첫 직장 평균 근속기간: 2.8년',
+                        '한국 근로자 평균 근속기간 (OECD 최하위): 5.6년',
+                        '2030년 인간 노동력의 AI·로봇 대체 가능률: 90%',
+                        '2022년 기준 국내 부업 인구: 54만 명'
+                    ]
+                },
+                principles: {
+                    title: '진짜 위기는 무엇인가?',
+                    items: [
+                        '"진짜 위기는 위기인데도 불구하고 위기인 것을 모르는 것이 진짜 위기입니다.',
+                        '그보다 더 큰 위기는 위기인 걸 알면서도 아무것도 하지 않는 것이 바로 더 큰 위기입니다."',
+                        '- 유재석, 《무한도전》 중'
+                    ]
+                },
+                comparison: {
+                    title: '직장인 vs 직업인',
+                    left: {
+                        title: '직장인',
+                        items: [
+                            '남이 만든 조직에 소속',
+                            '타인이 준 직책',
+                            '회사에 종속된 존재',
+                            '언젠가 나와야 하는 곳',
+                            '유한한 구조',
+                            '가짜 명함 (회사 명함)',
+                            '소비자적 존재'
+                        ]
+                    },
+                    right: {
+                        title: '직업인',
+                        items: [
+                            '내 몸과 머리의 개인기',
+                            '스스로 정의한 전문성',
+                            '자율적인 존재',
+                            '어디서든 필요한 사람',
+                            '무한 확장 가능한 구조',
+                            '진짜 명함 (내 명함)',
+                            '생산자적 존재'
+                        ]
+                    }
+                },
+                closing: {
+                    title: '내 삶을 내가 주체적으로 주도적으로 살 수 있는 직업인으로 살아가세요',
+                    messages: [
+                        '현 직장을 언제 떠나도 괜찮을 정도로 나를 만들어보세요.',
+                        '그럼 삶이 불안하지 않습니다.',
+                        '인생을 주도적으로 살 수 있습니다.',
+                        '오늘부터 준비와 대비를 시작하세요!'
+                    ]
+                }
             });
         }
         
