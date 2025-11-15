@@ -189,6 +189,174 @@
                 color: white;
             }
         }
+        
+        /* 결제 모달 스타일 */
+        .payment-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 20000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .payment-modal.active {
+            display: flex;
+        }
+        
+        .payment-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .payment-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #999;
+            background: none;
+            border: none;
+            line-height: 1;
+        }
+        
+        .payment-close:hover {
+            color: #333;
+        }
+        
+        .payment-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #4ECDC4;
+        }
+        
+        .payment-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .payment-info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .payment-info-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .payment-info-label {
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .payment-info-value {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .payment-price {
+            font-size: 1.5rem;
+            color: #4ECDC4;
+        }
+        
+        .payment-account {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .payment-account-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+        
+        .payment-account-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        
+        .payment-account-holder {
+            font-size: 1.1rem;
+        }
+        
+        .payment-notice {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            color: #856404;
+        }
+        
+        .payment-form {
+            margin-top: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #4ECDC4;
+        }
+        
+        .payment-submit {
+            width: 100%;
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .payment-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+        }
     </style>
 </head>
 <body>
@@ -301,7 +469,7 @@
                                 <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
                             </div>
                             <button onclick="openVodDetail1()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <a href="index.html#vod" style="display: block; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</a>
+                            <button onclick="showPaymentInfo('책을 왜 써야 하는가?', 29000)" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</button>
                         </div>
                         
                         <!-- VOD 2 -->
@@ -317,7 +485,7 @@
                                 <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
                             </div>
                             <button onclick="openVodDetail2()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <a href="index.html#vod" style="display: block; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (79,000원)</a>
+                            <button onclick="showPaymentInfo('책쓰기는 기획이 80%다!', 79000)" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (79,000원)</button>
                         </div>
                         
                         <!-- VOD 3 -->
@@ -333,7 +501,7 @@
                                 <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
                             </div>
                             <button onclick="openVodDetail3()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <a href="index.html#vod" style="display: block; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (79,000원)</a>
+                            <button onclick="showPaymentInfo('쉽게 이해하는 퍼스널 브랜딩', 79000)" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (79,000원)</button>
                         </div>
                         
                         <!-- VOD 4 -->
@@ -349,11 +517,64 @@
                                 <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
                             </div>
                             <button onclick="openVodDetail4()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <a href="index.html#vod" style="display: block; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</a>
+                            <button onclick="showPaymentInfo('직장인이 아닌 직업인으로', 29000)" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- 결제 안내 모달 -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-content">
+            <button class="payment-close" onclick="closePaymentModal()">×</button>
+            <h2 class="payment-title">VOD 구매</h2>
+            
+            <div class="payment-info">
+                <div class="payment-info-item">
+                    <span class="payment-info-label">상품명</span>
+                    <span class="payment-info-value" id="productName"></span>
+                </div>
+                <div class="payment-info-item">
+                    <span class="payment-info-label">가격</span>
+                    <span class="payment-info-value payment-price" id="productPrice"></span>
+                </div>
+            </div>
+            
+            <div class="payment-account">
+                <div class="payment-account-label">입금 계좌</div>
+                <div class="payment-account-number">국민은행<br>586302-04-011351</div>
+                <div class="payment-account-holder">예금주: 박근필</div>
+            </div>
+            
+            <div class="payment-notice">
+                ⚠️ 입금 후 아래 정보를 입력하시면, 입금 확인 후 VOD 링크를 보내드립니다.
+            </div>
+            
+            <form class="payment-form" id="paymentForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="065b78d5-e112-4569-97f6-9f536177f948">
+                <input type="hidden" name="subject" id="formSubject" value="[필아카데미] VOD 구매 - 입금 확인 요청">
+                <input type="hidden" name="from_name" value="필아카데미 신청 시스템">
+                <textarea name="message" style="display:none;" id="formMessage"></textarea>
+                
+                <div class="form-group">
+                    <label for="paymentName">입금자명 *</label>
+                    <input type="text" id="paymentName" name="입금자명" required placeholder="홍길동">
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentEmail">이메일 *</label>
+                    <input type="email" id="paymentEmail" name="이메일" required placeholder="example@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentPhone">연락처 *</label>
+                    <input type="tel" id="paymentPhone" name="연락처" required placeholder="010-0000-0000">
+                </div>
+                
+                <button type="submit" class="payment-submit">입금 완료 알림 전송</button>
+            </form>
         </div>
     </div>
 
@@ -448,6 +669,75 @@
             const logo = document.querySelector('.logo');
             if (navLinks) navLinks.classList.remove('active');
             if (logo) logo.classList.remove('hidden');
+        });
+        
+        // 결제 모달 함수
+        function showPaymentInfo(itemName, price) {
+            const modal = document.getElementById('paymentModal');
+            document.getElementById('productName').textContent = itemName;
+            document.getElementById('productPrice').textContent = price.toLocaleString() + '원';
+            modal.classList.add('active');
+        }
+        
+        function closePaymentModal() {
+            document.getElementById('paymentModal').classList.remove('active');
+        }
+        
+        // 결제 폼 제출 처리
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('paymentForm');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const productName = document.getElementById('productName').textContent;
+                    const productPrice = document.getElementById('productPrice').textContent;
+                    const paymentName = document.getElementById('paymentName').value;
+                    const paymentEmail = document.getElementById('paymentEmail').value;
+                    const paymentPhone = document.getElementById('paymentPhone').value;
+                    
+                    // 메시지 구성
+                    const message = `
+=== VOD 구매 입금 확인 요청 ===
+
+상품명: ${productName}
+가격: ${productPrice}
+
+입금자명: ${paymentName}
+이메일: ${paymentEmail}
+연락처: ${paymentPhone}
+
+입금 계좌: 국민은행 586302-04-011351 (박근필)
+
+입금 확인 후 VOD 링크를 보내드리겠습니다.
+                    `;
+                    
+                    document.getElementById('formMessage').value = message;
+                    document.getElementById('formSubject').value = '[필아카데미] VOD 구매 - ' + productName;
+                    
+                    // Web3Forms로 전송
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert('입금 확인 요청이 전송되었습니다!\n입금 확인 후 이메일로 VOD 링크를 보내드리겠습니다.');
+                            closePaymentModal();
+                            form.reset();
+                        } else {
+                            alert('전송 중 오류가 발생했습니다. 다시 시도해주세요.');
+                        }
+                    })
+                    .catch(error => {
+                        alert('전송 중 오류가 발생했습니다. 다시 시도해주세요.');
+                        console.error('Error:', error);
+                    });
+                    
+                    return false;
+                });
+            }
         });
         
         // VOD 상세 모달 열기 함수
