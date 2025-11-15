@@ -362,6 +362,7 @@
                         <div style="display: grid; gap: 1.5rem; max-width: 900px; margin: 0 auto;">
                             <img src="philbook-review-1.png" alt="필북 후기 1" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                             <img src="philbook-review-2.png" alt="필북 후기 2" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <img src="philbook-review-2-1.png" alt="필북 후기 2-1" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                             <img src="philbook-review-3.png" alt="필북 후기 3" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                             <img src="philbook-review-4.png" alt="필북 후기 4" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                             <img src="philbook-review-5.png" alt="필북 후기 5" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
@@ -608,20 +609,19 @@
     </footer>
 
     <script>
-    function toggleContent(id) {
-        var content = document.getElementById(id);
-        var arrow = document.getElementById('arrow' + id.replace('detail', ''));
-        
-        if (content.style.display === 'none') {
-            content.style.display = 'block';
-            arrow.textContent = '▲';
-        } else {
-            content.style.display = 'none';
-            arrow.textContent = '▼';
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            var arrow = document.getElementById('arrow' + id.replace('detail', ''));
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow.textContent = '▲';
+            } else {
+                content.style.display = 'none';
+                arrow.textContent = '▼';
+            }
         }
-    }
-    </script>
-    <script>
+        
         function toggleMenu() {
             const navLinks = document.getElementById("navLinks");
             const logo = document.querySelector(".logo");
@@ -635,14 +635,9 @@
         
         window.addEventListener("load", function() {
             const navLinks = document.getElementById("navLinks");
-            if (navLinks) navLinks.classList.remove("active");
-                        const logo = document.querySelector(".logo");
-                        if (logo) logo.classList.remove("hidden");
             const logo = document.querySelector(".logo");
+            if (navLinks) navLinks.classList.remove("active");
             if (logo) logo.classList.remove("hidden");
-        });
-        
-            });
         });
     </script>
 </body>
