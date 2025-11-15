@@ -2553,6 +2553,18 @@
             const logo = document.querySelector('.logo');
             if (navLinks) navLinks.classList.remove('active');
             if (logo) logo.classList.remove('hidden');
+            
+            // vod.html에서 상세보기 버튼 클릭 시 자동으로 모달 열기
+            const openVodNumber = sessionStorage.getItem('openVod');
+            if (openVodNumber) {
+                sessionStorage.removeItem('openVod'); // 사용 후 제거
+                setTimeout(function() {
+                    if (openVodNumber === '1') openVod1();
+                    else if (openVodNumber === '2') openVod2();
+                    else if (openVodNumber === '3') openVod3();
+                    else if (openVodNumber === '4') openVod4();
+                }, 500); // VOD 섹션으로 스크롤 후 모달 열기
+            }
         });
     </script>
 </body>
