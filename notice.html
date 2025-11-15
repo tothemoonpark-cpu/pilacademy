@@ -456,14 +456,44 @@
                 <div class="notice-date">2024.11.14</div>
                 <div>
                     <span class="notice-badge">NEW</span>
-                    <span class="notice-title">필아카데미 웹사이트 오픈!</span>
+                    <span class="notice-title">1. 필아카데미 웹사이트 오픈!</span>
                 </div>
                 <p style="margin-top: 1rem; color: #666;">필아카데미의 새로운 웹사이트가 오픈했습니다. 독저팅™, 필북, VOD 강의 등 다양한 서비스를 만나보세요.</p>
+            </div>
+            
+            <div class="notice-item" style="cursor: pointer; transition: all 0.3s;" onclick="toggleNotice('community')">
+                <div class="notice-date">2024.11.14</div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <span class="notice-badge" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">HOT</span>
+                        <span class="notice-title">2. 박근필 작가의 커뮤니티</span>
+                    </div>
+                    <span id="arrow-community" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
+                </div>
+                <div id="content-community" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">
+                    <p style="color: #666; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 500;">박근필 작가와의 동반 성장 단톡방</p>
+                    <a href="https://open.kakao.com/o/gxgxVmZh" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #FEE500 0%, #FFD700 100%); color: #3c1e1e; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: bold; transition: all 0.3s;">
+                        💬 카카오톡 오픈채팅 참여하기
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
+        function toggleNotice(id) {
+            const content = document.getElementById('content-' + id);
+            const arrow = document.getElementById('arrow-' + id);
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow.textContent = '▲';
+            } else {
+                content.style.display = 'none';
+                arrow.textContent = '▼';
+            }
+        }
+        
         function toggleMenu() {
             const navLinks = document.getElementById("navLinks");
             const logo = document.querySelector(".logo");
