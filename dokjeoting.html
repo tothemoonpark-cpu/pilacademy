@@ -650,14 +650,28 @@
         
         window.addEventListener("load", function() {
             const navLinks = document.getElementById("navLinks");
-            if (navLinks) navLinks.classList.remove("active");
-                        const logo = document.querySelector(".logo");
-                        if (logo) logo.classList.remove("hidden");
             const logo = document.querySelector(".logo");
+            if (navLinks) navLinks.classList.remove("active");
             if (logo) logo.classList.remove("hidden");
-        });
-        
-            });
+            
+            // URL 해시가 있으면 해당 섹션 자동으로 열기
+            const hash = window.location.hash;
+            if (hash) {
+                const targetId = hash.substring(1); // # 제거
+                const targetElement = document.getElementById(targetId);
+                if (targetElement && targetElement.style.display === 'none') {
+                    // 해당 섹션 열기
+                    targetElement.style.display = 'block';
+                    // 화살표 방향 변경
+                    const arrowId = 'arrow' + targetId.replace('detail', '');
+                    const arrow = document.getElementById(arrowId);
+                    if (arrow) arrow.textContent = '▲';
+                    // 스크롤 이동
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
         });
     </script>
 </body>
