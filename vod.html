@@ -849,8 +849,15 @@
                 }
             };
             
+            // 기존 안내 문구 제거 (중복 방지)
+            const existingNotice = buyBtn.parentElement.querySelector('.payment-notice');
+            if (existingNotice) {
+                existingNotice.remove();
+            }
+            
             // 안내 문구 추가
             const noticeText = document.createElement('p');
+            noticeText.className = 'payment-notice';
             noticeText.style.cssText = 'font-size: 0.9rem; color: white; margin-top: 0.8rem; text-align: center; opacity: 0.9;';
             noticeText.innerHTML = '💡 안전한 결제를 위해 Litt.ly로 이동합니다<br>결제 후 다시 필아카데미로 돌아와주세요';
             buyBtn.parentElement.appendChild(noticeText);
