@@ -594,11 +594,7 @@
                 </div>
             </div>
             
-            <div id="vodDetailBody" style="padding: 2rem; max-height: 70vh; overflow-y: auto;"></div>
-            
-            <div style="position: sticky; bottom: 0; background: white; padding: 2rem; border-top: 2px solid #e0e0e0; border-radius: 0 0 20px 20px; text-align: center;">
-                <button id="vodDetailBuyBtn" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; padding: 1.2rem 3rem; font-size: 1.2rem; font-weight: bold; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">지금 구매하기</button>
-            </div>
+            <div id="vodDetailBody" style="padding: 2rem; max-height: calc(90vh - 150px); overflow-y: auto;"></div>
         </div>
     </div>
 
@@ -839,15 +835,6 @@
             
             bodyHTML += '</div>';
             document.getElementById('vodDetailBody').innerHTML = bodyHTML;
-            
-            // 구매 버튼을 Litt.ly로 연결
-            const buyBtn = document.getElementById('vodDetailBuyBtn');
-            buyBtn.textContent = '💳 Litt.ly에서 구매하기';
-            buyBtn.onclick = function() {
-                if (vodData.littlyUrl) {
-                    window.open(vodData.littlyUrl, '_blank');
-                }
-            };
             
             modal.style.display = 'block';
         }
