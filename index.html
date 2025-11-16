@@ -1679,7 +1679,8 @@
                         <span class="vod-price">29,000원</span>
                     </div>
                     <button class="vod-button" onclick="openVod1()" style="background: white; color: #4ECDC4; border: 2px solid #4ECDC4; margin-bottom: 0.5rem;">📖 상세보기</button>
-                    <button class="vod-button" onclick="event.stopPropagation(); showPaymentInfo('책을 왜 써야 하는가?', 29000)">구매하기</button>
+                    <button class="vod-button" onclick="event.stopPropagation(); window.open('https://litt.ly/tothemoonpark/sale/076WClZ', '_blank')">구매하기</button>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem; text-align: center;">💳 안전한 결제를 위해 Litt.ly로 이동합니다</p>
                 </div>
             </div>
 
@@ -1690,10 +1691,11 @@
                     <p class="vod-description">책 쓰기의 핵심은 기획 80%, 집필 20%. 출판사가 원하는 기획서 작성부터 원고 완성까지 전 과정을 공개합니다.</p>
                     <div class="vod-meta">
                         <span class="vod-duration">⏱ 1시간 50분</span>
-                        <span class="vod-price">79,000원</span>
+                        <span class="vod-price">49,000원</span>
                     </div>
                     <button class="vod-button" onclick="openVod2()" style="background: white; color: #4ECDC4; border: 2px solid #4ECDC4; margin-bottom: 0.5rem;">📖 상세보기</button>
-                    <button class="vod-button" onclick="event.stopPropagation(); showPaymentInfo('책쓰기는 기획과 제작이다!', 79000)">구매하기</button>
+                    <button class="vod-button" onclick="event.stopPropagation(); window.open('https://litt.ly/tothemoonpark/sale/UrfM4Bu', '_blank')">구매하기</button>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem; text-align: center;">💳 안전한 결제를 위해 Litt.ly로 이동합니다</p>
                 </div>
             </div>
 
@@ -1704,10 +1706,11 @@
                     <p class="vod-description">자신만의 브랜드를 만들고 전문가로 인정받는 방법. 콘텐츠 생산자로서의 정체성 확립 전략을 알려드립니다.</p>
                     <div class="vod-meta">
                         <span class="vod-duration">⏱ 1시간</span>
-                        <span class="vod-price">79,000원</span>
+                        <span class="vod-price">49,000원</span>
                     </div>
                     <button class="vod-button" onclick="openVod3()" style="background: white; color: #4ECDC4; border: 2px solid #4ECDC4; margin-bottom: 0.5rem;">📖 상세보기</button>
-                    <button class="vod-button" onclick="event.stopPropagation(); showPaymentInfo('쉽게 이해하는 퍼스널 브랜딩', 79000)">구매하기</button>
+                    <button class="vod-button" onclick="event.stopPropagation(); window.open('https://litt.ly/tothemoonpark/sale/atoZl7U', '_blank')">구매하기</button>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem; text-align: center;">💳 안전한 결제를 위해 Litt.ly로 이동합니다</p>
                 </div>
             </div>
 
@@ -1721,7 +1724,8 @@
                         <span class="vod-price">29,000원</span>
                     </div>
                     <button class="vod-button" onclick="openVod4()" style="background: white; color: #4ECDC4; border: 2px solid #4ECDC4; margin-bottom: 0.5rem;">📖 상세보기</button>
-                    <button class="vod-button" onclick="event.stopPropagation(); showPaymentInfo('직장인이 아닌 직업인으로', 29000)">구매하기</button>
+                    <button class="vod-button" onclick="event.stopPropagation(); window.open('https://litt.ly/tothemoonpark/sale/BDPw8UV', '_blank')">구매하기</button>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem; text-align: center;">💳 안전한 결제를 위해 Litt.ly로 이동합니다</p>
                 </div>
             </div>
         </div>
@@ -2181,11 +2185,20 @@
                 }, 60000); // 60초 = 1분
             }
             
-            // 구매 버튼 이벤트
+            // 구매 버튼 이벤트 - Litt.ly로 연결
             document.getElementById('vodDetailBuyBtn').onclick = function() {
-                closeVodDetail();
-                showPaymentInfo(vodData.title, vodData.price);
+                if (vodData.littlyUrl) {
+                    window.open(vodData.littlyUrl, '_blank');
+                }
             };
+            
+            // 안내 문구 추가
+            const buyButton = document.getElementById('vodDetailBuyBtn');
+            buyButton.textContent = '💳 Litt.ly에서 구매하기';
+            const noticeText = document.createElement('p');
+            noticeText.style.cssText = 'font-size: 0.9rem; color: #666; margin-top: 0.5rem; text-align: center;';
+            noticeText.innerHTML = '💡 안전한 결제를 위해 Litt.ly로 이동합니다<br>결제 후 다시 필아카데미로 돌아와주세요';
+            buyButton.parentElement.appendChild(noticeText);
             
             modal.classList.add('active');
         }
@@ -2201,6 +2214,7 @@
                 subtitle: '강의 시청 후 책쓰기에 관한 강력한 동기부여와 자신감을 얻으실 겁니다.',
                 duration: '1시간 30분',
                 price: 29000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/076WClZ',
                 youtubeId: 'LMJlXdB5EBk',
                 changes: [
                     "'나는 글 못 써'라는 생각에서 완전히 벗어나 '나도 작가가 될 수 있다'는 확신을 갖게 됩니다.",
@@ -2239,7 +2253,8 @@
                 title: '책쓰기는 기획과 제작이다!',
                 subtitle: '책쓰기의 핵심과 본질을 파악해 출판 계약으로 이어지는 투고를 할 수 있습니다.',
                 duration: '1시간 50분',
-                price: 79000,
+                price: 49000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/UrfM4Bu',
                 youtubeId: 'FiG1ozu0Dqw',
                 changes: [
                     "80% 기획의 핵심을 이해하고 출판 계약 성공률을 획기적으로 높입니다.",
@@ -2319,7 +2334,8 @@
                 title: '쉽게 이해하는 퍼스널 브랜딩',
                 subtitle: '퍼스널 브랜딩의 정수를 알려드립니다.',
                 duration: '1시간',
-                price: 79000,
+                price: 49000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/atoZl7U',
                 youtubeId: '2LbN3p42jaQ',
                 recommend: [
                     "자신만의 브랜드를 만들고 싶은 직장인",
@@ -2354,6 +2370,7 @@
                 subtitle: '언제든 비자발적인 퇴사를 당할 수 있는 직장인에서 벗어나세요. 언제든 홀로서기가 가능한 직업인으로 살아가세요. 그 이유와 방법을 알려드립니다.',
                 duration: '1시간',
                 price: 29000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/BDPw8UV',
                 youtubeId: 'ZN4COh8N43I',
                 changes: [
                     "직장인에서 직업인으로 전환해야 하는 이유에 대한 강렬한 동기 부여와 '당장 시작하고 싶다'는 열정이 생깁니다.",
