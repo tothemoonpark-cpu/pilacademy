@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필레터 - 필아카데미</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* 헤더 */
+        header {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* 메인 컨텐츠 */
+        main {
+            margin-top: 80px;
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            color: #f5576c;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            font-size: 1.3rem;
+            color: #666;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .content-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .content-section h2 {
+            color: #f5576c;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #f5576c;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .content-section li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        
+        .content-section li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #f5576c;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(240,147,251,0.1) 0%, rgba(245,87,108,0.1) 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #f5576c;
+            margin: 2rem 0;
+        }
+        
+        .subscribe-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 3rem;
+        }
+        
+        .subscribe-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subscribe-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        /* 푸터 */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .content-section {
+                padding: 2rem 1.5rem;
+            }
+            
+            .content-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .content-section p,
+            .content-section li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">📚 필아카데미</a>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="author.html">작가소개</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="index.html#contact">상담신청</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">📮 필레터</h1>
+        <p class="page-subtitle">매주 수요일 오전 11시, 박근필 작가의 편지</p>
+
+        <div class="content-section">
+            <h2>필레터 상세 안내</h2>
+            
+            <p>
+                <strong>필레터</strong>는 박근필 작가가 매주 수요일 오전 11시, 여러분의 메일함으로 보내드리는 특별한 편지입니다.
+            </p>
+
+            <div class="highlight-box">
+                <p style="font-size: 1.2rem; font-weight: bold; color: #f5576c; margin-bottom: 0.5rem;">
+                    📚 필레터에서 다루는 주제
+                </p>
+                <p style="color: #555; margin-bottom: 0;">
+                    독서, 글쓰기, 책쓰기, 자기계발, 삶의 성장을 주제로<br>
+                    매주 한 편의 글을 메일로 보내드립니다
+                </p>
+            </div>
+
+            <h2 style="margin-top: 3rem;">필레터의 특별함</h2>
+            
+            <ul>
+                <li><strong>독점 콘텐츠</strong> - 웹사이트에 공개되지 않는 뉴스레터만의 인사이트</li>
+                <li><strong>실전 노하우</strong> - 수많은 경험과 시행착오로 얻은 노하우를 전달합니다</li>
+                <li><strong>작가의 진심</strong> - 하루하루를 버텨내는 삶의 태도와 관점을 나눕니다</li>
+                <li><strong>무료 구독</strong> - 언제든 구독과 구독 취소가 가능합니다</li>
+            </ul>
+
+            <h2 style="margin-top: 3rem;">이런 분들께 추천합니다</h2>
+            
+            <ul>
+                <li>책 쓰기를 준비하고 계신 분</li>
+                <li>글쓰기 실력을 키우고 싶으신 분</li>
+                <li>자기계발과 성장에 관심이 있으신 분</li>
+                <li>작가의 삶과 생각이 궁금하신 분</li>
+                <li>매주 한 편의 좋은 글을 읽고 싶으신 분</li>
+            </ul>
+
+            <div class="highlight-box" style="margin-top: 2rem;">
+                <p style="font-size: 1.1rem; font-weight: bold; color: #f5576c; margin-bottom: 0.5rem;">
+                    💌 첫 구독자 선물
+                </p>
+                <p style="color: #555; margin-bottom: 0;">
+                    구독하시면 <strong>"책쓰기 기획 체크리스트"</strong>를 선물로 드립니다
+                </p>
+            </div>
+        </div>
+
+        <div class="subscribe-section">
+            <h2>📮 지금 바로 구독하세요</h2>
+            <p>매주 수요일 오전 11시, 여러분의 성장을 응원하는 편지를 받아보세요</p>
+            
+            <!-- 스티비 구독 폼 -->
+            <link rel="stylesheet" href="https://resource.stibee.com/subscribe/stb_subscribe_form_style.css">
+            <div id="stibee-form-container" style="max-width: 500px; margin: 0 auto; background: white; padding: 2rem; border-radius: 15px;">
+              <div id="stb_subscribe">
+                <form action="https://stibee.com/api/v1.0/lists/0fJXgRgUwHa-0b1wHoSg5i47yC2moQ==/public/subscribers" method="POST" target="_blank" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form" data-lang="" novalidate>
+                  
+                  <h1 class="stb_form_title" style="color: #f5576c;">필레터 구독하기</h1>
+                  
+                  <fieldset class="stb_form_set">
+                    <label for="stb_email" class="stb_form_set_label">
+                      이메일 주소<span class="stb_asterisk">*</span>
+                    </label>
+                    <input type="text" class="stb_form_set_input" id="stb_email" name="email" required="required">
+                    <div class="stb_form_msg_error" id="stb_email_error"></div>
+                  </fieldset>
+                  
+                  <div class="stb_form_policy">
+                    <label>
+                      <input type="checkbox" id="stb_policy" value="stb_policy_true">
+                      <span>(필수)</span>
+                      <button id="stb_form_modal_open" data-modal="stb_form_policy_modal" class="stb_form_modal_open_btn" type="button">개인정보 수집 및 이용</button>에 동의합니다.
+                    </label>
+                    <div class="stb_form_msg_error" id="stb_policy_error"></div>
+                    <div class="stb_form_modal stb_form_policy_text blind" id="stb_form_policy_modal">
+                      <div class="stb_form_modal_body">
+                        <h1 class="stb_form_modal_title">개인정보 수집 및 이용</h1>
+                        <div class="stb_form_modal_text">뉴스레터 발송을 위한 최소한의 개인정보를 수집하고 이용합니다. 수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료되거나 구독을 해지할 경우 즉시 파기됩니다.</div>
+                        <div class="stb_form_modal_btn">
+                          <button id="stb_form_modal_close" class="stb_form_modal_close_btn" data-modal="stb_form_policy_modal" type="button">닫기</button>
+                        </div>
+                      </div>
+                      <div class="stb_form_modal_bg" id="stb_form_modal_bg"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="stb_form_result" id="stb_form_result"></div>
+                  
+                  <fieldset class="stb_form_set_submit">
+                    <button type="submit" class="stb_form_submit_button" id="stb_form_submit_button" style="background-color: #FF6464; color: #FFFFFF;">구독하기</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <script type="text/javascript" src="https://resource.stibee.com/subscribe/stb_subscribe_form.js"></script>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 필아카데미 by 박근필. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">여러분의 읽고 쓰고 말하는 삶을 응원합니다</p>
+    </footer>
+</body>
+</html>
