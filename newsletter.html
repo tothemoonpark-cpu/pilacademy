@@ -31,68 +31,124 @@
         }
         
         nav {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 1.5rem;
+            padding: 0 2rem;
         }
         
         .logo {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             font-weight: bold;
-            text-decoration: none;
-            color: white;
-            margin-right: 2rem;
-            flex-shrink: 0;
         }
         
         .nav-links {
             display: flex;
-            gap: 1.2rem;
+            gap: 2rem;
             list-style: none;
-            flex-wrap: nowrap;
-            align-items: center;
         }
         
         .nav-links a {
             color: white;
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.95rem;
             transition: opacity 0.3s;
-            white-space: nowrap;
         }
         
         .nav-links a:hover {
             opacity: 0.8;
         }
         
-        @media (max-width: 1400px) {
-            nav {
-                padding: 0 1rem;
-            }
-            
-            .logo {
-                font-size: 1.4rem;
-                margin-right: 1rem;
-            }
-            
-            .nav-links {
-                gap: 0.8rem;
-                font-size: 0.85rem;
-            }
-            
-            .nav-links a {
-                font-size: 0.85rem;
-            }
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            z-index: 1000;
+            top: 100% !important;
+            margin-top: -8px !important;
+            padding-top: 0.5rem;
+        }
+        
+        .dropdown-content::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            right: -10px;
+            height: 28px;
+            background: transparent;
+        }
+        
+        .dropdown-content a {
+            color: #2c3e50;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            opacity: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn {
+            cursor: pointer;
+            padding-bottom: 1rem;
+        }
+        
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
         }
         
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
+            nav { padding: 0 1rem; }
+            .menu-toggle { display: flex; }
+            .nav-links { 
+                display: none; 
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+                flex-direction: column;
+                padding: 1rem 0;
             }
+            .nav-links.active { display: flex; }
+            .nav-links li { text-align: center; padding: 0.8rem 0; }
+            .dropdown-content { position: static; background: rgba(255,255,255,0.1); }
+            .dropdown-content a { color: white; }
         }
         
         /* 메인 컨텐츠 */
@@ -278,16 +334,33 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo">📚 필아카데미</a>
-            <ul class="nav-links">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;">📚 필아카데미</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">홈</a></li>
                 <li><a href="author.html">작가소개</a></li>
-                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="dokjeoting.html">독저팅™</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
                 <li><a href="philbook.html">필북</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">SNS</a>
+                    <div class="dropdown-content">
+                        <a href="https://blog.naver.com/tothemoon_park" target="_blank">📝 블로그</a>
+                        <a href="https://brunch.co.kr/@tothemoonpark" target="_blank">✍️ 브런치</a>
+                        <a href="https://www.youtube.com/@tothemoonpark" target="_blank">🎥 유튜브</a>
+                        <a href="https://www.instagram.com/tothemoon_park/" target="_blank">📷 인스타그램</a>
+                        <a href="https://www.threads.com/@tothemoon_park" target="_blank">🧵 스레드</a>
+                        <a href="https://x.com/Tothemoon_Park" target="_blank">🐦 X (트위터)</a>
+                    </div>
+                </li>
                 <li><a href="index.html#contact">상담신청</a></li>
+                <li><a href="notice.html">공지사항</a></li>
             </ul>
         </nav>
     </header>
@@ -424,6 +497,12 @@
                 icon.textContent = '▲';
                 button.classList.add('active');
             }
+        }
+
+        // 햄버거 메뉴 토글
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
         }
 
         // URL에 해시가 있으면 자동으로 열기
