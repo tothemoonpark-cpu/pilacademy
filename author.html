@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>작가소개 - 필아카데미</title>
+    
+    <!-- SEO 메타 태그 -->
+    <meta name="description" content="수의사에서 베스트셀러 작가로 변신한 박근필 작가의 소개. 책쓰기 기획 전문가, 독저팅 창시자">
+    <meta name="keywords" content="박근필, 작가, 수의사, 베스트셀러, 독저팅, 책쓰기 컨설턴트">
+    <meta name="author" content="박근필">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/author.html">
+    
+    <!-- 구조화된 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "박근필",
+        "jobTitle": ["작가", "책쓰기 컨설턴트", "강연가"],
+        "description": "수의사에서 베스트셀러 작가로 변신한 책쓰기 기획 전문가",
+        "alumniOf": "수의학",
+        "numberOfPublications": 4,
+        "award": "교보문고 베스트셀러 1위"
+      }
+    }
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -279,6 +304,9 @@
             cursor: pointer;
             gap: 5px;
             flex-shrink: 0;
+            background: none;
+            border: none;
+            padding: 0;
         }
         
         .menu-toggle span {
@@ -353,14 +381,14 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;">📚 필아카데미</a>
-            <div class="menu-toggle" onclick="toggleMenu()">
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;" aria-label="필아카데미 홈으로 이동">📚 필아카데미</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="모바일 메뉴 열기" aria-expanded="false" aria-controls="navLinks">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">홈</a></li>
                 <li><a href="author.html">작가소개</a></li>
@@ -389,9 +417,10 @@
 
     <div style="height: 80px;"></div>
 
+    <main role="main">
     <div style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;">
         <div>
-            <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50;">✍️ 박근필 작가</h2>
+            <h1 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50;">✍️ 박근필 작가</h1>
             
             <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
                 <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail1')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
@@ -646,10 +675,12 @@
         </div>
     </div>
 
-    <footer style="background: #2c3e50; color: white; padding: 3rem 0; margin-top: 5rem;">
+    </main>
+    
+    <footer role="contentinfo" style="background: #2c3e50; color: white; padding: 3rem 0; margin-top: 5rem;">
         <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">
-            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
-                <a href="https://litt.ly/tothemoonpark" target="_blank" style="color: white; text-decoration: none;">Litt.ly</a>
+            <div role="navigation" aria-label="푸터 링크" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Litt.ly</a>
                 <a href="index.html" style="color: white; text-decoration: none;">홈</a>
                 <a href="index.html#author" style="color: white; text-decoration: none;">작가소개</a>
                 <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅™</a>
