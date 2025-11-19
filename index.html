@@ -2233,6 +2233,19 @@
         // 입금 안내 팝업
         function showPaymentInfo(itemName, price) {
             const modal = document.getElementById('paymentModal');
+            
+            // 팝업 제목 동적 변경
+            const titleElement = document.getElementById('paymentProductName');
+            if (itemName.includes('VOD')) {
+                titleElement.textContent = 'VOD 구매';
+            } else if (itemName === '필북') {
+                titleElement.textContent = '필북 참여';
+            } else if (itemName.includes('독저팅')) {
+                titleElement.textContent = '독저팅 신청';
+            } else {
+                titleElement.textContent = itemName + ' 신청';
+            }
+            
             document.getElementById('productName').textContent = itemName;
             document.getElementById('productPrice').textContent = price.toLocaleString() + '원';
             modal.classList.add('active');
