@@ -667,24 +667,45 @@
             }
         }
         
+        // 각 VOD의 타이머를 저장하는 객체
+        const previewTimers = {};
+        
+        function startIndividualTimer(videoNum) {
+            // 이미 타이머가 시작되었으면 무시
+            if (previewTimers[videoNum]) {
+                return;
+            }
+            
+            // 해당 VOD의 타이머 시작
+            previewTimers[videoNum] = setTimeout(function() {
+                const iframe = document.getElementById('preview' + videoNum);
+                const container = document.getElementById('preview' + videoNum + 'Container');
+                const message = document.getElementById('preview' + videoNum + 'Message');
+                
+                // iframe 완전 제거 (음성도 정지됨)
+                if (iframe) {
+                    iframe.remove();
+                }
+                
+                if (container && message) {
+                    container.style.display = 'none';
+                    message.style.display = 'block';
+                }
+            }, 60000); // 60초 = 1분
+        }
+        
         function startPreviewTimers() {
-            // Google Drive iframe 1분 후 완전 제거 (음성 정지)
+            // detail2가 열릴 때 각 iframe에 load 이벤트 추가
             for (let i = 1; i <= 5; i++) {
-                setTimeout(function() {
-                    const iframe = document.getElementById('preview' + i);
-                    const container = document.getElementById('preview' + i + 'Container');
-                    const message = document.getElementById('preview' + i + 'Message');
-                    
-                    // iframe 완전 제거 (음성도 정지됨)
-                    if (iframe) {
-                        iframe.remove();
-                    }
-                    
-                    if (container && message) {
-                        container.style.display = 'none';
-                        message.style.display = 'block';
-                    }
-                }, 60000); // 60초 = 1분
+                const iframe = document.getElementById('preview' + i);
+                if (iframe && !previewTimers[i]) {
+                    // iframe이 로드되면 타이머 시작
+                    iframe.onload = (function(num) {
+                        return function() {
+                            startIndividualTimer(num);
+                        };
+                    })(i);
+                }
             }
         }
         
