@@ -2444,8 +2444,15 @@
             // Google Drive 플레이어 1분 제한
             if (vodData.driveId) {
                 setTimeout(function() {
+                    const iframe = document.getElementById('drivePlayer');
                     const container = document.getElementById('previewContainer');
                     const message = document.getElementById('previewMessage');
+                    
+                    // iframe 완전 제거 (음성도 정지됨)
+                    if (iframe) {
+                        iframe.remove();
+                    }
+                    
                     if (container && message) {
                         container.style.display = 'none';
                         message.style.display = 'block';

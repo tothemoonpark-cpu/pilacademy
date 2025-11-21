@@ -668,11 +668,18 @@
         }
         
         function startPreviewTimers() {
-            // Google Drive iframe 1분 후 제거
+            // Google Drive iframe 1분 후 완전 제거 (음성 정지)
             for (let i = 1; i <= 5; i++) {
                 setTimeout(function() {
+                    const iframe = document.getElementById('preview' + i);
                     const container = document.getElementById('preview' + i + 'Container');
                     const message = document.getElementById('preview' + i + 'Message');
+                    
+                    // iframe 완전 제거 (음성도 정지됨)
+                    if (iframe) {
+                        iframe.remove();
+                    }
+                    
                     if (container && message) {
                         container.style.display = 'none';
                         message.style.display = 'block';
