@@ -470,7 +470,7 @@
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">📚 책을 왜 써야 하는가?</h4>
                             <div id="preview1Container">
                                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                                    <div id="preview1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                                    <iframe id="preview1" src="https://drive.google.com/file/d/1ArTCtIaDa88o6DwPAlFoX_i4-5ogJAtN/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>
                                 </div>
                             </div>
                             <div id="preview1Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
@@ -487,7 +487,7 @@
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">✍️ 책쓰기는 기획이 80%다!</h4>
                             <div id="preview2Container">
                                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                                    <div id="preview2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                                    <iframe id="preview2" src="https://drive.google.com/file/d/1llkmwsrP41J6vmqlMDn1tx5zW1-emJRo/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>
                                 </div>
                             </div>
                             <div id="preview2Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
@@ -504,7 +504,7 @@
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">💼 쉽게 이해하는 퍼스널 브랜딩</h4>
                             <div id="preview3Container">
                                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                                    <div id="preview3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                                    <iframe id="preview3" src="https://drive.google.com/file/d/1EOlnwG6EaJMy3df1rnf1GHac_UNa4VNf/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>
                                 </div>
                             </div>
                             <div id="preview3Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
@@ -521,7 +521,7 @@
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">🚀 직장인이 아닌 직업인으로</h4>
                             <div id="preview4Container">
                                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                                    <div id="preview4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                                    <iframe id="preview4" src="https://drive.google.com/file/d/1giWnt-McveS0qBT_NLq-IMQWNB3nVo0q/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>
                                 </div>
                             </div>
                             <div id="preview4Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
@@ -538,7 +538,7 @@
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">📖 독서는 이렇게 하자!</h4>
                             <div id="preview5Container">
                                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                                    <div id="preview5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+                                    <iframe id="preview5" src="https://drive.google.com/file/d/1Q8UdyrTi0Lq1Eb7xOFYLOex7QKpmInqA/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>
                                 </div>
                             </div>
                             <div id="preview5Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
@@ -643,81 +643,10 @@
         </div>
     </footer>
 
-    <!-- YouTube IFrame API -->
-    <script src="https://www.youtube.com/iframe_api"></script>
-    
     <script>
-        // YouTube Player 객체 저장
-        var players = {};
-        
-        // YouTube API 준비 완료 시 호출
-        function onYouTubeIframeAPIReady() {
-            // 이 함수는 detail2가 열릴 때 호출됨
-        }
-        
+        // YouTube API 제거 - Google Drive 사용
         function initYouTubePlayers() {
-            const videoIds = [
-                { id: 'LMJlXdB5EBk', num: 1 },
-                { id: 'FiG1ozu0Dqw', num: 2 },
-                { id: '2LbN3p42jaQ', num: 3 },
-                { id: 'ZN4COh8N43I', num: 4 },
-                { id: '1L35q3ZYICg', num: 5 }
-            ];
-            
-            videoIds.forEach(function(video) {
-                const playerId = 'preview' + video.num;
-                const container = document.getElementById(playerId);
-                
-                if (container && !players[playerId]) {
-                    players[playerId] = new YT.Player(playerId, {
-                        videoId: video.id,
-                        playerVars: {
-                            'autoplay': 0,
-                            'controls': 1,
-                            'rel': 0,
-                            'modestbranding': 1,
-                            'fs': 0,  // 전체화면 버튼 숨기기
-                            'disablekb': 1,  // 키보드 단축키 비활성화
-                            'iv_load_policy': 3  // 주석 숨기기
-                        },
-                        events: {
-                            'onReady': function(event) {
-                                // 60초 타이머 시작
-                                setTimeout(function() {
-                                    event.target.stopVideo();
-                                    const container = document.getElementById('preview' + video.num + 'Container');
-                                    const message = document.getElementById('preview' + video.num + 'Message');
-                                    if (container && message) {
-                                        container.style.display = 'none';
-                                        message.style.display = 'block';
-                                    }
-                                }, 60000);
-                            },
-                            'onStateChange': function(event) {
-                                // 시청 시간 체크
-                                if (event.data == YT.PlayerState.PLAYING) {
-                                    checkTime(event.target, video.num);
-                                }
-                            }
-                        }
-                    });
-                }
-            });
-        }
-        
-        function checkTime(player, num) {
-            var interval = setInterval(function() {
-                if (player.getCurrentTime() >= 60) {
-                    player.stopVideo();
-                    const container = document.getElementById('preview' + num + 'Container');
-                    const message = document.getElementById('preview' + num + 'Message');
-                    if (container && message) {
-                        container.style.display = 'none';
-                        message.style.display = 'block';
-                    }
-                    clearInterval(interval);
-                }
-            }, 1000);
+            // 더 이상 사용하지 않음
         }
         
         function toggleContent(id) {
@@ -728,9 +657,9 @@
                 content.style.display = 'block';
                 arrow.textContent = '▲';
                 
-                // detail2가 열릴 때 YouTube 플레이어 초기화
+                // detail2가 열릴 때 1분 타이머 시작
                 if (id === 'detail2') {
-                    setTimeout(initYouTubePlayers, 100);
+                    startPreviewTimers();
                 }
             } else {
                 content.style.display = 'none';
@@ -739,7 +668,17 @@
         }
         
         function startPreviewTimers() {
-            // 이 함수는 더 이상 사용되지 않음 (YouTube API가 대체)
+            // Google Drive iframe 1분 후 제거
+            for (let i = 1; i <= 5; i++) {
+                setTimeout(function() {
+                    const container = document.getElementById('preview' + i + 'Container');
+                    const message = document.getElementById('preview' + i + 'Message');
+                    if (container && message) {
+                        container.style.display = 'none';
+                        message.style.display = 'block';
+                    }
+                }, 60000); // 60초 = 1분
+            }
         }
         
         function toggleMenu() {

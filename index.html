@@ -2317,12 +2317,12 @@
             // 상세 내용 생성
             let bodyHTML = '<div style="padding: 2rem;">';
             
-            // YouTube 미리보기 영상 (1분 제한)
-            if (vodData.youtubeId) {
+            // Google Drive 미리보기 영상 (1분 제한)
+            if (vodData.driveId) {
                 bodyHTML += '<div id="previewContainer" style="margin-bottom: 2rem;">';
                 bodyHTML += '<h3 style="color: #4ECDC4; margin-bottom: 1rem; font-size: 1.3rem;">🎬 강의 미리보기 (1분)</h3>';
                 bodyHTML += '<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">';
-                bodyHTML += '<div id="youtubePlayer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>';
+                bodyHTML += '<iframe id="drivePlayer" src="https://drive.google.com/file/d/' + vodData.driveId + '/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>';
                 bodyHTML += '</div>';
                 bodyHTML += '<div id="previewMessage" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">';
                 bodyHTML += '<h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>';
@@ -2441,55 +2441,16 @@
             bodyHTML += '</div>';
             document.getElementById('vodDetailBody').innerHTML = bodyHTML;
             
-            // YouTube Player API 초기화
-            if (vodData.youtubeId) {
+            // Google Drive 플레이어 1분 제한
+            if (vodData.driveId) {
                 setTimeout(function() {
-                    if (typeof YT !== 'undefined' && YT.Player) {
-                        var modalPlayer = new YT.Player('youtubePlayer', {
-                            videoId: vodData.youtubeId,
-                            playerVars: {
-                                'autoplay': 0,
-                                'controls': 1,
-                                'rel': 0,
-                                'modestbranding': 1,
-                                'fs': 0,  // 전체화면 버튼 숨기기
-                                'disablekb': 1,  // 키보드 단축키 비활성화
-                                'iv_load_policy': 3  // 주석 숨기기
-                            },
-                            events: {
-                                'onReady': function(event) {
-                                    // 60초 타이머 시작
-                                    setTimeout(function() {
-                                        event.target.stopVideo();
-                                        const container = document.getElementById('previewContainer');
-                                        const message = document.getElementById('previewMessage');
-                                        if (container && message) {
-                                            container.style.display = 'none';
-                                            message.style.display = 'block';
-                                        }
-                                    }, 60000);
-                                },
-                                'onStateChange': function(event) {
-                                    // 시청 시간 체크
-                                    if (event.data == YT.PlayerState.PLAYING) {
-                                        var checkInterval = setInterval(function() {
-                                            if (event.target.getCurrentTime() >= 60) {
-                                                event.target.stopVideo();
-                                                const container = document.getElementById('previewContainer');
-                                                const message = document.getElementById('previewMessage');
-                                                if (container && message) {
-                                                    container.style.display = 'none';
-                                                    message.style.display = 'block';
-                                                }
-                                                clearInterval(checkInterval);
-                                            }
-                                        }, 1000);
-                                    }
-                                }
-                            }
-                        });
+                    const container = document.getElementById('previewContainer');
+                    const message = document.getElementById('previewMessage');
+                    if (container && message) {
+                        container.style.display = 'none';
+                        message.style.display = 'block';
                     }
-                }, 100);
+                }, 60000); // 60초 = 1분
             }
             
             // 구매 버튼 이벤트 - Litt.ly로 연결
@@ -2529,7 +2490,8 @@
                 duration: '1시간 30분',
                 price: 29000,
                 littlyUrl: 'https://litt.ly/tothemoonpark/sale/076WClZ',
-                youtubeId: 'LMJlXdB5EBk',
+                youtubeId: '',
+                driveId: '1ArTCtIaDa88o6DwPAlFoX_i4-5ogJAtN',
                 changes: [
                     "'나는 글 못 써'라는 생각에서 완전히 벗어나 '나도 작가가 될 수 있다'는 확신을 갖게 됩니다.",
                     "책 쓰기에 대한 강렬한 동기 부여와 '당장 시작하고 싶다'는 열정이 생깁니다.",
@@ -2569,7 +2531,8 @@
                 duration: '1시간 50분',
                 price: 49000,
                 littlyUrl: 'https://litt.ly/tothemoonpark/sale/UrfM4Bu',
-                youtubeId: 'FiG1ozu0Dqw',
+                youtubeId: '',
+                driveId: '1llkmwsrP41J6vmqlMDn1tx5zW1-emJRo',
                 changes: [
                     "80% 기획의 핵심을 이해하고 출판 계약 성공률을 획기적으로 높입니다.",
                     "편집자가 '계약하고 싶어하는' 출간 기획서 작성법을 완전 습득합니다.",
@@ -2650,7 +2613,8 @@
                 duration: '1시간',
                 price: 49000,
                 littlyUrl: 'https://litt.ly/tothemoonpark/sale/atoZl7U',
-                youtubeId: '2LbN3p42jaQ',
+                youtubeId: '',
+                driveId: '1EOlnwG6EaJMy3df1rnf1GHac_UNa4VNf',
                 recommend: [
                     "자신만의 브랜드를 만들고 싶은 직장인",
                     "부업이나 창업을 고민하는 분",
@@ -2685,7 +2649,8 @@
                 duration: '1시간',
                 price: 29000,
                 littlyUrl: 'https://litt.ly/tothemoonpark/sale/BDPw8UV',
-                youtubeId: 'ZN4COh8N43I',
+                youtubeId: '',
+                driveId: '1giWnt-McveS0qBT_NLq-IMQWNB3nVo0q',
                 changes: [
                     "직장인에서 직업인으로 전환해야 하는 이유에 대한 강렬한 동기 부여와 '당장 시작하고 싶다'는 열정이 생깁니다.",
                     "직업인으로 살아가며 얻을 수 있는 경제적 혜택과 사회적 영향력에 대해 구체적으로 이해하게 됩니다.",
@@ -2764,7 +2729,8 @@
                 duration: '1시간 20분',
                 price: 29000,
                 littlyUrl: 'https://litt.ly/tothemoonpark/sale/f74TaYi',
-                youtubeId: '1L35q3ZYICg',
+                youtubeId: '',
+                driveId: '1Q8UdyrTi0Lq1Eb7xOFYLOex7QKpmInqA',
                 target: {
                     title: '⭐ 이런 분들을 위한 독서 클래스입니다',
                     items: [
@@ -2980,8 +2946,5 @@
             }
         });
     </script>
-    
-    <!-- YouTube IFrame API -->
-    <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
