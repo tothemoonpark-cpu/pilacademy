@@ -469,9 +469,12 @@
                         <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">📚 책을 왜 써야 하는가?</h4>
                             <div id="preview1Container">
-                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                                <div id="preview1Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
                                     <iframe id="preview1" src="https://drive.google.com/file/d/1ArTCtIaDa88o6DwPAlFoX_i4-5ogJAtN/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>
                                 </div>
+                                <button id="preview1PlayBtn" onclick="startPreview(1)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    ▶️ 1분 미리보기 재생
+                                </button>
                             </div>
                             <div id="preview1Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
                                 <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
@@ -486,9 +489,12 @@
                         <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">✍️ 책쓰기는 기획이 80%다!</h4>
                             <div id="preview2Container">
-                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                                <div id="preview2Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
                                     <iframe id="preview2" src="https://drive.google.com/file/d/1llkmwsrP41J6vmqlMDn1tx5zW1-emJRo/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>
                                 </div>
+                                <button id="preview2PlayBtn" onclick="startPreview(2)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    ▶️ 1분 미리보기 재생
+                                </button>
                             </div>
                             <div id="preview2Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
                                 <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
@@ -503,9 +509,12 @@
                         <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">💼 쉽게 이해하는 퍼스널 브랜딩</h4>
                             <div id="preview3Container">
-                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                                <div id="preview3Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
                                     <iframe id="preview3" src="https://drive.google.com/file/d/1EOlnwG6EaJMy3df1rnf1GHac_UNa4VNf/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>
                                 </div>
+                                <button id="preview3PlayBtn" onclick="startPreview(3)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    ▶️ 1분 미리보기 재생
+                                </button>
                             </div>
                             <div id="preview3Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
                                 <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
@@ -520,9 +529,12 @@
                         <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">🚀 직장인이 아닌 직업인으로</h4>
                             <div id="preview4Container">
-                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                                <div id="preview4Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
                                     <iframe id="preview4" src="https://drive.google.com/file/d/1giWnt-McveS0qBT_NLq-IMQWNB3nVo0q/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>
                                 </div>
+                                <button id="preview4PlayBtn" onclick="startPreview(4)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    ▶️ 1분 미리보기 재생
+                                </button>
                             </div>
                             <div id="preview4Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
                                 <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
@@ -537,9 +549,12 @@
                         <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
                             <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">📖 독서는 이렇게 하자!</h4>
                             <div id="preview5Container">
-                                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+                                <div id="preview5Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
                                     <iframe id="preview5" src="https://drive.google.com/file/d/1Q8UdyrTi0Lq1Eb7xOFYLOex7QKpmInqA/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay"></iframe>
                                 </div>
+                                <button id="preview5PlayBtn" onclick="startPreview(5)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    ▶️ 1분 미리보기 재생
+                                </button>
                             </div>
                             <div id="preview5Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
                                 <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
@@ -669,7 +684,21 @@
         
         // 각 VOD의 타이머를 저장하는 객체
         const previewTimers = {};
-        const previewObservers = {};
+        
+        // 재생 버튼 클릭 시 호출
+        function startPreview(videoNum) {
+            console.log('재생 시작: VOD ' + videoNum);
+            
+            // 재생 버튼 숨기고 영상 보이기
+            const playBtn = document.getElementById('preview' + videoNum + 'PlayBtn');
+            const wrapper = document.getElementById('preview' + videoNum + 'Wrapper');
+            
+            if (playBtn) playBtn.style.display = 'none';
+            if (wrapper) wrapper.style.display = 'block';
+            
+            // 타이머 시작
+            startIndividualTimer(videoNum);
+        }
         
         function startIndividualTimer(videoNum) {
             // 이미 타이머가 시작되었으면 무시
@@ -683,7 +712,7 @@
             previewTimers[videoNum] = setTimeout(function() {
                 console.log('타이머 종료: VOD ' + videoNum);
                 const iframe = document.getElementById('preview' + videoNum);
-                const container = document.getElementById('preview' + videoNum + 'Container');
+                const wrapper = document.getElementById('preview' + videoNum + 'Wrapper');
                 const message = document.getElementById('preview' + videoNum + 'Message');
                 
                 // iframe 완전 제거 (음성도 정지됨)
@@ -691,35 +720,15 @@
                     iframe.remove();
                 }
                 
-                if (container && message) {
-                    container.style.display = 'none';
+                if (wrapper && message) {
+                    wrapper.style.display = 'none';
                     message.style.display = 'block';
                 }
             }, 60000); // 60초 = 1분
         }
         
         function startPreviewTimers() {
-            // detail2가 열릴 때 각 iframe에 Intersection Observer 설정
-            for (let i = 1; i <= 5; i++) {
-                const container = document.getElementById('preview' + i + 'Container');
-                
-                if (container && !previewObservers[i]) {
-                    // Intersection Observer 생성
-                    previewObservers[i] = new IntersectionObserver(function(entries) {
-                        entries.forEach(function(entry) {
-                            // 화면에 50% 이상 보이면 타이머 시작
-                            if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-                                startIndividualTimer(i);
-                                // 타이머 시작 후 observer 해제
-                                previewObservers[i].disconnect();
-                            }
-                        });
-                    }, { threshold: 0.5 });
-                    
-                    // container 관찰 시작
-                    previewObservers[i].observe(container);
-                }
-            }
+            // 더 이상 자동 시작하지 않음 - 사용자가 재생 버튼 클릭 필요
         }
         
         function toggleMenu() {
