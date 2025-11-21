@@ -2322,9 +2322,7 @@
                 bodyHTML += '<div id="previewContainer" style="margin-bottom: 2rem;">';
                 bodyHTML += '<h3 style="color: #4ECDC4; margin-bottom: 1rem; font-size: 1.3rem;">🎬 강의 미리보기 (1분)</h3>';
                 bodyHTML += '<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">';
-                bodyHTML += '<style>#previewContainer iframe { pointer-events: none !important; }</style>';
-                bodyHTML += '<iframe id="drivePlayer" src="https://drive.google.com/file/d/' + vodData.driveId + '/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>';
-                bodyHTML += '<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: default; background: transparent;" oncontextmenu="return false;" ontouchstart="return true;"></div>';
+                bodyHTML += '<iframe id="drivePlayer" src="https://drive.google.com/file/d/' + vodData.driveId + '/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>';
                 bodyHTML += '</div>';
                 bodyHTML += '<div id="previewMessage" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">';
                 bodyHTML += '<h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>';
