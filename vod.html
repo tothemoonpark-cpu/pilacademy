@@ -669,6 +669,7 @@
         
         // 각 VOD의 타이머를 저장하는 객체
         const previewTimers = {};
+        const previewObservers = {};
         
         function startIndividualTimer(videoNum) {
             // 이미 타이머가 시작되었으면 무시
@@ -676,8 +677,11 @@
                 return;
             }
             
+            console.log('타이머 시작: VOD ' + videoNum);
+            
             // 해당 VOD의 타이머 시작
             previewTimers[videoNum] = setTimeout(function() {
+                console.log('타이머 종료: VOD ' + videoNum);
                 const iframe = document.getElementById('preview' + videoNum);
                 const container = document.getElementById('preview' + videoNum + 'Container');
                 const message = document.getElementById('preview' + videoNum + 'Message');
@@ -695,16 +699,25 @@
         }
         
         function startPreviewTimers() {
-            // detail2가 열릴 때 각 iframe에 load 이벤트 추가
+            // detail2가 열릴 때 각 iframe에 Intersection Observer 설정
             for (let i = 1; i <= 5; i++) {
-                const iframe = document.getElementById('preview' + i);
-                if (iframe && !previewTimers[i]) {
-                    // iframe이 로드되면 타이머 시작
-                    iframe.onload = (function(num) {
-                        return function() {
-                            startIndividualTimer(num);
-                        };
-                    })(i);
+                const container = document.getElementById('preview' + i + 'Container');
+                
+                if (container && !previewObservers[i]) {
+                    // Intersection Observer 생성
+                    previewObservers[i] = new IntersectionObserver(function(entries) {
+                        entries.forEach(function(entry) {
+                            // 화면에 50% 이상 보이면 타이머 시작
+                            if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+                                startIndividualTimer(i);
+                                // 타이머 시작 후 observer 해제
+                                previewObservers[i].disconnect();
+                            }
+                        });
+                    }, { threshold: 0.5 });
+                    
+                    // container 관찰 시작
+                    previewObservers[i].observe(container);
                 }
             }
         }
