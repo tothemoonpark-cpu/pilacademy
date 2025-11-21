@@ -2322,7 +2322,7 @@
                 bodyHTML += '<div id="previewContainer" style="margin-bottom: 2rem;">';
                 bodyHTML += '<h3 style="color: #4ECDC4; margin-bottom: 1rem; font-size: 1.3rem;">🎬 강의 미리보기 (1분)</h3>';
                 bodyHTML += '<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">';
-                bodyHTML += '<iframe id="youtubePlayer" src="https://www.youtube.com/embed/' + vodData.youtubeId + '?rel=0&modestbranding=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                bodyHTML += '<div id="youtubePlayer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>';
                 bodyHTML += '</div>';
                 bodyHTML += '<div id="previewMessage" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">';
                 bodyHTML += '<h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>';
@@ -2441,17 +2441,55 @@
             bodyHTML += '</div>';
             document.getElementById('vodDetailBody').innerHTML = bodyHTML;
             
-            // YouTube 플레이어 1분 제한 타이머 설정
+            // YouTube Player API 초기화
             if (vodData.youtubeId) {
                 setTimeout(function() {
-                    const iframe = document.getElementById('youtubePlayer');
-                    const message = document.getElementById('previewMessage');
-                    if (iframe && message) {
-                        // iframe을 완전히 제거하여 오디오도 정지
-                        iframe.remove();
-                        message.style.display = 'block';
+                    if (typeof YT !== 'undefined' && YT.Player) {
+                        var modalPlayer = new YT.Player('youtubePlayer', {
+                            videoId: vodData.youtubeId,
+                            playerVars: {
+                                'autoplay': 0,
+                                'controls': 1,
+                                'rel': 0,
+                                'modestbranding': 1,
+                                'fs': 0,  // 전체화면 버튼 숨기기
+                                'disablekb': 1,  // 키보드 단축키 비활성화
+                                'iv_load_policy': 3  // 주석 숨기기
+                            },
+                            events: {
+                                'onReady': function(event) {
+                                    // 60초 타이머 시작
+                                    setTimeout(function() {
+                                        event.target.stopVideo();
+                                        const container = document.getElementById('previewContainer');
+                                        const message = document.getElementById('previewMessage');
+                                        if (container && message) {
+                                            container.style.display = 'none';
+                                            message.style.display = 'block';
+                                        }
+                                    }, 60000);
+                                },
+                                'onStateChange': function(event) {
+                                    // 시청 시간 체크
+                                    if (event.data == YT.PlayerState.PLAYING) {
+                                        var checkInterval = setInterval(function() {
+                                            if (event.target.getCurrentTime() >= 60) {
+                                                event.target.stopVideo();
+                                                const container = document.getElementById('previewContainer');
+                                                const message = document.getElementById('previewMessage');
+                                                if (container && message) {
+                                                    container.style.display = 'none';
+                                                    message.style.display = 'block';
+                                                }
+                                                clearInterval(checkInterval);
+                                            }
+                                        }, 1000);
+                                    }
+                                }
+                            }
+                        });
                     }
-                }, 60000); // 60초 = 1분
+                }, 100);
             }
             
             // 구매 버튼 이벤트 - Litt.ly로 연결
@@ -2942,5 +2980,8 @@
             }
         });
     </script>
+    
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
