@@ -2438,6 +2438,15 @@
                 bodyHTML += '</div>';
             }
             
+            // 후기 전 구매 섹션 추가
+            bodyHTML += '<div style="background: #f8f9fa; padding: 2.5rem; border-radius: 15px; text-align: center; margin: 3rem 0; border: 3px solid #4ECDC4;">';
+            bodyHTML += '<h2 style="color: #4ECDC4; font-size: 2.5rem; margin-bottom: 1.5rem; font-weight: bold;">' + vodData.price.toLocaleString() + '원</h2>';
+            bodyHTML += '<button onclick="window.open(\'' + vodData.littlyUrl + '\', \'_blank\')" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; padding: 1.5rem 3rem; border: none; border-radius: 50px; font-size: 1.3rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform=\'scale(1.05)\'; this.style.boxShadow=\'0 6px 20px rgba(78, 205, 196, 0.4)\'" onmouseout="this.style.transform=\'scale(1)\'; this.style.boxShadow=\'0 4px 15px rgba(78, 205, 196, 0.3)\'">💳 Litt.ly에서 구매하기</button>';
+            bodyHTML += '<div style="background: #FFF9E6; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #FFB800;">';
+            bodyHTML += '<p style="color: #666; font-size: 1rem; line-height: 1.6; margin: 0;">💡 안전한 <strong style="color: #2c3e50;">카드 결제</strong>를 위해 Litt.ly로 이동합니다<br>결제 후 다시 필아카데미로 돌아와주세요</p>';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
             // VOD 후기 섹션 추가
             bodyHTML += '<div style="margin: 3rem 0;">';
             bodyHTML += '<h3 style="color: #4ECDC4; margin-bottom: 2rem; font-size: 1.4rem; text-align: center; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">💬 VOD 특강 수강생 후기</h3>';
