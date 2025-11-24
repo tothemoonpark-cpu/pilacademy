@@ -939,6 +939,14 @@
         }
         
         function closeVodDetailModal() {
+            // iframe 완전 제거로 영상/음성 정지
+            const iframe = document.getElementById('drivePlayer');
+            if (iframe) {
+                iframe.src = ''; // src 초기화
+                iframe.remove(); // iframe 제거
+            }
+            
+            // 모달 닫기
             document.getElementById('vodDetailModal').style.display = 'none';
         }
         
