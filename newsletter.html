@@ -603,53 +603,13 @@
                             <h2 style="font-size: 2rem; margin-bottom: 1rem; color: white; border: none; padding: 0;">📮 지금 바로 구독하세요</h2>
                             <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: white;">매주 수요일 오전 11시, 여러분의 성장을 응원하는 편지를 받아보세요</p>
                             
-                            <!-- 스티비 구독 폼 -->
-                            <link rel="stylesheet" href="https://resource.stibee.com/subscribe/stb_subscribe_form_style.css">
-                            <div id="stibee-form-container-2" style="max-width: 500px; margin: 0 auto; background: white; padding: 2rem; border-radius: 15px;">
-                              <div id="stb_subscribe_2">
-                                <form action="https://stibee.com/api/v1.0/lists/0fJXgRgUwHa-0b1wHoSg5i47yC2moQ==/public/subscribers" method="POST" target="_blank" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form_2" id="stb_subscribe_form_2" data-lang="" novalidate>
-                                  
-                                  <h1 class="stb_form_title" style="color: #f5576c;">필레터 구독하기</h1>
-                                  
-                                  <fieldset class="stb_form_set">
-                                    <label for="stb_email_2" class="stb_form_set_label">
-                                      이메일 주소<span class="stb_asterisk">*</span>
-                                    </label>
-                                    <input type="text" class="stb_form_set_input" id="stb_email_2" name="email" required="required">
-                                    <div class="stb_form_msg_error" id="stb_email_error_2"></div>
-                                  </fieldset>
-                                  
-                                  <div class="stb_form_policy">
-                                    <label>
-                                      <input type="checkbox" id="stb_policy_2" value="stb_policy_true">
-                                      <span>(필수)</span>
-                                      <button id="stb_form_modal_open_2" data-modal="stb_form_policy_modal_2" class="stb_form_modal_open_btn" type="button">개인정보 수집 및 이용</button>에 동의합니다.
-                                    </label>
-                                    <div class="stb_form_msg_error" id="stb_policy_error_2"></div>
-                                    <div class="stb_form_modal stb_form_policy_text blind" id="stb_form_policy_modal_2">
-                                      <div class="stb_form_modal_body">
-                                        <h1 class="stb_form_modal_title">개인정보 수집 및 이용</h1>
-                                        <div class="stb_form_modal_text">뉴스레터 발송을 위한 최소한의 개인정보를 수집하고 이용합니다. 수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료되거나 구독을 해지할 경우 즉시 파기됩니다.</div>
-                                        <div class="stb_form_modal_btn">
-                                          <button id="stb_form_modal_close_2" class="stb_form_modal_close_btn" data-modal="stb_form_policy_modal_2" type="button">닫기</button>
-                                        </div>
-                                      </div>
-                                      <div class="stb_form_modal_bg" id="stb_form_modal_bg_2"></div>
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="stb_form_result" id="stb_form_result_2"></div>
-                                  
-                                  <fieldset class="stb_form_set_submit">
-                                    <button type="submit" class="stb_form_submit_button" id="stb_form_submit_button_2" style="background-color: #FF6464; color: #FFFFFF;">구독하기</button>
-                                  </fieldset>
-                                </form>
-                              </div>
-                            </div>
-                            <script type="text/javascript" src="https://resource.stibee.com/subscribe/stb_subscribe_form.js"></script>
+                            <!-- 구독 버튼 -->
+                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #f5576c; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">
+                                📮 필레터 구독하기
+                            </a>
                             
                             <!-- 이메일 인증 프로세스 안내 -->
-                            <div style="background: rgba(255,255,255,0.15); padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 1.5rem; border: 1px dashed rgba(255,255,255,0.3); max-width: 500px; margin-left: auto; margin-right: auto;">
+                            <div style="background: rgba(255,255,255,0.15); padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 0; border: 1px dashed rgba(255,255,255,0.3); max-width: 500px; margin-left: auto; margin-right: auto;">
                                 <p style="margin: 0; opacity: 0.95; color: white;">
                                     💡 <strong>구독 완료 방법</strong><br>
                                     ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
