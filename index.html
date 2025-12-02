@@ -2156,6 +2156,10 @@
             </div>
             
             <div class="vod-detail-cta">
+                <!-- 필북 후기 확인하기 버튼 (필북일 때만 표시) -->
+                <a href="philbook.html#reviews" id="philbookReviewBtn" style="display: none; text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: bold; margin-bottom: 1.5rem; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    📚 필북 후기 확인하기
+                </a>
                 <div class="vod-detail-price" id="vodDetailPriceBottom"></div>
                 <button class="vod-detail-buy" id="vodDetailBuyBtn">지금 구매하기</button>
             </div>
@@ -2532,6 +2536,9 @@
             noticeText.style.cssText = 'font-size: 0.95rem; color: #666; margin-top: 0.8rem; text-align: center;';
             noticeText.innerHTML = '💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다<br>결제 후 다시 필아카데미로 돌아와주세요';
             buyButton.parentElement.appendChild(noticeText);
+            
+            // 필북 후기 버튼 숨기기 (VOD는 필북 아니므로)
+            document.getElementById('philbookReviewBtn').style.display = 'none';
             
             modal.classList.add('active');
         }
@@ -2982,6 +2989,9 @@
             bodyHTML += '</div>';
             
             document.getElementById('vodDetailBody').innerHTML = bodyHTML;
+            
+            // 필북 후기 버튼 보이기
+            document.getElementById('philbookReviewBtn').style.display = 'block';
             
             // 구매 버튼 이벤트
             document.getElementById('vodDetailBuyBtn').onclick = function() {
