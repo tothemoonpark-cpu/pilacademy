@@ -913,23 +913,13 @@
                             </div>
                         </div>
 
-                        <!-- 신청 방법 -->
-                        <div style="margin-bottom: 3rem;">
-                            <h4 style="font-size: 1.5rem; color: #2c3e50; margin-bottom: 1.5rem;">🎯 신청 방법</h4>
-                            <div style="background: #fff9e6; padding: 2rem; border-radius: 15px; border-left: 5px solid #fbbf24; text-align: center;">
-                                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
-                                    하단 '<strong>상담 신청</strong>'에서 신청 서비스 중 <strong>필북</strong>을 선택하시고,<br>
-                                    문의 내용에 "<strong style="color: #4ECDC4;">필북 4기 신청</strong>"이라고 적어주세요.
-                                </p>
-                                
-                                <div style="text-align: center; margin-top: 2rem;">
-                                    <a href="index.html#contact" style="display: inline-block; padding: 1.5rem 3rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.3rem; font-weight: bold; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;"
-                                       onmouseover="this.style.transform='scale(1.08) translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(78, 205, 196, 0.5)';" 
-                                       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(78, 205, 196, 0.3)';">
-                                        📝 상담 신청하기
-                                    </a>
-                                </div>
-                            </div>
+                        <!-- 필북 4기 신청하기 버튼 -->
+                        <div style="text-align: center; margin-bottom: 3rem;">
+                            <button onclick="showPaymentInfo('필북', 40000)" style="display: inline-block; padding: 1.5rem 4rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; text-decoration: none; border-radius: 50px; font-size: 1.5rem; font-weight: bold; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s; cursor: pointer;"
+                               onmouseover="this.style.transform='scale(1.08) translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(78, 205, 196, 0.5)';" 
+                               onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(78, 205, 196, 0.3)';">
+                                🎯 필북 4기 신청하기
+                            </button>
                         </div>
 
                         <!-- 마무리 메시지 -->
@@ -1053,6 +1043,312 @@
                         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }, 100);
                 }
+            }
+        });
+    </script>
+
+    <!-- 결제 모달 CSS -->
+    <style>
+        .payment-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .payment-modal.active {
+            display: flex;
+        }
+        
+        .payment-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .payment-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #999;
+            background: none;
+            border: none;
+            line-height: 1;
+        }
+        
+        .payment-close:hover {
+            color: #333;
+        }
+        
+        .payment-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #4ECDC4;
+        }
+        
+        .payment-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .payment-info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .payment-info-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .payment-info-label {
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .payment-info-value {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .payment-price {
+            font-size: 1.5rem;
+            color: #4ECDC4;
+        }
+        
+        .payment-account {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .payment-account-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+        
+        .payment-account-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        
+        .payment-account-holder {
+            font-size: 1.1rem;
+        }
+        
+        .payment-form {
+            margin-top: 2rem;
+        }
+        
+        .payment-notice {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            color: #856404;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #4ECDC4;
+        }
+        
+        .payment-submit {
+            width: 100%;
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .payment-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+        }
+    </style>
+
+    <!-- 결제 모달 HTML -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-content">
+            <button class="payment-close" onclick="closePaymentModal()">×</button>
+            <h2 class="payment-title">필북 참여</h2>
+            
+            <div class="payment-info">
+                <div class="payment-info-item">
+                    <span class="payment-info-label">상품명</span>
+                    <span class="payment-info-value">필북</span>
+                </div>
+                <div class="payment-info-item">
+                    <span class="payment-info-label">가격</span>
+                    <span class="payment-info-value payment-price">40,000원</span>
+                </div>
+            </div>
+            
+            <div class="payment-account">
+                <div class="payment-account-label">입금 계좌</div>
+                <div class="payment-account-number">국민은행<br>586302-04-011351</div>
+                <div class="payment-account-holder">예금주: 박근필</div>
+            </div>
+            
+            <div class="payment-notice">
+                ⚠️ 입금 후 아래 정보를 입력하시면, 입금 확인 후 VOD 링크를 보내드립니다.
+            </div>
+            
+            <form class="payment-form" id="paymentForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="065b78d5-e112-4569-97f6-9f536177f948">
+                <input type="hidden" name="subject" value="[필아카데미] 필북 참여 - 입금 확인 요청">
+                <input type="hidden" name="from_name" value="필아카데미 신청 시스템">
+                <textarea name="message" style="display:none;" id="formMessage"></textarea>
+                
+                <div class="form-group">
+                    <label for="paymentName">입금자명 *</label>
+                    <input type="text" id="paymentName" name="입금자명" required placeholder="홍길동">
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentEmail">이메일 *</label>
+                    <input type="email" id="paymentEmail" name="이메일" required placeholder="example@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentPhone">연락처 *</label>
+                    <input type="tel" id="paymentPhone" name="연락처" required placeholder="010-0000-0000">
+                </div>
+                
+                <button type="submit" class="payment-submit">입금 완료 알림 전송</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 결제 모달 JavaScript -->
+    <script>
+        function showPaymentInfo(itemName, price) {
+            const modal = document.getElementById('paymentModal');
+            modal.classList.add('active');
+        }
+        
+        function closePaymentModal() {
+            document.getElementById('paymentModal').classList.remove('active');
+        }
+
+        // 폼 제출 처리
+        const form = document.getElementById('paymentForm');
+        if (form) {
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(form);
+                const depositor = formData.get('입금자명');
+                const email = formData.get('이메일');
+                const phone = formData.get('연락처');
+                
+                const message = `
+=== 필북 참여 신청 ===
+
+상품명: 필북
+가격: 40,000원
+
+입금자명: ${depositor}
+이메일: ${email}
+연락처: ${phone}
+
+신청 시간: ${new Date().toLocaleString('ko-KR')}
+                `.trim();
+                
+                formData.set('message', message);
+                
+                try {
+                    const submitButton = form.querySelector('button[type="submit"]');
+                    submitButton.disabled = true;
+                    submitButton.textContent = '전송 중...';
+                    
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        alert('입금 확인 요청이 전송되었습니다!\n입금 확인 후 안내 메일을 보내드리겠습니다.');
+                        form.reset();
+                        closePaymentModal();
+                    } else {
+                        throw new Error('전송 실패');
+                    }
+                } catch (error) {
+                    alert('전송 중 오류가 발생했습니다.\n잠시 후 다시 시도해주세요.');
+                    console.error('Error:', error);
+                } finally {
+                    const submitButton = form.querySelector('button[type="submit"]');
+                    submitButton.disabled = false;
+                    submitButton.textContent = '입금 완료 알림 전송';
+                }
+            });
+        }
+
+        // ESC 키로 모달 닫기
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePaymentModal();
+            }
+        });
+
+        // 모달 배경 클릭시 닫기
+        document.getElementById('paymentModal')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePaymentModal();
             }
         });
     </script>
