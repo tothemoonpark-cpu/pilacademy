@@ -1888,7 +1888,7 @@
             </div>
             
             <div class="philbook-cta" style="text-align: center; margin-top: 3rem;">
-                <button onclick="showPaymentInfo('필북', 50000)" class="cta-button" style="background: white; color: #667eea; font-weight: bold; border: none; cursor: pointer; padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 50px; transition: all 0.3s;">필북 참여 신청하기</button>
+                <button onclick="showPaymentInfo('필북', 40000)" class="cta-button" style="background: white; color: #667eea; font-weight: bold; border: none; cursor: pointer; padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 50px; transition: all 0.3s;">필북 참여 신청하기</button>
             </div>
             
             <!-- 뉴스레터 CTA -->
@@ -2882,8 +2882,8 @@
             const modal = document.getElementById('vodDetailModal');
             document.getElementById('vodDetailTitle').textContent = '필북 (박근필의 동반성장 북클럽)';
             document.getElementById('vodDetailDuration').textContent = '⏱ 매주 월요일 저녁 9시~11시(11시 반)';
-            document.getElementById('vodDetailPrice').textContent = '50,000원';
-            document.getElementById('vodDetailPriceBottom').textContent = '50,000원 (직전 기수 4만원)';
+            document.getElementById('vodDetailPrice').textContent = '40,000원';
+            document.getElementById('vodDetailPriceBottom').textContent = '40,000원 (3기 재참여 3만원)';
             
             // 상세 내용 생성
             let bodyHTML = '<div style="padding: 2rem; line-height: 1.8;">';
@@ -2975,13 +2975,13 @@
             bodyHTML += '</div>';
             bodyHTML += '</div>';
             
-            // 4기 신청 예약 안내
+            // 4기 신청 안내
             bodyHTML += '<div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 12px; padding: 20px; margin: 2rem 0; text-align: center;">';
-            bodyHTML += '<div style="font-size: 1.2rem; color: #856404; font-weight: 700; margin-bottom: 12px;">💡 현재는 4기 신청 예약 가능합니다.</div>';
+            bodyHTML += '<div style="font-size: 1.2rem; color: #856404; font-weight: 700; margin-bottom: 12px;">💡 필북 4기 신청 (12.14까지 | 조기 마감 가능)</div>';
             bodyHTML += '<div style="color: #856404; line-height: 1.8;">';
             bodyHTML += '메인 화면의 하단에 <strong>\'상담 신청\'</strong>에서 필요한 정보 입력하시고<br>';
             bodyHTML += '신청 서비스 중 <strong>필북</strong>을 선택하세요.<br>';
-            bodyHTML += '문의 내용에 <strong>"필북 4기 신청 예약"</strong>이라고 적은 후<br>';
+            bodyHTML += '문의 내용에 <strong>"필북 4기 신청"</strong>이라고 적은 후<br>';
             bodyHTML += '<strong>\'상담 신청하기\'</strong>를 클릭하세요.';
             bodyHTML += '</div>';
             bodyHTML += '</div>';
@@ -2996,7 +2996,7 @@
             // 구매 버튼 이벤트
             document.getElementById('vodDetailBuyBtn').onclick = function() {
                 closeVodDetail();
-                showPaymentInfo('필북', 50000);
+                showPaymentInfo('필북', 40000);
             };
             document.getElementById('vodDetailBuyBtn').textContent = '지금 바로 신청하기';
             
