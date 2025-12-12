@@ -1256,17 +1256,17 @@
                 
                 <div class="form-group">
                     <label for="paymentName">입금자명 *</label>
-                    <input type="text" id="paymentName" name="입금자명" required placeholder="홍길동">
+                    <input type="text" id="paymentName" name="depositor_name" required placeholder="홍길동">
                 </div>
                 
                 <div class="form-group">
                     <label for="paymentEmail">이메일 *</label>
-                    <input type="email" id="paymentEmail" name="이메일" required placeholder="example@email.com">
+                    <input type="email" id="paymentEmail" name="email" required placeholder="example@email.com">
                 </div>
                 
                 <div class="form-group">
                     <label for="paymentPhone">연락처 *</label>
-                    <input type="tel" id="paymentPhone" name="연락처" required placeholder="010-0000-0000">
+                    <input type="tel" id="paymentPhone" name="phone" required placeholder="010-0000-0000">
                 </div>
                 
                 <button type="submit" class="payment-submit">입금 완료 알림 전송</button>
@@ -1292,9 +1292,9 @@
                 e.preventDefault();
                 
                 const formData = new FormData(form);
-                const depositor = formData.get('입금자명');
-                const email = formData.get('이메일');
-                const phone = formData.get('연락처');
+                const depositor = formData.get('depositor_name');
+                const email = formData.get('email');
+                const phone = formData.get('phone');
                 
                 const message = `
 === 필북 참여 신청 ===
