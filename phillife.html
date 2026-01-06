@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필라이프 - 필아카데미</title>
+    
+    <!-- SEO 메타 태그 -->
+    <meta name="description" content="박근필 작가의 1:1 라이프 코칭. 질문과 대화를 통해 삶의 방향을 함께 정리합니다.">
+    <meta name="keywords" content="필라이프, 라이프코칭, 박근필, 1:1코칭, 진로상담">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/phillife.html">
+    
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* 헤더 */
+        header {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            z-index: 1000;
+            top: 100% !important;
+            margin-top: -8px !important;
+            padding-top: 0.5rem;
+        }
+        
+        .dropdown-content::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            right: -10px;
+            height: 28px;
+            background: transparent;
+        }
+        
+        .dropdown-content a {
+            color: #2c3e50;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            opacity: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn {
+            cursor: pointer;
+            padding-bottom: 1rem;
+        }
+        
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+        }
+        
+        @media (max-width: 768px) {
+            nav { padding: 0 1rem; }
+            .menu-toggle { display: flex; }
+            .nav-links { 
+                display: none; 
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+                flex-direction: column;
+                padding: 1rem 0;
+            }
+            .nav-links.active { display: flex; }
+            .nav-links li { text-align: center; padding: 0.8rem 0; }
+            .dropdown-content { position: static; background: rgba(255,255,255,0.1); }
+            .dropdown-content a { color: white; }
+        }
+        
+        /* 메인 컨텐츠 */
+        main {
+            margin-top: 80px;
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            color: #f5576c;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            font-size: 1.3rem;
+            color: #666;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .content-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .content-section h2 {
+            color: #f5576c;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #f5576c;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .content-section li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        
+        .content-section li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #f5576c;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(240,147,251,0.1) 0%, rgba(245,87,108,0.1) 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #f5576c;
+            margin: 2rem 0;
+        }
+        
+        .subscribe-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 3rem;
+        }
+        
+        .subscribe-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subscribe-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        /* 아코디언 스타일 */
+        .accordion-container {
+            max-width: 1000px;
+            margin: 0 auto 3rem;
+        }
+        
+        .accordion-item {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .accordion-header:hover {
+            opacity: 0.9;
+        }
+        
+        .accordion-header.active {
+            background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+        }
+        
+        .accordion-icon {
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        
+        .accordion-content .content-section {
+            margin: 0;
+            box-shadow: none;
+            border-radius: 0;
+        }
+        
+        /* 푸터 */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .content-section {
+                padding: 2rem 1.5rem;
+            }
+            
+            .content-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .content-section p,
+            .content-section li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;">📚 필아카데미</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="author.html">작가소개</a></li>
+                <li><a href="dokjeoting.html">독저팅™</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="phillife.html">필라이프</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">SNS</a>
+                    <div class="dropdown-content">
+                        <a href="https://litt.ly/tothemoonpark" target="_blank">📚 Litt.ly</a>
+                        <a href="https://blog.naver.com/tothemoon_park" target="_blank">📝 블로그</a>
+                        <a href="https://brunch.co.kr/@tothemoonpark" target="_blank">✍️ 브런치</a>
+                        <a href="https://www.youtube.com/@tothemoonpark" target="_blank">🎥 유튜브</a>
+                        <a href="https://www.instagram.com/tothemoon_park/" target="_blank">📷 인스타그램</a>
+                        <a href="https://www.threads.com/@tothemoon_park" target="_blank">🧵 스레드</a>
+                        <a href="https://x.com/Tothemoon_Park" target="_blank">🐦 X (트위터)</a>
+                    </div>
+                </li>
+                <li><a href="index.html#contact">상담신청</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+        <h1 class="page-title">💬 필라이프</h1>
+        <p class="page-subtitle">질문과 대화를 통해 삶의 방향을 함께 정리합니다</p>
+
+        <!-- 아코디언 리스트 -->
+        <div class="accordion-container">
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)" id="detail-section">
+                    <span>1. 필라이프 코칭 상세 안내</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-section">
+                        <h2 style="color: #4ECDC4; text-align: center; margin-bottom: 2rem;">필라이프 코칭을 오픈합니다</h2>
+                        
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                            저의 새로운 도전은 2026년에도 계속됩니다.<br>
+                            지난해 독저팅, 필아카데미, 필북, 필레터에 이어 올해는 <strong style="color: #4ECDC4;">필라이프 코칭</strong>을 시작합니다.
+                        </p>
+
+                        <div class="highlight-box" style="background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%); border-left: 5px solid #4ECDC4;">
+                            <p style="font-size: 1.15rem; font-weight: bold; color: #2c3e50; margin-bottom: 1rem;">
+                                필라이프 코칭은 누군가의 삶을 대신 결정해 주는 프로그램이 아닙니다.
+                            </p>
+                            <p style="font-size: 1.05rem; color: #555; line-height: 1.8;">
+                                지금의 고민이 어디에서 비롯되었는지, 무엇을 오해하고 있는지,<br>
+                                어떤 기준으로 다시 선택해야 하는지를<br>
+                                <strong style="color: #4ECDC4;">질문과 대화를 통해 함께 정리해 보는 1:1 코칭 프로그램</strong>입니다.
+                            </p>
+                        </div>
+
+                        <p style="line-height: 1.8; margin: 2.5rem 0;">
+                            저는 수의사로 임상 현장을 경험했고,<br>
+                            작가로서 수많은 질문을 글과 책으로 정리해왔으며,<br>
+                            강사·강연가로서 사람들의 생각이 바뀌는 순간을 가까이에서 보아왔습니다.
+                        </p>
+
+                        <p style="line-height: 1.8; margin-bottom: 2.5rem;">
+                            학생 시절부터 지금까지 후배·동갑·선배를 가리지 않고,<br>
+                            주변 사람들이 먼저 고민을 털어놓고 대화를 요청해오는 경우가 많았습니다.<br>
+                            그 경험은 지금까지도 이어지고 있습니다.
+                        </p>
+
+                        <p style="line-height: 1.8; margin-bottom: 3rem; font-size: 1.1rem;">
+                            필라이프 코칭은 그 경험을 바탕으로 <strong style="color: #4ECDC4;">지금까지의 삶을 되짚어보고,<br>
+                            다음 선택을 스스로 할 수 있도록 돕는 대화</strong>입니다.
+                        </p>
+
+                        <h2 style="color: #4ECDC4; margin-top: 3rem;">다루는 주제</h2>
+                        <p style="margin-bottom: 1.5rem;">필라이프 코칭에서는 다음과 같은 고민을 다룹니다.</p>
+                        
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 1rem 1.5rem; margin-bottom: 1rem; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #4ECDC4;">
+                                💭 지금의 삶이 맞는 방향인지 혼란스러울 때
+                            </li>
+                            <li style="padding: 1rem 1.5rem; margin-bottom: 1rem; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #4ECDC4;">
+                                👥 가족·인간관계 안에서 갈등이나 반복되는 어려움이 있을 때
+                            </li>
+                            <li style="padding: 1rem 1.5rem; margin-bottom: 1rem; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #4ECDC4;">
+                                🚀 진로·직업 전환 앞에서 두려움과 망설임이 앞서 선택과 결정을 내리기 어려울 때
+                            </li>
+                            <li style="padding: 1rem 1.5rem; margin-bottom: 1rem; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #4ECDC4;">
+                                ✨ 자기 계발(퍼스널 브랜딩)을 하고 싶지만 막막할 때
+                            </li>
+                            <li style="padding: 1rem 1.5rem; margin-bottom: 1rem; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #4ECDC4;">
+                                🐾 반려동물과의 이별 이후 마음의 균형이 무너지고 일상으로 돌아가기 어려울 때
+                            </li>
+                        </ul>
+
+                        <h2 style="color: #4ECDC4; margin-top: 3rem;">진행 방식</h2>
+                        <p style="margin-bottom: 1.5rem;">진행 방식은 다음과 같습니다.</p>
+                        
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
+                            <div style="background: #4ECDC4; color: white; padding: 1.2rem 2rem; border-radius: 50px; font-weight: bold;">
+                                ① 신청서 제출
+                            </div>
+                            <span style="font-size: 1.5rem; color: #4ECDC4;">→</span>
+                            <div style="background: #4ECDC4; color: white; padding: 1.2rem 2rem; border-radius: 50px; font-weight: bold;">
+                                ② 고민 사전 접수
+                            </div>
+                            <span style="font-size: 1.5rem; color: #4ECDC4;">→</span>
+                            <div style="background: #4ECDC4; color: white; padding: 1.2rem 2rem; border-radius: 50px; font-weight: bold;">
+                                ③ Zoom 1:1 코칭
+                            </div>
+                        </div>
+                        <p style="text-align: center; color: #666; margin-top: 1rem;">
+                            (날짜, 시간 조율 후 30분~1시간)
+                        </p>
+
+                        <h2 style="color: #4ECDC4; margin-top: 3rem;">운영 안내</h2>
+                        <div style="background: #fff9e6; padding: 2rem; border-radius: 12px; border-left: 4px solid #ffc107; margin-bottom: 2rem;">
+                            <p style="line-height: 1.8; color: #555;">
+                                필라이프 코칭은 <strong>파일럿 형태</strong>로 시작합니다.<br>
+                                운영을 거듭하며 고민의 범위, 참여자가 체감한 변화와 만족도,<br>
+                                몇 회가 적정한지 등 개입 범위와 진행 방식을 다듬습니다.<br>
+                                추후 경험과 사례가 축적되면 정식 프로그램으로 전환할 계획입니다.
+                            </p>
+                        </div>
+
+                        <h2 style="color: #4ECDC4; margin-top: 3rem;">신청 전 안내</h2>
+                        <div style="background: #e3f2fd; padding: 2rem; border-radius: 12px; border-left: 4px solid #2196F3; margin-bottom: 2rem;">
+                            <p style="line-height: 1.8; color: #555; margin-bottom: 1rem;">
+                                신청서로 신청자분의 고민을 충분히 읽어본 뒤,<br>
+                                필라이프 코칭의 방향과 맞는 경우에 한하여 코칭을 진행합니다.
+                            </p>
+                            <p style="line-height: 1.8; color: #555;">
+                                코칭 가능 여부는 신청 내용을 검토한 뒤 개별적으로 안내드립니다.
+                            </p>
+                        </div>
+
+                        <h2 style="color: #e67e22; margin-top: 3rem;">⚠️ 이런 분께는 맞지 않을 수 있습니다</h2>
+                        <div style="background: #ffe5e5; padding: 2rem; border-radius: 12px; border-left: 4px solid #f5576c; margin-bottom: 2rem;">
+                            <p style="line-height: 1.8; color: #555; margin-bottom: 1rem;">
+                                필라이프 코칭은 빠른 위로나 명확한 정답을 기대하시는 분,<br>
+                                누군가가 대신 결정해 주길 바라는 분께는 맞지 않을 수 있습니다.
+                            </p>
+                            <p style="line-height: 1.8; color: #555; font-weight: bold;">
+                                이 코칭은 스스로 생각하고, 질문하고, 선택하려는 분께 보다 잘 맞는 프로그램입니다.
+                            </p>
+                        </div>
+
+                        <h2 style="color: #4ECDC4; margin-top: 3rem; text-align: center;">신청 안내</h2>
+                        <p style="text-align: center; margin-bottom: 2rem; color: #555;">
+                            필라이프 코칭 신청은 아래 신청하기 버튼을 클릭해 신청서를 작성·제출해 주세요.<br>
+                            <span style="font-size: 0.95rem; color: #999;">※ 신청 인원이 많을 경우 순차적으로 안내드릴 수 있습니다.</span>
+                        </p>
+
+                        <!-- 신청 버튼 -->
+                        <div style="text-align: center; margin: 3rem 0;">
+                            <a href="https://forms.gle/Bm3zuk5REBJgf7N1A" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; padding: 1.5rem 4rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(78, 205, 196, 0.4)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(78, 205, 196, 0.3)';">
+                                💬 필라이프 코칭 신청하기
+                            </a>
+                        </div>
+
+                        <div style="background: #f0fff4; padding: 2rem; border-radius: 15px; text-align: center; border: 2px solid #4ECDC4; margin-top: 3rem;">
+                            <p style="font-size: 1.1rem; line-height: 1.8; color: #2c3e50;">
+                                사람이 뇌과학적으로 행복할 수 있는 유일한 길은<br>
+                                남을 행복하게 해주는 것이라고 합니다.
+                            </p>
+                            <p style="font-size: 1.15rem; font-weight: bold; color: #4ECDC4; margin-top: 1rem;">
+                                필라이프 코칭으로 저와 여러분 모두 행복해지길 진심으로 바랍니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                <a href="https://litt.ly/tothemoonpark" target="_blank" style="color: white; text-decoration: none;">Litt.ly</a>
+                <a href="index.html" style="color: white; text-decoration: none;">홈</a>
+                <a href="index.html#author" style="color: white; text-decoration: none;">작가소개</a>
+                <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅™</a>
+                <a href="index.html#vod" style="color: white; text-decoration: none;">VOD 강의</a>
+                <a href="index.html#philbook" style="color: white; text-decoration: none;">필북</a>
+                <a href="index.html#books" style="color: white; text-decoration: none;">저서</a>
+                <a href="index.html#newsletter" style="color: white; text-decoration: none;">필레터</a>
+                <a href="index.html#contact" style="color: white; text-decoration: none;">상담신청</a>
+                <a href="notice.html" style="color: white; text-decoration: none;">공지사항</a>
+            </div>
+            <p>&copy; 2024 필아카데미 by 박근필. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">여러분의 읽고 쓰고 말하는 삶을 응원합니다</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.accordion-icon');
+            const isOpen = content.style.maxHeight;
+            
+            // 모든 아코디언 닫기
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                item.style.maxHeight = null;
+            });
+            document.querySelectorAll('.accordion-icon').forEach(item => {
+                item.textContent = '▼';
+            });
+            document.querySelectorAll('.accordion-header').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // 클릭한 아코디언 열기/닫기
+            if (!isOpen) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.textContent = '▲';
+                button.classList.add('active');
+            }
+        }
+
+        // 햄버거 메뉴 토글
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+
+        // URL에 해시가 있으면 자동으로 열기
+        window.addEventListener('DOMContentLoaded', function() {
+            if (window.location.hash === '#detail') {
+                const detailButton = document.getElementById('detail-section');
+                if (detailButton) {
+                    toggleAccordion(detailButton);
+                    // 스크롤 이동
+                    setTimeout(() => {
+                        detailButton.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
