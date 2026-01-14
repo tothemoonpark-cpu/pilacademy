@@ -113,11 +113,10 @@
         nav {
             max-width: 1400px;
             margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 200px 1fr;
             align-items: center;
             padding: 0 2rem;
-            flex-wrap: nowrap;
         }
         
         .logo {
@@ -125,8 +124,6 @@
             font-weight: bold;
             letter-spacing: -1px;
             white-space: nowrap;
-            flex-shrink: 0;
-            margin-right: 2rem;
         }
         
         .nav-links {
@@ -136,8 +133,7 @@
             flex-wrap: nowrap;
             white-space: nowrap;
             align-items: center;
-            flex-grow: 0;
-            flex-shrink: 0;
+            justify-content: center;
         }
         
         .nav-links a {
