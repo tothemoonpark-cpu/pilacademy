@@ -111,17 +111,17 @@
         }
         
         nav {
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 2rem;
+            padding: 0 1rem;
             flex-wrap: nowrap;
         }
         
         .logo {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: bold;
             letter-spacing: -1px;
             white-space: nowrap;
@@ -131,8 +131,10 @@
         
         .nav-links {
             display: flex !important;
-            gap: 2rem;
+            gap: 1.5rem;
             list-style: none;
+            flex-wrap: nowrap;
+            white-space: nowrap;
         }
         
         .nav-links a {
@@ -140,6 +142,8 @@
             text-decoration: none;
             font-weight: 500;
             transition: opacity 0.3s;
+            white-space: nowrap;
+            font-size: 0.95rem;
         }
         
         .nav-links a:hover {
