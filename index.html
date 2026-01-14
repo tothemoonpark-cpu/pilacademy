@@ -1588,9 +1588,9 @@
                 <li><a href="dokjeoting.html">독저팅™</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
                 <li><a href="philbook.html">필북</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
-                <li><a href="phillife.html">필라이프 코칭</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">SNS</a>
                     <div class="dropdown-content">
@@ -1613,7 +1613,7 @@
     <main role="main">
     <section class="hero" id="home" aria-labelledby="hero-title">
         <h1 id="hero-title">필아카데미에 오신 걸 환영합니다.</h1>
-        <p>수의사에서 베스트셀러 저자, 책쓰기 기획 컨설턴트, 강연가, 라이프 코치로 변신한 박근필 작가의 원스톱 플랫폼</p>
+        <p>수의사에서 베스트셀러 저자, 책쓰기 기획 컨설턴트, 강연가, 동반성장가로 변신한 박근필 작가의 원스톱 플랫폼</p>
         <p style="font-size: 2.6rem; margin-top: 1.5rem; font-weight: 700; color: #000000;">여러분을 독자에서 저자로 디자인 해드립니다.</p>
         <a href="#contact" class="cta-button">상담 신청하기 →</a>
     </section>
@@ -1636,7 +1636,7 @@
                 
                 <p>동반성장 북클럽(독서모임) '필북'을 운영 중이며, 회원들의 변화와 성장을 돕고 있습니다.</p>
                 
-                <p>부산 시청에서 200명, 인천의 중학교에서 중3 170명 대상으로 강연하는 등 강연가로도 왕성하게 활동 중입니다.</p>
+                <p>부산 시청에서 200여명 대상으로 강연하며 강연가로도 왕성하게 활동 중입니다.</p>
                 
                 <div class="author-achievements">
                     <div class="achievement">📖 저서 4권</div>
@@ -1847,7 +1847,7 @@
             
             <div class="philbook-intro">
                 <h3>박근필의 동반성장 북클럽</h3>
-                <p style="font-size: 1.4rem; font-style: italic; margin-bottom: 2rem;">"책과 대화와 특강이 만나는 특별한 7주"</p>
+                <p style="font-size: 1.4rem; font-style: italic; margin-bottom: 2rem;">"책과 대화와 특강이 만나는 특별한 4주"</p>
                 <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.95;">
                     '필북'은 박근필의 '필'과 북클럽의 '북'을 합친 이름입니다.<br>
                     짧고 기억하기 쉽지만, 그 안에 제가 하고 싶은 모든 걸 담았습니다.<br><br>
@@ -1860,7 +1860,7 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; margin-bottom: 2rem;">
                     <div>
                         <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📅</div>
-                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">격주 월요일</div>
+                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">매주 월요일</div>
                         <div style="opacity: 0.9;">저녁 9시~11시(11시 반)</div>
                     </div>
                     <div>
@@ -1870,7 +1870,7 @@
                     </div>
                     <div>
                         <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📚</div>
-                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">7주 프로그램</div>
+                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">4주 프로그램</div>
                         <div style="opacity: 0.9;">체계적인 구성</div>
                     </div>
                     <div>
@@ -1880,11 +1880,11 @@
                     </div>
                 </div>
                 <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.3);">
-                    <a href="philbook.html" style="display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); transition: all 0.3s; cursor: pointer;" 
+                    <button onclick="openPhilbookDetail()" style="display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); transition: all 0.3s; cursor: pointer;" 
                        onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(102, 126, 234, 0.5)';" 
                        onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.3)';">
                         📖 자세한 내용 확인하기 →
-                    </a>
+                    </button>
                 </div>
             </div>
             
@@ -1903,6 +1903,42 @@
                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
                     무료 구독하기 →
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 피플인사이트 -->
+    <section id="people-insight" style="padding: 5rem 2rem; background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);" aria-labelledby="people-insight-title">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title" style="color: white;" id="people-insight-title">박근필의 피플인사이트</h2>
+            
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <div style="margin-bottom: 3rem;">
+                    <img src="people-insight-logo.png" alt="박근필의 피플인사이트" style="max-width: 600px; width: 100%; height: auto; margin-bottom: 2rem;">
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.15); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px); margin-bottom: 2rem;">
+                    <h3 style="color: white; font-size: 1.8rem; margin-bottom: 2rem;">매월 한 분을 모시고 진행하는 인터뷰</h3>
+                    <p style="color: white; font-size: 1.2rem; line-height: 2; opacity: 0.95;">
+                        각자의 위치에서 열심히 삶을 살아내는 분들의 이야기<br>
+                        우리와 같은 보통 사람들의 이야기를 들으며<br>
+                        위로와 위안을 받고, 통찰을 얻고, 희망을 보세요<br><br>
+                        <strong style="color: #FFD700;">내 삶에 대해 진지하게 생각해 보는 시간</strong>
+                    </p>
+                </div>
+                
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="people-insight.html" style="display: inline-block; padding: 1rem 2.5rem; background: white; color: #FF6B6B; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(255,255,255,0.3); transition: all 0.3s;" 
+                       onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(255,255,255,0.5)';" 
+                       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(255,255,255,0.3)';">
+                        📖 자세한 내용 확인하기
+                    </a>
+                    <a href="https://www.youtube.com/playlist?list=PL9gDAK_kh9BJl6wyOhDCvexqOSXNTKitH" target="_blank" style="display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); transition: all 0.3s;" 
+                       onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(102, 126, 234, 0.5)';" 
+                       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.3)';">
+                        🎥 다시 보기
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -2091,68 +2127,6 @@
         </div>
     </section>
 
-    <!-- 필라이프 코칭 -->
-    <section class="phillife-section" id="phillife" style="padding: 5rem 2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);" aria-labelledby="phillife-title">
-        <div class="container" style="max-width: 900px; margin: 0 auto;">
-            <h2 class="section-title" style="color: white; margin-bottom: 1rem;" id="phillife-title">💬 필라이프 코칭</h2>
-            <p style="text-align: center; font-size: 1.5rem; color: white; font-weight: bold; margin-bottom: 1rem;">
-                질문과 대화를 통해 삶의 방향을 함께 정리합니다
-            </p>
-            
-            <!-- 중요 안내 -->
-            <div style="background: rgba(255,255,255,0.95); padding: 2rem; border-radius: 15px; margin: 0 auto 2rem; max-width: 700px; border: 3px solid #ffc107;">
-                <p style="font-size: 1.15rem; font-weight: bold; color: #2c3e50; line-height: 1.8; margin: 0; text-align: center;">
-                    필라이프 코칭은 심리 치료나 상담이 아닌,<br>
-                    질문과 대화를 통해 삶의 선택 기준을 정리하는 코칭 프로그램입니다.
-                </p>
-            </div>
-            
-            <p style="text-align: center; font-size: 1.1rem; color: rgba(255,255,255,0.95); line-height: 1.8; margin-bottom: 3rem;">
-                지금의 고민이 어디에서 비롯되었는지, 무엇을 오해하고 있는지,<br>
-                어떤 기준으로 다시 선택해야 하는지를<br>
-                <strong>1:1 대화로 함께 정리하는 코칭 프로그램</strong>입니다
-            </p>
-            
-            <!-- CTA 버튼들 -->
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="phillife.html" 
-                   style="display: inline-block; 
-                          background: white; 
-                          color: #4ECDC4; 
-                          padding: 1.5rem 4rem; 
-                          border-radius: 50px; 
-                          font-size: 1.3rem; 
-                          font-weight: bold; 
-                          text-decoration: none; 
-                          box-shadow: 0 6px 20px rgba(0,0,0,0.2); 
-                          transition: all 0.3s; 
-                          margin: 0 1rem 1.5rem 1rem;" 
-                   onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.3)';" 
-                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.2)';">
-                    📖 자세한 내용 확인하기
-                </a>
-                
-                <a href="https://forms.gle/ydiRcZkiYJy8oQ6S9" 
-                   target="_blank"
-                   style="display: inline-block; 
-                          background: white; 
-                          color: #f5576c; 
-                          padding: 1.5rem 4rem; 
-                          border-radius: 50px; 
-                          font-size: 1.3rem; 
-                          font-weight: bold; 
-                          text-decoration: none; 
-                          box-shadow: 0 6px 20px rgba(0,0,0,0.2); 
-                          transition: all 0.3s; 
-                          margin: 0 1rem 1.5rem 1rem;" 
-                   onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.3)';" 
-                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.2)';">
-                    💬 필라이프 코칭 신청하기
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- 상담 신청 -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
         <h2 class="section-title" id="contact-title">상담 신청</h2>
@@ -2162,7 +2136,7 @@
                 <input type="hidden" name="access_key" value="065b78d5-e112-4569-97f6-9f536177f948">
                 <input type="hidden" name="subject" value="[필아카데미] 새로운 상담 신청">
                 <input type="hidden" name="from_name" value="필아카데미 홈페이지">
-                <input type="hidden" name="redirect" value="https://tothemoonpark-cpu.github.io/pilacademy/success.html">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
                 
                 <div class="form-group">
                     <label for="name">이름 *</label>
@@ -2187,7 +2161,6 @@
                         <option value="VOD강연">VOD 특강</option>
                         <option value="필북">필북</option>
                         <option value="필레터">필레터</option>
-                        <option value="필라이프코칭">필라이프 코칭</option>
                         <option value="강연/협업">강연/협업</option>
                         <option value="기타">기타 문의</option>
                     </select>
@@ -2220,10 +2193,6 @@
             </div>
             
             <div class="vod-detail-cta">
-                <!-- 필북 후기 확인하기 버튼 (필북일 때만 표시) -->
-                <a href="philbook.html#reviews" id="philbookReviewBtn" style="display: none; text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: bold; margin-bottom: 1.5rem; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                    📚 필북 후기 확인하기
-                </a>
                 <div class="vod-detail-price" id="vodDetailPriceBottom"></div>
                 <button class="vod-detail-buy" id="vodDetailBuyBtn">지금 구매하기</button>
             </div>
@@ -2254,7 +2223,7 @@
             </div>
             
             <div class="payment-notice">
-                ⚠️ 입금하시고 아래 정보를 입력하시면, 확인 후 안내해 드립니다.
+                ⚠️ 입금 후 아래 정보를 입력하시면, 입금 확인 후 VOD 링크를 보내드립니다.
             </div>
             
             <form class="payment-form" id="paymentForm">
@@ -2265,17 +2234,17 @@
                 
                 <div class="form-group">
                     <label for="paymentName">입금자명 *</label>
-                    <input type="text" id="paymentName" name="depositor_name" required placeholder="홍길동">
+                    <input type="text" id="paymentName" name="입금자명" required placeholder="홍길동">
                 </div>
                 
                 <div class="form-group">
                     <label for="paymentEmail">이메일 *</label>
-                    <input type="email" id="paymentEmail" name="email" required placeholder="example@email.com">
+                    <input type="email" id="paymentEmail" name="이메일" required placeholder="example@email.com">
                 </div>
                 
                 <div class="form-group">
                     <label for="paymentPhone">연락처 *</label>
-                    <input type="tel" id="paymentPhone" name="phone" required placeholder="010-0000-0000">
+                    <input type="tel" id="paymentPhone" name="연락처" required placeholder="010-0000-0000">
                 </div>
                 
                 <button type="submit" class="payment-submit">입금 완료 알림 전송</button>
@@ -2295,9 +2264,9 @@
                 <a href="#dokjeoting">독저팅™</a>
                 <a href="#vod">VOD 강의</a>
                 <a href="#philbook">필북</a>
+                <a href="#people-insight">피플인사이트</a>
                 <a href="#books">저서</a>
                 <a href="#newsletter">필레터</a>
-                <a href="#phillife">필라이프 코칭</a>
                 <a href="#contact">상담신청</a>
                 <a href="notice.html">공지사항</a>
             </div>
@@ -2601,9 +2570,6 @@
             noticeText.style.cssText = 'font-size: 0.95rem; color: #666; margin-top: 0.8rem; text-align: center;';
             noticeText.innerHTML = '💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다<br>결제 후 다시 필아카데미로 돌아와주세요';
             buyButton.parentElement.appendChild(noticeText);
-            
-            // 필북 후기 버튼 숨기기 (VOD는 필북 아니므로)
-            document.getElementById('philbookReviewBtn').style.display = 'none';
             
             modal.classList.add('active');
         }
@@ -2946,9 +2912,9 @@
         function openPhilbookDetail() {
             const modal = document.getElementById('vodDetailModal');
             document.getElementById('vodDetailTitle').textContent = '필북 (박근필의 동반성장 북클럽)';
-            document.getElementById('vodDetailDuration').textContent = '⏱ 격주 월요일 저녁 9시~11시(11시 반)';
-            document.getElementById('vodDetailPrice').textContent = '40,000원';
-            document.getElementById('vodDetailPriceBottom').textContent = '40,000원 (3기 재참여 3만원)';
+            document.getElementById('vodDetailDuration').textContent = '⏱ 매주 월요일 저녁 9시~11시(11시 반)';
+            document.getElementById('vodDetailPrice').textContent = '50,000원';
+            document.getElementById('vodDetailPriceBottom').textContent = '50,000원 (직전 기수 4만원)';
             
             // 상세 내용 생성
             let bodyHTML = '<div style="padding: 2rem; line-height: 1.8;">';
@@ -2965,7 +2931,7 @@
             // 정기 모임
             bodyHTML += '<div style="background: #f0f9ff; border-left: 4px solid #4ECDC4; padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">';
             bodyHTML += '<div style="font-weight: bold; margin-bottom: 0.8rem; color: #2c3e50;">📅 정기 모임</div>';
-            bodyHTML += '<div style="color: #555;">격주 월요일 저녁 9시~11시(11시 반) / 온라인 Zoom / 7주 프로그램</div>';
+            bodyHTML += '<div style="color: #555;">매주 월요일 저녁 9시~11시(11시 반) / 온라인 Zoom / 4주 프로그램</div>';
             bodyHTML += '</div>';
             
             // 도서 구성
@@ -3040,13 +3006,13 @@
             bodyHTML += '</div>';
             bodyHTML += '</div>';
             
-            // 4기 신청 안내
+            // 4기 신청 예약 안내
             bodyHTML += '<div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 12px; padding: 20px; margin: 2rem 0; text-align: center;">';
-            bodyHTML += '<div style="font-size: 1.2rem; color: #856404; font-weight: 700; margin-bottom: 12px;">💡 필북 4기 신청 (12.14까지 | 조기 마감 가능)</div>';
+            bodyHTML += '<div style="font-size: 1.2rem; color: #856404; font-weight: 700; margin-bottom: 12px;">💡 현재는 4기 신청 예약 가능합니다.</div>';
             bodyHTML += '<div style="color: #856404; line-height: 1.8;">';
             bodyHTML += '메인 화면의 하단에 <strong>\'상담 신청\'</strong>에서 필요한 정보 입력하시고<br>';
             bodyHTML += '신청 서비스 중 <strong>필북</strong>을 선택하세요.<br>';
-            bodyHTML += '문의 내용에 <strong>"필북 4기 신청"</strong>이라고 적은 후<br>';
+            bodyHTML += '문의 내용에 <strong>"필북 4기 신청 예약"</strong>이라고 적은 후<br>';
             bodyHTML += '<strong>\'상담 신청하기\'</strong>를 클릭하세요.';
             bodyHTML += '</div>';
             bodyHTML += '</div>';
@@ -3054,9 +3020,6 @@
             bodyHTML += '</div>';
             
             document.getElementById('vodDetailBody').innerHTML = bodyHTML;
-            
-            // 필북 후기 버튼 보이기
-            document.getElementById('philbookReviewBtn').style.display = 'block';
             
             // 구매 버튼 이벤트
             document.getElementById('vodDetailBuyBtn').onclick = function() {
