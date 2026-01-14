@@ -51,7 +51,7 @@
         }
         
         .nav-links {
-            display: flex;
+            display: flex !important;
             gap: 2rem;
             list-style: none;
         }
@@ -144,19 +144,6 @@
             pointer-events: none;
         }
         
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 8rem 2rem 4rem 2rem;
-            text-align: center;
-        }
-        
-        .hero-section img {
-            max-width: 600px;
-            width: 100%;
-            margin-bottom: 2rem;
-        }
-        
         .content-section {
             max-width: 1200px;
             margin: 0 auto;
@@ -209,10 +196,6 @@
         }
         
         @media (max-width: 768px) {
-            .hero-section {
-                padding: 6rem 1rem 3rem 1rem;
-            }
-            
             .intro-box {
                 padding: 2rem 1.5rem;
             }
@@ -248,11 +231,11 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">홈</a></li>
                 <li><a href="author.html">작가소개</a></li>
-                <li><a href="dokjeoting.html">독저팅™</a></li>
-                <li><a href="vod.html">VOD 강의</a></li>
-                <li><a href="philbook.html">필북</a></li>
-                <li><a href="people-insight.html">피플인사이트</a></li>
                 <li><a href="books.html">저서</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="dokjeoting.html">독저팅™</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="philbook.html">필북</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
                 <li><a href="phillife.html">필라이프 코칭</a></li>
                 <li class="dropdown">
@@ -273,9 +256,7 @@
         </nav>
     </header>
 
-    <section class="hero-section">
-        <img src="people-insight-logo.png" alt="박근필 작가의 피플인사이트">
-    </section>
+    <div style="height: 80px;"></div>
 
     <section class="content-section">
         <div class="intro-box">
@@ -305,11 +286,11 @@
                 <a href="https://litt.ly/tothemoonpark" target="_blank" style="color: white; text-decoration: none;">Litt.ly</a>
                 <a href="index.html" style="color: white; text-decoration: none;">홈</a>
                 <a href="author.html" style="color: white; text-decoration: none;">작가소개</a>
-                <a href="dokjeoting.html" style="color: white; text-decoration: none;">독저팅™</a>
-                <a href="vod.html" style="color: white; text-decoration: none;">VOD 강의</a>
-                <a href="philbook.html" style="color: white; text-decoration: none;">필북</a>
-                <a href="people-insight.html" style="color: white; text-decoration: none;">피플인사이트</a>
                 <a href="books.html" style="color: white; text-decoration: none;">저서</a>
+                <a href="vod.html" style="color: white; text-decoration: none;">VOD 강의</a>
+                <a href="dokjeoting.html" style="color: white; text-decoration: none;">독저팅™</a>
+                <a href="people-insight.html" style="color: white; text-decoration: none;">피플인사이트</a>
+                <a href="philbook.html" style="color: white; text-decoration: none;">필북</a>
                 <a href="newsletter.html" style="color: white; text-decoration: none;">필레터</a>
                 <a href="phillife.html" style="color: white; text-decoration: none;">필라이프 코칭</a>
                 <a href="index.html#contact" style="color: white; text-decoration: none;">상담신청</a>

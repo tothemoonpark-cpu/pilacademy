@@ -130,7 +130,7 @@
         }
         
         .nav-links {
-            display: flex;
+            display: flex !important;
             gap: 2rem;
             list-style: none;
         }
@@ -1417,7 +1417,7 @@
             }
             
             .nav-links {
-                display: none;
+                display: none !important;
                 position: fixed;
                 top: 70px;
                 left: 0;
@@ -1432,7 +1432,7 @@
             }
             
             .nav-links.active {
-                display: flex;
+                display: flex !important;
             }
             
             .nav-links li {
@@ -1585,12 +1585,13 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">홈</a></li>
                 <li><a href="author.html">작가소개</a></li>
-                <li><a href="dokjeoting.html">독저팅™</a></li>
-                <li><a href="vod.html">VOD 강의</a></li>
-                <li><a href="philbook.html">필북</a></li>
-                <li><a href="people-insight.html">피플인사이트</a></li>
                 <li><a href="books.html">저서</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="dokjeoting.html">독저팅™</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="philbook.html">필북</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="phillife.html">필라이프 코칭</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">SNS</a>
                     <div class="dropdown-content">
@@ -1913,10 +1914,6 @@
             <h2 class="section-title" style="color: white;" id="people-insight-title">박근필의 피플인사이트</h2>
             
             <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <div style="margin-bottom: 3rem;">
-                    <img src="people-insight-logo.png" alt="박근필의 피플인사이트" style="max-width: 600px; width: 100%; height: auto; margin-bottom: 2rem;">
-                </div>
-                
                 <div style="background: rgba(255,255,255,0.15); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px); margin-bottom: 2rem;">
                     <h3 style="color: white; font-size: 1.8rem; margin-bottom: 2rem;">매월 한 분을 모시고 진행하는 인터뷰</h3>
                     <p style="color: white; font-size: 1.2rem; line-height: 2; opacity: 0.95;">
@@ -2261,12 +2258,13 @@
                 <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener noreferrer">Litt.ly</a>
                 <a href="#home">홈</a>
                 <a href="#author">작가소개</a>
-                <a href="#dokjeoting">독저팅™</a>
-                <a href="#vod">VOD 강의</a>
-                <a href="#philbook">필북</a>
-                <a href="#people-insight">피플인사이트</a>
                 <a href="#books">저서</a>
+                <a href="#vod">VOD 강의</a>
+                <a href="#dokjeoting">독저팅™</a>
+                <a href="#people-insight">피플인사이트</a>
+                <a href="#philbook">필북</a>
                 <a href="#newsletter">필레터</a>
+                <a href="#phillife">필라이프 코칭</a>
                 <a href="#contact">상담신청</a>
                 <a href="notice.html">공지사항</a>
             </div>
