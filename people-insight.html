@@ -36,30 +36,32 @@
         }
         
         nav {
-            max-width: 100%;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            padding: 0 1rem;
+            padding: 0 2rem;
             flex-wrap: nowrap;
-            gap: 3rem;
-            position: relative;
         }
         
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            position: absolute;
-            left: 1rem;
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-right: 2rem;
         }
         
         .nav-links {
             display: flex !important;
-            gap: 1.5rem;
+            gap: 1.2rem;
             list-style: none;
             flex-wrap: nowrap;
             white-space: nowrap;
+            align-items: center;
+            flex-grow: 0;
+            flex-shrink: 0;
         }
         
         .nav-links a {
@@ -68,7 +70,7 @@
             font-weight: 500;
             transition: opacity 0.3s;
             white-space: nowrap;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
         
         .nav-links a:hover {
