@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작가 소개 - 필아카데미</title>
+    <meta name="description" content="수의사에서 베스트셀러 작가로 변신한 박근필 작가의 이야기">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4ECDC4;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4ECDC4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 3rem;
+        }
+
+        .author-section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .author-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .author-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .author-text h3 {
+            font-size: 1.8rem;
+            color: #4ECDC4;
+            margin-bottom: 1rem;
+        }
+
+        .author-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .author-achievements {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .achievement {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(78, 205, 196, 0.3);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0;
+            margin-top: 5rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .author-content {
+                grid-template-columns: 1fr;
+            }
+
+            .author-achievements {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="메인 네비게이션">
+            <a href="index.html" class="logo">필아카데미</a>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="author.html">작가소개</a></li>
+                <li><a href="dokjeoting.html">독저팅™</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="phillife.html">필라이프 코칭</a></li>
+                <li><a href="index.html#contact">상담신청</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">박근필 작가</h1>
+
+        <section class="author-section">
+            <div class="author-content">
+                <div class="author-image">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==" alt="박근필 작가" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); aspect-ratio: 1/1; object-fit: cover;">
+                </div>
+                
+                <div class="author-text">
+                    <h3>수의사에서 베스트셀러 작가로</h3>
+                    <p>20년 넘게 임상 수의사로 살다가, 40대에 인생을 리셋했습니다. 현재는 베스트셀러 작가이자 책쓰기 기획 컨설턴트, 강사 및 강연가, 라이프 코치로도 활동하고 있습니다.</p>
+                    
+                    <p>저서로는 『할퀴고 물려도 나는 수의사니까』 (2023), 『나는 매일 두 번 출근합니다』 (2024), 『마흔 더 늦기 전에 생각의 틀을 리셋하라』 (2025), 『방구석에서 혼자 읽는 직업 토크쇼(공저)』 (2025)가 있습니다.<br>
+                    『마흔 더 늦기 전에 생각의 틀을 리셋하라』는 교보문고 온라인 일간 베스트셀러 1위에 올랐고, 많은 분들에게 위로와 긍정적인 자극을 주었습니다.</p>
+                    
+                    <p>1:1 책쓰기 기획 컨설팅 '독저팅'은 '책 쓰기는 80% 기획, 20% 집필'이라는 철학을 전파하며, 출판 계약에 성공하는 책쓰기 노하우를 알려드립니다.</p>
+                    
+                    <p>동반성장 북클럽(독서모임) '필북'을 운영 중이며, 회원들의 변화와 성장을 돕고 있습니다.</p>
+                    
+                    <p>부산 시청에서 200명, 인천의 중학교에서 중3 170명 대상으로 강연하는 등 강연가로도 왕성하게 활동 중입니다.</p>
+                    
+                    <div class="author-achievements">
+                        <div class="achievement">📖 저서 4권</div>
+                        <div class="achievement">🏆 교보문고 베스트셀러 1위</div>
+                        <div class="achievement">👥 SNS 팔로워 약 2.5만 명</div>
+                        <div class="achievement">✅ 독서, 책쓰기 전문가</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">
+            <div class="footer-links">
+                <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener noreferrer">Litt.ly</a>
+                <a href="index.html">홈</a>
+                <a href="index.html#author">작가소개</a>
+                <a href="index.html#dokjeoting">독저팅™</a>
+                <a href="index.html#vod">VOD 강의</a>
+                <a href="index.html#philbook">필북</a>
+                <a href="index.html#books">저서</a>
+                <a href="index.html#newsletter">필레터</a>
+                <a href="index.html#phillife">필라이프 코칭</a>
+                <a href="index.html#contact">상담신청</a>
+                <a href="notice.html">공지사항</a>
+            </div>
+            <p>&copy; 2024 필아카데미 by 박근필. All rights reserved.</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">여러분의 읽고 쓰고 말하는 삶을 응원합니다</p>
+        </div>
+    </footer>
+</body>
+</html>
