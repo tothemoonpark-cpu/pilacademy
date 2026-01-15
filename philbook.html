@@ -65,6 +65,13 @@
             position: relative;
         }
         
+        /* 데스크톱에서는 항상 메뉴 표시 */
+        @media screen and (min-width: 769px) {
+            .nav-links {
+                display: flex !important;
+            }
+        }
+        
         .dropdown-content {
             display: none;
             position: absolute;

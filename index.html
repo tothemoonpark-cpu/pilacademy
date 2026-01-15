@@ -149,6 +149,13 @@
             opacity: 0.8;
         }
         
+        /* 데스크톱에서는 항상 메뉴 표시 */
+        @media screen and (min-width: 769px) {
+            .nav-links {
+                display: flex !important;
+            }
+        }
+        
         /* 햄버거 메뉴 버튼 - 기본적으로 숨김 */
         .menu-toggle {
             display: none;
