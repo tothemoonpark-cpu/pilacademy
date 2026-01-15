@@ -40,7 +40,6 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: 200px 1fr;
-            align-items: center;
             padding: 0 2rem;
         }
         
@@ -51,7 +50,7 @@
         }
         
         .nav-links {
-            display: flex !important;
+            display: flex;
             gap: 1.2rem;
             list-style: none;
             flex-wrap: nowrap;
@@ -216,13 +215,35 @@
             }
             
             .menu-toggle { display: flex; z-index: 1001; }
-            nav { padding: 0 1rem; flex-wrap: nowrap !important; }
-            .logo { font-size: 1.5rem !important; transition: opacity 0.3s ease; }
-            .nav-links { display: none !important; position: fixed; top: 70px; left: 0; right: 0; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); flex-direction: column; padding: 1rem 0; z-index: 999; max-height: calc(100vh - 70px); overflow-y: auto; }
-            .nav-links.active { display: flex !important; }
+                flex-wrap: nowrap;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                grid-template-columns: none;
+            .logo { font-size: 1.5rem; transition: opacity 0.3s ease; }
+            .nav-links { display: none; position: fixed; top: 70px; left: 0; right: 0; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); flex-direction: column; padding: 1rem 0; z-index: 999; max-height: calc(100vh - 70px); overflow-y: auto; }
             .nav-links li { text-align: center; padding: 0.8rem 0; }
             .dropdown-content { position: static; background: rgba(255,255,255,0.1); }
             .dropdown-content a { color: white; }
+        }
+        
+        /* 네비게이션 강제 표시 - 최우선 순위 */
+        @media (min-width: 769px) {
+            .nav-links {
+                display: flex;
+                visibility: visible !important;
+                opacity: 1 !important;
+                position: static !important;
+            }
+            
+            .menu-toggle {
+                display: none;
+            }
+            
+            nav {
+                display: grid !important;
+            }
         }
     </style>
 </head>

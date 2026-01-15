@@ -127,7 +127,7 @@
         }
         
         .nav-links {
-            display: flex !important;
+            display: flex;
             gap: 1.2rem;
             list-style: none;
             flex-wrap: nowrap;
@@ -149,7 +149,7 @@
             opacity: 0.8;
         }
         
-        /* 햄버거 메뉴 버튼 */
+        /* 햄버거 메뉴 버튼 - 기본적으로 숨김 */
         .menu-toggle {
             display: none;
             flex-direction: column;
@@ -1389,11 +1389,12 @@
             
             nav {
                 padding: 0 1rem;
-                flex-wrap: nowrap !important;
+                flex-wrap: nowrap;
                 width: 100%;
-                display: flex !important;
-                justify-content: space-between !important;
-                align-items: center !important;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                grid-template-columns: none;
             }
             
             .menu-toggle {
@@ -1403,13 +1404,13 @@
             }
             
             .logo {
-                font-size: 1.5rem !important;
-                white-space: nowrap !important;
-                flex-shrink: 0 !important;
-                overflow: visible !important;
-                text-overflow: clip !important;
-                max-width: none !important;
-                display: inline-block !important;
+                font-size: 1.5rem;
+                white-space: nowrap;
+                flex-shrink: 0;
+                overflow: visible;
+                text-overflow: clip;
+                max-width: none;
+                display: inline-block;
                 transition: opacity 0.3s ease;
             }
             
@@ -1420,7 +1421,7 @@
             }
             
             .nav-links {
-                display: none !important;
+                display: none;
                 position: fixed;
                 top: 70px;
                 left: 0;
@@ -1432,10 +1433,11 @@
                 max-height: calc(100vh - 70px);
                 overflow-y: auto;
                 z-index: 999;
+                gap: 0;
             }
             
             .nav-links.active {
-                display: flex !important;
+                display: flex;
             }
             
             .nav-links li {
@@ -1573,6 +1575,25 @@
                 }
             }
         }
+        
+        /* 네비게이션 강제 표시 - 최우선 순위 */
+        @media (min-width: 769px) {
+            .nav-links {
+                display: flex !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                position: static !important;
+            }
+            
+            .menu-toggle {
+                display: none !important;
+            }
+            
+            nav {
+                display: grid !important;
+            }
+        }
+
 </style>
 </head>
 <body>

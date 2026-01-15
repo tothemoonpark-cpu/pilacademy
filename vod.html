@@ -38,11 +38,7 @@
         nav {
             max-width: 1200px;
             margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 0 2rem;
-            flex-wrap: nowrap;
         }
         
         .logo {
@@ -155,16 +151,21 @@
             
             nav {
                 padding: 0 1rem;
-                flex-wrap: nowrap !important;
+                flex-wrap: nowrap;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                grid-template-columns: none;
             }
             
             .logo {
-                font-size: 1.5rem !important;
+                font-size: 1.5rem;
                 transition: opacity 0.3s ease;
             }
             
             .nav-links {
-                display: none !important;
+                display: none;
                 position: fixed;
                 top: 70px;
                 left: 0;
@@ -178,7 +179,7 @@
             }
             
             .nav-links.active {
-                display: flex !important;
+                display: flex;
             }
             
             .nav-links li {

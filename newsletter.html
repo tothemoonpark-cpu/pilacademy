@@ -40,9 +40,6 @@
         nav {
             max-width: 1200px;
             margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 0 2rem;
         }
         
@@ -141,7 +138,12 @@
         
         @media (max-width: 768px) {
             nav { padding: 0 1rem; }
-            .menu-toggle { display: flex; }
+                flex-wrap: nowrap;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                grid-template-columns: none;
             .nav-links { 
                 display: none; 
                 position: fixed;
@@ -336,6 +338,24 @@
                 font-size: 1rem;
             }
         }
+        
+        /* 네비게이션 강제 표시 - 최우선 순위 */
+        @media (min-width: 769px) {
+            .nav-links {
+                display: flex;
+                visibility: visible !important;
+                opacity: 1 !important;
+                position: static !important;
+            }
+            
+            .menu-toggle {
+                display: none;
+            }
+            
+            nav {
+                display: grid !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -350,10 +370,11 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">홈</a></li>
                 <li><a href="author.html">작가소개</a></li>
-                <li><a href="dokjeoting.html">독저팅™</a></li>
-                <li><a href="vod.html">VOD 강의</a></li>
-                <li><a href="philbook.html">필북</a></li>
                 <li><a href="books.html">저서</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="dokjeoting.html">독저팅™</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="philbook.html">필북</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
                 <li><a href="phillife.html">필라이프 코칭</a></li>
                 <li class="dropdown">
