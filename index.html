@@ -1645,7 +1645,7 @@
     <main role="main">
     <section class="hero" id="home" aria-labelledby="hero-title">
         <h1 id="hero-title">필아카데미에 오신 걸 환영합니다.</h1>
-        <p>수의사에서 베스트셀러 저자, 책쓰기 기획 컨설턴트, 강연가, 동반성장가로 변신한 박근필 작가의 원스톱 플랫폼</p>
+        <p>수의사에서 베스트셀러 저자, 책쓰기 기획 컨설턴트, 강연가, 라이프 코치로 변신한 박근필 작가의 원스톱 플랫폼</p>
         <p style="font-size: 2.6rem; margin-top: 1.5rem; font-weight: 700; color: #000000;">여러분을 독자에서 저자로 디자인 해드립니다.</p>
         <a href="#contact" class="cta-button">상담 신청하기 →</a>
     </section>
@@ -1879,7 +1879,7 @@
             
             <div class="philbook-intro">
                 <h3>박근필의 동반성장 북클럽</h3>
-                <p style="font-size: 1.4rem; font-style: italic; margin-bottom: 2rem;">"책과 대화와 특강이 만나는 특별한 4주"</p>
+                <p style="font-size: 1.4rem; font-style: italic; margin-bottom: 2rem;">"책과 대화와 특강이 만나는 특별한 7주"</p>
                 <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.95;">
                     '필북'은 박근필의 '필'과 북클럽의 '북'을 합친 이름입니다.<br>
                     짧고 기억하기 쉽지만, 그 안에 제가 하고 싶은 모든 걸 담았습니다.<br><br>
@@ -1892,7 +1892,7 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; margin-bottom: 2rem;">
                     <div>
                         <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📅</div>
-                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">매주 월요일</div>
+                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">격주 월요일</div>
                         <div style="opacity: 0.9;">저녁 9시~11시(11시 반)</div>
                     </div>
                     <div>
@@ -1902,7 +1902,7 @@
                     </div>
                     <div>
                         <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📚</div>
-                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">4주 프로그램</div>
+                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">7주 프로그램</div>
                         <div style="opacity: 0.9;">체계적인 구성</div>
                     </div>
                     <div>
@@ -1912,11 +1912,11 @@
                     </div>
                 </div>
                 <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.3);">
-                    <button onclick="openPhilbookDetail()" style="display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); transition: all 0.3s; cursor: pointer;" 
+                    <a href="philbook.html" style="display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); transition: all 0.3s; cursor: pointer;" 
                        onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(102, 126, 234, 0.5)';" 
                        onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.3)';">
                         📖 자세한 내용 확인하기 →
-                    </button>
+                    </a>
                 </div>
             </div>
             
@@ -2938,11 +2938,11 @@
             });
         }
         
-        // 필북 상세 정보
+/*         // 필북 상세 정보
         function openPhilbookDetail() {
             const modal = document.getElementById('vodDetailModal');
             document.getElementById('vodDetailTitle').textContent = '필북 (박근필의 동반성장 북클럽)';
-            document.getElementById('vodDetailDuration').textContent = '⏱ 매주 월요일 저녁 9시~11시(11시 반)';
+            document.getElementById('vodDetailDuration').textContent = '⏱ 격주 월요일 저녁 9시~11시(11시 반)';
             document.getElementById('vodDetailPrice').textContent = '50,000원';
             document.getElementById('vodDetailPriceBottom').textContent = '50,000원 (직전 기수 4만원)';
             
@@ -2961,7 +2961,7 @@
             // 정기 모임
             bodyHTML += '<div style="background: #f0f9ff; border-left: 4px solid #4ECDC4; padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">';
             bodyHTML += '<div style="font-weight: bold; margin-bottom: 0.8rem; color: #2c3e50;">📅 정기 모임</div>';
-            bodyHTML += '<div style="color: #555;">매주 월요일 저녁 9시~11시(11시 반) / 온라인 Zoom / 4주 프로그램</div>';
+            bodyHTML += '<div style="color: #555;">격주 월요일 저녁 9시~11시(11시 반) / 온라인 Zoom / 7주 프로그램</div>';
             bodyHTML += '</div>';
             
             // 도서 구성
@@ -3059,7 +3059,7 @@
             document.getElementById('vodDetailBuyBtn').textContent = '지금 바로 신청하기';
             
             modal.classList.add('active');
-        }
+        } */
         
         window.addEventListener('load', function() {
             const navLinks = document.getElementById('navLinks');
