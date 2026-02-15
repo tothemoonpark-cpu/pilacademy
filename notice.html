@@ -438,7 +438,7 @@
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">홈</a></li>
-                <li><a href="author.html">작가소개</a></li>
+                <li><a href="author.html">소장소개</a></li>
                 <li><a href="dokjeoting.html">독저팅™</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
                 <li><a href="philbook.html">필북</a></li>
@@ -484,12 +484,12 @@
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <div>
                         <span class="notice-badge" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">HOT</span>
-                        <span class="notice-title">2. 박근필 작가의 커뮤니티</span>
+                        <span class="notice-title">2. 박근필 소장의 커뮤니티</span>
                     </div>
                     <span id="arrow-community" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
                 </div>
                 <div id="content-community" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">
-                    <p style="color: #666; margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 500;">박근필 작가와의 동반 성장 단톡방</p>
+                    <p style="color: #666; margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 500;">박근필 소장와의 동반 성장 단톡방</p>
                     <p style="color: #e65100; margin-bottom: 1rem; font-size: 1rem; font-weight: 600;">🔑 단톡방 입장코드(비번)은 <strong style="font-size: 1.2rem;">2222</strong>입니다.</p>
                     <a href="https://open.kakao.com/o/gLKiGDBg" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #FEE500 0%, #FFD700 100%); color: #3c1e1e; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: bold; transition: all 0.3s;">
                         💬 카카오톡 오픈채팅 참여하기
@@ -548,6 +548,42 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 4번 공지: QR코드 안내 -->
+            <div style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer; transition: all 0.3s;" onclick="toggleNotice('qrcode')" onmouseover="this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)'" onmouseout="this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'">
+                <div class="notice-date">2026.02.15</div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <span class="notice-badge" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);">NEW</span>
+                        <span class="notice-title">4. 박근필성장연구소 QR코드 안내</span>
+                    </div>
+                    <span id="arrow-qrcode" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
+                </div>
+                <div id="content-qrcode" style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #e0e0e0;">
+                    <div style="line-height: 1.9; color: #2c3e50;">
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem; text-align: center; color: #555;">
+                            박근필 소장의 프로필과 박근필성장연구소 웹사이트를<br>
+                            QR코드로 간편하게 접속하세요.
+                        </p>
+
+                        <!-- QR코드 이미지 -->
+                        <div style="background: #f8f9fa; padding: 2.5rem; border-radius: 15px; margin: 1.5rem 0; text-align: center;">
+                            <img src="qrcode.png" alt="박근필 프로필 및 박근필성장연구소 QR코드" style="width: 100%; max-width: 600px; display: block; margin: 0 auto; border-radius: 10px;">
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+                            <div style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); padding: 1.5rem; border-radius: 12px; text-align: center; color: white;">
+                                <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.8rem;">박근필 프로필 링크</p>
+                                <a href="https://litt.ly/tothemoonpark" target="_blank" style="color: #fff; text-decoration: underline; font-size: 0.95rem;">litt.ly/tothemoonpark →</a>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1.5rem; border-radius: 12px; text-align: center; color: white;">
+                                <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.8rem;">박근필성장연구소</p>
+                                <a href="index.html" style="color: #fff; text-decoration: underline; font-size: 0.95rem;">웹사이트 바로가기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -556,7 +592,7 @@
             <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
                 <a href="https://litt.ly/tothemoonpark" target="_blank" style="color: white; text-decoration: none;">Litt.ly</a>
                 <a href="index.html" style="color: white; text-decoration: none;">홈</a>
-                <a href="index.html#author" style="color: white; text-decoration: none;">작가소개</a>
+                <a href="index.html#author" style="color: white; text-decoration: none;">소장소개</a>
                 <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅™</a>
                 <a href="index.html#vod" style="color: white; text-decoration: none;">VOD 강의</a>
                 <a href="index.html#philbook" style="color: white; text-decoration: none;">필북</a>
