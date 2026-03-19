@@ -1148,15 +1148,16 @@
 
 
             <!-- 4. 필북 6기 신청 -->
-            <div class="accordion-item" id="section4">
-                <button class="accordion-header" onclick="toggleSection('section4')">
-                    <div>
+            <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 1rem;">
+                <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail4')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
                         <h3 style="font-size: 1.3rem; color: #2c3e50;">4. 필북 6기 신청</h3>
+                        <span id="arrow4" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
                     </div>
-                    <span class="accordion-icon" id="icon-section4">▼</span>
-                </button>
-                <div class="accordion-content" id="content-section4">
-                    <div style="padding: 2rem;">
+                </div>
+                
+                <div id="detail4" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
+                    <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
                         <h3 style="font-size: 1.8rem; color: #2c3e50; margin-bottom: 2rem;">📚 필북 6기 모집</h3>
                         
                         <!-- 모집 중 안내 -->
