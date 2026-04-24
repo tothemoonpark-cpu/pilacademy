@@ -572,6 +572,113 @@
                                 🔗 litt.ly/tothemoonpark →
                             </a>
                         </div>
+<!-- historyData: body 하단으로 이동 -->
+
+<div id="history-activities"></div>
+
+                <!-- 기타 활동 포함 완료 -->
+                </div>
+            </div>
+
+            <!-- 2번 글: 인터뷰 이력 -->
+            <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
+                <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail2')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">2. 📰 언론 인터뷰 이력</h3>
+                        <span id="arrow2" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
+                    </div>
+                </div>
+                <div id="detail2" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
+                    <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
+                        <div id="history-interviews"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3번 글: 칼럼 연재 이력 -->
+            <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
+                <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail3')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">3. ✍️ 칼럼 연재 이력</h3>
+                        <span id="arrow3" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
+                    </div>
+                </div>
+                
+                <div id="detail3" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
+                    <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
+
+<!-- ============================================================
+     칼럼 데이터 - 유일한 원본 (이 script 블록만 수정할 것)
+     새 칼럼 추가: 해당 매체 columns 배열 맨 앞에 객체 추가
+     기존 데이터 절대 삭제/수정 금지
+     ============================================================ -->
+<!-- columnData: body 하단으로 이동 -->
+<div id="column-section-3"></div>
+
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+    
+    <footer role="contentinfo" style="background: #2c3e50; color: white; padding: 3rem 0; margin-top: 5rem;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">
+            <div role="navigation" aria-label="푸터 링크" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Litt.ly</a>
+                <a href="index.html" style="color: white; text-decoration: none;">홈</a>
+                <a href="index.html#author" style="color: white; text-decoration: none;">소장소개</a>
+                <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅™</a>
+                <a href="index.html#vod" style="color: white; text-decoration: none;">VOD 강의</a>
+                <a href="index.html#philbook" style="color: white; text-decoration: none;">필북</a>
+                <a href="index.html#books" style="color: white; text-decoration: none;">저서</a>
+                <a href="index.html#newsletter" style="color: white; text-decoration: none;">필레터</a>
+                <a href="index.html#contact" style="color: white; text-decoration: none;">상담신청</a>
+                <a href="notice.html" style="color: white; text-decoration: none;">공지사항</a>
+            </div>
+            <p>&copy; 2024 박근필성장연구소 by 박근필. All rights reserved.</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">여러분의 읽고 쓰고 말하는 삶을 응원합니다</p>
+        </div>
+    </footer>
+
+    <script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        var arrow = document.getElementById('arrow' + id.replace('detail', ''));
+        
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            arrow.textContent = '▲';
+        } else {
+            content.style.display = 'none';
+            arrow.textContent = '▼';
+        }
+    }
+    </script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            const logo = document.querySelector(".logo");
+            navLinks.classList.toggle("active");
+            if (navLinks.classList.contains("active")) {
+                logo.classList.add("hidden");
+            } else {
+                logo.classList.remove("hidden");
+            }
+        }
+        
+        window.addEventListener("load", function() {
+            const navLinks = document.getElementById("navLinks");
+            const logo = document.querySelector(".logo");
+            if (navLinks) navLinks.classList.remove("active");
+            if (logo) logo.classList.remove("hidden");
+        });
+    </script>
+
 <script id="history-data">
 // ============================================================
 // 섹션1(활동이력) + 섹션2(인터뷰이력) 데이터 - 유일한 원본
@@ -709,7 +816,7 @@ const historyData = {
     },
     {
       date:"2026.3", outlet:"뉴스테이션",
-      title:"[Job멘토링] "멀티 커리어 시대, 답은 나에게" ... 박근필 수의사·작가·강사",
+      title:"[Job멘토링] \u201c멀티 커리어 시대, 답은 나에게\u201d ... 박근필 수의사·작가·강사",
       url:"https://www.newstation.co.kr/news/articleView.html?idxno=7380"
     },
     {
@@ -828,52 +935,9 @@ const historyData = {
     }
   }
 
-  if(document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', render);
-  } else {
-    render();
-  }
+  render();
 })();
 </script>
-
-<div id="history-activities"></div>
-
-                <!-- 기타 활동 포함 완료 -->
-                </div>
-            </div>
-
-            <!-- 2번 글: 인터뷰 이력 -->
-            <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
-                <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail2')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="font-size: 1.3rem; color: #2c3e50;">2. 📰 언론 인터뷰 이력</h3>
-                        <span id="arrow2" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
-                    </div>
-                </div>
-                <div id="detail2" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
-                    <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
-                        <div id="history-interviews"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3번 글: 칼럼 연재 이력 -->
-            <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
-                <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail3')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="font-size: 1.3rem; color: #2c3e50;">3. ✍️ 칼럼 연재 이력</h3>
-                        <span id="arrow3" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
-                    </div>
-                </div>
-                
-                <div id="detail3" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
-                    <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
-
-<!-- ============================================================
-     칼럼 데이터 - 유일한 원본 (이 script 블록만 수정할 것)
-     새 칼럼 추가: 해당 매체 columns 배열 맨 앞에 객체 추가
-     기존 데이터 절대 삭제/수정 금지
-     ============================================================ -->
 <script id="column-data">
 const columnData = {
   "한국인공지능신문": { period:"2026.4~", columns:[
@@ -1107,70 +1171,5 @@ const columnData = {
   }
 })();
 </script>
-<div id="column-section-3"></div>
-
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    </main>
-    
-    <footer role="contentinfo" style="background: #2c3e50; color: white; padding: 3rem 0; margin-top: 5rem;">
-        <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">
-            <div role="navigation" aria-label="푸터 링크" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
-                <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Litt.ly</a>
-                <a href="index.html" style="color: white; text-decoration: none;">홈</a>
-                <a href="index.html#author" style="color: white; text-decoration: none;">소장소개</a>
-                <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅™</a>
-                <a href="index.html#vod" style="color: white; text-decoration: none;">VOD 강의</a>
-                <a href="index.html#philbook" style="color: white; text-decoration: none;">필북</a>
-                <a href="index.html#books" style="color: white; text-decoration: none;">저서</a>
-                <a href="index.html#newsletter" style="color: white; text-decoration: none;">필레터</a>
-                <a href="index.html#contact" style="color: white; text-decoration: none;">상담신청</a>
-                <a href="notice.html" style="color: white; text-decoration: none;">공지사항</a>
-            </div>
-            <p>&copy; 2024 박근필성장연구소 by 박근필. All rights reserved.</p>
-            <p style="margin-top: 1rem; opacity: 0.8;">여러분의 읽고 쓰고 말하는 삶을 응원합니다</p>
-        </div>
-    </footer>
-
-    <script>
-    function toggleContent(id) {
-        var content = document.getElementById(id);
-        var arrow = document.getElementById('arrow' + id.replace('detail', ''));
-        
-        if (content.style.display === 'none') {
-            content.style.display = 'block';
-            arrow.textContent = '▲';
-        } else {
-            content.style.display = 'none';
-            arrow.textContent = '▼';
-        }
-    }
-    </script>
-    <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById("navLinks");
-            const logo = document.querySelector(".logo");
-            navLinks.classList.toggle("active");
-            if (navLinks.classList.contains("active")) {
-                logo.classList.add("hidden");
-            } else {
-                logo.classList.remove("hidden");
-            }
-        }
-        
-        window.addEventListener("load", function() {
-            const navLinks = document.getElementById("navLinks");
-            const logo = document.querySelector(".logo");
-            if (navLinks) navLinks.classList.remove("active");
-            if (logo) logo.classList.remove("hidden");
-        });
-    </script>
 </body>
 </html>
