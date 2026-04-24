@@ -616,6 +616,54 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 4번 글: 진로·직업 특강 -->
+            <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
+                <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail4')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">4. 🎤 진로·직업 특강</h3>
+                        <span id="arrow4" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
+                    </div>
+                </div>
+                <div id="detail4" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
+                    <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
+
+                        <!-- 2026년 -->
+                        <div style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%); padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem; color: white;">
+                            <h4 style="font-size: 1.3rem; margin-bottom: 1.2rem; border-bottom: 2px solid rgba(255,255,255,0.3); padding-bottom: 0.5rem;">2026년</h4>
+                            <div style="display: grid; gap: 0.6rem;">
+                                <p style="margin: 0;">📅 26.4.24 &nbsp; 신곡중학교</p>
+                                <p style="margin: 0;">📅 26.4.21 &nbsp; 김해 수남중학교</p>
+                                <p style="margin: 0;">📅 26.4.7 &nbsp;&nbsp; 부산여중</p>
+                            </div>
+                        </div>
+
+                        <!-- 2025년 -->
+                        <div style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%); padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem; color: white;">
+                            <h4 style="font-size: 1.3rem; margin-bottom: 1.2rem; border-bottom: 2px solid rgba(255,255,255,0.3); padding-bottom: 0.5rem;">2025년</h4>
+                            <div style="display: grid; gap: 0.6rem;">
+                                <p style="margin: 0;">📅 25.12.9 &nbsp; 금정중</p>
+                                <p style="margin: 0;">📅 25.12.1 &nbsp; 인천 계양중학교</p>
+                                <p style="margin: 0;">📅 25.11.3 &nbsp; 금양중</p>
+                                <p style="margin: 0;">📅 25.10.29 &nbsp;개금고등학교</p>
+                                <p style="margin: 0;">📅 25.10.22 &nbsp;김해 제일고등학교</p>
+                                <p style="margin: 0;">📅 25.9.9 &nbsp;&nbsp; 금사중</p>
+                                <p style="margin: 0;">📅 25.9.8 &nbsp;&nbsp; 부곡여중</p>
+                                <p style="margin: 0;">📅 25.7.14 &nbsp; 사직고등학교</p>
+                                <p style="margin: 0;">📅 25.7.14 &nbsp; 부산 부일외국어고등학교</p>
+                                <p style="margin: 0;">📅 25.7.4 &nbsp;&nbsp; 양산고등학교</p>
+                                <p style="margin: 0;">📅 25.6.26 &nbsp; 동래여중</p>
+                                <p style="margin: 0;">📅 25.6.2 &nbsp;&nbsp; 김해 수남중학교</p>
+                                <p style="margin: 0;">📅 25.5.21 &nbsp; 부산 대명여고</p>
+                                <p style="margin: 0;">📅 25.4.30 &nbsp; 브니엘예중</p>
+                                <p style="margin: 0;">📅 25.4.9 &nbsp;&nbsp; 부산여중</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
                     </div>
                 </div>
             </div>
@@ -1169,7 +1217,11 @@ const historyData = {
             </p>
             <div id="${id}" style="display:none;flex-direction:column;gap:0.4rem;">`;
             item.links.forEach(link => {
-              html += `<a href="${link.url}" target="_blank" style="color:white;text-decoration:none;">${link.text} →</a>`;
+              if(link.url) {
+                html += `<a href="${link.url}" target="_blank" style="color:white;text-decoration:none;">${link.text} →</a>`;
+              } else {
+                html += `<p style="color:white;margin:0.2rem 0;font-size:0.9rem;">${link.text}</p>`;
+              }
             });
             html += `</div>`;
           }
