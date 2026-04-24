@@ -1636,8 +1636,8 @@ const columnData = {
         <h4 style="font-size:1.3rem;margin-bottom:1.5rem;border-bottom:2px solid rgba(255,255,255,0.3);padding-bottom:0.5rem;">${year}</h4>
         <div style="display:grid;gap:1rem;">`;
 
-      outlets.forEach(outlet => {
-        const id = 'col_' + outlet.name.replace(/\W/g,'_');
+      outlets.forEach((outlet, idx) => {
+        const id = 'col_' + year.replace(/\W/g,'') + '_' + idx;
         html += `<div style="background:rgba(255,255,255,0.15);padding:1.2rem;border-radius:8px;border-left:3px solid white;">
           <p style="font-weight:bold;margin-bottom:0.5rem;">📰 ${outlet.period} ${outlet.name}</p>
           <p style="cursor:pointer;color:white;font-size:0.9rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'flex':'none';">
