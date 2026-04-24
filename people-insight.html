@@ -293,27 +293,53 @@
 
     <div style="height: 80px;"></div>
 
-    <section class="content-section">
-        <div class="intro-box">
-            <h2>박근필의 피플인사이트 상세 안내</h2>
-            
-            <p>'박근필의 피플인사이트'에서는 매월 한 분을 모시고 인터뷰를 진행하고 있습니다.</p>
-            
-            <p>각자의 위치에서 열심히 삶을 살아내는 분들이죠.</p>
-            
-            <p>우리와 같은 보통 사람들의 이야기를 들으며 위로와 위안을 받으세요.</p>
-            
-            <p>통찰을 얻고 희망을 보세요.</p>
-            
-            <p>내 삶에 대해 진지하게 생각해 보는 시간을 가지세요.</p>
-            
-            <div class="button-container">
-                <a href="https://www.youtube.com/playlist?list=PL9gDAK_kh9BJl6wyOhDCvexqOSXNTKitH" target="_blank" class="cta-button">
-                    🎥 박근필의 피플인사이트 다시 보기
-                </a>
-            </div>
-        </div>
-    </section>
+<!-- ============================================================
+     피플인사이트 데이터 - 유일한 원본. 새 인터뷰이는 맨 앞에 추가. 삭제 금지.
+     ============================================================ -->
+<script id="people-insight-data">
+var peopleInsightData = {
+  playlist: "https://www.youtube.com/playlist?list=PL9gDAK_kh9BJl6wyOhDCvexqOSXNTKitH",
+  interviewees: [
+    { month:"2024.4", name:"이은경 작가", book:"『오각형 인간』, 『부의 설계도』",
+      blog:"https://blog.naver.com/tothemoon_park/224236647518",
+      summary:"https://blog.naver.com/tothemoon_park/224241893666" },
+  ],
+};
+(function() {
+  function render() {
+    var container = document.getElementById('people-insight-container');
+    if (!container) return;
+    var d = peopleInsightData;
+    var html = '<div class="intro-box">';
+    html += '<h2>박근필의 피플인사이트 상세 안내</h2>';
+    html += '<p>'박근필의 피플인사이트'에서는 매월 한 분을 모시고 인터뷰를 진행하고 있습니다.</p>';
+    html += '<p>각자의 위치에서 열심히 삶을 살아내는 분들이죠.</p>';
+    html += '<p>우리와 같은 보통 사람들의 이야기를 들으며 위로와 위안을 받으세요.</p>';
+    html += '<p>통찰을 얻고 희망을 보세요.</p>';
+    html += '<p>내 삶에 대해 진지하게 생각해 보는 시간을 가지세요.</p>';
+    html += '<div class="button-container"><a href="' + d.playlist + '" target="_blank" class="cta-button">🎥 박근필의 피플인사이트 다시 보기</a></div>';
+    if (d.interviewees && d.interviewees.length > 0) {
+      html += '<div style="margin-top:2rem;"><h3 style="color:#4ECDC4;margin-bottom:1rem;">📋 인터뷰이 목록</h3>';
+      d.interviewees.forEach(function(p) {
+        html += '<div style="background:#f8f9fa;padding:1rem;border-radius:8px;margin-bottom:0.8rem;border-left:4px solid #4ECDC4;">';
+        html += '<strong>' + p.month + ' ' + p.name + '</strong> — ' + p.book;
+        if (p.blog) { html += ' <a href="' + p.blog + '" target="_blank" style="color:#667eea;margin-left:0.5rem;">인터뷰 보기 →</a>'; }
+        if (p.summary) { html += ' <a href="' + p.summary + '" target="_blank" style="color:#667eea;margin-left:0.5rem;">요약 보기 →</a>'; }
+        html += '</div>';
+      });
+      html += '</div>';
+    }
+    html += '</div>';
+    container.innerHTML = html;
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', render);
+  } else {
+    render();
+  }
+})();
+</script>
+<section class="content-section"><div id="people-insight-container"></div></section>
 
     <footer role="contentinfo" style="background: #2c3e50; color: white; padding: 3rem 0; margin-top: 5rem;">
         <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">

@@ -474,109 +474,64 @@
                     <h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 2rem; text-align: center;">🎬 각 강의를 1분간 미리 보세요</h3>
                     
                     <div style="max-width: 900px; margin: 0 auto;">
-                        <!-- VOD 1 -->
-                        <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
-                            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">📚 책을 왜 써야 하는가?</h4>
-                            <div id="preview1Container">
-                                <div id="preview1Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
-                                    <iframe id="preview1" data-src="https://drive.google.com/file/d/1ArTCtIaDa88o6DwPAlFoX_i4-5ogJAtN/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
-                                </div>
-                                <button id="preview1PlayBtn" onclick="startPreview(1)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                    ▶️ 1분 미리보기 재생
-                                </button>
-                            </div>
-                            <div id="preview1Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
-                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
-                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
-                            </div>
-                            <button onclick="openVodDetail1()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/076WClZ', '_blank')" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</button>
-                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
-                        </div>
-                        
-                        <!-- VOD 2 -->
-                        <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
-                            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">✍️ 책쓰기는 기획이 80%다!</h4>
-                            <div id="preview2Container">
-                                <div id="preview2Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
-                                    <iframe id="preview2" data-src="https://drive.google.com/file/d/1llkmwsrP41J6vmqlMDn1tx5zW1-emJRo/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
-                                </div>
-                                <button id="preview2PlayBtn" onclick="startPreview(2)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                    ▶️ 1분 미리보기 재생
-                                </button>
-                            </div>
-                            <div id="preview2Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
-                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
-                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
-                            </div>
-                            <button onclick="openVodDetail2()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/UrfM4Bu', '_blank')" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (49,000원)</button>
-                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
-                        </div>
-                        
-                        <!-- VOD 3 -->
-                        <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
-                            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">💼 쉽게 이해하는 퍼스널 브랜딩</h4>
-                            <div id="preview3Container">
-                                <div id="preview3Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
-                                    <iframe id="preview3" data-src="https://drive.google.com/file/d/1EOlnwG6EaJMy3df1rnf1GHac_UNa4VNf/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
-                                </div>
-                                <button id="preview3PlayBtn" onclick="startPreview(3)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                    ▶️ 1분 미리보기 재생
-                                </button>
-                            </div>
-                            <div id="preview3Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
-                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
-                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
-                            </div>
-                            <button onclick="openVodDetail3()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/atoZl7U', '_blank')" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (49,000원)</button>
-                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
-                        </div>
-                        
-                        <!-- VOD 4 -->
-                        <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
-                            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">🚀 직장인이 아닌 직업인으로</h4>
-                            <div id="preview4Container">
-                                <div id="preview4Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
-                                    <iframe id="preview4" data-src="https://drive.google.com/file/d/1giWnt-McveS0qBT_NLq-IMQWNB3nVo0q/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
-                                </div>
-                                <button id="preview4PlayBtn" onclick="startPreview(4)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                    ▶️ 1분 미리보기 재생
-                                </button>
-                            </div>
-                            <div id="preview4Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
-                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
-                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
-                            </div>
-                            <button onclick="openVodDetail4()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/BDPw8UV', '_blank')" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</button>
-                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
-                        </div>
-                        
-                        <!-- VOD 5 -->
-                        <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
-                            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">📖 독서법1_목적·능동적·아웃풋 독서</h4>
-                            <div id="preview5Container">
-                                <div id="preview5Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
-                                    <iframe id="preview5" data-src="https://drive.google.com/file/d/1Q8UdyrTi0Lq1Eb7xOFYLOex7QKpmInqA/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
-                                </div>
-                                <button id="preview5PlayBtn" onclick="startPreview(5)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                    ▶️ 1분 미리보기 재생
-                                </button>
-                            </div>
-                            <div id="preview5Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
-                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
-                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
-                            </div>
-                            <button onclick="openVodDetail5()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/f74TaYi', '_blank')" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</button>
-                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ============================================================
+     VOD 데이터 - 유일한 원본. 새 강의는 맨 앞에 추가. 삭제 금지.
+     ============================================================ -->
+<script id="vod-data">
+var vodData = [
+  { id:1, title:"📚 책을 왜 써야 하는가?",
+    driveId:"1ArTCtIaDa88o6DwPAlFoX_i4-5ogJAtN",
+    buy:"https://litt.ly/tothemoonpark/sale/076WClZ", price:"29,000원", detailFn:"openVodDetail1" },
+  { id:2, title:"✍️ 책쓰기는 기획이 80%다!",
+    driveId:"1llkmwsrP41J6vmqlMDn1tx5zW1-emJRo",
+    buy:"https://litt.ly/tothemoonpark/sale/076WClZ", price:"29,000원", detailFn:"openVodDetail2" },
+  { id:3, title:"📝 원고 작성의 기술",
+    driveId:"1EOlnwG6EaJMy3df1rnf1GHac_UNa4VNf",
+    buy:"https://litt.ly/tothemoonpark/sale/076WClZ", price:"29,000원", detailFn:"openVodDetail3" },
+  { id:4, title:"🚀 출판사 투고와 출판 계약",
+    driveId:"1giWnt-McveS0qBT_NLq-IMQWNB3nVo0q",
+    buy:"https://litt.ly/tothemoonpark/sale/076WClZ", price:"29,000원", detailFn:"openVodDetail4" },
+  { id:5, title:"🌟 작가 브랜딩과 마케팅",
+    driveId:"1Q8UdyrTi0Lq1Eb7xOFYLOex7QKpmInqA",
+    buy:"https://litt.ly/tothemoonpark/sale/076WClZ", price:"29,000원", detailFn:"openVodDetail5" },
+];
+(function() {
+  function render() {
+    var container = document.getElementById('vod-previews-container');
+    if (!container) return;
+    var html = '<h3 style="font-size:1.5rem;color:#4ECDC4;margin-bottom:2rem;text-align:center;">🎬 각 강의를 1분간 미리 보세요</h3>';
+    html += '<div style="max-width:900px;margin:0 auto;">';
+    vodData.forEach(function(vod) {
+      var n = vod.id;
+      html += '<div style="margin-bottom:3rem;padding:2rem;background:#f8f9fa;border-radius:12px;">';
+      html += '<h4 style="font-size:1.3rem;color:#2c3e50;margin-bottom:1rem;">' + vod.title + '</h4>';
+      html += '<div id="preview' + n + 'Container">';
+      html += '<div id="preview' + n + 'Wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.15);display:none;">';
+      html += '<iframe id="preview' + n + '" data-src="https://drive.google.com/file/d/' + vod.driveId + '/preview" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>';
+      html += '</div>';
+      html += '<button id="preview' + n + 'PlayBtn" onclick="startPreview(' + n + ')" style="display:block;width:100%;padding:3rem;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;border:none;border-radius:12px;font-size:1.5rem;font-weight:bold;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,0.15);">▶️ 1분 미리보기 재생</button>';
+      html += '</div>';
+      html += '<div id="preview' + n + 'Message" style="display:none;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:2rem;border-radius:12px;text-align:center;margin-top:1rem;">';
+      html += '<h4 style="font-size:1.3rem;margin-bottom:1rem;">✨ 미리보기가 종료되었습니다</h4>';
+      html += '<p style="font-size:1.1rem;margin-bottom:1.5rem;line-height:1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>';
+      html += '</div>';
+      html += '<button onclick="' + vod.detailFn + '()" style="display:block;width:100%;margin-top:1.5rem;padding:1.2rem;background:white;color:#4ECDC4;border:2px solid #4ECDC4;border-radius:50px;font-size:1.2rem;font-weight:bold;cursor:pointer;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>';
+      html += '<button onclick="window.open('' + vod.buy + '','_blank')" style="display:block;width:100%;margin-top:0.5rem;padding:1.2rem;background:linear-gradient(135deg,#4ECDC4 0%,#44A08D 100%);color:white;border:none;border-radius:50px;font-size:1.2rem;font-weight:bold;cursor:pointer;">💳 바로 구매하기 (' + vod.price + ')</button>';
+      html += '<p style="font-size:0.95rem;color:#666;margin-top:0.5rem;text-align:center;">💡 안전한 <strong>카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>';
+      html += '</div>';
+    });
+    html += '</div>';
+    container.innerHTML = html;
+    console.log('VOD 총 ' + vodData.length + '개 렌더링 완료');
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', render);
+  } else {
+    render();
+  }
+})();
+</script>
+<div id="vod-previews-container"></div>
     </div>
 
     <!-- 결제 안내 모달 -->

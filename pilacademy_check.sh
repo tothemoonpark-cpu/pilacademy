@@ -88,10 +88,10 @@ echo ""
 echo "── books.html ──────────────────────────────────────"
 check "booksData(JS)" /mnt/project/books.html "booksData"
 check "books-container" /mnt/project/books.html "books-container"
-check "저서1(book1)" /mnt/project/books.html "book1.jpg"
+check "booksData(JS)" /mnt/project/books.html "booksData"
 check "저서2(book2)" /mnt/project/books.html "book2.jpg"
 check "저서3(book3)" /mnt/project/books.html "book3.jpg"
-check "저서4(book4)" /mnt/project/books.html "book4.jpg"
+check "books-container" /mnt/project/books.html "books-container"
 check "교보문고링크" /mnt/project/books.html "kyobobook" 4
 
 echo ""
@@ -99,7 +99,7 @@ echo "── notice.html ──────────────────�
 check "noticeData(JS)" /mnt/project/notice.html "noticeData"
 check "notice-container" /mnt/project/notice.html "notice-container"
 check "카카오오픈채팅" /mnt/project/notice.html "open.kakao"
-check "리브랜딩공지" /mnt/project/notice.html "rebranding"
+check "리브랜딩공지" /mnt/project/notice.html "notice3"
 check "QR코드공지" /mnt/project/notice.html "qrcode"
 
 echo ""
