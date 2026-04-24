@@ -364,6 +364,25 @@
             }
         }
     </style>
+
+<!-- ============================================================
+     필레터 데이터 무결성 Manifest
+     새 호 추가 시: 아코디언 추가 + 아래 목록에 호수 추가
+     ============================================================ -->
+<script id="newsletter-manifest">
+const newsletterManifest = {
+  issues: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,20],
+  check: function() {
+    this.issues.forEach(n => {
+      if(!document.querySelector(`[data-issue="${n}"]`)) {
+        console.error('⚠️ 필레터 ' + n + '호 누락!');
+      }
+    });
+    console.log('필레터 무결성 체크 완료. 총 ' + this.issues.length + '호');
+  }
+};
+document.addEventListener('DOMContentLoaded', () => newsletterManifest.check());
+</script>
 </head>
 <body>
     <header role="banner">
@@ -550,7 +569,7 @@
             </div>
 
             <!-- 필레터 정규 1호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="1">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 1호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -650,7 +669,7 @@
             </div>
 
             <!-- 필레터 정규 2호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="2">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 2호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -727,7 +746,7 @@
             </div>
 
             <!-- 필레터 정규 3호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="3">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 3호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -810,7 +829,7 @@
             </div>
 
             <!-- 필레터 정규 4호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="4">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 4호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -893,7 +912,7 @@
             </div>
 
             <!-- 필레터 정규 5호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="5">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 5호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -987,7 +1006,7 @@
             </div>
 
             <!-- 필레터 정규 6호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="6">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 6호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -1075,7 +1094,7 @@
             </div>
 
             <!-- 필레터 정규 7호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="7">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 7호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -1172,7 +1191,7 @@
             </div>
 
             <!-- 필레터 정규 8호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="8">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 8호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -1272,7 +1291,7 @@
             </div>
 
             <!-- 필레터 정규 9호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="9">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 9호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -1370,7 +1389,7 @@
             </div>
 
             <!-- 필레터 정규 10호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="10">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 10호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -1530,7 +1549,7 @@
             </div>
 
             <!-- 필레터 정규 11호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="11">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 11호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -1623,7 +1642,7 @@
             </div>
 
             <!-- 필레터 정규 12호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="12">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 12호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -1719,7 +1738,7 @@
             </div>
 
             <!-- 필레터 정규 13호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="13">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 13호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -1823,7 +1842,7 @@
             </div>
 
             <!-- 필레터 정규 14호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="14">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 14호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -1926,7 +1945,7 @@
 
            
 <!-- 필레터 정규 15호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="15">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 15호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -2014,7 +2033,7 @@
 
                         
 <!-- 필레터 정규 16호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="16">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 16호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -2123,7 +2142,7 @@
                 </div>
             </div>
 <!-- 필레터 정규 18호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="18">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 18호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -2233,7 +2252,7 @@
             </div>
 
 <!-- 필레터 정규 19호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="19">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 19호 발행</span>
                     <span class="accordion-icon">▼</span>
@@ -2341,7 +2360,7 @@
             </div>
 
 <!-- 필레터 정규 20호 발행 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-issue="20">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>필레터 정규 20호 발행</span>
                     <span class="accordion-icon">▼</span>
