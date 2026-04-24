@@ -1530,7 +1530,7 @@ var lectureData = {
       year: "2025년",
       schools: [
         "25.12.9 금정중",
-        "25.12.1 인천 계양중학교",
+        {text:"25.12.1 인천 계양중학교", url:"https://blog.naver.com/tothemoon_park/224096489803"},
         "25.11.3 금양중",
         "25.10.29 개금고등학교",
         "25.10.22 김해 제일고등학교",
@@ -1567,7 +1567,11 @@ var lectureData = {
       html += '<h4 style="font-size:1.3rem;margin-bottom:1.2rem;border-bottom:2px solid rgba(255,255,255,0.3);padding-bottom:0.5rem;">' + yearObj.year + '</h4>';
       html += '<div style="display:grid;gap:0.6rem;">';
       yearObj.schools.forEach(function(school) {
-        html += '<p style="margin:0;">📅 ' + school + '</p>';
+        if(typeof school === 'object' && school.url) {
+          html += '<p style="margin:0;">📅 <a href="' + school.url + '" target="_blank" style="color:white;text-decoration:none;">' + school.text + ' →</a></p>';
+        } else {
+          html += '<p style="margin:0;">📅 ' + school + '</p>';
+        }
       });
       html += '</div></div>';
     });
