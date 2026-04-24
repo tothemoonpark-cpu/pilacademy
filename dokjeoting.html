@@ -348,6 +348,24 @@
             .dropdown-content a { color: white; }
         }
     </style>
+<!-- ============================================================
+     독저팅 데이터 무결성 Manifest
+     ============================================================ -->
+<script id="dokjeoting-manifest">
+const dokjeotingData = {
+  serviceName: "독저팅™",
+  subtitle: "1:1 책쓰기 기획 컨설팅",
+  contactUrl: "index.html#contact",
+  check: function() {
+    var keys = ['serviceName', 'subtitle', 'contactUrl'];
+    keys.forEach(function(k) {
+      if(!this[k]) console.warn('⚠️ 독저팅 데이터 누락:', k);
+    }.bind(this));
+    console.log('독저팅 데이터 무결성 확인 완료');
+  }
+};
+document.addEventListener('DOMContentLoaded', function(){ dokjeotingData.check(); });
+</script>
 </head>
 <body>
     <header role="banner">

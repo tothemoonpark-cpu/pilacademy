@@ -1603,6 +1603,24 @@
         }
 
 </style>
+<!-- ============================================================
+     index.html 사이트 데이터 무결성 Manifest
+     ============================================================ -->
+<script id="index-manifest">
+const indexManifest = {
+  sections: ['home','author','dokjeoting','vod','philbook','phillife','people-insight','books','newsletter','contact'],
+  philbookStatus: "필북 6기 신청_마감",
+  check: function() {
+    var missing = [];
+    this.sections.forEach(function(id) {
+      if(!document.getElementById(id)) missing.push(id);
+    });
+    if(missing.length > 0) console.warn('⚠️ 섹션 누락:', missing);
+    else console.log('index.html 전체 섹션 확인 완료');
+  }
+};
+document.addEventListener('DOMContentLoaded', function(){ indexManifest.check(); });
+</script>
 </head>
 <body>
     <!-- 헤더 -->

@@ -317,6 +317,28 @@
             .dropdown-content a { color: white; }
         }
     </style>
+<!-- ============================================================
+     필북 데이터 무결성 Manifest
+     기수 추가 시 여기에 추가
+     ============================================================ -->
+<script id="philbook-manifest">
+const philbookData = {
+  sessions: [
+    { session:1, status:"완료" },
+    { session:2, status:"완료" },
+    { session:3, status:"완료" },
+    { session:4, status:"마감" },
+    { session:5, status:"마감" },
+    { session:6, status:"마감" },
+  ],
+  check: function() {
+    var total = this.sessions.length;
+    if(total < 1) console.warn('⚠️ 필북 기수 데이터 없음!');
+    console.log('필북 총', total, '기 등록 확인');
+  }
+};
+document.addEventListener('DOMContentLoaded', function(){ philbookData.check(); });
+</script>
 </head>
 <body>
     <header role="banner">
@@ -1147,11 +1169,11 @@
             </div>
 
 
-            <!-- 4. 필북 6기 신청_마감 -->
+            <!-- 4. 필북 6기 신청 -->
             <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 1rem;">
                 <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail4')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="font-size: 1.3rem; color: #2c3e50;">4. 필북 6기 신청_마감</h3>
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">4. 필북 6기 신청</h3>
                         <span id="arrow4" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
                     </div>
                 </div>

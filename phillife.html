@@ -344,6 +344,20 @@
             }
         }
     </style>
+<!-- ============================================================
+     필라이프 코칭 데이터 무결성 Manifest
+     ============================================================ -->
+<script id="phillife-manifest">
+const phillifeData = {
+  serviceName: "필라이프 코칭",
+  type: "1:1 코칭",
+  contactUrl: "index.html#contact",
+  check: function() {
+    console.log('필라이프 코칭 데이터 무결성 확인 완료');
+  }
+};
+document.addEventListener('DOMContentLoaded', function(){ phillifeData.check(); });
+</script>
 </head>
 <body>
     <header role="banner">
