@@ -627,48 +627,7 @@
                 </div>
                 <div id="detail4" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
                     <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
-
-                        <!-- 2026년 -->
-                        <div style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%); padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem; color: white;">
-                            <h4 style="font-size: 1.3rem; margin-bottom: 1.2rem; border-bottom: 2px solid rgba(255,255,255,0.3); padding-bottom: 0.5rem;">2026년</h4>
-                            <div style="display: grid; gap: 0.6rem;">
-                                <p style="margin: 0;">📅 26.4.24 &nbsp; 신곡중학교</p>
-                                <p style="margin: 0;">📅 26.4.21 &nbsp; 김해 수남중학교</p>
-                                <p style="margin: 0;">📅 26.4.7 &nbsp;&nbsp; 부산여중</p>
-                            </div>
-                        </div>
-
-                        <!-- 2025년 -->
-                        <div style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%); padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem; color: white;">
-                            <h4 style="font-size: 1.3rem; margin-bottom: 1.2rem; border-bottom: 2px solid rgba(255,255,255,0.3); padding-bottom: 0.5rem;">2025년</h4>
-                            <div style="display: grid; gap: 0.6rem;">
-                                <p style="margin: 0;">📅 25.12.9 &nbsp; 금정중</p>
-                                <p style="margin: 0;">📅 25.12.1 &nbsp; 인천 계양중학교</p>
-                                <p style="margin: 0;">📅 25.11.3 &nbsp; 금양중</p>
-                                <p style="margin: 0;">📅 25.10.29 &nbsp;개금고등학교</p>
-                                <p style="margin: 0;">📅 25.10.22 &nbsp;김해 제일고등학교</p>
-                                <p style="margin: 0;">📅 25.9.9 &nbsp;&nbsp; 금사중</p>
-                                <p style="margin: 0;">📅 25.9.8 &nbsp;&nbsp; 부곡여중</p>
-                                <p style="margin: 0;">📅 25.7.14 &nbsp; 사직고등학교</p>
-                                <p style="margin: 0;">📅 25.7.14 &nbsp; 부산 부일외국어고등학교</p>
-                                <p style="margin: 0;">📅 25.7.4 &nbsp;&nbsp; 양산고등학교</p>
-                                <p style="margin: 0;">📅 25.6.26 &nbsp; 동래여중</p>
-                                <p style="margin: 0;">📅 25.6.2 &nbsp;&nbsp; 김해 수남중학교</p>
-                                <p style="margin: 0;">📅 25.5.21 &nbsp; 부산 대명여고</p>
-                                <p style="margin: 0;">📅 25.4.30 &nbsp; 브니엘예중</p>
-                                <p style="margin: 0;">📅 25.4.9 &nbsp;&nbsp; 부산여중</p>
-                            </div>
-                        </div>
-
-                        <!-- 2024년 -->
-                        <div style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%); padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem; color: white;">
-                            <h4 style="font-size: 1.3rem; margin-bottom: 1.2rem; border-bottom: 2px solid rgba(255,255,255,0.3); padding-bottom: 0.5rem;">2024년</h4>
-                            <div style="display: grid; gap: 0.6rem;">
-                                <p style="margin: 0;">📅 24.7 &nbsp;&nbsp; 신도고등학교</p>
-                                <p style="margin: 0;">📅 24.7 &nbsp;&nbsp; 내성고등학교</p>
-                            </div>
-                        </div>
-
+                        <div id="lecture-container"></div>
                     </div>
                 </div>
             </div>
@@ -746,6 +705,47 @@ const historyData = {
 
   // ── 소장 활동 이력 (최신순) ──────────────────────────
   activities: [
+    {
+      icon:"🎤", date:"2026", title:"4. 진로·직업 특강 (2026년)",
+      desc:"2026년 진행된 학교 진로·직업 특강",
+      toggle:"학교 목록 보기",
+      links:[
+        {text:"26.4.24 신곡중학교", url:""},
+        {text:"26.4.21 김해 수남중학교", url:""},
+        {text:"26.4.7 부산여중", url:""},
+      ]
+    },
+    {
+      icon:"🎤", date:"2025", title:"4. 진로·직업 특강 (2025년)",
+      desc:"2025년 진행된 학교 진로·직업 특강",
+      toggle:"학교 목록 보기",
+      links:[
+        {text:"25.12.9 금정중", url:""},
+        {text:"25.12.1 인천 계양중학교", url:"https://blog.naver.com/tothemoon_park/224096489803"},
+        {text:"25.11.3 금양중", url:""},
+        {text:"25.10.29 개금고등학교", url:""},
+        {text:"25.10.22 김해 제일고등학교", url:""},
+        {text:"25.9.9 금사중", url:""},
+        {text:"25.9.8 부곡여중", url:""},
+        {text:"25.7.14 사직고등학교", url:""},
+        {text:"25.7.14 부산 부일외국어고등학교", url:""},
+        {text:"25.7.4 양산고등학교", url:""},
+        {text:"25.6.26 동래여중", url:""},
+        {text:"25.6.2 김해 수남중학교", url:""},
+        {text:"25.5.21 부산 대명여고", url:""},
+        {text:"25.4.30 브니엘예중", url:""},
+        {text:"25.4.9 부산여중", url:""},
+      ]
+    },
+    {
+      icon:"🎤", date:"2024", title:"4. 진로·직업 특강 (2024년)",
+      desc:"2024년 진행된 학교 진로·직업 특강",
+      toggle:"학교 목록 보기",
+      links:[
+        {text:"24.7 신도고등학교", url:""},
+        {text:"24.7 내성고등학교", url:""},
+      ]
+    },
     {
       icon:"📅", date:"2026.4", title:"부산시청소년자립지원관",
       desc:"자립준비청소년 대상 '길라job이' 진로 특강",
@@ -1507,6 +1507,74 @@ const columnData = {
   }
 
   if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",renderColumns);}else{renderColumns();}
+})();
+</script>
+<script id="lecture-data">
+// ============================================================
+// 진로·직업 특강 데이터 - 유일한 원본
+// 새 특강 추가: 해당 연도 schools 배열 맨 앞에 추가
+// 새 연도 추가: years 배열 맨 앞에 추가
+// 기존 데이터 절대 삭제/수정 금지
+// ============================================================
+var lectureData = {
+  years: [
+    {
+      year: "2026년",
+      schools: [
+        "26.4.24 신곡중학교",
+        "26.4.21 김해 수남중학교",
+        "26.4.7 부산여중",
+      ]
+    },
+    {
+      year: "2025년",
+      schools: [
+        "25.12.9 금정중",
+        "25.12.1 인천 계양중학교",
+        "25.11.3 금양중",
+        "25.10.29 개금고등학교",
+        "25.10.22 김해 제일고등학교",
+        "25.9.9 금사중",
+        "25.9.8 부곡여중",
+        "25.7.14 사직고등학교",
+        "25.7.14 부산 부일외국어고등학교",
+        "25.7.4 양산고등학교",
+        "25.6.26 동래여중",
+        "25.6.2 김해 수남중학교",
+        "25.5.21 부산 대명여고",
+        "25.4.30 브니엘예중",
+        "25.4.9 부산여중",
+      ]
+    },
+    {
+      year: "2024년",
+      schools: [
+        "24.7 신도고등학교",
+        "24.7 내성고등학교",
+      ]
+    },
+  ]
+};
+(function() {
+  function renderLecture() {
+    var container = document.getElementById('lecture-container');
+    if(!container) return;
+    var total = lectureData.years.reduce(function(s,y){ return s+y.schools.length; }, 0);
+    if(total < 1) { console.warn('⚠️ 진로·직업 특강 데이터 없음!'); return; }
+    var html = '';
+    lectureData.years.forEach(function(yearObj) {
+      html += '<div style="background:linear-gradient(135deg,#FF6B6B 0%,#FF8E53 100%);padding:2rem;border-radius:12px;margin-bottom:1.5rem;color:white;">';
+      html += '<h4 style="font-size:1.3rem;margin-bottom:1.2rem;border-bottom:2px solid rgba(255,255,255,0.3);padding-bottom:0.5rem;">' + yearObj.year + '</h4>';
+      html += '<div style="display:grid;gap:0.6rem;">';
+      yearObj.schools.forEach(function(school) {
+        html += '<p style="margin:0;">📅 ' + school + '</p>';
+      });
+      html += '</div></div>';
+    });
+    container.innerHTML = html;
+    console.log('진로·직업 특강 총 ' + total + '회 렌더링 완료');
+  }
+  renderLecture();
 })();
 </script>
 </body>
