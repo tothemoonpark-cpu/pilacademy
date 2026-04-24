@@ -572,11 +572,9 @@
                                 🔗 litt.ly/tothemoonpark →
                             </a>
                         </div>
-<!-- historyData: body 하단으로 이동 -->
-
 <div id="history-activities"></div>
 
-                <!-- 기타 활동 포함 완료 -->
+                    </div>
                 </div>
             </div>
 
@@ -678,6 +676,9 @@
             if (logo) logo.classList.remove("hidden");
         });
     </script>
+
+
+
 
 <script id="history-data">
 // ============================================================
@@ -935,7 +936,7 @@ const historyData = {
     }
   }
 
-  render();
+  if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",render);}else{render();}
 })();
 </script>
 <script id="column-data">
@@ -1164,11 +1165,7 @@ const columnData = {
     container.innerHTML = html;
   }
 
-  if(document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderColumns);
-  } else {
-    renderColumns();
-  }
+  if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",renderColumns);}else{renderColumns();}
 })();
 </script>
 </body>
