@@ -1615,44 +1615,51 @@ const columnData = {
 // ============================================================
 // 렌더링 엔진 (건드리지 말 것)
 // ============================================================
-(function renderColumns() {
-  const total = Object.values(columnData).reduce((s,m)=>s+m.columns.length,0);
-  if(total < 50) { console.warn('⚠️ 칼럼 데이터 비정상! 총'+total+'개'); }
+(function() {
+  function renderColumns() {
+    const total = Object.values(columnData).reduce((s,m)=>s+m.columns.length,0);
+    if(total < 50) { console.warn('⚠️ 칼럼 데이터 비정상! 총'+total+'개'); }
 
-  const container = document.getElementById('column-section-3');
-  if(!container) return;
+    const container = document.getElementById('column-section-3');
+    if(!container) return;
 
-  // 연도별 그룹핑
-  const groups = {'2026년':[], '2025년':[]};
-  Object.entries(columnData).forEach(([name, data]) => {
-    const year = data.period.startsWith('2026') ? '2026년' : '2025년';
-    groups[year].push({name, ...data});
-  });
+    const groups = {'2026년':[], '2025년':[]};
+    Object.entries(columnData).forEach(([name, data]) => {
+      const year = data.period.startsWith('2026') ? '2026년' : '2025년';
+      groups[year].push({name, ...data});
+    });
 
-  let html = '';
-  Object.entries(groups).forEach(([year, outlets]) => {
-    if(!outlets.length) return;
-    html += `<div style="background:linear-gradient(135deg,#FF6B6B 0%,#FF8E53 100%);padding:2rem;border-radius:12px;margin-bottom:1.5rem;color:white;">
-      <h4 style="font-size:1.3rem;margin-bottom:1.5rem;border-bottom:2px solid rgba(255,255,255,0.3);padding-bottom:0.5rem;">${year}</h4>
-      <div style="display:grid;gap:1rem;">`;
+    let html = '';
+    Object.entries(groups).forEach(([year, outlets]) => {
+      if(!outlets.length) return;
+      html += `<div style="background:linear-gradient(135deg,#FF6B6B 0%,#FF8E53 100%);padding:2rem;border-radius:12px;margin-bottom:1.5rem;color:white;">
+        <h4 style="font-size:1.3rem;margin-bottom:1.5rem;border-bottom:2px solid rgba(255,255,255,0.3);padding-bottom:0.5rem;">${year}</h4>
+        <div style="display:grid;gap:1rem;">`;
 
-    outlets.forEach(outlet => {
-      const id = 'col_' + outlet.name.replace(/\W/g,'_');
-      html += `<div style="background:rgba(255,255,255,0.15);padding:1.2rem;border-radius:8px;border-left:3px solid white;">
-        <p style="font-weight:bold;margin-bottom:0.5rem;">📰 ${outlet.period} ${outlet.name}</p>
-        <p style="cursor:pointer;color:white;font-size:0.9rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'flex':'none';">
-          칼럼 목록 보기 ▼
-        </p>
-        <div id="${id}" style="display:none;flex-direction:column;gap:0.4rem;">`;
-      outlet.columns.forEach(col => {
-        html += `<a href="${col.url}" target="_blank" style="color:white;text-decoration:none;font-size:0.9rem;">"${col.title}" →</a>`;
+      outlets.forEach(outlet => {
+        const id = 'col_' + outlet.name.replace(/\W/g,'_');
+        html += `<div style="background:rgba(255,255,255,0.15);padding:1.2rem;border-radius:8px;border-left:3px solid white;">
+          <p style="font-weight:bold;margin-bottom:0.5rem;">📰 ${outlet.period} ${outlet.name}</p>
+          <p style="cursor:pointer;color:white;font-size:0.9rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'flex':'none';">
+            칼럼 목록 보기 ▼
+          </p>
+          <div id="${id}" style="display:none;flex-direction:column;gap:0.4rem;">`;
+        outlet.columns.forEach(col => {
+          html += `<a href="${col.url}" target="_blank" style="color:white;text-decoration:none;font-size:0.9rem;">"${col.title}" →</a>`;
+        });
+        html += `</div></div>`;
       });
       html += `</div></div>`;
     });
-    html += `</div></div>`;
-  });
 
-  container.innerHTML = html;
+    container.innerHTML = html;
+  }
+
+  if(document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderColumns);
+  } else {
+    renderColumns();
+  }
 })();
 </script>
 <div id="column-section-3"></div>
