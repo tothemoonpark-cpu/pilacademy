@@ -1272,13 +1272,26 @@ const historyData = {
               ${item.toggle} ▼
             </p>
             <div id="${id}" style="display:none;flex-direction:column;gap:0.4rem;">`;
-            item.links.forEach(link => {
-              if(link.url) {
-                html += `<a href="${link.url}" target="_blank" style="color:white;text-decoration:none;">${link.text} →</a>`;
-              } else {
-                html += `<p style="color:white;margin:0.2rem 0;font-size:0.9rem;">${link.text}</p>`;
-              }
-            });
+            // 칼럼 연재/게재 항목은 columnData에서 자동 참조
+            const isColumnItem = item.title && (item.title.endsWith(' 칼럼 연재') || item.title.endsWith(' 칼럼 게재'));
+            const outletName = isColumnItem ? item.title.replace(' 칼럼 연재','').replace(' 칼럼 게재','') : null;
+            const colLinks = (isColumnItem && typeof columnData !== 'undefined' && columnData[outletName])
+              ? columnData[outletName].columns
+              : null;
+
+            if(colLinks) {
+              colLinks.forEach(col => {
+                html += `<a href="${col.url}" target="_blank" style="color:white;text-decoration:none;">${col.title.split(' - ')[0]} →</a>`;
+              });
+            } else {
+              item.links.forEach(link => {
+                if(link.url) {
+                  html += `<a href="${link.url}" target="_blank" style="color:white;text-decoration:none;">${link.text} →</a>`;
+                } else {
+                  html += `<p style="color:white;margin:0.2rem 0;font-size:0.9rem;">${link.text}</p>`;
+                }
+              });
+            }
             html += `</div>`;
           }
           html += `</div>`;
