@@ -1204,6 +1204,7 @@ const historyData = {
     {
       date:"2026.4", outlet:"온닥터tv",
       title:"<이 책을 쓴 사람> 방송 출연 (전국 송출)",
+      urlText:"인터뷰 영상 보기",
       url:"https://www.youtube.com/watch?v=2fe0JvvrvbU"
     },
     {
@@ -1351,7 +1352,7 @@ const historyData = {
             </p>
             <div id="${id}" style="display:none;">
               <p style="font-size:0.9rem;margin-bottom:0.5rem;color:white;">"${item.title}"</p>
-              <a href="${item.url}" target="_blank" style="color:white;text-decoration:none;font-size:0.9rem;">인터뷰 기사 보기 →</a>
+              <a href="${item.url}" target="_blank" style="color:white;text-decoration:none;font-size:0.9rem;">${item.urlText ? item.urlText : '인터뷰 기사 보기'} →</a>
             </div>
           </div>`;
         });
