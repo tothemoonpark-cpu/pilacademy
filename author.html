@@ -708,6 +708,8 @@ const historyData = {
       desc:"2026년 진행된 학교 진로·직업 특강",
       toggle:"학교 목록 보기",
       links:[
+        {text:"26.4.29 사송고등학교", url:""},
+        {text:"26.4.28 양산초등학교", url:""},
         {text:"26.4.24 신곡중학교", url:""},
         {text:"26.4.21 김해 수남중학교", url:""},
         {text:"26.4.7 부산여중", url:""},
@@ -751,10 +753,10 @@ const historyData = {
     {
       icon:"📅", date:"2026.4", title:"부산시청소년자립지원관",
       desc:"자립준비청소년 대상 '길라job이' 진로 특강<br>주제 : 길이 보이지 않아도 괜찮다<br>부제 : 걸어가면 그게 곧 내 길이다",
+      featuredLink:{text:"📹 특강 영상 보기 (유튜브)", url:"https://www.youtube.com/watch?v=yXY0kf-uTdw&t=73s"},
       toggle:"기사 보기",
       links:[
         {text:"부산광역시청소년자립지원관 공식 공지", url:"http://www.bsyjarip.or.kr/bbs_shop/read.htm?board_code=board1&idx=33755&cate_sub_idx=0"},
-        {text:"📹 특강 영상 보기 (유튜브)", url:"https://www.youtube.com/watch?v=yXY0kf-uTdw&t=73s"},
         {text:"부산일보", url:"https://www.busan.com/view/busan/view.php?code=2026042111111249994"},
         {text:"국제신문", url:"https://www.kookje.co.kr/news2011/asp/newsbody.asp?key=20260417.99099004974"},
         {text:"교수신문", url:"https://www.kyosu.net/news/articleView.html?idxno=204093"},
@@ -1280,6 +1282,9 @@ const historyData = {
           html += `<div style="background:rgba(255,255,255,0.15);padding:1.5rem;border-radius:10px;border-left:4px solid white;">
             <p style="font-weight:bold;margin-bottom:0.5rem;">${item.icon} ${item.date} ${item.title}</p>
             <p style="margin-bottom:0.8rem;">${item.desc}</p>`;
+          if(item.featuredLink) {
+            html += `<p style="margin-bottom:0.8rem;"><a href="${item.featuredLink.url}" target="_blank" style="color:white;text-decoration:none;font-weight:bold;">${item.featuredLink.text} →</a></p>`;
+          }
           if(item.toggle && item.links.length) {
             html += `<p style="cursor:pointer;color:white;font-size:0.95rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'flex':'none';">
               ${item.toggle} ▼
@@ -1601,6 +1606,8 @@ var lectureData = {
     {
       year: "2026년",
       schools: [
+        "26.4.29 사송고등학교",
+        "26.4.28 양산초등학교",
         "26.4.24 신곡중학교",
         "26.4.21 김해 수남중학교",
         "26.4.7 부산여중",
