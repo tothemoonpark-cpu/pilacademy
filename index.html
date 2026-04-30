@@ -1718,6 +1718,61 @@ document.addEventListener('DOMContentLoaded', function(){ indexManifest.check();
         </div>
     </section>
 
+    <!-- 대표 영상 -->
+    <section id="featured-videos" style="padding: 5rem 2rem; background: #1a1a2e;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; font-size: 2rem; color: white; margin-bottom: 0.5rem;">🎬 대표 영상</h2>
+            <p style="text-align: center; color: rgba(255,255,255,0.7); margin-bottom: 3rem; font-size: 1.1rem;">박근필 소장의 강연 및 소개 영상</p>
+
+            <!-- ============================================================
+                 대표 영상 데이터 - 유일한 원본
+                 새 영상 추가: videos 배열 맨 앞에 추가. 삭제 금지.
+                 ============================================================ -->
+            <script id="featured-videos-data">
+            var featuredVideos = [
+              {
+                id: "yXY0kf-uTdw",
+                title: "부산시청소년자립지원관 진로 특강",
+                desc: "길이 보이지 않아도 괜찮다, 걸어가면 그게 곧 내 길이다"
+              },
+              {
+                id: "hdZun4TPAPY",
+                title: "인공지능이 말해주는 박근필",
+                desc: "AI가 분석한 박근필 소장의 이야기"
+              },
+            ];
+            (function() {
+              function renderVideos() {
+                var container = document.getElementById('featured-videos-container');
+                if (!container) return;
+                var html = '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:2rem;">';
+                featuredVideos.forEach(function(video) {
+                  html += '<div style="background:rgba(255,255,255,0.05);border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.3);">';
+                  html += '<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">';
+                  html += '<iframe src="https://www.youtube.com/embed/' + video.id + '" ';
+                  html += 'style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" ';
+                  html += 'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                  html += '</div>';
+                  html += '<div style="padding:1.5rem;">';
+                  html += '<h3 style="color:white;font-size:1.2rem;margin-bottom:0.5rem;">' + video.title + '</h3>';
+                  html += '<p style="color:rgba(255,255,255,0.6);font-size:0.95rem;margin:0;">' + video.desc + '</p>';
+                  html += '</div></div>';
+                });
+                html += '</div>';
+                container.innerHTML = html;
+              }
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', renderVideos);
+              } else {
+                renderVideos();
+              }
+            })();
+            </script>
+            <div id="featured-videos-container"></div>
+        </div>
+    </section>
+
+
 
     <!-- 독저팅 섹션 -->
     <section class="dokjeoting" id="dokjeoting" aria-labelledby="dokjeoting-title">
@@ -1816,59 +1871,6 @@ document.addEventListener('DOMContentLoaded', function(){ indexManifest.check();
         </div>
     </section>
 
-    <!-- 대표 영상 -->
-    <section id="featured-videos" style="padding: 5rem 2rem; background: #1a1a2e;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <h2 style="text-align: center; font-size: 2rem; color: white; margin-bottom: 0.5rem;">🎬 대표 영상</h2>
-            <p style="text-align: center; color: rgba(255,255,255,0.7); margin-bottom: 3rem; font-size: 1.1rem;">박근필 소장의 강연 및 소개 영상</p>
-
-            <!-- ============================================================
-                 대표 영상 데이터 - 유일한 원본
-                 새 영상 추가: videos 배열 맨 앞에 추가. 삭제 금지.
-                 ============================================================ -->
-            <script id="featured-videos-data">
-            var featuredVideos = [
-              {
-                id: "yXY0kf-uTdw",
-                title: "부산시청소년자립지원관 진로 특강",
-                desc: "길이 보이지 않아도 괜찮다, 걸어가면 그게 곧 내 길이다"
-              },
-              {
-                id: "hdZun4TPAPY",
-                title: "인공지능이 말해주는 박근필",
-                desc: "AI가 분석한 박근필 소장의 이야기"
-              },
-            ];
-            (function() {
-              function renderVideos() {
-                var container = document.getElementById('featured-videos-container');
-                if (!container) return;
-                var html = '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:2rem;">';
-                featuredVideos.forEach(function(video) {
-                  html += '<div style="background:rgba(255,255,255,0.05);border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.3);">';
-                  html += '<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">';
-                  html += '<iframe src="https://www.youtube.com/embed/' + video.id + '" ';
-                  html += 'style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" ';
-                  html += 'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-                  html += '</div>';
-                  html += '<div style="padding:1.5rem;">';
-                  html += '<h3 style="color:white;font-size:1.2rem;margin-bottom:0.5rem;">' + video.title + '</h3>';
-                  html += '<p style="color:rgba(255,255,255,0.6);font-size:0.95rem;margin:0;">' + video.desc + '</p>';
-                  html += '</div></div>';
-                });
-                html += '</div>';
-                container.innerHTML = html;
-              }
-              if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', renderVideos);
-              } else {
-                renderVideos();
-              }
-            })();
-            </script>
-            <div id="featured-videos-container"></div>
-        </div>
-    </section>
 
     <!-- VOD 강의 -->
     <section class="vod" id="vod" aria-labelledby="vod-title">
