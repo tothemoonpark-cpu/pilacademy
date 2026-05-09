@@ -546,32 +546,42 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- 대표 영상 -->
+                    <div style="margin-top: 3rem;">
+                        <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #2c3e50;">🎬 대표 영상</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                            <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                                    <iframe src="https://www.youtube.com/embed/2fe0JvvrvbU" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div style="padding: 1rem; background: #f8f9fa;">
+                                    <p style="font-size: 0.95rem; color: #2c3e50; font-weight: bold; margin: 0;">수의사에서 글을 쓰는 작가까지 I 이 책을 쓴 사람(온닥터tv)</p>
+                                </div>
+                            </div>
+                            <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                                    <iframe src="https://www.youtube.com/embed/yXY0kf-uTdw" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div style="padding: 1rem; background: #f8f9fa;">
+                                    <p style="font-size: 0.95rem; color: #2c3e50; font-weight: bold; margin: 0;">부산시청소년자립지원관 진로 특강</p>
+                                </div>
+                            </div>
+                            <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                                    <iframe src="https://www.youtube.com/embed/hdZun4TPAPY" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div style="padding: 1rem; background: #f8f9fa;">
+                                    <p style="font-size: 0.95rem; color: #2c3e50; font-weight: bold; margin: 0;">인공지능이 말해주는 박근필</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                     <!-- 강연 및 활동 이력 -->
                     <div style="margin-top: 5rem;">
                         <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50; text-align: center;">🎤 강연 및 활동 이력</h3>
 
-                        <!-- 포트폴리오 링크 강조 배너 -->
-                        <div style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); padding: 2.5rem; border-radius: 20px; margin-bottom: 3rem; text-align: center; box-shadow: 0 8px 30px rgba(78, 205, 196, 0.35);">
-                            <p style="font-size: 1.25rem; font-weight: bold; color: white; margin-bottom: 1rem; line-height: 1.8;">
-                                📁 저의 상세 포트폴리오는 리틀리 프로필에서 확인하세요
-                            </p>
-                            <a href="https://litt.ly/tothemoonpark" target="_blank"
-                               style="display: inline-block; 
-                                      background: white; 
-                                      color: #44A08D; 
-                                      padding: 1rem 3rem; 
-                                      border-radius: 50px; 
-                                      font-size: 1.2rem; 
-                                      font-weight: bold; 
-                                      text-decoration: none; 
-                                      box-shadow: 0 4px 15px rgba(0,0,0,0.15); 
-                                      transition: all 0.3s;"
-                               onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.2)';"
-                               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.15)';">
-                                🔗 litt.ly/tothemoonpark →
-                            </a>
-                        </div>
 <div id="history-activities"></div>
 
                     </div>
@@ -1264,7 +1274,10 @@ const historyData = {
     {
       date:"2024.11", outlet:"월간 리더스",
       title:"[인터뷰] 읽고 쓰고 말하는 삶 - 박근필 수의사",
-      url:"https://blog.naver.com/kleadersforum/223643797678"
+      url:"https://blog.naver.com/kleadersforum/223643797678",
+      additionalLinks:[
+        {text:"월간 리더스 월간지에 실린 모습", url:"https://blog.naver.com/tothemoon_park/223649500454"},
+      ]
     },
     {
       date:"2023.10", outlet:"CEO저널",
@@ -1361,7 +1374,13 @@ const historyData = {
             </p>
             <div id="${id}" style="display:none;">
               <p style="font-size:0.9rem;margin-bottom:0.5rem;color:white;">"${item.title}"</p>
-              <a href="${item.url}" target="_blank" style="color:white;text-decoration:none;font-size:0.9rem;">${item.urlText ? item.urlText : '인터뷰 기사 보기'} →</a>
+              <a href="${item.url}" target="_blank" style="color:white;text-decoration:none;font-size:0.9rem;">${item.urlText ? item.urlText : '인터뷰 기사 보기'} →</a>`;
+            if(item.additionalLinks) {
+              item.additionalLinks.forEach(function(link) {
+                html += `<a href="${link.url}" target="_blank" style="color:white;text-decoration:none;font-size:0.9rem;display:block;margin-top:0.4rem;">${link.text} →</a>`;
+              });
+            }
+            html += `
             </div>
           </div>`;
         });
