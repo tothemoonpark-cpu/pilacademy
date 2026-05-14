@@ -371,7 +371,7 @@
      ============================================================ -->
 <script id="newsletter-manifest">
 const newsletterManifest = {
-  issues: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
+  issues: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23],
   check: function() {
     this.issues.forEach(n => {
       if(!document.querySelector(`[data-issue="${n}"]`)) {
@@ -2597,6 +2597,149 @@ document.addEventListener('DOMContentLoaded', () => newsletterManifest.check());
                             <h2 style="font-size: 2rem; margin-bottom: 1rem; color: white; border: none; padding: 0;">📮 지금 바로 구독하세요</h2>
                             <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: white;">매주 수요일 오전 11시, 여러분의 성장을 응원하는 편지를 받아보세요</p>
                             <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #f5576c; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
+                                📮 필레터 구독하기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- 필레터 정규 23호 발행 -->
+<!-- 필레터 정규 22호 발행 -->
+            <div class="accordion-item" data-issue="22">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>필레터 정규 22호 발행</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-section">
+                        <h2 style="color: #f5576c; text-align: center; margin-bottom: 2rem;">📮 필레터 정규 22호가 발행되었습니다</h2>
+
+                        <p style="font-size: 1.1rem; color: #2c3e50; line-height: 1.8; margin-bottom: 2rem; text-align: center;">
+                            이번 편지는 <strong style="color: #f5576c;">커리어와 서사</strong>에 대한 이야기입니다.
+                        </p>
+
+                        <div class="highlight-box" style="background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%); padding: 2.5rem; border-left: 5px solid #f5576c; margin: 2rem 0;">
+                            <p style="font-size: 1.1rem; color: #2c3e50; line-height: 2; margin-bottom: 1rem;">스펙이 아니라 이야기 말입니다.</p>
+                            <p style="font-size: 1.1rem; color: #2c3e50; line-height: 2; margin-bottom: 1rem;">"어디 나왔어요?"보다 "어떻게 살아왔어요?"가 더 강합니다.</p>
+                            <p style="font-size: 1.15rem; color: #f5576c; line-height: 2; font-weight: bold;">지금 내가 써가고 있는 이야기, 어떤 이야기인가요?</p>
+                        </div>
+
+                        <h3 style="color: #667eea; margin: 2.5rem 0 1.5rem 0; font-size: 1.4rem;">📚 함께 다룬 이야기</h3>
+
+                        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; color: white; margin-bottom: 1.5rem;">
+                            <h4 style="color: white !important; margin: 0 0 1rem 0; font-size: 1.2rem;">🩺 박근필 작가의 수의사 이야기</h4>
+                            <p style="font-size: 1.1rem; margin-bottom: 1rem; color: white !important;"><strong>'수의사가 작가가 되기까지'</strong></p>
+                            <p style="font-size: 1.05rem; line-height: 1.8; opacity: 0.95; color: white !important;">— 앞을 볼 땐 안개만 가득했습니다. 뒤를 돌아보니 그게 길이었습니다</p>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; color: white; margin-bottom: 1.5rem;">
+                            <h4 style="color: white !important; margin: 0 0 1rem 0; font-size: 1.2rem;">📚 미수록 원고 공개</h4>
+                            <p style="font-size: 1.1rem; margin-bottom: 1rem; color: white !important;">『마흔 더 늦기 전에 생각의 틀을 리셋하라』</p>
+                            <p style="font-size: 1.05rem; line-height: 1.8; opacity: 0.95; color: white !important;">
+                                <strong>"문과와 이과 구분은 필요하며 이상적이다"는 믿음에 대하여</strong><br>
+                                — 기술과 인문학의 교차점에서 더 큰 가치가 만들어지는 이유
+                            </p>
+                            <p style="font-size: 1rem; opacity: 0.9; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 1rem; margin-top: 1rem; color: white !important;">
+                                ※ 전체 글은 <strong>구독자 전용 이메일</strong>에서만 제공됩니다.
+                            </p>
+                        </div>
+
+                        <div style="background: #fff9e6; padding: 2rem; border-radius: 12px; margin-bottom: 2.5rem; border-left: 4px solid #ffc107;">
+                            <h4 style="color: #e67e22; margin: 0 0 1rem 0; font-size: 1.2rem;">📢 그 외 소식</h4>
+                            <p style="line-height: 1.8; color: #2c3e50; margin-bottom: 0.8rem;">
+                                • <strong>필북 6기 5주 차 모임 완료</strong>, 마잇 윤쌤 작가님 함께 진행<br>
+                                &nbsp;&nbsp;<a href="https://blog.naver.com/tothemoon_park/224276568654" target="_blank" style="color: #667eea;">모임 후기 보기 →</a>
+                            </p>
+                            <p style="line-height: 1.8; color: #2c3e50; margin-bottom: 0.8rem;">
+                                • <strong>독저팅 무료 이벤트 진행 중</strong> (15명 한정)<br>
+                                &nbsp;&nbsp;<a href="https://blog.naver.com/tothemoon_park/224273041230" target="_blank" style="color: #667eea;">이벤트 자세히 보기 →</a>
+                            </p>
+                            <p style="line-height: 1.8; color: #2c3e50;">
+                                • <strong>5월 피플인사이트 인터뷰이</strong>는 센체 님<br>
+                                &nbsp;&nbsp;<a href="https://blog.naver.com/tothemoon_park/224276245507" target="_blank" style="color: #667eea;">피플인사이트 센체 편 →</a>
+                            </p>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 2.5rem; padding-top: 2rem; border-top: 2px solid #e0e0e0;">
+                            <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.6;">
+                                📮 <strong>필레터는 매주 수요일 발행됩니다</strong><br>
+                                책 · 독서 · 글쓰기 · 책쓰기 · 삶의 성장, 그리고 수의사로서의 일상까지
+                            </p>
+                        </div>
+
+                        <div style="margin-top: 3rem; padding: 2.5rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 15px; text-align: center; color: white;">
+                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: white; border: none; padding: 0;">📮 지금 바로 구독하세요</h2>
+                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: white;">매주 수요일 오전 11시, 여러분의 성장을 응원하는 편지를 받아보세요</p>
+                            <a href="#stb_subscribe" style="display: inline-block; background: white; color: #f5576c; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
+                                📮 필레터 구독하기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" data-issue="23">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>필레터 정규 23호 발행</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-section">
+                        <h2 style="color: #f5576c; text-align: center; margin-bottom: 2rem;">📮 필레터 정규 23호가 발행되었습니다</h2>
+
+                        <p style="font-size: 1.1rem; color: #2c3e50; line-height: 1.8; margin-bottom: 2rem; text-align: center;">
+                            이번 편지는 <strong style="color: #f5576c;">'질문'</strong>에 대한 이야기입니다.
+                        </p>
+
+                        <div class="highlight-box" style="background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%); padding: 2.5rem; border-left: 5px solid #f5576c; margin: 2rem 0;">
+                            <p style="font-size: 1.1rem; color: #2c3e50; line-height: 2; margin-bottom: 1rem;">바쁘게 움직이기 전에 멈춰야 합니다.</p>
+                            <p style="font-size: 1.1rem; color: #2c3e50; line-height: 2; margin-bottom: 1rem;">왜 하는지 모르면 시작도 어렵고 지속도 어렵습니다.</p>
+                            <p style="font-size: 1.15rem; color: #f5576c; line-height: 2; font-weight: bold;">지금 하고 있는 일, 왜 하고 있는지 말할 수 있으신가요?</p>
+                        </div>
+
+                        <h3 style="color: #667eea; margin: 2.5rem 0 1.5rem 0; font-size: 1.4rem;">📚 함께 다룬 이야기</h3>
+
+                        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; color: white; margin-bottom: 1.5rem;">
+                            <h4 style="color: white !important; margin: 0 0 1rem 0; font-size: 1.2rem;">🩺 박근필 작가의 수의사 이야기</h4>
+                            <p style="font-size: 1.1rem; margin-bottom: 1rem; color: white !important;"><strong>'진단 전에 먼저 물어야 합니다'</strong></p>
+                            <p style="font-size: 1.05rem; line-height: 1.8; opacity: 0.95; color: white !important;">— 틀린 질문은 틀린 방향으로 검사를 이끕니다. 삶도 마찬가지입니다</p>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; color: white; margin-bottom: 1.5rem;">
+                            <h4 style="color: white !important; margin: 0 0 1rem 0; font-size: 1.2rem;">📚 미수록 원고 공개</h4>
+                            <p style="font-size: 1.1rem; margin-bottom: 1rem; color: white !important;">『마흔 더 늦기 전에 생각의 틀을 리셋하라』</p>
+                            <p style="font-size: 1.05rem; line-height: 1.8; opacity: 0.95; color: white !important;">
+                                <strong>"좋아하는 책만 읽어도 된다"는 믿음에 대하여</strong><br>
+                                — 독서도 편식하면 사고의 균형이 깨지는 이유
+                            </p>
+                            <p style="font-size: 1rem; opacity: 0.9; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 1rem; margin-top: 1rem; color: white !important;">
+                                ※ 전체 글은 <strong>구독자 전용 이메일</strong>에서만 제공됩니다.
+                            </p>
+                        </div>
+
+                        <div style="background: #fff9e6; padding: 2rem; border-radius: 12px; margin-bottom: 2.5rem; border-left: 4px solid #ffc107;">
+                            <h4 style="color: #e67e22; margin: 0 0 1rem 0; font-size: 1.2rem;">📢 그 외 소식</h4>
+                            <p style="line-height: 1.8; color: #2c3e50; margin-bottom: 0.8rem;">
+                                • <strong>필북 6기 5주 차 모임 완료</strong>, 마잇 윤쌤 작가님 함께 진행<br>
+                                &nbsp;&nbsp;<a href="https://blog.naver.com/tothemoon_park/224276568654" target="_blank" style="color: #667eea;">필북 6기 5주 차 모임 후기 보기 →</a>
+                            </p>
+                            <p style="line-height: 1.8; color: #2c3e50;">
+                                • <strong>5월 피플인사이트 인터뷰이</strong>는 센체 님<br>
+                                &nbsp;&nbsp;<a href="https://blog.naver.com/tothemoon_park/224284504929" target="_blank" style="color: #667eea;">센체 편 7분 요약 →</a>&nbsp;&nbsp;
+                                <a href="https://blog.naver.com/tothemoon_park/224276245507" target="_blank" style="color: #667eea;">피플인사이트 센체 편 →</a>
+                            </p>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 2.5rem; padding-top: 2rem; border-top: 2px solid #e0e0e0;">
+                            <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.6;">
+                                📮 <strong>필레터는 매주 수요일 발행됩니다</strong><br>
+                                책 · 독서 · 글쓰기 · 책쓰기 · 삶의 성장, 그리고 수의사로서의 일상까지
+                            </p>
+                        </div>
+
+                        <div style="margin-top: 3rem; padding: 2.5rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 15px; text-align: center; color: white;">
+                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: white; border: none; padding: 0;">📮 지금 바로 구독하세요</h2>
+                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: white;">매주 수요일 오전 11시, 여러분의 성장을 응원하는 편지를 받아보세요</p>
+                            <a href="#stb_subscribe" style="display: inline-block; background: white; color: #f5576c; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
                                 📮 필레터 구독하기
                             </a>
                         </div>
