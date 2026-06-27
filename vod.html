@@ -25,8 +25,8 @@
         }
         
         header {
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
-            color: white;
+            background: #f6f8f8;
+            color: #16181d;
             padding: 1rem 0;
             position: fixed;
             width: 100%;
@@ -56,7 +56,7 @@
         }
         
         .nav-links a {
-            color: white;
+            color: #16181d;
             text-decoration: none;
             font-weight: 500;
             transition: opacity 0.3s;
@@ -80,7 +80,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: white;
+            background-color: #16181d;
             min-width: 180px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             border-radius: 8px;
@@ -101,7 +101,7 @@
         }
         
         .dropdown-content a {
-            color: #2c3e50;
+            color: #16181d;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -177,7 +177,7 @@
                 top: 70px;
                 left: 0;
                 right: 0;
-                background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+                background: #f6f8f8;
                 flex-direction: column;
                 padding: 1rem 0;
                 z-index: 999;
@@ -201,7 +201,7 @@
             }
             
             .dropdown-content a {
-                color: white;
+                color: #16181d;
             }
         }
         
@@ -252,10 +252,10 @@
         
         .payment-title {
             font-size: 1.8rem;
-            color: #2c3e50;
+            color: #16181d;
             margin-bottom: 1.5rem;
             padding-bottom: 1rem;
-            border-bottom: 3px solid #4ECDC4;
+            border-bottom: 3px solid #e8e8e8;
         }
         
         .payment-info {
@@ -282,18 +282,18 @@
         }
         
         .payment-info-value {
-            color: #2c3e50;
+            color: #16181d;
             font-weight: bold;
         }
         
         .payment-price {
             font-size: 1.5rem;
-            color: #4ECDC4;
+            color: #16181d;
         }
         
         .payment-account {
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
-            color: white;
+            background: #f6f8f8;
+            color: #16181d;
             padding: 1.5rem;
             border-radius: 10px;
             margin-bottom: 2rem;
@@ -318,13 +318,13 @@
         }
         
         .payment-notice {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
+            background: #f6f8f8;
+            border-left: 4px solid #e8e8e8;
             padding: 1rem;
             margin-bottom: 1.5rem;
             border-radius: 5px;
             font-size: 0.95rem;
-            color: #856404;
+            color: #16181d;
         }
         
         .payment-form {
@@ -338,7 +338,7 @@
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #2c3e50;
+            color: #16181d;
             font-weight: 500;
         }
         
@@ -352,13 +352,13 @@
         
         .form-group input:focus {
             outline: none;
-            border-color: #4ECDC4;
+            border-color: #16181d;
         }
         
         .payment-submit {
             width: 100%;
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
-            color: white;
+            background: #f6f8f8;
+            color: #16181d;
             padding: 1.2rem;
             border: none;
             border-radius: 10px;
@@ -370,9 +370,36 @@
         
         .payment-submit:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+            box-shadow: 0 5px 15px rgba(43, 183, 172, 0.4);
         }
     </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style id="renew-override">
+  body{ -webkit-font-smoothing:antialiased; }
+  header{ background:#ffffff !important; border-bottom:1px solid #ececec !important; box-shadow:0 1px 3px rgba(0,0,0,0.04) !important; }
+  header .logo, header .nav-links a, header .dropbtn{ color:#16181d !important; }
+  header .nav-links a:hover, header .dropbtn:hover{ color:#16181d !important; opacity:1 !important; }
+  .menu-toggle span{ background:#16181d !important; }
+  .dropdown-content{ box-shadow:0 8px 24px rgba(0,0,0,0.08) !important; border:1px solid #ececec !important; }
+  .dropdown-content a{ color:#16181d !important; }
+  .dropdown-content a:hover{ background:#f6f8f8 !important; color:#16181d !important; }
+  .cta-button,.submit-button,.vod-button,.payment-submit,.vod-detail-buy-button,.vod-detail-buy,.buy-button,.notice-badge{ background:#16181d !important; color:#fff !important; box-shadow:none !important; }
+  .cta-button:hover,.submit-button:hover,.vod-button:hover,.payment-submit:hover{ background:#16181d !important; box-shadow:0 6px 16px rgba(43,183,172,0.25) !important; }
+  .section-title{ color:#16181d !important; }
+  .section-title::after{ background:#16181d !important; }
+  footer{ background:#14161a !important; }
+  .footer-links a:hover{ color:#16181d !important; }
+</style>
+<style id="mint-header-override">
+  header{ background:#2bb7ac !important; border-bottom:none !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; }
+  header .logo, header .logo svg, header .nav-links a, header .dropbtn{ color:#ffffff !important; }
+  header .nav-links a:hover, header .dropbtn:hover{ color:#ffffff !important; opacity:0.82 !important; }
+  .menu-toggle span{ background:#ffffff !important; }
+  .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
+  .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
+</style>
 </head>
 <body>
     <header role="banner">
@@ -386,7 +413,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">홈</a></li>
                 <li><a href="author.html">작가소개</a></li>
-                <li><a href="dokjeoting.html">독저팅™</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
                 <li><a href="philbook.html">필북</a></li>
                 <li><a href="books.html">저서</a></li>
@@ -413,19 +440,19 @@
     <div style="height: 80px;"></div>
 
     <div style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;">
-        <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50; text-align: center;">🎥 VOD 특강</h2>
+        <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #16181d; text-align: center;">VOD 특강</h2>
         
         <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 2rem;">
             <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail1')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <h3 style="font-size: 1.3rem; color: #2c3e50;">1. VOD 특강 후기 모음</h3>
-                    <span id="arrow1" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
+                    <h3 style="font-size: 1.3rem; color: #16181d;">1. VOD 특강 후기 모음</h3>
+                    <span id="arrow1" style="font-size: 1.5rem; color: #16181d;">▼</span>
                 </div>
             </div>
             
             <div id="detail1" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
                 <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
-                    <h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 2rem; text-align: center;">💬 VOD 특강 수강생 후기</h3>
+                    <h3 style="font-size: 1.5rem; color: #16181d; margin-bottom: 2rem; text-align: center;">VOD 특강 수강생 후기</h3>
                     
                     <div style="display: grid; gap: 1.5rem; max-width: 900px; margin: 0 auto;">
                         <img src="vod-review-1.png" alt="VOD 후기 1" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
@@ -464,114 +491,114 @@
         <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 2rem;">
             <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail2')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <h3 style="font-size: 1.3rem; color: #2c3e50;">2. VOD 1분 미리 보기</h3>
-                    <span id="arrow2" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
+                    <h3 style="font-size: 1.3rem; color: #16181d;">2. VOD 1분 미리 보기</h3>
+                    <span id="arrow2" style="font-size: 1.5rem; color: #16181d;">▼</span>
                 </div>
             </div>
             
             <div id="detail2" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
                 <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
-                    <h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 2rem; text-align: center;">🎬 각 강의를 1분간 미리 보세요</h3>
+                    <h3 style="font-size: 1.5rem; color: #16181d; margin-bottom: 2rem; text-align: center;">각 강의를 1분간 미리 보세요</h3>
                     
                     <div style="max-width: 900px; margin: 0 auto;">
                         <!-- VOD 1 -->
-                        <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
-                            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">📚 책을 왜 써야 하는가?</h4>
+                        <div style="margin-bottom: 1.5rem; padding: 1.8rem; background: #ffffff; border: 1px solid #ececec; border-radius: 16px;">
+                            <h4 style="font-size: 1.3rem; color: #16181d; margin-bottom: 1rem;">책을 왜 써야 하는가?</h4>
                             <div id="preview1Container">
                                 <div id="preview1Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
                                     <iframe id="preview1" data-src="https://drive.google.com/file/d/1ArTCtIaDa88o6DwPAlFoX_i4-5ogJAtN/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
                                 </div>
-                                <button id="preview1PlayBtn" onclick="startPreview(1)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                    ▶️ 1분 미리보기 재생
+                                <button id="preview1PlayBtn" onclick="startPreview(1)" style="display: block; width: 100%; padding: 2.4rem; background: #f7f8f9; color: #16181d; border: 1px solid #ececec; border-radius: 12px; font-size: 1.2rem; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    1분 미리보기 재생
                                 </button>
                             </div>
-                            <div id="preview1Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
-                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
+                            <div id="preview1Message" style="display: none; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">미리보기가 종료되었습니다</h4>
                                 <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
                             </div>
-                            <button onclick="openVodDetail1()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/076WClZ', '_blank')" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</button>
-                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
+                            <button onclick="openVodDetail1()" style="display: block; width: 100%; margin-top: 1.2rem; padding: 1.05rem; background: #ffffff; color: #16181d; border: 1px solid #d8d8d8; border-radius: 12px; font-size: 1.05rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f6f8f8'" onmouseout="this.style.background='white'">상세보기</button>
+                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/076WClZ', '_blank')" style="display: block; width: 100%; margin-top: 0.6rem; padding: 1.1rem; background: #16181d; color: #ffffff; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: none; transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">바로 구매하기 (29,000원)</button>
+                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
                         </div>
                         
                         <!-- VOD 2 -->
-                        <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
-                            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">✍️ 책쓰기는 기획이 80%다!</h4>
+                        <div style="margin-bottom: 1.5rem; padding: 1.8rem; background: #ffffff; border: 1px solid #ececec; border-radius: 16px;">
+                            <h4 style="font-size: 1.3rem; color: #16181d; margin-bottom: 1rem;">책쓰기는 기획이 80%다</h4>
                             <div id="preview2Container">
                                 <div id="preview2Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
                                     <iframe id="preview2" data-src="https://drive.google.com/file/d/1llkmwsrP41J6vmqlMDn1tx5zW1-emJRo/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
                                 </div>
-                                <button id="preview2PlayBtn" onclick="startPreview(2)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                    ▶️ 1분 미리보기 재생
+                                <button id="preview2PlayBtn" onclick="startPreview(2)" style="display: block; width: 100%; padding: 2.4rem; background: #f7f8f9; color: #16181d; border: 1px solid #ececec; border-radius: 12px; font-size: 1.2rem; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    1분 미리보기 재생
                                 </button>
                             </div>
-                            <div id="preview2Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
-                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
+                            <div id="preview2Message" style="display: none; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">미리보기가 종료되었습니다</h4>
                                 <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
                             </div>
-                            <button onclick="openVodDetail2()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/UrfM4Bu', '_blank')" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (49,000원)</button>
-                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
+                            <button onclick="openVodDetail2()" style="display: block; width: 100%; margin-top: 1.2rem; padding: 1.05rem; background: #ffffff; color: #16181d; border: 1px solid #d8d8d8; border-radius: 12px; font-size: 1.05rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f6f8f8'" onmouseout="this.style.background='white'">상세보기</button>
+                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/UrfM4Bu', '_blank')" style="display: block; width: 100%; margin-top: 0.6rem; padding: 1.1rem; background: #16181d; color: #ffffff; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: none; transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">바로 구매하기 (49,000원)</button>
+                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
                         </div>
                         
                         <!-- VOD 3 -->
-                        <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
-                            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">💼 쉽게 이해하는 퍼스널 브랜딩</h4>
+                        <div style="margin-bottom: 1.5rem; padding: 1.8rem; background: #ffffff; border: 1px solid #ececec; border-radius: 16px;">
+                            <h4 style="font-size: 1.3rem; color: #16181d; margin-bottom: 1rem;">쉽게 이해하는 퍼스널 브랜딩</h4>
                             <div id="preview3Container">
                                 <div id="preview3Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
                                     <iframe id="preview3" data-src="https://drive.google.com/file/d/1EOlnwG6EaJMy3df1rnf1GHac_UNa4VNf/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
                                 </div>
-                                <button id="preview3PlayBtn" onclick="startPreview(3)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                    ▶️ 1분 미리보기 재생
+                                <button id="preview3PlayBtn" onclick="startPreview(3)" style="display: block; width: 100%; padding: 2.4rem; background: #f7f8f9; color: #16181d; border: 1px solid #ececec; border-radius: 12px; font-size: 1.2rem; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    1분 미리보기 재생
                                 </button>
                             </div>
-                            <div id="preview3Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
-                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
+                            <div id="preview3Message" style="display: none; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">미리보기가 종료되었습니다</h4>
                                 <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
                             </div>
-                            <button onclick="openVodDetail3()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/atoZl7U', '_blank')" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (49,000원)</button>
-                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
+                            <button onclick="openVodDetail3()" style="display: block; width: 100%; margin-top: 1.2rem; padding: 1.05rem; background: #ffffff; color: #16181d; border: 1px solid #d8d8d8; border-radius: 12px; font-size: 1.05rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f6f8f8'" onmouseout="this.style.background='white'">상세보기</button>
+                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/atoZl7U', '_blank')" style="display: block; width: 100%; margin-top: 0.6rem; padding: 1.1rem; background: #16181d; color: #ffffff; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: none; transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">바로 구매하기 (49,000원)</button>
+                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
                         </div>
                         
                         <!-- VOD 4 -->
-                        <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
-                            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">🚀 직장인이 아닌 직업인으로</h4>
+                        <div style="margin-bottom: 1.5rem; padding: 1.8rem; background: #ffffff; border: 1px solid #ececec; border-radius: 16px;">
+                            <h4 style="font-size: 1.3rem; color: #16181d; margin-bottom: 1rem;">직장인이 아닌 직업인으로</h4>
                             <div id="preview4Container">
                                 <div id="preview4Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
                                     <iframe id="preview4" data-src="https://drive.google.com/file/d/1giWnt-McveS0qBT_NLq-IMQWNB3nVo0q/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
                                 </div>
-                                <button id="preview4PlayBtn" onclick="startPreview(4)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                    ▶️ 1분 미리보기 재생
+                                <button id="preview4PlayBtn" onclick="startPreview(4)" style="display: block; width: 100%; padding: 2.4rem; background: #f7f8f9; color: #16181d; border: 1px solid #ececec; border-radius: 12px; font-size: 1.2rem; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    1분 미리보기 재생
                                 </button>
                             </div>
-                            <div id="preview4Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
-                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
+                            <div id="preview4Message" style="display: none; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">미리보기가 종료되었습니다</h4>
                                 <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
                             </div>
-                            <button onclick="openVodDetail4()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/BDPw8UV', '_blank')" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</button>
-                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
+                            <button onclick="openVodDetail4()" style="display: block; width: 100%; margin-top: 1.2rem; padding: 1.05rem; background: #ffffff; color: #16181d; border: 1px solid #d8d8d8; border-radius: 12px; font-size: 1.05rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f6f8f8'" onmouseout="this.style.background='white'">상세보기</button>
+                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/BDPw8UV', '_blank')" style="display: block; width: 100%; margin-top: 0.6rem; padding: 1.1rem; background: #16181d; color: #ffffff; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: none; transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">바로 구매하기 (29,000원)</button>
+                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
                         </div>
                         
                         <!-- VOD 5 -->
-                        <div style="margin-bottom: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
-                            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem;">📖 독서법1_목적·능동적·아웃풋 독서</h4>
+                        <div style="margin-bottom: 1.5rem; padding: 1.8rem; background: #ffffff; border: 1px solid #ececec; border-radius: 16px;">
+                            <h4 style="font-size: 1.3rem; color: #16181d; margin-bottom: 1rem;">독서법 1 · 목적·능동적·아웃풋 독서</h4>
                             <div id="preview5Container">
                                 <div id="preview5Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
                                     <iframe id="preview5" data-src="https://drive.google.com/file/d/1Q8UdyrTi0Lq1Eb7xOFYLOex7QKpmInqA/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
                                 </div>
-                                <button id="preview5PlayBtn" onclick="startPreview(5)" style="display: block; width: 100%; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 1.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                                    ▶️ 1분 미리보기 재생
+                                <button id="preview5PlayBtn" onclick="startPreview(5)" style="display: block; width: 100%; padding: 2.4rem; background: #f7f8f9; color: #16181d; border: 1px solid #ececec; border-radius: 12px; font-size: 1.2rem; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    1분 미리보기 재생
                                 </button>
                             </div>
-                            <div id="preview5Message" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
-                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>
+                            <div id="preview5Message" style="display: none; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">미리보기가 종료되었습니다</h4>
                                 <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
                             </div>
-                            <button onclick="openVodDetail5()" style="display: block; width: 100%; margin-top: 1.5rem; padding: 1.2rem; background: white; color: #4ECDC4; border: 2px solid #4ECDC4; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='white'">📖 상세보기</button>
-                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/f74TaYi', '_blank')" style="display: block; width: 100%; margin-top: 0.5rem; padding: 1.2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">💳 바로 구매하기 (29,000원)</button>
-                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
+                            <button onclick="openVodDetail5()" style="display: block; width: 100%; margin-top: 1.2rem; padding: 1.05rem; background: #ffffff; color: #16181d; border: 1px solid #d8d8d8; border-radius: 12px; font-size: 1.05rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f6f8f8'" onmouseout="this.style.background='white'">상세보기</button>
+                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/f74TaYi', '_blank')" style="display: block; width: 100%; margin-top: 0.6rem; padding: 1.1rem; background: #16181d; color: #ffffff; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: none; transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">바로 구매하기 (29,000원)</button>
+                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
                         </div>
                     </div>
                 </div>
@@ -635,8 +662,8 @@
     <!-- VOD 상세 모달 -->
     <div id="vodDetailModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000; overflow-y: auto;">
         <div style="max-width: 900px; margin: 2rem auto; background: white; border-radius: 20px; position: relative;">
-            <div style="position: sticky; top: 0; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; padding: 2rem; border-radius: 20px 20px 0 0; z-index: 1;">
-                <button onclick="closeVodDetailModal()" style="position: absolute; top: 1rem; right: 1rem; background: white; color: #4ECDC4; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; font-weight: bold;">×</button>
+            <div style="position: sticky; top: 0; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 20px 20px 0 0; z-index: 1;">
+                <button onclick="closeVodDetailModal()" style="position: absolute; top: 1rem; right: 1rem; background: white; color: #16181d; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; font-weight: bold;">×</button>
                 <h2 id="vodDetailTitle" style="margin: 0; font-size: 1.8rem;"></h2>
                 <div style="margin-top: 1rem; display: flex; gap: 2rem; flex-wrap: wrap;">
                     <span id="vodDetailDuration" style="font-size: 1.1rem;"></span>
@@ -648,13 +675,13 @@
         </div>
     </div>
 
-    <footer role="contentinfo" style="background: #2c3e50; color: white; padding: 3rem 0; margin-top: 5rem;">
+    <footer role="contentinfo" style="background: #16181d; color: white; padding: 3rem 0; margin-top: 5rem;">
         <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">
             <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
                 <a href="https://litt.ly/tothemoonpark" target="_blank" style="color: white; text-decoration: none;">Litt.ly</a>
                 <a href="index.html" style="color: white; text-decoration: none;">홈</a>
                 <a href="index.html#author" style="color: white; text-decoration: none;">작가소개</a>
-                <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅™</a>
+                <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅</a>
                 <a href="index.html#vod" style="color: white; text-decoration: none;">VOD 강의</a>
                 <a href="index.html#philbook" style="color: white; text-decoration: none;">필북</a>
                 <a href="index.html#books" style="color: white; text-decoration: none;">저서</a>
@@ -861,27 +888,27 @@
             bodyHTML += '<p style="font-size: 1.15rem; color: #666; margin-bottom: 2.5rem; line-height: 1.8; font-weight: 500;">' + vodData.subtitle + '</p>';
             
             if (vodData.changes) {
-                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">💡 이런 변화를 기대하세요</h3><ul style="list-style: none; padding: 0;">';
+                bodyHTML += '<h3 style="color: #16181d; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #e8e8e8; padding-bottom: 0.5rem;">💡 이런 변화를 기대하세요</h3><ul style="list-style: none; padding: 0;">';
                 vodData.changes.forEach(change => {
-                    bodyHTML += '<li style="padding: 1rem; margin-bottom: 0.5rem; background: #f8f9fa; border-left: 4px solid #4ECDC4; border-radius: 4px; line-height: 1.7;">✓ ' + change + '</li>';
+                    bodyHTML += '<li style="padding: 1rem; margin-bottom: 0.5rem; background: #f8f9fa; border-left: 4px solid #e8e8e8; border-radius: 4px; line-height: 1.7;">✓ ' + change + '</li>';
                 });
                 bodyHTML += '</ul>';
             }
             
             if (vodData.recommend) {
-                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">👥 이런 분께 추천합니다</h3><ul style="list-style: none; padding: 0;">';
+                bodyHTML += '<h3 style="color: #16181d; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #e8e8e8; padding-bottom: 0.5rem;">👥 이런 분께 추천합니다</h3><ul style="list-style: none; padding: 0;">';
                 vodData.recommend.forEach(rec => {
-                    bodyHTML += '<li style="padding: 1rem; margin-bottom: 0.5rem; background: #fff8e1; border-left: 4px solid #fbbf24; border-radius: 4px; line-height: 1.7;">• ' + rec + '</li>';
+                    bodyHTML += '<li style="padding: 1rem; margin-bottom: 0.5rem; background: #f6f8f8; border-left: 4px solid #e8e8e8; border-radius: 4px; line-height: 1.7;">• ' + rec + '</li>';
                 });
                 bodyHTML += '</ul>';
             }
             
             if (vodData.myths) {
-                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">❌ 잘못된 믿음 깨기</h3><div style="background: #fff5f5; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;"><h4 style="color: #dc2626; margin-bottom: 1rem; font-size: 1.1rem;">잘못된 생각</h4><ul style="list-style: none; padding: 0;">';
+                bodyHTML += '<h3 style="color: #16181d; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #e8e8e8; padding-bottom: 0.5rem;">❌ 잘못된 믿음 깨기</h3><div style="background: #fff5f5; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;"><h4 style="color: #16181d; margin-bottom: 1rem; font-size: 1.1rem;">잘못된 생각</h4><ul style="list-style: none; padding: 0;">';
                 vodData.myths.wrong.forEach(myth => {
                     bodyHTML += '<li style="padding: 0.5rem 0; color: #666;">❌ ' + myth + '</li>';
                 });
-                bodyHTML += '</ul><h4 style="color: #16a34a; margin: 1.5rem 0 1rem; font-size: 1.1rem;">놀라운 진실</h4><ul style="list-style: none; padding: 0;">';
+                bodyHTML += '</ul><h4 style="color: #16181d; margin: 1.5rem 0 1rem; font-size: 1.1rem;">놀라운 진실</h4><ul style="list-style: none; padding: 0;">';
                 vodData.myths.truth.forEach(truth => {
                     bodyHTML += '<li style="padding: 0.5rem 0; color: #666;">✅ ' + truth + '</li>';
                 });
@@ -889,7 +916,7 @@
             }
             
             if (vodData.reality) {
-                bodyHTML += '<div style="background: #fef2f2; padding: 1.5rem; border-radius: 8px; border: 2px solid #ef4444; margin: 2rem 0;"><h4 style="color: #dc2626; margin-bottom: 1rem; font-size: 1.2rem;">⚠️ ' + vodData.reality.title + '</h4>';
+                bodyHTML += '<div style="background: #fef2f2; padding: 1.5rem; border-radius: 8px; border: 2px solid #e8e8e8; margin: 2rem 0;"><h4 style="color: #16181d; margin-bottom: 1rem; font-size: 1.2rem;">⚠️ ' + vodData.reality.title + '</h4>';
                 vodData.reality.items.forEach(item => {
                     bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7; color: #666;">' + item + '</p>';
                 });
@@ -897,7 +924,7 @@
             }
             
             if (vodData.principles) {
-                bodyHTML += '<div style="background: #f0fdf4; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;"><h4 style="color: #16a34a; margin-bottom: 1rem; font-size: 1.2rem;">✨ ' + vodData.principles.title + '</h4>';
+                bodyHTML += '<div style="background: #f0fdf4; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;"><h4 style="color: #16181d; margin-bottom: 1rem; font-size: 1.2rem;">✨ ' + vodData.principles.title + '</h4>';
                 vodData.principles.items.forEach(item => {
                     bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7; color: #666;">' + item + '</p>';
                 });
@@ -905,11 +932,11 @@
             }
             
             if (vodData.comparison) {
-                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">⚖️ ' + vodData.comparison.title + '</h3><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;"><div style="background: #fef2f2; padding: 1.5rem; border-radius: 8px;"><h4 style="color: #dc2626; margin-bottom: 1rem;">' + vodData.comparison.left.title + '</h4><ul style="list-style: none; padding: 0;">';
+                bodyHTML += '<h3 style="color: #16181d; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #e8e8e8; padding-bottom: 0.5rem;">⚖️ ' + vodData.comparison.title + '</h3><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;"><div style="background: #fef2f2; padding: 1.5rem; border-radius: 8px;"><h4 style="color: #16181d; margin-bottom: 1rem;">' + vodData.comparison.left.title + '</h4><ul style="list-style: none; padding: 0;">';
                 vodData.comparison.left.items.forEach(item => {
                     bodyHTML += '<li style="padding: 0.3rem 0; color: #666;">❌ ' + item + '</li>';
                 });
-                bodyHTML += '</ul></div><div style="background: #f0fdf4; padding: 1.5rem; border-radius: 8px;"><h4 style="color: #16a34a; margin-bottom: 1rem;">' + vodData.comparison.right.title + '</h4><ul style="list-style: none; padding: 0;">';
+                bodyHTML += '</ul></div><div style="background: #f0fdf4; padding: 1.5rem; border-radius: 8px;"><h4 style="color: #16181d; margin-bottom: 1rem;">' + vodData.comparison.right.title + '</h4><ul style="list-style: none; padding: 0;">';
                 vodData.comparison.right.items.forEach(item => {
                     bodyHTML += '<li style="padding: 0.3rem 0; color: #666;">✅ ' + item + '</li>';
                 });
@@ -917,25 +944,25 @@
             }
             
             if (vodData.cases) {
-                bodyHTML += '<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; color: white; margin: 2rem 0;"><h4 style="margin-bottom: 1rem; font-size: 1.2rem;">🎯 ' + vodData.cases.title + '</h4>';
+                bodyHTML += '<div style="background: #f6f8f8; padding: 2rem; border-radius: 12px; color: #16181d; margin: 2rem 0;"><h4 style="margin-bottom: 1rem; font-size: 1.2rem;">🎯 ' + vodData.cases.title + '</h4>';
                 vodData.cases.items.forEach(item => {
                     bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7;">' + item + '</p>';
                 });
                 if (vodData.cases.highlight) {
-                    bodyHTML += '<p style="margin-top: 1rem; font-size: 1.1rem; font-weight: bold; color: #FFD700;">' + vodData.cases.highlight + '</p>';
+                    bodyHTML += '<p style="margin-top: 1rem; font-size: 1.1rem; font-weight: bold; color: #16181d;">' + vodData.cases.highlight + '</p>';
                 }
                 bodyHTML += '</div>';
             }
             
             if (vodData.faq) {
-                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">❓ 자주 묻는 질문</h3>';
+                bodyHTML += '<h3 style="color: #16181d; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #e8e8e8; padding-bottom: 0.5rem;">❓ 자주 묻는 질문</h3>';
                 vodData.faq.forEach(item => {
-                    bodyHTML += '<div style="margin-bottom: 1.5rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;"><p style="font-weight: bold; color: #2c3e50; margin-bottom: 0.5rem;">Q. ' + item.q + '</p><p style="color: #666; line-height: 1.7;">A. ' + item.a + '</p></div>';
+                    bodyHTML += '<div style="margin-bottom: 1.5rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;"><p style="font-weight: bold; color: #16181d; margin-bottom: 0.5rem;">Q. ' + item.q + '</p><p style="color: #666; line-height: 1.7;">A. ' + item.a + '</p></div>';
                 });
             }
             
             if (vodData.closing) {
-                bodyHTML += '<div style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); padding: 2rem; border-radius: 12px; color: white; text-align: center; margin: 2rem 0;"><h4 style="font-size: 1.3rem; margin-bottom: 1rem;">' + vodData.closing.title + '</h4>';
+                bodyHTML += '<div style="background: #f6f8f8; padding: 2rem; border-radius: 12px; color: #16181d; text-align: center; margin: 2rem 0;"><h4 style="font-size: 1.3rem; margin-bottom: 1rem;">' + vodData.closing.title + '</h4>';
                 vodData.closing.messages.forEach(msg => {
                     bodyHTML += '<p style="line-height: 1.8; margin: 0.5rem 0;">' + msg + '</p>';
                 });

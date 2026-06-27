@@ -1,0 +1,3277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박근필성장연구소 - 박근필 소장의 글쓰기 플랫폼</title>
+    
+    <!-- Open Graph / SNS 공유 메타 태그 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="박근필성장연구소 - 읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다">
+    <meta property="og:description" content="수의사에서 그로쓰 퍼실리테이터로 변신한 박근필 소장의 책쓰기 기획 컨설팅, 독저팅과 필북 운영">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/">
+    <meta property="og:site_name" content="박근필성장연구소">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="박근필성장연구소 - 읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다">
+    <meta name="twitter:description" content="수의사에서 그로쓰 퍼실리테이터로 변신한 박근필 소장의 책쓰기 기획 컨설팅">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    
+    <!-- 기본 메타 태그 -->
+    <meta name="description" content="수의사에서 그로쓰 퍼실리테이터로 변신한 박근필 소장의 책쓰기 기획 컨설팅, 독저팅과 필북 운영">
+    <meta name="keywords" content="박근필, 박근필성장연구소, 그로쓰 퍼실리테이터, 독저팅, 책쓰기, 글쓰기, 출판, 베스트셀러, 작가">
+    <meta name="author" content="박근필">
+    
+    <!-- SEO 추가 메타 태그 -->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Korean">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/">
+    
+    <!-- 구조화된 데이터 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "박근필",
+      "jobTitle": "그로쓰 퍼실리테이터, 작가, 책쓰기 컨설턴트, 라이프 코치",
+      "description": "수의사에서 그로쓰 퍼실리테이터로 변신한 책쓰기 기획 전문가",
+      "url": "https://tothemoonpark-cpu.github.io/pilacademy/",
+      "sameAs": [
+        "https://blog.naver.com/tothemoon_park",
+        "https://brunch.co.kr/@tothemoonpark",
+        "https://www.youtube.com/@tothemoonpark",
+        "https://www.instagram.com/tothemoon_park/",
+        "https://x.com/Tothemoon_Park"
+      ],
+      "knowsAbout": ["책쓰기", "출판", "글쓰기", "자기계발"],
+      "alumniOf": {
+        "@type": "Organization",
+        "name": "수의학 전문"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "박근필성장연구소",
+      "description": "책쓰기 기획 및 출판 교육 플랫폼",
+      "url": "https://tothemoonpark-cpu.github.io/pilacademy/",
+      "founder": {
+        "@type": "Person",
+        "name": "박근필"
+      },
+      "offers": [
+        {
+          "@type": "Service",
+          "name": "독저팅",
+          "description": "1:1 책쓰기 기획 컨설팅"
+        },
+        {
+          "@type": "Service",
+          "name": "VOD 강의",
+          "description": "온라인 책쓰기 강의"
+        },
+        {
+          "@type": "Service",
+          "name": "필북",
+          "description": "동반성장 북클럽"
+        }
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* 헤더 */
+        header {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+            white-space: nowrap;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.2rem;
+            list-style: none;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* 데스크톱에서는 항상 메뉴 표시 */
+        @media screen and (min-width: 769px) {
+            .nav-links {
+                display: flex !important;
+            }
+        }
+        
+        /* 햄버거 메뉴 버튼 - 기본적으로 숨김 */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+        
+        /* 드롭다운 메뉴 */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            z-index: 1000;
+            top: 100% !important;
+            margin-top: -8px !important;
+            padding-top: 0.5rem;
+        }
+        
+        .dropdown-content::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            right: -10px;
+            height: 28px;
+            background: transparent;
+        }
+        
+        .dropdown-content a {
+            color: #2c3e50;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            opacity: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn {
+            cursor: pointer;
+            padding-bottom: 1rem;
+        }
+        
+        /* 히어로 섹션 */
+        .hero {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 150px 2rem 100px;
+            text-align: center;
+            margin-top: 70px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #4ECDC4;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.08) translateY(-5px);
+            box-shadow: 0 10px 30px rgba(78, 205, 196, 0.5);
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+        }
+        
+        /* 섹션 공통 */
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: #4ECDC4;
+            border-radius: 2px;
+        }
+        
+        /* 독저팅 섹션 */
+        .dokjeoting {
+            background: #f8f9fa;
+        }
+        
+        .dokjeoting-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .dokjeoting-text h3 {
+            font-size: 2rem;
+            color: #4ECDC4;
+            margin-bottom: 1rem;
+        }
+        
+        .dokjeoting-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin: 2rem auto;
+            padding: 0;
+            max-width: 600px;
+        }
+        
+        .feature-list li {
+            padding: 1.5rem 2rem;
+            margin-bottom: 1rem;
+            background: white;
+            border-radius: 10px;
+            border-left: 5px solid #4ECDC4;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .feature-list li strong {
+            color: #4ECDC4;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #4ECDC4;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* VOD 섹션 */
+        .vod-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .vod-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .vod-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .vod-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .vod-content {
+            padding: 1.5rem;
+        }
+        
+        .vod-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .vod-description {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .vod-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            margin-bottom: 1rem;
+        }
+        
+        .vod-duration {
+            color: #4ECDC4;
+            font-weight: bold;
+        }
+        
+        .vod-price {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        
+        .vod-button {
+            width: 100%;
+            background: #4ECDC4;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        
+        .vod-button:hover {
+            background: #44A08D;
+        }
+        
+        /* 입금 안내 팝업 */
+        .payment-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .payment-modal.active {
+            display: flex;
+        }
+        
+        .payment-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .payment-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #999;
+            background: none;
+            border: none;
+            line-height: 1;
+        }
+        
+        .payment-close:hover {
+            color: #333;
+        }
+        
+        .payment-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #4ECDC4;
+        }
+        
+        .payment-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .payment-info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .payment-info-label {
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .payment-info-value {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .payment-price {
+            font-size: 1.5rem;
+            color: #4ECDC4;
+        }
+        
+        .payment-account {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .payment-account-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+        
+        .payment-account-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        
+        .payment-account-holder {
+            font-size: 1.1rem;
+        }
+        
+        .payment-form {
+            margin-top: 2rem;
+        }
+        
+        .payment-notice {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            color: #856404;
+        }
+        
+        .payment-submit {
+            width: 100%;
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .payment-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+        }
+        
+        /* 추가 버튼 스타일 */
+        
+        /* VOD 상세 페이지 */
+        .vod-detail-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            overflow-y: auto;
+        }
+        
+        .vod-detail-modal.active {
+            display: block;
+        }
+        
+        .vod-detail-content {
+            background: white;
+            max-width: 900px;
+            margin: 2rem auto;
+            border-radius: 20px;
+            position: relative;
+        }
+        
+        .vod-detail-close {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            z-index: 2001;
+            transition: transform 0.3s;
+        }
+        
+        .vod-detail-close:hover {
+            transform: rotate(90deg);
+        }
+        
+        .vod-detail-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 3rem 3rem;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .vod-detail-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .vod-detail-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        
+        .vod-detail-meta {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .vod-detail-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .vod-detail-body {
+            padding: 3rem;
+        }
+        
+        .vod-section {
+            margin-bottom: 3rem;
+        }
+        
+        .vod-section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #4ECDC4;
+        }
+        
+        .vod-list {
+            list-style: none;
+        }
+        
+        .vod-list li {
+            padding: 1rem 1rem 1rem 2rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            position: relative;
+            line-height: 1.8;
+        }
+        
+        .vod-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0.7rem;
+            color: #4ECDC4;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .vod-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .vod-comparison-box {
+            padding: 2rem;
+            border-radius: 15px;
+            background: #f8f9fa;
+        }
+        
+        .vod-comparison-box.wrong {
+            border: 3px solid #ff6b6b;
+        }
+        
+        .vod-comparison-box.right {
+            border: 3px solid #4ECDC4;
+            background: linear-gradient(135deg, rgba(78,205,196,0.1) 0%, rgba(68,160,141,0.1) 100%);
+        }
+        
+        .vod-comparison-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .vod-comparison-box.wrong .vod-comparison-title {
+            color: #ff6b6b;
+        }
+        
+        .vod-comparison-box.right .vod-comparison-title {
+            color: #4ECDC4;
+        }
+        
+        .vod-comparison-item {
+            padding: 0.8rem;
+            margin-bottom: 0.5rem;
+            background: white;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        .vod-highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .vod-highlight-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .vod-highlight-box p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+        
+        .vod-detail-footer {
+            background: #f8f9fa;
+            padding: 3rem;
+            border-radius: 0 0 20px 20px;
+            text-align: center;
+        }
+        
+        .vod-detail-price {
+            font-size: 3rem;
+            color: #4ECDC4;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        
+        .vod-detail-buy-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1.5rem 4rem;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 20px rgba(78, 205, 196, 0.4);
+        }
+        
+        .vod-detail-buy-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(78, 205, 196, 0.5);
+        }
+        
+        .vod-quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #666;
+            padding: 1.5rem;
+            border-left: 4px solid #4ECDC4;
+            background: #f8f9fa;
+            margin: 2rem 0;
+        }
+        
+        .vod-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .vod-stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .vod-stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .vod-stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .vod-comparison {
+                grid-template-columns: 1fr;
+            }
+            
+            .vod-stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .vod-detail-title {
+                font-size: 2rem;
+            }
+            
+            .vod-detail-close {
+                top: 1rem;
+                right: 1rem;
+            }
+        }
+        
+        /* 작가 소개 */
+        
+        /* 필북 섹션 */
+        .philbook {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .philbook-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .philbook-intro {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .philbook-intro h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .philbook-intro p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            line-height: 1.8;
+        }
+        
+        .philbook-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .philbook-feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .philbook-feature h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .philbook-feature p {
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+        
+        .philbook-cta {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .philbook-cta .cta-button {
+            background: white;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .philbook-cta .cta-button:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-3px);
+        }
+
+        .author {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .author .section-title {
+            color: white;
+        }
+        
+        .author .section-title::after {
+            background: white;
+        }
+        
+        .author-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .author-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+        }
+        
+        .author-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .author-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+        }
+        
+        .author-achievements {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .author-social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+        
+        .author-social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .author-social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background: white;
+        }
+        
+        .author-social-btn.blog {
+            color: #03C75A;
+        }
+        
+        .author-social-btn.brunch {
+            color: #FF6B35;
+        }
+        
+        .author-social-btn.youtube {
+            color: #FF0000;
+        }
+        
+        .achievement {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        /* 상담 신청 */
+        .contact {
+            background: #f8f9fa;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #4ECDC4;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .submit-button {
+            width: 100%;
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+        }
+        
+        .submit-button:hover {
+            transform: scale(1.03) translateY(-3px);
+            box-shadow: 0 8px 25px rgba(78, 205, 196, 0.5);
+            background: linear-gradient(135deg, #44A08D 0%, #4ECDC4 100%);
+        }
+        
+        /* 푸터 */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #4ECDC4;
+        }
+        
+        /* 반응형 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .dokjeoting-content,
+            .author-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .author-achievements {
+                grid-template-columns: 1fr;
+            }
+            
+            .vod-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .author-image {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    
+        
+        /* VOD 상세 모달 */
+        .vod-detail-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 3000;
+            overflow-y: auto;
+            padding: 2rem 0;
+        }
+        
+        .vod-detail-modal.active {
+            display: block;
+        }
+        
+        .vod-detail-content {
+            background: white;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 20px;
+            position: relative;
+        }
+        
+        .vod-detail-header {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+        }
+        
+        .vod-detail-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 2.5rem;
+            cursor: pointer;
+            color: white;
+            background: rgba(255,255,255,0.2);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            line-height: 1;
+            transition: background 0.3s;
+        }
+        
+        .vod-detail-close:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .vod-detail-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .vod-detail-meta {
+            display: flex;
+            gap: 2rem;
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        .vod-detail-body {
+            padding: 3rem 2rem;
+        }
+        
+        .vod-section {
+            margin-bottom: 3rem;
+        }
+        
+        .vod-section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #4ECDC4;
+        }
+        
+        .vod-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #4ECDC4;
+            white-space: pre-line;
+        }
+        
+        .vod-list {
+            list-style: none;
+        }
+        
+        .vod-list li {
+            padding: 1rem 1rem 1rem 2.5rem;
+            margin-bottom: 0.8rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .vod-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 1rem;
+            color: #4ECDC4;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .vod-special-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+        
+        .vod-special-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .vod-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .vod-comparison-col {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        
+        .vod-comparison-col h4 {
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
+        .vod-comparison-col ul {
+            list-style: none;
+        }
+        
+        .vod-comparison-col li {
+            padding: 0.5rem 0;
+            font-size: 0.95rem;
+            opacity: 0.95;
+        }
+        
+        .vod-detail-cta {
+            background: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .vod-detail-price {
+            font-size: 2.5rem;
+            color: #4ECDC4;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .vod-detail-buy {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 1.5rem 4rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .vod-detail-buy:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(78, 205, 196, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            
+            nav {
+                padding: 0 1rem;
+                flex-wrap: nowrap;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                grid-template-columns: none;
+            }
+            
+            .menu-toggle {
+                display: flex;
+                z-index: 1001;
+                flex-shrink: 0;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+                white-space: nowrap;
+                flex-shrink: 0;
+                overflow: visible;
+                text-overflow: clip;
+                max-width: none;
+                display: inline-block;
+                transition: opacity 0.3s ease;
+            }
+            
+            /* 메뉴 열렸을 때 로고 숨기기 */
+            .logo.hidden {
+                opacity: 0;
+                pointer-events: none;
+            }
+            
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+                z-index: 999;
+                gap: 0;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+            
+            .dropdown-content {
+                position: static;
+                box-shadow: none;
+                background: rgba(255,255,255,0.1);
+                margin: 0.5rem 1rem;
+            }
+            
+            .dropdown-content a {
+                color: white;
+            }
+            
+            /* 히어로 섹션 모바일 최적화 */
+            .hero {
+                padding: 100px 1.5rem 60px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                word-break: keep-all;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+                line-height: 1.6;
+                word-break: keep-all;
+                padding: 0 0.5rem;
+            }
+            
+            /* 큰 검은색 텍스트 모바일 최적화 */
+            .hero p[style*="font-size: 2.6rem"] {
+                font-size: 1.5rem !important;
+                line-height: 1.4;
+                word-break: keep-all;
+                padding: 0 1rem;
+            }
+            
+            .cta-button {
+                font-size: 1rem;
+                padding: 0.9rem 2rem;
+            }
+            
+            /* 섹션 타이틀 모바일 최적화 */
+            .section-title {
+                font-size: 1.8rem !important;
+                word-break: keep-all;
+                line-height: 1.4;
+            }
+            
+            /* 섹션 패딩 조정 */
+            section {
+                padding: 60px 1.5rem !important;
+            }
+            
+            /* 카드 그리드 모바일 최적화 */
+            .author-grid,
+            .services-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+            
+            /* 텍스트 줄바꿈 최적화 */
+            h1, h2, h3, h4, h5, h6 {
+                word-break: keep-all;
+                line-height: 1.4;
+            }
+            
+            p, li {
+                word-break: keep-all;
+                line-height: 1.7;
+            }
+            
+            /* 버튼 최적화 */
+            button, .btn {
+                font-size: 1rem;
+                padding: 0.8rem 1.5rem;
+            }
+            
+            .vod-detail-content {
+                margin: 0 1rem;
+            }
+            
+            .vod-detail-title {
+                font-size: 1.8rem;
+            }
+            
+            .vod-comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* 추가 모바일 최적화 (작은 화면) */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.3rem !important;
+            }
+            
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            
+            .hero p[style*="font-size: 2.6rem"] {
+                font-size: 1.3rem !important;
+            }
+            
+            nav {
+                padding: 0 0.8rem;
+            }
+            
+            section {
+                padding: 40px 1rem !important;
+            }
+            
+            /* VOD 상세 모달 모바일 최적화 */
+            #vodDetailModal .modal-content {
+                width: 95%;
+                max-height: 90vh;
+            }
+            
+            /* 비교 섹션 모바일에서 세로 배치 */
+            @media (max-width: 768px) {
+                div[style*="grid-template-columns: 1fr 1fr"] {
+                    display: block !important;
+                }
+                
+                div[style*="grid-template-columns: 1fr 1fr"] > div {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        
+        /* 네비게이션 강제 표시 - 최우선 순위 */
+        @media (min-width: 769px) {
+            .nav-links {
+                display: flex !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                position: static !important;
+            }
+            
+            .menu-toggle {
+                display: none !important;
+            }
+            
+            nav {
+                display: grid !important;
+            }
+        }
+
+</style>
+<!-- ============================================================
+     index.html 사이트 데이터 무결성 Manifest
+     ============================================================ -->
+<script id="index-manifest">
+const indexManifest = {
+  sections: ['home','author','dokjeoting','vod','philbook','phillife','people-insight','books','newsletter','contact'],
+  philbookStatus: "필북 6기 신청_마감",
+  check: function() {
+    var missing = [];
+    this.sections.forEach(function(id) {
+      if(!document.getElementById(id)) missing.push(id);
+    });
+    if(missing.length > 0) console.warn('⚠️ 섹션 누락:', missing);
+    else console.log('index.html 전체 섹션 확인 완료');
+  }
+};
+document.addEventListener('DOMContentLoaded', function(){ indexManifest.check(); });
+</script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="#" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;" onclick="window.location.reload(); return false;" aria-label="박근필성장연구소 홈으로 이동">📚 박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="모바일 메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">홈</a></li>
+                <li><a href="author.html">소장소개</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="phillife.html">필라이프 코칭</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">SNS</a>
+                    <div class="dropdown-content">
+                        <a href="https://litt.ly/tothemoonpark" target="_blank">📚 Litt.ly</a>
+                        <a href="https://blog.naver.com/tothemoon_park" target="_blank">📝 블로그</a>
+                        <a href="https://brunch.co.kr/@tothemoonpark" target="_blank">✍️ 브런치</a>
+                        <a href="https://www.youtube.com/@tothemoonpark" target="_blank">🎥 유튜브</a>
+                        <a href="https://www.instagram.com/tothemoon_park/" target="_blank">📷 인스타그램</a>
+                        <a href="https://www.threads.com/@tothemoon_park" target="_blank">🧵 스레드</a>
+                        <a href="https://x.com/Tothemoon_Park" target="_blank">🐦 X (트위터)</a>
+                    </div>
+                </li>
+                <li><a href="#contact">상담신청</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <main role="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+        <h1 id="hero-title">박근필성장연구소에 오신 걸 환영합니다.</h1>
+        <p>수의사에서 그로쓰 퍼실리테이터로 변신한 박근필 소장의 원스톱 플랫폼</p>
+        <p style="font-size: 2.6rem; margin-top: 1.5rem; font-weight: 700; color: #000000;">읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다</p>
+        <a href="notice.html" class="cta-button">자세한 내용 확인하기 →</a>
+    </section>
+
+    <!-- 작가 소개 -->
+    <section class="author" id="author" aria-labelledby="author-title">
+        <h2 class="section-title" id="author-title">그로쓰 퍼실리테이터 박근필</h2>
+        <div class="author-content">
+            <div class="author-image">
+                <img src="author-hero.png" alt="박근필 소장">
+            </div>
+            <div class="author-text">
+                <h3>수의사에서 베스트셀러 저자로</h3>
+                <p>20년 가까이 임상 수의사로 살다가, 40대에 인생을 리셋했습니다. 현재는 베스트셀러 작가이자 칼럼니스트, 강연가, 커리어 스토리텔러로 활동하고 있습니다.</p>
+                
+                <p>저서로는 『할퀴고 물려도 나는 수의사니까』 (2023), 『나는 매일 두 번 출근합니다』 (2024), 『마흔 더 늦기 전에 생각의 틀을 리셋하라』 (2025), 『방구석에서 혼자 읽는 직업 토크쇼(공저)』 (2025)가 있습니다.<br>
+                『마흔 더 늦기 전에 생각의 틀을 리셋하라』는 교보문고 온라인 일간 베스트셀러 1위에 올랐고, 많은 분들에게 위로와 긍정적인 자극을 주었습니다.</p>
+                
+                <p>1:1 책쓰기 기획 컨설팅 '독저팅'은 '책 쓰기는 80% 기획, 20% 집필'이라는 철학을 전파하며, 출판 계약에 성공하는 책쓰기 노하우를 알려드립니다.</p>
+                
+                <p>동반성장 북클럽(독서모임) '필북'을 운영 중이며, 회원들의 변화와 성장을 돕고 있습니다.</p>
+                
+                <p>부산 시청에서 200여명 대상으로 강연하며 강연가로도 왕성하게 활동 중입니다.</p>
+                
+                <div class="author-achievements">
+                    <div class="achievement">📖 저서 4권</div>
+                    <div class="achievement">🏆 교보문고 베스트셀러 1위</div>
+                    <div class="achievement">👥 SNS 팔로워 약 2.5만 명</div>
+                    <div class="achievement">✅ 독서, 책쓰기 전문가</div>
+                </div>
+                
+                <!-- 자세한 내용 확인하기 버튼 -->
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="author.html" 
+                       style="display: inline-block; 
+                              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                              color: white; 
+                              padding: 1rem 3rem; 
+                              border-radius: 50px; 
+                              font-size: 1.1rem; 
+                              font-weight: bold; 
+                              text-decoration: none; 
+                              box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); 
+                              transition: all 0.3s;" 
+                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.4)';" 
+                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.3)';">
+                        📖 자세한 내용 확인하기 →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 대표 영상 -->
+    <section id="featured-videos" style="padding: 5rem 2rem; background: #1a1a2e;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; font-size: 2rem; color: white; margin-bottom: 0.5rem;">🎬 대표 영상</h2>
+            <p style="text-align: center; color: rgba(255,255,255,0.7); margin-bottom: 3rem; font-size: 1.1rem;">박근필 소장의 강연 및 소개 영상</p>
+
+            <!-- ============================================================
+                 대표 영상 데이터 - 유일한 원본
+                 새 영상 추가: videos 배열 맨 앞에 추가. 삭제 금지.
+                 ============================================================ -->
+            <script id="featured-videos-data">
+            var featuredVideos = [
+              {
+                id: "2fe0JvvrvbU",
+                title: "수의사에서 글을 쓰는 작가까지 생각의 힘을 전하는 박근필 작가 I 이 책을 쓴 사람(온닥터tv)",
+                desc: "온닥터tv 인터뷰"
+              },
+              {
+                id: "yXY0kf-uTdw",
+                title: "부산시청소년자립지원관 진로 특강",
+                desc: "길이 보이지 않아도 괜찮다, 걸어가면 그게 곧 내 길이다"
+              },
+              {
+                id: "hdZun4TPAPY",
+                title: "인공지능이 말해주는 박근필",
+                desc: "AI가 분석한 박근필 소장의 이야기"
+              },
+              {
+                id: "fQn5JxAT9bc",
+                title: "여자중학교 550명 진로 특강",
+                desc: "여자중학교 전교생 대상 진로 특강"
+              },
+              {
+                id: "AKNnh0UItBU",
+                title: "다꿈스쿨 인터뷰 1부",
+                desc: "다꿈스쿨 인터뷰"
+              },
+              {
+                id: "UODkpNrBnDc",
+                title: "다꿈스쿨 인터뷰 2부",
+                desc: "다꿈스쿨 인터뷰"
+              },
+            ];
+            (function() {
+              function renderVideos() {
+                var container = document.getElementById('featured-videos-container');
+                if (!container) return;
+                var html = '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:2rem;">';
+                featuredVideos.forEach(function(video) {
+                  html += '<div style="background:rgba(255,255,255,0.05);border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.3);">';
+                  html += '<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">';
+                  html += '<iframe src="https://www.youtube.com/embed/' + video.id + '" ';
+                  html += 'style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" ';
+                  html += 'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                  html += '</div>';
+                  html += '<div style="padding:1.5rem;">';
+                  html += '<h3 style="color:white;font-size:1.2rem;margin-bottom:0.5rem;">' + video.title + '</h3>';
+                  html += '<p style="color:rgba(255,255,255,0.6);font-size:0.95rem;margin:0;">' + video.desc + '</p>';
+                  html += '</div></div>';
+                });
+                html += '</div>';
+                container.innerHTML = html;
+              }
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', renderVideos);
+              } else {
+                renderVideos();
+              }
+            })();
+            </script>
+            <div id="featured-videos-container"></div>
+        </div>
+    </section>
+
+
+
+    <!-- 독저팅 섹션 -->
+    <section class="dokjeoting" id="dokjeoting" aria-labelledby="dokjeoting-title">
+        <h2 class="section-title" id="dokjeoting-title">1:1 책쓰기 기획 컨설팅 &lt;독저팅&gt;</h2>
+        
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; margin-bottom: 3rem; padding: 2rem; border-radius: 15px;">
+            <h3 style="font-size: 2rem; color: #4ECDC4; margin-bottom: 1rem;">책 쓰기의 80%는 기획입니다</h3>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: #555;">글쓰기와 책쓰기는 다릅니다.<br>
+            문장력이 뛰어나도 기획력이 약하면 출판 계약에 실패합니다.<br>
+            반대로 문장력이 약해도 기획력이 뛰어나면 출판 계약에 성공합니다.<br>
+            독저팅은 여러분의 책쓰기 기획을, 독자에서 저자로 되는 걸 도와드립니다.</p>
+            
+            <a href="dokjeoting.html#detail1" style="display: inline-block; margin-top: 2rem; padding: 1rem 2.5rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s;" 
+               onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(78, 205, 196, 0.5)';" 
+               onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(78, 205, 196, 0.3)';">
+                📖 자세한 내용 확인하기 →
+            </a>
+        </div>
+        
+        <div class="dokjeoting-content">
+            <!-- 1층: 특징 4개 (세로 배치) -->
+            <div class="dokjeoting-text">
+                <ul class="feature-list">
+                    <li>
+                        <strong>📋 강력한 기획서 작성</strong><br>
+                        출판사가 거절할 수 없는 기획서 작성법
+                    </li>
+                    <li>
+                        <strong>🎯 타깃 독자 분석</strong><br>
+                        당신의 책을 기다리는 독자 찾기
+                    </li>
+                    <li>
+                        <strong>✍️ 차별화된 콘셉트</strong><br>
+                        시장에서 빛나는 독창적 기획
+                    </li>
+                    <li>
+                        <strong>🤝 나만의 콘텐츠</strong><br>
+                        나도 몰랐던 숨겨진 콘텐츠 발굴
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- 2층: Stats 3개 (가로 배치) -->
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-number">2023</div>
+                    <div class="stat-label">23년부터 매년<br>1권 이상 기획 출판</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">1권</div>
+                    <div class="stat-label">원고 없이<br>출간기획서로<br>출판 계약</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" style="color: #4ECDC4;">4권</div>
+                    <div class="stat-label">3권 단독 저서<br>1권 공저</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 3층: 수강생 후기 -->
+        <div style="max-width: 900px; margin: 4rem auto 0; padding: 0 1rem;">
+            <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 2rem; color: #2c3e50;">💬 수강생 후기</h3>
+            <div style="text-align: center;">
+                <img src="data:image/png;base64,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" alt="독저팅 수강생 후기" style="max-width: 100%; height: auto; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+        
+        <!-- 독저팅 신청 방법 -->
+        <div style="max-width: 700px; margin: 3rem auto 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 10px; text-align: center;">
+            <h4 style="font-size: 1.3rem; color: #2c3e50; margin-bottom: 1rem; font-weight: bold;">📋 독저팅 신청 방법</h4>
+            <ol style="font-size: 1rem; line-height: 2; color: #555; list-style-position: inside; padding: 0;">
+                <li><strong>독저팅 신청하기</strong> 클릭 → 상담 신청으로 이동</li>
+                <li>이메일과 연락처 입력, 신청 서비스에서 <strong>독저팅</strong> 선택</li>
+                <li>문의 내용에 "<strong>독저팅 신청(상담)</strong>" 입력</li>
+            </ol>
+            <p style="font-size: 0.95rem; color: #666; margin-top: 1rem; line-height: 1.6;">
+                ✅ 신청 확인 후 독저팅 상세(비용 등) 내용이 포함된 신청서를 보내드립니다.
+            </p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#contact" class="cta-button">독저팅 신청하기</a>
+        </div>
+        
+        <!-- 뉴스레터 CTA -->
+        <div style="max-width: 700px; margin: 3rem auto 0; padding: 2rem; background: linear-gradient(135deg, rgba(240,147,251,0.1) 0%, rgba(245,87,108,0.1) 100%); border-radius: 15px; border: 2px solid rgba(245,87,108,0.3); text-align: center;">
+            <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 1rem;">
+                📮 <strong style="color: #f5576c;">책쓰기 기획의 인사이트</strong>를 매주 받고 싶다면,<br>
+                박근필 소장의 <strong style="color: #f5576c;">'필레터'</strong>를 구독하세요
+            </p>
+            <a href="#newsletter" style="display: inline-block; padding: 0.8rem 2rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; text-decoration: none; border-radius: 30px; font-size: 1rem; font-weight: bold; transition: all 0.3s;" 
+               onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(245,87,108,0.4)'" 
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                무료 구독하기 →
+            </a>
+        </div>
+    </section>
+
+
+    <!-- VOD 강의 -->
+    <section class="vod" id="vod" aria-labelledby="vod-title">
+        <h2 class="section-title" id="vod-title">VOD 온라인 강의</h2>
+        <div class="vod-grid">
+            <div class="vod-card">
+                <div class="vod-image">📝</div>
+                <div class="vod-content">
+                    <h3 class="vod-title">책을 왜 써야 하는가?</h3>
+                    <p class="vod-description">책 쓰기를 시작하기 전 꼭 알아야 할 이유와 동기부여. 당신이 책을 써야 하는 명확한 이유를 찾아드립니다.</p>
+                    <div class="vod-meta">
+                        <span class="vod-duration">⏱ 1시간 30분</span>
+                        <span class="vod-price">29,000원</span>
+                    </div>
+                    <button class="vod-button" onclick="openVod1()" style="background: white; color: #4ECDC4; border: 2px solid #4ECDC4; margin-bottom: 0.5rem;">📖 상세보기</button>
+                    <button class="vod-button" onclick="event.stopPropagation(); window.open('https://litt.ly/tothemoonpark/sale/076WClZ', '_blank')">구매하기</button>
+                    <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💳 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해<br>Litt.ly로 이동합니다</p>
+                </div>
+            </div>
+
+            <div class="vod-card">
+                <div class="vod-image">🎯</div>
+                <div class="vod-content">
+                    <h3 class="vod-title">책쓰기는 기획과 제작이다!</h3>
+                    <p class="vod-description">책 쓰기의 핵심은 기획 80%, 집필 20%. 출판사가 원하는 기획서 작성부터 원고 완성까지 전 과정을 공개합니다.</p>
+                    <div class="vod-meta">
+                        <span class="vod-duration">⏱ 1시간 50분</span>
+                        <span class="vod-price">49,000원</span>
+                    </div>
+                    <button class="vod-button" onclick="openVod2()" style="background: white; color: #4ECDC4; border: 2px solid #4ECDC4; margin-bottom: 0.5rem;">📖 상세보기</button>
+                    <button class="vod-button" onclick="event.stopPropagation(); window.open('https://litt.ly/tothemoonpark/sale/UrfM4Bu', '_blank')">구매하기</button>
+                    <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💳 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해<br>Litt.ly로 이동합니다</p>
+                </div>
+            </div>
+
+            <div class="vod-card">
+                <div class="vod-image">💡</div>
+                <div class="vod-content">
+                    <h3 class="vod-title">쉽게 이해하는 퍼스널 브랜딩</h3>
+                    <p class="vod-description">자신만의 브랜드를 만들고 전문가로 인정받는 방법. 콘텐츠 생산자로서의 정체성 확립 전략을 알려드립니다.</p>
+                    <div class="vod-meta">
+                        <span class="vod-duration">⏱ 1시간</span>
+                        <span class="vod-price">49,000원</span>
+                    </div>
+                    <button class="vod-button" onclick="openVod3()" style="background: white; color: #4ECDC4; border: 2px solid #4ECDC4; margin-bottom: 0.5rem;">📖 상세보기</button>
+                    <button class="vod-button" onclick="event.stopPropagation(); window.open('https://litt.ly/tothemoonpark/sale/atoZl7U', '_blank')">구매하기</button>
+                    <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💳 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해<br>Litt.ly로 이동합니다</p>
+                </div>
+            </div>
+
+            <div class="vod-card">
+                <div class="vod-image">📚</div>
+                <div class="vod-content">
+                    <h3 class="vod-title">직장인이 아닌 직업인으로</h3>
+                    <p class="vod-description">수의사에서 작가로 전환한 실제 경험을 바탕으로, 당신도 할 수 있는 커리어 전환과 직업인으로서의 정체성 확립 로드맵을 제시합니다.</p>
+                    <div class="vod-meta">
+                        <span class="vod-duration">⏱ 1시간</span>
+                        <span class="vod-price">29,000원</span>
+                    </div>
+                    <button class="vod-button" onclick="openVod4()" style="background: white; color: #4ECDC4; border: 2px solid #4ECDC4; margin-bottom: 0.5rem;">📖 상세보기</button>
+                    <button class="vod-button" onclick="event.stopPropagation(); window.open('https://litt.ly/tothemoonpark/sale/BDPw8UV', '_blank')">구매하기</button>
+                    <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💳 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해<br>Litt.ly로 이동합니다</p>
+                </div>
+            </div>
+
+            <div class="vod-card">
+                <div class="vod-image">📖</div>
+                <div class="vod-content">
+                    <h3 class="vod-title">독서법1_목적·능동적·아웃풋 독서</h3>
+                    <p class="vod-description">독서를 단순 취미가 아닌 자기 성장 시스템으로 전환하는 방법. 읽기 → 생각하기 → 쓰기의 실전 로드맵을 제공합니다.</p>
+                    <div class="vod-meta">
+                        <span class="vod-duration">⏱ 1시간</span>
+                        <span class="vod-price">29,000원</span>
+                    </div>
+                    <button class="vod-button" onclick="openVod5()" style="background: white; color: #4ECDC4; border: 2px solid #4ECDC4; margin-bottom: 0.5rem;">📖 상세보기</button>
+                    <button class="vod-button" onclick="event.stopPropagation(); window.open('https://litt.ly/tothemoonpark/sale/f74TaYi', '_blank')">구매하기</button>
+                    <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">💳 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해<br>Litt.ly로 이동합니다</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 뉴스레터 CTA -->
+        <div style="max-width: 700px; margin: 3rem auto 0; padding: 2rem; background: rgba(78, 205, 196, 0.1); border-radius: 15px; border: 2px solid rgba(78, 205, 196, 0.3); text-align: center;">
+            <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 1rem;">
+                📮 <strong style="color: #4ECDC4;">강의와 함께 실전 적용 팁</strong>을 받고 싶다면,<br>
+                박근필 소장의 <strong style="color: #4ECDC4;">'필레터'</strong>를 구독하세요
+            </p>
+            <a href="#newsletter" style="display: inline-block; padding: 0.8rem 2rem; background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; text-decoration: none; border-radius: 30px; font-size: 1rem; font-weight: bold; transition: all 0.3s;" 
+               onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(78,205,196,0.4)'" 
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                무료 구독하기 →
+            </a>
+        </div>
+    </section>
+
+    <!-- 필북 -->
+    <section class="philbook" id="philbook" aria-labelledby="philbook-title">
+        <div class="philbook-content">
+            <h2 class="section-title" style="color: white;" id="philbook-title">필북</h2>
+            
+            <div class="philbook-intro">
+                <h3>박근필의 동반성장 북클럽</h3>
+                <p style="font-size: 1.4rem; font-style: italic; margin-bottom: 2rem;">"책과 대화와 특강이 만나는 특별한 7주"</p>
+                <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.95;">
+                    '필북'은 박근필의 '필'과 북클럽의 '북'을 합친 이름입니다.<br>
+                    짧고 기억하기 쉽지만, 그 안에 제가 하고 싶은 모든 걸 담았습니다.<br><br>
+                    평범한 독서모임이 아닌, <strong style="color: #FFD700;">"책 + 대화 + 특강"</strong>이 결합된 <strong style="color: #FFD700;">"동반성장 북클럽"</strong>.<br>
+                    바로 박근필의 '필북'입니다.
+                </p>
+            </div>
+            
+            <div class="philbook-card" style="background: rgba(255,255,255,0.15); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px); margin: 3rem 0;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; margin-bottom: 2rem;">
+                    <div>
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📅</div>
+                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">격주 월요일</div>
+                        <div style="opacity: 0.9;">저녁 9시~11시(11시 반)</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💻</div>
+                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">온라인(Zoom)</div>
+                        <div style="opacity: 0.9;">편하게 집에서</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📚</div>
+                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">7주 프로그램</div>
+                        <div style="opacity: 0.9;">체계적인 구성</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💰</div>
+                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.3rem;">5만원</div>
+                        <div style="opacity: 0.9;">직전 기수 4만원</div>
+                    </div>
+                </div>
+                <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.3);">
+                    <a href="philbook.html" style="display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); transition: all 0.3s; cursor: pointer;" 
+                       onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(102, 126, 234, 0.5)';" 
+                       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.3)';">
+                        📖 자세한 내용 확인하기 →
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 필북 6기 모집 공고 -->
+            <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 2rem; border-radius: 15px; text-align: center; color: white; margin: 2rem 0; box-shadow: 0 8px 25px rgba(245, 87, 108, 0.3);">
+                <h3 style="color: white; margin: 0 0 1rem 0; font-size: 1.5rem;">🎉 필북 6기 모집 중!</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.95;">
+                    책과 대화와 특강이 만나는 특별한 7주, 함께하실 분을 기다립니다
+                </p>
+                <a href="https://blog.naver.com/tothemoon_park/224222373646" target="_blank" 
+                   style="display: inline-block; padding: 1rem 2.5rem; background: white; color: #f5576c; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s;" 
+                   onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" 
+                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">
+                    📋 모집 공고 자세히 보기 →
+                </a>
+            </div>
+            
+            <div class="philbook-cta" style="text-align: center; margin-top: 3rem;">
+                <a href="https://blog.naver.com/tothemoon_park/224222373646" target="_blank" style="display: inline-block; background: white; color: #667eea; font-weight: bold; border: none; text-decoration: none; padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 50px; transition: all 0.3s; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(102, 126, 234, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.3)';">🎯 필북 6기 신청_마감</a>
+            </div>
+            
+            <!-- 뉴스레터 CTA -->
+            <div style="max-width: 700px; margin: 3rem auto 0; padding: 2rem; background: rgba(255,255,255,0.15); border-radius: 15px; backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.3); text-align: center;">
+                <p style="font-size: 1.1rem; color: white; line-height: 1.8; margin-bottom: 1rem;">
+                    📮 <strong style="color: #FFD700;">필북이 끝나도 계속 성장</strong>하고 싶다면,<br>
+                    매주 보내드리는 작가의 편지 <strong style="color: #FFD700;">'필레터'</strong>를 받아보세요
+                </p>
+                <a href="#newsletter" style="display: inline-block; padding: 0.8rem 2rem; background: white; color: #667eea; text-decoration: none; border-radius: 30px; font-size: 1rem; font-weight: bold; transition: all 0.3s;" 
+                   onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(255,255,255,0.4)'" 
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                    무료 구독하기 →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 필라이프 코칭 섹션 -->
+    <section class="phillife" id="phillife" aria-labelledby="phillife-title" style="padding: 5rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title" style="color: white;" id="phillife-title">필라이프 코칭</h2>
+            
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <div style="background: rgba(255,255,255,0.15); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px); margin-bottom: 2rem;">
+                    <h3 style="color: white; font-size: 1.8rem; margin-bottom: 2rem;">질문과 대화를 통해 삶의 방향을 함께 정리합니다</h3>
+                    <p style="color: white; font-size: 1.2rem; line-height: 2; opacity: 0.95; margin-bottom: 2rem;">
+                        필라이프 코칭은 심리 치료나 상담이 아닌,<br>
+                        질문과 대화를 통해 삶의 선택 기준을 정리하는 1:1 코칭 프로그램입니다.
+                    </p>
+                    
+                    <div style="background: rgba(255,255,255,0.2); padding: 2rem; border-radius: 15px; margin-top: 2rem;">
+                        <h4 style="color: white; font-size: 1.3rem; margin-bottom: 1.5rem;">다루는 주제</h4>
+                        <div style="text-align: left; color: white; font-size: 1.05rem; line-height: 2;">
+                            💭 지금의 삶이 맞는 방향인지 혼란스러울 때<br>
+                            👥 가족·인간관계 안에서 갈등이나 반복되는 어려움이 있을 때<br>
+                            🚀 진로·직업 전환 앞에서 선택과 결정을 내리기 어려울 때<br>
+                            ✨ 자기 계발(퍼스널 브랜딩)을 하고 싶지만 막막할 때<br>
+                            🐾 반려동물과의 이별 이후 마음의 균형이 무너졌을 때
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.2); padding: 2rem; border-radius: 15px; margin-top: 2rem;">
+                        <h4 style="color: white; font-size: 1.3rem; margin-bottom: 1.5rem;">진행 방식</h4>
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; color: white; font-size: 1.05rem;">
+                            <div style="background: rgba(255,255,255,0.3); padding: 1rem 2rem; border-radius: 50px; font-weight: bold;">
+                                ① 신청서 제출
+                            </div>
+                            <span style="font-size: 1.5rem;">→</span>
+                            <div style="background: rgba(255,255,255,0.3); padding: 1rem 2rem; border-radius: 50px; font-weight: bold;">
+                                ② 고민 사전 접수
+                            </div>
+                            <span style="font-size: 1.5rem;">→</span>
+                            <div style="background: rgba(255,255,255,0.3); padding: 1rem 2rem; border-radius: 50px; font-weight: bold;">
+                                ③ Zoom 1:1 코칭
+                            </div>
+                        </div>
+                        <p style="color: white; margin-top: 1rem; opacity: 0.9;">(날짜, 시간 조율 후 약 1시간)</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="phillife.html" style="display: inline-block; padding: 1rem 2.5rem; background: white; color: #667eea; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(255,255,255,0.3); transition: all 0.3s;" 
+                       onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(255,255,255,0.5)';" 
+                       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(255,255,255,0.3)';">
+                        📖 자세한 내용 확인하기 →
+                    </a>
+                    <a href="https://forms.gle/ydiRcZkiYJy8oQ6S9" target="_blank" style="display: inline-block; padding: 1rem 2.5rem; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; border: 2px solid white; transition: all 0.3s;" 
+                       onmouseover="this.style.background='white'; this.style.color='#667eea';" 
+                       onmouseout="this.style.background='rgba(255,255,255,0.2)'; this.style.color='white';">
+                        💬 코칭 신청하기 →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 피플인사이트 -->
+    <section id="people-insight" style="padding: 5rem 2rem; background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);" aria-labelledby="people-insight-title">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title" style="color: white;" id="people-insight-title">박근필의 피플인사이트</h2>
+            
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <div style="background: rgba(255,255,255,0.15); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px); margin-bottom: 2rem;">
+                    <h3 style="color: white; font-size: 1.8rem; margin-bottom: 2rem;">매월 한 분을 모시고 진행하는 인터뷰</h3>
+                    <p style="color: white; font-size: 1.2rem; line-height: 2; opacity: 0.95;">
+                        각자의 위치에서 열심히 삶을 살아내는 분들의 이야기<br>
+                        우리와 같은 보통 사람들의 이야기를 들으며<br>
+                        위로와 위안을 받고, 통찰을 얻고, 희망을 보세요<br><br>
+                        <strong style="color: #FFD700;">내 삶에 대해 진지하게 생각해 보는 시간</strong>
+                    </p>
+                </div>
+                
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="people-insight.html" style="display: inline-block; padding: 1rem 2.5rem; background: white; color: #FF6B6B; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(255,255,255,0.3); transition: all 0.3s;" 
+                       onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(255,255,255,0.5)';" 
+                       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(255,255,255,0.3)';">
+                        📖 자세한 내용 확인하기
+                    </a>
+                    <a href="https://www.youtube.com/playlist?list=PL9gDAK_kh9BJl6wyOhDCvexqOSXNTKitH" target="_blank" style="display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); transition: all 0.3s;" 
+                       onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(102, 126, 234, 0.5)';" 
+                       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.3)';">
+                        🎥 다시 보기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 저서 -->
+    <section class="books-section" id="books" style="padding: 5rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);" aria-labelledby="books-title">
+        <div class="container">
+            <h2 class="section-title" style="color: white;" id="books-title">📖 저서</h2>
+            <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+                <h3 style="font-size: 2rem; color: white; margin-bottom: 2rem; font-weight: bold;">박근필 소장의 저서</h3>
+                <p style="font-size: 1.2rem; color: rgba(255,255,255,0.95); line-height: 1.8; margin-bottom: 3rem;">
+                    수의사에서 베스트셀러 작가로,<br>
+                    인생 리셋의 여정을 담은 4권의 책
+                </p>
+                
+                <!-- 책 4권 그리드 -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 15px; backdrop-filter: blur(10px); transition: all 0.3s;" onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.25)'" onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.15)'">
+                        <img src="book1.jpg" alt="할퀴고 물려도 나는 수의사니까" style="width: 100%; max-width: 150px; height: auto; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                        <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem;">할퀴고 물려도<br>나는 수의사니까</h4>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">2023</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 15px; backdrop-filter: blur(10px); transition: all 0.3s;" onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.25)'" onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.15)'">
+                        <img src="book2.jpg" alt="나는 매일 두 번 출근합니다" style="width: 100%; max-width: 150px; height: auto; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                        <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem;">나는 매일 두 번<br>출근합니다</h4>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">2024</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,215,0,0.3); padding: 1.5rem; border-radius: 15px; backdrop-filter: blur(10px); border: 2px solid gold; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,215,0,0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,215,0,0.3)'">
+                        <div style="background: gold; color: #764ba2; padding: 0.3rem 0.8rem; border-radius: 20px; display: inline-block; margin-bottom: 0.5rem; font-size: 0.8rem; font-weight: bold;">🏆 베스트셀러 1위</div>
+                        <img src="book3.jpg" alt="마흔 더 늦기 전에 생각의 틀을 리셋하라" style="width: 100%; max-width: 150px; height: auto; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                        <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem;">마흔 더 늦기 전에<br>생각의 틀을 리셋하라</h4>
+                        <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">2025</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 15px; backdrop-filter: blur(10px); transition: all 0.3s;" onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.25)'" onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.15)'">
+                        <img src="book4.jpg" alt="방구석에서 혼자 읽는 직업 토크쇼" style="width: 100%; max-width: 150px; height: auto; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                        <h4 style="color: white; font-size: 1rem; margin-bottom: 0.5rem;">방구석에서 혼자 읽는<br>직업 토크쇼</h4>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">2025 (공저)</p>
+                    </div>
+                </div>
+                
+                <a href="books.html" style="display: inline-block; padding: 1rem 3rem; background: white; color: #667eea; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.4s ease;" onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 10px 30px rgba(255,255,255,0.3)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.2)'">
+                    자세히 보기 →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 뉴스레터 섹션 -->
+    <section class="newsletter-section" id="newsletter" style="padding: 5rem 2rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);" aria-labelledby="newsletter-title">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title" style="color: white; margin-bottom: 1rem;" id="newsletter-title">📮 필레터</h2>
+            <p style="text-align: center; font-size: 1.5rem; color: white; font-weight: bold; margin-bottom: 1rem;">
+                매주 수요일 오전 11시, 박근필 소장의 편지
+            </p>
+            <p style="text-align: center; font-size: 1.1rem; color: rgba(255,255,255,0.95); line-height: 1.8; margin-bottom: 3rem;">
+                독서, 글쓰기, 책쓰기, 자기계발, 삶의 성장을 주제로<br>
+                매주 한 편의 글을 메일로 보내드립니다
+            </p>
+            
+            <!-- 뉴스레터 특징 -->
+            <div style="background: rgba(255,255,255,0.15); padding: 2.5rem; border-radius: 20px; backdrop-filter: blur(10px); margin-bottom: 2.5rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+                    <div>
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📝</div>
+                        <div style="color: white; font-size: 1.1rem; font-weight: bold; margin-bottom: 0.3rem;">독점 콘텐츠</div>
+                        <div style="color: rgba(255,255,255,0.9); font-size: 0.95rem;">필레터 전용<br>콘텐츠 발행</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💡</div>
+                        <div style="color: white; font-size: 1.1rem; font-weight: bold; margin-bottom: 0.3rem;">실전 노하우</div>
+                        <div style="color: rgba(255,255,255,0.9); font-size: 0.95rem;">수많은 경험과<br>시행착오로<br>얻은 노하우 전달</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎯</div>
+                        <div style="color: white; font-size: 1.1rem; font-weight: bold; margin-bottom: 0.3rem;">작가의 진심</div>
+                        <div style="color: rgba(255,255,255,0.9); font-size: 0.95rem;">위로와 희망이<br>담긴 편지</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 구독자 선물 안내 -->
+            <div style="background: rgba(255,255,255,0.25); padding: 2.5rem; border-radius: 20px; backdrop-filter: blur(10px); margin-bottom: 2.5rem; border: 2px solid rgba(255,255,255,0.4);">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.8rem;">🎁</div>
+                    <h3 style="color: white; font-size: 1.6rem; font-weight: bold; margin-bottom: 1rem;">필레터 구독자에게 드리는 선물!</h3>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.95); padding: 2rem; border-radius: 15px; line-height: 1.9; color: #2c3e50;">
+                    <p style="margin-bottom: 1rem;">
+                        <strong style="color: #f5576c;">《마흔, 더 늦기 전에 생각의 틀을 리셋하라》</strong>에 실리지 못했지만 버리기엔 아까웠던 미수록 원고가 있습니다.
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                        거의 절반을 덜어냈으니 분량이 꽤 됩니다.<br>
+                        비록 초고라 다듬어지지 않은 문장도 있고 어색한 부분도 있지만,<br>
+                        내용 만큼은 구독자 여러분이 읽기에 충분히 유익합니다.
+                    </p>
+                    
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1.8rem; border-radius: 12px; margin: 1.5rem 0; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">
+                        <p style="color: white; font-weight: bold; font-size: 1.1rem; margin-bottom: 0.8rem;">
+                            📚 필레터에서 미수록 원고를 매주 한 꼭지씩 구독자 전용 보너스로 공개합니다.
+                        </p>
+                        <p style="color: white; font-weight: bold; font-size: 1.1rem;">
+                            ✉️ 구독자는 이메일로 '전체 내용'을, 미구독자는 웹에서 '일부'만 보실 수 있습니다.
+                        </p>
+                    </div>
+                    
+                    <p style="margin-top: 1.5rem; text-align: center; color: #f5576c; font-weight: bold; font-size: 1.15rem;">
+                        📅 정규 발행 1호는 <span style="font-size: 1.25rem;">11.26(수)</span>부터 시작됩니다.
+                    </p>
+                    <p style="text-align: center; color: #2c3e50; margin-top: 1rem; font-size: 1.05rem;">
+                        필레터를 구독하시고 매주 삶을 깨우는 한 문장을 함께 받아보세요. ✨
+                    </p>
+                </div>
+            </div>
+            
+            <!-- 구독 폼 -->
+            <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.2);">
+                <h3 style="text-align: center; color: #f5576c; font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: bold;">
+                    무료로 구독하고 매주 성장하세요
+                </h3>
+                
+                <!-- 스티비 구독 폼 -->
+                <link rel="stylesheet" href="https://resource.stibee.com/subscribe/stb_subscribe_form_style.css">
+                <div id="stibee-form-container">
+                  <div id="stb_subscribe">
+                    <form action="https://stibee.com/api/v1.0/lists/0fJXgRgUwHa-0b1wHoSg5i47yC2moQ==/public/subscribers" method="POST" target="_blank" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form" data-lang="" novalidate>
+                      
+                      <h1 class="stb_form_title" style="color: #f5576c;">필레터 구독하기</h1>
+                      
+                      <fieldset class="stb_form_set">
+                        <label for="stb_email" class="stb_form_set_label">
+                          이메일 주소<span class="stb_asterisk">*</span>
+                        </label>
+                        <input type="text" class="stb_form_set_input" id="stb_email" name="email" required="required">
+                        <div class="stb_form_msg_error" id="stb_email_error"></div>
+                      </fieldset>
+                      
+                      <div class="stb_form_policy">
+                        <label>
+                          <input type="checkbox" id="stb_policy" value="stb_policy_true">
+                          <span>(필수)</span>
+                          <button id="stb_form_modal_open" data-modal="stb_form_policy_modal" class="stb_form_modal_open_btn" type="button">개인정보 수집 및 이용</button>에 동의합니다.
+                        </label>
+                        <div class="stb_form_msg_error" id="stb_policy_error"></div>
+                        <div class="stb_form_modal stb_form_policy_text blind" id="stb_form_policy_modal">
+                          <div class="stb_form_modal_body">
+                            <h1 class="stb_form_modal_title">개인정보 수집 및 이용</h1>
+                            <div class="stb_form_modal_text">뉴스레터 발송을 위한 최소한의 개인정보를 수집하고 이용합니다. 수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료되거나 구독을 해지할 경우 즉시 파기됩니다.</div>
+                            <div class="stb_form_modal_btn">
+                              <button id="stb_form_modal_close" class="stb_form_modal_close_btn" data-modal="stb_form_policy_modal" type="button">닫기</button>
+                            </div>
+                          </div>
+                          <div class="stb_form_modal_bg" id="stb_form_modal_bg"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="stb_form_result" id="stb_form_result"></div>
+                      
+                      <fieldset class="stb_form_set_submit">
+                        <button type="submit" class="stb_form_submit_button" id="stb_form_submit_button" style="background-color: #FF6464; color: #FFFFFF;">구독하기</button>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+                <script type="text/javascript" src="https://resource.stibee.com/subscribe/stb_subscribe_form.js"></script>
+                
+                <!-- 이메일 인증 프로세스 안내 -->
+                <div style="background: #fff9e6; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 1.5rem; border: 2px dashed #ffc107;">
+                    <p style="margin: 0; color: #2c3e50; text-align: center;">
+                        💡 <strong>구독 완료 방법</strong><br>
+                        ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong style="color: #f5576c;">'구독 확인'</strong> 클릭 → ③ 구독 완료!
+                    </p>
+                </div>
+                
+                <div style="margin-top: 2rem; text-align: center;">
+                    <a href="newsletter.html#detail" style="display: inline-block; padding: 1rem 2.5rem; background: white; color: #f5576c; text-decoration: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3); transition: all 0.3s;" 
+                       onmouseover="this.style.transform='scale(1.05) translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(245, 87, 108, 0.5)';" 
+                       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 4px 15px rgba(245, 87, 108, 0.3)';">
+                        📖 자세한 내용 확인하기 →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 상담 신청 -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="section-title" id="contact-title">상담 신청</h2>
+        <div class="contact-form">
+            <form id="consultForm" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms 설정 -->
+                <input type="hidden" name="access_key" value="065b78d5-e112-4569-97f6-9f536177f948">
+                <input type="hidden" name="subject" value="[박근필성장연구소] 새로운 상담 신청">
+                <input type="hidden" name="from_name" value="박근필성장연구소 홈페이지">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                
+                <div class="form-group">
+                    <label for="name">이름 *</label>
+                    <input type="text" id="name" name="이름" required placeholder="홍길동">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">이메일 *</label>
+                    <input type="email" id="email" name="이메일" required placeholder="example@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">연락처 *</label>
+                    <input type="tel" id="phone" name="연락처" required placeholder="010-0000-0000">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">신청 서비스 *</label>
+                    <select id="service" name="신청_서비스" required>
+                        <option value="">선택해주세요</option>
+                        <option value="독저팅">독저팅</option>
+                        <option value="VOD강연">VOD 특강</option>
+                        <option value="필북">필북</option>
+                        <option value="필레터">필레터</option>
+                        <option value="필라이프 코칭">필라이프 코칭</option>
+                        <option value="강연/협업">강연/협업</option>
+                        <option value="기타">기타 문의</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">문의 내용</label>
+                    <textarea id="message" name="문의_내용" placeholder="궁금하신 내용이나 현재 상황을 자유롭게 작성해주세요."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">상담 신청하기</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- VOD 상세 모달 -->
+    <div class="vod-detail-modal" id="vodDetailModal">
+        <div class="vod-detail-content">
+            <div class="vod-detail-header">
+                <button class="vod-detail-close" onclick="closeVodDetail()">×</button>
+                <h2 class="vod-detail-title" id="vodDetailTitle"></h2>
+                <div class="vod-detail-meta">
+                    <span id="vodDetailDuration"></span>
+                    <span id="vodDetailPrice"></span>
+                </div>
+            </div>
+            
+            <div class="vod-detail-body" id="vodDetailBody">
+                <!-- JavaScript로 동적 생성 -->
+            </div>
+            
+            <div class="vod-detail-cta">
+                <div class="vod-detail-price" id="vodDetailPriceBottom"></div>
+                <button class="vod-detail-buy" id="vodDetailBuyBtn">지금 구매하기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 입금 안내 팝업 -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-content">
+            <button class="payment-close" onclick="closePaymentModal()">×</button>
+            <h2 class="payment-title" id="paymentProductName">VOD 구매</h2>
+            
+            <div class="payment-info">
+                <div class="payment-info-item">
+                    <span class="payment-info-label">상품명</span>
+                    <span class="payment-info-value" id="productName"></span>
+                </div>
+                <div class="payment-info-item">
+                    <span class="payment-info-label">가격</span>
+                    <span class="payment-info-value payment-price" id="productPrice"></span>
+                </div>
+            </div>
+            
+            <div class="payment-account">
+                <div class="payment-account-label">입금 계좌</div>
+                <div class="payment-account-number">국민은행<br>586302-04-011351</div>
+                <div class="payment-account-holder">예금주: 박근필</div>
+            </div>
+            
+            <div class="payment-notice">
+                ⚠️ 입금 후 아래 정보를 입력하시면, 입금 확인 후 VOD 링크를 보내드립니다.
+            </div>
+            
+            <form class="payment-form" id="paymentForm">
+                <input type="hidden" name="access_key" value="065b78d5-e112-4569-97f6-9f536177f948">
+                <input type="hidden" name="subject" id="formSubject" value="[박근필성장연구소] VOD 구매 - 입금 확인 요청">
+                <input type="hidden" name="from_name" value="박근필성장연구소 신청 시스템">
+                <textarea name="message" style="display:none;" id="formMessage"></textarea>
+                
+                <div class="form-group">
+                    <label for="paymentName">입금자명 *</label>
+                    <input type="text" id="paymentName" name="입금자명" required placeholder="홍길동">
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentEmail">이메일 *</label>
+                    <input type="email" id="paymentEmail" name="이메일" required placeholder="example@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentPhone">연락처 *</label>
+                    <input type="tel" id="paymentPhone" name="연락처" required placeholder="010-0000-0000">
+                </div>
+                
+                <button type="submit" class="payment-submit">입금 완료 알림 전송</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    </main>
+    
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-links" role="navigation" aria-label="푸터 링크">
+                <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener noreferrer">Litt.ly</a>
+                <a href="#home">홈</a>
+                <a href="#author">소장소개</a>
+                <a href="#books">저서</a>
+                <a href="#vod">VOD 강의</a>
+                <a href="#dokjeoting">독저팅</a>
+                <a href="#people-insight">피플인사이트</a>
+                <a href="#philbook">필북</a>
+                <a href="#newsletter">필레터</a>
+                <a href="#phillife">필라이프 코칭</a>
+                <a href="#contact">상담신청</a>
+                <a href="notice.html">공지사항</a>
+            </div>
+            <p>&copy; 2024 박근필성장연구소 by 박근필. All rights reserved.</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">여러분의 읽고 쓰고 말하는 삶을 응원합니다</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // 부드러운 스크롤
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    // 모바일에서 메뉴 닫기
+                    const navLinks = document.getElementById('navLinks');
+                    const logo = document.querySelector('.logo');
+                    if (navLinks && navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        logo.classList.remove('hidden');
+                    }
+                    
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // 햄버거 메뉴 토글
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const logo = document.querySelector('.logo');
+            navLinks.classList.toggle('active');
+            
+            if (navLinks.classList.contains('active')) {
+                logo.classList.add('hidden');
+            } else {
+                logo.classList.remove('hidden');
+            }
+        }
+        
+        // 모든 메뉴 링크 클릭 시 메뉴 닫기
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuLinks = document.querySelectorAll('.nav-links a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        const navLinks = document.getElementById('navLinks');
+                        const logo = document.querySelector('.logo');
+                        if (navLinks) navLinks.classList.remove('active');
+                        if (logo) logo.classList.remove('hidden');
+                    }
+                });
+            });
+        });
+        
+        // 입금 안내 팝업
+        function showPaymentInfo(itemName, price) {
+            const modal = document.getElementById('paymentModal');
+            
+            // 팝업 제목 동적 변경
+            const titleElement = document.getElementById('paymentProductName');
+            const noticeElement = document.querySelector('.payment-notice');
+            
+            if (itemName.includes('VOD')) {
+                titleElement.textContent = 'VOD 구매';
+                noticeElement.textContent = '⚠️ 입금 후 아래 정보를 입력하시면, 입금 확인 후 VOD 링크를 보내드립니다.';
+            } else if (itemName === '필북') {
+                titleElement.textContent = '필북 참여';
+                noticeElement.textContent = '⚠️ 입금하시고 아래 정보를 입력하시면, 확인 후 안내해 드립니다.';
+            } else if (itemName.includes('독저팅')) {
+                titleElement.textContent = '독저팅 신청';
+                noticeElement.textContent = '⚠️ 입금하시고 아래 정보를 입력하시면, 확인 후 안내해 드립니다.';
+            } else {
+                titleElement.textContent = itemName + ' 신청';
+                noticeElement.textContent = '⚠️ 입금하시고 아래 정보를 입력하시면, 확인 후 안내해 드립니다.';
+            }
+            
+            document.getElementById('productName').textContent = itemName;
+            document.getElementById('productPrice').textContent = price.toLocaleString() + '원';
+            modal.classList.add('active');
+        }
+        
+        function closePaymentModal() {
+            document.getElementById('paymentModal').classList.remove('active');
+        }
+        
+        // VOD 상세 모달 열기/닫기
+        function openVodDetail(vodData) {
+            const modal = document.getElementById('vodDetailModal');
+            document.getElementById('vodDetailTitle').textContent = vodData.title;
+            document.getElementById('vodDetailDuration').textContent = '⏱ ' + vodData.duration;
+            document.getElementById('vodDetailPrice').textContent = vodData.price.toLocaleString() + '원';
+            document.getElementById('vodDetailPriceBottom').textContent = vodData.price.toLocaleString() + '원';
+            
+            // 상세 내용 생성
+            let bodyHTML = '<div style="padding: 2rem;">';
+            
+            // Google Drive 미리보기 영상 (1분 제한)
+            if (vodData.driveId) {
+                bodyHTML += '<div id="previewContainer" style="margin-bottom: 2rem;">';
+                bodyHTML += '<h3 style="color: #4ECDC4; margin-bottom: 1rem; font-size: 1.3rem;">🎬 강의 미리보기 (1분)</h3>';
+                bodyHTML += '<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">';
+                bodyHTML += '<iframe id="drivePlayer" src="https://drive.google.com/file/d/' + vodData.driveId + '/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>';
+                bodyHTML += '</div>';
+                bodyHTML += '<div id="previewMessage" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">';
+                bodyHTML += '<h4 style="font-size: 1.3rem; margin-bottom: 1rem;">✨ 미리보기가 종료되었습니다</h4>';
+                bodyHTML += '<p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.<br>지금 바로 시작하세요!</p>';
+                bodyHTML += '<button onclick="document.getElementById(\'vodDetailBuyBtn\').click()" style="background: white; color: #667eea; padding: 1rem 2.5rem; border: none; border-radius: 50px; font-size: 1.1rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: all 0.3s;" onmouseover="this.style.transform=\'scale(1.05)\'" onmouseout="this.style.transform=\'scale(1)\'">💳 지금 구매하기</button>';
+                bodyHTML += '</div>';
+                bodyHTML += '</div>';
+            }
+            
+            bodyHTML += '<p style="font-size: 1.15rem; color: #666; margin-bottom: 2.5rem; line-height: 1.8; font-weight: 500;">' + vodData.subtitle + '</p>';
+            
+            // 이런 변화를 기대하세요
+            if (vodData.changes) {
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">💡 이런 변화를 기대하세요</h3>';
+                bodyHTML += '<ul style="list-style: none; padding: 0;">';
+                vodData.changes.forEach(change => {
+                    bodyHTML += '<li style="padding: 1rem; margin-bottom: 0.5rem; background: #f8f9fa; border-left: 4px solid #4ECDC4; border-radius: 4px; line-height: 1.7;">✓ ' + change + '</li>';
+                });
+                bodyHTML += '</ul>';
+            }
+            
+            // 이런 분께 추천합니다
+            if (vodData.recommend) {
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">👥 이런 분께 추천합니다</h3>';
+                bodyHTML += '<ul style="list-style: none; padding: 0;">';
+                vodData.recommend.forEach(rec => {
+                    bodyHTML += '<li style="padding: 1rem; margin-bottom: 0.5rem; background: #fff8e1; border-left: 4px solid #fbbf24; border-radius: 4px; line-height: 1.7;">• ' + rec + '</li>';
+                });
+                bodyHTML += '</ul>';
+            }
+            
+            // 잘못된 믿음 깨기
+            if (vodData.myths) {
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">❌ 잘못된 믿음 깨기</h3>';
+                bodyHTML += '<div style="background: #fff5f5; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">';
+                bodyHTML += '<h4 style="color: #dc2626; margin-bottom: 1rem; font-size: 1.1rem;">잘못된 생각</h4>';
+                bodyHTML += '<ul style="list-style: none; padding: 0;">';
+                vodData.myths.wrong.forEach(myth => {
+                    bodyHTML += '<li style="padding: 0.5rem 0; color: #666;">❌ ' + myth + '</li>';
+                });
+                bodyHTML += '</ul>';
+                bodyHTML += '<h4 style="color: #16a34a; margin: 1.5rem 0 1rem; font-size: 1.1rem;">놀라운 진실</h4>';
+                bodyHTML += '<ul style="list-style: none; padding: 0;">';
+                vodData.myths.truth.forEach(truth => {
+                    bodyHTML += '<li style="padding: 0.5rem 0; color: #666;">✅ ' + truth + '</li>';
+                });
+                bodyHTML += '</ul>';
+                bodyHTML += '</div>';
+            }
+            
+            // 추가 섹션들 (reality, principles, comparison, cases, faq, closing 등)
+            if (vodData.reality) {
+                bodyHTML += '<div style="background: #fef2f2; padding: 1.5rem; border-radius: 8px; border: 2px solid #ef4444; margin: 2rem 0;">';
+                bodyHTML += '<h4 style="color: #dc2626; margin-bottom: 1rem; font-size: 1.2rem;">⚠️ ' + vodData.reality.title + '</h4>';
+                vodData.reality.items.forEach(item => {
+                    bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7; color: #666;">' + item + '</p>';
+                });
+                bodyHTML += '</div>';
+            }
+            
+            if (vodData.principles) {
+                bodyHTML += '<div style="background: #f0fdf4; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">';
+                bodyHTML += '<h4 style="color: #16a34a; margin-bottom: 1rem; font-size: 1.2rem;">✨ ' + vodData.principles.title + '</h4>';
+                vodData.principles.items.forEach(item => {
+                    bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7; color: #666;">' + item + '</p>';
+                });
+                bodyHTML += '</div>';
+            }
+            
+            if (vodData.comparison) {
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">⚖️ ' + vodData.comparison.title + '</h3>';
+                bodyHTML += '<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">';
+                bodyHTML += '<div style="background: #fef2f2; padding: 1.5rem; border-radius: 8px;"><h4 style="color: #dc2626; margin-bottom: 1rem;">' + vodData.comparison.left.title + '</h4><ul style="list-style: none; padding: 0;">';
+                vodData.comparison.left.items.forEach(item => {
+                    bodyHTML += '<li style="padding: 0.3rem 0; color: #666;">❌ ' + item + '</li>';
+                });
+                bodyHTML += '</ul></div>';
+                bodyHTML += '<div style="background: #f0fdf4; padding: 1.5rem; border-radius: 8px;"><h4 style="color: #16a34a; margin-bottom: 1rem;">' + vodData.comparison.right.title + '</h4><ul style="list-style: none; padding: 0;">';
+                vodData.comparison.right.items.forEach(item => {
+                    bodyHTML += '<li style="padding: 0.3rem 0; color: #666;">✅ ' + item + '</li>';
+                });
+                bodyHTML += '</ul></div></div>';
+            }
+            
+            if (vodData.cases) {
+                bodyHTML += '<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; color: white; margin: 2rem 0;">';
+                bodyHTML += '<h4 style="margin-bottom: 1rem; font-size: 1.2rem;">🎯 ' + vodData.cases.title + '</h4>';
+                vodData.cases.items.forEach(item => {
+                    bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7;">' + item + '</p>';
+                });
+                if (vodData.cases.highlight) {
+                    bodyHTML += '<p style="margin-top: 1rem; font-size: 1.1rem; font-weight: bold; color: #FFD700;">' + vodData.cases.highlight + '</p>';
+                }
+                bodyHTML += '</div>';
+            }
+            
+            if (vodData.faq) {
+                bodyHTML += '<h3 style="color: #4ECDC4; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">❓ 자주 묻는 질문</h3>';
+                vodData.faq.forEach(item => {
+                    bodyHTML += '<div style="margin-bottom: 1.5rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">';
+                    bodyHTML += '<p style="font-weight: bold; color: #2c3e50; margin-bottom: 0.5rem;">Q. ' + item.q + '</p>';
+                    bodyHTML += '<p style="color: #666; line-height: 1.7;">A. ' + item.a + '</p>';
+                    bodyHTML += '</div>';
+                });
+            }
+            
+            if (vodData.closing) {
+                bodyHTML += '<div style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); padding: 2rem; border-radius: 12px; color: white; text-align: center; margin: 2rem 0;">';
+                bodyHTML += '<h4 style="font-size: 1.3rem; margin-bottom: 1rem;">' + vodData.closing.title + '</h4>';
+                vodData.closing.messages.forEach(msg => {
+                    bodyHTML += '<p style="line-height: 1.8; margin: 0.5rem 0;">' + msg + '</p>';
+                });
+                bodyHTML += '</div>';
+            }
+            
+            // 후기 전 구매 섹션 추가
+            bodyHTML += '<div style="background: #f8f9fa; padding: 2.5rem; border-radius: 15px; text-align: center; margin: 3rem 0; border: 3px solid #4ECDC4;">';
+            bodyHTML += '<h2 style="color: #4ECDC4; font-size: 2.5rem; margin-bottom: 1.5rem; font-weight: bold;">' + vodData.price.toLocaleString() + '원</h2>';
+            bodyHTML += '<button onclick="window.open(\'' + vodData.littlyUrl + '\', \'_blank\')" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; padding: 1.5rem 3rem; border: none; border-radius: 50px; font-size: 1.3rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform=\'scale(1.05)\'; this.style.boxShadow=\'0 6px 20px rgba(78, 205, 196, 0.4)\'" onmouseout="this.style.transform=\'scale(1)\'; this.style.boxShadow=\'0 4px 15px rgba(78, 205, 196, 0.3)\'">💳 Litt.ly에서 구매하기</button>';
+            bodyHTML += '<div style="background: #FFF9E6; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #FFB800;">';
+            bodyHTML += '<p style="color: #666; font-size: 1rem; line-height: 1.6; margin: 0;">💡 안전한 <strong style="color: #2c3e50;">카드 결제</strong>를 위해 Litt.ly로 이동합니다<br>결제 후 다시 박근필성장연구소로 돌아와주세요</p>';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
+            // VOD 후기 섹션 추가
+            bodyHTML += '<div style="margin: 3rem 0;">';
+            bodyHTML += '<h3 style="color: #4ECDC4; margin-bottom: 2rem; font-size: 1.4rem; text-align: center; border-bottom: 3px solid #4ECDC4; padding-bottom: 0.5rem;">💬 VOD 특강 수강생 후기</h3>';
+            bodyHTML += '<div style="display: grid; gap: 1.5rem; max-width: 900px; margin: 0 auto;">';
+            bodyHTML += '<img src="vod-review-1.png" alt="VOD 후기 1" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-2.png" alt="VOD 후기 2" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-3.png" alt="VOD 후기 3" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-4.png" alt="VOD 후기 4" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-5.png" alt="VOD 후기 5" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-6.png" alt="VOD 후기 6" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-7.png" alt="VOD 후기 7" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-8.png" alt="VOD 후기 8" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-9.png" alt="VOD 후기 9" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-10.png" alt="VOD 후기 10" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-11.png" alt="VOD 후기 11" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-12.png" alt="VOD 후기 12" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="vod-review-13.png" alt="VOD 후기 13" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="1.webp" alt="VOD 후기 14" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="2.webp" alt="VOD 후기 15" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="3.webp" alt="VOD 후기 16" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="4.webp" alt="VOD 후기 17" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="5.webp" alt="VOD 후기 18" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="6.webp" alt="VOD 후기 19" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="7.webp" alt="VOD 후기 20" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="8.webp" alt="VOD 후기 21" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="9.webp" alt="VOD 후기 22" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="10.webp" alt="VOD 후기 23" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="11.webp" alt="VOD 후기 24" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="12.webp" alt="VOD 후기 25" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="13.webp" alt="VOD 후기 26" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '<img src="14.webp" alt="VOD 후기 27" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
+            bodyHTML += '</div>';
+            document.getElementById('vodDetailBody').innerHTML = bodyHTML;
+            
+            // Google Drive 플레이어 1분 제한
+            if (vodData.driveId) {
+                setTimeout(function() {
+                    const iframe = document.getElementById('drivePlayer');
+                    const container = document.getElementById('previewContainer');
+                    const message = document.getElementById('previewMessage');
+                    
+                    // iframe 완전 제거 (음성도 정지됨)
+                    if (iframe) {
+                        iframe.remove();
+                    }
+                    
+                    if (container && message) {
+                        container.style.display = 'none';
+                        message.style.display = 'block';
+                    }
+                }, 60000); // 60초 = 1분
+            }
+            
+            // 구매 버튼 이벤트 - Litt.ly로 연결
+            document.getElementById('vodDetailBuyBtn').onclick = function() {
+                if (vodData.littlyUrl) {
+                    window.open(vodData.littlyUrl, '_blank');
+                }
+            };
+            
+            // 기존 안내 문구 제거 (중복 방지)
+            const existingNotice = document.querySelector('#vodDetailModal .payment-notice');
+            if (existingNotice) {
+                existingNotice.remove();
+            }
+            
+            // 안내 문구 추가
+            const buyButton = document.getElementById('vodDetailBuyBtn');
+            buyButton.textContent = '💳 Litt.ly에서 구매하기';
+            const noticeText = document.createElement('p');
+            noticeText.className = 'payment-notice';
+            noticeText.style.cssText = 'font-size: 0.95rem; color: #666; margin-top: 0.8rem; text-align: center;';
+            noticeText.innerHTML = '💡 안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다<br>결제 후 다시 박근필성장연구소로 돌아와주세요';
+            buyButton.parentElement.appendChild(noticeText);
+            
+            modal.classList.add('active');
+        }
+        
+        function closeVodDetail() {
+            // iframe 완전 제거로 영상/음성 정지
+            const iframe = document.getElementById('drivePlayer');
+            if (iframe) {
+                iframe.src = ''; // src 초기화
+                iframe.remove(); // iframe 제거
+            }
+            
+            // 모달 닫기
+            document.getElementById('vodDetailModal').classList.remove('active');
+        }
+        
+        // VOD 1: 책을 왜 써야 하는가?
+        function openVod1() {
+            openVodDetail({
+                title: '책을 왜 써야 하는가?',
+                subtitle: '강의 시청 후 책쓰기에 관한 강력한 동기부여와 자신감을 얻으실 겁니다.',
+                duration: '1시간 30분',
+                price: 29000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/076WClZ',
+                youtubeId: '',
+                driveId: '1ArTCtIaDa88o6DwPAlFoX_i4-5ogJAtN',
+                changes: [
+                    "'나는 글 못 써'라는 생각에서 완전히 벗어나 '나도 작가가 될 수 있다'는 확신을 갖게 됩니다.",
+                    "책 쓰기에 대한 강렬한 동기 부여와 '당장 시작하고 싶다'는 열정이 생깁니다.",
+                    "책 쓰기로 얻을 수 있는 경제적 혜택과 사회적 영향력에 대해 구체적으로 이해하게 됩니다.",
+                    "1인 2책 전략과 3B 공식 등 실제로 활용할 수 있는 책 쓰기 전략을 습득합니다.",
+                    "다양한 출판 방법을 알게 되어 자신에게 맞는 출간 루트를 선택할 수 있습니다."
+                ],
+                recommend: [
+                    "'언젠가는 책을 써보고 싶다'는 막연한 꿈을 가진 분",
+                    "책을 쓰면 무엇이 좋은지, 왜 써야 하는지 궁금한 분",
+                    "'내가 작가가 될 수 있을까?' 하는 의구심과 두려움을 가진 분",
+                    "퍼스널 브랜딩과 부수입 창출에 관심이 있는 직장인",
+                    "자아실현과 사회적 기여를 통해 의미 있는 삶을 살고 싶은 분",
+                    "은퇴 후 새로운 인생 2막을 준비하고 있는 분"
+                ],
+                myths: {
+                    wrong: [
+                        "내가 작가도 아닌데 무슨 책을 써",
+                        "작가는 타고나는 거야",
+                        "나는 글재주가 없어",
+                        "내 이야기는 평범해"
+                    ],
+                    truth: [
+                        "작가라서 책을 쓰는 게 아니라 책을 써서 작가가 되는 것!",
+                        "평범함이 곧 특별함입니다!",
+                        "당신의 경험과 지식이 소중한 자산입니다."
+                    ]
+                }
+            });
+        }
+        
+        // VOD 2: 책쓰기는 기획과 제작이다!
+        function openVod2() {
+            openVodDetail({
+                title: '책쓰기는 기획과 제작이다!',
+                subtitle: '책쓰기의 핵심과 본질을 파악해 출판 계약으로 이어지는 투고를 할 수 있습니다.',
+                duration: '1시간 50분',
+                price: 49000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/UrfM4Bu',
+                youtubeId: '',
+                driveId: '1llkmwsrP41J6vmqlMDn1tx5zW1-emJRo',
+                changes: [
+                    "80% 기획의 핵심을 이해하고 출판 계약 성공률을 획기적으로 높입니다.",
+                    "편집자가 '계약하고 싶어하는' 출간 기획서 작성법을 완전 습득합니다.",
+                    "나만의 독창적인 책 아이디어 발굴과 차별화 전략을 구체적으로 세웁니다.",
+                    "출간 후 저자 브랜딩과 수익화까지 연결하는 전체 로드맵을 얻습니다."
+                ],
+                recommend: [
+                    "막연히 '언젠가는 책을 써야지' 생각만 하고 있는 예비 작가",
+                    "여러 출판사에 투고했지만 계속 거절당해 좌절한 분",
+                    "글쓰기와 책쓰기의 차이를 모르고 원고부터 쓰려는 분",
+                    "전문직, 직장인으로서 자신의 경험을 책으로 만들고 싶은 분",
+                    "책을 통해 퍼스널 브랜딩과 N잡 기회를 만들고 싶은 분",
+                    "체계적인 전략 없이 감으로만 책쓰기를 시도했다가 실패한 분"
+                ],
+                reality: {
+                    title: '충격적인 현실',
+                    items: [
+                        '대부분의 사람들이 원고부터 쓰기 시작하지만, 그래서 90% 이상 출판 계약에 실패합니다.'
+                    ]
+                },
+                principles: {
+                    title: '80% 기획의 핵심 원리',
+                    items: [
+                        '"성공하는 책 = 탄탄한 기획 + 기본 이상의 원고"',
+                        '편집자는 30초 만에 주제, 제목, 저자 프로필을 보고 3분 만에 목차와 출간기획서를 훑어보며 계약 여부를 결정합니다.',
+                        '기획이 약하면 아무리 좋은 원고도 빛을 잃습니다.'
+                    ]
+                },
+                comparison: {
+                    title: '글쓰기 vs 책쓰기',
+                    left: {
+                        title: '글쓰기',
+                        items: ['문장력이 핵심', '순간적 영감', '개인적 표현', '자유로운 형식', '즉흥적 창작']
+                    },
+                    right: {
+                        title: '책쓰기',
+                        items: ['기획력이 핵심', '체계적 설계', '독자 중심 사고', '상업적 고려', '전략적 접근']
+                    }
+                },
+                cases: {
+                    title: '박근필 소장의 실제 성공 사례',
+                    items: [
+                        '뛰어난 기획력으로 3권 연속 출간 성공',
+                        '첫 번째 책: 전자책을 투고해 출판 계약 성공',
+                        '두 번째 책: 원고 없이 "출간기획서"만으로 출판 계약 체결 (매우 이례적)',
+                        '세 번째 책: 선인세 조건으로 출판 계약 성사 (요즘 출판 시장에 흔하지 않음)'
+                    ],
+                    highlight: '기획만 탄탄하면 여러분도 할 수 있습니다!'
+                },
+                faq: [
+                    {
+                        q: '글쓰기 실력이 부족해도 책을 쓸 수 있나요?',
+                        a: '네, 가능합니다. 책쓰기에서 중요한 것은 문장력이 아니라 기획력입니다. 기본 이상의 글쓰기 실력만 있으면 충분하며, 탄탄한 기획이 있다면 누구나 투고에 성공해 출판 계약을 딸 수 있습니다.'
+                    },
+                    {
+                        q: '특별한 경험이나 전문성이 없어도 괜찮을까요?',
+                        a: '평범한 경험도 관점의 전환으로 특별한 이야기가 됩니다. 앞으로 책쓰기 1:1 코칭을 통해 여러분만의 독창적인 관점과 차별점을 찾아드립니다.'
+                    }
+                ],
+                closing: {
+                    title: '당신의 이야기가 세상을 만날 차례입니다',
+                    messages: [
+                        '기획이 탄탄하면 원고는 반드시 따라옵니다',
+                        '출판 계약도 분명히 가능합니다',
+                        '더 이상 막연한 꿈으로 남겨두지 마세요',
+                        '체계적인 전략으로 확실한 결과를 만들어보세요',
+                        '당신의 책이 세상에 나올 그날을 함께 만들어갑시다!'
+                    ]
+                }
+            });
+        }
+        
+        // VOD 3: 쉽게 이해하는 퍼스널 브랜딩
+        function openVod3() {
+            openVodDetail({
+                title: '쉽게 이해하는 퍼스널 브랜딩',
+                subtitle: '퍼스널 브랜딩의 정수를 알려드립니다.',
+                duration: '1시간',
+                price: 49000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/atoZl7U',
+                youtubeId: '',
+                driveId: '1EOlnwG6EaJMy3df1rnf1GHac_UNa4VNf',
+                recommend: [
+                    "자신만의 브랜드를 만들고 싶은 직장인",
+                    "부업이나 창업을 고민하는 분",
+                    "온라인에서 영향력을 키우고 싶은 분",
+                    "글쓰기를 통해 브랜딩하고 싶은 분",
+                    "나다운 삶을 살고 싶은 분",
+                    "퍼스널 브랜딩에 관심 있는 모든 분"
+                ],
+                changes: [
+                    "나만의 명확한 브랜드 정체성 확립",
+                    "온라인에서 일관성 있는 메시지 전달 능력",
+                    "콘텐츠 제작과 브랜딩 전략 수립 역량",
+                    "실패를 두려워하지 않는 도전 정신",
+                    "지속 가능한 퍼스널 브랜딩 로드맵"
+                ],
+                closing: {
+                    title: '당신의 브랜드 스토리를 시작하세요',
+                    messages: [
+                        '"오늘이 브랜딩 시작하기 가장 좋은 날이자 빠른 날입니다"',
+                        '나답게, 꾸준히, 진정성 있게!',
+                        '당신도 강력한 브랜드가 될 수 있습니다.'
+                    ]
+                }
+            });
+        }
+        
+        // VOD 4: 직장인이 아닌 직업인으로
+        function openVod4() {
+            openVodDetail({
+                title: '직장인이 아닌 직업인으로',
+                subtitle: '언제든 비자발적인 퇴사를 당할 수 있는 직장인에서 벗어나세요. 언제든 홀로서기가 가능한 직업인으로 살아가세요. 그 이유와 방법을 알려드립니다.',
+                duration: '1시간',
+                price: 29000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/BDPw8UV',
+                youtubeId: '',
+                driveId: '1giWnt-McveS0qBT_NLq-IMQWNB3nVo0q',
+                changes: [
+                    "직장인에서 직업인으로 전환해야 하는 이유에 대한 강렬한 동기 부여와 '당장 시작하고 싶다'는 열정이 생깁니다.",
+                    "직업인으로 살아가며 얻을 수 있는 경제적 혜택과 사회적 영향력에 대해 구체적으로 이해하게 됩니다.",
+                    "N잡 전략과 자발적 퇴사 준비 등 실제로 활용할 수 있는 생존 전략을 습득합니다.",
+                    "불안한 미래에 대비할 수 있는 구체적인 실행 계획과 로드맵을 얻게 됩니다."
+                ],
+                recommend: [
+                    "'언젠가는 직장을 벗어나 자유롭게 살고 싶다'는 막연한 꿈을 가진 분",
+                    "직장인과 직업인의 차이가 무엇인지, 왜 직업인이 되어야 하는지 궁금한 분",
+                    "'내가 정말 혼자서도 살아갈 수 있을까?' 하는 의구심과 두려움을 가진 분",
+                    "퍼스널 브랜딩과 부수입 창출에 관심이 있는 직장인",
+                    "자아실현과 사회적 기여를 통해 의미 있는 삶을 살고 싶은 분",
+                    "은퇴 후 새로운 인생 2막을 준비하고 있는 분"
+                ],
+                reality: {
+                    title: '충격적인 현실',
+                    items: [
+                        '한국 직장인의 첫 직장 평균 근속기간: 2.8년',
+                        '한국 근로자 평균 근속기간 (OECD 최하위): 5.6년',
+                        '2030년 인간 노동력의 AI·로봇 대체 가능률: 90%',
+                        '2022년 기준 국내 부업 인구: 54만 명'
+                    ]
+                },
+                principles: {
+                    title: '진짜 위기는 무엇인가?',
+                    items: [
+                        '"진짜 위기는 위기인데도 불구하고 위기인 것을 모르는 것이 진짜 위기입니다.',
+                        '그보다 더 큰 위기는 위기인 걸 알면서도 아무것도 하지 않는 것이 바로 더 큰 위기입니다."',
+                        '- 유재석, 《무한도전》 중'
+                    ]
+                },
+                comparison: {
+                    title: '직장인 vs 직업인',
+                    left: {
+                        title: '직장인',
+                        items: [
+                            '남이 만든 조직에 소속',
+                            '타인이 준 직책',
+                            '회사에 종속된 존재',
+                            '언젠가 나와야 하는 곳',
+                            '유한한 구조',
+                            '가짜 명함 (회사 명함)',
+                            '소비자적 존재'
+                        ]
+                    },
+                    right: {
+                        title: '직업인',
+                        items: [
+                            '내 몸과 머리의 개인기',
+                            '스스로 정의한 전문성',
+                            '자율적인 존재',
+                            '어디서든 필요한 사람',
+                            '무한 확장 가능한 구조',
+                            '진짜 명함 (내 명함)',
+                            '생산자적 존재'
+                        ]
+                    }
+                },
+                closing: {
+                    title: '내 삶을 내가 주체적으로 주도적으로 살 수 있는 직업인으로 살아가세요',
+                    messages: [
+                        '현 직장을 언제 떠나도 괜찮을 정도로 나를 만들어보세요.',
+                        '그럼 삶이 불안하지 않습니다.',
+                        '인생을 주도적으로 살 수 있습니다.',
+                        '오늘부터 준비와 대비를 시작하세요!'
+                    ]
+                }
+            });
+        }
+        
+        // VOD 5: 독서법1_목적·능동적·아웃풋 독서
+        function openVod5() {
+            openVodDetail({
+                title: '독서법1_목적·능동적·아웃풋 독서',
+                subtitle: '독서를 단순 취미가 아닌 자기 성장 시스템으로 전환하는 방법을 배워갑니다.',
+                duration: '1시간',
+                price: 29000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/f74TaYi',
+                youtubeId: '',
+                driveId: '1Q8UdyrTi0Lq1Eb7xOFYLOex7QKpmInqA',
+                target: {
+                    title: '⭐ 이런 분들을 위한 독서 클래스입니다',
+                    items: [
+                        '독서를 해도 남는 게 없다고 느끼시는 분',
+                        '글쓰기를 배우고 싶지만 어디서 시작해야 할지 막막한 분',
+                        '"읽기 → 생각 → 쓰기"의 연결이 어렵게 느껴지는 분',
+                        '글쓰기 습관, 독서 루틴을 만들고 싶은 분',
+                        '나만의 관점과 생각으로 글을 쓰고 싶은 분'
+                    ]
+                },
+                keypoints: {
+                    title: '강의 핵심 포인트 요약',
+                    items: [
+                        {
+                            title: '독서는 글쓰기의 기본 근력이다',
+                            desc: '글쓰기 실력은 \'재능\'이 아니라 잘 읽는 기술에서 시작됩니다. 독서를 단순 취미가 아닌 자기 성장 시스템으로 전환하는 방법을 배워갑니다.'
+                        },
+                        {
+                            title: '읽기 → 생각하기 → 쓰기의 실전 로드맵',
+                            desc: '인풋 독서(읽기)만 하면 금방 사라지지만, 아웃풋 독서(정리·적용·쓰기)까지 가면 지식이 실제 \'내 것\'이 됩니다. 이 강의에서는 이 전체 과정을 하나의 파이프라인처럼 연결해 드립니다.'
+                        },
+                        {
+                            title: '글쓰기 근육이 자연스럽게 자라는 독서법',
+                            desc: '문장력 향상, 사고력·표현력 확장, 아이디어 생성 능력, 글 소재 발굴 능력 → 모두 독서에서 시작됩니다.'
+                        }
+                    ]
+                },
+                contents: [
+                    {
+                        title: '① 왜 \'읽어야만\' 하는가?',
+                        items: [
+                            '변화 시대에 독서가 필요한 이유',
+                            '"독서는 선택이 아니라 생존 기술"이라는 이유'
+                        ]
+                    },
+                    {
+                        title: '② 독서가 글쓰기의 필수적인 이유',
+                        items: [
+                            '문장력·어휘력·논리력·표현력이 독서로 강화되는 원리',
+                            '읽는 방식에 따라 글쓰기 실력 격차가 얼마나 벌어지는지'
+                        ]
+                    },
+                    {
+                        title: '③ 마법의 파이프라인: 읽기 → 생각하기 → 쓰기',
+                        items: [
+                            '한 권이 글감 10개로 바뀌는 구조',
+                            '나만의 \'쓸거리\'가 생기는 독서법'
+                        ]
+                    }
+                ],
+                changes: [
+                    '책을 읽을 때 "왜 읽는지, 무엇을 얻는지"가 명확해집니다.',
+                    '독서가 단순 취미가 아니라 내 성장 속도를 높여주는 시스템이 됩니다.',
+                    '책을 읽는 즉시 글감이 자동으로 생기는 경험을 하게 됩니다.',
+                    '독서에 대한 관점 자체가 달라집니다.'
+                ],
+                recommend: [
+                    '독서하고 싶은데 늘 작심삼일이었던 분',
+                    '글을 쓰고 싶은데 소재가 없다고 느끼는 분',
+                    '독서를 실전 글쓰기로 연결하는 방법을 배우고 싶은 분'
+                ],
+                closing: {
+                    title: '🌱 마지막 메시지',
+                    messages: [
+                        '여러분 안의 \'글 쓰는 사람\'을 깨워보세요.',
+                        '독서는 단순한 취미가 아니라 여러분의 삶을 바꾸는 가장 현실적이고 확실한 투자입니다.',
+                        '지금 여기서, 가진 것으로 시작하면 충분합니다.',
+                        '여러분의 독서와 글쓰기 여정을 응원합니다.'
+                    ]
+                }
+            });
+        }
+        
+/*         // 필북 상세 정보
+        function openPhilbookDetail() {
+            const modal = document.getElementById('vodDetailModal');
+            document.getElementById('vodDetailTitle').textContent = '필북 (박근필의 동반성장 북클럽)';
+            document.getElementById('vodDetailDuration').textContent = '⏱ 격주 월요일 저녁 9시~11시(11시 반)';
+            document.getElementById('vodDetailPrice').textContent = '50,000원';
+            document.getElementById('vodDetailPriceBottom').textContent = '50,000원 (직전 기수 4만원)';
+            
+            // 상세 내용 생성
+            let bodyHTML = '<div style="padding: 2rem; line-height: 1.8;">';
+            
+            // 필북이 뭔가요?
+            bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem; font-size: 1.5rem;">📚 필북이 뭔가요?</h3>';
+            bodyHTML += '<p style="margin-bottom: 1rem; color: #555;">';
+            bodyHTML += '\'필북\'은 <strong>박근필의 \'필\'</strong>과 <strong>북클럽의 \'북\'</strong>을 합친 이름입니다.<br>';
+            bodyHTML += '짧고 기억하기 쉽지만, 그 안에 제가 하고 싶은 모든 걸 담았습니다.<br><br>';
+            bodyHTML += '평범한 독서모임이 아닌, <strong style="color: #4ECDC4;">"책 + 대화 + 특강"</strong>이 결합된 <strong style="color: #4ECDC4;">"동반성장 북클럽"</strong>.<br>';
+            bodyHTML += '바로 박근필의 \'필북\'입니다.';
+            bodyHTML += '</p>';
+            
+            // 정기 모임
+            bodyHTML += '<div style="background: #f0f9ff; border-left: 4px solid #4ECDC4; padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">';
+            bodyHTML += '<div style="font-weight: bold; margin-bottom: 0.8rem; color: #2c3e50;">📅 정기 모임</div>';
+            bodyHTML += '<div style="color: #555;">격주 월요일 저녁 9시~11시(11시 반) / 온라인 Zoom / 7주 프로그램</div>';
+            bodyHTML += '</div>';
+            
+            // 도서 구성
+            bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem; font-size: 1.3rem;">📖 도서 구성</h3>';
+            bodyHTML += '<ul style="list-style: none; padding: 0; margin-bottom: 2rem;">';
+            bodyHTML += '<li style="padding: 1rem; background: #f8f9fa; margin-bottom: 0.8rem; border-radius: 8px; border-left: 3px solid #4ECDC4;">';
+            bodyHTML += '<strong>공통도서</strong>: 제가 직접 엄선합니다. 자기계발, 에세이 중심이지만 제한은 없습니다.';
+            bodyHTML += '</li>';
+            bodyHTML += '<li style="padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 3px solid #667eea;">';
+            bodyHTML += '<strong>자유도서</strong>: 각자 읽고 싶은 책, 공유하고 싶은 책을 자유롭게 선택합니다.';
+            bodyHTML += '</li>';
+            bodyHTML += '</ul>';
+            
+            // 세션 구성
+            bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem; font-size: 1.3rem;">💡 세션 구성</h3>';
+            bodyHTML += '<div style="display: grid; gap: 1rem; margin-bottom: 2rem;">';
+            bodyHTML += '<div style="padding: 1.2rem; background: #fff8f0; border-radius: 10px; border: 2px solid #ffb74d;">';
+            bodyHTML += '<div style="font-weight: bold; color: #e65100; margin-bottom: 0.5rem;">📚 독서 토론 약 1시간</div>';
+            bodyHTML += '<div style="color: #666;">전원이 차례대로 준비한 문장과 의견 발표, 서로의 생각 나누기</div>';
+            bodyHTML += '</div>';
+            bodyHTML += '<div style="padding: 1.2rem; background: #f3e5f5; border-radius: 10px; border: 2px solid #ba68c8;">';
+            bodyHTML += '<div style="font-weight: bold; color: #7b1fa2; margin-bottom: 0.5rem;">🎤 특강 & QnA 약 1시간</div>';
+            bodyHTML += '<div style="color: #666;">자기계발·퍼스널 브랜딩·삶 인사이트 등 다양한 주제의 특강과 질의응답</div>';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
+            // 특강 강연자
+            bodyHTML += '<div style="background: #f0fff4; border: 2px solid #48bb78; border-radius: 12px; padding: 20px; margin: 2rem 0;">';
+            bodyHTML += '<div style="font-size: 1.1rem; color: #2f855a; font-weight: 600; margin-bottom: 8px;">✨ 특강 강연자</div>';
+            bodyHTML += '<div style="color: #276749;">저(박근필 소장), 저자, 인플루언서, 콘텐츠 생산자 등 인사이트 넘치는 분.</div>';
+            bodyHTML += '</div>';
+            
+            // 이렇게 진행됩니다
+            bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem; font-size: 1.3rem;">🔄 이렇게 진행됩니다</h3>';
+            bodyHTML += '<div style="display: grid; gap: 1rem; margin-bottom: 2rem;">';
+            bodyHTML += '<div style="display: flex; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">';
+            bodyHTML += '<div style="font-size: 1.5rem;">1️⃣</div>';
+            bodyHTML += '<div><strong>책 읽기</strong><br><span style="color: #666;">매주 선정 도서를 읽고 와닿는 문장과 의견 준비</span></div>';
+            bodyHTML += '</div>';
+            bodyHTML += '<div style="display: flex; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">';
+            bodyHTML += '<div style="font-size: 1.5rem;">2️⃣</div>';
+            bodyHTML += '<div><strong>대화 나누기</strong><br><span style="color: #666;">함께 모여 각자의 생각을 나누고 서로의 시야를 넓힘</span></div>';
+            bodyHTML += '</div>';
+            bodyHTML += '<div style="display: flex; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">';
+            bodyHTML += '<div style="font-size: 1.5rem;">3️⃣</div>';
+            bodyHTML += '<div><strong>특강 듣기</strong><br><span style="color: #666;">박근필 소장 or 특별 게스트의 강연으로 인사이트 습득</span></div>';
+            bodyHTML += '</div>';
+            bodyHTML += '<div style="display: flex; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">';
+            bodyHTML += '<div style="font-size: 1.5rem;">4️⃣</div>';
+            bodyHTML += '<div><strong>성장하기</strong><br><span style="color: #666;">아웃풋 독서를 통해 실제 삶에 적용하고 변화 만들기</span></div>';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
+            // 참가 혜택
+            bodyHTML += '<h3 style="color: #4ECDC4; margin: 2rem 0 1rem; font-size: 1.3rem;">🎁 참가 혜택</h3>';
+            bodyHTML += '<ul style="padding-left: 1.2rem; color: #555; margin-bottom: 2rem;">';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">불참 시 해당 주차 녹화본 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">박근필 소장와 1:1 카톡 상담권 (4주간 자기계발 관련)</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">실제 투고 시 제출한 출간기획서 원본 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">출간기획서 샘플 추가 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">실제 사용한 투고 이메일 제목 및 원문 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">출판사 이메일 리스트 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem;">&lt;박근필의 피플인사이트&gt; 유튜브 출연 기회 제공</li>';
+            bodyHTML += '<li style="margin-bottom: 0.6rem; font-weight: bold; color: #4ECDC4;">혜택 계속 늘려갈 예정!</li>';
+            bodyHTML += '</ul>';
+            
+            // 참가비
+            bodyHTML += '<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin-top: 2rem;">';
+            bodyHTML += '<div style="font-size: 1.2rem; opacity: 0.95; margin-bottom: 1.5rem;">4주간의 완전한 변화를 위한 투자</div>';
+            bodyHTML += '<div style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 10px;">';
+            bodyHTML += '<p style="font-size: 1.1rem; margin: 0;">🎁 <strong>직전 기수 특별 혜택</strong><br>만원 할인 → <strong style="font-size: 1.3rem;">4만원</strong></p>';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
+            // 4기 신청 예약 안내
+            bodyHTML += '<div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 12px; padding: 20px; margin: 2rem 0; text-align: center;">';
+            bodyHTML += '<div style="font-size: 1.2rem; color: #856404; font-weight: 700; margin-bottom: 12px;">💡 현재는 4기 신청 예약 가능합니다.</div>';
+            bodyHTML += '<div style="color: #856404; line-height: 1.8;">';
+            bodyHTML += '메인 화면의 하단에 <strong>\'상담 신청\'</strong>에서 필요한 정보 입력하시고<br>';
+            bodyHTML += '신청 서비스 중 <strong>필북</strong>을 선택하세요.<br>';
+            bodyHTML += '문의 내용에 <strong>"필북 6기 신청_마감"</strong>이라고 적은 후<br>';
+            bodyHTML += '<strong>\'상담 신청하기\'</strong>를 클릭하세요.';
+            bodyHTML += '</div>';
+            bodyHTML += '</div>';
+            
+            bodyHTML += '</div>';
+            
+            document.getElementById('vodDetailBody').innerHTML = bodyHTML;
+            
+            // 구매 버튼 이벤트
+            document.getElementById('vodDetailBuyBtn').onclick = function() {
+                closeVodDetail();
+                showPaymentInfo('필북', 50000);
+            };
+            document.getElementById('vodDetailBuyBtn').textContent = '지금 바로 신청하기';
+            
+            modal.classList.add('active');
+        } */
+        
+        window.addEventListener('load', function() {
+            const navLinks = document.getElementById('navLinks');
+            const logo = document.querySelector('.logo');
+            if (navLinks) navLinks.classList.remove('active');
+            if (logo) logo.classList.remove('hidden');
+            
+            // vod.html에서 상세보기 버튼 클릭 시 자동으로 모달 열기
+            const openVodNumber = sessionStorage.getItem('openVod');
+            if (openVodNumber) {
+                sessionStorage.removeItem('openVod'); // 사용 후 제거
+                setTimeout(function() {
+                    if (openVodNumber === '1') openVod1();
+                    else if (openVodNumber === '2') openVod2();
+                    else if (openVodNumber === '3') openVod3();
+                    else if (openVodNumber === '4') openVod4();
+                }, 500); // VOD 섹션으로 스크롤 후 모달 열기
+            }
+        });
+    </script>
+</body>
+</html>

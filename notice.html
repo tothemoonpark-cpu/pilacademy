@@ -4,640 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항 - 박근필성장연구소</title>
-    
-    <!-- SEO 메타 태그 -->
-    <meta name="description" content="박근필성장연구소 공지사항. 독저팅, VOD, 필북, 필레터 관련 소식">
-    <meta name="keywords" content="공지사항, 박근필성장연구소, 박근필">
+    <meta name="description" content="박근필성장연구소의 새로운 소식과 공지사항을 확인하세요.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/notice.html">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            letter-spacing: -1px;
-            white-space: nowrap;
-            flex-shrink: 0;
-            display: inline-block;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.3s;
-        }
-        
-        .nav-links a:hover {
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --ink:#16181d; --sub:#5b6066; --muted:#8a9099; --line:#ececec; --panel:#f7f8f9; --page:#ffffff; }
+        body { font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.7; color:var(--ink); background:var(--page); -webkit-font-smoothing:antialiased; }
+        a { text-decoration:none; color:inherit; }
+        header { background:rgba(255,255,255,0.85); backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:1000; }
+        nav { max-width:1140px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.5rem; }
+        .logo { display:flex; align-items:center; gap:0.45rem; font-size:1.18rem; font-weight:700; color:var(--ink); letter-spacing:-0.02em; }
+        .logo svg { width:22px; height:22px; }
+        .nav-links { display:flex; gap:1.35rem; list-style:none; align-items:center; flex-wrap:wrap; }
+        .nav-links a { color:var(--sub); font-weight:500; font-size:0.9rem; transition:color 0.2s; }
+        .nav-links a:hover { color:var(--ink); }
+        .menu-toggle { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; }
+        .menu-toggle span { width:24px; height:2px; background:var(--ink); border-radius:2px; }
 
-        .dropdown {
-            position: relative;
-        }
-        
-        /* 데스크톱에서는 항상 메뉴 표시 */
-        @media screen and (min-width: 769px) {
-            .nav-links {
-                display: flex !important;
-            }
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 180px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            border-radius: 8px;
-            z-index: 1000;
-            top: 100% !important;
-            margin-top: -8px !important;
-            padding-top: 0.5rem;
-        }
-        
-        .dropdown-content::before {
-            content: "";
-            position: absolute;
-            top: -20px;
-            left: -10px;
-            right: -10px;
-            height: 28px;
-            background: transparent;
-        }
-        
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
-        
-        .dropdown-content a:first-child {
-            border-radius: 8px 8px 0 0;
-        }
-        
-        .dropdown-content a:last-child {
-            border-radius: 0 0 8px 8px;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-            opacity: 1;
-        }
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        
-        .dropbtn {
-            cursor: pointer;
-            padding-bottom: 1rem;
-        }
-            opacity: 0.8;
+        .page-hero { text-align:center; padding:4.5rem 1.5rem 1rem; }
+        .page-hero .eyebrow { display:inline-block; font-size:0.82rem; font-weight:500; color:var(--sub); border:1px solid var(--line); padding:0.35rem 0.9rem; border-radius:50px; margin-bottom:1.2rem; }
+        .page-hero h1 { font-size:2.3rem; font-weight:700; letter-spacing:-0.03em; margin-bottom:0.7rem; }
+        .page-hero p { color:var(--sub); font-size:1.05rem; }
 
-        .dropdown {
-            position: relative;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 180px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            border-radius: 8px;
-            z-index: 1000;
-            top: 100% !important;
-            margin-top: -8px !important;
-            padding-top: 0.5rem;
-        }
-        
-        .dropdown-content::before {
-            content: "";
-            position: absolute;
-            top: -20px;
-            left: -10px;
-            right: -10px;
-            height: 28px;
-            background: transparent;
-        }
-        
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
-        
-        .dropdown-content a:first-child {
-            border-radius: 8px 8px 0 0;
-        }
-        
-        .dropdown-content a:last-child {
-            border-radius: 0 0 8px 8px;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-            opacity: 1;
-        }
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        
-        .dropbtn {
-            cursor: pointer;
-            padding-bottom: 1rem;
-        }
-        }
+        .notices { max-width:760px; margin:0 auto; padding:2.5rem 1.5rem 4rem; display:flex; flex-direction:column; gap:1.2rem; }
+        .notice { background:var(--page); border:1px solid var(--line); border-radius:16px; padding:1.8rem 2rem; }
+        .notice__top { display:flex; align-items:center; gap:0.6rem; margin-bottom:0.5rem; flex-wrap:wrap; }
+        .notice__date { font-size:0.85rem; color:var(--muted); }
+        .badge { font-size:0.72rem; font-weight:500; padding:0.25rem 0.65rem; border-radius:50px; }
+        .badge.solid { background:var(--ink); color:#fff; }
+        .badge.line { border:1px solid var(--ink); color:var(--ink); }
+        .notice__title { font-size:1.22rem; font-weight:700; letter-spacing:-0.01em; margin-bottom:0.8rem; }
+        .notice__body { font-size:0.98rem; color:var(--sub); line-height:1.85; }
+        .notice__body strong { color:var(--ink); }
+        .note-box { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--ink); border-radius:8px; padding:1.2rem 1.4rem; margin:1.2rem 0; }
+        .note-box p { margin:0.2rem 0; }
+        .quote-box { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1.4rem; margin:1.3rem 0; text-align:center; }
+        .quote-box strong { display:block; margin-bottom:0.5rem; }
+        .closing { text-align:center; font-size:1.1rem; font-weight:700; color:var(--ink); margin-top:1.2rem; }
+        .inline-btn { display:inline-flex; align-items:center; gap:0.4rem; background:var(--ink); color:#fff; font-size:0.92rem; font-weight:500; padding:0.7rem 1.3rem; border-radius:10px; margin-top:0.6rem; }
+        .inline-btn svg { width:16px; height:16px; }
+        .code { font-weight:700; font-size:1.15rem; color:var(--ink); }
+        .qr-img { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:2rem; text-align:center; margin:1.3rem 0; }
+        .qr-img img { width:100%; max-width:560px; border-radius:8px; }
+        .qr-links { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+        .qr-links div { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1.3rem; text-align:center; }
+        .qr-links p { font-weight:700; color:var(--ink); margin-bottom:0.5rem; }
+        .qr-links a { color:var(--ink); text-decoration:underline; font-size:0.92rem; }
 
-        .dropdown {
-            position: relative;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 180px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            border-radius: 8px;
-            z-index: 1000;
-            top: 100% !important;
-            margin-top: -8px !important;
-            padding-top: 0.5rem;
-        }
-        
-        .dropdown-content::before {
-            content: "";
-            position: absolute;
-            top: -20px;
-            left: -10px;
-            right: -10px;
-            height: 28px;
-            background: transparent;
-        }
-        
-        .dropdown-content a {
-            color: #2c3e50;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
-        
-        .dropdown-content a:first-child {
-            border-radius: 8px 8px 0 0;
-        }
-        
-        .dropdown-content a:last-child {
-            border-radius: 0 0 8px 8px;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-            opacity: 1;
-        }
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        
-        .dropbtn {
-            cursor: pointer;
-            padding-bottom: 1rem;
-        }
-        
-        
-        
-        
-            background-color: #f8f9fa;
-        
-        }
-        
-            content: '';
-        
-        
-        
-            position: absolute;
-        
-        
-        
-            top: -20px;
-        
-        
-        
-            left: -10px;
-        
-        
-        
-            right: -10px;
-        
-        
-        
-            height: 28px;
-        
-        
-        
-            background: transparent;
-        
-        
-        
-        }
-        
-        
-        
+        footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5rem; }
+        .footer-sns { display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap; margin-bottom:1rem; }
+        .footer-sns a { color:rgba(255,255,255,0.85); font-size:0.9rem; transition:color 0.2s; }
+        .footer-sns a:hover { color:#fff; }
+        .footer-copy { font-size:0.83rem; color:rgba(255,255,255,0.5); }
 
-        }
-        
-        
-        
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-            flex-shrink: 0;
-        }
-        
-        .menu-toggle span {
-            width: 25px;
-            height: 3px;
-            background: white;
-            border-radius: 3px;
-        }
-        
-        .logo.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-        
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: flex;
-                z-index: 1001;
-            }
-            
-            nav {
-                padding: 0 1rem;
-                flex-wrap: nowrap;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                grid-template-columns: none;
-            }
-            
-            .logo {
-                font-size: 1.5rem;
-                transition: opacity 0.3s ease;
-            }
-            
-            .nav-links {
-                display: none;
-                position: fixed;
-                top: 70px;
-                left: 0;
-                right: 0;
-                background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
-                flex-direction: column;
-                padding: 1rem 0;
-                z-index: 999;
-                max-height: calc(100vh - 70px);
-                overflow-y: auto;
-            }
-            
-            .nav-links.active {
-                display: flex;
-            }
-            
-            .nav-links li {
-                text-align: center;
-                padding: 0.8rem 0;
-            }
-            
-            .dropdown-content {
-                position: static;
-                background: rgba(255,255,255,0.1);
-                margin: 0.5rem 1rem;
-            }
-            
-            .dropdown-content a {
-                color: white;
-            }
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 100px auto 0;
-            padding: 2rem;
-        }
-        
-        .notice-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .notice-header h1 {
-            font-size: 2.5rem;
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        
-        .notice-list {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        
-        .notice-item {
-            padding: 2rem;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        .notice-item:last-child {
-            border-bottom: none;
-        }
-        
-        .notice-date {
-            color: #999;
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .notice-title {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 0.5rem;
-        }
-        
-        .notice-badge {
-            display: inline-block;
-            padding: 0.3rem 0.8rem;
-            background: #4ECDC4;
-            color: white;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-right: 0.5rem;
-        }
-        
-        .empty-notice {
-            text-align: center;
-            padding: 4rem 2rem;
-            color: #999;
+        @media (max-width:768px) {
+            .nav-links { display:none; }
+            .menu-toggle { display:flex; }
+            .nav-links.open { display:flex; flex-direction:column; position:absolute; top:100%; right:1.5rem; background:#fff; border:1px solid var(--line); border-radius:14px; padding:1rem 1.3rem; gap:0.9rem; box-shadow:0 12px 30px rgba(0,0,0,0.1); }
+            .page-hero h1 { font-size:1.8rem; }
+            .notice { padding:1.4rem 1.5rem; }
+            .qr-links { grid-template-columns:1fr; }
         }
     </style>
+<style id="mint-header-override">
+  header{ background:#2bb7ac !important; border-bottom:none !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; }
+  header .logo, header .logo svg, header .nav-links a, header .dropbtn{ color:#ffffff !important; }
+  header .nav-links a:hover, header .dropbtn:hover{ color:#ffffff !important; opacity:0.82 !important; }
+  .menu-toggle span{ background:#ffffff !important; }
+  .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
+  .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
+</style>
 </head>
 <body>
     <header role="banner">
         <nav role="navigation" aria-label="주요 메뉴">
-            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;">📚 박근필성장연구소</a>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="index.html" class="logo"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">홈</a></li>
                 <li><a href="author.html">소장소개</a></li>
-                <li><a href="dokjeoting.html">독저팅™</a></li>
-                <li><a href="vod.html">VOD 강의</a></li>
-                <li><a href="philbook.html">필북</a></li>
                 <li><a href="books.html">저서</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="philbook.html">필북</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
                 <li><a href="phillife.html">필라이프 코칭</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">SNS</a>
-                    <div class="dropdown-content">
-                        <a href="https://litt.ly/tothemoonpark" target="_blank">📚 Litt.ly</a>
-                        <a href="https://blog.naver.com/tothemoon_park" target="_blank">📝 블로그</a>
-                        <a href="https://brunch.co.kr/@tothemoonpark" target="_blank">✍️ 브런치</a>
-                        <a href="https://www.youtube.com/@tothemoonpark" target="_blank">🎥 유튜브</a>
-                        <a href="https://www.instagram.com/tothemoon_park/" target="_blank">📷 인스타그램</a>
-                        <a href="https://www.threads.com/@tothemoon_park" target="_blank">🧵 스레드</a>
-                        <a href="https://x.com/Tothemoon_Park" target="_blank">🐦 X (트위터)</a>
-                    </div>
-                </li>
-                <li><a href="index.html#contact">상담신청</a></li>
                 <li><a href="notice.html">공지사항</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="notice-header">
-            <h1>📢 공지사항</h1>
+    <main role="main">
+        <section class="page-hero">
+            <span class="eyebrow">Notice</span>
+            <h1>공지사항</h1>
             <p>박근필성장연구소의 새로운 소식을 확인하세요</p>
-        </div>
+        </section>
 
-        <div class="notice-list">
-            <div class="notice-item">
-                <div class="notice-date">2024.11.14</div>
-                <div>
-                    <span class="notice-badge">NEW</span>
-                    <span class="notice-title">1. 필아카데미 웹사이트 오픈!</span>
+        <section class="notices" aria-label="공지 목록">
+            <article class="notice">
+                <div class="notice__top"><span class="badge solid">NEW</span><span class="notice__date">2024.11.14</span></div>
+                <h2 class="notice__title">필아카데미 웹사이트 오픈!</h2>
+                <div class="notice__body">필아카데미의 새로운 웹사이트가 오픈했습니다. 독저팅, 필북, VOD 강의 등 다양한 서비스를 만나보세요.</div>
+            </article>
+
+            <article class="notice">
+                <div class="notice__top"><span class="badge line">HOT</span><span class="notice__date">2024.11.14</span></div>
+                <h2 class="notice__title">박근필 소장의 커뮤니티</h2>
+                <div class="notice__body">
+                    <p>박근필 소장와의 동반 성장 단톡방</p>
+                    <p>🔑 단톡방 입장코드(비번)은 <span class="code">2222</span>입니다.</p>
+                    <a href="https://open.kakao.com/o/gLKiGDBg" target="_blank" rel="noopener" class="inline-btn"><i data-lucide="message-circle" aria-hidden="true"></i>카카오톡 오픈채팅 참여하기</a>
                 </div>
-                <p style="margin-top: 1rem; color: #666;">필아카데미의 새로운 웹사이트가 오픈했습니다. 독저팅™, 필북, VOD 강의 등 다양한 서비스를 만나보세요.</p>
-            </div>
+            </article>
+
+            <article class="notice">
+                <div class="notice__top"><span class="badge solid">NEW</span><span class="notice__date">2026.01.25</span></div>
+                <h2 class="notice__title">필아카데미는 『박근필성장연구소』로 새롭게 출발합니다</h2>
+                <div class="notice__body">
+                    <p><strong>필아카데미는 『박근필성장연구소』로 새롭게 출발합니다.</strong><br>이곳은 성장을 원하는 사람들을 위한 공간입니다.</p>
+                    <div class="note-box">
+                        <p>- 한 권의 책을 쓰는 여정,</p>
+                        <p>- 나만의 목소리를 찾는 말하기 훈련,</p>
+                        <p>- 습관을 바꾸고 삶을 리셋하는 프로젝트,</p>
+                        <p>- 커리어를 다시 설계하는 작지만 큰 전환들...</p>
+                    </div>
+                    <p>그 모든 과정을 <strong>"함께 설계하고, 촉진하고, 성장하는 공간"</strong>으로 만들고자 합니다.</p>
+                    <p style="margin-top:1rem;">필북, 필레터, 필라이프 코칭, 피플인사이트, 독저팅.<br>이 모든 프로젝트의 중심에는 늘 <strong>'성장'</strong>이 있었습니다.<br>앞으로도 그 중심은 바뀌지 않습니다.<br>이제 그 철학을 더욱 뚜렷하게, 본질적으로 추구하려 합니다.</p>
+                    <div class="quote-box">
+                        <strong>성장은 기술이 아니라 태도와 습관입니다.</strong>
+                        앞으로도 읽고, 쓰고, 말하는 삶을 통해<br>여러분 안의 성장 가능성을 함께 발견하겠습니다.
+                    </div>
+                    <p class="closing">동반성장합시다!</p>
+                </div>
+            </article>
+
+            <article class="notice">
+                <div class="notice__top"><span class="badge solid">NEW</span><span class="notice__date">2026.02.15</span></div>
+                <h2 class="notice__title">박근필성장연구소 QR코드 안내</h2>
+                <div class="notice__body">
+                    <p style="text-align:center;">박근필 소장의 프로필과 박근필성장연구소 웹사이트를<br>QR코드로 간편하게 접속하세요.</p>
+                    <div class="qr-img"><img src="qrcode.png" alt="박근필 프로필 및 박근필성장연구소 QR코드"></div>
+                    <div class="qr-links">
+                        <div>
+                            <p>박근필 프로필 링크</p>
+                            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">litt.ly/tothemoonpark →</a>
+                        </div>
+                        <div>
+                            <p>박근필성장연구소</p>
+                            <a href="index.html">웹사이트 바로가기 →</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-sns">
             
-            <div class="notice-item" style="cursor: pointer; transition: all 0.3s;" onclick="toggleNotice('community')">
-                <div class="notice-date">2024.11.14</div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <span class="notice-badge" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">HOT</span>
-                        <span class="notice-title">2. 박근필 소장의 커뮤니티</span>
-                    </div>
-                    <span id="arrow-community" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
-                </div>
-                <div id="content-community" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">
-                    <p style="color: #666; margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 500;">박근필 소장와의 동반 성장 단톡방</p>
-                    <p style="color: #e65100; margin-bottom: 1rem; font-size: 1rem; font-weight: 600;">🔑 단톡방 입장코드(비번)은 <strong style="font-size: 1.2rem;">2222</strong>입니다.</p>
-                    <a href="https://open.kakao.com/o/gLKiGDBg" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #FEE500 0%, #FFD700 100%); color: #3c1e1e; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: bold; transition: all 0.3s;">
-                        💬 카카오톡 오픈채팅 참여하기
-                    </a>
-                </div>
-            </div>
-
-            <!-- 3번 공지: 박근필성장연구소 리브랜딩 -->
-            <div style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer; transition: all 0.3s;" onclick="toggleNotice('rebranding')" onmouseover="this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)'" onmouseout="this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'">
-                <div class="notice-date">2026.01.25</div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <span class="notice-badge" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);">NEW</span>
-                        <span class="notice-title">3. 필아카데미는『박근필성장연구소』로 새롭게 출발합니다</span>
-                    </div>
-                    <span id="arrow-rebranding" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
-                </div>
-                <div id="content-rebranding" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;">
-                    <div style="line-height: 1.9; color: #2c3e50;">
-                        <p style="font-size: 1.15rem; font-weight: bold; color: #4ECDC4; margin-bottom: 1.5rem;">
-                            필아카데미는『박근필성장연구소』로 새롭게 출발합니다.<br>
-                            이곳은 성장을 원하는 사람들을 위한 공간입니다.
-                        </p>
-
-                        <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; border-left: 4px solid #4ECDC4;">
-                            <p style="margin-bottom: 0.5rem; color: #555;">- 한 권의 책을 쓰는 여정,</p>
-                            <p style="margin-bottom: 0.5rem; color: #555;">- 나만의 목소리를 찾는 말하기 훈련,</p>
-                            <p style="margin-bottom: 0.5rem; color: #555;">- 습관을 바꾸고 삶을 리셋하는 프로젝트,</p>
-                            <p style="margin-bottom: 0.5rem; color: #555;">- 커리어를 다시 설계하는 작지만 큰 전환들...</p>
-                        </div>
-
-                        <p style="margin-bottom: 1.2rem;">
-                            그 모든 과정을 <strong style="color: #4ECDC4;">"함께 설계하고, 촉진하고, 성장하는 공간"</strong>으로 만들고자 합니다.
-                        </p>
-
-                        <p style="margin-bottom: 1.2rem;">
-                            필북, 필레터, 필라이프 코칭, 피플인사이트, 독저팅.<br>
-                            이 모든 프로젝트의 중심에는 늘 <strong style="color: #4ECDC4;">'성장'</strong>이 있었습니다.<br>
-                            앞으로도 그 중심은 바뀌지 않습니다.<br>
-                            이제 그 철학을 더욱 뚜렷하게, 본질적으로 추구하려 합니다.
-                        </p>
-
-                        <div style="background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; text-align: center;">
-                            <p style="font-size: 1.1rem; font-weight: bold; color: #2c3e50; margin-bottom: 0.8rem;">
-                                성장은 기술이 아니라 태도와 습관입니다.
-                            </p>
-                            <p style="color: #555;">
-                                앞으로도 읽고, 쓰고, 말하는 삶을 통해<br>
-                                여러분 안의 성장 가능성을 함께 발견하겠습니다.
-                            </p>
-                        </div>
-
-                        <p style="text-align: center; font-size: 1.2rem; font-weight: bold; color: #4ECDC4; margin-top: 1.5rem;">
-                            동반성장합시다!
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4번 공지: QR코드 안내 -->
-            <div style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); cursor: pointer; transition: all 0.3s;" onclick="toggleNotice('qrcode')" onmouseover="this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)'" onmouseout="this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'">
-                <div class="notice-date">2026.02.15</div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <span class="notice-badge" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);">NEW</span>
-                        <span class="notice-title">4. 박근필성장연구소 QR코드 안내</span>
-                    </div>
-                    <span id="arrow-qrcode" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
-                </div>
-                <div id="content-qrcode" style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #e0e0e0;">
-                    <div style="line-height: 1.9; color: #2c3e50;">
-                        <p style="font-size: 1.1rem; margin-bottom: 2rem; text-align: center; color: #555;">
-                            박근필 소장의 프로필과 박근필성장연구소 웹사이트를<br>
-                            QR코드로 간편하게 접속하세요.
-                        </p>
-
-                        <!-- QR코드 이미지 -->
-                        <div style="background: #f8f9fa; padding: 2.5rem; border-radius: 15px; margin: 1.5rem 0; text-align: center;">
-                            <img src="qrcode.png" alt="박근필 프로필 및 박근필성장연구소 QR코드" style="width: 100%; max-width: 600px; display: block; margin: 0 auto; border-radius: 10px;">
-                        </div>
-
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
-                            <div style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); padding: 1.5rem; border-radius: 12px; text-align: center; color: white;">
-                                <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.8rem;">박근필 프로필 링크</p>
-                                <a href="https://litt.ly/tothemoonpark" target="_blank" style="color: #fff; text-decoration: underline; font-size: 0.95rem;">litt.ly/tothemoonpark →</a>
-                            </div>
-                            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1.5rem; border-radius: 12px; text-align: center; color: white;">
-                                <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.8rem;">박근필성장연구소</p>
-                                <a href="index.html" style="color: #fff; text-decoration: underline; font-size: 0.95rem;">웹사이트 바로가기 →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+           <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
         </div>
-    </div>
-
-    <footer role="contentinfo" style="background: #2c3e50; color: white; padding: 3rem 0; margin-top: 5rem;">
-        <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">
-            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
-                <a href="https://litt.ly/tothemoonpark" target="_blank" style="color: white; text-decoration: none;">Litt.ly</a>
-                <a href="index.html" style="color: white; text-decoration: none;">홈</a>
-                <a href="index.html#author" style="color: white; text-decoration: none;">소장소개</a>
-                <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅™</a>
-                <a href="index.html#vod" style="color: white; text-decoration: none;">VOD 강의</a>
-                <a href="index.html#philbook" style="color: white; text-decoration: none;">필북</a>
-                <a href="index.html#books" style="color: white; text-decoration: none;">저서</a>
-                <a href="index.html#newsletter" style="color: white; text-decoration: none;">필레터</a>
-                <a href="index.html#phillife" style="color: white; text-decoration: none;">필라이프 코칭</a>
-                <a href="index.html#contact" style="color: white; text-decoration: none;">상담신청</a>
-                <a href="notice.html" style="color: white; text-decoration: none;">공지사항</a>
-            </div>
-            <p>&copy; 2024 박근필성장연구소 by 박근필. All rights reserved.</p>
-            <p style="margin-top: 1rem; opacity: 0.8;">여러분의 읽고 쓰고 말하는 삶을 응원합니다</p>
-        </div>
+        <div class="footer-copy">© 2024 박근필성장연구소 by 박근필. All rights reserved.<br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
     </footer>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        function toggleNotice(id) {
-            const content = document.getElementById('content-' + id);
-            const arrow = document.getElementById('arrow-' + id);
-            
-            if (content.style.display === 'none') {
-                content.style.display = 'block';
-                arrow.textContent = '▲';
-            } else {
-                content.style.display = 'none';
-                arrow.textContent = '▼';
-            }
-        }
-        
+        if (window.lucide) { lucide.createIcons(); }
         function toggleMenu() {
-            const navLinks = document.getElementById("navLinks");
-            const logo = document.querySelector(".logo");
-            navLinks.classList.toggle("active");
-            if (navLinks.classList.contains("active")) {
-                logo.classList.add("hidden");
-            } else {
-                logo.classList.remove("hidden");
-            }
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
         }
-        
-        window.addEventListener("load", function() {
-            const navLinks = document.getElementById("navLinks");
-            const logo = document.querySelector(".logo");
-            if (navLinks) navLinks.classList.remove("active");
-            if (logo) logo.classList.remove("hidden");
-        });
     </script>
 </body>
 </html>

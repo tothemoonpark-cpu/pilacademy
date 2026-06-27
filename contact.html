@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상담 신청 - 박근필성장연구소</title>
+    <meta name="description" content="박근필성장연구소 상담 신청. 독저팅, VOD 특강, 필북, 필레터, 필라이프 코칭, 강연/협업 문의를 남겨주세요.">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --ink:#16181d; --sub:#5b6066; --mint:#2bb7ac; --mint-dark:#1f9d93; --mint-soft:#eef8f6; --line:#ececec; --page:#ffffff; }
+        body { font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.65; color:var(--ink); background:var(--page); -webkit-font-smoothing:antialiased; }
+        a { text-decoration:none; color:inherit; }
+
+        header { background:#2bb7ac; box-shadow:0 2px 12px rgba(0,0,0,0.07); position:sticky; top:0; z-index:1000; }
+        nav { max-width:1140px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.5rem; }
+        .logo { display:flex; align-items:center; gap:0.45rem; font-size:1.18rem; font-weight:700; color:#fff; letter-spacing:-0.02em; }
+        .logo svg { width:22px; height:22px; color:#fff; }
+        .nav-links { display:flex; gap:1.4rem; list-style:none; align-items:center; flex-wrap:wrap; }
+        .nav-links a { color:#fff; font-weight:500; font-size:0.9rem; transition:opacity 0.2s; }
+        .nav-links a:hover { opacity:0.82; }
+        .menu-toggle { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; }
+        .menu-toggle span { width:24px; height:2px; background:#fff; border-radius:2px; }
+
+        .page-hero { text-align:center; padding:4rem 1.5rem 1.5rem; }
+        .page-hero .hero-icon { width:56px; height:56px; border-radius:14px; background:var(--mint-soft); color:var(--mint-dark); display:flex; align-items:center; justify-content:center; margin:0 auto 1.2rem; }
+        .page-hero .hero-icon svg { width:28px; height:28px; }
+        .page-hero h1 { font-size:2.1rem; font-weight:700; letter-spacing:-0.03em; margin-bottom:0.5rem; }
+        .page-hero p { color:var(--sub); font-size:1.02rem; }
+
+        .wrap { max-width:600px; margin:0 auto; padding:2.5rem 1.5rem 3.5rem; }
+        .contact-form { background:var(--page); border:1px solid var(--line); padding:2.5rem; border-radius:18px; }
+        .form-group { margin-bottom:1.4rem; }
+        .form-group label { display:block; margin-bottom:0.5rem; font-weight:500; font-size:0.92rem; color:var(--ink); }
+        .form-group input, .form-group textarea, .form-group select {
+            width:100%; padding:0.9rem 1rem; border:1px solid #dcdcdc; border-radius:10px; font-size:1rem;
+            font-family:inherit; color:var(--ink); transition:border-color 0.2s, box-shadow 0.2s; background:#fff;
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            outline:none; border-color:var(--mint); box-shadow:0 0 0 3px rgba(43,183,172,0.15);
+        }
+        .form-group textarea { resize:vertical; min-height:140px; }
+        .submit-button {
+            width:100%; background:var(--mint); color:#fff; padding:1.05rem; border:none; border-radius:12px;
+            font-size:1.05rem; font-weight:700; cursor:pointer; transition:background 0.2s;
+        }
+        .submit-button:hover { background:var(--mint-dark); }
+
+        .back-link { display:flex; justify-content:center; margin-top:2rem; }
+        .back-link a { display:flex; align-items:center; gap:0.4rem; font-size:0.92rem; font-weight:500; color:var(--sub); border:1px solid var(--line); background:#fff; padding:0.65rem 1.4rem; border-radius:50px; }
+        .back-link a:hover { border-color:#d7eeeb; color:var(--mint-dark); }
+        .back-link svg { width:16px; height:16px; }
+
+        footer { background:#14161a; color:#fff; text-align:center; padding:2.4rem 1.5rem; }
+        .footer-sns { display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap; margin-bottom:1rem; }
+        .footer-sns a { color:rgba(255,255,255,0.85); font-size:0.9rem; }
+        .footer-sns a:hover { color:var(--mint); }
+        .footer-copy { font-size:0.83rem; color:rgba(255,255,255,0.5); line-height:1.8; }
+
+        @media (max-width:768px) {
+            .nav-links { display:none; }
+            .menu-toggle { display:flex; }
+            .nav-links.open { display:flex; flex-direction:column; position:absolute; top:100%; right:1.5rem; background:#2bb7ac; border-radius:14px; padding:1rem 1.3rem; gap:0.9rem; box-shadow:0 12px 30px rgba(0,0,0,0.15); }
+            .page-hero h1 { font-size:1.6rem; }
+            .contact-form { padding:1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="author.html">소장소개</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="phillife.html">필라이프 코칭</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="page-hero">
+            <div class="hero-icon"><i data-lucide="send" aria-hidden="true"></i></div>
+            <h1>상담 신청</h1>
+            <p>궁금하신 점을 남겨주시면 정성껏 답변드리겠습니다</p>
+        </section>
+
+        <div class="wrap">
+            <div class="contact-form">
+                <form id="consultForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="065b78d5-e112-4569-97f6-9f536177f948">
+                    <input type="hidden" name="subject" value="[박근필성장연구소] 새로운 상담 신청">
+                    <input type="hidden" name="from_name" value="박근필성장연구소 홈페이지">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                    <div class="form-group">
+                        <label for="name">이름 *</label>
+                        <input type="text" id="name" name="이름" required placeholder="홍길동">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일 *</label>
+                        <input type="email" id="email" name="이메일" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">연락처 *</label>
+                        <input type="tel" id="phone" name="연락처" required placeholder="010-0000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">신청 서비스 *</label>
+                        <select id="service" name="신청_서비스" required>
+                            <option value="">선택해주세요</option>
+                            <option value="독저팅">독저팅</option>
+                            <option value="VOD강연">VOD 특강</option>
+                            <option value="필북">필북</option>
+                            <option value="필레터">필레터</option>
+                            <option value="필라이프 코칭">필라이프 코칭</option>
+                            <option value="강연/협업">강연/협업</option>
+                            <option value="기타">기타 문의</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">문의 내용</label>
+                        <textarea id="message" name="문의_내용" placeholder="궁금하신 내용이나 현재 상황을 자유롭게 작성해주세요."></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">상담 신청하기</button>
+                </form>
+            </div>
+            <div class="back-link"><a href="index.html"><i data-lucide="arrow-left" aria-hidden="true"></i>홈으로 돌아가기</a></div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-sns">
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+            <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024 박근필성장연구소 by 박근필. All rights reserved.<br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+    </script>
+</body>
+</html>
