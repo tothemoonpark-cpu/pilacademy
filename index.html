@@ -44,13 +44,27 @@
         .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
         .menu-toggle span { width: 24px; height: 2px; background: #ffffff; border-radius: 2px; }
 
-        .hero { text-align: center; padding: 4.5rem 1.5rem 2.5rem; background: var(--page); }
-        .hero .eyebrow { display: inline-block; font-size: 0.82rem; font-weight: 500; color: var(--mint-dark); background: var(--mint-soft); padding: 0.35rem 0.9rem; border-radius: 50px; margin-bottom: 1.3rem; }
+        .hero { text-align: center; padding: 4rem 1.5rem 2.5rem; background: var(--page); }
+        .hero-photo { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; object-position: center 22%; border: 3px solid #fff; box-shadow: 0 6px 22px rgba(0,0,0,0.12); margin-bottom: 1.3rem; }
+        .hero .eyebrow { display: inline-block; font-size: 0.82rem; font-weight: 500; color: var(--mint-dark); background: var(--mint-soft); padding: 0.35rem 0.9rem; border-radius: 50px; margin-bottom: 1rem; }
         .hero h1 { font-size: 2.4rem; font-weight: 700; color: var(--ink); letter-spacing: -0.03em; line-height: 1.3; margin-bottom: 1rem; }
         .hero h1 .accent { color: var(--mint); }
-        .hero p { font-size: 1.08rem; color: var(--sub); max-width: 620px; margin: 0 auto; }
+        .hero p { font-size: 1.06rem; color: var(--sub); max-width: 600px; margin: 0 auto; }
 
-        .hub { max-width: 1140px; margin: 0 auto; padding: 1.5rem 1.5rem 3rem; }
+        .hero-stats { display: flex; justify-content: center; align-items: stretch; gap: 0; margin: 1.8rem auto 0; flex-wrap: wrap; }
+        .hero-stats .stat { padding: 0 1.6rem; text-align: center; }
+        .hero-stats .stat + .stat { border-left: 1px solid var(--line); }
+        .hero-stats .num { font-size: 1.5rem; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; }
+        .hero-stats .lab { font-size: 0.8rem; color: var(--sub); margin-top: 0.2rem; }
+
+        .hero-cta { display: flex; justify-content: center; gap: 0.7rem; margin-top: 1.9rem; flex-wrap: wrap; }
+        .btn-primary { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--mint); color: #fff; font-weight: 700; font-size: 1rem; padding: 0.85rem 1.7rem; border-radius: 12px; transition: background 0.2s, transform 0.2s; }
+        .btn-primary:hover { background: var(--mint-dark); transform: translateY(-2px); }
+        .btn-ghost { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--ink); border: 1px solid var(--line); font-weight: 500; font-size: 1rem; padding: 0.85rem 1.5rem; border-radius: 12px; transition: border-color 0.2s; }
+        .btn-ghost:hover { border-color: var(--mint); color: var(--mint-dark); }
+        .btn-primary svg, .btn-ghost svg { width: 17px; height: 17px; }
+
+        .hub { max-width: 1140px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
         .tile-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
         .tile { display: flex; flex-direction: column; background: var(--page); border: 1px solid var(--line); border-radius: 16px; padding: 1.5rem 1.35rem; min-height: 200px; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
         .tile:hover { transform: translateY(-4px); border-color: #d7eeeb; box-shadow: 0 10px 24px rgba(43, 183, 172, 0.12); }
@@ -79,8 +93,9 @@
             .nav-links { display: none; }
             .menu-toggle { display: flex; }
             .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; right: 1.5rem; background: #2bb7ac; border-radius: 14px; padding: 1rem 1.3rem; gap: 0.9rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
-            .hero { padding: 3rem 1.5rem 2rem; }
+            .hero { padding: 2.8rem 1.5rem 2rem; }
             .hero h1 { font-size: 1.8rem; }
+            .hero-stats .stat { padding: 0 1.1rem; }
         }
         @media (max-width: 480px) { .tile-grid { grid-template-columns: 1fr; } }
     </style>
@@ -108,9 +123,19 @@
 
     <main role="main">
         <section class="hero">
+            <img class="hero-photo" src="author-hero.png" alt="박근필 소장">
             <span class="eyebrow">그로쓰 퍼실리테이터 박근필</span>
             <h1>읽고 쓰고 말하는 삶으로<br><span class="accent">당신의 성장</span>을 돕습니다</h1>
             <p>수의사에서 그로쓰 퍼실리테이터로 변신한 박근필 소장의 원스톱 플랫폼</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="num">4권</div><div class="lab">저서</div></div>
+                <div class="stat"><div class="num">1위</div><div class="lab">교보문고 베스트셀러</div></div>
+                <div class="stat"><div class="num">2.6만</div><div class="lab">SNS 팔로워</div></div>
+            </div>
+            <div class="hero-cta">
+                <a class="btn-primary" href="contact.html"><i data-lucide="send" aria-hidden="true"></i>상담·문의하기</a>
+                <a class="btn-ghost" href="author.html">소장 소개 <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+            </div>
         </section>
 
         <section class="hub" aria-label="콘텐츠 바로가기">
@@ -136,7 +161,7 @@
                 <a class="tile" href="dokjeoting.html">
                     <div class="tile-icon"><i data-lucide="clipboard-pen" aria-hidden="true"></i></div>
                     <div class="tile-title">독저팅</div>
-                    <div class="tile-desc">1:1 책쓰기 기획 컨설팅, 출판 계약 성공까지</div>
+                    <div class="tile-desc">출판 계약까지 가는 1:1 책쓰기 기획 컨설팅</div>
                     <div class="tile-go">바로가기 <i data-lucide="arrow-right" aria-hidden="true"></i></div>
                 </a>
                 <a class="tile" href="people-insight.html">
@@ -180,7 +205,6 @@
 
         <div class="sub-links">
             <a href="notice.html"><i data-lucide="bell" aria-hidden="true"></i>공지사항</a>
-            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener"><i data-lucide="link" aria-hidden="true"></i>전체 링크 모음</a>
         </div>
     </main>
 
