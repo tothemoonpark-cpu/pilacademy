@@ -43,8 +43,8 @@
         }
         
         header {
-            background: #f6f8f8;
-            color: #16181d;
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
             padding: 1rem 0;
             position: fixed;
             width: 100%;
@@ -71,7 +71,7 @@
         }
         
         .nav-links a {
-            color: #16181d;
+            color: white;
             text-decoration: none;
             font-weight: 500;
             transition: opacity 0.3s;
@@ -93,7 +93,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #16181d;
+            background-color: white;
             min-width: 180px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             border-radius: 8px;
@@ -114,7 +114,7 @@
         }
         
         .dropdown-content a {
-            color: #16181d;
+            color: #2c3e50;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -151,7 +151,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #16181d;
+            background-color: white;
             min-width: 180px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             border-radius: 8px;
@@ -172,7 +172,7 @@
         }
         
         .dropdown-content a {
-            color: #16181d;
+            color: #2c3e50;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -209,7 +209,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #16181d;
+            background-color: white;
             min-width: 180px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             border-radius: 8px;
@@ -230,7 +230,7 @@
         }
         
         .dropdown-content a {
-            color: #16181d;
+            color: #2c3e50;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -355,7 +355,7 @@
                 top: 70px;
                 left: 0;
                 right: 0;
-                background: #f6f8f8;
+                background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
                 flex-direction: column;
                 padding: 1rem 0;
                 box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -377,13 +377,13 @@
             .dropdown-content {
                 position: static;
                 box-shadow: none;
-                background:#f7f9f9; border:1px solid #ececec;
+                background: rgba(255,255,255,0.1);
                 margin: 0.5rem 1rem;
                 top: 0;
             }
             
             .dropdown-content a {
-                color: #16181d;
+                color: white;
             }
         }
         
@@ -405,36 +405,11 @@
             }
         }
     </style>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-<style id="renew-override">body{ -webkit-font-smoothing:antialiased; }
-  header{ background:#ffffff !important; border-bottom:1px solid #ececec !important; box-shadow:0 1px 3px rgba(0,0,0,0.04) !important; }
-  header .logo, header .nav-links a, header .dropbtn{ color:#16181d !important; }
-  header .nav-links a:hover, header .dropbtn:hover{ color:#16181d !important; opacity:1 !important; }
-  .menu-toggle span{ background:#16181d !important; }
-  .dropdown-content{ box-shadow:0 8px 24px rgba(0,0,0,0.08) !important; border:1px solid #ececec !important; }
-  .dropdown-content a{ color:#16181d !important; }
-  .dropdown-content a:hover{ background:#f6f8f8 !important; color:#16181d !important; }
-  .cta-button,.submit-button,.vod-button,.payment-submit,.vod-detail-buy-button,.vod-detail-buy,.buy-button,.notice-badge{ background:#16181d !important; color:#fff !important; box-shadow:none !important; }
-  .cta-button:hover,.submit-button:hover,.vod-button:hover,.payment-submit:hover{ background:#16181d !important; box-shadow:0 6px 16px rgba(43,183,172,0.25) !important; }
-  .section-title{ color:#16181d !important; }
-  .section-title::after{ background:#16181d !important; }
-  footer{ background:#14161a !important; }
-  .footer-links a:hover{ color:#16181d !important; }
-</style>
-<style id="mint-header-override">header{ background:#2bb7ac !important; border-bottom:none !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; }
-  header .logo, header .logo svg, header .nav-links a, header .dropbtn{ color:#ffffff !important; }
-  header .nav-links a:hover, header .dropbtn:hover{ color:#ffffff !important; opacity:0.82 !important; }
-  .menu-toggle span{ background:#ffffff !important; }
-  .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
-  .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
-</style>
 </head>
 <body>
     <header role="banner">
         <nav role="navigation" aria-label="주요 메뉴">
-            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;" aria-label="박근필성장연구소 홈으로 이동">박근필성장연구소</a>
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;" aria-label="박근필성장연구소 홈으로 이동">📚 박근필성장연구소</a>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="모바일 메뉴 열기" aria-expanded="false" aria-controls="navLinks">
                 <span></span>
                 <span></span>
@@ -445,7 +420,7 @@
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
-                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="dokjeoting.html">독저팅™</a></li>
                 <li><a href="people-insight.html">피플인사이트</a></li>
                 <li><a href="philbook.html">필북</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
@@ -453,16 +428,16 @@
                 <li class="dropdown">
                     <a href="#" class="dropbtn">SNS</a>
                     <div class="dropdown-content">
-                        <a href="https://litt.ly/tothemoonpark" target="_blank">Litt.ly</a>
-                        <a href="https://blog.naver.com/tothemoon_park" target="_blank">블로그</a>
-                        <a href="https://brunch.co.kr/@tothemoonpark" target="_blank">브런치</a>
-                        <a href="https://www.youtube.com/@tothemoonpark" target="_blank">유튜브</a>
-                        <a href="https://www.instagram.com/tothemoon_park/" target="_blank">인스타그램</a>
-                        <a href="https://www.threads.com/@tothemoon_park" target="_blank">스레드</a>
-                        <a href="https://x.com/Tothemoon_Park" target="_blank">X (트위터)</a>
+                        <a href="https://litt.ly/tothemoonpark" target="_blank">📚 Litt.ly</a>
+                        <a href="https://blog.naver.com/tothemoon_park" target="_blank">📝 블로그</a>
+                        <a href="https://brunch.co.kr/@tothemoonpark" target="_blank">✍️ 브런치</a>
+                        <a href="https://www.youtube.com/@tothemoonpark" target="_blank">🎥 유튜브</a>
+                        <a href="https://www.instagram.com/tothemoon_park/" target="_blank">📷 인스타그램</a>
+                        <a href="https://www.threads.com/@tothemoon_park" target="_blank">🧵 스레드</a>
+                        <a href="https://x.com/Tothemoon_Park" target="_blank">🐦 X (트위터)</a>
                     </div>
                 </li>
-                <li><a href="contact.html">상담신청</a></li>
+                <li><a href="index.html#contact">상담신청</a></li>
                 <li><a href="notice.html">공지사항</a></li>
             </ul>
         </nav>
@@ -473,75 +448,86 @@
     <main role="main">
     <div style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;">
         <div>
-            <h1 style="font-size: 2rem; margin-bottom: 2rem; color: #16181d;">박근필 소장</h1>
+            <h1 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50;">✍️ 박근필 소장</h1>
             
             <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
                 <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail1')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="font-size: 1.3rem; color: #16181d;">1. 박근필 소장 이력</h3>
-                        <span id="arrow1" style="font-size: 1.5rem; color: #16181d;">▼</span>
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">1. 박근필 소장 이력</h3>
+                        <span id="arrow1" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
                     </div>
                 </div>
                 
                 <div id="detail1" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
                     <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
-                        <h3 style="font-size: 1.5rem; color: #16181d; margin-bottom: 1rem;">수의사에서 그로쓰 퍼실리테이터로</h3>
+                        <h3 style="font-size: 1.5rem; color: #4ECDC4; margin-bottom: 1rem;">수의사에서 그로쓰 퍼실리테이터로</h3>
                 
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #16181d;">20년 가까이 임상 수의사로 살다가, 40대에 인생을 리셋했습니다. 현재는 베스트셀러 작가이자 칼럼니스트, 강연가, 커리어 스토리텔러로 활동하고 있습니다.
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #2c3e50;">
+                            20년 가까이 임상 수의사로 살다가, 40대에 인생을 리셋했습니다. 현재는 베스트셀러 작가이자 칼럼니스트, 강연가, 커리어 스토리텔러로 활동하고 있습니다.
                         </p>
                         
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #16181d;">저서로는 『할퀴고 물려도 나는 수의사니까』 (2023), 『나는 매일 두 번 출근합니다』 (2024), 『마흔 더 늦기 전에 생각의 틀을 리셋하라』 (2025), 『방구석에서 혼자 읽는 직업 토크쇼(공저)』 (2025)가 있습니다.<br>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #2c3e50;">
+                            저서로는 『할퀴고 물려도 나는 수의사니까』 (2023), 『나는 매일 두 번 출근합니다』 (2024), 『마흔 더 늦기 전에 생각의 틀을 리셋하라』 (2025), 『방구석에서 혼자 읽는 직업 토크쇼(공저)』 (2025)가 있습니다.<br>
                             『마흔 더 늦기 전에 생각의 틀을 리셋하라』는 교보문고 온라인 일간 베스트셀러 1위에 올랐고, 많은 분들에게 위로와 긍정적인 자극을 주었습니다.
                         </p>
                         
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #16181d;">1:1 책쓰기 기획 컨설팅 '독저팅'은 '책 쓰기는 80% 기획, 20% 집필'이라는 철학을 전파하며, 출판 계약에 성공하는 책쓰기 노하우를 알려드립니다.
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #2c3e50;">
+                            1:1 책쓰기 기획 컨설팅 '독저팅'은 '책 쓰기는 80% 기획, 20% 집필'이라는 철학을 전파하며, 출판 계약에 성공하는 책쓰기 노하우를 알려드립니다.
                         </p>
                         
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #16181d;">동반성장 북클럽(독서모임) '필북'을 운영 중이며, 회원들의 변화와 성장을 돕고 있습니다.
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #2c3e50;">
+                            동반성장 북클럽(독서모임) '필북'을 운영 중이며, 회원들의 변화와 성장을 돕고 있습니다.
                         </p>
                         
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: #16181d;">부산 시청에서 200여명 대상으로 강연하며 강연가로도 왕성하게 활동 중입니다.
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: #2c3e50;">
+                            부산 시청에서 200여명 대상으로 강연하며 강연가로도 왕성하게 활동 중입니다.
                         </p>
                         
                         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem;">
-                            <div style="padding: 1.2rem; background:#f6f8f8; border:1px solid #d7eeeb; border-radius:14px; color:#16181d; text-align:center;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem;"></div>
+                            <div style="padding: 1.2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white; text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">📖</div>
                                 <div style="font-size: 1.1rem; font-weight: 600;">저서 4권</div>
                             </div>
-                            <div style="padding: 1.2rem; background:#f6f8f8; border:1px solid #d7eeeb; border-radius:14px; color:#16181d; text-align:center;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem;"></div>
+                            <div style="padding: 1.2rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 15px; color: white; text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏆</div>
                                 <div style="font-size: 1.1rem; font-weight: 600;">교보문고 베스트셀러 1위</div>
                             </div>
-                            <div style="padding: 1.2rem; background:#f6f8f8; border:1px solid #d7eeeb; border-radius:14px; color:#16181d; text-align:center;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem;"></div>
-                                <div style="font-size: 1.1rem; font-weight: 600;">SNS 팔로워 약 2.6만 명</div>
+                            <div style="padding: 1.2rem; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 15px; color: white; text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">👥</div>
+                                <div style="font-size: 1.1rem; font-weight: 600;">SNS 팔로워 약 2.5만 명</div>
                             </div>
-                            <div style="padding: 1.2rem; background:#f6f8f8; border:1px solid #d7eeeb; border-radius:14px; color:#16181d; text-align:center;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem;"></div>
+                            <div style="padding: 1.2rem; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); border-radius: 15px; color: white; text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
                                 <div style="font-size: 1.1rem; font-weight: 600;">독서, 책쓰기 전문가</div>
                             </div>
                         </div>
 
-                        <h3 style="font-size: 1.3rem; margin: 2rem 0 1rem; color: #16181d;">SNS 팔로우</h3>
+                        <h3 style="font-size: 1.3rem; margin: 2rem 0 1rem; color: #2c3e50;">📱 SNS 팔로우</h3>
                         <div style="display: flex; flex-direction: column; gap: 0.8rem;">
-                            <a href="https://blog.naver.com/tothemoon_park" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background:#f7f9f9; border:1px solid #ececec; border-radius: 10px; text-decoration: none; color: #16181d; font-weight: 600; transition: all 0.3s;">네이버 블로그
+                            <a href="https://blog.naver.com/tothemoon_park" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(3, 199, 90, 0.1); border-radius: 10px; text-decoration: none; color: #03C75A; font-weight: 600; transition: all 0.3s;">
+                                📝 네이버 블로그
                             </a>
-                            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background:#f7f9f9; border:1px solid #ececec; border-radius: 10px; text-decoration: none; color: #16181d; font-weight: 600; transition: all 0.3s;">브런치
+                            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(255, 107, 53, 0.1); border-radius: 10px; text-decoration: none; color: #FF6B35; font-weight: 600; transition: all 0.3s;">
+                                ✍️ 브런치
                             </a>
-                            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background:#f7f9f9; border:1px solid #ececec; border-radius: 10px; text-decoration: none; color: #16181d; font-weight: 600; transition: all 0.3s;">유튜브
+                            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(255, 0, 0, 0.1); border-radius: 10px; text-decoration: none; color: #FF0000; font-weight: 600; transition: all 0.3s;">
+                                🎥 유튜브
                             </a>
-                            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background:#f7f9f9; border:1px solid #ececec; border-radius: 10px; text-decoration: none; color: #16181d; font-weight: 600; transition: all 0.3s;">인스타그램
+                            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(225, 48, 108, 0.1); border-radius: 10px; text-decoration: none; color: #E1306C; font-weight: 600; transition: all 0.3s;">
+                                📷 인스타그램
                             </a>
-                            <a href="https://www.threads.com/@tothemoon_park" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background:#f7f9f9; border:1px solid #ececec; border-radius: 10px; text-decoration: none; color: #000000; font-weight: 600; transition: all 0.3s;">스레드
+                            <a href="https://www.threads.com/@tothemoon_park" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(0, 0, 0, 0.05); border-radius: 10px; text-decoration: none; color: #000000; font-weight: 600; transition: all 0.3s;">
+                                🧵 스레드
                             </a>
-                            <a href="https://x.com/Tothemoon_Park" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background:#f7f9f9; border:1px solid #ececec; border-radius: 10px; text-decoration: none; color: #000000; font-weight: 600; transition: all 0.3s;">X (트위터)
+                            <a href="https://x.com/Tothemoon_Park" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(0, 0, 0, 0.05); border-radius: 10px; text-decoration: none; color: #000000; font-weight: 600; transition: all 0.3s;">
+                                🐦 X (트위터)
                             </a>
                         </div>
                     </div>
                     
                     <!-- 프로필 사진 섹션 -->
                     <div style="margin-top: 4rem; text-align: center;">
-                        <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #16181d;">프로필</h3>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #2c3e50;">📸 프로필</h3>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
                             <div style="overflow: hidden; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.15); background: #f5f5f5;">
                                 <img src="author-profile0.png" alt="박근필 소장 프로필 - 수의사 가운" style="width: 100%; height: auto; display: block;">
@@ -563,14 +549,14 @@
 
                     <!-- 대표 영상 -->
                     <div style="margin-top: 3rem;">
-                        <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #16181d;">대표 영상</h3>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #2c3e50;">🎬 대표 영상</h3>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
                             <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                                 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
                                     <iframe src="https://www.youtube.com/embed/2fe0JvvrvbU" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div style="padding: 1rem; background: #f8f9fa;">
-                                    <p style="font-size: 0.95rem; color: #16181d; font-weight: bold; margin: 0;">수의사에서 글을 쓰는 작가까지 I 이 책을 쓴 사람(온닥터tv)</p>
+                                    <p style="font-size: 0.95rem; color: #2c3e50; font-weight: bold; margin: 0;">수의사에서 글을 쓰는 작가까지 I 이 책을 쓴 사람(온닥터tv)</p>
                                 </div>
                             </div>
                             <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
@@ -578,7 +564,7 @@
                                     <iframe src="https://www.youtube.com/embed/yXY0kf-uTdw" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div style="padding: 1rem; background: #f8f9fa;">
-                                    <p style="font-size: 0.95rem; color: #16181d; font-weight: bold; margin: 0;">부산시청소년자립지원관 진로 특강</p>
+                                    <p style="font-size: 0.95rem; color: #2c3e50; font-weight: bold; margin: 0;">부산시청소년자립지원관 진로 특강</p>
                                 </div>
                             </div>
                             <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
@@ -586,7 +572,7 @@
                                     <iframe src="https://www.youtube.com/embed/hdZun4TPAPY" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div style="padding: 1rem; background: #f8f9fa;">
-                                    <p style="font-size: 0.95rem; color: #16181d; font-weight: bold; margin: 0;">인공지능이 말해주는 박근필</p>
+                                    <p style="font-size: 0.95rem; color: #2c3e50; font-weight: bold; margin: 0;">인공지능이 말해주는 박근필</p>
                                 </div>
                             </div>
                             <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
@@ -594,7 +580,7 @@
                                     <iframe src="https://www.youtube.com/embed/fQn5JxAT9bc" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div style="padding: 1rem; background: #f8f9fa;">
-                                    <p style="font-size: 0.95rem; color: #16181d; font-weight: bold; margin: 0;">여자중학교 550명 진로 특강</p>
+                                    <p style="font-size: 0.95rem; color: #2c3e50; font-weight: bold; margin: 0;">여자중학교 550명 진로 특강</p>
                                 </div>
                             </div>
                             <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
@@ -602,7 +588,7 @@
                                     <iframe src="https://www.youtube.com/embed/AKNnh0UItBU" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div style="padding: 1rem; background: #f8f9fa;">
-                                    <p style="font-size: 0.95rem; color: #16181d; font-weight: bold; margin: 0;">다꿈스쿨 인터뷰 1부</p>
+                                    <p style="font-size: 0.95rem; color: #2c3e50; font-weight: bold; margin: 0;">다꿈스쿨 인터뷰 1부</p>
                                 </div>
                             </div>
                             <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
@@ -610,7 +596,7 @@
                                     <iframe src="https://www.youtube.com/embed/UODkpNrBnDc" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div style="padding: 1rem; background: #f8f9fa;">
-                                    <p style="font-size: 0.95rem; color: #16181d; font-weight: bold; margin: 0;">다꿈스쿨 인터뷰 2부</p>
+                                    <p style="font-size: 0.95rem; color: #2c3e50; font-weight: bold; margin: 0;">다꿈스쿨 인터뷰 2부</p>
                                 </div>
                             </div>
                         </div>
@@ -618,7 +604,7 @@
                     
                     <!-- 강연 및 활동 이력 -->
                     <div style="margin-top: 5rem;">
-                        <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #16181d; text-align: center;">강연 및 활동 이력</h3>
+                        <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50; text-align: center;">🎤 강연 및 활동 이력</h3>
 
 <div id="history-activities"></div>
 
@@ -630,8 +616,8 @@
             <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
                 <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail2')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="font-size: 1.3rem; color: #16181d;">2.  언론 인터뷰 이력</h3>
-                        <span id="arrow2" style="font-size: 1.5rem; color: #16181d;">▼</span>
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">2. 📰 언론 인터뷰 이력</h3>
+                        <span id="arrow2" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
                     </div>
                 </div>
                 <div id="detail2" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
@@ -645,8 +631,8 @@
             <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
                 <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail3')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="font-size: 1.3rem; color: #16181d;">3.  칼럼 연재 이력</h3>
-                        <span id="arrow3" style="font-size: 1.5rem; color: #16181d;">▼</span>
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">3. ✍️ 칼럼 연재 이력</h3>
+                        <span id="arrow3" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
                     </div>
                 </div>
                 
@@ -669,8 +655,8 @@
             <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
                 <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail4')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="font-size: 1.3rem; color: #16181d;">4.  진로·직업 특강</h3>
-                        <span id="arrow4" style="font-size: 1.5rem; color: #16181d;">▼</span>
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">4. 🎤 진로·직업 특강</h3>
+                        <span id="arrow4" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
                     </div>
                 </div>
                 <div id="detail4" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
@@ -688,18 +674,18 @@
 
     </main>
     
-    <footer role="contentinfo" style="background: #16181d; color: white; padding: 3rem 0; margin-top: 5rem;">
+    <footer role="contentinfo" style="background: #2c3e50; color: white; padding: 3rem 0; margin-top: 5rem;">
         <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">
             <div role="navigation" aria-label="푸터 링크" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
                 <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Litt.ly</a>
                 <a href="index.html" style="color: white; text-decoration: none;">홈</a>
-                <a href="author.html" style="color: white; text-decoration: none;">소장소개</a>
-                <a href="dokjeoting.html" style="color: white; text-decoration: none;">독저팅</a>
-                <a href="vod.html" style="color: white; text-decoration: none;">VOD 강의</a>
-                <a href="philbook.html" style="color: white; text-decoration: none;">필북</a>
-                <a href="books.html" style="color: white; text-decoration: none;">저서</a>
-                <a href="newsletter.html" style="color: white; text-decoration: none;">필레터</a>
-                <a href="contact.html" style="color: white; text-decoration: none;">상담신청</a>
+                <a href="index.html#author" style="color: white; text-decoration: none;">소장소개</a>
+                <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅™</a>
+                <a href="index.html#vod" style="color: white; text-decoration: none;">VOD 강의</a>
+                <a href="index.html#philbook" style="color: white; text-decoration: none;">필북</a>
+                <a href="index.html#books" style="color: white; text-decoration: none;">저서</a>
+                <a href="index.html#newsletter" style="color: white; text-decoration: none;">필레터</a>
+                <a href="index.html#contact" style="color: white; text-decoration: none;">상담신청</a>
                 <a href="notice.html" style="color: white; text-decoration: none;">공지사항</a>
             </div>
             <p>&copy; 2024 박근필성장연구소 by 박근필. All rights reserved.</p>
@@ -707,7 +693,8 @@
         </div>
     </footer>
 
-    <script>function toggleContent(id) {
+    <script>
+    function toggleContent(id) {
         var content = document.getElementById(id);
         var arrow = document.getElementById('arrow' + id.replace('detail', ''));
         
@@ -720,7 +707,8 @@
         }
     }
     </script>
-    <script>function toggleMenu() {
+    <script>
+        function toggleMenu() {
             const navLinks = document.getElementById("navLinks");
             const logo = document.querySelector(".logo");
             navLinks.classList.toggle("active");
@@ -750,7 +738,7 @@
 const historyData = {
   activities: [
     {
-      icon:"", date:"2025", title:"진로·직업 특강 (2025년)",
+      icon:"🎤", date:"2025", title:"진로·직업 특강 (2025년)",
       desc:"2025년 진행된 학교 진로·직업 특강",
       toggle:"학교 목록 보기",
       links:[
@@ -772,7 +760,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2024", title:"진로·직업 특강 (2024년)",
+      icon:"🎤", date:"2024", title:"진로·직업 특강 (2024년)",
       desc:"2024년 진행된 학교 진로·직업 특강",
       toggle:"학교 목록 보기",
       links:[
@@ -781,17 +769,17 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.8", title:"혁신어울림 작은도서관 여름방학 어린이 독서문화강좌 (예정)",
+      icon:"📅", date:"2026.8", title:"혁신어울림 작은도서관 여름방학 어린이 독서문화강좌 (예정)",
       desc:"주제: 문해력·글쓰기·독서 / 기간: 8.4~8.25(화), 주 1회 총 4회 / 시간: 회당 90분 / 대상: 초등 4~6학년 15명",
       toggle:null, links:[]
     },
     {
-      icon:"", date:"2026.7", title:"김해율하도서관 펫로스 글쓰기 강연 (예정)",
+      icon:"📅", date:"2026.7", title:"김해율하도서관 펫로스 글쓰기 강연 (예정)",
       desc:"성인 대상 펫로스 글쓰기 강연, 주 1회 총 4회",
       toggle:null, links:[]
     },
     {
-      icon:"", date:"2026.6", title:"투데이신문 [TN 인터뷰]",
+      icon:"📰", date:"2026.6", title:"투데이신문 [TN 인터뷰]",
       desc:"박근필 작가 \"AI 시대, 글쓰기가 '나다움'이라는 무기를 만든다\"",
       toggle:"인터뷰 보기",
       links:[
@@ -799,7 +787,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.6", title:"데일리개원 [Vet Clip] 출연",
+      icon:"📰", date:"2026.6", title:"데일리개원 [Vet Clip] 출연",
       desc:"[Vet Clip] 40대 직장인의 80%가 결국 후회하는 것",
       toggle:"기사 보기",
       links:[
@@ -807,7 +795,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.6", title:"당감도서관 반려동물 강연",
+      icon:"📅", date:"2026.6", title:"당감도서관 반려동물 강연",
       desc:"당감도서관 반려동물 주제 강연",
       toggle:"후기 보기",
       links:[
@@ -815,7 +803,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.6", title:"다꿈스쿨 인터뷰 촬영 & 커피챗",
+      icon:"🎤", date:"2026.6", title:"다꿈스쿨 인터뷰 촬영 & 커피챗",
       desc:"다꿈스쿨 인터뷰 촬영 및 커피챗 참여",
       toggle:"자세히 보기",
       links:[
@@ -825,7 +813,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.5", title:"한국강사신문 출연 기사",
+      icon:"📰", date:"2026.5", title:"한국강사신문 출연 기사",
       desc:"박근필 작가, 의료 전문 채널 ONN닥터TV 〈이 책을 쓴 사람〉 출연",
       toggle:"기사 보기",
       links:[
@@ -833,7 +821,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.4~", title:"진로·직업 특강 (2026년)",
+      icon:"🎤", date:"2026.4~", title:"진로·직업 특강 (2026년)",
       desc:"2026년 진행된 학교 진로·직업 특강",
       toggle:"학교 목록 보기",
       links:[
@@ -861,20 +849,20 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.4", title:"온닥터tv <이 책을 쓴 사람>방송 출연 (전국 송출)",
+      icon:"📺", date:"2026.4", title:"온닥터tv <이 책을 쓴 사람> 방송 출연 (전국 송출)",
       desc:"온닥터tv 방송 출연", toggle:"영상 보기",
       links:[
         {text:"방송 영상 보기", url:"https://www.youtube.com/watch?v=2fe0JvvrvbU"},
       ]
     },
     {
-      icon:"", date:"2026.4", title:"검마사 작가님이 운영하는 모임 초청 특강",
+      icon:"📅", date:"2026.4", title:"검마사 작가님이 운영하는 모임 초청 특강",
       desc:"독서모임 초청 특강", toggle:null, links:[]
     },
     {
-      icon:"", date:"2026.4", title:"부산시청소년자립지원관",
+      icon:"📅", date:"2026.4", title:"부산시청소년자립지원관",
       desc:"자립준비청소년 대상 '길라job이' 진로 특강<br>주제 : 길이 보이지 않아도 괜찮다<br>부제 : 걸어가면 그게 곧 내 길이다",
-      featuredLink:{text:" 특강 영상 보기 (유튜브)", url:"https://www.youtube.com/watch?v=yXY0kf-uTdw&t=73s"},
+      featuredLink:{text:"📹 특강 영상 보기 (유튜브)", url:"https://www.youtube.com/watch?v=yXY0kf-uTdw&t=73s"},
       toggle:"기사 보기",
       links:[
         {text:"부산광역시청소년자립지원관 공식 공지", url:"http://www.bsyjarip.or.kr/bbs_shop/read.htm?board_code=board1&idx=33755&cate_sub_idx=0"},
@@ -905,7 +893,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.4", title:"트레바리 주최 부산 파트너 오프라인 네트워킹 행사 참여",
+      icon:"📚", date:"2026.4", title:"트레바리 주최 부산 파트너 오프라인 네트워킹 행사 참여",
       desc:"트레바리 부산 파트너 네트워킹",
       toggle:"자세히 보기",
       links:[
@@ -913,7 +901,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"트레바리 부산 클럽 [나답게 일하기, 나답게 성장하기]",
+      icon:"📚", date:"2026.3~", title:"트레바리 부산 클럽 [나답게 일하기, 나답게 성장하기]",
       desc:"오프라인 독서모임 파트너 운영 (월 1회)",
       toggle:"자세히 보기",
       links:[
@@ -923,14 +911,14 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.4~", title:"한국인공지능신문 칼럼 연재",
+      icon:"📰", date:"2026.4~", title:"한국인공지능신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"AI가 글을 써주는데 내가 왜? [박근필의 AI 시대 성장 리셋 #1]", url:"http://www.k-ainews.com/news/articleView.html?idxno=11429"},
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"뉴스테이션 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"뉴스테이션 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"AI가 내 자리를 뺏는다고? - 쓸모의 재정의", url:"https://www.newstation.co.kr/news/articleView.html?idxno=7442"},
@@ -938,7 +926,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"한국강사신문 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"한국강사신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필의 직업인 수업] 2모작으론 부족하다, n모작 시대다 - 당신의 2막은 준비됐는가", url:"https://www.lecturernews.com/news/articleView.html?idxno=201174"},
@@ -948,7 +936,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"학생과청소년 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"학생과청소년 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"학습된 무기력의 무서움 - 실패도 성공도 습관이다", url:"https://www.theyoungtimes.com/news/articleView.html?idxno=3736"},
@@ -956,14 +944,14 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"출판교육문화뉴스 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"출판교육문화뉴스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"방황은 언제나 무용한가 - 방황의 쓸모", url:"http://www.editbiznews.co.kr/news/475553"},
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"캐어유뉴스 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"캐어유뉴스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 소장 칼럼] 재앙과 축복의 분기점 - 시니어에게 특히 중요한 것", url:"https://www.careyounews.org/news/articleView.html?idxno=9407"},
@@ -971,7 +959,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"호남교육신문 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"호남교육신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"글쓰기는 국어 시간에만?", url:"https://www.ihopenews.com/news/articleView.html?idxno=252501"},
@@ -979,7 +967,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"코스미안뉴스 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"코스미안뉴스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 칼럼] 헤맨 만큼 내 땅 - 방황하는 시간은 쓸모 있다", url:"https://www.cosmiannews.com/news/450934"},
@@ -993,7 +981,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"미디어파인 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"미디어파인 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"세 점이 만나는 자리에 머물러라 - 자율성·유능감·관계성", url:"https://www.mediafine.co.kr/news/articleView.html?idxno=78052"},
@@ -1008,7 +996,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"이로운넷 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"이로운넷 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[진로수업 10강]-⑦ 글쓰기가 직업이 되는 시대", url:"https://www.eroun.net/news/articleView.html?idxno=78654"},
@@ -1021,7 +1009,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"아웃소싱타임즈 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"아웃소싱타임즈 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 수의사의 직업·진로 인사이트] 팬의 응원을 받아라 - 기능 대신 의미", url:"https://www.outsourcing.co.kr/news/articleView.html?idxno=202514"},
@@ -1031,7 +1019,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"PPSS 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"PPSS 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 칼럼] 간절함이라는 망치 - 당신은 지금 충분히 간절한가", url:"https://www.ppss.kr/news/articleView.html?idxno=293913"},
@@ -1043,7 +1031,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"뉴스후플러스 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"뉴스후플러스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필의 커리어 인사이트] 당신은 직업인인가, 직장인인가", url:"https://www.newswhoplus.com/news/articleView.html?idxno=56887"},
@@ -1051,7 +1039,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"이모작뉴스 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"이모작뉴스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필의 N모작] 노후는 돈으로만 버틸 수 없다 - 노후는 네 기둥으로 떠받쳐야 한다", url:"https://www.emozak.co.kr/news/articleView.html?idxno=13722"},
@@ -1061,7 +1049,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"독서신문 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"독서신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"읽는다는 것은 흔들리겠다는 뜻이다", url:"https://www.readersnews.com/news/articleView.html?idxno=200075"},
@@ -1069,14 +1057,14 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"커리어온뉴스 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"커리어온뉴스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필의 커리어 스토리] 직업인으로 산다는 것", url:"https://www.careeronnews.kr/news/475494"},
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"키즈맘 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"키즈맘 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[교육칼럼] 모르는 것은 꿈꿀 수 없다 - 아이에게 가장 먼저 주어야 할 선물은 '경험'", url:"https://www.kizmom.com/news/articleView.html?idxno=109635"},
@@ -1086,7 +1074,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"경인미래교육신문 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"경인미래교육신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"내가 만든 습관이 나를 만든다 [박근필의 진로 수업 #3]", url:"https://www.ki-edu.co.kr/news/articleView.html?idxno=5733"},
@@ -1095,7 +1083,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.3~", title:"더에듀 칼럼 연재",
+      icon:"📰", date:"2026.3~", title:"더에듀 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[내가 쓰는 진로] ③당장 꿈이 없어도 괜찮은 이유", url:"https://www.te.co.kr/news/article.html?no=28562"},
@@ -1104,7 +1092,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.2~", title:"경인열린신문 칼럼 연재",
+      icon:"📰", date:"2026.2~", title:"경인열린신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"같은 비를 맞고도 누군가는 웃는다 - 일체유심조, 모든 건 마음에 달렸다", url:"http://www.kiyln.kr/bbs/board.php?bo_table=opinion&wr_id=360"},
@@ -1113,7 +1101,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.2~", title:"교육플러스 칼럼 연재",
+      icon:"📰", date:"2026.2~", title:"교육플러스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[진로·직업 이렇게] 성장은 직선이 아니라 계단이다", url:"https://www.edpl.co.kr/news/articleView.html?idxno=20405"},
@@ -1127,7 +1115,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.2~", title:"뉴스프리존 칼럼 연재",
+      icon:"📰", date:"2026.2~", title:"뉴스프리존 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[애니멀케어] 충분히 슬퍼해도 된다 - '펫로스'를 겪은 당신에게", url:"https://www.newsfreezone.co.kr/news/articleView.html?idxno=685187"},
@@ -1137,7 +1125,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.2~", title:"대한민국교육신문 칼럼 연재",
+      icon:"📰", date:"2026.2~", title:"대한민국교육신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"자녀는 부모에게 온 귀한 손님이다 - 부모의 소유물이 아닌 개별자", url:"https://www.kedupress.com/news/article.html?no=428096"},
@@ -1152,7 +1140,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.2~", title:"뉴스클레임 칼럼 연재",
+      icon:"📰", date:"2026.2~", title:"뉴스클레임 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"안전지대가 정말 안전지대일까? - 불확실성을 추구하라", url:"https://www.newsclaim.co.kr/news/articleView.html?idxno=3061044"},
@@ -1165,7 +1153,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.2~", title:"뉴스앤잡 칼럼 연재",
+      icon:"📰", date:"2026.2~", title:"뉴스앤잡 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"경험을 기록하라 [박근필의 진로 특강](3) - 기록이 커리어가 된다", url:"https://www.newsnjob.com/news/articleView.html?idxno=33110"},
@@ -1174,7 +1162,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.2~", title:"한국독서교육신문 칼럼 연재",
+      icon:"📰", date:"2026.2~", title:"한국독서교육신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필의 진짜 독서법 9] 쓰려고 읽어라 - 독서의 시작이자 완성은 쓰기", url:"https://www.readingnews.kr/news/articleView.html?idxno=20453"},
@@ -1189,33 +1177,33 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2026.1", title:"에듀진 칼럼 게재",
+      icon:"📰", date:"2026.1", title:"에듀진 칼럼 게재",
       desc:"칼럼 게재", toggle:"칼럼 보기",
       links:[
         {text:"수의사가 쓴 책, 진로를 고민하는 당신에게", url:"https://www.edujin.co.kr/news/articleView.html?idxno=52059"},
       ]
     },
     {
-      icon:"", date:"2026.1", title:"독서모임 <독기모>초청 특강",
+      icon:"📅", date:"2026.1", title:"독서모임 <독기모> 초청 특강",
       desc:"독서모임 초청 특강", toggle:null, links:[]
     },
     {
-      icon:"", date:"2026.2", title:"김해시 서부청소년센터",
+      icon:"📅", date:"2026.2", title:"김해시 서부청소년센터",
       desc:"진로 특강", toggle:"자세히 보기",
       links:[{text:"자세히 보기", url:"https://blog.naver.com/tothemoon_park/224180392381"}]
     },
     {
-      icon:"", date:"2025.12~", title:"두피디아(Doopedia) 협업",
+      icon:"📝", date:"2025.12~", title:"두피디아(Doopedia) 협업",
       desc:"온라인 콘텐츠 집필", toggle:"자세히 보기",
       links:[{text:"자세히 보기", url:"https://blog.naver.com/tothemoon_park/224248689141"}]
     },
     {
-      icon:"", date:"2025.12.1", title:"인천 계양중학교",
+      icon:"📅", date:"2025.12.1", title:"인천 계양중학교",
       desc:"중3 170여 명 대상 진로 + 독서·글쓰기 특강", toggle:"자세히 보기",
       links:[{text:"자세히 보기", url:"https://blog.naver.com/tothemoon_park/224096489803"}]
     },
     {
-      icon:"", date:"2025.11~", title:"데일리개원 칼럼 연재",
+      icon:"📰", date:"2025.11~", title:"데일리개원 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 작가의 병원 밖 이야기⑤] 나답게, 나만의 무늬로 살고 있는가", url:"https://www.dailygaewon.com/news/articleView.html?idxno=18169"},
@@ -1226,7 +1214,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2025.9.17", title:"부산 시청 저자 특강",
+      icon:"📅", date:"2025.9.17", title:"부산 시청 저자 특강",
       desc:"공무원 200여 명 대상 특강", toggle:"자세히 보기",
       links:[
         {text:"강연 모습 및 후기", url:"https://buly.kr/1cA7WuT"},
@@ -1234,21 +1222,21 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2025.9.10", title:"클래스101 온라인 강의 론칭",
+      icon:"📅", date:"2025.9.10", title:"클래스101 온라인 강의 론칭",
       desc:"수의사를 위한 퍼스널 브랜딩", toggle:"자세히 보기",
       links:[{text:"클래스 바로가기", url:"https://class101.net/ko/products/686e41ed3fdc8154052b3b8c"}]
     },
     {
-      icon:"", date:"2025.8.31", title:"서울 강연",
+      icon:"📅", date:"2025.8.31", title:"서울 강연",
       desc:"강연", toggle:"자세히 보기",
       links:[{text:"자세히 보기", url:"https://blog.naver.com/tothemoon_park/223990397947"}]
     },
     {
-      icon:"", date:"2025.8", title:"독서모임 <독기의 힘>초청 특강",
+      icon:"📅", date:"2025.8", title:"독서모임 <독기의 힘> 초청 특강",
       desc:"독서모임 초청 특강", toggle:null, links:[]
     },
     {
-      icon:"", date:"2025.8", title:"부산진구 기적의 도서관",
+      icon:"📅", date:"2025.8", title:"부산진구 기적의 도서관",
       desc:"강연", toggle:"자세히 보기",
       links:[
         {text:"1회차 보기", url:"https://blog.naver.com/tothemoon_park/223960073605"},
@@ -1256,7 +1244,7 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2025.5~", title:"데일리벳 칼럼 연재",
+      icon:"📰", date:"2025.5~", title:"데일리벳 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 칼럼] 말이 통하지 않는 보호자를 만났을 때", url:"https://www.dailyvet.co.kr/news/practice/companion-animal/280198"},
@@ -1271,28 +1259,28 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2025", title:"큐리어스 연속 특강 (6-8월)",
+      icon:"📅", date:"2025", title:"큐리어스 연속 특강 (6-8월)",
       desc:"책쓰기의 모든 것", toggle:null, links:[]
     },
     {
-      icon:"", date:"2024.12.16", title:"큐리어스 온라인 특강",
+      icon:"📅", date:"2024.12.16", title:"큐리어스 온라인 특강",
       desc:"나만의 콘텐츠로 수익 만들기", toggle:null, links:[]
     },
     {
-      icon:"", date:"2024.11.14", title:"온라인 독서 모임 강연",
+      icon:"📅", date:"2024.11.14", title:"온라인 독서 모임 강연",
       desc:"독서와 글쓰기로 브랜딩하기", toggle:"자세히 보기",
       links:[{text:"자세히 보기", url:"https://blog.naver.com/tothemoon_park/223661674541"}]
     },
     {
-      icon:"", date:"2024.10.28", title:"충주시민과 함께하는 작가와의 만남",
+      icon:"📅", date:"2024.10.28", title:"충주시민과 함께하는 작가와의 만남",
       desc:"책 읽고 쓰는 삶에 대하여", toggle:null, links:[]
     },
     {
-      icon:"", date:"2024.9.23", title:"큐리어스 온라인 특강",
+      icon:"📅", date:"2024.9.23", title:"큐리어스 온라인 특강",
       desc:"수의사의 글쓰기 전략", toggle:null, links:[]
     },
     {
-      icon:"", date:"2024.7.16", title:"온라인 줌 강연",
+      icon:"📅", date:"2024.7.16", title:"온라인 줌 강연",
       desc:"수의사의 퍼스널 브랜딩", toggle:"자세히 보기",
       links:[
         {text:"유튜브 보기 (1)", url:"https://www.youtube.com/watch?v=Y84lqTdATZA"},
@@ -1300,16 +1288,16 @@ const historyData = {
       ]
     },
     {
-      icon:"", date:"2023.12", title:"CEONEWS 월간지 칼럼",
+      icon:"📰", date:"2023.12", title:"CEONEWS 월간지 칼럼",
       desc:"칼럼 기고", toggle:null, links:[]
     },
     {
-      icon:"", date:"2023.11", title:"월간 에세이",
+      icon:"📰", date:"2023.11", title:"월간 에세이",
       desc:"에세이 기고", toggle:"보기",
       links:[{text:"에세이 보기", url:"https://blog.naver.com/tothemoon_park/223253750592"}]
     },
     {
-      icon:"", date:"기타", title:"벳플레이스(VETPLACE)",
+      icon:"📰", date:"기타", title:"벳플레이스(VETPLACE)",
       desc:"칼럼 게재", toggle:null, links:[]
     },
   ],
@@ -1334,7 +1322,7 @@ const historyData = {
     },
     {
       date:"2026.4", outlet:"온닥터tv",
-      title:"<이 책을 쓴 사람>방송 출연 (전국 송출)",
+      title:"<이 책을 쓴 사람> 방송 출연 (전국 송출)",
       urlText:"인터뷰 영상 보기",
       url:"https://www.youtube.com/watch?v=2fe0JvvrvbU"
     },
@@ -1407,9 +1395,9 @@ const historyData = {
     if(actContainer) {
       const years = ['2026', '2025', '2024', '2023', '기타'];
       const grouped = {};
-      years.forEach(y =>grouped[y] = []);
+      years.forEach(y => grouped[y] = []);
       historyData.activities.forEach(item => {
-        const y = years.find(y =>item.date.startsWith(y)) || '기타';
+        const y = years.find(y => item.date.startsWith(y)) || '기타';
         grouped[y].push(item);
       });
 
@@ -1417,19 +1405,19 @@ const historyData = {
       years.forEach(year => {
         const items = grouped[year];
         if(!items.length) return;
-        html += `<div style="background:#ffffff;padding:2.5rem;border-radius:15px;margin-bottom:2rem;border:1px solid #ececec;color:#16181d;">
-          <h4 style="font-size:1.5rem;margin-bottom:1.5rem;border-bottom:2px solid #e8e8e8;padding-bottom:0.5rem;">${year}년</h4>
+        html += `<div style="background:linear-gradient(135deg,#FF6B6B 0%,#FF8E53 100%);padding:2.5rem;border-radius:15px;margin-bottom:2rem;color:white;">
+          <h4 style="font-size:1.5rem;margin-bottom:1.5rem;border-bottom:2px solid rgba(255,255,255,0.3);padding-bottom:0.5rem;">${year}년</h4>
           <div style="display:grid;gap:1.5rem;">`;
         items.forEach((item, idx) => {
           const id = 'act_' + year + '_' + idx;
-          html += `<div style="background:#f7f9f9; border:1px solid #ececec;padding:1.5rem;border-radius:10px;border-left:4px solid #e8e8e8;">
+          html += `<div style="background:rgba(255,255,255,0.15);padding:1.5rem;border-radius:10px;border-left:4px solid white;">
             <p style="font-weight:bold;margin-bottom:0.5rem;">${item.icon} ${item.date} ${item.title}</p>
             <p style="margin-bottom:0.8rem;">${item.desc}</p>`;
           if(item.featuredLink) {
-            html += `<p style="margin-bottom:0.8rem;"><a href="${item.featuredLink.url}" target="_blank" style="color:#16181d;text-decoration:none;font-weight:bold;">${item.featuredLink.text} →</a></p>`;
+            html += `<p style="margin-bottom:0.8rem;"><a href="${item.featuredLink.url}" target="_blank" style="color:white;text-decoration:none;font-weight:bold;">${item.featuredLink.text} →</a></p>`;
           }
           if(item.toggle && item.links.length) {
-            html += `<p style="cursor:pointer;color:#16181d;font-size:0.95rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'flex':'none';">
+            html += `<p style="cursor:pointer;color:white;font-size:0.95rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'flex':'none';">
               ${item.toggle} ▼
             </p>
             <div id="${id}" style="display:none;flex-direction:column;gap:0.4rem;">`;
@@ -1442,14 +1430,14 @@ const historyData = {
 
             if(colLinks) {
               colLinks.forEach(col => {
-                html += `<a href="${col.url}" target="_blank" style="color:#16181d;text-decoration:none;">${col.title.split(' - ')[0]} →</a>`;
+                html += `<a href="${col.url}" target="_blank" style="color:white;text-decoration:none;">${col.title.split(' - ')[0]} →</a>`;
               });
             } else {
               item.links.forEach(link => {
                 if(link.url) {
-                  html += `<a href="${link.url}" target="_blank" style="color:#16181d;text-decoration:none;">${link.text} →</a>`;
+                  html += `<a href="${link.url}" target="_blank" style="color:white;text-decoration:none;">${link.text} →</a>`;
                 } else {
-                  html += `<p style="color:#16181d;margin:0.2rem 0;font-size:0.9rem;">${link.text}</p>`;
+                  html += `<p style="color:white;margin:0.2rem 0;font-size:0.9rem;">${link.text}</p>`;
                 }
               });
             }
@@ -1474,21 +1462,22 @@ const historyData = {
 
       let html = '';
       Object.keys(yearGroups).sort((a,b)=>b-a).forEach(year => {
-        html += `<div style="background:#ffffff;padding:2rem;border-radius:12px;margin-bottom:1.5rem;border:1px solid #ececec;color:#16181d;">
-          <h4 style="font-size:1.3rem;margin-bottom:1.5rem;border-bottom:2px solid #e8e8e8;padding-bottom:0.5rem;">${year}년</h4>
+        html += `<div style="background:linear-gradient(135deg,#FF6B6B 0%,#FF8E53 100%);padding:2rem;border-radius:12px;margin-bottom:1.5rem;color:white;">
+          <h4 style="font-size:1.3rem;margin-bottom:1.5rem;border-bottom:2px solid rgba(255,255,255,0.3);padding-bottom:0.5rem;">${year}년</h4>
           <div style="display:grid;gap:1rem;">`;
         yearGroups[year].forEach((item, idx) => {
           const id = 'int_' + year + '_' + idx;
-          html += `<div style="background:#f7f9f9; border:1px solid #ececec;padding:1.2rem;border-radius:8px;border-left:3px solid #e8e8e8;">
-            <p style="font-weight:bold;margin-bottom:0.5rem;"> ${item.date} ${item.outlet}</p>
-            <p style="cursor:pointer;color:#16181d;font-size:0.9rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'block':'none';">인터뷰 보기 ▼
+          html += `<div style="background:rgba(255,255,255,0.15);padding:1.2rem;border-radius:8px;border-left:3px solid white;">
+            <p style="font-weight:bold;margin-bottom:0.5rem;">📰 ${item.date} ${item.outlet}</p>
+            <p style="cursor:pointer;color:white;font-size:0.9rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'block':'none';">
+              인터뷰 보기 ▼
             </p>
             <div id="${id}" style="display:none;">
-              <p style="font-size:0.9rem;margin-bottom:0.5rem;color:#16181d;">"${item.title}"</p>
-              <a href="${item.url}" target="_blank" style="color:#16181d;text-decoration:none;font-size:0.9rem;">${item.urlText ? item.urlText : '인터뷰 기사 보기'} →</a>`;
+              <p style="font-size:0.9rem;margin-bottom:0.5rem;color:white;">"${item.title}"</p>
+              <a href="${item.url}" target="_blank" style="color:white;text-decoration:none;font-size:0.9rem;">${item.urlText ? item.urlText : '인터뷰 기사 보기'} →</a>`;
             if(item.additionalLinks) {
               item.additionalLinks.forEach(function(link) {
-                html += `<a href="${link.url}" target="_blank" style="color:#16181d;text-decoration:none;font-size:0.9rem;display:block;margin-top:0.4rem;">${link.text} →</a>`;
+                html += `<a href="${link.url}" target="_blank" style="color:white;text-decoration:none;font-size:0.9rem;display:block;margin-top:0.4rem;">${link.text} →</a>`;
               });
             }
             html += `
@@ -1504,7 +1493,8 @@ const historyData = {
   if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",render);}else{render();}
 })();
 </script>
-<script id="column-data">const columnData = {
+<script id="column-data">
+const columnData = {
   "한국인공지능신문": { period:"2026.4~", columns:[
     { url:"https://www.k-ainews.com/news/articleView.html?idxno=11497", title:"AI가 요약해주는데 내가 왜? [박근필의 AI 시대 성장 리셋 #2]" },
     { url:"http://www.k-ainews.com/news/articleView.html?idxno=11429", title:"AI가 글을 써주는데 내가 왜? [박근필의 AI 시대 성장 리셋 #1]" },
@@ -1690,6 +1680,7 @@ const historyData = {
     { url:"https://www.te.co.kr/news/article.html?no=28346", title:"[내가 쓰는 진로] ①직업을 선택하기 전에 반드시 해야 할 네 가지 질문" },
   ]},
   "경인열린신문": { period:"2026.2~", columns:[
+    { url:"http://www.kiyln.kr/bbs/board.php?bo_table=opinion&wr_id=368", title:"펫로스를 대하는 자세 - 잘 떠나보내기, 그리고 다시 사랑하기" },
     { url:"http://www.kiyln.kr/bbs/board.php?bo_table=opinion&wr_id=362", title:"황새와 달팽이는 같은 날 도착했다 - 비교의 덫에서 벗어나 내 속도로 걷기" },
     { url:"http://www.kiyln.kr/bbs/board.php?bo_table=opinion&wr_id=360", title:"같은 비를 맞고도 누군가는 웃는다 - 일체유심조, 모든 건 마음에 달렸다" },
     { url:"http://www.kiyln.kr/bbs/board.php?bo_table=opinion&wr_id=357", title:"나는 왜 수의사이면서 작가인가 - 2막을 여는 용기" },
@@ -1817,7 +1808,7 @@ const historyData = {
 (function() {
   function renderColumns() {
     const total = Object.values(columnData).reduce((s,m)=>s+m.columns.length,0);
-    if(total < 50) { console.warn(' 칼럼 데이터 비정상! 총'+total+'개'); }
+    if(total < 50) { console.warn('⚠️ 칼럼 데이터 비정상! 총'+total+'개'); }
 
     const container = document.getElementById('column-section-3');
     if(!container) return;
@@ -1831,19 +1822,20 @@ const historyData = {
     let html = '';
     Object.entries(groups).forEach(([year, outlets]) => {
       if(!outlets.length) return;
-      html += `<div style="background:#ffffff;padding:2rem;border-radius:12px;margin-bottom:1.5rem;border:1px solid #ececec;color:#16181d;">
-        <h4 style="font-size:1.3rem;margin-bottom:1.5rem;border-bottom:2px solid #e8e8e8;padding-bottom:0.5rem;">${year}</h4>
+      html += `<div style="background:linear-gradient(135deg,#FF6B6B 0%,#FF8E53 100%);padding:2rem;border-radius:12px;margin-bottom:1.5rem;color:white;">
+        <h4 style="font-size:1.3rem;margin-bottom:1.5rem;border-bottom:2px solid rgba(255,255,255,0.3);padding-bottom:0.5rem;">${year}</h4>
         <div style="display:grid;gap:1rem;">`;
 
       outlets.forEach((outlet, idx) => {
         const id = 'col_' + year.replace(/\W/g,'') + '_' + idx;
-        html += `<div style="background:#f7f9f9; border:1px solid #ececec;padding:1.2rem;border-radius:8px;border-left:3px solid #e8e8e8;">
-          <p style="font-weight:bold;margin-bottom:0.5rem;"> ${outlet.period} ${outlet.name}</p>
-          <p style="cursor:pointer;color:#16181d;font-size:0.9rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'flex':'none';">칼럼 목록 보기 ▼
+        html += `<div style="background:rgba(255,255,255,0.15);padding:1.2rem;border-radius:8px;border-left:3px solid white;">
+          <p style="font-weight:bold;margin-bottom:0.5rem;">📰 ${outlet.period} ${outlet.name}</p>
+          <p style="cursor:pointer;color:white;font-size:0.9rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'flex':'none';">
+            칼럼 목록 보기 ▼
           </p>
           <div id="${id}" style="display:none;flex-direction:column;gap:0.4rem;">`;
         outlet.columns.forEach(col => {
-          html += `<a href="${col.url}" target="_blank" style="color:#16181d;text-decoration:none;font-size:0.9rem;">"${col.title}" →</a>`;
+          html += `<a href="${col.url}" target="_blank" style="color:white;text-decoration:none;font-size:0.9rem;">"${col.title}" →</a>`;
         });
         html += `</div></div>`;
       });
@@ -1925,17 +1917,17 @@ var lectureData = {
     var container = document.getElementById('lecture-container');
     if(!container) return;
     var total = lectureData.years.reduce(function(s,y){ return s+y.schools.length; }, 0);
-    if(total < 1) { console.warn(' 진로·직업 특강 데이터 없음!'); return; }
+    if(total < 1) { console.warn('⚠️ 진로·직업 특강 데이터 없음!'); return; }
     var html = '';
     lectureData.years.forEach(function(yearObj) {
-      html += '<div style="background:#ffffff;padding:2rem;border-radius:12px;margin-bottom:1.5rem;border:1px solid #ececec;color:#16181d;">';
-      html += '<h4 style="font-size:1.3rem;margin-bottom:1.2rem;border-bottom:2px solid #e8e8e8;padding-bottom:0.5rem;">' + yearObj.year + '</h4>';
+      html += '<div style="background:linear-gradient(135deg,#FF6B6B 0%,#FF8E53 100%);padding:2rem;border-radius:12px;margin-bottom:1.5rem;color:white;">';
+      html += '<h4 style="font-size:1.3rem;margin-bottom:1.2rem;border-bottom:2px solid rgba(255,255,255,0.3);padding-bottom:0.5rem;">' + yearObj.year + '</h4>';
       html += '<div style="display:grid;gap:0.6rem;">';
       yearObj.schools.forEach(function(school) {
         if(typeof school === 'object' && school.url) {
-          html += '<p style="margin:0;"> <a href="' + school.url + '" target="_blank" style="color:#16181d;text-decoration:none;">' + school.text + ' →</a></p>';
+          html += '<p style="margin:0;">📅 <a href="' + school.url + '" target="_blank" style="color:white;text-decoration:none;">' + school.text + ' →</a></p>';
         } else {
-          html += '<p style="margin:0;"> ' + school + '</p>';
+          html += '<p style="margin:0;">📅 ' + school + '</p>';
         }
       });
       html += '</div></div>';
