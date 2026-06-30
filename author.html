@@ -405,39 +405,43 @@
             }
         }
     </style>
+<style id="renewal-headfoot">
+  header[role="banner"]{ background:#2bb7ac !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; border:none !important; position:sticky; top:0; z-index:1000; }
+  header[role="banner"] nav{ max-width:1140px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.5rem; }
+  header[role="banner"] .logo{ display:flex; align-items:center; gap:0.45rem; font-size:1.18rem; font-weight:700; color:#fff !important; letter-spacing:-0.02em; white-space:nowrap; text-decoration:none; }
+  header[role="banner"] .logo svg{ width:22px; height:22px; color:#fff; }
+  header[role="banner"] .nav-links{ display:flex; gap:1.35rem; list-style:none; align-items:center; flex-wrap:wrap; margin:0; padding:0; }
+  header[role="banner"] .nav-links li{ list-style:none; margin:0; }
+  header[role="banner"] .nav-links a{ color:#fff !important; font-weight:500; font-size:0.9rem; transition:opacity 0.2s; text-decoration:none; }
+  header[role="banner"] .nav-links a:hover{ opacity:0.82; }
+  header[role="banner"] .menu-toggle{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; }
+  header[role="banner"] .menu-toggle span{ width:24px; height:2px; background:#fff; border-radius:2px; display:block; }
+  footer.site-foot{ background:#14161a !important; color:#fff; text-align:center; padding:2.6rem 1.5rem; margin-top:4rem; }
+  footer.site-foot .footer-sns{ display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap; margin-bottom:1rem; }
+  footer.site-foot .footer-sns a{ color:rgba(255,255,255,0.85); font-size:0.9rem; text-decoration:none; transition:color 0.2s; }
+  footer.site-foot .footer-sns a:hover{ color:#2bb7ac; }
+  footer.site-foot .footer-copy{ font-size:0.83rem; color:rgba(255,255,255,0.5); line-height:1.8; }
+  @media (max-width:768px){
+    header[role="banner"] .nav-links{ display:none; }
+    header[role="banner"] .menu-toggle{ display:flex; }
+    header[role="banner"] .nav-links.active{ display:flex; flex-direction:column; position:absolute; top:100%; right:1.5rem; background:#2bb7ac; border-radius:14px; padding:1rem 1.3rem; gap:0.9rem; box-shadow:0 12px 30px rgba(0,0,0,0.15); }
+  }
+</style>
 </head>
 <body>
-    <header role="banner">
+        <header role="banner">
         <nav role="navigation" aria-label="주요 메뉴">
-            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;" aria-label="박근필성장연구소 홈으로 이동">📚 박근필성장연구소</a>
-            <button class="menu-toggle" onclick="toggleMenu()" aria-label="모바일 메뉴 열기" aria-expanded="false" aria-controls="navLinks">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">홈</a></li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
-                <li><a href="dokjeoting.html">독저팅™</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
                 <li><a href="people-insight.html">피플인사이트</a></li>
                 <li><a href="philbook.html">필북</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
                 <li><a href="phillife.html">필라이프 코칭</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">SNS</a>
-                    <div class="dropdown-content">
-                        <a href="https://litt.ly/tothemoonpark" target="_blank">📚 Litt.ly</a>
-                        <a href="https://blog.naver.com/tothemoon_park" target="_blank">📝 블로그</a>
-                        <a href="https://brunch.co.kr/@tothemoonpark" target="_blank">✍️ 브런치</a>
-                        <a href="https://www.youtube.com/@tothemoonpark" target="_blank">🎥 유튜브</a>
-                        <a href="https://www.instagram.com/tothemoon_park/" target="_blank">📷 인스타그램</a>
-                        <a href="https://www.threads.com/@tothemoon_park" target="_blank">🧵 스레드</a>
-                        <a href="https://x.com/Tothemoon_Park" target="_blank">🐦 X (트위터)</a>
-                    </div>
-                </li>
-                <li><a href="index.html#contact">상담신청</a></li>
                 <li><a href="notice.html">공지사항</a></li>
             </ul>
         </nav>
@@ -448,7 +452,7 @@
     <main role="main">
     <div style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;">
         <div>
-            <h1 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50;">✍️ 박근필 소장</h1>
+            <h1 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50;">박근필 소장</h1>
             
             <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
                 <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail1')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
@@ -485,49 +489,49 @@
                         
                         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem;">
                             <div style="padding: 1.2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white; text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">📖</div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;"></div>
                                 <div style="font-size: 1.1rem; font-weight: 600;">저서 4권</div>
                             </div>
                             <div style="padding: 1.2rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 15px; color: white; text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏆</div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;"></div>
                                 <div style="font-size: 1.1rem; font-weight: 600;">교보문고 베스트셀러 1위</div>
                             </div>
                             <div style="padding: 1.2rem; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 15px; color: white; text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">👥</div>
-                                <div style="font-size: 1.1rem; font-weight: 600;">SNS 팔로워 약 2.5만 명</div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;"></div>
+                                <div style="font-size: 1.1rem; font-weight: 600;">SNS 팔로워 약 2.6만 명</div>
                             </div>
                             <div style="padding: 1.2rem; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); border-radius: 15px; color: white; text-align: center;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;"></div>
                                 <div style="font-size: 1.1rem; font-weight: 600;">독서, 책쓰기 전문가</div>
                             </div>
                         </div>
 
-                        <h3 style="font-size: 1.3rem; margin: 2rem 0 1rem; color: #2c3e50;">📱 SNS 팔로우</h3>
+                        <h3 style="font-size: 1.3rem; margin: 2rem 0 1rem; color: #2c3e50;">SNS 팔로우</h3>
                         <div style="display: flex; flex-direction: column; gap: 0.8rem;">
                             <a href="https://blog.naver.com/tothemoon_park" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(3, 199, 90, 0.1); border-radius: 10px; text-decoration: none; color: #03C75A; font-weight: 600; transition: all 0.3s;">
-                                📝 네이버 블로그
+                                네이버 블로그
                             </a>
                             <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(255, 107, 53, 0.1); border-radius: 10px; text-decoration: none; color: #FF6B35; font-weight: 600; transition: all 0.3s;">
-                                ✍️ 브런치
+                                브런치
                             </a>
                             <a href="https://www.youtube.com/@tothemoonpark" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(255, 0, 0, 0.1); border-radius: 10px; text-decoration: none; color: #FF0000; font-weight: 600; transition: all 0.3s;">
-                                🎥 유튜브
+                                유튜브
                             </a>
                             <a href="https://www.instagram.com/tothemoon_park/" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(225, 48, 108, 0.1); border-radius: 10px; text-decoration: none; color: #E1306C; font-weight: 600; transition: all 0.3s;">
-                                📷 인스타그램
+                                인스타그램
                             </a>
                             <a href="https://www.threads.com/@tothemoon_park" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(0, 0, 0, 0.05); border-radius: 10px; text-decoration: none; color: #000000; font-weight: 600; transition: all 0.3s;">
-                                🧵 스레드
+                                스레드
                             </a>
                             <a href="https://x.com/Tothemoon_Park" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.8rem; background: rgba(0, 0, 0, 0.05); border-radius: 10px; text-decoration: none; color: #000000; font-weight: 600; transition: all 0.3s;">
-                                🐦 X (트위터)
+                                X (트위터)
                             </a>
                         </div>
                     </div>
                     
                     <!-- 프로필 사진 섹션 -->
                     <div style="margin-top: 4rem; text-align: center;">
-                        <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #2c3e50;">📸 프로필</h3>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #2c3e50;">프로필</h3>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
                             <div style="overflow: hidden; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.15); background: #f5f5f5;">
                                 <img src="author-profile0.png" alt="박근필 소장 프로필 - 수의사 가운" style="width: 100%; height: auto; display: block;">
@@ -549,7 +553,7 @@
 
                     <!-- 대표 영상 -->
                     <div style="margin-top: 3rem;">
-                        <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #2c3e50;">🎬 대표 영상</h3>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #2c3e50;">대표 영상</h3>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
                             <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                                 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
@@ -612,7 +616,7 @@
                     
                     <!-- 강연 및 활동 이력 -->
                     <div style="margin-top: 5rem;">
-                        <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50; text-align: center;">🎤 강연 및 활동 이력</h3>
+                        <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2c3e50; text-align: center;">강연 및 활동 이력</h3>
 
 <div id="history-activities"></div>
 
@@ -624,7 +628,7 @@
             <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
                 <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail2')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="font-size: 1.3rem; color: #2c3e50;">2. 📰 언론 인터뷰 이력</h3>
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">2. 언론 인터뷰 이력</h3>
                         <span id="arrow2" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
                     </div>
                 </div>
@@ -639,7 +643,7 @@
             <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
                 <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail3')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="font-size: 1.3rem; color: #2c3e50;">3. ✍️ 칼럼 연재 이력</h3>
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">3. 칼럼 연재 이력</h3>
                         <span id="arrow3" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
                     </div>
                 </div>
@@ -663,7 +667,7 @@
             <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-top: 2rem;">
                 <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail4')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="font-size: 1.3rem; color: #2c3e50;">4. 🎤 진로·직업 특강</h3>
+                        <h3 style="font-size: 1.3rem; color: #2c3e50;">4. 진로·직업 특강</h3>
                         <span id="arrow4" style="font-size: 1.5rem; color: #4ECDC4;">▼</span>
                     </div>
                 </div>
@@ -682,23 +686,17 @@
 
     </main>
     
-    <footer role="contentinfo" style="background: #2c3e50; color: white; padding: 3rem 0; margin-top: 5rem;">
-        <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">
-            <div role="navigation" aria-label="푸터 링크" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
-                <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Litt.ly</a>
-                <a href="index.html" style="color: white; text-decoration: none;">홈</a>
-                <a href="index.html#author" style="color: white; text-decoration: none;">소장소개</a>
-                <a href="index.html#dokjeoting" style="color: white; text-decoration: none;">독저팅™</a>
-                <a href="index.html#vod" style="color: white; text-decoration: none;">VOD 강의</a>
-                <a href="index.html#philbook" style="color: white; text-decoration: none;">필북</a>
-                <a href="index.html#books" style="color: white; text-decoration: none;">저서</a>
-                <a href="index.html#newsletter" style="color: white; text-decoration: none;">필레터</a>
-                <a href="index.html#contact" style="color: white; text-decoration: none;">상담신청</a>
-                <a href="notice.html" style="color: white; text-decoration: none;">공지사항</a>
-            </div>
-            <p>&copy; 2024 박근필성장연구소 by 박근필. All rights reserved.</p>
-            <p style="margin-top: 1rem; opacity: 0.8;">여러분의 읽고 쓰고 말하는 삶을 응원합니다</p>
+        <footer class="site-foot" role="contentinfo">
+        <div class="footer-sns">
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+            <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
         </div>
+        <div class="footer-copy">© 2024 박근필성장연구소 by 박근필. All rights reserved.<br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
     </footer>
 
     <script>
@@ -746,7 +744,7 @@
 const historyData = {
   activities: [
     {
-      icon:"🎤", date:"2025", title:"진로·직업 특강 (2025년)",
+      icon:"", date:"2025", title:"진로·직업 특강 (2025년)",
       desc:"2025년 진행된 학교 진로·직업 특강",
       toggle:"학교 목록 보기",
       links:[
@@ -768,7 +766,7 @@ const historyData = {
       ]
     },
     {
-      icon:"🎤", date:"2024", title:"진로·직업 특강 (2024년)",
+      icon:"", date:"2024", title:"진로·직업 특강 (2024년)",
       desc:"2024년 진행된 학교 진로·직업 특강",
       toggle:"학교 목록 보기",
       links:[
@@ -777,17 +775,17 @@ const historyData = {
       ]
     },
     {
-      icon:"📅", date:"2026.8", title:"혁신어울림 작은도서관 여름방학 어린이 독서문화강좌 (예정)",
+      icon:"", date:"2026.8", title:"혁신어울림 작은도서관 여름방학 어린이 독서문화강좌 (예정)",
       desc:"주제: 문해력·글쓰기·독서 / 기간: 8.4~8.25(화), 주 1회 총 4회 / 시간: 회당 90분 / 대상: 초등 4~6학년 15명",
       toggle:null, links:[]
     },
     {
-      icon:"📅", date:"2026.7", title:"김해율하도서관 펫로스 글쓰기 강연 (예정)",
+      icon:"", date:"2026.7", title:"김해율하도서관 펫로스 글쓰기 강연 (예정)",
       desc:"성인 대상 펫로스 글쓰기 강연, 주 1회 총 4회",
       toggle:null, links:[]
     },
     {
-      icon:"📰", date:"2026.6", title:"투데이신문 [TN 인터뷰]",
+      icon:"", date:"2026.6", title:"투데이신문 [TN 인터뷰]",
       desc:"박근필 작가 \"AI 시대, 글쓰기가 '나다움'이라는 무기를 만든다\"",
       toggle:"인터뷰 보기",
       links:[
@@ -795,7 +793,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.6", title:"데일리개원 [Vet Clip] 출연",
+      icon:"", date:"2026.6", title:"데일리개원 [Vet Clip] 출연",
       desc:"[Vet Clip] 40대 직장인의 80%가 결국 후회하는 것",
       toggle:"기사 보기",
       links:[
@@ -803,7 +801,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📅", date:"2026.6", title:"당감도서관 반려동물 강연",
+      icon:"", date:"2026.6", title:"당감도서관 반려동물 강연",
       desc:"당감도서관 반려동물 주제 강연",
       toggle:"후기 보기",
       links:[
@@ -811,7 +809,7 @@ const historyData = {
       ]
     },
     {
-      icon:"🎤", date:"2026.6", title:"다꿈스쿨 인터뷰 촬영 & 커피챗",
+      icon:"", date:"2026.6", title:"다꿈스쿨 인터뷰 촬영 & 커피챗",
       desc:"다꿈스쿨 인터뷰 촬영 및 커피챗 참여",
       toggle:"자세히 보기",
       links:[
@@ -821,7 +819,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.5", title:"한국강사신문 출연 기사",
+      icon:"", date:"2026.5", title:"한국강사신문 출연 기사",
       desc:"박근필 작가, 의료 전문 채널 ONN닥터TV 〈이 책을 쓴 사람〉 출연",
       toggle:"기사 보기",
       links:[
@@ -829,7 +827,7 @@ const historyData = {
       ]
     },
     {
-      icon:"🎤", date:"2026.4~", title:"진로·직업 특강 (2026년)",
+      icon:"", date:"2026.4~", title:"진로·직업 특강 (2026년)",
       desc:"2026년 진행된 학교 진로·직업 특강",
       toggle:"학교 목록 보기",
       links:[
@@ -857,20 +855,20 @@ const historyData = {
       ]
     },
     {
-      icon:"📺", date:"2026.4", title:"온닥터tv <이 책을 쓴 사람> 방송 출연 (전국 송출)",
+      icon:"", date:"2026.4", title:"온닥터tv <이 책을 쓴 사람> 방송 출연 (전국 송출)",
       desc:"온닥터tv 방송 출연", toggle:"영상 보기",
       links:[
         {text:"방송 영상 보기", url:"https://www.youtube.com/watch?v=2fe0JvvrvbU"},
       ]
     },
     {
-      icon:"📅", date:"2026.4", title:"검마사 작가님이 운영하는 모임 초청 특강",
+      icon:"", date:"2026.4", title:"검마사 작가님이 운영하는 모임 초청 특강",
       desc:"독서모임 초청 특강", toggle:null, links:[]
     },
     {
-      icon:"📅", date:"2026.4", title:"부산시청소년자립지원관",
+      icon:"", date:"2026.4", title:"부산시청소년자립지원관",
       desc:"자립준비청소년 대상 '길라job이' 진로 특강<br>주제 : 길이 보이지 않아도 괜찮다<br>부제 : 걸어가면 그게 곧 내 길이다",
-      featuredLink:{text:"📹 특강 영상 보기 (유튜브)", url:"https://www.youtube.com/watch?v=yXY0kf-uTdw&t=73s"},
+      featuredLink:{text:"특강 영상 보기 (유튜브)", url:"https://www.youtube.com/watch?v=yXY0kf-uTdw&t=73s"},
       toggle:"기사 보기",
       links:[
         {text:"부산광역시청소년자립지원관 공식 공지", url:"http://www.bsyjarip.or.kr/bbs_shop/read.htm?board_code=board1&idx=33755&cate_sub_idx=0"},
@@ -901,7 +899,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📚", date:"2026.4", title:"트레바리 주최 부산 파트너 오프라인 네트워킹 행사 참여",
+      icon:"", date:"2026.4", title:"트레바리 주최 부산 파트너 오프라인 네트워킹 행사 참여",
       desc:"트레바리 부산 파트너 네트워킹",
       toggle:"자세히 보기",
       links:[
@@ -909,7 +907,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📚", date:"2026.3~", title:"트레바리 부산 클럽 [나답게 일하기, 나답게 성장하기]",
+      icon:"", date:"2026.3~", title:"트레바리 부산 클럽 [나답게 일하기, 나답게 성장하기]",
       desc:"오프라인 독서모임 파트너 운영 (월 1회)",
       toggle:"자세히 보기",
       links:[
@@ -919,14 +917,14 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.4~", title:"한국인공지능신문 칼럼 연재",
+      icon:"", date:"2026.4~", title:"한국인공지능신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"AI가 글을 써주는데 내가 왜? [박근필의 AI 시대 성장 리셋 #1]", url:"http://www.k-ainews.com/news/articleView.html?idxno=11429"},
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"뉴스테이션 칼럼 연재",
+      icon:"", date:"2026.3~", title:"뉴스테이션 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"AI가 내 자리를 뺏는다고? - 쓸모의 재정의", url:"https://www.newstation.co.kr/news/articleView.html?idxno=7442"},
@@ -934,7 +932,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"한국강사신문 칼럼 연재",
+      icon:"", date:"2026.3~", title:"한국강사신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필의 직업인 수업] 2모작으론 부족하다, n모작 시대다 - 당신의 2막은 준비됐는가", url:"https://www.lecturernews.com/news/articleView.html?idxno=201174"},
@@ -944,7 +942,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"학생과청소년 칼럼 연재",
+      icon:"", date:"2026.3~", title:"학생과청소년 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"학습된 무기력의 무서움 - 실패도 성공도 습관이다", url:"https://www.theyoungtimes.com/news/articleView.html?idxno=3736"},
@@ -952,14 +950,14 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"출판교육문화뉴스 칼럼 연재",
+      icon:"", date:"2026.3~", title:"출판교육문화뉴스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"방황은 언제나 무용한가 - 방황의 쓸모", url:"http://www.editbiznews.co.kr/news/475553"},
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"캐어유뉴스 칼럼 연재",
+      icon:"", date:"2026.3~", title:"캐어유뉴스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 소장 칼럼] 재앙과 축복의 분기점 - 시니어에게 특히 중요한 것", url:"https://www.careyounews.org/news/articleView.html?idxno=9407"},
@@ -967,7 +965,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"호남교육신문 칼럼 연재",
+      icon:"", date:"2026.3~", title:"호남교육신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"글쓰기는 국어 시간에만?", url:"https://www.ihopenews.com/news/articleView.html?idxno=252501"},
@@ -975,7 +973,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"코스미안뉴스 칼럼 연재",
+      icon:"", date:"2026.3~", title:"코스미안뉴스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 칼럼] 헤맨 만큼 내 땅 - 방황하는 시간은 쓸모 있다", url:"https://www.cosmiannews.com/news/450934"},
@@ -989,7 +987,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"미디어파인 칼럼 연재",
+      icon:"", date:"2026.3~", title:"미디어파인 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"세 점이 만나는 자리에 머물러라 - 자율성·유능감·관계성", url:"https://www.mediafine.co.kr/news/articleView.html?idxno=78052"},
@@ -1004,7 +1002,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"이로운넷 칼럼 연재",
+      icon:"", date:"2026.3~", title:"이로운넷 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[진로수업 10강]-⑦ 글쓰기가 직업이 되는 시대", url:"https://www.eroun.net/news/articleView.html?idxno=78654"},
@@ -1017,7 +1015,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"아웃소싱타임즈 칼럼 연재",
+      icon:"", date:"2026.3~", title:"아웃소싱타임즈 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 수의사의 직업·진로 인사이트] 팬의 응원을 받아라 - 기능 대신 의미", url:"https://www.outsourcing.co.kr/news/articleView.html?idxno=202514"},
@@ -1027,7 +1025,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"PPSS 칼럼 연재",
+      icon:"", date:"2026.3~", title:"PPSS 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 칼럼] 간절함이라는 망치 - 당신은 지금 충분히 간절한가", url:"https://www.ppss.kr/news/articleView.html?idxno=293913"},
@@ -1039,7 +1037,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"뉴스후플러스 칼럼 연재",
+      icon:"", date:"2026.3~", title:"뉴스후플러스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필의 커리어 인사이트] 당신은 직업인인가, 직장인인가", url:"https://www.newswhoplus.com/news/articleView.html?idxno=56887"},
@@ -1047,7 +1045,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"이모작뉴스 칼럼 연재",
+      icon:"", date:"2026.3~", title:"이모작뉴스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필의 N모작] 노후는 돈으로만 버틸 수 없다 - 노후는 네 기둥으로 떠받쳐야 한다", url:"https://www.emozak.co.kr/news/articleView.html?idxno=13722"},
@@ -1057,7 +1055,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"독서신문 칼럼 연재",
+      icon:"", date:"2026.3~", title:"독서신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"읽는다는 것은 흔들리겠다는 뜻이다", url:"https://www.readersnews.com/news/articleView.html?idxno=200075"},
@@ -1065,14 +1063,14 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"커리어온뉴스 칼럼 연재",
+      icon:"", date:"2026.3~", title:"커리어온뉴스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필의 커리어 스토리] 직업인으로 산다는 것", url:"https://www.careeronnews.kr/news/475494"},
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"키즈맘 칼럼 연재",
+      icon:"", date:"2026.3~", title:"키즈맘 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[교육칼럼] 모르는 것은 꿈꿀 수 없다 - 아이에게 가장 먼저 주어야 할 선물은 '경험'", url:"https://www.kizmom.com/news/articleView.html?idxno=109635"},
@@ -1082,7 +1080,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"경인미래교육신문 칼럼 연재",
+      icon:"", date:"2026.3~", title:"경인미래교육신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"내가 만든 습관이 나를 만든다 [박근필의 진로 수업 #3]", url:"https://www.ki-edu.co.kr/news/articleView.html?idxno=5733"},
@@ -1091,7 +1089,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.3~", title:"더에듀 칼럼 연재",
+      icon:"", date:"2026.3~", title:"더에듀 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[내가 쓰는 진로] ③당장 꿈이 없어도 괜찮은 이유", url:"https://www.te.co.kr/news/article.html?no=28562"},
@@ -1100,7 +1098,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.2~", title:"경인열린신문 칼럼 연재",
+      icon:"", date:"2026.2~", title:"경인열린신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"같은 비를 맞고도 누군가는 웃는다 - 일체유심조, 모든 건 마음에 달렸다", url:"http://www.kiyln.kr/bbs/board.php?bo_table=opinion&wr_id=360"},
@@ -1109,7 +1107,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.2~", title:"교육플러스 칼럼 연재",
+      icon:"", date:"2026.2~", title:"교육플러스 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[진로·직업 이렇게] 성장은 직선이 아니라 계단이다", url:"https://www.edpl.co.kr/news/articleView.html?idxno=20405"},
@@ -1123,7 +1121,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.2~", title:"뉴스프리존 칼럼 연재",
+      icon:"", date:"2026.2~", title:"뉴스프리존 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[애니멀케어] 충분히 슬퍼해도 된다 - '펫로스'를 겪은 당신에게", url:"https://www.newsfreezone.co.kr/news/articleView.html?idxno=685187"},
@@ -1133,7 +1131,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.2~", title:"대한민국교육신문 칼럼 연재",
+      icon:"", date:"2026.2~", title:"대한민국교육신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"자녀는 부모에게 온 귀한 손님이다 - 부모의 소유물이 아닌 개별자", url:"https://www.kedupress.com/news/article.html?no=428096"},
@@ -1148,7 +1146,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.2~", title:"뉴스클레임 칼럼 연재",
+      icon:"", date:"2026.2~", title:"뉴스클레임 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"안전지대가 정말 안전지대일까? - 불확실성을 추구하라", url:"https://www.newsclaim.co.kr/news/articleView.html?idxno=3061044"},
@@ -1161,7 +1159,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.2~", title:"뉴스앤잡 칼럼 연재",
+      icon:"", date:"2026.2~", title:"뉴스앤잡 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"경험을 기록하라 [박근필의 진로 특강](3) - 기록이 커리어가 된다", url:"https://www.newsnjob.com/news/articleView.html?idxno=33110"},
@@ -1170,7 +1168,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.2~", title:"한국독서교육신문 칼럼 연재",
+      icon:"", date:"2026.2~", title:"한국독서교육신문 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필의 진짜 독서법 9] 쓰려고 읽어라 - 독서의 시작이자 완성은 쓰기", url:"https://www.readingnews.kr/news/articleView.html?idxno=20453"},
@@ -1185,33 +1183,33 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2026.1", title:"에듀진 칼럼 게재",
+      icon:"", date:"2026.1", title:"에듀진 칼럼 게재",
       desc:"칼럼 게재", toggle:"칼럼 보기",
       links:[
         {text:"수의사가 쓴 책, 진로를 고민하는 당신에게", url:"https://www.edujin.co.kr/news/articleView.html?idxno=52059"},
       ]
     },
     {
-      icon:"📅", date:"2026.1", title:"독서모임 <독기모> 초청 특강",
+      icon:"", date:"2026.1", title:"독서모임 <독기모> 초청 특강",
       desc:"독서모임 초청 특강", toggle:null, links:[]
     },
     {
-      icon:"📅", date:"2026.2", title:"김해시 서부청소년센터",
+      icon:"", date:"2026.2", title:"김해시 서부청소년센터",
       desc:"진로 특강", toggle:"자세히 보기",
       links:[{text:"자세히 보기", url:"https://blog.naver.com/tothemoon_park/224180392381"}]
     },
     {
-      icon:"📝", date:"2025.12~", title:"두피디아(Doopedia) 협업",
+      icon:"", date:"2025.12~", title:"두피디아(Doopedia) 협업",
       desc:"온라인 콘텐츠 집필", toggle:"자세히 보기",
       links:[{text:"자세히 보기", url:"https://blog.naver.com/tothemoon_park/224248689141"}]
     },
     {
-      icon:"📅", date:"2025.12.1", title:"인천 계양중학교",
+      icon:"", date:"2025.12.1", title:"인천 계양중학교",
       desc:"중3 170여 명 대상 진로 + 독서·글쓰기 특강", toggle:"자세히 보기",
       links:[{text:"자세히 보기", url:"https://blog.naver.com/tothemoon_park/224096489803"}]
     },
     {
-      icon:"📰", date:"2025.11~", title:"데일리개원 칼럼 연재",
+      icon:"", date:"2025.11~", title:"데일리개원 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 작가의 병원 밖 이야기⑤] 나답게, 나만의 무늬로 살고 있는가", url:"https://www.dailygaewon.com/news/articleView.html?idxno=18169"},
@@ -1222,7 +1220,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📅", date:"2025.9.17", title:"부산 시청 저자 특강",
+      icon:"", date:"2025.9.17", title:"부산 시청 저자 특강",
       desc:"공무원 200여 명 대상 특강", toggle:"자세히 보기",
       links:[
         {text:"강연 모습 및 후기", url:"https://buly.kr/1cA7WuT"},
@@ -1230,21 +1228,21 @@ const historyData = {
       ]
     },
     {
-      icon:"📅", date:"2025.9.10", title:"클래스101 온라인 강의 론칭",
+      icon:"", date:"2025.9.10", title:"클래스101 온라인 강의 론칭",
       desc:"수의사를 위한 퍼스널 브랜딩", toggle:"자세히 보기",
       links:[{text:"클래스 바로가기", url:"https://class101.net/ko/products/686e41ed3fdc8154052b3b8c"}]
     },
     {
-      icon:"📅", date:"2025.8.31", title:"서울 강연",
+      icon:"", date:"2025.8.31", title:"서울 강연",
       desc:"강연", toggle:"자세히 보기",
       links:[{text:"자세히 보기", url:"https://blog.naver.com/tothemoon_park/223990397947"}]
     },
     {
-      icon:"📅", date:"2025.8", title:"독서모임 <독기의 힘> 초청 특강",
+      icon:"", date:"2025.8", title:"독서모임 <독기의 힘> 초청 특강",
       desc:"독서모임 초청 특강", toggle:null, links:[]
     },
     {
-      icon:"📅", date:"2025.8", title:"부산진구 기적의 도서관",
+      icon:"", date:"2025.8", title:"부산진구 기적의 도서관",
       desc:"강연", toggle:"자세히 보기",
       links:[
         {text:"1회차 보기", url:"https://blog.naver.com/tothemoon_park/223960073605"},
@@ -1252,7 +1250,7 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2025.5~", title:"데일리벳 칼럼 연재",
+      icon:"", date:"2025.5~", title:"데일리벳 칼럼 연재",
       desc:"칼럼 연재", toggle:"칼럼 보기",
       links:[
         {text:"[박근필 칼럼] 말이 통하지 않는 보호자를 만났을 때", url:"https://www.dailyvet.co.kr/news/practice/companion-animal/280198"},
@@ -1267,28 +1265,28 @@ const historyData = {
       ]
     },
     {
-      icon:"📅", date:"2025", title:"큐리어스 연속 특강 (6-8월)",
+      icon:"", date:"2025", title:"큐리어스 연속 특강 (6-8월)",
       desc:"책쓰기의 모든 것", toggle:null, links:[]
     },
     {
-      icon:"📅", date:"2024.12.16", title:"큐리어스 온라인 특강",
+      icon:"", date:"2024.12.16", title:"큐리어스 온라인 특강",
       desc:"나만의 콘텐츠로 수익 만들기", toggle:null, links:[]
     },
     {
-      icon:"📅", date:"2024.11.14", title:"온라인 독서 모임 강연",
+      icon:"", date:"2024.11.14", title:"온라인 독서 모임 강연",
       desc:"독서와 글쓰기로 브랜딩하기", toggle:"자세히 보기",
       links:[{text:"자세히 보기", url:"https://blog.naver.com/tothemoon_park/223661674541"}]
     },
     {
-      icon:"📅", date:"2024.10.28", title:"충주시민과 함께하는 작가와의 만남",
+      icon:"", date:"2024.10.28", title:"충주시민과 함께하는 작가와의 만남",
       desc:"책 읽고 쓰는 삶에 대하여", toggle:null, links:[]
     },
     {
-      icon:"📅", date:"2024.9.23", title:"큐리어스 온라인 특강",
+      icon:"", date:"2024.9.23", title:"큐리어스 온라인 특강",
       desc:"수의사의 글쓰기 전략", toggle:null, links:[]
     },
     {
-      icon:"📅", date:"2024.7.16", title:"온라인 줌 강연",
+      icon:"", date:"2024.7.16", title:"온라인 줌 강연",
       desc:"수의사의 퍼스널 브랜딩", toggle:"자세히 보기",
       links:[
         {text:"유튜브 보기 (1)", url:"https://www.youtube.com/watch?v=Y84lqTdATZA"},
@@ -1296,16 +1294,16 @@ const historyData = {
       ]
     },
     {
-      icon:"📰", date:"2023.12", title:"CEONEWS 월간지 칼럼",
+      icon:"", date:"2023.12", title:"CEONEWS 월간지 칼럼",
       desc:"칼럼 기고", toggle:null, links:[]
     },
     {
-      icon:"📰", date:"2023.11", title:"월간 에세이",
+      icon:"", date:"2023.11", title:"월간 에세이",
       desc:"에세이 기고", toggle:"보기",
       links:[{text:"에세이 보기", url:"https://blog.naver.com/tothemoon_park/223253750592"}]
     },
     {
-      icon:"📰", date:"기타", title:"벳플레이스(VETPLACE)",
+      icon:"", date:"기타", title:"벳플레이스(VETPLACE)",
       desc:"칼럼 게재", toggle:null, links:[]
     },
   ],
@@ -1476,7 +1474,7 @@ const historyData = {
         yearGroups[year].forEach((item, idx) => {
           const id = 'int_' + year + '_' + idx;
           html += `<div style="background:rgba(255,255,255,0.15);padding:1.2rem;border-radius:8px;border-left:3px solid white;">
-            <p style="font-weight:bold;margin-bottom:0.5rem;">📰 ${item.date} ${item.outlet}</p>
+            <p style="font-weight:bold;margin-bottom:0.5rem;">${item.date} ${item.outlet}</p>
             <p style="cursor:pointer;color:white;font-size:0.9rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'block':'none';">
               인터뷰 보기 ▼
             </p>
@@ -1820,7 +1818,7 @@ const columnData = {
 (function() {
   function renderColumns() {
     const total = Object.values(columnData).reduce((s,m)=>s+m.columns.length,0);
-    if(total < 50) { console.warn('⚠️ 칼럼 데이터 비정상! 총'+total+'개'); }
+    if(total < 50) { console.warn('칼럼 데이터 비정상! 총'+total+'개'); }
 
     const container = document.getElementById('column-section-3');
     if(!container) return;
@@ -1841,7 +1839,7 @@ const columnData = {
       outlets.forEach((outlet, idx) => {
         const id = 'col_' + year.replace(/\W/g,'') + '_' + idx;
         html += `<div style="background:rgba(255,255,255,0.15);padding:1.2rem;border-radius:8px;border-left:3px solid white;">
-          <p style="font-weight:bold;margin-bottom:0.5rem;">📰 ${outlet.period} ${outlet.name}</p>
+          <p style="font-weight:bold;margin-bottom:0.5rem;">${outlet.period} ${outlet.name}</p>
           <p style="cursor:pointer;color:white;font-size:0.9rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'flex':'none';">
             칼럼 목록 보기 ▼
           </p>
@@ -1929,7 +1927,7 @@ var lectureData = {
     var container = document.getElementById('lecture-container');
     if(!container) return;
     var total = lectureData.years.reduce(function(s,y){ return s+y.schools.length; }, 0);
-    if(total < 1) { console.warn('⚠️ 진로·직업 특강 데이터 없음!'); return; }
+    if(total < 1) { console.warn('진로·직업 특강 데이터 없음!'); return; }
     var html = '';
     lectureData.years.forEach(function(yearObj) {
       html += '<div style="background:linear-gradient(135deg,#FF6B6B 0%,#FF8E53 100%);padding:2rem;border-radius:12px;margin-bottom:1.5rem;color:white;">';
@@ -1937,9 +1935,9 @@ var lectureData = {
       html += '<div style="display:grid;gap:0.6rem;">';
       yearObj.schools.forEach(function(school) {
         if(typeof school === 'object' && school.url) {
-          html += '<p style="margin:0;">📅 <a href="' + school.url + '" target="_blank" style="color:white;text-decoration:none;">' + school.text + ' →</a></p>';
+          html += '<p style="margin:0;"><a href="' + school.url + '" target="_blank" style="color:white;text-decoration:none;">' + school.text + ' →</a></p>';
         } else {
-          html += '<p style="margin:0;">📅 ' + school + '</p>';
+          html += '<p style="margin:0;">' + school + '</p>';
         }
       });
       html += '</div></div>';
@@ -1950,5 +1948,7 @@ var lectureData = {
   renderLecture();
 })();
 </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>if (window.lucide) { lucide.createIcons(); }</script>
 </body>
 </html>
