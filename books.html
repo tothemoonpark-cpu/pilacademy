@@ -55,9 +55,19 @@
         .buy-button:hover { opacity: 0.88; transform: translateY(-1px); }
         .buy-button svg { width: 16px; height: 16px; }
         .book__actions { display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem; }
-        .buy-button-outline { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--page); color: var(--ink); border: 1px solid var(--line); font-size: 0.92rem; font-weight: 500; padding: 0.7rem 1.4rem; border-radius: 10px; transition: all 0.2s; }
+        .buy-button-outline { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--page); color: var(--ink); border: 1px solid var(--line); font-size: 0.92rem; font-weight: 500; padding: 0.7rem 1.4rem; border-radius: 10px; transition: all 0.2s; cursor: pointer; font-family: inherit; }
         .buy-button-outline:hover { border-color: var(--ink); transform: translateY(-1px); }
         .buy-button-outline svg { width: 16px; height: 16px; }
+        .press-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 3000; align-items: center; justify-content: center; padding: 1.5rem; }
+        .press-modal.open { display: flex; }
+        .press-modal__box { background: var(--page); border-radius: 18px; max-width: 460px; width: 100%; max-height: 80vh; overflow-y: auto; padding: 2rem 1.8rem; position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        .press-modal__close { position: absolute; top: 0.8rem; right: 1.1rem; background: none; border: none; font-size: 1.9rem; line-height: 1; color: var(--muted); cursor: pointer; }
+        .press-modal__title { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.4rem; padding-right: 1.5rem; }
+        .press-modal__sub { font-size: 0.9rem; color: var(--sub); margin-bottom: 1.2rem; }
+        .press-modal__list { display: flex; flex-direction: column; gap: 0.55rem; }
+        .press-modal__list a { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.8rem 1rem; border: 1px solid var(--line); border-radius: 10px; font-size: 0.95rem; font-weight: 500; color: var(--ink); transition: all 0.15s; }
+        .press-modal__list a:hover { border-color: var(--ink); background: var(--panel); }
+        .press-modal__list a svg { width: 15px; height: 15px; color: var(--sub); }
 
         footer { background: #14161a; color: #fff; text-align: center; padding: 2.6rem 1.5rem; margin-top: 1rem; }
         .footer-sns { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1rem; }
@@ -164,7 +174,7 @@
                     <p class="book__desc">출간기획서만으로 출판 계약을 성사시킨 저자가 밝히는, 출판사의 러브콜을 받는 기획의 비밀. 글쓰기와 책쓰기의 차이부터 출간 이후 저자 브랜딩까지, 책이 되는 글쓰기의 모든 것을 담았다.</p>
                     <div class="book__actions">
                         <a href="https://product.kyobobook.co.kr/detail/S000220492295" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
-                        <a href="author.html#press-articles" class="buy-button-outline">출간 기사 모음 <i data-lucide="newspaper" aria-hidden="true"></i></a>
+                        <button type="button" class="buy-button-outline" onclick="openPressModal()">출간 기사 모음 <i data-lucide="newspaper" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </article>
@@ -185,6 +195,26 @@
         <div class="footer-copy">© 2024 박근필성장연구소 by 박근필. All rights reserved.<br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
     </footer>
 
+    <div class="press-modal" id="pressModal" role="dialog" aria-modal="true" aria-labelledby="pressModalTitle">
+      <div class="press-modal__box">
+        <button class="press-modal__close" type="button" onclick="closePressModal()" aria-label="닫기">&times;</button>
+        <h3 class="press-modal__title" id="pressModalTitle">『당신의 원고는 왜 계약되지 않는가』 출간 기사</h3>
+        <p class="press-modal__sub">신간 출간을 소개한 언론 기사 모음입니다.</p>
+        <div class="press-modal__list">
+          <a href="https://www.readingnews.kr/news/articleView.html?idxno=20984" target="_blank" rel="noopener">한국독서교육신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.newsnjob.com/news/articleView.html?idxno=33974" target="_blank" rel="noopener">뉴스앤잡 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.mediafine.co.kr/news/articleView.html?idxno=82919" target="_blank" rel="noopener">미디어파인 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.edpl.co.kr/news/articleView.html?idxno=21059" target="_blank" rel="noopener">교육플러스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.lecturernews.com/news/articleView.html?idxno=205840" target="_blank" rel="noopener">한국강사신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.ppss.kr/news/articleView.html?idxno=301440" target="_blank" rel="noopener">PPSS <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.cosmiannews.com/news/479598" target="_blank" rel="noopener">코스미안뉴스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.eroun.net/news/articleView.html?idxno=84938" target="_blank" rel="noopener">이로운넷 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.newsfreezone.co.kr/news/articleView.html?idxno=698444" target="_blank" rel="noopener">뉴스프리존 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.dailyvet.co.kr/news/etc/289431" target="_blank" rel="noopener">데일리벳 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         if (window.lucide) { lucide.createIcons(); }
@@ -194,6 +224,10 @@
             var open = nav.classList.toggle('open');
             if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
         }
+        function openPressModal() { var m = document.getElementById('pressModal'); if (m) m.classList.add('open'); }
+        function closePressModal() { var m = document.getElementById('pressModal'); if (m) m.classList.remove('open'); }
+        document.addEventListener('click', function(e) { if (e.target && e.target.id === 'pressModal') closePressModal(); });
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePressModal(); });
     </script>
 </body>
 </html>
