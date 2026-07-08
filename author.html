@@ -786,6 +786,7 @@ const historyData = {
     },
     {
       icon:"", date:"2026.7", title:"『당신의 원고는 왜 계약되지 않는가』 출간 소식",
+      anchor:"press-articles",
       desc:"다섯 번째 책 『당신의 원고는 왜 계약되지 않는가』 출간 소식이 언론에 보도되었습니다.",
       toggle:"기사 보기",
       links:[
@@ -796,6 +797,7 @@ const historyData = {
         {text:"한국강사신문", url:"https://www.lecturernews.com/news/articleView.html?idxno=205840"},
         {text:"PPSS", url:"https://www.ppss.kr/news/articleView.html?idxno=301440"},
         {text:"코스미안뉴스", url:"https://www.cosmiannews.com/news/479598"},
+        {text:"이로운넷", url:"https://www.eroun.net/news/articleView.html?idxno=84938"},
       ]
     },
     {
@@ -1439,17 +1441,18 @@ const historyData = {
           <div style="display:grid;gap:1.5rem;">`;
         items.forEach((item, idx) => {
           const id = 'act_' + year + '_' + idx;
-          html += `<div style="background:rgba(255,255,255,0.15);padding:1.5rem;border-radius:10px;border-left:4px solid white;">
+          const linksId = item.anchor ? (item.anchor + '-links') : id;
+          html += `<div ${item.anchor ? `id="${item.anchor}"` : ''} style="background:rgba(255,255,255,0.15);padding:1.5rem;border-radius:10px;border-left:4px solid white;">
             <p style="font-weight:bold;margin-bottom:0.5rem;">${item.icon} ${item.date} ${item.title}</p>
             <p style="margin-bottom:0.8rem;">${item.desc}</p>`;
           if(item.featuredLink) {
             html += `<p style="margin-bottom:0.8rem;"><a href="${item.featuredLink.url}" target="_blank" style="color:white;text-decoration:none;font-weight:bold;">${item.featuredLink.text} →</a></p>`;
           }
           if(item.toggle && item.links.length) {
-            html += `<p style="cursor:pointer;color:white;font-size:0.95rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'flex':'none';">
+            html += `<p style="cursor:pointer;color:white;font-size:0.95rem;margin-bottom:0.5rem;" onclick="var d=document.getElementById('${linksId}');d.style.display=d.style.display==='none'?'flex':'none';">
               ${item.toggle} ▼
             </p>
-            <div id="${id}" style="display:none;flex-direction:column;gap:0.4rem;">`;
+            <div id="${linksId}" style="display:none;flex-direction:column;gap:0.4rem;">`;
             // 칼럼 연재/게재 항목은 columnData에서 자동 참조
             const isColumnItem = item.title && (item.title.endsWith(' 칼럼 연재') || item.title.endsWith(' 칼럼 게재'));
             const outletName = isColumnItem ? item.title.replace(' 칼럼 연재','').replace(' 칼럼 게재','') : null;
@@ -1985,5 +1988,15 @@ var lectureData = {
 </script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>if (window.lucide) { lucide.createIcons(); }</script>
+    <script>
+    window.addEventListener('load', function(){
+      if(location.hash === '#press-articles'){
+        var links = document.getElementById('press-articles-links');
+        if(links){ links.style.display = 'flex'; }
+        var el = document.getElementById('press-articles');
+        if(el){ el.scrollIntoView({behavior:'smooth', block:'center'}); }
+      }
+    });
+    </script>
 </body>
 </html>
