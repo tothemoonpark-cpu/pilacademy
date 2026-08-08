@@ -123,6 +123,17 @@
         }
         @media (max-width: 480px) { .tile-grid { grid-template-columns: 1fr; } }
     </style>
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
 </head>
 <body>
     <header role="banner">
@@ -153,7 +164,7 @@
                 <div class="hero-text">
                     <span class="eyebrow">수의사이자 작가 · 강연가 · 커리어 스토리텔러</span>
                     <h1>AI 시대, 더 귀해지는 건<br><span class="accent">사람이 하는 말</span>입니다</h1>
-                    <p>그로쓰 퍼실리테이터 박근필 — 읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다</p>
+                    <p>그로쓰 퍼실리테이터 — 읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다</p>
                     <div class="hero-stats">
                         <div class="stat"><div class="num"><span data-stat="schools">38</span>개교</div><div class="lab">진로·직업 특강</div></div>
                         <div class="stat"><div class="num">1위</div><div class="lab">교보문고 베스트셀러</div></div>
