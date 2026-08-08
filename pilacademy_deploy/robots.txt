@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# 백업·미리보기·테스트 파일은 색인 제외
+Disallow: /_백업
+Disallow: /index_
+Disallow: /author_
+Disallow: /__
+Disallow: /mobile-test.html
+Disallow: /success.html
+
+Sitemap: https://tothemoonpark-cpu.github.io/pilacademy/sitemap.xml

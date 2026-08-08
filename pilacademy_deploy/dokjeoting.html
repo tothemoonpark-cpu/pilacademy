@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독저팅 - 박근필성장연구소</title>
+    <meta name="keywords" content="독저팅, 책쓰기 컨설팅, 출간기획서, 투고, 책쓰기 강연, 박근필">
+    <meta name="description" content="책쓰기는 80% 기획, 20% 집필. 박근필의 1:1 책쓰기 기획 컨설팅 독저팅. 출간기획서·투고 전략까지.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/dokjeoting.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --ink:#16181d; --sub:#5b6066; --muted:#8a9099; --line:#ececec; --panel:#f7f8f9; --page:#ffffff; }
+        body { font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.75; color:var(--ink); background:var(--page); -webkit-font-smoothing:antialiased; }
+        a { text-decoration:none; color:inherit; }
+        header { background:rgba(255,255,255,0.85); backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:1000; }
+        nav { max-width:1140px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.5rem; }
+        .logo { display:flex; align-items:center; gap:0.45rem; font-size:1.18rem; font-weight:700; color:var(--ink); letter-spacing:-0.02em; }
+        .logo svg { width:22px; height:22px; }
+        .nav-links { display:flex; gap:1.35rem; list-style:none; align-items:center; flex-wrap:wrap; }
+        .nav-links a { color:var(--sub); font-weight:500; font-size:0.9rem; transition:color 0.2s; }
+        .nav-links a:hover { color:var(--ink); }
+        .menu-toggle { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; }
+        .menu-toggle span { width:24px; height:2px; background:var(--ink); border-radius:2px; }
+
+        .page-hero { text-align:center; padding:4.5rem 1.5rem 1rem; }
+        .page-hero .eyebrow { display:inline-block; font-size:0.82rem; font-weight:500; color:var(--sub); border:1px solid var(--line); padding:0.35rem 0.9rem; border-radius:50px; margin-bottom:1.2rem; }
+        .page-hero h1 { font-size:2.5rem; font-weight:700; letter-spacing:-0.03em; margin-bottom:0.6rem; }
+        .page-hero .lead { color:var(--sub); font-size:1.08rem; max-width:600px; margin:0 auto; }
+
+        main { max-width:860px; margin:0 auto; padding:1.5rem 1.5rem 4rem; }
+        section.block { padding:2.6rem 0; border-top:1px solid var(--line); }
+        section.block:first-of-type { border-top:none; }
+        h2.sec { font-size:1.6rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:1.2rem; }
+        h3.sub { font-size:1.18rem; font-weight:700; margin:1.6rem 0 0.8rem; }
+        p { color:var(--sub); margin-bottom:0.9rem; }
+        p strong, li strong { color:var(--ink); }
+        .pull { font-size:1.15rem; font-weight:500; color:var(--ink); line-height:1.7; }
+
+        .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1.6rem 1.8rem; margin:1.2rem 0; }
+        ul.clean { list-style:none; display:flex; flex-direction:column; gap:0.7rem; }
+        ul.clean li { display:flex; gap:0.6rem; color:var(--sub); line-height:1.65; }
+        ul.clean li svg { width:18px; height:18px; flex-shrink:0; margin-top:0.25rem; color:var(--ink); }
+        ul.clean li > div { flex:1; }
+        ul.clean .sub { display:block; color:var(--muted); font-size:0.88rem; margin-top:0.35rem; line-height:1.6; }
+
+        .ratio { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.2rem 0; }
+        .ratio .box { border:1px solid var(--line); border-radius:14px; padding:1.5rem; }
+        .ratio .box.lead-box { border-color:var(--ink); }
+        .ratio .tag { font-size:0.8rem; color:var(--muted); margin-bottom:0.5rem; }
+        .ratio .big { font-size:1.5rem; font-weight:700; margin-bottom:0.8rem; }
+
+        .plans { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin:1.4rem 0; }
+        .plan { border:1px solid var(--line); border-radius:16px; padding:1.8rem; }
+        .plan.featured { border-color:var(--ink); }
+        .plan .pname { display:inline-flex; align-items:center; gap:0.4rem; font-size:1.2rem; font-weight:700; margin-bottom:1rem; }
+        .plan .pname .pill { font-size:0.7rem; font-weight:500; background:var(--ink); color:#fff; padding:0.2rem 0.6rem; border-radius:50px; }
+
+        .curri-img, .review-banner { margin:1.4rem 0; }
+        .curri-img img, .review-banner img { width:100%; border-radius:12px; border:1px solid var(--line); display:block; }
+
+        .cta-band { background:var(--ink); color:#fff; border-radius:18px; padding:2.6rem; text-align:center; margin:2rem 0 0; }
+        .cta-band h2 { color:#fff; font-size:1.5rem; font-weight:700; margin-bottom:0.8rem; }
+        .cta-band p { color:rgba(255,255,255,0.75); margin-bottom:1.6rem; }
+        .cta-band .btn { display:inline-flex; align-items:center; gap:0.5rem; background:#fff; color:var(--ink); font-weight:700; font-size:1.05rem; padding:0.95rem 2rem; border-radius:12px; transition:transform 0.2s, opacity 0.2s; }
+        .cta-band .btn:hover { transform:translateY(-2px); }
+        .steps { list-style:none; counter-reset:s; max-width:560px; margin:0 auto 1.6rem; text-align:left; }
+        .steps li { counter-increment:s; position:relative; padding:0.55rem 0 0.55rem 2.4rem; color:rgba(255,255,255,0.85); border-bottom:1px solid rgba(255,255,255,0.12); }
+        .steps li:last-child { border-bottom:none; }
+        .steps li::before { content:counter(s); position:absolute; left:0; top:0.5rem; width:1.6rem; height:1.6rem; background:rgba(255,255,255,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:700; color:#fff; }
+
+        .reviews-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(150px,1fr)); gap:1.1rem; margin-top:1.2rem; }
+        .rev { cursor:pointer; margin:0; }
+        .rev img { width:100%; object-fit:cover; border-radius:10px; border:1px solid var(--line); transition:transform 0.2s; aspect-ratio:3/4; display:block; }
+        .rev:hover img { transform:scale(1.03); }
+        .rev figcaption { text-align:center; font-size:0.9rem; color:var(--sub); margin-top:0.5rem; font-weight:500; }
+        .hint { font-size:0.88rem; color:var(--muted); margin-bottom:0.4rem; }
+        .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:3000; overflow:auto; padding:3.5rem 1rem; text-align:center; }
+        .lightbox img { display:inline-block; width:100%; max-width:860px; height:auto; border-radius:8px; }
+        .lightbox .close { position:fixed; top:1.1rem; right:1.4rem; font-size:2.6rem; color:#fff; cursor:pointer; line-height:1; background:none; border:none; z-index:3001; }
+
+        footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5rem; }
+        .footer-sns { display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap; margin-bottom:1rem; }
+        .footer-sns a { color:rgba(255,255,255,0.85); font-size:0.9rem; transition:color 0.2s; }
+        .footer-sns a:hover { color:#fff; }
+        .footer-copy { font-size:0.83rem; color:rgba(255,255,255,0.5); }
+
+        @media (max-width:768px) {
+            .nav-links { display:none; }
+            .menu-toggle { display:flex; }
+            .nav-links.open { display:flex; flex-direction:column; position:absolute; top:100%; right:1.5rem; background:#fff; border:1px solid var(--line); border-radius:14px; padding:1rem 1.3rem; gap:0.9rem; box-shadow:0 12px 30px rgba(0,0,0,0.1); }
+            .page-hero h1 { font-size:1.9rem; }
+            .ratio, .plans { grid-template-columns:1fr; }
+            .cta-band { padding:1.8rem; }
+        }
+    </style>
+<style id="mint-header-override">
+  header{ background:#2bb7ac !important; border-bottom:none !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; }
+  header .logo, header .logo svg, header .nav-links a, header .dropbtn{ color:#ffffff !important; }
+  header .nav-links a:hover, header .dropbtn:hover{ color:#ffffff !important; opacity:0.82 !important; }
+  .menu-toggle span{ background:#ffffff !important; }
+  .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
+  .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
+</style>
+    <script src="stats.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="독저팅 - 1:1 책쓰기 기획 컨설팅">
+    <meta property="og:description" content="책쓰기는 80% 기획, 20% 집필. 출간기획서부터 투고 전략까지.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/dokjeoting.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="독저팅 - 1:1 책쓰기 기획 컨설팅">
+    <meta name="twitter:description" content="책쓰기는 80% 기획, 20% 집필. 출간기획서부터 투고 전략까지.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="lecture.html">강연 안내</a></li>
+                <li><a href="author.html">소장소개</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="videos.html">대표 영상</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="phillife.html">필라이프 코칭</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <span class="eyebrow">1:1 책쓰기 기획 컨설팅</span>
+        <h1>독저팅</h1>
+        <p class="lead">독자에서 저자가 되는 컨설팅 — 저의 경험·노하우·자료를 통해, 독자가 출간 가능한 책쓰기를 완성하도록 돕습니다.</p>
+    </section>
+
+    <main role="main">
+        <section class="block">
+            <h2 class="sec">독자에서 저자로, 당신의 첫 책을 현실로</h2>
+            <p>책을 쓰고 싶은데 어디서부터 시작해야 할지 막막하신가요?</p>
+            <p>저는 책 <span data-stat="books">5</span>권을 출간했고, 그중 한 권은 베스트셀러가 되었으며, 원고 없이 출간 계약을 성사시킨 경험이 있습니다. 그 노하우를 담아 '기획'에 집중한 1:1 책쓰기 기획 컨설팅, 독저팅을 정식 오픈합니다.</p>
+            <div class="card">
+                <h3 class="sub" style="margin-top:0;">5줄 요약</h3>
+                <ul class="clean">
+                    <li><i data-lucide="check" aria-hidden="true"></i>책 <span data-stat="books">5</span>권 출간 / 베스트셀러 작가</li>
+                    <li><i data-lucide="check" aria-hidden="true"></i>원고 없이 출간 계약 성사 (매우 이례적 사례)</li>
+                    <li><i data-lucide="check" aria-hidden="true"></i>출판 계약의 80%를 차지하는 '기획' 집중 컨설팅</li>
+                    <li><i data-lucide="check" aria-hidden="true"></i>8~16주 밀착 피드백 + 실전 자료 제공</li>
+                    <li><i data-lucide="check" aria-hidden="true"></i>출판사 러브콜을 받는 책 기획 완성</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">이런 고민, 해결해드립니다</h2>
+            <ul class="clean">
+                <li><i data-lucide="check" aria-hidden="true"></i>책을 쓰고 싶지만 감이 안 잡혀요</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>글은 써봤지만, '책' 형태로 완성할 자신이 없어요</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>출간을 꿈꾸지만 어디서부터 어떻게 시작해야 할지 막막해요</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>책 분야, 콘텐츠(주제, 소재, 콘셉트), 제목/부제, 목차, 출간기획서… 모두 너무 어려워요</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>출판사의 러브콜을 받는 투고를 하고 싶어요</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>책쓰기에 "기획"이 중요하다는데, 기획을 어떻게 해야 하는지 모르겠어요</li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">책쓰기는 글쓰기와 다릅니다</h2>
+            <p>출판 계약에서 가장 중요한 건 원고가 아니라 '기획'입니다. 저는 책쓰기에서 기획 80% / 원고 20% 비중을 둡니다.</p>
+            <div class="ratio">
+                <div class="box lead-box">
+                    <div class="tag">출판 계약 비중</div>
+                    <div class="big">기획 80%</div>
+                    <p style="margin:0;">콘텐츠(주제·소재·콘셉트), 제목과 부제, 목차, 출간기획서, 저자 브랜딩(포트폴리오·전문성·인지도 등)</p>
+                </div>
+                <div class="box">
+                    <div class="tag">출판 계약 비중</div>
+                    <div class="big">원고 20%</div>
+                    <p style="margin:0;">내용·문장력 (편집자와 개선 가능)</p>
+                </div>
+            </div>
+            <p>기획이 탄탄하면 원고는 결국 따라오게 되어 있습니다. 시간이 얼마냐 걸리냐의 문제일 뿐, 이에 맞춰 쓰기만 하면 되니까요. 수강생은 기획에 맞춰 열심히 쓰면 됩니다.</p>
+            <p>내용이 빈약하거나 문장력이 부족해도 괜찮습니다. 출판사는 필력보다 기획력을 우선 평가합니다. 원고(초고)는 편집자와 함께 얼마든지 개선할 수 있으니까요. 이는 단순히 제 개인의 의견이 아니며 실제 현직 출판사 대표와 편집자의 말이기도 합니다.</p>
+            <p>본 컨설팅은 출판 계약 핵심인 "기획" 부분을 1:1 맞춤으로 가이드해드립니다. 즉, 기획에 초점을 둔 〈책쓰기 기획 컨설팅〉입니다.</p>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">왜 독저팅을 받아야 하나요?</h2>
+            <ul class="clean">
+                <li><i data-lucide="check" aria-hidden="true"></i>컨설턴트의 검증된 기획력</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>일반 컨설팅과 차별화된 코칭형 컨설팅</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>합리적 수강료</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>전폭적인 혜택(지원)</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>확실한 성과 기대</li>
+            </ul>
+            <h3 class="sub">독저팅의 특징은 다음과 같습니다</h3>
+            <ul class="clean">
+                <li><i data-lucide="check" aria-hidden="true"></i><strong>맞춤형</strong> : 수강생이 제출한 자료를 바탕으로 퍼스널 브랜딩을 고려해 컨설팅합니다.</li>
+                <li><i data-lucide="check" aria-hidden="true"></i><strong>밀착형</strong> : 1:1 카톡 상담을 운영합니다.</li>
+                <li><i data-lucide="check" aria-hidden="true"></i><strong>실속형(실전형)</strong> : 수강생은 컨설팅을 통해 얻은 것을 바로 책쓰기에 적용할 수 있습니다.</li>
+                <li><i data-lucide="check" aria-hidden="true"></i><strong>단기형</strong> : 군더더기를 없애 불필요한 시간 낭비를 줄입니다.</li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">실전 경험이 증명하는 코칭의 신뢰</h2>
+            <div class="card">
+                <p><strong>두 번째 책(2024)</strong> : 원고 없이 "출간기획서" 하나로 계약 (매우 이례적인 사례)</p>
+                <p style="margin:0;">→ 저의 기획력이 얼마나 뛰어난지를 잘 입증하는 사례이며, 출판 계약은 원고보다 '기획'이 훨씬 중요하다는 걸 잘 보여주는 사례입니다.</p>
+            </div>
+            <div class="card">
+                <p><strong>세 번째 책(2025)</strong> : 선인세 조건 계약 (요즘 시장에선 흔치 않은 사례)</p>
+                <p style="margin:0;">→ 〈마흔, 더 늦기 전에 생각의 틀을 리셋하라〉는 출간 후 베스트셀러가 되었습니다.</p>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">독저팅 커리큘럼 <span style="font-size:1rem; color:var(--muted); font-weight:500;">(2中 택1)</span></h2>
+            <p>1:1 맞춤형 진단과 처방을 통해 수강생만의 책 기획을 설계합니다.</p>
+            <div class="plans">
+                <div class="plan">
+                    <div class="pname">STANDARD (스탠다드)</div>
+                    <ul class="clean">
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>자기소개서 + 과제(약 60문항 설문지) 기반 맞춤형 "기획 리포트" 제공
+                            <span class="sub">→ 자기소개서와 과제는 단순한 사전 작업이 아니라, 수강생이 어떤 책을 써야 할지 스스로 깨닫는 과정이기도 합니다.</span>
+                            <span class="sub">→ 질문 개수가 많은 편입니다. 제 성격이 꼼꼼한 이유도 있지만, 대충 하고 싶지 않습니다.</span>
+                            <span class="sub">→ 만약 자기소개서와 과제의 내용 충실도가 빈약하다면, 기획 리포트 등이 부실하게 제공될 수밖에 없습니다. 최대한 알차고 진솔하게 작성해 주세요.</span></div></li>
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>"기획 리포트"를 통해 기획 뼈대와 방향성 확인 — 기획 리포트에는 ① 출간 적합 분야 ② 콘텐츠(주제, 소재, 콘셉트) ③ 핵심 메시지 ④ 제목/부제 ⑤ 목차 개요(대략 5장으로 구성된 얼개) 등이 포함.</div></li>
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>"기획 리포트"는 수강생으로부터 자기소개서와 과제(설문지)를 받은 후 2주 내로 제공</div></li>
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>책쓰기 본질이 담긴 특강 자료 제공 (현재 유료로 판매 중인 VOD 4개, 16만원 상당)</div></li>
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>카톡 책쓰기 상담권(8주)
+                            <span class="sub">→ 책쓰기 중 떠오르는 아이디어에 대한 피드백, 막히는 부분에 대한 조언 등.</span>
+                            <span class="sub">→ 제가 기획 리포트를 수강생에게 보내드리는 날로부터 8주.</span></div></li>
+                    </ul>
+                </div>
+                <div class="plan featured">
+                    <div class="pname">PREMIUM (프리미엄) <span class="pill">올인원</span></div>
+                    <ul class="clean">
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>STANDARD 모든 과정, 혜택 포함</div></li>
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>목차 개요(대략 5장으로 구성된 얼개 + 각 장마다 "꼭지" 추가 제공)</div></li>
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>기획 리포트를 토대로한 "출간기획서 가이드" 제공 — 다음 내용을 포함.
+                            <span class="sub">· 기획 의도: 왜 이 책을 썼는가? 왜 이 책이 세상에 나와야 하는가?</span>
+                            <span class="sub">· 타깃 독자: 누가 이 책을 읽을 것인가?</span>
+                            <span class="sub">· 차별점(강점): 기존 책들과 무엇이 다른가? 기존 책들에 비해 강점은 무엇인가?</span>
+                            <span class="sub">· 시장성(시의성): 왜 지금 이 책이 필요한가? 왜 하필 지금 이 책이 세상에 나와야 하나?</span>
+                            <span class="sub">· 저자 소개: 왜 당신이 이 책을 써야 하는가? 독자가 왜 당신이 쓴 이 책을 읽어야 하는가?</span>
+                            <span class="sub">· 마케팅 계획: 어떻게 홍보할 것인가?</span></div></li>
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>"기획 리포트"와 "출간기획서 가이드"는 수강생으로부터 자기소개서와 과제(설문지)를 받은 후 3주 내로 제공</div></li>
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>1회 줌 화상 코칭(1시간에서 최대 2시간)
+                            <span class="sub">→ 기획 리포트와 출간기획서 가이드 심층 분석 및 실행 전략 수립, 책쓰기 관련 궁금증 해결 등.</span></div></li>
+                        <li><i data-lucide="check" aria-hidden="true"></i><div>카톡 책쓰기 상담권 기간을 16주로 연장
+                            <span class="sub">→ 책쓰기 중 떠오르는 아이디어에 대한 피드백, 막히는 부분에 대한 조언 등.</span>
+                            <span class="sub">→ 제가 기획 리포트와 출간기획서 가이드를 수강생에게 보내드리는 날로부터 16주.</span></div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="curri-img"><img src="dokjeoting-table.png" alt="독저팅 커리큘럼 비교표"></div>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">독저팅 수강생 공통 혜택</h2>
+            <ul class="clean">
+                <li><i data-lucide="gift" aria-hidden="true"></i>제가 실제 투고 시 제출한 출간기획서 원본 제공</li>
+                <li><i data-lucide="gift" aria-hidden="true"></i>기타 출간기획서 샘플 추가 제공</li>
+                <li><i data-lucide="gift" aria-hidden="true"></i>제가 실제 사용한 투고 이메일 제목 및 원문 제공</li>
+                <li><i data-lucide="gift" aria-hidden="true"></i>출판사 이메일 리스트 제공</li>
+                <li><i data-lucide="gift" aria-hidden="true"></i>출간(출판 계약) 시 추천사 지원</li>
+                <li><i data-lucide="gift" aria-hidden="true"></i>출간(출판 계약) 시 〈박근필의 피플인사이트〉 유튜브 출연 기회 제공</li>
+                <li><i data-lucide="gift" aria-hidden="true"></i>출간(출판 계약) 시 SNS, 블로그 등 홍보 지원</li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">유의사항</h2>
+            <h3 class="sub">이런 분께 추천합니다</h3>
+            <ul class="clean">
+                <li><i data-lucide="check" aria-hidden="true"></i>책을 써야겠다는 마음은 있지만 어디서부터 시작해야 할지 막막한 분</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>이미 글을 쓰고 있으나 출판 구조와 전략을 잘 모르는 분</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>분야/콘텐츠/제목·부제/목차/출간기획서 설정 및 작성이 어려운 분</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>혼자 책을 쓰다가 번번이 실패했거나 의욕이 꺾인 분</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>방향만 잡아주면 자신 있게 써내려갈 분</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>출간을 통해 브랜드를 만들고 싶은 분</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>책쓰기의 원리와 방법을 제대로 알고 싶은 분</li>
+                <li><i data-lucide="check" aria-hidden="true"></i>외롭지 않게 책을 쓰고 싶은 분 (동행이 필요한 분)</li>
+            </ul>
+            <h3 class="sub">이런 분께는 정중히 권하지 않습니다</h3>
+            <ul class="clean">
+                <li><i data-lucide="minus" aria-hidden="true"></i>글쓰기 경험이 전혀 없는 분</li>
+                <li><i data-lucide="minus" aria-hidden="true"></i>대필, 원고 첨삭, 퇴고를 기대하는 분</li>
+                <li><i data-lucide="minus" aria-hidden="true"></i>제가 A-Z까지 다 해주길 기대하는 분</li>
+                <li><i data-lucide="minus" aria-hidden="true"></i>책에 담길 자신의 이야기를 드러내기 싫은 분</li>
+                <li><i data-lucide="minus" aria-hidden="true"></i>책쓰기를 쉽고 가볍게 생각하거나 빠르게 뚝딱 만들고 싶은 분</li>
+                <li><i data-lucide="minus" aria-hidden="true"></i>비문학(에세이/자기계발 등 실용서)이 아닌 문학(소설·시) 책쓰기를 고려하는 분</li>
+            </ul>
+            <h3 class="sub">신뢰는 기본입니다</h3>
+            <ul class="clean">
+                <li><i data-lucide="lock" aria-hidden="true"></i>수강생의 개인정보, 창작 내용, 사적 이야기 비밀 보장</li>
+                <li><i data-lucide="lock" aria-hidden="true"></i>독저팅 시 제공해드리는 자료는 외부 유출(공유) 금지</li>
+                <li><i data-lucide="lock" aria-hidden="true"></i>상호 존중과 신뢰를 바탕으로 진행됩니다</li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">마지막으로</h2>
+            <p class="pull">제가 평소에 늘 드렸던 말씀,<br>"여러분이 꾸준히 글을 쓰면 좋겠습니다. 나아가 책을 쓰면 좋겠습니다."</p>
+            <p>이제, 그 바람을 '출간'이라는 결과로 연결해드리겠습니다. 여러분의 이야기가 책으로 나오도록, 제가 함께하겠습니다. 독자에서 저자로 가는 첫걸음, 독저팅으로 지금 시작하세요!</p>
+
+            <div class="cta-band">
+                <h2>독저팅 신청 방법</h2>
+                <ol class="steps">
+                    <li>'독저팅 신청하기' 클릭 → 상담 신청으로 이동</li>
+                    <li>이메일과 연락처 입력</li>
+                    <li>신청 서비스에서 '독저팅' 선택</li>
+                    <li>문의 내용에 "독저팅 신청(상담)" 입력</li>
+                    <li>신청 확인 후 독저팅 상세(비용 등) 내용이 포함된 신청서를 보내드립니다</li>
+                </ol>
+                <a href="contact.html" class="btn"><i data-lucide="pen-line" aria-hidden="true"></i>독저팅 신청하기</a>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">수강생 후기</h2>
+            <div class="review-banner"><img src="dokjeoting-review.png" alt="독저팅 수강생 후기"></div>
+            <p class="hint">이미지를 클릭하면 크게 볼 수 있습니다.</p>
+            <div class="reviews-grid">
+                <figure class="rev" onclick="openReview('dokjeotingreview1.jpeg')"><img src="dokjeotingreview1.jpeg" alt="독저팅 후기 1"><figcaption>후기 1</figcaption></figure>
+                <figure class="rev" onclick="openReview('dokjeotingreview2.jpeg')"><img src="dokjeotingreview2.jpeg" alt="독저팅 후기 2"><figcaption>후기 2</figcaption></figure>
+                <figure class="rev" onclick="openReview('dokjeotingreview3.png')"><img src="dokjeotingreview3.png" alt="독저팅 후기 3"><figcaption>후기 3</figcaption></figure>
+                <figure class="rev" onclick="openReview('dokjeotingreview4.png')"><img src="dokjeotingreview4.png" alt="독저팅 후기 4"><figcaption>후기 4</figcaption></figure>
+                <figure class="rev" onclick="openReview('dokjeotingreview5.jpg')"><img src="dokjeotingreview5.jpg" alt="독저팅 후기 5"><figcaption>후기 5</figcaption></figure>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" id="reviewLightbox" onclick="closeReview()">
+        <button class="close" onclick="closeReview()" aria-label="닫기">&times;</button>
+        <img id="reviewLightboxImg" src="" alt="후기 확대 이미지">
+    </div>
+
+    <!-- 공통 강연 섭외 CTA -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+    <style>
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.97rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
+    </style>
+
+    <footer role="contentinfo">
+        <div class="footer-sns">
+            
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+           <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024 박근필성장연구소 by 박근필. All rights reserved.<br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+        function openReview(src) {
+            var box = document.getElementById('reviewLightbox');
+            document.getElementById('reviewLightboxImg').src = src;
+            box.style.display = 'block';
+            box.scrollTop = 0;
+            document.body.style.overflow = 'hidden';
+        }
+        function closeReview() {
+            document.getElementById('reviewLightbox').style.display = 'none';
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeReview(); });
+    </script>
+</body>
+</html>
