@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>독저팅 - 박근필성장연구소</title>
-    <meta name="description" content="책쓰기는 80% 기획, 20% 집필. 박근필 소장의 1:1 책쓰기 기획 컨설팅 독저팅으로 출판 계약에 성공하세요.">
+    <meta name="keywords" content="독저팅, 책쓰기 컨설팅, 출간기획서, 투고, 책쓰기 강연, 박근필">
+    <meta name="description" content="책쓰기는 80% 기획, 20% 집필. 박근필의 1:1 책쓰기 기획 컨설팅 독저팅. 출간기획서·투고 전략까지.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/dokjeoting.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,6 +105,17 @@
   .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
   .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
 </style>
+    <script src="stats.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="독저팅 - 1:1 책쓰기 기획 컨설팅">
+    <meta property="og:description" content="책쓰기는 80% 기획, 20% 집필. 출간기획서부터 투고 전략까지.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/dokjeoting.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="독저팅 - 1:1 책쓰기 기획 컨설팅">
+    <meta name="twitter:description" content="책쓰기는 80% 기획, 20% 집필. 출간기획서부터 투고 전략까지.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
 </head>
 <body>
     <header role="banner">
@@ -111,6 +123,7 @@
             <a href="index.html" class="logo"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
+                <li><a href="lecture.html">강연 안내</a></li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
@@ -134,11 +147,11 @@
         <section class="block">
             <h2 class="sec">독자에서 저자로, 당신의 첫 책을 현실로</h2>
             <p>책을 쓰고 싶은데 어디서부터 시작해야 할지 막막하신가요?</p>
-            <p>저는 책 5권을 출간했고, 그중 한 권은 베스트셀러가 되었으며, 원고 없이 출간 계약을 성사시킨 경험이 있습니다. 그 노하우를 담아 '기획'에 집중한 1:1 책쓰기 기획 컨설팅, 독저팅을 정식 오픈합니다.</p>
+            <p>저는 책 <span data-stat="books">5</span>권을 출간했고, 그중 한 권은 베스트셀러가 되었으며, 원고 없이 출간 계약을 성사시킨 경험이 있습니다. 그 노하우를 담아 '기획'에 집중한 1:1 책쓰기 기획 컨설팅, 독저팅을 정식 오픈합니다.</p>
             <div class="card">
                 <h3 class="sub" style="margin-top:0;">5줄 요약</h3>
                 <ul class="clean">
-                    <li><i data-lucide="check" aria-hidden="true"></i>책 5권 출간 / 베스트셀러 작가</li>
+                    <li><i data-lucide="check" aria-hidden="true"></i>책 <span data-stat="books">5</span>권 출간 / 베스트셀러 작가</li>
                     <li><i data-lucide="check" aria-hidden="true"></i>원고 없이 출간 계약 성사 (매우 이례적 사례)</li>
                     <li><i data-lucide="check" aria-hidden="true"></i>출판 계약의 80%를 차지하는 '기획' 집중 컨설팅</li>
                     <li><i data-lucide="check" aria-hidden="true"></i>8~16주 밀착 피드백 + 실전 자료 제공</li>
@@ -331,6 +344,33 @@
         <button class="close" onclick="closeReview()" aria-label="닫기">&times;</button>
         <img id="reviewLightboxImg" src="" alt="후기 확대 이미지">
     </div>
+
+    <!-- 공통 강연 섭외 CTA -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+    <style>
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.97rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
+    </style>
 
     <footer role="contentinfo">
         <div class="footer-sns">

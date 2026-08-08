@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>저서 - 박근필성장연구소</title>
-    <meta name="description" content="박근필 작가의 저서 소개. 베스트셀러 '마흔, 더 늦기 전에 생각의 틀을 리셋하라' 외 5권">
-    <meta name="keywords" content="박근필, 저서, 베스트셀러, 마흔, 수의사, 책">
+    <meta name="description" content="박근필 저서 5권 소개. 베스트셀러 『마흔, 더 늦기 전에 생각의 틀을 리셋하라』, 『당신의 원고는 왜 계약되지 않는가』 등. 북토크·저자 강연 섭외 가능.">
+    <meta name="keywords" content="박근필, 저서, 베스트셀러, 마흔 생각의 틀을 리셋하라, 당신의 원고는 왜 계약되지 않는가, 북토크, 저자 강연, 작가 초청">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/books.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,6 +92,17 @@
   .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
   .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
 </style>
+    <script src="stats.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="박근필 저서 - 베스트셀러 『마흔, 더 늦기 전에 생각의 틀을 리셋하라』 외">
+    <meta property="og:description" content="매년 출간하는 저자의 책 5권. 북토크·저자 강연 섭외 가능.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/books.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="박근필 저서 - 베스트셀러 『마흔, 더 늦기 전에 생각의 틀을 리셋하라』 외">
+    <meta name="twitter:description" content="매년 출간하는 저자의 책 5권. 북토크·저자 강연 섭외 가능.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
 </head>
 <body>
     <header role="banner">
@@ -99,6 +110,7 @@
             <a href="index.html" class="logo"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
+                <li><a href="lecture.html">강연 안내</a></li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
@@ -116,7 +128,7 @@
         <section class="page-hero">
             <span class="eyebrow">Books</span>
             <h1>박근필 작가의 저서</h1>
-            <p>수의사에서 베스트셀러 작가로, 인생 리셋의 여정을 담은 5권의 책</p>
+            <p>수의사에서 베스트셀러 작가로, 인생 리셋의 여정을 담은 <span data-stat="books">5</span>권의 책</p>
         </section>
 
         <section class="books" aria-label="저서 목록">
@@ -180,6 +192,33 @@
             </article>
         </section>
     </main>
+
+    <!-- 공통 강연 섭외 CTA -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+    <style>
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.97rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
+    </style>
 
     <footer role="contentinfo">
         <div class="footer-sns">

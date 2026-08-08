@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박근필성장연구소 - 박근필 소장의 글쓰기 플랫폼</title>
+    <title>박근필성장연구소 - 진로·직업 강연가 박근필 | 강연 섭외</title>
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="박근필성장연구소 - 읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다">
-    <meta property="og:description" content="수의사에서 그로쓰 퍼실리테이터로 변신한 박근필 소장의 책쓰기 기획 컨설팅, 독저팅과 필북 운영">
+    <meta property="og:title" content="박근필성장연구소 - AI 시대, 더 귀해지는 건 사람이 하는 말입니다">
+    <meta property="og:description" content="수의사이자 작가·강연가·커리어 스토리텔러 박근필. 전국 초·중·고 진로·직업 특강, 기업·기관 커리어 강연, 부산시교육청 교원 직무연수 강사.">
     <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
     <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/">
     <meta property="og:site_name" content="박근필성장연구소">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="박근필성장연구소 - 읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다">
-    <meta name="twitter:description" content="수의사에서 그로쓰 퍼실리테이터로 변신한 박근필 소장의 책쓰기 기획 컨설팅">
+    <meta name="twitter:title" content="박근필성장연구소 - AI 시대, 더 귀해지는 건 사람이 하는 말입니다">
+    <meta name="twitter:description" content="수의사이자 작가·강연가·커리어 스토리텔러 박근필. 진로·직업 특강, 기업·기관 커리어 강연 섭외.">
     <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
-    <meta name="description" content="수의사에서 그로쓰 퍼실리테이터로 변신한 박근필 소장의 책쓰기 기획 컨설팅, 독저팅과 필북 운영">
-    <meta name="keywords" content="박근필, 박근필성장연구소, 그로쓰 퍼실리테이터, 독저팅, 책쓰기, 글쓰기, 출판, 베스트셀러, 작가">
+    <meta name="description" content="수의사이자 작가·강연가·커리어 스토리텔러 박근필. 전국 초·중·고 진로·직업 특강, 기업·기관 커리어 강연, 부산시교육청 교원 직무연수 강사. 강연 섭외 문의.">
+    <meta name="keywords" content="박근필, 진로 강연, 직업 특강, 진로특강 강사, 기업 강연, 커리어 강연, 커리어 스토리텔러, 강연 섭외, 청소년 진로, 문해력 강연, 독서 강연, 글쓰기 강연, 교원 연수, 북토크, 박근필성장연구소, 그로쓰 퍼실리테이터, 독저팅, 책쓰기">
+    <script src="stats.js"></script>
     <meta name="author" content="박근필">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Korean">
@@ -61,7 +62,11 @@
         .hero-stats .num { font-size: 1.5rem; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; }
         .hero-stats .lab { font-size: 0.8rem; color: var(--sub); margin-top: 0.2rem; }
 
-        .hero-cta { display: flex; gap: 0.7rem; margin-top: 1.9rem; flex-wrap: wrap; }
+        .hero-proof { font-size: 0.83rem; color: var(--sub); line-height: 1.7; margin-top: 1.1rem; padding-top: 1rem; border-top: 1px dashed var(--line); }
+        .hero-cta { display: flex; gap: 0.7rem; margin-top: 1.4rem; flex-wrap: wrap; }
+        .tile.tile-feature { border-color: var(--mint); background: linear-gradient(180deg, var(--mint-soft) 0%, #ffffff 55%); }
+        .tile.tile-feature .tile-icon { background: var(--mint); color: #fff; }
+        .tile-badge { display: inline-block; align-self: flex-start; font-size: 0.68rem; font-weight: 700; color: #fff; background: var(--mint); padding: 0.16rem 0.5rem; border-radius: 20px; margin-bottom: 0.5rem; }
         .btn-primary { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--mint); color: #fff; font-weight: 700; font-size: 1rem; padding: 0.85rem 1.7rem; border-radius: 12px; transition: background 0.2s, transform 0.2s; }
         .btn-primary:hover { background: var(--mint-dark); transform: translateY(-2px); }
         .btn-ghost { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--ink); border: 1px solid var(--line); font-weight: 500; font-size: 1rem; padding: 0.85rem 1.5rem; border-radius: 12px; transition: border-color 0.2s; }
@@ -105,7 +110,18 @@
             .hero h1 { font-size: 1.9rem; }
             .hero-stats, .hero-cta { justify-content: center; }
         }
-        @media (max-width: 480px) { .tile-grid { grid-template-columns: 1fr; } .hero-stats .stat { padding: 0 1rem; } }
+        @media (max-width: 560px) {
+            /* 실적 4개를 2×2 격자로 — 줄바꿈 시 세로 구분선이 어긋나는 문제 해결 */
+            .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem 0; width: 100%; }
+            .hero-stats .stat { padding: 0.7rem 0.9rem; border-left: none !important; background: var(--mint-soft); border-radius: 12px; text-align: center; }
+            .hero-stats .stat:first-child { padding-left: 0.9rem; }
+            .hero-stats .num { font-size: 1.3rem; }
+            .hero-stats .lab { font-size: 0.74rem; }
+            .hero-proof { text-align: left; }
+            .hero-cta { width: 100%; }
+            .hero-cta a { flex: 1 1 100%; justify-content: center; }
+        }
+        @media (max-width: 480px) { .tile-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -116,6 +132,7 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
+                <li><a href="lecture.html">강연 안내</a></li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
@@ -134,16 +151,18 @@
             <div class="hero-grid">
                 <div class="hero-photo-wrap"><img src="author-hero.png" alt="박근필 소장"></div>
                 <div class="hero-text">
-                    <span class="eyebrow">그로쓰 퍼실리테이터 박근필</span>
-                    <h1>읽고 쓰고 말하는 삶으로<br><span class="accent">당신의 성장</span>을 돕습니다</h1>
-                    <p>수의사에서 그로쓰 퍼실리테이터로 변신한 박근필 소장의 원스톱 플랫폼</p>
+                    <span class="eyebrow">수의사이자 작가 · 강연가 · 커리어 스토리텔러</span>
+                    <h1>AI 시대, 더 귀해지는 건<br><span class="accent">사람이 하는 말</span>입니다</h1>
+                    <p>그로쓰 퍼실리테이터 박근필 — 읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다</p>
                     <div class="hero-stats">
-                        <div class="stat"><div class="num">5권</div><div class="lab">저서</div></div>
+                        <div class="stat"><div class="num"><span data-stat="schools">38</span>개교</div><div class="lab">진로·직업 특강</div></div>
                         <div class="stat"><div class="num">1위</div><div class="lab">교보문고 베스트셀러</div></div>
-                        <div class="stat"><div class="num">2.6만</div><div class="lab">SNS 팔로워</div></div>
+                        <div class="stat"><div class="num"><span data-stat="books">5</span>권</div><div class="lab">저서</div></div>
+                        <div class="stat"><div class="num"><span data-stat="columnOutlets">25</span>곳</div><div class="lab">칼럼 연재 매체</div></div>
                     </div>
+                    <p class="hero-proof"><b>한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</b><br>부산시교육청 영재교육진흥원 교원 직무연수 강사 · 부산시청 공무원 200여 명 특강 · 경향신문 인터뷰 · 방송 출연 다수</p>
                     <div class="hero-cta">
-                        <a class="btn-primary" href="contact.html"><i data-lucide="send" aria-hidden="true"></i>상담·문의하기</a>
+                        <a class="btn-primary" href="lecture.html"><i data-lucide="mic" aria-hidden="true"></i>강연 섭외 문의</a>
                         <a class="btn-ghost" href="author.html">소장 소개 <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -152,16 +171,23 @@
 
         <section class="hub" aria-label="콘텐츠 바로가기">
             <div class="tile-grid">
+                <a class="tile tile-feature" href="lecture.html">
+                    <div class="tile-icon"><i data-lucide="mic" aria-hidden="true"></i></div>
+                    <span class="tile-badge">강연 섭외</span>
+                    <div class="tile-title">강연 안내</div>
+                    <div class="tile-desc">다시 부르고 다른 곳에 소개하는 강연. 주제·실적·영상을 한눈에</div>
+                    <div class="tile-go">섭외 문의 <i data-lucide="arrow-right" aria-hidden="true"></i></div>
+                </a>
                 <a class="tile" href="author.html">
                     <div class="tile-icon"><i data-lucide="user" aria-hidden="true"></i></div>
                     <div class="tile-title">소장소개</div>
-                    <div class="tile-desc">수의사에서 베스트셀러 작가로 변신한 박근필 소장 이야기</div>
+                    <div class="tile-desc">수의사와 작가를 함께 살아가는 박근필 소장 이야기</div>
                     <div class="tile-go">바로가기 <i data-lucide="arrow-right" aria-hidden="true"></i></div>
                 </a>
                 <a class="tile" href="books.html">
                     <div class="tile-icon"><i data-lucide="book-open" aria-hidden="true"></i></div>
                     <div class="tile-title">저서</div>
-                    <div class="tile-desc">베스트셀러 『마흔, 더 늦기 전에…』 외 5권의 책</div>
+                    <div class="tile-desc">베스트셀러 『마흔, 더 늦기 전에…』 외 <span data-stat="books">5</span>권의 책</div>
                     <div class="tile-go">바로가기 <i data-lucide="arrow-right" aria-hidden="true"></i></div>
                 </a>
                 <a class="tile" href="videos.html">

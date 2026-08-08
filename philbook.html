@@ -6,8 +6,8 @@
     <title>필북 - 박근필성장연구소</title>
     
     <!-- SEO 메타 태그 -->
-    <meta name="description" content="박근필 소장의 동반성장 북클럽 필북. 책과 대화와 특강이 만나는 특별한 4주">
-    <meta name="keywords" content="필북, 북클럽, 독서모임, 박근필, 동반성장">
+    <meta name="description" content="박근필의 동반성장 북클럽 필북. 함께 읽고 쓰는 독서모임. 독서·글쓰기 강연 섭외도 가능합니다.">
+    <meta name="keywords" content="필북, 독서모임, 북클럽, 독서 강연, 글쓰기 강연, 박근필">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/philbook.html">
     
@@ -363,6 +363,17 @@ document.addEventListener('DOMContentLoaded', function(){ philbookData.check(); 
   .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
   .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
 </style>
+    <script src="stats.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="필북 - 동반성장 북클럽">
+    <meta property="og:description" content="함께 읽고 쓰는 독서모임. 독서·글쓰기 강연 섭외도 가능합니다.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/philbook.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="필북 - 동반성장 북클럽">
+    <meta name="twitter:description" content="함께 읽고 쓰는 독서모임. 독서·글쓰기 강연 섭외도 가능합니다.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
 </head>
 <body>
     <header role="banner">
@@ -375,6 +386,7 @@ document.addEventListener('DOMContentLoaded', function(){ philbookData.check(); 
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">홈</a></li>
+                <li><a href="lecture.html">강연 안내</a></li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="dokjeoting.html">독저팅</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
@@ -882,7 +894,7 @@ document.addEventListener('DOMContentLoaded', function(){ philbookData.check(); 
                                 <ul style="margin-left: 1.5rem; line-height: 1.8;">
                                     <li>두 번째 책『이 시대의 신중년이 사는 법』 출간 10일 만에 2쇄 돌파</li>
                                     <li>강연가로도 왕성한 활동</li>
-                                    <li>SNS 팔로워 약 2.6만 명</li>
+                                    <li>SNS 팔로워 약 <span data-stat="followers">2.6만</span> 명</li>
                                 </ul>
                                 <a href="https://blog.naver.com/yuni_yuli" target="_blank" style="display: inline-block; background: white; color: #16181d; padding: 0.6rem 1.2rem; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 1rem;">더블와이파파 작가 블로그 →
                                 </a>
@@ -1267,6 +1279,33 @@ document.addEventListener('DOMContentLoaded', function(){ philbookData.check(); 
 
         </div>
     </div>
+
+    <!-- 공통 강연 섭외 CTA -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+    <style>
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.97rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
+    </style>
 
     <footer role="contentinfo" style="background: #16181d; color: white; padding: 3rem 0; margin-top: 5rem;">
         <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">

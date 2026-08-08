@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상담 신청 - 박근필성장연구소</title>
-    <meta name="description" content="박근필성장연구소 상담 신청. 독저팅, VOD 특강, 필북, 필레터, 필라이프 코칭, 강연/협업 문의를 남겨주세요.">
+    <title>강연 섭외 · 상담 문의 - 박근필성장연구소</title>
+    <meta name="description" content="박근필 강연 섭외 문의. 학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌. 독저팅·코칭 상담도 함께 받습니다.">
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,7 +67,24 @@
             .page-hero h1 { font-size:1.6rem; }
             .contact-form { padding:1.6rem; }
         }
+        .lecture-guide { display:flex; gap:1rem; align-items:flex-start; background:#eef8f6; border:1px solid #d7eeeb; border-radius:16px; padding:1.3rem 1.4rem; margin-top:1.8rem; }
+        .lecture-guide .lg-icon { flex:0 0 auto; width:42px; height:42px; border-radius:11px; background:#2bb7ac; color:#fff; display:flex; align-items:center; justify-content:center; }
+        .lecture-guide .lg-icon svg { width:21px; height:21px; }
+        .lecture-guide .lg-body b { display:block; font-size:1.02rem; color:#16181d; margin-bottom:0.3rem; }
+        .lecture-guide .lg-body p { font-size:0.9rem; color:#5b6066; line-height:1.65; margin:0; }
+        .lecture-guide .lg-body a { color:#1f9d93; font-weight:700; text-decoration:underline; }
     </style>
+    <script src="stats.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="강연 섭외 · 상담 문의 - 박근필성장연구소">
+    <meta property="og:description" content="학교 진로 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 강좌 문의.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/contact.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="강연 섭외 · 상담 문의 - 박근필성장연구소">
+    <meta name="twitter:description" content="학교 진로 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 강좌 문의.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
 </head>
 <body>
     <header role="banner">
@@ -75,6 +92,7 @@
             <a href="index.html" class="logo"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
+                <li><a href="lecture.html">강연 안내</a></li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
@@ -91,9 +109,20 @@
     <main role="main">
         <section class="page-hero">
             <div class="hero-icon"><i data-lucide="send" aria-hidden="true"></i></div>
-            <h1>상담 신청</h1>
-            <p>궁금하신 점을 남겨주시면 정성껏 답변드리겠습니다</p>
+            <h1>강연 섭외 · 상담 문의</h1>
+            <p>강연 섭외, 책쓰기 컨설팅, 협업 무엇이든 편하게 남겨주세요<br>보통 하루 안에 답변드립니다</p>
         </section>
+
+        <div class="wrap">
+            <div class="lecture-guide">
+                <div class="lg-icon"><i data-lucide="mic" aria-hidden="true"></i></div>
+                <div class="lg-body">
+                    <b>강연을 검토 중이신가요?</b>
+                    <p>대상·인원·희망 날짜만 알려주셔도 됩니다. 주제가 정해지지 않았다면 함께 잡아 드립니다.
+                    강연 주제와 실적은 <a href="lecture.html">강연 안내 페이지</a>에서 먼저 보실 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
 
         <div class="wrap">
             <div class="contact-form">
@@ -119,20 +148,24 @@
                         <label for="service">신청 서비스 *</label>
                         <select id="service" name="신청_서비스" required>
                             <option value="">선택해주세요</option>
-                            <option value="독저팅">독저팅</option>
-                            <option value="VOD강연">VOD 특강</option>
-                            <option value="필북">필북</option>
-                            <option value="필레터">필레터</option>
+                            <option value="강연 섭외(학교·청소년)">강연 섭외 — 학교·청소년 진로/직업</option>
+                            <option value="강연 섭외(기업·기관)">강연 섭외 — 기업·기관·공공</option>
+                            <option value="강연 섭외(도서관·평생교육)">강연 섭외 — 도서관·평생교육·독서/글쓰기</option>
+                            <option value="강연 섭외(교원연수·학부모)">강연 섭외 — 교원 연수·학부모</option>
+                            <option value="방송·영상 출연/협업">방송·영상 출연 / 협업</option>
+                            <option value="독저팅">독저팅 (1:1 책쓰기 기획 컨설팅)</option>
                             <option value="필라이프 코칭">필라이프 코칭</option>
-                            <option value="강연/협업">강연/협업</option>
+                            <option value="필북">필북 (독서모임)</option>
+                            <option value="VOD강연">VOD 특강</option>
+                            <option value="필레터">필레터</option>
                             <option value="기타">기타 문의</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="message">문의 내용</label>
-                        <textarea id="message" name="문의_내용" placeholder="궁금하신 내용이나 현재 상황을 자유롭게 작성해주세요."></textarea>
+                        <textarea id="message" name="문의_내용" placeholder="강연 문의라면 아래를 알려주시면 빠릅니다.&#10;· 기관/학교명&#10;· 대상과 인원 (예: 중2 150명 / 임직원 60명)&#10;· 희망 날짜·시간 (예: 10월 중순, 90분)&#10;· 원하는 주제나 목적 (미정이어도 괜찮습니다)"></textarea>
                     </div>
-                    <button type="submit" class="submit-button">상담 신청하기</button>
+                    <button type="submit" class="submit-button">문의 보내기</button>
                 </form>
             </div>
             <div class="back-link"><a href="index.html"><i data-lucide="arrow-left" aria-hidden="true"></i>홈으로 돌아가기</a></div>
