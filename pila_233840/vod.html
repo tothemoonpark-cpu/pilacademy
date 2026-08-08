@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOD 특강 - 박근필성장연구소</title>
+    
+    <!-- SEO 메타 태그 -->
+    <meta name="description" content="박근필 작가의 책쓰기 VOD 온라인 강의. 언제 어디서나 책쓰기 기획 노하우를 배우세요">
+    <meta name="keywords" content="VOD, 온라인강의, 책쓰기, 박근필, 박근필성장연구소">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/vod.html">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: #f6f8f8;
+            color: #16181d;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #16181d;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* 데스크톱에서는 항상 메뉴 표시 */
+        @media screen and (min-width: 769px) {
+            .nav-links {
+                display: flex !important;
+            }
+        }
+        
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #16181d;
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            z-index: 1000;
+            top: 100% !important;
+            margin-top: -8px !important;
+            padding-top: 0.5rem;
+        }
+        
+        .dropdown-content::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            right: -10px;
+            height: 28px;
+            background: transparent;
+        }
+        
+        .dropdown-content a {
+            color: #16181d;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            opacity: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropbtn {
+            cursor: pointer;
+            padding-bottom: 1rem;
+        }
+        
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            flex-shrink: 0;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+        }
+        
+        .logo.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+                z-index: 1001;
+            }
+            
+            nav {
+                padding: 0 1rem;
+                flex-wrap: nowrap;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                grid-template-columns: none;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+                transition: opacity 0.3s ease;
+            }
+            
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: #f6f8f8;
+                flex-direction: column;
+                padding: 1rem 0;
+                z-index: 999;
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                text-align: center;
+                padding: 0.8rem 0;
+            }
+            
+            .dropdown-content {
+                position: static;
+                background: rgba(255,255,255,0.1);
+                margin: 0.5rem 1rem;
+            }
+            
+            .dropdown-content a {
+                color: #16181d;
+            }
+        }
+        
+        /* 결제 모달 스타일 */
+        .payment-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 20000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .payment-modal.active {
+            display: flex;
+        }
+        
+        .payment-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .payment-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #999;
+            background: none;
+            border: none;
+            line-height: 1;
+        }
+        
+        .payment-close:hover {
+            color: #333;
+        }
+        
+        .payment-title {
+            font-size: 1.8rem;
+            color: #16181d;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #e8e8e8;
+        }
+        
+        .payment-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .payment-info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .payment-info-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .payment-info-label {
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .payment-info-value {
+            color: #16181d;
+            font-weight: bold;
+        }
+        
+        .payment-price {
+            font-size: 1.5rem;
+            color: #16181d;
+        }
+        
+        .payment-account {
+            background: #f6f8f8;
+            color: #16181d;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .payment-account-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+        
+        .payment-account-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        
+        .payment-account-holder {
+            font-size: 1.1rem;
+        }
+        
+        .payment-notice {
+            background: #f6f8f8;
+            border-left: 4px solid #e8e8e8;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            color: #16181d;
+        }
+        
+        .payment-form {
+            margin-top: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #16181d;
+            font-weight: 500;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #16181d;
+        }
+        
+        .payment-submit {
+            width: 100%;
+            background: #f6f8f8;
+            color: #16181d;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .payment-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(43, 183, 172, 0.4);
+        }
+    </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style id="renew-override">
+  body{ -webkit-font-smoothing:antialiased; }
+  header{ background:#ffffff !important; border-bottom:1px solid #ececec !important; box-shadow:0 1px 3px rgba(0,0,0,0.04) !important; }
+  header .logo, header .nav-links a, header .dropbtn{ color:#16181d !important; }
+  header .nav-links a:hover, header .dropbtn:hover{ color:#16181d !important; opacity:1 !important; }
+  .menu-toggle span{ background:#16181d !important; }
+  .dropdown-content{ box-shadow:0 8px 24px rgba(0,0,0,0.08) !important; border:1px solid #ececec !important; }
+  .dropdown-content a{ color:#16181d !important; }
+  .dropdown-content a:hover{ background:#f6f8f8 !important; color:#16181d !important; }
+  .cta-button,.submit-button,.vod-button,.payment-submit,.vod-detail-buy-button,.vod-detail-buy,.buy-button,.notice-badge{ background:#16181d !important; color:#fff !important; box-shadow:none !important; }
+  .cta-button:hover,.submit-button:hover,.vod-button:hover,.payment-submit:hover{ background:#16181d !important; box-shadow:0 6px 16px rgba(43,183,172,0.25) !important; }
+  .section-title{ color:#16181d !important; }
+  .section-title::after{ background:#16181d !important; }
+  footer{ background:#14161a !important; }
+  .footer-links a:hover{ color:#16181d !important; }
+</style>
+<style id="mint-header-override">
+  header{ background:#2bb7ac !important; border-bottom:none !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; }
+  header .logo, header .logo svg, header .nav-links a, header .dropbtn{ color:#ffffff !important; }
+  header .nav-links a:hover, header .dropbtn:hover{ color:#ffffff !important; opacity:0.82 !important; }
+  .menu-toggle span{ background:#ffffff !important; }
+  .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
+  .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
+</style>
+    <script src="stats.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="박근필 VOD 특강 - 책쓰기·독서·퍼스널 브랜딩">
+    <meta property="og:description" content="언제 어디서나 듣는 온라인 특강.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/vod.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="박근필 VOD 특강 - 책쓰기·독서·퍼스널 브랜딩">
+    <meta name="twitter:description" content="언제 어디서나 듣는 온라인 특강.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer; white-space: nowrap; display: inline-block;">📚 박근필성장연구소</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="lecture.html">강연 안내</a></li>
+                <li><a href="author.html">작가소개</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="phillife.html">필라이프 코칭</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">SNS</a>
+                    <div class="dropdown-content">
+                        <a href="https://litt.ly/tothemoonpark" target="_blank">📚 Litt.ly</a>
+                        <a href="https://blog.naver.com/tothemoon_park" target="_blank">📝 블로그</a>
+                        <a href="https://brunch.co.kr/@tothemoonpark" target="_blank">✍️ 브런치</a>
+                        <a href="https://www.youtube.com/@tothemoonpark" target="_blank">🎥 유튜브</a>
+                        <a href="https://www.instagram.com/tothemoon_park/" target="_blank">📷 인스타그램</a>
+                        <a href="https://www.threads.com/@tothemoon_park" target="_blank">🧵 스레드</a>
+                        <a href="https://x.com/Tothemoon_Park" target="_blank">🐦 X (트위터)</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">상담신청</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="height: 80px;"></div>
+
+    <div style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #16181d; text-align: center;">VOD 특강</h2>
+        
+        <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 2rem;">
+            <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail1')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="font-size: 1.3rem; color: #16181d;">1. VOD 특강 후기 모음</h3>
+                    <span id="arrow1" style="font-size: 1.5rem; color: #16181d;">▼</span>
+                </div>
+            </div>
+            
+            <div id="detail1" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
+                <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
+                    <h3 style="font-size: 1.5rem; color: #16181d; margin-bottom: 2rem; text-align: center;">VOD 특강 수강생 후기</h3>
+                    
+                    <div style="display: grid; gap: 1.5rem; max-width: 900px; margin: 0 auto;">
+                        <img src="vod-review-1.png" alt="VOD 후기 1" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-2.png" alt="VOD 후기 2" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-3.png" alt="VOD 후기 3" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-4.png" alt="VOD 후기 4" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-5.png" alt="VOD 후기 5" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-6.png" alt="VOD 후기 6" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-7.png" alt="VOD 후기 7" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-8.png" alt="VOD 후기 8" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-9.png" alt="VOD 후기 9" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-10.png" alt="VOD 후기 10" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-11.png" alt="VOD 후기 11" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-12.png" alt="VOD 후기 12" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="vod-review-13.png" alt="VOD 후기 13" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="1.webp" alt="VOD 후기 14" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="2.webp" alt="VOD 후기 15" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="3.webp" alt="VOD 후기 16" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="4.webp" alt="VOD 후기 17" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="5.webp" alt="VOD 후기 18" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="6.webp" alt="VOD 후기 19" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="7.webp" alt="VOD 후기 20" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="8.webp" alt="VOD 후기 21" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="9.webp" alt="VOD 후기 22" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="10.webp" alt="VOD 후기 23" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="11.webp" alt="VOD 후기 24" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="12.webp" alt="VOD 후기 25" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="13.webp" alt="VOD 후기 26" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <img src="14.webp" alt="VOD 후기 27" style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 2. VOD 1분 미리 보기 -->
+        <div style="background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 2rem;">
+            <div style="padding: 2rem; cursor: pointer; transition: background 0.3s;" onclick="toggleContent('detail2')" onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='white'">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="font-size: 1.3rem; color: #16181d;">2. VOD 1분 미리 보기</h3>
+                    <span id="arrow2" style="font-size: 1.5rem; color: #16181d;">▼</span>
+                </div>
+            </div>
+            
+            <div id="detail2" style="display: none; padding: 0 2rem 2rem 2rem; line-height: 1.8;">
+                <div style="border-top: 1px solid #e0e0e0; padding-top: 2rem;">
+                    <h3 style="font-size: 1.5rem; color: #16181d; margin-bottom: 2rem; text-align: center;">각 강의를 1분간 미리 보세요</h3>
+                    
+                    <div style="max-width: 900px; margin: 0 auto;">
+                        <!-- VOD 1 -->
+                        <div style="margin-bottom: 1.5rem; padding: 1.8rem; background: #ffffff; border: 1px solid #ececec; border-radius: 16px;">
+                            <h4 style="font-size: 1.3rem; color: #16181d; margin-bottom: 1rem;">책을 왜 써야 하는가?</h4>
+                            <div id="preview1Container">
+                                <div id="preview1Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
+                                    <iframe id="preview1" data-src="https://drive.google.com/file/d/1ArTCtIaDa88o6DwPAlFoX_i4-5ogJAtN/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
+                                </div>
+                                <button id="preview1PlayBtn" onclick="startPreview(1)" style="display: block; width: 100%; padding: 2.4rem; background: #f7f8f9; color: #16181d; border: 1px solid #ececec; border-radius: 12px; font-size: 1.2rem; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    1분 미리보기 재생
+                                </button>
+                            </div>
+                            <div id="preview1Message" style="display: none; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">미리보기가 종료되었습니다</h4>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
+                            </div>
+                            <button onclick="openVodDetail1()" style="display: block; width: 100%; margin-top: 1.2rem; padding: 1.05rem; background: #ffffff; color: #16181d; border: 1px solid #d8d8d8; border-radius: 12px; font-size: 1.05rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f6f8f8'" onmouseout="this.style.background='white'">상세보기</button>
+                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/076WClZ', '_blank')" style="display: block; width: 100%; margin-top: 0.6rem; padding: 1.1rem; background: #16181d; color: #ffffff; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: none; transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">바로 구매하기 (29,000원)</button>
+                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
+                        </div>
+                        
+                        <!-- VOD 2 -->
+                        <div style="margin-bottom: 1.5rem; padding: 1.8rem; background: #ffffff; border: 1px solid #ececec; border-radius: 16px;">
+                            <h4 style="font-size: 1.3rem; color: #16181d; margin-bottom: 1rem;">책쓰기는 기획이 80%다</h4>
+                            <div id="preview2Container">
+                                <div id="preview2Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
+                                    <iframe id="preview2" data-src="https://drive.google.com/file/d/1llkmwsrP41J6vmqlMDn1tx5zW1-emJRo/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
+                                </div>
+                                <button id="preview2PlayBtn" onclick="startPreview(2)" style="display: block; width: 100%; padding: 2.4rem; background: #f7f8f9; color: #16181d; border: 1px solid #ececec; border-radius: 12px; font-size: 1.2rem; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    1분 미리보기 재생
+                                </button>
+                            </div>
+                            <div id="preview2Message" style="display: none; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">미리보기가 종료되었습니다</h4>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
+                            </div>
+                            <button onclick="openVodDetail2()" style="display: block; width: 100%; margin-top: 1.2rem; padding: 1.05rem; background: #ffffff; color: #16181d; border: 1px solid #d8d8d8; border-radius: 12px; font-size: 1.05rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f6f8f8'" onmouseout="this.style.background='white'">상세보기</button>
+                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/UrfM4Bu', '_blank')" style="display: block; width: 100%; margin-top: 0.6rem; padding: 1.1rem; background: #16181d; color: #ffffff; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: none; transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">바로 구매하기 (49,000원)</button>
+                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
+                        </div>
+                        
+                        <!-- VOD 3 -->
+                        <div style="margin-bottom: 1.5rem; padding: 1.8rem; background: #ffffff; border: 1px solid #ececec; border-radius: 16px;">
+                            <h4 style="font-size: 1.3rem; color: #16181d; margin-bottom: 1rem;">쉽게 이해하는 퍼스널 브랜딩</h4>
+                            <div id="preview3Container">
+                                <div id="preview3Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
+                                    <iframe id="preview3" data-src="https://drive.google.com/file/d/1EOlnwG6EaJMy3df1rnf1GHac_UNa4VNf/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
+                                </div>
+                                <button id="preview3PlayBtn" onclick="startPreview(3)" style="display: block; width: 100%; padding: 2.4rem; background: #f7f8f9; color: #16181d; border: 1px solid #ececec; border-radius: 12px; font-size: 1.2rem; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    1분 미리보기 재생
+                                </button>
+                            </div>
+                            <div id="preview3Message" style="display: none; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">미리보기가 종료되었습니다</h4>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
+                            </div>
+                            <button onclick="openVodDetail3()" style="display: block; width: 100%; margin-top: 1.2rem; padding: 1.05rem; background: #ffffff; color: #16181d; border: 1px solid #d8d8d8; border-radius: 12px; font-size: 1.05rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f6f8f8'" onmouseout="this.style.background='white'">상세보기</button>
+                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/atoZl7U', '_blank')" style="display: block; width: 100%; margin-top: 0.6rem; padding: 1.1rem; background: #16181d; color: #ffffff; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: none; transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">바로 구매하기 (49,000원)</button>
+                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
+                        </div>
+                        
+                        <!-- VOD 4 -->
+                        <div style="margin-bottom: 1.5rem; padding: 1.8rem; background: #ffffff; border: 1px solid #ececec; border-radius: 16px;">
+                            <h4 style="font-size: 1.3rem; color: #16181d; margin-bottom: 1rem;">직장인이 아닌 직업인으로</h4>
+                            <div id="preview4Container">
+                                <div id="preview4Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
+                                    <iframe id="preview4" data-src="https://drive.google.com/file/d/1giWnt-McveS0qBT_NLq-IMQWNB3nVo0q/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
+                                </div>
+                                <button id="preview4PlayBtn" onclick="startPreview(4)" style="display: block; width: 100%; padding: 2.4rem; background: #f7f8f9; color: #16181d; border: 1px solid #ececec; border-radius: 12px; font-size: 1.2rem; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    1분 미리보기 재생
+                                </button>
+                            </div>
+                            <div id="preview4Message" style="display: none; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">미리보기가 종료되었습니다</h4>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
+                            </div>
+                            <button onclick="openVodDetail4()" style="display: block; width: 100%; margin-top: 1.2rem; padding: 1.05rem; background: #ffffff; color: #16181d; border: 1px solid #d8d8d8; border-radius: 12px; font-size: 1.05rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f6f8f8'" onmouseout="this.style.background='white'">상세보기</button>
+                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/BDPw8UV', '_blank')" style="display: block; width: 100%; margin-top: 0.6rem; padding: 1.1rem; background: #16181d; color: #ffffff; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: none; transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">바로 구매하기 (29,000원)</button>
+                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
+                        </div>
+                        
+                        <!-- VOD 5 -->
+                        <div style="margin-bottom: 1.5rem; padding: 1.8rem; background: #ffffff; border: 1px solid #ececec; border-radius: 16px;">
+                            <h4 style="font-size: 1.3rem; color: #16181d; margin-bottom: 1rem;">독서법 1 · 목적·능동적·아웃풋 독서</h4>
+                            <div id="preview5Container">
+                                <div id="preview5Wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;">
+                                    <iframe id="preview5" data-src="https://drive.google.com/file/d/1Q8UdyrTi0Lq1Eb7xOFYLOex7QKpmInqA/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" sandbox="allow-scripts allow-same-origin"></iframe>
+                                </div>
+                                <button id="preview5PlayBtn" onclick="startPreview(5)" style="display: block; width: 100%; padding: 2.4rem; background: #f7f8f9; color: #16181d; border: 1px solid #ececec; border-radius: 12px; font-size: 1.2rem; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                    1분 미리보기 재생
+                                </button>
+                            </div>
+                            <div id="preview5Message" style="display: none; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 1rem;">
+                                <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">미리보기가 종료되었습니다</h4>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6;">전체 강의는 구매 후 시청하실 수 있습니다.</p>
+                            </div>
+                            <button onclick="openVodDetail5()" style="display: block; width: 100%; margin-top: 1.2rem; padding: 1.05rem; background: #ffffff; color: #16181d; border: 1px solid #d8d8d8; border-radius: 12px; font-size: 1.05rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f6f8f8'" onmouseout="this.style.background='white'">상세보기</button>
+                            <button onclick="window.open('https://litt.ly/tothemoonpark/sale/f74TaYi', '_blank')" style="display: block; width: 100%; margin-top: 0.6rem; padding: 1.1rem; background: #16181d; color: #ffffff; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold; text-align: center; cursor: pointer; box-shadow: none; transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">바로 구매하기 (29,000원)</button>
+                            <p style="font-size: 0.95rem; color: #666; margin-top: 0.5rem; text-align: center;">안전한 <strong style="font-size: 1.05rem;">카드 결제</strong>를 위해 Litt.ly로 이동합니다</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 결제 안내 모달 -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-content">
+            <button class="payment-close" onclick="closePaymentModal()">×</button>
+            <h2 class="payment-title">VOD 구매</h2>
+            
+            <div class="payment-info">
+                <div class="payment-info-item">
+                    <span class="payment-info-label">상품명</span>
+                    <span class="payment-info-value" id="productName"></span>
+                </div>
+                <div class="payment-info-item">
+                    <span class="payment-info-label">가격</span>
+                    <span class="payment-info-value payment-price" id="productPrice"></span>
+                </div>
+            </div>
+            
+            <div class="payment-account">
+                <div class="payment-account-label">입금 계좌</div>
+                <div class="payment-account-number">국민은행<br>586302-04-011351</div>
+                <div class="payment-account-holder">예금주: 박근필</div>
+            </div>
+            
+            <div class="payment-notice">
+                ⚠️ 입금 후 아래 정보를 입력하시면, 입금 확인 후 VOD 링크를 보내드립니다.
+            </div>
+            
+            <form class="payment-form" id="paymentForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="065b78d5-e112-4569-97f6-9f536177f948">
+                <input type="hidden" name="subject" id="formSubject" value="[박근필성장연구소] VOD 구매 - 입금 확인 요청">
+                <input type="hidden" name="from_name" value="박근필성장연구소 신청 시스템">
+                <textarea name="message" style="display:none;" id="formMessage"></textarea>
+                
+                <div class="form-group">
+                    <label for="paymentName">입금자명 *</label>
+                    <input type="text" id="paymentName" name="입금자명" required placeholder="홍길동">
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentEmail">이메일 *</label>
+                    <input type="email" id="paymentEmail" name="이메일" required placeholder="example@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentPhone">연락처 *</label>
+                    <input type="tel" id="paymentPhone" name="연락처" required placeholder="010-0000-0000">
+                </div>
+                
+                <button type="submit" class="payment-submit">입금 완료 알림 전송</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- VOD 상세 모달 -->
+    <div id="vodDetailModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000; overflow-y: auto;">
+        <div style="max-width: 900px; margin: 2rem auto; background: white; border-radius: 20px; position: relative;">
+            <div style="position: sticky; top: 0; background: #f6f8f8; color: #16181d; padding: 2rem; border-radius: 20px 20px 0 0; z-index: 1;">
+                <button onclick="closeVodDetailModal()" style="position: absolute; top: 1rem; right: 1rem; background: white; color: #16181d; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; font-weight: bold;">×</button>
+                <h2 id="vodDetailTitle" style="margin: 0; font-size: 1.8rem;"></h2>
+                <div style="margin-top: 1rem; display: flex; gap: 2rem; flex-wrap: wrap;">
+                    <span id="vodDetailDuration" style="font-size: 1.1rem;"></span>
+                    <span id="vodDetailPrice" style="font-size: 1.3rem; font-weight: bold;"></span>
+                </div>
+            </div>
+            
+            <div id="vodDetailBody" style="padding: 2rem; max-height: calc(90vh - 150px); overflow-y: auto;"></div>
+        </div>
+    </div>
+
+    <!-- 공통 강연 섭외 CTA -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+    <style>
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.97rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
+    </style>
+
+    <footer role="contentinfo" style="background: #16181d; color: white; padding: 3rem 0; margin-top: 5rem;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2rem;">
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                <a href="https://litt.ly/tothemoonpark" target="_blank" style="color: white; text-decoration: none;">Litt.ly</a>
+                <a href="index.html" style="color: white; text-decoration: none;">홈</a>
+                <a href="author.html" style="color: white; text-decoration: none;">작가소개</a>
+                <a href="dokjeoting.html" style="color: white; text-decoration: none;">독저팅</a>
+                <a href="vod.html" style="color: white; text-decoration: none;">VOD 강의</a>
+                <a href="philbook.html" style="color: white; text-decoration: none;">필북</a>
+                <a href="books.html" style="color: white; text-decoration: none;">저서</a>
+                <a href="newsletter.html" style="color: white; text-decoration: none;">필레터</a>
+                <a href="phillife.html" style="color: white; text-decoration: none;">필라이프 코칭</a>
+                <a href="contact.html" style="color: white; text-decoration: none;">상담신청</a>
+                <a href="notice.html" style="color: white; text-decoration: none;">공지사항</a>
+            </div>
+            <p>&copy; 2024 박근필성장연구소 by 박근필. All rights reserved.</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">여러분의 읽고 쓰고 말하는 삶을 응원합니다</p>
+        </div>
+    </footer>
+
+    <script>
+        // YouTube API 제거 - Google Drive 사용
+        function initYouTubePlayers() {
+            // 더 이상 사용하지 않음
+        }
+        
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const arrow = document.getElementById('arrow' + id.slice(-1));
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow.textContent = '▲';
+                
+                // detail2가 열릴 때 1분 타이머 시작
+                if (id === 'detail2') {
+                    startPreviewTimers();
+                }
+            } else {
+                content.style.display = 'none';
+                arrow.textContent = '▼';
+            }
+        }
+        
+        // 각 VOD의 타이머를 저장하는 객체
+        const previewTimers = {};
+        
+        // 재생 버튼 클릭 시 호출
+        function startPreview(videoNum) {
+            console.log('재생 시작: VOD ' + videoNum);
+            
+            // 재생 버튼 숨기고 영상 보이기
+            const playBtn = document.getElementById('preview' + videoNum + 'PlayBtn');
+            const wrapper = document.getElementById('preview' + videoNum + 'Wrapper');
+            const iframe = document.getElementById('preview' + videoNum);
+            
+            if (playBtn) playBtn.style.display = 'none';
+            if (wrapper) wrapper.style.display = 'block';
+            
+            // iframe src 로드 (data-src에서 src로 이동)
+            if (iframe && iframe.getAttribute('data-src')) {
+                iframe.src = iframe.getAttribute('data-src');
+            }
+            
+            // 타이머 시작
+            startIndividualTimer(videoNum);
+        }
+        
+        function startIndividualTimer(videoNum) {
+            // 이미 타이머가 시작되었으면 무시
+            if (previewTimers[videoNum]) {
+                return;
+            }
+            
+            console.log('타이머 시작: VOD ' + videoNum);
+            
+            // 해당 VOD의 타이머 시작
+            previewTimers[videoNum] = setTimeout(function() {
+                console.log('타이머 종료: VOD ' + videoNum);
+                const iframe = document.getElementById('preview' + videoNum);
+                const wrapper = document.getElementById('preview' + videoNum + 'Wrapper');
+                const message = document.getElementById('preview' + videoNum + 'Message');
+                
+                // iframe 완전 제거 (음성도 정지됨)
+                if (iframe) {
+                    iframe.remove();
+                }
+                
+                if (wrapper && message) {
+                    wrapper.style.display = 'none';
+                    message.style.display = 'block';
+                }
+            }, 60000); // 60초 = 1분
+        }
+        
+        function startPreviewTimers() {
+            // 더 이상 자동 시작하지 않음 - 사용자가 재생 버튼 클릭 필요
+        }
+        
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const logo = document.querySelector('.logo');
+            navLinks.classList.toggle('active');
+            
+            if (navLinks.classList.contains('active')) {
+                logo.classList.add('hidden');
+            } else {
+                logo.classList.remove('hidden');
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuLinks = document.querySelectorAll('.nav-links a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        const navLinks = document.getElementById('navLinks');
+                        const logo = document.querySelector('.logo');
+                        if (navLinks) navLinks.classList.remove('active');
+                        if (logo) logo.classList.remove('hidden');
+                    }
+                });
+            });
+        });
+        
+        window.addEventListener('load', function() {
+            const navLinks = document.getElementById('navLinks');
+            const logo = document.querySelector('.logo');
+            if (navLinks) navLinks.classList.remove('active');
+            if (logo) logo.classList.remove('hidden');
+        });
+        
+        // 결제 모달 함수
+        function showPaymentInfo(itemName, price) {
+            const modal = document.getElementById('paymentModal');
+            document.getElementById('productName').textContent = itemName;
+            document.getElementById('productPrice').textContent = price.toLocaleString() + '원';
+            modal.classList.add('active');
+        }
+        
+        function closePaymentModal() {
+            document.getElementById('paymentModal').classList.remove('active');
+        }
+        
+        // 결제 폼 제출 처리
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('paymentForm');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const productName = document.getElementById('productName').textContent;
+                    const productPrice = document.getElementById('productPrice').textContent;
+                    const paymentName = document.getElementById('paymentName').value;
+                    const paymentEmail = document.getElementById('paymentEmail').value;
+                    const paymentPhone = document.getElementById('paymentPhone').value;
+                    
+                    // 메시지 구성
+                    const message = `
+=== VOD 구매 입금 확인 요청 ===
+
+상품명: ${productName}
+가격: ${productPrice}
+
+입금자명: ${paymentName}
+이메일: ${paymentEmail}
+연락처: ${paymentPhone}
+
+입금 계좌: 국민은행 586302-04-011351 (박근필)
+
+입금 확인 후 VOD 링크를 보내드리겠습니다.
+                    `;
+                    
+                    document.getElementById('formMessage').value = message;
+                    document.getElementById('formSubject').value = '[박근필성장연구소] VOD 구매 - ' + productName;
+                    
+                    // Web3Forms로 전송
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert('입금 확인 요청이 전송되었습니다!\n입금 확인 후 이메일로 VOD 링크를 보내드리겠습니다.');
+                            closePaymentModal();
+                            form.reset();
+                        } else {
+                            alert('전송 중 오류가 발생했습니다. 다시 시도해주세요.');
+                        }
+                    })
+                    .catch(error => {
+                        alert('전송 중 오류가 발생했습니다. 다시 시도해주세요.');
+                        console.error('Error:', error);
+                    });
+                    
+                    return false;
+                });
+            }
+        });
+        
+        // VOD 상세 모달 열기 함수
+        function openVodDetailModal(vodData) {
+            const modal = document.getElementById('vodDetailModal');
+            document.getElementById('vodDetailTitle').textContent = vodData.title;
+            document.getElementById('vodDetailDuration').textContent = '⏱ ' + vodData.duration;
+            document.getElementById('vodDetailPrice').textContent = vodData.price.toLocaleString() + '원';
+            
+            // 상세 내용 생성 (미리보기 영상 제외)
+            let bodyHTML = '<div style="padding: 2rem;">';
+            bodyHTML += '<p style="font-size: 1.15rem; color: #666; margin-bottom: 2.5rem; line-height: 1.8; font-weight: 500;">' + vodData.subtitle + '</p>';
+            
+            if (vodData.changes) {
+                bodyHTML += '<h3 style="color: #16181d; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #e8e8e8; padding-bottom: 0.5rem;">💡 이런 변화를 기대하세요</h3><ul style="list-style: none; padding: 0;">';
+                vodData.changes.forEach(change => {
+                    bodyHTML += '<li style="padding: 1rem; margin-bottom: 0.5rem; background: #f8f9fa; border-left: 4px solid #e8e8e8; border-radius: 4px; line-height: 1.7;">✓ ' + change + '</li>';
+                });
+                bodyHTML += '</ul>';
+            }
+            
+            if (vodData.recommend) {
+                bodyHTML += '<h3 style="color: #16181d; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #e8e8e8; padding-bottom: 0.5rem;">👥 이런 분께 추천합니다</h3><ul style="list-style: none; padding: 0;">';
+                vodData.recommend.forEach(rec => {
+                    bodyHTML += '<li style="padding: 1rem; margin-bottom: 0.5rem; background: #f6f8f8; border-left: 4px solid #e8e8e8; border-radius: 4px; line-height: 1.7;">• ' + rec + '</li>';
+                });
+                bodyHTML += '</ul>';
+            }
+            
+            if (vodData.myths) {
+                bodyHTML += '<h3 style="color: #16181d; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #e8e8e8; padding-bottom: 0.5rem;">❌ 잘못된 믿음 깨기</h3><div style="background: #fff5f5; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;"><h4 style="color: #16181d; margin-bottom: 1rem; font-size: 1.1rem;">잘못된 생각</h4><ul style="list-style: none; padding: 0;">';
+                vodData.myths.wrong.forEach(myth => {
+                    bodyHTML += '<li style="padding: 0.5rem 0; color: #666;">❌ ' + myth + '</li>';
+                });
+                bodyHTML += '</ul><h4 style="color: #16181d; margin: 1.5rem 0 1rem; font-size: 1.1rem;">놀라운 진실</h4><ul style="list-style: none; padding: 0;">';
+                vodData.myths.truth.forEach(truth => {
+                    bodyHTML += '<li style="padding: 0.5rem 0; color: #666;">✅ ' + truth + '</li>';
+                });
+                bodyHTML += '</ul></div>';
+            }
+            
+            if (vodData.reality) {
+                bodyHTML += '<div style="background: #fef2f2; padding: 1.5rem; border-radius: 8px; border: 2px solid #e8e8e8; margin: 2rem 0;"><h4 style="color: #16181d; margin-bottom: 1rem; font-size: 1.2rem;">⚠️ ' + vodData.reality.title + '</h4>';
+                vodData.reality.items.forEach(item => {
+                    bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7; color: #666;">' + item + '</p>';
+                });
+                bodyHTML += '</div>';
+            }
+            
+            if (vodData.principles) {
+                bodyHTML += '<div style="background: #f0fdf4; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;"><h4 style="color: #16181d; margin-bottom: 1rem; font-size: 1.2rem;">✨ ' + vodData.principles.title + '</h4>';
+                vodData.principles.items.forEach(item => {
+                    bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7; color: #666;">' + item + '</p>';
+                });
+                bodyHTML += '</div>';
+            }
+            
+            if (vodData.comparison) {
+                bodyHTML += '<h3 style="color: #16181d; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #e8e8e8; padding-bottom: 0.5rem;">⚖️ ' + vodData.comparison.title + '</h3><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;"><div style="background: #fef2f2; padding: 1.5rem; border-radius: 8px;"><h4 style="color: #16181d; margin-bottom: 1rem;">' + vodData.comparison.left.title + '</h4><ul style="list-style: none; padding: 0;">';
+                vodData.comparison.left.items.forEach(item => {
+                    bodyHTML += '<li style="padding: 0.3rem 0; color: #666;">❌ ' + item + '</li>';
+                });
+                bodyHTML += '</ul></div><div style="background: #f0fdf4; padding: 1.5rem; border-radius: 8px;"><h4 style="color: #16181d; margin-bottom: 1rem;">' + vodData.comparison.right.title + '</h4><ul style="list-style: none; padding: 0;">';
+                vodData.comparison.right.items.forEach(item => {
+                    bodyHTML += '<li style="padding: 0.3rem 0; color: #666;">✅ ' + item + '</li>';
+                });
+                bodyHTML += '</ul></div></div>';
+            }
+            
+            if (vodData.cases) {
+                bodyHTML += '<div style="background: #f6f8f8; padding: 2rem; border-radius: 12px; color: #16181d; margin: 2rem 0;"><h4 style="margin-bottom: 1rem; font-size: 1.2rem;">🎯 ' + vodData.cases.title + '</h4>';
+                vodData.cases.items.forEach(item => {
+                    bodyHTML += '<p style="padding: 0.5rem 0; line-height: 1.7;">' + item + '</p>';
+                });
+                if (vodData.cases.highlight) {
+                    bodyHTML += '<p style="margin-top: 1rem; font-size: 1.1rem; font-weight: bold; color: #16181d;">' + vodData.cases.highlight + '</p>';
+                }
+                bodyHTML += '</div>';
+            }
+            
+            if (vodData.faq) {
+                bodyHTML += '<h3 style="color: #16181d; margin: 2.5rem 0 1.2rem; font-size: 1.4rem; border-bottom: 3px solid #e8e8e8; padding-bottom: 0.5rem;">❓ 자주 묻는 질문</h3>';
+                vodData.faq.forEach(item => {
+                    bodyHTML += '<div style="margin-bottom: 1.5rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;"><p style="font-weight: bold; color: #16181d; margin-bottom: 0.5rem;">Q. ' + item.q + '</p><p style="color: #666; line-height: 1.7;">A. ' + item.a + '</p></div>';
+                });
+            }
+            
+            if (vodData.closing) {
+                bodyHTML += '<div style="background: #f6f8f8; padding: 2rem; border-radius: 12px; color: #16181d; text-align: center; margin: 2rem 0;"><h4 style="font-size: 1.3rem; margin-bottom: 1rem;">' + vodData.closing.title + '</h4>';
+                vodData.closing.messages.forEach(msg => {
+                    bodyHTML += '<p style="line-height: 1.8; margin: 0.5rem 0;">' + msg + '</p>';
+                });
+                bodyHTML += '</div>';
+            }
+            
+            bodyHTML += '</div>';
+            document.getElementById('vodDetailBody').innerHTML = bodyHTML;
+            
+            modal.style.display = 'block';
+        }
+        
+        function closeVodDetailModal() {
+            // iframe 완전 제거로 영상/음성 정지
+            const iframe = document.getElementById('drivePlayer');
+            if (iframe) {
+                iframe.src = ''; // src 초기화
+                iframe.remove(); // iframe 제거
+            }
+            
+            // 모달 닫기
+            document.getElementById('vodDetailModal').style.display = 'none';
+        }
+        
+        // VOD 1
+        function openVodDetail1() {
+            openVodDetailModal({
+                title: '책을 왜 써야 하는가?',
+                subtitle: '강의 시청 후 책쓰기에 관한 강력한 동기부여와 자신감을 얻으실 겁니다.',
+                duration: '1시간 30분',
+                price: 29000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/076WClZ',
+                changes: [
+                    "'나는 글 못 써'라는 생각에서 완전히 벗어나 '나도 작가가 될 수 있다'는 확신을 갖게 됩니다.",
+                    "책 쓰기에 대한 강렬한 동기 부여와 '당장 시작하고 싶다'는 열정이 생깁니다.",
+                    "책 쓰기로 얻을 수 있는 경제적 혜택과 사회적 영향력에 대해 구체적으로 이해하게 됩니다.",
+                    "1인 2책 전략과 3B 공식 등 실제로 활용할 수 있는 책 쓰기 전략을 습득합니다.",
+                    "다양한 출판 방법을 알게 되어 자신에게 맞는 출간 루트를 선택할 수 있습니다."
+                ],
+                recommend: [
+                    "'언젠가는 책을 써보고 싶다'는 막연한 꿈을 가진 분",
+                    "책을 쓰면 무엇이 좋은지, 왜 써야 하는지 궁금한 분",
+                    "'내가 작가가 될 수 있을까?' 하는 의구심과 두려움을 가진 분",
+                    "퍼스널 브랜딩과 부수입 창출에 관심이 있는 직장인",
+                    "자아실현과 사회적 기여를 통해 의미 있는 삶을 살고 싶은 분",
+                    "은퇴 후 새로운 인생 2막을 준비하고 있는 분"
+                ],
+                myths: {
+                    wrong: ["내가 작가도 아닌데 무슨 책을 써", "작가는 타고나는 거야", "나는 글재주가 없어", "내 이야기는 평범해"],
+                    truth: ["작가라서 책을 쓰는 게 아니라 책을 써서 작가가 되는 것!", "평범함이 곧 특별함입니다!", "당신의 경험과 지식이 소중한 자산입니다."]
+                },
+                closing: {
+                    title: '당신의 이야기가 세상을 만날 차례입니다',
+                    messages: [
+                        '책쓰기는 특별한 사람만의 특권이 아닙니다',
+                        '당신의 경험과 지식이 누군가에게는 큰 도움이 됩니다',
+                        '지금 바로 시작하세요!',
+                        '당신도 작가가 될 수 있습니다'
+                    ]
+                }
+            });
+        }
+        
+        // VOD 2  
+        function openVodDetail2() {
+            openVodDetailModal({
+                title: '책쓰기는 기획과 제작이다!',
+                subtitle: '책쓰기의 핵심과 본질을 파악해 출판 계약으로 이어지는 투고를 할 수 있습니다.',
+                duration: '1시간 50분',
+                price: 49000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/UrfM4Bu',
+                changes: [
+                    "80% 기획의 핵심을 이해하고 출판 계약 성공률을 획기적으로 높입니다.",
+                    "편집자가 '계약하고 싶어하는' 출간 기획서 작성법을 완전 습득합니다.",
+                    "나만의 독창적인 책 아이디어 발굴과 차별화 전략을 구체적으로 세웁니다.",
+                    "출간 후 저자 브랜딩과 수익화까지 연결하는 전체 로드맵을 얻습니다."
+                ],
+                recommend: [
+                    "막연히 '언젠가는 책을 써야지' 생각만 하고 있는 예비 작가",
+                    "여러 출판사에 투고했지만 계속 거절당해 좌절한 분",
+                    "글쓰기와 책쓰기의 차이를 모르고 원고부터 쓰려는 분",
+                    "전문직, 직장인으로서 자신의 경험을 책으로 만들고 싶은 분",
+                    "책을 통해 퍼스널 브랜딩과 N잡 기회를 만들고 싶은 분",
+                    "체계적인 전략 없이 감으로만 책쓰기를 시도했다가 실패한 분"
+                ],
+                reality: {
+                    title: '충격적인 현실',
+                    items: ['대부분의 사람들이 원고부터 쓰기 시작하지만, 그래서 90% 이상 출판 계약에 실패합니다.']
+                },
+                principles: {
+                    title: '80% 기획의 핵심 원리',
+                    items: [
+                        '"성공하는 책 = 탄탄한 기획 + 기본 이상의 원고"',
+                        '편집자는 30초 만에 주제, 제목, 저자 프로필을 보고 3분 만에 목차와 출간기획서를 훑어보며 계약 여부를 결정합니다.',
+                        '기획이 약하면 아무리 좋은 원고도 빛을 잃습니다.'
+                    ]
+                },
+                comparison: {
+                    title: '글쓰기 vs 책쓰기',
+                    left: {
+                        title: '글쓰기',
+                        items: ['문장력이 핵심', '순간적 영감', '개인적 표현', '자유로운 형식', '즉흥적 창작']
+                    },
+                    right: {
+                        title: '책쓰기',
+                        items: ['기획력이 핵심', '체계적 설계', '독자 중심 사고', '상업적 고려', '전략적 접근']
+                    }
+                },
+                cases: {
+                    title: '박근필 작가의 실제 성공 사례',
+                    items: [
+                        '뛰어난 기획력으로 3권 연속 출간 성공',
+                        '첫 번째 책: 전자책을 투고해 출판 계약 성공',
+                        '두 번째 책: 원고 없이 "출간기획서"만으로 출판 계약 체결 (매우 이례적)',
+                        '세 번째 책: 선인세 조건으로 출판 계약 성사 (요즘 출판 시장에 흔하지 않음)'
+                    ],
+                    highlight: '기획만 탄탄하면 여러분도 할 수 있습니다!'
+                },
+                faq: [
+                    {
+                        q: '글쓰기 실력이 부족해도 책을 쓸 수 있나요?',
+                        a: '네, 가능합니다. 책쓰기에서 중요한 것은 문장력이 아니라 기획력입니다. 기본 이상의 글쓰기 실력만 있으면 충분하며, 탄탄한 기획이 있다면 누구나 투고에 성공해 출판 계약을 딸 수 있습니다.'
+                    },
+                    {
+                        q: '특별한 경험이나 전문성이 없어도 괜찮을까요?',
+                        a: '평범한 경험도 관점의 전환으로 특별한 이야기가 됩니다. 앞으로 책쓰기 1:1 코칭을 통해 여러분만의 독창적인 관점과 차별점을 찾아드립니다.'
+                    }
+                ],
+                closing: {
+                    title: '당신의 이야기가 세상을 만날 차례입니다',
+                    messages: [
+                        '기획이 탄탄하면 원고는 반드시 따라옵니다',
+                        '출판 계약도 분명히 가능합니다',
+                        '더 이상 막연한 꿈으로 남겨두지 마세요',
+                        '체계적인 전략으로 확실한 결과를 만들어보세요',
+                        '당신의 책이 세상에 나올 그날을 함께 만들어갑시다!'
+                    ]
+                }
+            });
+        }
+        
+        // VOD 3
+        function openVodDetail3() {
+            openVodDetailModal({
+                title: '쉽게 이해하는 퍼스널 브랜딩',
+                subtitle: '퍼스널 브랜딩의 정수를 알려드립니다.',
+                duration: '1시간',
+                price: 49000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/atoZl7U',
+                recommend: [
+                    "자신만의 브랜드를 만들고 싶은 직장인",
+                    "부업이나 창업을 고민하는 분",
+                    "온라인에서 영향력을 키우고 싶은 분",
+                    "글쓰기를 통해 브랜딩하고 싶은 분",
+                    "나다운 삶을 살고 싶은 분",
+                    "퍼스널 브랜딩에 관심 있는 모든 분"
+                ],
+                changes: [
+                    "나만의 명확한 브랜드 정체성 확립",
+                    "온라인에서 일관성 있는 메시지 전달 능력",
+                    "콘텐츠 제작과 브랜딩 전략 수립 역량",
+                    "실패를 두려워하지 않는 도전 정신",
+                    "지속 가능한 퍼스널 브랜딩 로드맵"
+                ],
+                closing: {
+                    title: '당신의 브랜드 스토리를 시작하세요',
+                    messages: [
+                        '"오늘이 브랜딩 시작하기 가장 좋은 날이자 빠른 날입니다"',
+                        '나답게, 꾸준히, 진정성 있게!',
+                        '당신도 강력한 브랜드가 될 수 있습니다.'
+                    ]
+                }
+            });
+        }
+        
+        // VOD 4
+        function openVodDetail4() {
+            openVodDetailModal({
+                title: '직장인이 아닌 직업인으로',
+                subtitle: '언제든 비자발적인 퇴사를 당할 수 있는 직장인에서 벗어나세요. 언제든 홀로서기가 가능한 직업인으로 살아가세요. 그 이유와 방법을 알려드립니다.',
+                duration: '1시간',
+                price: 29000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/BDPw8UV',
+                changes: [
+                    "직장인에서 직업인으로 전환해야 하는 이유에 대한 강렬한 동기 부여와 '당장 시작하고 싶다'는 열정이 생깁니다.",
+                    "직업인으로 살아가며 얻을 수 있는 경제적 혜택과 사회적 영향력에 대해 구체적으로 이해하게 됩니다.",
+                    "N잡 전략과 자발적 퇴사 준비 등 실제로 활용할 수 있는 생존 전략을 습득합니다.",
+                    "불안한 미래에 대비할 수 있는 구체적인 실행 계획과 로드맵을 얻게 됩니다."
+                ],
+                recommend: [
+                    "'언젠가는 직장을 벗어나 자유롭게 살고 싶다'는 막연한 꿈을 가진 분",
+                    "직장인과 직업인의 차이가 무엇인지, 왜 직업인이 되어야 하는지 궁금한 분",
+                    "'내가 정말 혼자서도 살아갈 수 있을까?' 하는 의구심과 두려움을 가진 분",
+                    "퍼스널 브랜딩과 부수입 창출에 관심이 있는 직장인",
+                    "자아실현과 사회적 기여를 통해 의미 있는 삶을 살고 싶은 분",
+                    "은퇴 후 새로운 인생 2막을 준비하고 있는 분"
+                ],
+                reality: {
+                    title: '충격적인 현실',
+                    items: [
+                        '한국 직장인의 첫 직장 평균 근속기간: 2.8년',
+                        '한국 근로자 평균 근속기간 (OECD 최하위): 5.6년',
+                        '2030년 인간 노동력의 AI·로봇 대체 가능률: 90%',
+                        '2022년 기준 국내 부업 인구: 54만 명'
+                    ]
+                },
+                principles: {
+                    title: '진짜 위기는 무엇인가?',
+                    items: [
+                        '"진짜 위기는 위기인데도 불구하고 위기인 것을 모르는 것이 진짜 위기입니다.',
+                        '그보다 더 큰 위기는 위기인 걸 알면서도 아무것도 하지 않는 것이 바로 더 큰 위기입니다."',
+                        '- 유재석, 《무한도전》 중'
+                    ]
+                },
+                comparison: {
+                    title: '직장인 vs 직업인',
+                    left: {
+                        title: '직장인',
+                        items: ['남이 만든 조직에 소속', '타인이 준 직책', '회사에 종속된 존재', '언젠가 나와야 하는 곳', '유한한 구조', '가짜 명함 (회사 명함)', '소비자적 존재']
+                    },
+                    right: {
+                        title: '직업인',
+                        items: ['내 몸과 머리의 개인기', '스스로 정의한 전문성', '자율적인 존재', '어디서든 필요한 사람', '무한 확장 가능한 구조', '진짜 명함 (내 명함)', '생산자적 존재']
+                    }
+                },
+                closing: {
+                    title: '내 삶을 내가 주체적으로 주도적으로 살 수 있는 직업인으로 살아가세요',
+                    messages: [
+                        '현 직장을 언제 떠나도 괜찮을 정도로 나를 만들어보세요.',
+                        '그럼 삶이 불안하지 않습니다.',
+                        '인생을 주도적으로 살 수 있습니다.',
+                        '오늘부터 준비와 대비를 시작하세요!'
+                    ]
+                }
+            });
+        }
+        
+        function openVodDetail5() {
+            openVodDetailModal({
+                title: '독서법1_목적·능동적·아웃풋 독서',
+                subtitle: '독서를 단순 취미가 아닌 자기 성장 시스템으로 전환하는 방법을 배워갑니다.',
+                duration: '1시간',
+                price: 29000,
+                littlyUrl: 'https://litt.ly/tothemoonpark/sale/f74TaYi',
+                driveId: '1Q8UdyrTi0Lq1Eb7xOFYLOex7QKpmInqA',
+                target: {
+                    title: '⭐ 이런 분들을 위한 독서 클래스입니다',
+                    items: [
+                        '독서를 해도 남는 게 없다고 느끼시는 분',
+                        '글쓰기를 배우고 싶지만 어디서 시작해야 할지 막막한 분',
+                        '"읽기 → 생각 → 쓰기"의 연결이 어렵게 느껴지는 분',
+                        '글쓰기 습관, 독서 루틴을 만들고 싶은 분',
+                        '나만의 관점과 생각으로 글을 쓰고 싶은 분'
+                    ]
+                },
+                keypoints: {
+                    title: '강의 핵심 포인트 요약',
+                    items: [
+                        {
+                            title: '독서는 글쓰기의 기본 근력이다',
+                            desc: '글쓰기 실력은 \'재능\'이 아니라 잘 읽는 기술에서 시작됩니다. 독서를 단순 취미가 아닌 자기 성장 시스템으로 전환하는 방법을 배워갑니다.'
+                        },
+                        {
+                            title: '읽기 → 생각하기 → 쓰기의 실전 로드맵',
+                            desc: '인풋 독서(읽기)만 하면 금방 사라지지만, 아웃풋 독서(정리·적용·쓰기)까지 가면 지식이 실제 \'내 것\'이 됩니다. 이 강의에서는 이 전체 과정을 하나의 파이프라인처럼 연결해 드립니다.'
+                        },
+                        {
+                            title: '글쓰기 근육이 자연스럽게 자라는 독서법',
+                            desc: '문장력 향상, 사고력·표현력 확장, 아이디어 생성 능력, 글 소재 발굴 능력 → 모두 독서에서 시작됩니다.'
+                        }
+                    ]
+                },
+                contents: [
+                    {
+                        title: '① 왜 \'읽어야만\' 하는가?',
+                        items: [
+                            '변화 시대에 독서가 필요한 이유',
+                            '"독서는 선택이 아니라 생존 기술"이라는 이유'
+                        ]
+                    },
+                    {
+                        title: '② 독서가 글쓰기의 필수적인 이유',
+                        items: [
+                            '문장력·어휘력·논리력·표현력이 독서로 강화되는 원리',
+                            '읽는 방식에 따라 글쓰기 실력 격차가 얼마나 벌어지는지'
+                        ]
+                    },
+                    {
+                        title: '③ 마법의 파이프라인: 읽기 → 생각하기 → 쓰기',
+                        items: [
+                            '한 권이 글감 10개로 바뀌는 구조',
+                            '나만의 \'쓸거리\'가 생기는 독서법'
+                        ]
+                    }
+                ],
+                changes: [
+                    '책을 읽을 때 "왜 읽는지, 무엇을 얻는지"가 명확해집니다.',
+                    '독서가 단순 취미가 아니라 내 성장 속도를 높여주는 시스템이 됩니다.',
+                    '책을 읽는 즉시 글감이 자동으로 생기는 경험을 하게 됩니다.',
+                    '독서에 대한 관점 자체가 달라집니다.'
+                ],
+                recommend: [
+                    '독서하고 싶은데 늘 작심삼일이었던 분',
+                    '글을 쓰고 싶은데 소재가 없다고 느끼는 분',
+                    '독서를 실전 글쓰기로 연결하는 방법을 배우고 싶은 분'
+                ],
+                closing: {
+                    title: '🌱 마지막 메시지',
+                    messages: [
+                        '여러분 안의 \'글 쓰는 사람\'을 깨워보세요.',
+                        '독서는 단순한 취미가 아니라 여러분의 삶을 바꾸는 가장 현실적이고 확실한 투자입니다.',
+                        '지금 여기서, 가진 것으로 시작하면 충분합니다.',
+                        '여러분의 독서와 글쓰기 여정을 응원합니다.'
+                    ]
+                }
+            });
+        }
+    </script>
+</body>
+</html>
