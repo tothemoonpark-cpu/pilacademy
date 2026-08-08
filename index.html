@@ -73,6 +73,15 @@
         .btn-ghost:hover { border-color: var(--mint); color: var(--mint-dark); }
         .btn-primary svg, .btn-ghost svg { width: 17px; height: 17px; }
 
+        .intro-video { max-width: 1000px; margin: 0 auto; padding: 1rem 1.5rem 2.6rem; }
+        .iv-head { text-align: center; margin-bottom: 1.4rem; }
+        .iv-tag { display:inline-block; font-size:0.74rem; font-weight:700; color:#fff; background:var(--mint); padding:0.24rem 0.75rem; border-radius:20px; margin-bottom:0.7rem; }
+        .iv-head h2 { font-size:1.6rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:0.4rem; }
+        .iv-head p { font-size:0.93rem; color:var(--sub); }
+        .iv-frame { border-radius:18px; overflow:hidden; box-shadow:0 14px 36px rgba(0,0,0,0.14); background:#000; line-height:0; }
+        .iv-frame video { width:100%; height:auto; display:block; }
+        .iv-cta { display:flex; justify-content:center; margin-top:1.3rem; }
+
         .hub { max-width: 1140px; margin: 0 auto; padding: 1.5rem 1.5rem 3rem; }
         .tile-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
         .tile { display: flex; flex-direction: column; background: var(--page); border: 1px solid var(--line); border-radius: 16px; padding: 1.5rem 1.35rem; min-height: 200px; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
@@ -146,6 +155,7 @@
                 <li><a href="lecture.html">강연 안내</a></li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
+                <li><a href="videos.html">대표 영상</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
                 <li><a href="dokjeoting.html">독저팅</a></li>
                 <li><a href="people-insight.html">피플인사이트</a></li>
@@ -177,6 +187,24 @@
                         <a class="btn-ghost" href="author.html">소장 소개 <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- 강연 소개 영상 -->
+        <section class="intro-video" aria-label="강연 소개 영상">
+            <div class="iv-head">
+                <span class="iv-tag">40초 소개</span>
+                <h2>어떤 강연을 하는 사람인가</h2>
+                <p>실적·주제·현장을 40초에 담았습니다. 섭외 검토 시 참고하세요.</p>
+            </div>
+            <div class="iv-frame">
+                <video controls preload="none" playsinline poster="lecture-intro-poster.jpg">
+                    <source src="lecture-intro.mp4" type="video/mp4">
+                    이 브라우저는 영상을 지원하지 않습니다. <a href="lecture-intro.mp4">영상 내려받기</a>
+                </video>
+            </div>
+            <div class="iv-cta">
+                <a class="btn-primary" href="lecture.html"><i data-lucide="mic" aria-hidden="true"></i>강연 안내 자세히 보기</a>
             </div>
         </section>
 

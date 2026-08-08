@@ -58,6 +58,10 @@
         .btn-ghost:hover { border-color: var(--mint); color: var(--mint-dark); }
         .btn-primary svg, .btn-ghost svg { width: 17px; height: 17px; }
 
+        .hero-video { margin-top: 2.2rem; border-radius: 18px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); background:#000; line-height:0; }
+        .hero-video video { width: 100%; height: auto; display: block; }
+        .hero-vcap { margin-top: 0.7rem; font-size: 0.83rem; color: var(--sub); text-align: center; }
+
         .hero-shot { position: relative; margin-top: 2.2rem; border-radius: 18px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); max-height: 420px; }
         .hero-shot img { width: 100%; height: 100%; max-height: 420px; object-fit: cover; object-position: center 42%; display: block; }
         .hero-shot span { position: absolute; left: 0; right: 0; bottom: 0; padding: 1rem 1.2rem; font-size: 0.86rem; font-weight: 600; color: #fff;
@@ -86,6 +90,12 @@
         .again-card h3 { font-size: 1.04rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.01em; line-height: 1.45; }
         .again-card p { font-size: 0.89rem; color: var(--sub); line-height: 1.65; }
         .again-note { margin-top: 1.3rem; font-size: 0.86rem; color: var(--sub); line-height: 1.7; text-align: center; }
+
+        /* 섭외 담당자 후기 */
+        .host-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr)); gap: 1.1rem; }
+        .host-card { margin: 0; background: #fff; border: 1px solid #d7eeeb; border-top: 4px solid var(--mint); border-radius: 14px; padding: 1.4rem 1.4rem 1.1rem; display: flex; flex-direction: column; }
+        .host-card p { font-size: 0.94rem; color: var(--ink); line-height: 1.75; margin: 0 0 0.9rem; flex-grow: 1; }
+        .host-card cite { font-style: normal; font-size: 0.82rem; font-weight: 700; color: var(--mint-dark); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
 
         /* 수강생 후기 */
         .rv-grid { columns: 3; column-gap: 1.1rem; }
@@ -205,6 +215,7 @@
                 <li><a href="lecture.html">강연 안내</a></li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
+                <li><a href="videos.html">대표 영상</a></li>
                 <li><a href="vod.html">VOD 강의</a></li>
                 <li><a href="dokjeoting.html">독저팅</a></li>
                 <li><a href="people-insight.html">피플인사이트</a></li>
@@ -240,11 +251,13 @@
                     <a class="btn-ghost" href="#topics">강연 주제 보기 <i data-lucide="arrow-down" aria-hidden="true"></i></a>
                 </div>
 
-                <div class="hero-shot">
-                    <img src="lecture-photo-1.jpg" alt="부산영상예술고 진로 특강 현장" loading="eager"
-                         onerror="this.parentNode.style.display='none'">
-                    <span>부산영상예술고 진로 특강 — 전교생 414명</span>
+                <div class="hero-video">
+                    <video controls preload="none" playsinline poster="lecture-intro-poster.jpg">
+                        <source src="lecture-intro.mp4" type="video/mp4">
+                        <a href="lecture-intro.mp4">영상 내려받기</a>
+                    </video>
                 </div>
+                <p class="hero-vcap">40초 소개 영상 — 실적·주제·현장</p>
             </div>
         </section>
 
@@ -328,8 +341,53 @@
             </div>
         </section>
 
-        <!-- 수강생 후기 -->
+        <!-- 섭외 담당자 후기 -->
         <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>섭외하신 분들이 보내온 말</h2>
+                    <p>강연이 끝난 뒤 담당 선생님·사서·담당자께서 직접 보내 주신 메시지입니다.</p>
+                </div>
+
+                <div class="host-grid">
+                    <blockquote class="host-card">
+                        <p>“저도 섭외 하게 되어 아주 감사합니다.<br><b>다음에도 모셔보도록 하겠습니다!</b>”</p>
+                        <cite>부산광역시교육청 영재교육진흥원 · 담당 연구사</cite>
+                    </blockquote>
+                    <blockquote class="host-card">
+                        <p>“아이들 오늘 <b>독서, 글쓰기를 열심히 하는 아이들이 더 많이 생겼습니다.</b>”</p>
+                        <cite>인천 계양중학교 · 담당 선생님</cite>
+                    </blockquote>
+                    <blockquote class="host-card">
+                        <p>“정말 많이 애써주셨습니다. 소장님 덕분에 따뜻한 분위기로 참가자분들께 의미있는 시간 드릴 수 있었어요.
+                        항상 하시는 일 잘 되시고 <b>다음에 또 다른 기회로 함께 수업 진행하면 좋겠습니다.</b>”</p>
+                        <cite>김해율하도서관 · 담당 사서 (펫로스 치유 글쓰기 4주)</cite>
+                    </blockquote>
+                    <blockquote class="host-card">
+                        <p>“오늘 수고 많으셨습니다. <b>뜻 깊은 강연 덕분에 오늘 글로벌멘토링프로그램이 더욱 빛이 날 수 있었습니다.</b>”</p>
+                        <cite>부산 중구진로교육지원센터 · 담당자</cite>
+                    </blockquote>
+                    <blockquote class="host-card">
+                        <p>“저희야말로 직접 학교까지 오셔서 좋은 말씀 주셔서 감사합니다.
+                        사진부 학생에게 제일 잘 나온 사진으로 골라 보내드릴게요.”</p>
+                        <cite>부산영상예술고등학교 · 담당 선생님</cite>
+                    </blockquote>
+                    <blockquote class="host-card">
+                        <p>“수의사님 오늘 고생 많으셨습니다! <b>유익한 강의 감사합니다.</b>”</p>
+                        <cite>당감도서관 · 담당 주무관</cite>
+                    </blockquote>
+                    <blockquote class="host-card">
+                        <p>“오늘 정말 수고 많으셨습니다. <b>아이들은 즐겁게 참여한 것 같아</b> 다행입니다.”</p>
+                        <cite>학산여자중학교 · 담당 선생님 (전교생 306명 진로 토크 콘서트)</cite>
+                    </blockquote>
+                </div>
+
+                <p class="rv-note">※ 강연 후 담당자께서 보내 주신 메시지를 옮긴 것입니다. 개인 실명은 밝히지 않았습니다.</p>
+            </div>
+        </section>
+
+        <!-- 수강생 후기 -->
+        <section class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <h2>수강생이 남긴 말</h2>
@@ -362,7 +420,7 @@
         </section>
 
         <!-- 강연 주제 -->
-        <section class="block alt" id="topics">
+        <section class="block" id="topics">
             <div class="wrap">
                 <div class="sec-head">
                     <h2>강연 주제</h2>
@@ -449,7 +507,7 @@
         </section>
 
         <!-- 대표 실적 -->
-        <section class="block">
+        <section class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <h2>대표 실적</h2>
@@ -491,7 +549,7 @@
         </section>
 
         <!-- 강연 현장 사진 (파일을 폴더에 넣으면 자동 표시) -->
-        <section class="block alt" id="photos">
+        <section class="block" id="photos">
             <div class="wrap">
                 <div class="sec-head">
                     <h2>강연 현장</h2>
@@ -512,7 +570,7 @@
         </section>
 
         <!-- 영상 -->
-        <section class="block">
+        <section class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <h2>강연 영상</h2>
@@ -551,7 +609,7 @@
         </section>
 
         <!-- 진행 안내 -->
-        <section class="block alt">
+        <section class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <h2>진행 안내</h2>
@@ -570,7 +628,7 @@
         </section>
 
         <!-- CTA -->
-        <section class="block">
+        <section class="block alt">
             <div class="wrap">
                 <div class="cta-box">
                     <h2>강연을 검토 중이시라면</h2>
