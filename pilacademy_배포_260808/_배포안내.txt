@@ -1,0 +1,29 @@
+박근필성장연구소 사이트 — 배포 파일 (2026-08-08 작업분)
+================================================================
+
+[올리는 법]
+아래 파일 전부를 pilacademy 저장소 루트에 덮어쓰기 → 커밋 → Push
+
+[신규 파일 — 빠뜨리면 안 됨]
+  lecture.html            ← 강연 섭외 전용 페이지 (신규)
+  stats.js                ← 숫자 자동 집계. 빠지면 개교수·저서권수가 비어 보임
+  og-image.png            ← 링크 공유 시 뜨는 카드 이미지
+  sitemap.xml / robots.txt← 검색 색인
+  favicon.ico / .png / apple-touch-icon.png
+  lecture-photo-1~9.jpg   ← 강연 현장 사진
+
+[수정 파일]
+  index.html, author.html, contact.html, books.html, videos.html,
+  dokjeoting.html, philbook.html, vod.html, newsletter.html,
+  phillife.html, people-insight.html, notice.html
+
+[배포 후 할 일]
+  1. 폰으로 홈 / 강연 안내 페이지 확인
+  2. 카톡으로 본인에게 링크 보내 공유 카드 확인
+  3. 구글 서치콘솔에 sitemap.xml 제출
+
+[앞으로 숫자 바꿀 때]
+  stats.js 파일 하나만 수정하면 사이트 전체에 반영됩니다.
+  · 학교 추가 → SCHOOL_HISTORY 배열에 한 줄 추가 (개교수 자동 증가)
+  · 저서·칼럼 매체 수 → SITE_STATS 값 수정
+  ※ og-image.png 안의 숫자는 이미지라 자동 반영 안 됨 → 별도 재제작 필요

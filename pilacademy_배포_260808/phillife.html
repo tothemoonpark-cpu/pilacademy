@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필라이프 코칭 - 박근필성장연구소</title>
+    <meta name="description" content="박근필 소장의 1:1 라이프 코칭. 질문과 대화를 통해 삶의 방향을 함께 정리합니다.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/phillife.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --ink:#16181d; --sub:#5b6066; --muted:#8a9099; --line:#ececec; --panel:#f7f8f9; --page:#ffffff; }
+        body { font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.8; color:var(--ink); background:var(--page); -webkit-font-smoothing:antialiased; }
+        a { text-decoration:none; color:inherit; }
+        header { background:#2bb7ac; box-shadow:0 2px 12px rgba(0,0,0,0.07); position:sticky; top:0; z-index:1000; }
+        nav { max-width:1140px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.5rem; }
+        .logo { display:flex; align-items:center; gap:0.45rem; font-size:1.18rem; font-weight:700; color:#fff; letter-spacing:-0.02em; }
+        .logo svg { width:22px; height:22px; color:#fff; }
+        .nav-links { display:flex; gap:1.35rem; list-style:none; align-items:center; flex-wrap:wrap; }
+        .nav-links a { color:#fff; font-weight:500; font-size:0.9rem; transition:opacity 0.2s; }
+        .nav-links a:hover { opacity:0.82; }
+        .menu-toggle { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; }
+        .menu-toggle span { width:24px; height:2px; background:#fff; border-radius:2px; }
+
+        .page-hero { text-align:center; padding:4.5rem 1.5rem 1rem; }
+        .page-hero .icon-badge { width:58px; height:58px; border-radius:16px; background:var(--panel); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; margin:0 auto 1.3rem; }
+        .page-hero .icon-badge svg { width:28px; height:28px; }
+        .page-hero h1 { font-size:2.4rem; font-weight:700; letter-spacing:-0.03em; margin-bottom:0.6rem; }
+        .page-hero p { color:var(--sub); font-size:1.06rem; }
+
+        main { max-width:820px; margin:0 auto; padding:1rem 1.5rem 4rem; }
+        section.block { padding:2.6rem 0; border-top:1px solid var(--line); }
+        section.block:first-of-type { border-top:none; }
+        h2.sec { font-size:1.55rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:1.2rem; }
+        h3.sub { font-size:1.15rem; font-weight:700; margin:1.6rem 0 0.7rem; }
+        p { color:var(--sub); margin-bottom:1rem; }
+        p strong { color:var(--ink); }
+        .pull { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--ink); border-radius:10px; padding:1.4rem 1.6rem; margin:1.4rem 0; }
+        .pull p { color:var(--ink); margin-bottom:0.5rem; }
+        .pull p:last-child { margin-bottom:0; }
+
+        .topics { display:flex; flex-direction:column; gap:0.8rem; margin:1.2rem 0; }
+        .topic { display:flex; gap:0.8rem; align-items:flex-start; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.3rem; }
+        .topic svg { width:20px; height:20px; flex-shrink:0; margin-top:0.2rem; color:var(--ink); }
+        .topic span { color:var(--sub); }
+
+        .steps3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; margin:1.4rem 0; }
+        .step { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1.4rem; text-align:center; }
+        .step .n { width:2rem; height:2rem; border-radius:50%; background:var(--ink); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.9rem; margin:0 auto 0.8rem; }
+        .step .t { font-weight:700; color:var(--ink); margin-bottom:0.3rem; }
+        .step .d { font-size:0.85rem; color:var(--muted); }
+
+        .compare { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.2rem 0; }
+        .compare .box { border:1px solid var(--line); border-radius:14px; padding:1.5rem; }
+        .compare .box.lead-box { border-color:var(--ink); }
+        .compare h3 { font-size:1.15rem; font-weight:700; margin-bottom:0.7rem; }
+        .compare p { font-size:0.95rem; margin:0; }
+        .oneline { text-align:center; font-size:1.1rem; font-weight:500; color:var(--ink); margin:1.4rem 0; line-height:1.7; }
+
+        .note { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1.3rem 1.5rem; margin:1.2rem 0; }
+        .note .nh { display:flex; align-items:center; gap:0.5rem; font-weight:700; color:var(--ink); margin-bottom:0.5rem; }
+        .note .nh svg { width:18px; height:18px; }
+
+        .quote { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--ink); border-radius:10px; padding:1.2rem 1.5rem; margin:1.2rem 0; font-weight:500; color:var(--ink); }
+        .review-shot { margin:1.2rem 0; }
+        .review-shot img { width:100%; max-width:760px; display:block; margin:0 auto 1rem; border:1px solid var(--line); border-radius:10px; cursor:pointer; transition:transform 0.2s; }
+        .review-shot img:hover { transform:scale(1.01); }
+        .review-cap { text-align:center; font-size:0.86rem; color:var(--muted); margin-top:-0.4rem; }
+        .hint { font-size:0.86rem; color:var(--muted); margin-bottom:0.6rem; }
+
+        .cta-band { background:var(--ink); color:#fff; border-radius:18px; padding:2.6rem; text-align:center; margin:2.4rem 0 0; }
+        .cta-band p { color:rgba(255,255,255,0.78); margin-bottom:0.5rem; }
+        .cta-band .small { font-size:0.88rem; color:rgba(255,255,255,0.55); margin-bottom:1.5rem; }
+        .cta-band .btn { display:inline-flex; align-items:center; gap:0.5rem; background:#fff; color:var(--ink); font-weight:700; font-size:1.05rem; padding:0.95rem 2rem; border-radius:12px; transition:transform 0.2s; }
+        .cta-band .btn:hover { transform:translateY(-2px); }
+        .closing { text-align:center; font-size:1.05rem; color:var(--sub); line-height:1.9; margin-top:1.5rem; }
+
+        footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5rem; }
+        .footer-sns { display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap; margin-bottom:1rem; }
+        .footer-sns a { color:rgba(255,255,255,0.85); font-size:0.9rem; transition:color 0.2s; }
+        .footer-sns a:hover { color:#2bb7ac; }
+        .footer-copy { font-size:0.83rem; color:rgba(255,255,255,0.5); line-height:1.8; }
+
+        .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:3000; overflow:auto; padding:3.5rem 1rem; text-align:center; }
+        .lightbox img { display:inline-block; width:100%; max-width:860px; height:auto; border-radius:8px; }
+        .lightbox .close { position:fixed; top:1.1rem; right:1.4rem; font-size:2.6rem; color:#fff; cursor:pointer; line-height:1; background:none; border:none; z-index:3001; }
+
+        @media (max-width:768px) {
+            .nav-links { display:none; }
+            .menu-toggle { display:flex; }
+            .nav-links.open { display:flex; flex-direction:column; position:absolute; top:100%; right:1.5rem; background:#2bb7ac; border-radius:14px; padding:1rem 1.3rem; gap:0.9rem; box-shadow:0 12px 30px rgba(0,0,0,0.15); }
+            .page-hero h1 { font-size:1.9rem; }
+            .steps3, .compare { grid-template-columns:1fr; }
+            .cta-band { padding:1.8rem; }
+        }
+    </style>
+    <script src="stats.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="필라이프 코칭 - 1:1 라이프 코칭">
+    <meta property="og:description" content="질문과 대화로 삶의 방향을 함께 정리합니다.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/phillife.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="필라이프 코칭 - 1:1 라이프 코칭">
+    <meta name="twitter:description" content="질문과 대화로 삶의 방향을 함께 정리합니다.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="lecture.html">강연 안내</a></li>
+                <li><a href="author.html">소장소개</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="phillife.html">필라이프 코칭</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="icon-badge"><i data-lucide="messages-square" aria-hidden="true"></i></div>
+        <h1>필라이프 코칭</h1>
+        <p>질문과 대화를 통해 삶의 방향을 함께 정리합니다</p>
+    </section>
+
+    <main role="main">
+        <section class="block">
+            <h2 class="sec">필라이프 코칭을 오픈합니다</h2>
+            <p>저의 새로운 도전은 2026년에도 계속됩니다. 지난해 독저팅, 박근필성장연구소, 필북, 필레터에 이어 올해는 필라이프 코칭을 시작합니다.</p>
+            <div class="pull">
+                <p>필라이프 코칭은 심리 치료나 상담이 아닌, 질문과 대화를 통해 삶의 선택 기준을 정리하는 코칭 프로그램입니다.</p>
+                <p>필라이프 코칭은 누군가의 삶을 대신 결정해 주는 프로그램이 아닙니다. 지금의 고민이 어디에서 비롯되었는지, 무엇을 오해하고 있는지, 어떤 기준으로 다시 선택해야 하는지를 질문과 대화를 통해 함께 정리해 보는 1:1 코칭 프로그램입니다.</p>
+            </div>
+            <p>저는 수의사로 임상 현장을 경험했고, 작가로서 수많은 질문을 글과 책으로 정리해왔으며, 강사·강연가로서 사람들의 생각이 바뀌는 순간을 가까이에서 보아왔습니다. 학생 시절부터 지금까지 후배·동갑·선배를 가리지 않고, 주변 사람들이 먼저 고민을 털어놓고 대화를 요청해오는 경우가 많았습니다. 그 경험은 지금까지도 이어지고 있습니다.</p>
+            <p>필라이프 코칭은 그 경험을 바탕으로 지금까지의 삶을 되짚어보고, 다음 선택을 스스로 할 수 있도록 돕는 대화입니다.</p>
+
+            <h3 class="sub">다루는 주제</h3>
+            <p>필라이프 코칭에서는 다음과 같은 고민을 다룹니다.</p>
+            <div class="topics">
+                <div class="topic"><i data-lucide="compass" aria-hidden="true"></i><span>지금의 삶이 맞는 방향인지 혼란스러울 때</span></div>
+                <div class="topic"><i data-lucide="users" aria-hidden="true"></i><span>가족·인간관계 안에서 갈등이나 반복되는 어려움이 있을 때</span></div>
+                <div class="topic"><i data-lucide="route" aria-hidden="true"></i><span>진로·직업 전환 앞에서 두려움과 망설임이 앞서 선택과 결정을 내리기 어려울 때</span></div>
+                <div class="topic"><i data-lucide="trending-up" aria-hidden="true"></i><span>자기 계발(퍼스널 브랜딩)을 하고 싶지만 막막할 때</span></div>
+                <div class="topic"><i data-lucide="heart" aria-hidden="true"></i><span>반려동물과의 이별 이후 마음의 균형이 무너지고 일상으로 돌아가기 어려울 때</span></div>
+            </div>
+
+            <h3 class="sub">진행 방식</h3>
+            <div class="steps3">
+                <div class="step"><div class="n">1</div><div class="t">신청서 제출</div></div>
+                <div class="step"><div class="n">2</div><div class="t">고민 사전 접수</div></div>
+                <div class="step"><div class="n">3</div><div class="t">Zoom 1:1 코칭</div><div class="d">날짜·시간 조율 후 약 1시간</div></div>
+            </div>
+
+            <h3 class="sub">운영 안내</h3>
+            <p>필라이프 코칭은 파일럿 형태로 시작합니다. 운영을 거듭하며 고민의 범위, 참여자가 체감한 변화와 만족도, 몇 회가 적정한지 등 개입 범위와 진행 방식을 다듬습니다. 추후 경험과 사례가 축적되면 정식 프로그램으로 전환할 계획입니다.</p>
+
+            <h3 class="sub">신청 전 안내</h3>
+            <p>신청서로 신청자분의 고민을 충분히 읽어본 뒤, 필라이프 코칭의 방향과 맞는 경우에 한하여 코칭을 진행합니다. 코칭 가능 여부는 신청 내용을 검토한 뒤 개별적으로 안내드립니다.</p>
+
+            <div class="note">
+                <div class="nh"><i data-lucide="alert-circle" aria-hidden="true"></i>이런 분께는 맞지 않을 수 있습니다</div>
+                <p style="margin:0; color:var(--sub);">필라이프 코칭은 빠른 위로나 명확한 정답을 기대하시는 분, 누군가가 대신 결정해 주길 바라는 분께는 맞지 않을 수 있습니다. 이 코칭은 스스로 생각하고, 질문하고, 선택하려는 분께 보다 잘 맞는 프로그램입니다.</p>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">코칭과 컨설팅의 차이</h2>
+            <p>코칭과 컨설팅 단어를 많이 들어보셨을 겁니다. 얼핏 보기엔 비슷해 보여 혼용해서 쓰이기도 하지만, 알고 보면 분명한 차이가 있습니다.</p>
+            <div class="compare">
+                <div class="box lead-box">
+                    <h3>코칭</h3>
+                    <p>코치는 질문과 대화를 통해 클라이언트가 스스로 문제를 해결할 수 있도록 돕습니다. 보통 관계가 수평적입니다.</p>
+                </div>
+                <div class="box">
+                    <h3>컨설팅</h3>
+                    <p>컨설턴트는 클라이언트가 의뢰한 분야에 전문가로서, 문제를 진단하고 해결책을 제시합니다. 관계는 상대적으로 수직적입니다.</p>
+                </div>
+            </div>
+            <p class="oneline">한 줄로 정리하면 이렇습니다.<br>코칭은 '답을 찾도록 돕는 일'이고, 컨설팅은 '답을 제공하는 일'입니다.</p>
+            <p>어제 필라이프 코칭 오픈 소식을 전했습니다. 먼저 분명히 말씀드리고 싶은 게 있습니다.</p>
+            <div class="pull">
+                <p>저는 해당 분야의 전문가는 아닙니다. 누군가의 인생을 설계해 줄 수 있는 사람도 아니고, 정답을 쥐고 있는 사람도 아닙니다.</p>
+                <p>다만 40년이 넘는 시간을 살면서 크고 작은 파도를 여러 번 마주했고, 육체적으로나 심리적으로 힘든 시기도 겪었습니다. 진로(직업) 문제, 투자 문제, 가족을 포함한 인간관계 문제까지. 이 중 일부는 여전히 현재 진행형입니다. 저도 여러분과 똑같은 사람입니다.</p>
+            </div>
+            <p>제가 잘나서, 대단해서, 크게 성공해서 필라이프 코칭을 시작한 게 아닙니다. 과거에 힘든 시기를 겪어봤고 지금도 나름의 고민을 안고 살아가고 있기에, 제 경험과 생각을 바탕으로 비슷한 시간을 지나고 있는 분들에게 도움을 드리고 싶습니다.</p>
+            <p>경청하는 자세는 저의 오래된 강점입니다. 그래서인지 학창 시절부터 지금에 이르기까지 주위 많은 사람의 고민을 들어주었고, 그들은 제게 항상 고마움을 표시했습니다.</p>
+            <p>다시 한 번 강조하지만 필라이프 코칭은 심리 치료나 심리 상담이 아닙니다. 명쾌한 솔루션을 드리는 자리도 아닙니다. 질문과 대화를 통해 지금의 고민이 어디에서 비롯되었는지, 무엇을 오해하고 있는지, 앞으로 어떤 기준으로 선택하면 좋을지를 함께 정리해 보는 시간입니다.</p>
+            <p>감사하게도 오픈하자마자 몇 분이 신청을 해주셨습니다. 일정을 조율해 이번 달에 코칭을 진행할 예정입니다.</p>
+            <p>필라이프 코칭의 문을 두드리는 일을 두려워하거나 부끄러워하지 않으셔도 됩니다. 우리 삶의 문제들 중에는 혼자서는 풀긴 어렵지만, 누군가와 차분히 이야기 나누다 보면 의외로 실마리가 보이는 것들이 많습니다.</p>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">첫 필라이프 코칭 진행</h2>
+            <p>첫 필라이프 코칭을 진행했습니다. 사전에 일정을 조율하고 줌(ZOOM)으로 약 한 시간 가까이 대화를 나눴습니다. 일방적으로 저의 생각을 말하거나 솔루션을 제시하는 시간이 아닙니다. 서로 묻고 생각하고 답하는 과정에서, 현재 클라이언트가 겪는 문제의 원인과 앞으로 나아갈 방향을 함께 모색하는 시간입니다.</p>
+            <div class="quote">"클라이언트와 저 모두에게 유익한 시간이었습니다."</div>
+            <p>다음은 코칭 후 클라이언트의 후기입니다.</p>
+            <p class="hint">이미지를 클릭하면 크게 볼 수 있습니다.</p>
+            <div class="review-shot"><img src="333.png" alt="필라이프 코칭 후기" onclick="openShot(this.src)"></div>
+            <p>고민이 있는데 해결 방향이 보이지 않아 막막하다면 필라이프 코칭 문을 두드리세요. 생각지도 못한 해결의 실마리를 찾을 수도 있습니다.</p>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">'천직'에 관한 고민</h2>
+            <p>필라이프 코칭 케이스 소개입니다. 이 분의 고민을 한 줄로 요약하면, "'천직'을 찾고 싶다"입니다. 현재 하고 계신 업무가 본인의 성향, 가치관과 맞지 않는 게 가장 큰 문제였습니다.</p>
+            <p>줌으로 대화를 나누기 전, 신청서와 1:1 톡으로 필요한 사전 정보를 얻습니다. 이것을 토대로 약 한 시간 정도 여러 질문을 드리고 경청하고 제 생각도 보태드립니다.</p>
+            <p>이 과정에서 클라이언트는 생각이 정리되고, 미처 몰랐거나 무심코 지나쳤던 걸 알게 됩니다. 문제의 원인이 무엇이었는지, 앞으로 어떤 선택을 하면 좋을지 기준과 방향도 알 수 있습니다.</p>
+            <div class="pull">
+                <p>얼마큼 좋은 질문을 하냐에 따라 코칭의 질이 달라집니다. 질문력, 다른 말로 문해력입니다. 클라이언트의 상황과 맥락에 대한 이해가 필수입니다.</p>
+            </div>
+            <p>다음은 코칭 후 클라이언트의 후기입니다.</p>
+            <p class="hint">이미지를 클릭하면 크게 볼 수 있습니다.</p>
+            <div class="review-shot">
+                <img src="phillife-review-1.png" alt="필라이프 코칭 후기 1" onclick="openShot(this.src)">
+                <img src="phillife-review-2.png" alt="필라이프 코칭 후기 2" onclick="openShot(this.src)">
+                <img src="phillife-review-3.png" alt="필라이프 코칭 후기 3" onclick="openShot(this.src)">
+            </div>
+            <p>고민이 있는데 해결 방향이 보이지 않아 막막하다면 필라이프 코칭 문을 두드리세요. 생각지도 못한 해결의 실마리를 찾을 수도 있습니다.</p>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">물음표가 마침표로 변하는 시간</h2>
+            <p>이번에 코칭을 의뢰한 분의 고민은 이렇습니다.</p>
+            <div class="note">
+                <p style="margin:0 0 0.6rem; color:var(--sub);"><strong>1.</strong> 직장일과 육아를 병행하다 보니 도저히 독서와 글쓰기를 할 시간이 나지 않는다. 직장 다니는 남들은 일과 육아를 하면서도 열심히 자기 계발을 하며 사는 것 같은데, 그들은 어떻게 그것이 가능한지, 내가 문제인 건지 궁금하다.</p>
+                <p style="margin:0; color:var(--sub);"><strong>2.</strong> 현재 하고 있는 일을 계속 해나가는 게 맞는지 잘 모르겠다. 내가 뭘 좋아하고 뭘 하고 싶은지도 모르겠다.</p>
+            </div>
+            <p>우리들 사는 모습은 비슷합니다. 그래서 각자 하는 고민도 비슷하지요. 이 분의 고민을 쭉 듣다 보니 마치 제 얘기를 하는 것 같은 부분이 많았습니다. 그래서 공감이 더 되었습니다.</p>
+            <div class="pull"><p>질문과 대화, 그리고 저의 생각 한 스푼. 필라이프 코칭은 이렇게 이뤄집니다.</p></div>
+            <p>한 시간 정도 밀도 높은 대화를 나누고 코칭을 마쳤습니다. 만족도가 높으셔서 저도 큰 보람을 느꼈습니다.</p>
+            <p>다음은 코칭 후 클라이언트의 후기입니다.</p>
+            <p class="hint">이미지를 클릭하면 크게 볼 수 있습니다.</p>
+            <div class="review-shot"><img src="phillife-review-5.png" alt="필라이프 코칭 후기 5" onclick="openShot(this.src)"></div>
+            <p>고민이 있으시다면 언제든 필라이프 코칭의 문을 두드리세요. 여러분을 기다리고 있겠습니다.</p>
+        </section>
+
+        <section class="block">
+            <h2 class="sec">내 고민을 남들도 했거나 하고 있을 가능성이 높습니다</h2>
+            <p>이번에 코칭을 의뢰한 분과의 주요 대화 내용입니다.</p>
+            <div class="note">
+                <p style="margin:0 0 0.4rem; color:var(--sub);"><strong>1.</strong> OO 분야에 관심이 많다. 깊이 공부하고 꾸준히 책도 내고 싶다.</p>
+                <p style="margin:0 0 0.4rem; color:var(--sub);"><strong>2.</strong> 작가님처럼 직장을 다니며 병행하고 싶다.</p>
+                <p style="margin:0 0 0.4rem; color:var(--sub);"><strong>3.</strong> 작가님은 본업을 유지하면서 다양하게 왕성한 활동을 하시는 비결이 궁금하다.</p>
+                <p style="margin:0; color:var(--sub);"><strong>4.</strong> 그 외.</p>
+            </div>
+            <p>대화를 쭉 나누다 보니 관심 있는 분야가 낯설지 않았습니다. 저도 몇 년 전 깊이 공부했던 분야였죠. 서로 반가워하며 관련 이야기를 주고받았습니다. 응원도 해드렸죠.</p>
+            <div class="review-shot"><img src="phillife-meeting-6.png" alt="필라이프 코칭 미팅" onclick="openShot(this.src)"></div>
+            <p>그 외 고민, 책쓰기 관련 궁금증 등에 관해서도 깊은 대화를 나눴습니다.</p>
+            <div class="pull">
+                <p>현재 내가 골똘히 하고 있는 고민이 나만의 고민이 아닐 가능성이 높습니다. 남도 과거에 했던 고민이거나 현재 나와 똑같이 하고 있는 고민일 수 있죠.</p>
+            </div>
+            <p>그런 사람과 고민을 공유하고 해결책을 함께 찾아보는 건 의미 있는 일입니다. 필라이프 코칭이 바로 그런 시간입니다.</p>
+            <p>다음은 코칭 후 클라이언트의 후기입니다.</p>
+            <p class="hint">이미지를 클릭하면 크게 볼 수 있습니다.</p>
+            <div class="review-shot"><img src="phillife-review-6.png" alt="필라이프 코칭 후기 6" onclick="openShot(this.src)"></div>
+            <p>고민이 있으시다면 언제든 문을 두드리세요. 여러분을 기다리고 있겠습니다.</p>
+
+            <div class="cta-band">
+                <p>필라이프 코칭 신청은 아래 버튼을 클릭해 신청서를 작성·제출해 주세요.</p>
+                <p class="small">※ 신청 인원이 많을 경우 순차적으로 안내드릴 수 있습니다.</p>
+                <a href="https://forms.gle/ydiRcZkiYJy8oQ6S9" target="_blank" rel="noopener" class="btn"><i data-lucide="pen-line" aria-hidden="true"></i>필라이프 코칭 신청하기</a>
+            </div>
+            <p class="closing">사람이 뇌과학적으로 행복할 수 있는 유일한 길은<br>남을 행복하게 해주는 것이라고 합니다.<br>필라이프 코칭으로 저와 여러분 모두 행복해지길 진심으로 바랍니다.</p>
+        </section>
+    </main>
+
+    <div class="lightbox" id="shotBox" onclick="closeShot()">
+        <button class="close" onclick="closeShot()" aria-label="닫기">&times;</button>
+        <img id="shotImg" src="" alt="후기 확대 이미지">
+    </div>
+
+    <!-- 공통 강연 섭외 CTA -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+    <style>
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.97rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
+    </style>
+
+    <footer role="contentinfo">
+        <div class="footer-sns">
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+            <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024 박근필성장연구소 by 박근필. All rights reserved.<br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+        function openShot(src) {
+            var b = document.getElementById('shotBox');
+            document.getElementById('shotImg').src = src;
+            b.style.display = 'block'; b.scrollTop = 0;
+            document.body.style.overflow = 'hidden';
+        }
+        function closeShot() {
+            document.getElementById('shotBox').style.display = 'none';
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeShot(); });
+    </script>
+</body>
+</html>

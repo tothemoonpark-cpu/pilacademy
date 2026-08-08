@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강연 안내 · 섭외 - 박근필성장연구소</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="박근필 강연 안내 - 진로·직업 특강, 기업·기관 커리어 강연">
+    <meta property="og:description" content="전국 초·중·고 진로·직업 특강, 기업·기관 커리어 강연, 교원 직무연수, 도서관 독서·글쓰기 강좌. 수의사이자 작가·강연가·커리어 스토리텔러 박근필.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/lecture.html">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="박근필 강연 섭외 안내. 청소년 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌. 전국 초·중·고 강연 실적과 대표 영상.">
+    <meta name="keywords" content="박근필 강연, 강연 섭외, 진로 강연, 직업 특강, 진로특강 강사, 기업 강연, 커리어 강연, 청소년 진로, 교원 연수, 문해력 강연, 독서 강연, 글쓰기 강연, 북토크, 저자 강연">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/lecture.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="stats.js"></script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --ink: #16181d; --sub: #5b6066; --mint: #2bb7ac; --mint-dark: #1f9d93;
+            --mint-soft: #eef8f6; --line: #ececec; --page: #ffffff; --panel: #f7f9f9;
+        }
+        body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.65; color: var(--ink); background: var(--page); -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+
+        header { background:#2bb7ac; box-shadow:0 2px 12px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.5rem; }
+        .logo { display: flex; align-items: center; gap: 0.45rem; font-size: 1.18rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; white-space: nowrap; }
+        .logo svg { width: 22px; height: 22px; color: #ffffff; }
+        .nav-links { display: flex; gap: 1.4rem; list-style: none; align-items: center; flex-wrap: wrap; }
+        .nav-links a { color: #ffffff; font-weight: 500; font-size: 0.9rem; transition: opacity 0.2s; }
+        .nav-links a:hover { opacity: 0.82; }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+        .menu-toggle span { width: 24px; height: 2px; background: #ffffff; border-radius: 2px; }
+
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Hero */
+        .lec-hero { background: linear-gradient(160deg, #eef8f6 0%, #ffffff 70%); padding: 3.4rem 0 3rem; border-bottom: 1px solid var(--line); }
+        .lec-hero .eyebrow { display:inline-block; font-size: 0.82rem; font-weight: 600; color: var(--mint-dark); background: #fff; border:1px solid #d7eeeb; padding: 0.35rem 0.9rem; border-radius: 50px; margin-bottom: 1.1rem; }
+        .lec-hero h1 { font-size: 2.3rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.32; margin-bottom: 1rem; }
+        .lec-hero h1 .accent { color: var(--mint); }
+        .lec-hero .lead { font-size: 1.05rem; color: var(--sub); max-width: 720px; }
+        .stat-row { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.8rem; }
+        .stat-chip { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 1.15rem; }
+        .stat-chip b { display:block; font-size: 1.32rem; font-weight: 700; letter-spacing: -0.02em; }
+        .stat-chip span { font-size: 0.78rem; color: var(--sub); }
+        .hero-cta { display: flex; gap: 0.7rem; margin-top: 1.8rem; flex-wrap: wrap; }
+        .btn-primary { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--mint); color: #fff; font-weight: 700; font-size: 1rem; padding: 0.85rem 1.7rem; border-radius: 12px; transition: background 0.2s, transform 0.2s; }
+        .btn-primary:hover { background: var(--mint-dark); transform: translateY(-2px); }
+        .btn-ghost { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--ink); border: 1px solid var(--line); background:#fff; font-weight: 500; font-size: 1rem; padding: 0.85rem 1.5rem; border-radius: 12px; transition: border-color 0.2s; }
+        .btn-ghost:hover { border-color: var(--mint); color: var(--mint-dark); }
+        .btn-primary svg, .btn-ghost svg { width: 17px; height: 17px; }
+
+        .hero-shot { position: relative; margin-top: 2.2rem; border-radius: 18px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); max-height: 420px; }
+        .hero-shot img { width: 100%; height: 100%; max-height: 420px; object-fit: cover; object-position: center 42%; display: block; }
+        .hero-shot span { position: absolute; left: 0; right: 0; bottom: 0; padding: 1rem 1.2rem; font-size: 0.86rem; font-weight: 600; color: #fff;
+                          background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%); }
+
+        section.block { padding: 3.2rem 0; }
+        section.block.alt { background: var(--panel); }
+        .sec-head { margin-bottom: 1.9rem; }
+        .sec-head h2 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+        .sec-head p { font-size: 0.95rem; color: var(--sub); }
+
+        /* 왜 박근필인가 */
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+        .why-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 1.6rem 1.4rem; }
+        .why-card .ic { width: 42px; height: 42px; border-radius: 11px; background: var(--mint-soft); color: var(--mint-dark); display:flex; align-items:center; justify-content:center; margin-bottom: 0.9rem; }
+        .why-card .ic svg { width: 21px; height: 21px; }
+        .why-card h3 { font-size: 1.06rem; font-weight: 700; margin-bottom: 0.45rem; letter-spacing:-0.01em; }
+        .why-card p { font-size: 0.89rem; color: var(--sub); line-height: 1.62; }
+
+        /* 다시 부르는 강연 */
+        .again-lead { font-size: 1.02rem; color: var(--ink); line-height: 1.8; background:#fff; border-left: 4px solid var(--mint); border-radius: 0 12px 12px 0; padding: 1.2rem 1.4rem; margin-bottom: 1.4rem; }
+        .again-quote { display:inline-block; margin-top: 0.7rem; font-weight: 700; color: var(--mint-dark); font-size: 1.02rem; }
+        .again-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(238px, 100%), 1fr)); gap: 1.1rem; }
+        .again-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 1.6rem 1.4rem; }
+        .again-num { display:inline-block; font-size: 1.45rem; font-weight: 700; color: var(--mint-dark); letter-spacing: -0.02em; background: var(--mint-soft); padding: 0.3rem 0.9rem; border-radius: 10px; margin-bottom: 0.9rem; }
+        .again-card h3 { font-size: 1.04rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.01em; line-height: 1.45; }
+        .again-card p { font-size: 0.89rem; color: var(--sub); line-height: 1.65; }
+        .again-note { margin-top: 1.3rem; font-size: 0.86rem; color: var(--sub); line-height: 1.7; text-align: center; }
+
+        /* 수강생 후기 */
+        .rv-grid { columns: 3; column-gap: 1.1rem; }
+        .rv-card { break-inside: avoid; margin: 0 0 1.1rem; background:#fff; border:1px solid var(--line); border-left: 4px solid var(--mint); border-radius: 0 14px 14px 0; padding: 1.3rem 1.35rem; position: relative; }
+        .rv-card::before { content:'“'; position:absolute; top:0.1rem; right:0.9rem; font-size:2.6rem; line-height:1; color:var(--mint-soft); font-weight:700; }
+        .rv-card p { font-size: 0.92rem; color: var(--ink); line-height: 1.75; margin:0; position: relative; z-index:1; }
+        .rv-note { margin-top: 0.6rem; font-size: 0.82rem; color: var(--sub); text-align:center; }
+        @media (max-width: 1000px) { .rv-grid { columns: 2; } }
+        @media (max-width: 680px) { .rv-grid { columns: 1; } }
+
+        /* 주제 라인업 */
+        .topic-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+        .topic-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 1.5rem 1.45rem; border-top: 4px solid var(--mint); }
+        .topic-card .tag { display:inline-block; font-size: 0.72rem; font-weight: 700; color: var(--mint-dark); background: var(--mint-soft); padding: 0.22rem 0.62rem; border-radius: 20px; margin-bottom: 0.75rem; }
+        .topic-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.7rem; }
+        .topic-card ul { list-style: none; }
+        .topic-card li { font-size: 0.9rem; color: var(--sub); padding: 0.32rem 0 0.32rem 1rem; position: relative; line-height: 1.55; }
+        .topic-card li::before { content: ''; position: absolute; left: 0; top: 0.78rem; width: 5px; height: 5px; border-radius: 50%; background: var(--mint); }
+        .topic-card .note { margin-top: 0.8rem; font-size: 0.81rem; color: var(--sub); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
+
+        /* 실적 */
+        .proof-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        .proof-card { background:#fff; border:1px solid var(--line); border-radius: 14px; padding: 1.3rem 1.4rem; }
+        .proof-card .lab { font-size: 0.72rem; font-weight: 700; color: var(--mint-dark); background: var(--mint-soft); display:inline-block; padding: 0.2rem 0.58rem; border-radius: 20px; margin-bottom: 0.6rem; }
+        .proof-card .ttl { font-size: 1rem; font-weight: 700; line-height: 1.5; margin-bottom: 0.3rem; }
+        .proof-card .dsc { font-size: 0.86rem; color: var(--sub); line-height: 1.55; }
+        .proof-card a { color: var(--mint-dark); font-weight: 600; font-size: 0.85rem; }
+
+        /* 강연 현장 사진 */
+        .ph-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 1rem; }
+        .ph-item { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: var(--panel); aspect-ratio: 4/3; }
+        .ph-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+        .ph-item:hover img { transform: scale(1.04); }
+        .ph-cap { position:absolute; left:0; right:0; bottom:0; padding:0.75rem 0.9rem; font-size:0.83rem; font-weight:600; color:#fff;
+                  background:linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.72) 100%); }
+
+        /* 영상 */
+        .vid-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+        .vid-card { border-radius: 14px; overflow: hidden; border:1px solid var(--line); background:#fff; }
+        .vid-frame { position: relative; padding-bottom: 56.25%; height: 0; }
+        .vid-frame iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+        .vid-card .cap { padding: 0.85rem 1rem; font-size: 0.87rem; font-weight: 600; line-height:1.5; }
+
+        /* 진행 안내 */
+        .info-table { width: 100%; border-collapse: collapse; background:#fff; border:1px solid var(--line); border-radius: 14px; overflow: hidden; }
+        .info-table th, .info-table td { padding: 0.95rem 1.15rem; text-align: left; font-size: 0.92rem; border-bottom: 1px solid var(--line); }
+        .info-table th { width: 170px; background: var(--panel); font-weight: 700; color: var(--ink); }
+        .info-table td { color: var(--sub); }
+        .info-table tr:last-child th, .info-table tr:last-child td { border-bottom: none; }
+
+        /* CTA */
+        .cta-box { background: linear-gradient(135deg, #2bb7ac 0%, #1f9d93 100%); border-radius: 20px; padding: 2.6rem 2rem; text-align: center; color:#fff; }
+        .cta-box h2 { font-size: 1.55rem; font-weight: 700; margin-bottom: 0.7rem; letter-spacing:-0.02em; }
+        .cta-box p { font-size: 0.97rem; opacity: 0.94; margin-bottom: 1.5rem; line-height:1.7; }
+        .cta-box .btn-white { display:inline-flex; align-items:center; gap:0.45rem; background:#fff; color: var(--mint-dark); font-weight:700; font-size:1rem; padding:0.9rem 1.9rem; border-radius:12px; transition: transform 0.2s; }
+        .cta-box .btn-white:hover { transform: translateY(-2px); }
+        .cta-box .btn-white svg { width:17px; height:17px; }
+        .cta-sub { margin-top: 1.1rem; font-size: 0.85rem; opacity: 0.9; }
+        .cta-sub a { color:#fff; text-decoration: underline; }
+
+        footer { background: #14161a; color: #fff; text-align: center; padding: 2.4rem 1.5rem; margin-top: 3rem; }
+        .footer-sns { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .footer-sns a { color: rgba(255,255,255,0.85); font-size: 0.9rem; transition: color 0.2s; }
+        .footer-sns a:hover { color: var(--mint); }
+        .footer-copy { font-size: 0.83rem; color: rgba(255,255,255,0.5); line-height: 1.8; }
+
+        @media (max-width: 900px) {
+            .why-grid, .vid-grid { grid-template-columns: 1fr; }
+            .topic-grid, .proof-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 560px) {
+            .lec-hero { padding: 2.4rem 0 2.2rem; }
+            .lec-hero h1 { font-size: 1.55rem; }
+            .lec-hero .lead { font-size: 0.96rem; }
+            .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+            .stat-chip { padding: 0.65rem 0.8rem; }
+            .stat-chip b { font-size: 1.12rem; }
+            .stat-chip span { font-size: 0.72rem; }
+            .hero-cta a { flex: 1 1 100%; justify-content: center; }
+            .hero-shot { max-height: 240px; }
+            .hero-shot img { max-height: 240px; }
+            .again-lead { font-size: 0.95rem; padding: 1rem 1.1rem; }
+            .again-quote { font-size: 0.95rem; }
+            section.block { padding: 2.4rem 0; }
+            .sec-head h2 { font-size: 1.32rem; }
+            .cta-box { padding: 2rem 1.2rem; }
+            .cta-box h2 { font-size: 1.28rem; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .menu-toggle { display: flex; }
+            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; right: 1.5rem; background: #2bb7ac; border-radius: 14px; padding: 1rem 1.3rem; gap: 0.9rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+            .lec-hero h1 { font-size: 1.75rem; }
+            .info-table th { width: 110px; font-size: 0.85rem; }
+        }
+    </style>
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="lecture.html">강연 안내</a></li>
+                <li><a href="author.html">소장소개</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- HERO -->
+        <section class="lec-hero">
+            <div class="wrap">
+                <span class="eyebrow">수의사이자 작가 · 강연가 · 커리어 스토리텔러</span>
+                <h1>밤에는 동물병원에, 낮에는 강연장에<br><span class="accent">지금도 두 번 출근하는 사람</span>이 이야기합니다</h1>
+                <p class="lead">
+                    20년 가까이 임상 수의사로 일하고 있습니다. 마흔에 번아웃으로 제 병원을 정리했고, 그 자리에서 책을 읽고 글을 쓰기 시작했습니다.
+                    지금은 <b>수의사와 작가·강연가를 함께</b> 하며 다섯 권의 책을 냈고, 전국 학교와 기업·기관에서 <b>진로와 커리어</b>를 이야기합니다.
+                    그만두고 떠난 사람의 이야기가 아니라, <b>지금도 현장에서 두 가지 일을 살아내고 있는 사람</b>의 이야기입니다.
+                </p>
+
+                <div class="stat-row">
+                    <div class="stat-chip"><b><span data-stat="schools">38</span>개교</b><span>전국 초·중·고 진로 특강</span></div>
+                    <div class="stat-chip"><b><span data-stat="books">5</span>권</b><span>저서 (베스트셀러 1위)</span></div>
+                    <div class="stat-chip"><b><span data-stat="columnOutlets">25</span>곳</b><span>칼럼 연재 매체</span></div>
+                    <div class="stat-chip"><b><span data-stat="interviews">60</span>여 명</b><span>인터뷰 진행(피플인사이트)</span></div>
+                </div>
+
+                <div class="hero-cta">
+                    <a class="btn-primary" href="contact.html"><i data-lucide="send" aria-hidden="true"></i>강연 섭외 문의하기</a>
+                    <a class="btn-ghost" href="#topics">강연 주제 보기 <i data-lucide="arrow-down" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="hero-shot">
+                    <img src="lecture-photo-1.jpg" alt="부산영상예술고 진로 특강 현장" loading="eager"
+                         onerror="this.parentNode.style.display='none'">
+                    <span>부산영상예술고 진로 특강 — 전교생 414명</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 왜 박근필인가 -->
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>왜 박근필인가</h2>
+                    <p>강연자는 많습니다. 아래 셋은 흔치 않습니다.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="ic"><i data-lucide="route" aria-hidden="true"></i></div>
+                        <h3>직접 건너온 사람</h3>
+                        <p>직업 전환을 책으로 배운 사람이 아니라 실제로 통과한 사람입니다. 번아웃, 폐업, 마흔의 재시작까지 —
+                        말할 수 있는 것이 이론이 아니라 경험입니다. 청중이 가장 먼저 알아채는 차이입니다.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="ic"><i data-lucide="shield-check" aria-hidden="true"></i></div>
+                        <h3>공적으로 검증된 강사</h3>
+                        <p>부산시교육청 영재교육진흥원이 <b>교사를 대상으로 하는 직무연수</b> 강사로 섭외했습니다.
+                        부산시청 공무원 200여 명 특강, 경향신문 인터뷰, 방송 출연까지 — 검증을 외부에서 받았습니다.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="ic"><i data-lucide="mic-vocal" aria-hidden="true"></i></div>
+                        <h3>말하기가 본업인 사람</h3>
+                        <p>AI가 글은 대신 써 줍니다. 그러나 사람 앞에 서서 눈을 맞추고 주고받는 말은 대신하지 못합니다.
+                        2년간 <span data-stat="interviews">60</span>여 명을 직접 인터뷰해 온 진행자입니다. 카메라 앞에서도, 550명 강당에서도 흔들리지 않습니다.
+                        원고를 읽는 강연이 아니라 <b>청중과 주고받는 강연</b>을 합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 다시 부르는 강연 -->
+        <section class="block alt">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>다시 부르고, 다른 곳에 소개합니다</h2>
+                    <p>강연이 좋았는지는 제가 말할 수 없습니다. 부른 쪽이 하는 행동으로 드러납니다.</p>
+                </div>
+
+                <div class="again-lead">
+                    강연자는 자기 강연을 잘했다고 말할 수 있습니다. 그러나 <b>다시 부르는 것</b>과
+                    <b>다른 곳에 소개하는 것</b>은 강연자가 만들 수 없습니다. 그 결정은 늘 제가 없는 자리에서 납니다.<br>
+                    <span class="again-quote">기회가 기회를 부르고, 사람이 사람을 부르고, 경력이 경력을 부릅니다.</span>
+                </div>
+
+                <div class="again-grid">
+                    <div class="again-card">
+                        <div class="again-num">이틀</div>
+                        <h3>첫 수업만 보고 6회를 더 맡긴 도서관</h3>
+                        <p>혁신어울림 작은도서관 여름 강좌 <b>1회차를 마친 이틀 뒤</b>, 도서관에서 먼저 하반기 6회 강좌를 제안했습니다.
+                        네 번의 수업을 다 지켜보기도 전에 결정한 것입니다.</p>
+                    </div>
+                    <div class="again-card">
+                        <div class="again-num">3개교</div>
+                        <h3>이듬해 같은 학교가 다시</h3>
+                        <p>부산여중(2025→2026), 김해 수남중(2025→2026), 대명여고(2025→2026).
+                        담당 선생님이 바뀌어도 <b>학교가 다시 부른</b> 경우입니다.</p>
+                    </div>
+                    <div class="again-card">
+                        <div class="again-num">추천</div>
+                        <h3>교육청 연수는 동료 추천으로 열렸습니다</h3>
+                        <p>부산광역시교육청 영재교육진흥원 교원 직무연수 섭외 당시, 어떻게 알고 연락했는지 물었습니다.
+                        돌아온 답은 <b>“동료 연구원 선생님께서, 요즘 특강하시는 핫한 분이시라고 추천을 해줬다”</b>였습니다.</p>
+                    </div>
+                    <div class="again-card">
+                        <div class="again-num">소개</div>
+                        <h3>기관이 기관에 건넨 이름</h3>
+                        <p>김해서부청소년센터가 개관 1주년 청소년 진로 멘토링에 저를 부른 경로는
+                        <b>김해진로교육지원센터의 소개</b>였습니다. 소개는 소개하는 쪽이 자기 이름을 함께 얹는 일이라,
+                        어지간해서는 하지 않습니다.</p>
+                    </div>
+                </div>
+
+                <p class="again-note">
+                    ※ 모든 곳이 다시 부르지는 않습니다. 다만 <b>다시 부른 곳과 소개해 준 곳이 꾸준히 있다는 것</b>,
+                    그것이 제가 내놓을 수 있는 가장 정직한 근거입니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- 수강생 후기 -->
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>수강생이 남긴 말</h2>
+                    <p>김해율하도서관 「추억과 이별을 쓰는 펫로스 치유 글쓰기」 4주 과정을 마친 뒤 받은 후기입니다.</p>
+                </div>
+
+                <div class="rv-grid">
+                    <blockquote class="rv-card">
+                        <p>“너무 좋았습니다. 처음엔 많이 울었는데 쓰다보니 행복한 기억들이 쓰나미처럼 밀려와서 행복했었습니다.
+                        4회차 동안 진행해주신 작가님께 감사드리고 이런 소중한 프로그램을만들어주신 사서님께도 감사합니다.”</p>
+                    </blockquote>
+                    <blockquote class="rv-card">
+                        <p>“강아지에 대해 얘기나눌 시간이 없는데 내가 유별나지않다는 걸 알게되고, 진짜 힐링되는 시간이었어요.
+                        <b>수의사님이셔서 더 얘기가 잘통하고</b> 수업오는시간이 기다려졌어요. 뜨거운여름날 이겨내고 오고싶은 수업이었어요. 행복했어요!”</p>
+                    </blockquote>
+                    <blockquote class="rv-card">
+                        <p>“마침 평일에 시간이 있어서 신청하게 되었는데 <b>장기적으로 했으면 하는 마음이 들 만큼</b> 좋은 시간이었습니다.
+                        나중에 또 이런 비슷한 강좌가 생기면 신청하고 싶습니다. 여러모로 따뜻한 시간이 되었던 것 같습니다. 감사합니다^_^”</p>
+                    </blockquote>
+                    <blockquote class="rv-card">
+                        <p>“참 좋았어요! 애완견주로서 다정한 생각을 정리할 수 있게돼 자기정화를 가질 수 있는 시간이었습니다.”</p>
+                    </blockquote>
+                    <blockquote class="rv-card">
+                        <p>“힐링되고, 즐거운 시간이었어요.”</p>
+                    </blockquote>
+                </div>
+
+                <p class="rv-note">※ 강좌 종료 후 도서관 설문으로 받은 실제 응답입니다. 표기는 원문 그대로 두었습니다.</p>
+            </div>
+        </section>
+
+        <!-- 강연 주제 -->
+        <section class="block alt" id="topics">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>강연 주제</h2>
+                    <p>실제로 진행한 주제들입니다. 대상·시간·목적에 맞춰 재구성해 드립니다.</p>
+                </div>
+                <div class="topic-grid">
+                    <div class="topic-card">
+                        <span class="tag">기업 · 기관</span>
+                        <h3>직장인이 아니라 직업인으로</h3>
+                        <ul>
+                            <li>직장인이 아니라 직업인으로 — 평생 현역으로 사는 법</li>
+                            <li>AI 시대, 대체되지 않는 사람의 조건</li>
+                            <li>AI가 대신하지 못하는 것 — 말하는 힘</li>
+                            <li>생각을 리셋하면, 인생이 새로고침</li>
+                            <li>읽고 쓰고 말하는 힘이 만드는 업무 경쟁력</li>
+                            <li>퍼스널 브랜딩 — 검색되는 사람이 되는 법</li>
+                        </ul>
+                        <p class="note">부산시청 공무원 200여 명 저자 특강 · KB국민은행 · 한국시니어TV 〈S클래스〉 2부작 방송</p>
+                    </div>
+
+                    <div class="topic-card">
+                        <span class="tag">청소년 · 학교</span>
+                        <h3>진로·직업 특강 / 진로 토크 콘서트</h3>
+                        <ul>
+                            <li>정답이 없어서, 다행이야</li>
+                            <li>길이 보이지 않아도 괜찮다 — 걸어가면 그게 곧 내 길이다</li>
+                            <li>AI 시대 나의 진로 설계하기</li>
+                            <li>수의사 직업 특강 / 작가 직업 특강</li>
+                            <li>동기 부여 특강 · 북콘서트</li>
+                        </ul>
+                        <p class="note">전교생 550명·414명·306명 등 대규모 진행 다수 · 초등부터 고등까지 전 학년</p>
+                    </div>
+
+                    <div class="topic-card">
+                        <span class="tag">교원 · 학부모</span>
+                        <h3>AI 시대, 우리 아이에게 정말 필요한 것</h3>
+                        <ul>
+                            <li>AI 시대, 우리 아이에게 정말 필요한 것 (교원 직무연수)</li>
+                            <li>AI 시대, 부모가 진짜 준비해야 할 것</li>
+                            <li>부모가 먼저 자라야 자녀가 자란다</li>
+                            <li>아이의 문해력, 무엇부터 시작할까</li>
+                        </ul>
+                        <p class="note">부산시교육청 영재교육진흥원 교원 직무연수 · 자녀교육 채널 〈0교시 부모영역〉 출연</p>
+                    </div>
+
+                    <div class="topic-card">
+                        <span class="tag">도서관 · 평생교육</span>
+                        <h3>독서 · 글쓰기 · 문해력</h3>
+                        <ul>
+                            <li>문해력·글쓰기·독서 (어린이 독서문화강좌)</li>
+                            <li>책쓰기의 모든 것 — 연속 강의</li>
+                            <li>책 읽고 쓰는 삶에 대하여</li>
+                            <li>펫로스 치유 글쓰기 — 추억과 이별을 쓰다</li>
+                            <li>독서와 글쓰기로 브랜딩하기</li>
+                        </ul>
+                        <p class="note">김해율하도서관 4주 완주 · 혁신어울림 작은도서관 여름·하반기 연속 섭외 · 부산진구 기적의 도서관</p>
+                    </div>
+
+                    <div class="topic-card">
+                        <span class="tag">반려동물 · 수의</span>
+                        <h3>수의사가 들려주는 이야기</h3>
+                        <ul>
+                            <li>강아지와 행복하게 산다는 것</li>
+                            <li>수의사가 들려주는 반려동물 이야기</li>
+                            <li>펫로스 — 잘 떠나보내고, 다시 사랑하기</li>
+                            <li>수의사의 퍼스널 브랜딩 (수의사 대상)</li>
+                        </ul>
+                        <p class="note">ONN TV 〈신비한 동물 사전〉 고정 출연 · 전북대 수의과대학 강연 · 데일리벳 칼럼 연재</p>
+                    </div>
+
+                    <div class="topic-card">
+                        <span class="tag">저자 강연</span>
+                        <h3>북토크 · 저자 초청 특강</h3>
+                        <ul>
+                            <li>『마흔, 더 늦기 전에 생각의 틀을 리셋하라』 — 생각의 틀 리셋</li>
+                            <li>『나는 매일 두 번 출근합니다』 — 본업과 두 번째 일</li>
+                            <li>『당신의 원고는 왜 계약되지 않는가』 — 책쓰기 8할은 기획</li>
+                            <li>『방구석에서 혼자 읽는 직업 토크쇼』 — 청소년 진로</li>
+                        </ul>
+                        <p class="note">교보문고·예스24 자기계발 일간 베스트셀러 1위 저자 · 매년 신간 출간</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 대표 실적 -->
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>대표 실적</h2>
+                    <p><span data-stat="asOf">2026.8</span> 기준입니다. 전체 이력은 <a href="author.html" style="color:var(--mint-dark);font-weight:600;">소장소개</a>에서 확인하실 수 있습니다.</p>
+                </div>
+                <div class="proof-grid">
+                    <div class="proof-card">
+                        <span class="lab">교원 연수</span>
+                        <div class="ttl">부산광역시교육청 영재교육진흥원 교원 직무연수</div>
+                        <div class="dsc">「AI 시대, 우리 아이에게 정말 필요한 것」 · 초중등 영재교육 담당교원 대상 원격연수 · <b>교육 당국이 교사를 가르치는 자리에 섭외</b></div>
+                    </div>
+                    <div class="proof-card">
+                        <span class="lab">대규모 강연</span>
+                        <div class="ttl">부산시청 공무원 200여 명 저자 특강</div>
+                        <div class="dsc">공직자 대상 2시간 특강 · 유락여중 550명, 부산영상예술고 414명, 학산여중 306명 등 전교생 규모 다수</div>
+                    </div>
+                    <div class="proof-card">
+                        <span class="lab">연속 강좌</span>
+                        <div class="ttl">4~6회 연속 프로그램 운영</div>
+                        <div class="dsc">김해율하도서관 펫로스 치유 글쓰기 4주 완주 · 혁신어울림 작은도서관 여름 4회 + 하반기 6회 · 부산진구 기적의 도서관 4주 — <b>단발 특강뿐 아니라 연속 커리큘럼 설계·운영</b> 경험</div>
+                    </div>
+                    <div class="proof-card">
+                        <span class="lab">언론</span>
+                        <div class="ttl">부산일보·국제신문·동아일보 등 <span data-stat="pressLecture">23</span>개 매체 보도</div>
+                        <div class="dsc">부산시청소년자립지원관 자립준비청소년 진로 특강이 언론 <span data-stat="pressLecture">23</span>곳에 보도 · 경향신문 인물 인터뷰</div>
+                    </div>
+                    <div class="proof-card">
+                        <span class="lab">방송</span>
+                        <div class="ttl">한국시니어TV·ONN TV·0교시 부모영역 출연</div>
+                        <div class="dsc">한국시니어TV 〈생각을 바꾸는 시간, S클래스〉 2부작 · ONN TV 〈신비한 동물 사전〉 <b>고정 출연</b> · 자녀교육 채널 〈0교시 부모영역〉</div>
+                    </div>
+                    <div class="proof-card">
+                        <span class="lab">집필</span>
+                        <div class="ttl">저서 <span data-stat="books">5</span>권 · <span data-stat="columnOutlets">25</span>곳 매체 칼럼 연재</div>
+                        <div class="dsc">교보문고·예스24 자기계발 일간 1위 · 진로·커리어·독서·문해력 주제로 매체별 시리즈 연재 중 · 여섯 번째 책 집필 중</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 강연 현장 사진 (파일을 폴더에 넣으면 자동 표시) -->
+        <section class="block alt" id="photos">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>강연 현장</h2>
+                    <p>학교 대강당부터 소규모 워크숍까지, 실제 강연 모습입니다.</p>
+                </div>
+                <div class="ph-grid" id="lecturePhotos"></div>
+            </div>
+        </section>
+
+        <!-- 영상 -->
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>강연 영상</h2>
+                    <p>실제 강연 현장과 방송·인터뷰 출연 모습입니다.</p>
+                </div>
+                <div class="vid-grid">
+                    <div class="vid-card">
+                        <div class="vid-frame"><iframe src="https://www.youtube.com/embed/yXY0kf-uTdw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="부산시청소년자립지원관 진로 특강"></iframe></div>
+                        <div class="cap">부산시청소년자립지원관 진로 특강</div>
+                    </div>
+                    <div class="vid-card">
+                        <div class="vid-frame"><iframe src="https://www.youtube.com/embed/fQn5JxAT9bc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="여자중학교 550명 진로 특강"></iframe></div>
+                        <div class="cap">여중 550명 진로 특강</div>
+                    </div>
+                    <div class="vid-card">
+                        <div class="vid-frame"><iframe src="https://www.youtube.com/embed/Yicc7oOyCwQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="여중 전교생 306명 진로 토크 콘서트"></iframe></div>
+                        <div class="cap">여중 전교생 306명 진로 토크 콘서트</div>
+                    </div>
+                    <div class="vid-card">
+                        <div class="vid-frame"><iframe src="https://www.youtube.com/embed/6BcenZMpSc4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="0교시 부모영역 출연"></iframe></div>
+                        <div class="cap">자녀 교육 채널 〈0교시 부모영역〉 출연</div>
+                    </div>
+                    <div class="vid-card">
+                        <div class="vid-frame"><iframe src="https://www.youtube.com/embed/2fe0JvvrvbU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="온닥터TV 이 책을 쓴 사람"></iframe></div>
+                        <div class="cap">ONN닥터TV 〈이 책을 쓴 사람〉 (전국 송출)</div>
+                    </div>
+                    <div class="vid-card">
+                        <div class="vid-frame"><iframe src="https://www.youtube.com/embed/iEW2093MslA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="AI시대, 경쟁력을 높이려면"></iframe></div>
+                        <div class="cap">AI 시대, 경쟁력을 높이려면?</div>
+                    </div>
+                </div>
+                <div style="text-align:center;margin-top:1.6rem;">
+                    <a class="btn-ghost" href="videos.html">전체 영상 보기 <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 진행 안내 -->
+        <section class="block alt">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>진행 안내</h2>
+                    <p>아래는 일반적인 기준이며, 기관 사정에 맞춰 조정 가능합니다.</p>
+                </div>
+                <table class="info-table">
+                    <tr><th>대상</th><td>초·중·고 학생 / 교사·학부모 / 기업 임직원 / 공공기관·도서관 / 성인 일반</td></tr>
+                    <tr><th>강연 시간</th><td>45분 · 60분 · 90분 · 100분 (2회 연속 진행, 연속 회차 프로그램 모두 가능)</td></tr>
+                    <tr><th>규모</th><td>소규모 15명 워크숍부터 전교생 550명 대강당까지 모두 진행 경험 있음</td></tr>
+                    <tr><th>형식</th><td>강연형 · 토크 콘서트형 · 북콘서트형 · 연속 강좌(4~6회) · 온라인 줌 · 영상 촬영형</td></tr>
+                    <tr><th>지역</th><td>부산 거주 · <b>전국 출강 가능</b> (서울·인천·경남·전북 등 진행 이력)</td></tr>
+                    <tr><th>준비 사항</th><td>노트북·빔프로젝터·마이크 (자료는 사전 발송, 기관 서식 강의계획서 작성 가능)</td></tr>
+                    <tr><th>문의 후 절차</th><td>문의 접수 → 주제·대상·시간 협의 → 구성안 제안 → 확정 → 자료 사전 발송</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="block">
+            <div class="wrap">
+                <div class="cta-box">
+                    <h2>강연을 검토 중이시라면</h2>
+                    <p>대상과 인원, 희망 날짜만 알려주시면 그에 맞는 구성안을 제안해 드립니다.<br>
+                    아직 주제가 정해지지 않았어도 괜찮습니다. 함께 잡아 드립니다.</p>
+                    <a class="btn-white" href="contact.html"><i data-lucide="send" aria-hidden="true"></i>강연 섭외 문의하기</a>
+                    <div class="cta-sub">
+                        이메일 <a href="mailto:tothemoon_park@naver.com">tothemoon_park@naver.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-sns">
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+            <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024 박근필성장연구소 by 박근필. All rights reserved.<br>읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+
+        /* ── 강연 현장 사진 ─────────────────────────────
+           사진을 lecture.html과 같은 폴더에 넣고 아래 목록에 한 줄 추가하면 됩니다.
+           파일명은 자유롭게 정하시되 아래 file 값과 같아야 합니다.
+           사진이 하나도 없으면 이 섹션은 자동으로 숨겨집니다.        */
+        var LECTURE_PHOTOS = [
+            { file: 'lecture-photo-1.jpg', caption: '부산영상예술고 진로 특강 — 전교생 414명' },
+            { file: 'lecture-photo-2.jpg', caption: '유락여중 진로 특강 — 2·3학년 550명' },
+            { file: 'lecture-photo-3.jpg', caption: '부산시청 저자 초청 북세미나 — 공무원 200여 명' },
+            { file: 'lecture-photo-4.jpg', caption: '부산시청소년자립지원관 진로 특강 — 언론 23개 매체 보도' },
+            { file: 'lecture-photo-5.jpg', caption: '영도도서관 연계 「찾아가는 작가 강연」 — 부산영상예술고' },
+            { file: 'lecture-photo-6.jpg', caption: '혁신어울림 작은도서관 어린이 독서문화강좌 — 초등 4~6학년' },
+            { file: 'lecture-photo-7.jpg', caption: '김해율하도서관 펫로스 치유 글쓰기 — 성인 4주 과정' },
+            { file: 'lecture-photo-8.jpg', caption: '남성여자고등학교 진로 특강 — 1·2학년 210여 명' },
+            { file: 'lecture-photo-9.jpg', caption: '윤중중학교 진로 특강 — 3학년 137명 (서울 구로도서관 연계)' }
+        ];
+        (function renderPhotos() {
+            var box = document.getElementById('lecturePhotos');
+            var sec = document.getElementById('photos');
+            if (!box || !sec) return;
+            var loaded = 0, pending = LECTURE_PHOTOS.length;
+            if (!pending) { sec.style.display = 'none'; return; }
+            LECTURE_PHOTOS.forEach(function (p) {
+                var probe = new Image();
+                probe.onload = function () {
+                    loaded++;
+                    var fig = document.createElement('div');
+                    fig.className = 'ph-item';
+                    var img = document.createElement('img');
+                    img.src = p.file; img.alt = p.caption; img.loading = 'lazy';
+                    fig.appendChild(img);
+                    if (p.caption) {
+                        var cap = document.createElement('div');
+                        cap.className = 'ph-cap'; cap.textContent = p.caption;
+                        fig.appendChild(cap);
+                    }
+                    box.appendChild(fig);
+                    done();
+                };
+                probe.onerror = done;   // 파일이 없으면 조용히 건너뜀
+                probe.src = p.file;
+            });
+            function done() {
+                if (--pending === 0 && loaded === 0) sec.style.display = 'none';
+            }
+        })();
+
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+    </script>
+</body>
+</html>

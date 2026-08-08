@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 - 박근필성장연구소</title>
+    <meta name="keywords" content="박근필성장연구소, 공지사항, 강연 소식, 신간 소식">
+    <meta name="description" content="박근필성장연구소 공지사항 — 강연·출간·방송 소식을 전합니다.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/notice.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --ink:#16181d; --sub:#5b6066; --muted:#8a9099; --line:#ececec; --panel:#f7f8f9; --page:#ffffff; }
+        body { font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.7; color:var(--ink); background:var(--page); -webkit-font-smoothing:antialiased; }
+        a { text-decoration:none; color:inherit; }
+        header { background:rgba(255,255,255,0.85); backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:1000; }
+        nav { max-width:1140px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.5rem; }
+        .logo { display:flex; align-items:center; gap:0.45rem; font-size:1.18rem; font-weight:700; color:var(--ink); letter-spacing:-0.02em; }
+        .logo svg { width:22px; height:22px; }
+        .nav-links { display:flex; gap:1.35rem; list-style:none; align-items:center; flex-wrap:wrap; }
+        .nav-links a { color:var(--sub); font-weight:500; font-size:0.9rem; transition:color 0.2s; }
+        .nav-links a:hover { color:var(--ink); }
+        .menu-toggle { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; }
+        .menu-toggle span { width:24px; height:2px; background:var(--ink); border-radius:2px; }
+
+        .page-hero { text-align:center; padding:4.5rem 1.5rem 1rem; }
+        .page-hero .eyebrow { display:inline-block; font-size:0.82rem; font-weight:500; color:var(--sub); border:1px solid var(--line); padding:0.35rem 0.9rem; border-radius:50px; margin-bottom:1.2rem; }
+        .page-hero h1 { font-size:2.3rem; font-weight:700; letter-spacing:-0.03em; margin-bottom:0.7rem; }
+        .page-hero p { color:var(--sub); font-size:1.05rem; }
+
+        .notices { max-width:760px; margin:0 auto; padding:2.5rem 1.5rem 4rem; display:flex; flex-direction:column; gap:1.2rem; }
+        .notice { background:var(--page); border:1px solid var(--line); border-radius:16px; padding:1.8rem 2rem; }
+        .notice__top { display:flex; align-items:center; gap:0.6rem; margin-bottom:0.5rem; flex-wrap:wrap; }
+        .notice__date { font-size:0.85rem; color:var(--muted); }
+        .badge { font-size:0.72rem; font-weight:500; padding:0.25rem 0.65rem; border-radius:50px; }
+        .badge.solid { background:var(--ink); color:#fff; }
+        .badge.line { border:1px solid var(--ink); color:var(--ink); }
+        .notice__title { font-size:1.22rem; font-weight:700; letter-spacing:-0.01em; margin-bottom:0.8rem; }
+        .notice__body { font-size:0.98rem; color:var(--sub); line-height:1.85; }
+        .notice__body strong { color:var(--ink); }
+        .note-box { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--ink); border-radius:8px; padding:1.2rem 1.4rem; margin:1.2rem 0; }
+        .note-box p { margin:0.2rem 0; }
+        .quote-box { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1.4rem; margin:1.3rem 0; text-align:center; }
+        .quote-box strong { display:block; margin-bottom:0.5rem; }
+        .closing { text-align:center; font-size:1.1rem; font-weight:700; color:var(--ink); margin-top:1.2rem; }
+        .inline-btn { display:inline-flex; align-items:center; gap:0.4rem; background:var(--ink); color:#fff; font-size:0.92rem; font-weight:500; padding:0.7rem 1.3rem; border-radius:10px; margin-top:0.6rem; }
+        .inline-btn svg { width:16px; height:16px; }
+        .code { font-weight:700; font-size:1.15rem; color:var(--ink); }
+        .qr-img { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:2rem; text-align:center; margin:1.3rem 0; }
+        .qr-img img { width:100%; max-width:560px; border-radius:8px; }
+        .qr-links { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+        .qr-links div { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1.3rem; text-align:center; }
+        .qr-links p { font-weight:700; color:var(--ink); margin-bottom:0.5rem; }
+        .qr-links a { color:var(--ink); text-decoration:underline; font-size:0.92rem; }
+
+        footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5rem; }
+        .footer-sns { display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap; margin-bottom:1rem; }
+        .footer-sns a { color:rgba(255,255,255,0.85); font-size:0.9rem; transition:color 0.2s; }
+        .footer-sns a:hover { color:#fff; }
+        .footer-copy { font-size:0.83rem; color:rgba(255,255,255,0.5); }
+
+        @media (max-width:768px) {
+            .nav-links { display:none; }
+            .menu-toggle { display:flex; }
+            .nav-links.open { display:flex; flex-direction:column; position:absolute; top:100%; right:1.5rem; background:#fff; border:1px solid var(--line); border-radius:14px; padding:1rem 1.3rem; gap:0.9rem; box-shadow:0 12px 30px rgba(0,0,0,0.1); }
+            .page-hero h1 { font-size:1.8rem; }
+            .notice { padding:1.4rem 1.5rem; }
+            .qr-links { grid-template-columns:1fr; }
+        }
+    </style>
+<style id="mint-header-override">
+  header{ background:#2bb7ac !important; border-bottom:none !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; }
+  header .logo, header .logo svg, header .nav-links a, header .dropbtn{ color:#ffffff !important; }
+  header .nav-links a:hover, header .dropbtn:hover{ color:#ffffff !important; opacity:0.82 !important; }
+  .menu-toggle span{ background:#ffffff !important; }
+  .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
+  .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
+</style>
+    <script src="stats.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="공지사항 - 박근필성장연구소">
+    <meta property="og:description" content="강연·출간·방송 소식.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/notice.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="공지사항 - 박근필성장연구소">
+    <meta name="twitter:description" content="강연·출간·방송 소식.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="lecture.html">강연 안내</a></li>
+                <li><a href="author.html">소장소개</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="vod.html">VOD 강의</a></li>
+                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="philbook.html">필북</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="phillife.html">필라이프 코칭</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="page-hero">
+            <span class="eyebrow">Notice</span>
+            <h1>공지사항</h1>
+            <p>박근필성장연구소의 새로운 소식을 확인하세요</p>
+        </section>
+
+        <section class="notices" aria-label="공지 목록">
+            <article class="notice">
+                <div class="notice__top"><span class="badge solid">NEW</span><span class="notice__date">2024.11.14</span></div>
+                <h2 class="notice__title">필아카데미 웹사이트 오픈!</h2>
+                <div class="notice__body">필아카데미의 새로운 웹사이트가 오픈했습니다. 독저팅, 필북, VOD 강의 등 다양한 서비스를 만나보세요.</div>
+            </article>
+
+            <article class="notice">
+                <div class="notice__top"><span class="badge line">HOT</span><span class="notice__date">2024.11.14</span></div>
+                <h2 class="notice__title">박근필 소장의 커뮤니티</h2>
+                <div class="notice__body">
+                    <p>박근필 소장와의 동반 성장 단톡방</p>
+                    <p>🔑 단톡방 입장코드(비번)은 <span class="code">2222</span>입니다.</p>
+                    <a href="https://open.kakao.com/o/gLKiGDBg" target="_blank" rel="noopener" class="inline-btn"><i data-lucide="message-circle" aria-hidden="true"></i>카카오톡 오픈채팅 참여하기</a>
+                </div>
+            </article>
+
+            <article class="notice">
+                <div class="notice__top"><span class="badge solid">NEW</span><span class="notice__date">2026.01.25</span></div>
+                <h2 class="notice__title">필아카데미는 『박근필성장연구소』로 새롭게 출발합니다</h2>
+                <div class="notice__body">
+                    <p><strong>필아카데미는 『박근필성장연구소』로 새롭게 출발합니다.</strong><br>이곳은 성장을 원하는 사람들을 위한 공간입니다.</p>
+                    <div class="note-box">
+                        <p>- 한 권의 책을 쓰는 여정,</p>
+                        <p>- 나만의 목소리를 찾는 말하기 훈련,</p>
+                        <p>- 습관을 바꾸고 삶을 리셋하는 프로젝트,</p>
+                        <p>- 커리어를 다시 설계하는 작지만 큰 전환들...</p>
+                    </div>
+                    <p>그 모든 과정을 <strong>"함께 설계하고, 촉진하고, 성장하는 공간"</strong>으로 만들고자 합니다.</p>
+                    <p style="margin-top:1rem;">필북, 필레터, 필라이프 코칭, 피플인사이트, 독저팅.<br>이 모든 프로젝트의 중심에는 늘 <strong>'성장'</strong>이 있었습니다.<br>앞으로도 그 중심은 바뀌지 않습니다.<br>이제 그 철학을 더욱 뚜렷하게, 본질적으로 추구하려 합니다.</p>
+                    <div class="quote-box">
+                        <strong>성장은 기술이 아니라 태도와 습관입니다.</strong>
+                        앞으로도 읽고, 쓰고, 말하는 삶을 통해<br>여러분 안의 성장 가능성을 함께 발견하겠습니다.
+                    </div>
+                    <p class="closing">동반성장합시다!</p>
+                </div>
+            </article>
+
+            <article class="notice">
+                <div class="notice__top"><span class="badge solid">NEW</span><span class="notice__date">2026.02.15</span></div>
+                <h2 class="notice__title">박근필성장연구소 QR코드 안내</h2>
+                <div class="notice__body">
+                    <p style="text-align:center;">박근필 소장의 프로필과 박근필성장연구소 웹사이트를<br>QR코드로 간편하게 접속하세요.</p>
+                    <div class="qr-img"><img src="qrcode.png" alt="박근필 프로필 및 박근필성장연구소 QR코드"></div>
+                    <div class="qr-links">
+                        <div>
+                            <p>박근필 프로필 링크</p>
+                            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">litt.ly/tothemoonpark →</a>
+                        </div>
+                        <div>
+                            <p>박근필성장연구소</p>
+                            <a href="index.html">웹사이트 바로가기 →</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- 공통 강연 섭외 CTA -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+    <style>
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.97rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
+    </style>
+
+    <footer role="contentinfo">
+        <div class="footer-sns">
+            
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+           <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024 박근필성장연구소 by 박근필. All rights reserved.<br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+    </script>
+</body>
+</html>
