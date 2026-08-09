@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필북 5기 모집</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 956px;
+            height: 810px;
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 50px;
+        }
+        
+        .top-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+        
+        .button {
+            background: white;
+            color: #44A08D;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .button-outline {
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+        }
+        
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .title {
+            color: white;
+            font-size: 140px;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: 8px;
+            margin-bottom: 30px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            color: white;
+            font-size: 52px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            letter-spacing: 4px;
+        }
+        
+        .description {
+            color: white;
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 80px;
+            letter-spacing: 2px;
+        }
+        
+        .info-box {
+            background: white;
+            border-radius: 30px;
+            padding: 50px 80px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .info-text {
+            font-size: 32px;
+            color: #2c3e50;
+            line-height: 1.6;
+            letter-spacing: 1px;
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-weight: 900;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-buttons">
+            <button class="button">필북</button>
+            <button class="button button-outline">박근필 작가</button>
+        </div>
+        
+        <div class="main-content">
+            <div class="title">필북</div>
+            <div class="subtitle">5기 모집</div>
+            <div class="description">박근필 작가의 동반성장 독서모임</div>
+            
+            <div class="info-box">
+                <div class="info-text">
+                    독서 + 대화 + 인사이트 특강 + 글쓰기가<br>
+                    결합된 <span class="highlight">7주 동반 성장 프로그램</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
