@@ -156,7 +156,7 @@
     // 수동 관리
     books: 5,               // 출간 저서 (집필 중 제외)
     columnOutlets: 25,      // 칼럼 연재 매체 수
-    pressBook: 30,          // 신간 출간 보도 매체 수
+    pressBook: 31,          // 신간 출간 보도 매체 수
     pressLecture: 23,       // 자립지원관 특강 보도 매체 수
     interviews: 60,         // 피플인사이트 인터뷰 인원(약)
     followers: '2.6만',     // SNS 팔로워
