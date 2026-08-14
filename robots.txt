@@ -9,4 +9,27 @@ Disallow: /__
 Disallow: /mobile-test.html
 Disallow: /success.html
 
+# AI 답변엔진 크롤러 명시 허용 (AEO)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Yeti
+Allow: /
+
 Sitemap: https://tothemoonpark-cpu.github.io/pilacademy/sitemap.xml
+
+# LLM 요약본
+# https://tothemoonpark-cpu.github.io/pilacademy/llms.txt

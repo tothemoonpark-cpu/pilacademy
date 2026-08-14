@@ -72,6 +72,11 @@
         .hero-shot span { position: absolute; left: 0; right: 0; bottom: 0; padding: 1rem 1.2rem; font-size: 0.86rem; font-weight: 600; color: #fff;
                           background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%); }
 
+        .faq-list { display:grid; gap:0.9rem; }
+        .faq-item { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.4rem 1.5rem; }
+        .faq-item h3 { font-size:1.02rem; font-weight:700; margin-bottom:0.5rem; letter-spacing:-0.01em; }
+        .faq-item h3::before { content:"Q. "; color:var(--mint-dark); font-weight:700; }
+        .faq-item p { font-size:0.92rem; color:var(--sub); line-height:1.75; }
         section.block { padding: 3.2rem 0; }
         section.block.alt { background: var(--panel); }
         .sec-head { margin-bottom: 1.9rem; }
@@ -208,6 +213,112 @@
         overflow-wrap: break-word;
       }
     </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Course",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/petloss.html#course",
+   "name": "안녕, 나의 반려동물 — 추억과 이별을 쓰는 펫로스 치유 글쓰기",
+   "description": "반려동물과의 이별을 함께 읽고 짧게 쓰고 나누는 4주 글쓰기 워크숍. 만남→추억→이별→기록의 네 단계로 진행하며 마지막 회차에 800~1,000자 에세이 한 편을 완성한다. 심리 상담이 아닌 글쓰기 워크숍이다.",
+   "inLanguage": "ko",
+   "provider": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+   },
+   "author": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+   },
+   "teaches": [
+    "펫로스",
+    "반려동물 상실 애도",
+    "치유 글쓰기",
+    "기록"
+   ],
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Offline",
+    "courseWorkload": "PT2H",
+    "repeatCount": 4,
+    "instructor": {
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+    }
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/petloss.html#service",
+   "name": "펫로스 강연·워크숍 섭외",
+   "serviceType": "펫로스 강연",
+   "provider": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "대한민국"
+   },
+   "audience": {
+    "@type": "Audience",
+    "audienceType": "도서관·기관·기업·가족 단위"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/petloss.html#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "펫로스 강연은 몇 회 과정이 적당한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "4주 과정이 기본입니다. 만남→추억→이별→기록의 네 단계로 설계돼 있고 김해율하도서관에서 전 회차 완주로 검증됐습니다. 사정에 따라 6주로 넓히거나 60~120분 단발 특강으로도 재구성할 수 있습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "몇 명 규모가 적당한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "12명 내외 소규모에서 가장 잘 작동합니다. ㄷ자 또는 원형 좌석 배치를 권합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "심리 상담 프로그램인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "아닙니다. 심리 치료가 아니라 글쓰기 워크숍이며 강사는 진행자(퍼실리테이터) 역할을 합니다. 합평이나 비평 없이 함께 듣기만 하고 낭독도 전원 자율입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "왜 수의사가 펫로스 강연을 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "20년 가까이 임상 수의사로 일하며 보호자들이 마지막 결정을 내리는 자리에 함께 있었기 때문입니다. 펫로스를 책으로 배운 것이 아니라 그 현장에 있었고, 상담사·치료사가 설 수 없는 자리가 여기입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "참가자가 사전에 준비할 것이 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "사전 읽기 과제가 없습니다. 발췌문과 워크시트는 강사가 인쇄해 현장에서 제공합니다. 참가자는 반려동물 사진 한 장만 준비하면 됩니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "강연료는 어떻게 되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "기관 기준과 규모·횟수에 따라 협의합니다. 예산 범위를 알려주시면 그에 맞는 구성으로 제안해 드립니다."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
 <body>
     <header role="banner">
@@ -511,6 +622,43 @@
                             <li>발췌문 인쇄본과 워크시트는 <b>강사가 준비</b>합니다</li>
                         </ul>
                         <p class="note">강연료는 기관 기준과 규모·횟수에 따라 협의합니다. 편하게 문의해 주세요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 자주 묻는 질문 -->
+        <section class="block" id="faq">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>자주 묻는 질문</h2>
+                    <p>담당자분들이 실제로 가장 많이 물어보신 것들입니다.</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>펫로스 강연은 몇 회 과정이 적당한가요?</h3>
+                        <p>4주 과정이 기본입니다. 만남 → 추억 → 이별 → 기록의 네 단계로 설계돼 있고, 김해율하도서관에서 전 회차 완주로 검증됐습니다. 사정에 따라 6주로 넓히거나 60~120분 단발 특강으로도 재구성해 드립니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>몇 명 규모가 적당한가요?</h3>
+                        <p>12명 내외 소규모에서 가장 잘 작동합니다. ㄷ자 또는 원형 좌석 배치를 권합니다. 서로의 이야기가 들리는 거리여야 나눔이 열립니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>심리 상담 프로그램인가요?</h3>
+                        <p>아닙니다. 심리 치료가 아니라 글쓰기 워크숍이며, 강사는 진행자(퍼실리테이터) 역할을 합니다. 합평이나 비평 없이 함께 듣기만 하고, 낭독도 전원 자율입니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>왜 수의사가 펫로스 강연을 하나요?</h3>
+                        <p>20년 가까이 임상 수의사로 일하며 보호자들이 마지막 결정을 내리는 자리에 함께 있었기 때문입니다. 펫로스를 책으로 배운 사람이 아니라 그 현장에 있었던 사람입니다. 상담사·치료사가 설 수 없는 자리가 여기입니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>참가자가 사전에 준비할 것이 있나요?</h3>
+                        <p>사전 읽기 과제가 없습니다. 발췌문과 워크시트는 강사가 인쇄해 현장에서 제공합니다. 참가자는 반려동물 사진 한 장만 준비하시면 됩니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>강연료는 어떻게 되나요?</h3>
+                        <p>기관 기준과 규모·횟수에 따라 협의합니다. 예산 범위를 알려주시면 그에 맞는 구성으로 제안해 드립니다.</p>
                     </div>
                 </div>
             </div>

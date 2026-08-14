@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박근필의 피플인사이트 - 박근필성장연구소</title>
+    <title>직업인문학 — 박근필의 피플인사이트 | 박근필성장연구소</title>
     <meta name="keywords" content="직업인문학, 박근필 피플인사이트, 인터뷰 프로그램, 인터뷰어, 진행자, 유튜브 인터뷰, 직업 인터뷰, 직업 이야기">
     <meta name="description" content="박근필의 피플인사이트 — 2년간 60여 명을 만난 인터뷰 프로그램. 직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어내는 관점, '직업인문학'.">
     <meta name="robots" content="index, follow">
@@ -45,6 +45,13 @@
         .jobhum p { font-size:1rem; line-height:1.85; color:var(--sub); }
         .jobhum p + p { margin-top:0.7rem; }
         .jobhum p b { color:var(--ink); font-weight:700; }
+        .jobhum-faq { margin-top:1.6rem; }
+        .jobhum-faq h2 { font-size:1.25rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:1rem; }
+        .faq-item { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1.3rem 1.4rem; }
+        .faq-item + .faq-item { margin-top:0.8rem; }
+        .faq-item h3 { font-size:1rem; font-weight:700; margin-bottom:0.45rem; letter-spacing:-0.01em; }
+        .faq-item h3::before { content:"Q. "; color:#1f9d93; }
+        .faq-item p { font-size:0.93rem; color:var(--sub); line-height:1.8; }
         .cta-wrap { text-align:center; margin-top:2.2rem; }
         .cta-button { display:inline-flex; align-items:center; gap:0.5rem; background:var(--ink); color:#fff; font-size:1rem; font-weight:500; padding:0.95rem 1.8rem; border-radius:12px; transition:opacity 0.2s, transform 0.2s; }
         .cta-button:hover { opacity:0.88; transform:translateY(-1px); }
@@ -75,7 +82,7 @@
     <script src="stats.js"></script>
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="박근필성장연구소">
-    <meta property="og:title" content="박근필의 피플인사이트 - 60여 명을 만난 인터뷰">
+    <meta property="og:title" content="직업인문학 — 직업을 이름이 아니라 사람의 이야기로 | 박근필의 피플인사이트">
     <meta property="og:description" content="직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어냅니다. 2년간 60여 명을 만난 '직업인문학'.">
     <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-260809.png">
     <meta property="og:image:width" content="1200">
@@ -85,7 +92,7 @@
     <meta property="og:locale" content="ko_KR">
     <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="박근필의 피플인사이트 - 60여 명을 만난 인터뷰">
+    <meta name="twitter:title" content="직업인문학 — 직업을 이름이 아니라 사람의 이야기로 | 박근필의 피플인사이트">
     <meta name="twitter:description" content="직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어냅니다. 2년간 60여 명을 만난 '직업인문학'.">
     <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-260809.png">
     <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
@@ -99,6 +106,87 @@
         overflow-wrap: break-word;
       }
     </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html#jikeopinmunhak",
+   "name": "직업인문학",
+   "alternateName": "Job Humanities",
+   "description": "직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어내는 관점. 수의사이자 작가인 박근필이 「박근필의 피플인사이트」로 직업인 60여 명을 인터뷰해 온 작업에 붙인 이름이다.",
+   "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "박근필성장연구소 용어"
+   },
+   "creator": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+   }
+  },
+  {
+   "@type": "CreativeWorkSeries",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html#series",
+   "name": "박근필의 피플인사이트",
+   "inLanguage": "ko",
+   "creator": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+   },
+   "about": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html#jikeopinmunhak"
+   },
+   "description": "매월 한 분을 모시고 사전 질문 없이 1~2시간 진행하는 인터뷰 프로그램. 2년간 직업인 60여 명을 만났다.",
+   "url": "https://www.youtube.com/playlist?list=PL9gDAK_kh9BJl6wyOhDCvexqOSXNTKitH"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "직업인문학이란 무엇인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어내는 관점입니다. 「박근필의 피플인사이트」로 직업인 60여 명을 인터뷰해 온 작업에 붙인 이름입니다. 거창한 이론이 아니라 한 사람씩 만나 이야기를 듣는 일, 그것이 전부입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "왜 직업의 이름만으로는 부족한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "\"무슨 일 하세요?\"라는 질문에 우리는 대개 직업의 이름을 답합니다. 그런데 그 사람이 무엇에 애를 쓰고, 어디서 보람을 느끼고, 무엇 때문에 그만두고 싶었는지는 이름 바깥에 있습니다. 진로를 이름으로만 고르면 그 바깥을 못 보고 선택하게 됩니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "피플인사이트는 어떻게 진행되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "매월 한 분을 모시고 회당 1~2시간, 사전 질문 없이 진행합니다. 질문지를 미리 주지 않는 이유는 정리된 답이 아니라 그 자리에서 떠오르는 이야기를 듣기 위해서입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "어떤 분들을 인터뷰했나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "각자의 위치에서 열심히 삶을 살아내는 보통 사람들입니다. 유명해서 부르는 것이 아니라 그 일을 오래 해 온 사람이면 됩니다. 2년 동안 60여 명을 만났습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "직업인문학은 진로 교육과 어떻게 연결되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "학교 진로 특강에서 직업을 직업명 목록으로 소개하면 학생은 이름만 고르게 됩니다. 그 일을 살아가는 사람의 하루와 고민을 함께 전하면 학생이 자기 삶에 비춰 볼 수 있습니다. 이 관점이 박근필의 진로·직업 특강 바탕입니다."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
 <body>
     <header role="banner">
@@ -143,6 +231,31 @@
                 <p>“무슨 일 하세요?”라는 질문에 우리는 대개 직업의 <b>이름</b>을 답합니다. 그런데 그 이름 하나로는 아무것도 알 수 없습니다. 그 사람이 무엇에 애를 쓰고, 어디서 보람을 느끼고, 무엇 때문에 그만두고 싶었는지는 이름 바깥에 있습니다.</p>
                 <p>그래서 이름 대신 <b>사람</b>을 묻습니다. 사전 질문 없이 마주 앉아 한두 시간을 듣습니다. 그렇게 <b><span data-stat="interviews">60</span>여 명</b>을 만났습니다.</p>
                 <p>직업을 이렇게 읽는 관점을 <b>‘직업인문학’</b>이라 부릅니다. 거창한 이론은 아닙니다. 한 사람씩 만나 이야기를 듣는 일, 그것이 전부입니다.</p>
+            </div>
+
+
+            <div class="jobhum-faq">
+                <h2>직업인문학, 자주 묻는 질문</h2>
+                <div class="faq-item">
+                    <h3>직업인문학이란 무엇인가요?</h3>
+                    <p>직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어내는 관점입니다. 「박근필의 피플인사이트」로 직업인 60여 명을 인터뷰해 온 작업에 붙인 이름입니다. 거창한 이론이 아니라 한 사람씩 만나 이야기를 듣는 일, 그것이 전부입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>왜 직업의 이름만으로는 부족한가요?</h3>
+                    <p>"무슨 일 하세요?"라는 질문에 우리는 대개 직업의 이름을 답합니다. 그런데 그 사람이 무엇에 애를 쓰고, 어디서 보람을 느끼고, 무엇 때문에 그만두고 싶었는지는 이름 바깥에 있습니다. 진로를 이름으로만 고르면 그 바깥을 못 보고 선택하게 됩니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>피플인사이트는 어떻게 진행되나요?</h3>
+                    <p>매월 한 분을 모시고 회당 1~2시간, 사전 질문 없이 진행합니다. 질문지를 미리 주지 않는 이유는 정리된 답이 아니라 그 자리에서 떠오르는 이야기를 듣기 위해서입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>어떤 분들을 인터뷰했나요?</h3>
+                    <p>각자의 위치에서 열심히 삶을 살아내는 보통 사람들입니다. 유명해서 부르는 것이 아니라 그 일을 오래 해 온 사람이면 됩니다. 2년 동안 60여 명을 만났습니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>직업인문학은 진로 교육과 어떻게 연결되나요?</h3>
+                    <p>학교 진로 특강에서 직업을 직업명 목록으로 소개하면 학생은 이름만 고르게 됩니다. 그 일을 살아가는 사람의 하루와 고민을 함께 전하면 학생이 자기 삶에 비춰 볼 수 있습니다. 이 관점이 박근필의 진로·직업 특강 바탕입니다.</p>
+                </div>
             </div>
 
             <div class="cta-wrap">
