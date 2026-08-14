@@ -55,7 +55,7 @@
 - [저서](https://tothemoonpark-cpu.github.io/pilacademy/books.html): 5권 상세와 출간 보도
 - [피플인사이트](https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html): 직업인문학 정의와 인터뷰 프로그램
 - [독저팅](https://tothemoonpark-cpu.github.io/pilacademy/dokjeoting.html)
-- [필북](https://tothemoonpark-cpu.github.io/pilacademy/philbook.html) · [필레터](https://tothemoonpark-cpu.github.io/pilacademy/newsletter.html) · [필라이프 코칭](https://tothemoonpark-cpu.github.io/pilacademy/phillife.html)
+- [필북](https://tothemoonpark-cpu.github.io/pilacademy/philbook.html) · [필레터](https://tothemoonpark-cpu.github.io/pilacademy/newsletter.html)
 - [대표 영상](https://tothemoonpark-cpu.github.io/pilacademy/videos.html) · [공지사항](https://tothemoonpark-cpu.github.io/pilacademy/notice.html)
 - [섭외 문의](https://tothemoonpark-cpu.github.io/pilacademy/contact.html)
 
