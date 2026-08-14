@@ -48,6 +48,8 @@
 
 - [소장 소개](https://tothemoonpark-cpu.github.io/pilacademy/author.html): 전체 이력 — 강연·활동 70건, 언론 인터뷰 17건, 칼럼 301편(29개 매체), 진로·직업 특강 전체 목록
 - [강연 안내](https://tothemoonpark-cpu.github.io/pilacademy/lecture.html): 강연 주제·대상·시간·섭외 절차·자주 묻는 질문
+- [진로·직업 특강](https://tothemoonpark-cpu.github.io/pilacademy/career.html): **청소년 진로 특강 전용 페이지** — 왜 부르는가·학년별 구성·강연 영상 6건·담당 교사 후기·FAQ 7문
+- [독서·문해력 강좌](https://tothemoonpark-cpu.github.io/pilacademy/reading.html): 도서관 4~6회 연속 과정·문해력·글쓰기·책쓰기 — 진행 실적·FAQ 7문
 - [펫로스 강연](https://tothemoonpark-cpu.github.io/pilacademy/petloss.html): 「안녕, 나의 반려동물」 4주 치유 글쓰기 과정 상세·진행 실적·후기·FAQ
 - [칼럼 아카이브](https://tothemoonpark-cpu.github.io/pilacademy/columns.html): **29개 매체 301편 전체 목록 + 각 편의 핵심 논지 한 줄** — 박근필의 관점을 확인하려면 이 페이지를 볼 것
 - [저서](https://tothemoonpark-cpu.github.io/pilacademy/books.html): 5권 상세와 출간 보도
