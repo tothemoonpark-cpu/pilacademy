@@ -245,7 +245,7 @@
   .nav-drop{position:relative;}
   .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
   .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
-    border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0.55rem;
+    border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
     box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
   .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
   .nav-sub li{display:block;}
@@ -358,6 +358,7 @@
                         <select id="service" name="신청_서비스" required>
                             <option value="">선택해주세요</option>
                             <option value="강연 섭외(학교·청소년)">강연 섭외 — 학교·청소년 진로/직업</option>
+                        <option value="진로독서">강연 섭외 — 진로 독서(학교·도서관 연계)</option>
                             <option value="강연 섭외(기업·기관)">강연 섭외 — 기업·기관·공공</option>
                             <option value="강연 섭외(도서관·평생교육)">강연 섭외 — 도서관·평생교육·독서/글쓰기</option>
                             <option value="강연 섭외(교원연수·학부모)">강연 섭외 — 교원 연수·학부모</option>
