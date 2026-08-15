@@ -38,6 +38,31 @@
    "provider": {
     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
    },
+   "author": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+   },
+   "review": [
+    {
+     "@type": "Review",
+     "reviewBody": "아이들 오늘 독서, 글쓰기를 열심히 하는 아이들이 더 많이 생겼습니다.",
+     "author": { "@type": "Person", "name": "인천 계양중학교 담당 선생님" }
+    },
+    {
+     "@type": "Review",
+     "reviewBody": "오늘 정말 수고 많으셨습니다. 아이들은 즐겁게 참여한 것 같아 다행입니다.",
+     "author": { "@type": "Person", "name": "학산여자중학교 담당 선생님" }
+    },
+    {
+     "@type": "Review",
+     "reviewBody": "오늘 수고 많으셨습니다. 뜻 깊은 강연 덕분에 오늘 글로벌멘토링프로그램이 더욱 빛이 날 수 있었습니다.",
+     "author": { "@type": "Person", "name": "부산 중구진로교육지원센터 담당자" }
+    },
+    {
+     "@type": "Review",
+     "reviewBody": "저도 섭외 하게 되어 아주 감사합니다. 다음에도 모셔보도록 하겠습니다!",
+     "author": { "@type": "Person", "name": "부산시교육청영재교육진흥원 담당 연구사" }
+    }
+   ],
    "areaServed": {
     "@type": "Country",
     "name": "대한민국"
@@ -304,6 +329,8 @@
 
 <style id="nav-dropdown">
   .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
   .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
   .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
     border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
@@ -484,7 +511,7 @@
       <div class="wrap">
         <div class="sec-head">
           <h2>실제 강연 영상</h2>
-          <p>기획안이 아니라 이미 열렸고 끝난 자리입니다.</p>
+          <p>기획안이 아니라 이미 열렸고 끝난 자리입니다. 방송 출연·강연 영상 전체는 <a href="videos.html" style="color:var(--mint-dark);font-weight:700;">대표 영상 페이지</a>에 모아 두었습니다.</p>
         </div>
         <div class="again-grid">
           <div class="again-card"><span class="again-num">550명</span><h3>유락여자중학교</h3><p>2·3학년 550명, 각 1시간 진로 특강</p><p style="margin-top:0.6rem;"><a href="https://www.youtube.com/watch?v=fQn5JxAT9bc" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">영상 보기 →</a></p></div>

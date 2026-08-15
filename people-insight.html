@@ -255,6 +255,8 @@
 
 <style id="nav-dropdown">
   .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
   .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
   .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
     border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);

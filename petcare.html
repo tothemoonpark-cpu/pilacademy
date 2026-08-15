@@ -229,6 +229,9 @@
    "provider": {
     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
    },
+   "author": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+   },
    "areaServed": {
     "@type": "Country",
     "name": "대한민국"
@@ -310,6 +313,8 @@
 
 <style id="nav-dropdown">
   .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
   .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
   .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
     border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
@@ -396,7 +401,7 @@
         <span class="eyebrow">반려동물 강연 · 보호자 교육 섭외 안내</span>
         <h1>반려동물을 <span class="accent">책으로 배운 사람</span>이 아니라,<br><span class="accent">진료실에 있던 사람</span>이 말합니다.</h1>
         <p class="lead">
-          20년 가까이 임상 수의사로 일했고 지금도 진료를 봅니다.
+          20년 가까이 임상 수의사로 일했고 지금도 동물병원에서 일합니다.
           보호자들이 무엇을 가장 많이 묻는지, 무엇을 가장 자주 놓치는지를
           <b>강의실이 아니라 진료실에서</b> 배웠습니다.
         </p>
@@ -442,7 +447,7 @@
         <div class="why-grid">
           <div class="why-card">
             <h3>현직 임상 수의사</h3>
-            <p>은퇴한 사람도, 전공만 한 사람도 아닙니다. <b>지금도 진료실에 섭니다.</b> 어제 만난 보호자의 질문을 오늘 강연에서 그대로 씁니다. 사례가 오래되지 않습니다.</p>
+            <p>은퇴한 사람도, 전공만 한 사람도 아닙니다. <b>지금도 동물병원에서 일합니다.</b> 어제 만난 보호자의 질문을 오늘 강연에서 그대로 씁니다. 사례가 오래되지 않습니다.</p>
           </div>
           <div class="why-card">
             <h3>보호자 편에서 말합니다</h3>

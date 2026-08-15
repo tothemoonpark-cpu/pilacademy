@@ -370,6 +370,8 @@
 
 <style id="nav-dropdown">
   .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
   .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
   .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
     border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
@@ -652,7 +654,7 @@
       <div class="press-modal__box">
         <button class="press-modal__close" type="button" onclick="closePressModal()" aria-label="닫기">&times;</button>
         <h3 class="press-modal__title" id="pressModalTitle">『당신의 원고는 왜 계약되지 않는가』<br>출간 기사</h3>
-        <p class="press-modal__sub">신간 출간을 소개한 언론 기사 모음입니다.</p>
+        <p class="press-modal__sub"><b>31개 매체</b>가 신간 출간을 보도했습니다.</p>
         <div class="press-modal__list">
           <a href="https://www.readingnews.kr/news/articleView.html?idxno=20984" target="_blank" rel="noopener">한국독서교육신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
           <a href="https://www.newsnjob.com/news/articleView.html?idxno=33974" target="_blank" rel="noopener">뉴스앤잡 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>

@@ -392,6 +392,8 @@
 
 <style id="nav-dropdown">
   .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
   .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
   .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
     border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
@@ -1026,6 +1028,11 @@
                         <span class="lab">언론</span>
                         <div class="ttl">부산일보·국제신문·동아일보 등 <span data-stat="pressLecture">23</span>개 매체 보도</div>
                         <div class="dsc">부산시청소년자립지원관 자립준비청소년 진로 특강이 언론 <span data-stat="pressLecture">23</span>곳에 보도 · 경향신문 인물 인터뷰</div>
+                    </div>
+                    <div class="proof-card">
+                        <span class="lab">강사 업계</span>
+                        <div class="ttl">한국강사신문 「오늘의 인물」 선정</div>
+                        <div class="dsc">강사 전문지 한국강사신문 브랜딩연구소가 2026년 8월 「오늘의 인물」로 선정 · 「강연 90초」 코너 소개 — <b>강사 업계가 먼저 알아본 강사</b></div>
                     </div>
                     <div class="proof-card">
                         <span class="lab">방송</span>

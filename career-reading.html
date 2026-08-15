@@ -86,6 +86,11 @@
         .tbl tbody td { color: var(--sub); }
         .tbl tbody td b { color: var(--ink); }
         .tbl tr:last-child td { border-bottom: none; }
+/* 「가르치기 전에 썼습니다」 표 — 좌측 제목 칸을 넓혀 두세 줄로 받는다(우측이 좁아져도 무방).
+   좁은 칸에 강제 줄바꿈을 넣으면 남는 빈 영역이 어색해 보이던 문제를 해결. */
+.tbl-wrote .c-name { width: 38%; }
+.tbl-wrote td:first-child { padding-right: 0.6rem; }
+.tbl-wrote td:first-child b { line-height: 1.5; }
         .note { margin-top: 0.9rem; font-size: 0.85rem; color: var(--sub); line-height: 1.7; }
 
         .pol-list { display: grid; gap: 0.8rem; }
@@ -121,6 +126,7 @@
             section.block { padding: 2.4rem 0; }
             .sec-head h2 { font-size: 1.32rem; }
             .tbl th, .tbl td { padding: 0.75rem 0.85rem; font-size: 0.87rem; }
+  .tbl-wrote .c-name { width: 42%; }
         }
         @media (max-width: 768px) {
             .nav-links { display: none; }
@@ -137,6 +143,8 @@
     </style>
 <style id="nav-dropdown">
   .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
   .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
   .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
     border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
@@ -166,6 +174,9 @@
    "description": "진로 탐색과 독서를 한 수업 안에서 연결하는 학교 대상 강연. 전국 초·중·고 38개교 진로 특강 실적과 독서 전문지 두 곳(독서신문 오피니언 고정 코너, 한국독서교육신문 「진짜 독서법」 21편) 연재와 종이 월간지 월간 『독서』 지면 게재, 그리고 진로독서 도서 복수 출간 경력을 함께 가진 강사가 진행한다. 학교와 도서관이 연계한 진로 독서 프로그램 2건을 진행했다.",
    "provider": {
     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+   },
+   "author": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
    },
    "areaServed": {
     "@type": "Country",
@@ -461,10 +472,11 @@
           <h2>가르치기 전에 썼습니다</h2>
           <p>진로독서를 가르치는 사람이면서, 진로독서 도서를 쓴 저자입니다.</p>
         </div>
-        <table class="tbl">
+        <table class="tbl tbl-wrote">
+          <colgroup><col class="c-name"><col></colgroup>
           <tbody>
             <tr>
-              <td style="width:200px;"><b>『방구석에서 혼자 읽는<br>직업 토크쇼』</b></td>
+              <td><b>『방구석에서 혼자 읽는<br>직업 토크쇼』</b></td>
               <td><b>여러 직업을 밖에서</b> — 심리사·초등교사·놀이치료사·수의사 네 사람이 각자의 직업을 이름이 아니라 이야기로 풀어낸 청소년 진로서. <b>구로도서관이 진로 프로그램 「진로동행, 꿈을 잇는 만남」의 연계 도서로 지정</b>했습니다(2026.7 윤중중학교).</td>
             </tr>
             <tr>
@@ -476,12 +488,12 @@
               <td><b>여러 직업인을 만나서</b> — 「박근필의 피플인사이트」로 직업인 <span data-stat="interviews">60</span>여 명을 인터뷰한 기록이 바탕입니다. <span style="color:var(--sub);">2026년 하반기 출간 예정</span></td>
             </tr>
             <tr>
-              <td style="width:200px;"><b>독서신문</b></td>
+              <td><b>독서신문</b></td>
               <td>오피니언 섹션 「박근필의 진짜 독서」 <b>고정 코너</b> — 6편</td>
             </tr>
             <tr>
               <td><b>월간 『독서』</b></td>
-              <td><b>독서신문이 발행하는 종이 월간지</b> 지면에 칼럼이 게재돼 왔습니다. 1970년 창간, 2026년 7월호가 1739호입니다.</td>
+              <td><b>독서신문 온라인 연재분이 같은 발행사의 종이 월간지에 매월 함께 게재</b>됩니다. 1970년 창간, 2026년 7월호가 1739호입니다.</td>
             </tr>
             <tr>
               <td><b>한국독서교육신문</b></td>
