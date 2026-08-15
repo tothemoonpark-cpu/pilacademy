@@ -302,6 +302,26 @@
         overflow-wrap: break-word;
       }
     </style>
+
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0.55rem;
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.9rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.87rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+</style>
 <!-- BREADCRUMB:AUTO:START -->
 <script type="application/ld+json">
 {
@@ -339,7 +359,16 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="lecture.html">강연 안내</a></li>
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="columns.html">칼럼</a></li>
@@ -538,16 +567,6 @@
       </div>
     </section>
 </main>
-
-<section style="background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2rem 1.5rem;">
-  <div style="max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;">
-    <div>
-      <b style="display:block;font-size:1.12rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.3rem;">주제별 강연 안내</b>
-      <p style="font-size:0.92rem;opacity:0.95;margin:0;">대상과 목적에 따라 구성이 달라집니다. 분야별 안내를 먼저 보세요.</p>
-    </div>
-    <div style="display:flex;gap:0.55rem;flex-wrap:wrap;"><a href="petloss.html" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.45rem 1rem;border-radius:50px;text-decoration:none;">펫로스 →</a><a href="reading.html" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.45rem 1rem;border-radius:50px;text-decoration:none;">독서·문해력·글쓰기 →</a><a href="petcare.html" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.45rem 1rem;border-radius:50px;text-decoration:none;">반려동물 강연 →</a></div>
-  </div>
-</section>
 
 
     <footer role="contentinfo">

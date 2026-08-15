@@ -5243,7 +5243,16 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
             <a href="index.html" class="logo"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="lecture.html">강연 안내</a></li>
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="columns.html">칼럼</a></li>
@@ -6772,16 +6781,6 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
 </ol></section>
 </div>
 </main>
-
-<section style="background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2rem 1.5rem;">
-  <div style="max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;">
-    <div>
-      <b style="display:block;font-size:1.12rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.3rem;">주제별 강연 안내</b>
-      <p style="font-size:0.92rem;opacity:0.95;margin:0;">대상과 목적에 따라 구성이 달라집니다. 분야별 안내를 먼저 보세요.</p>
-    </div>
-    <div style="display:flex;gap:0.55rem;flex-wrap:wrap;"><a href="career.html" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.45rem 1rem;border-radius:50px;text-decoration:none;">진로·직업 특강 →</a><a href="petloss.html" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.45rem 1rem;border-radius:50px;text-decoration:none;">펫로스 →</a><a href="reading.html" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.45rem 1rem;border-radius:50px;text-decoration:none;">독서·문해력·글쓰기 →</a></div>
-  </div>
-</section>
 <footer role="contentinfo">
         <div class="footer-sns">
             

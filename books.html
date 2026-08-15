@@ -367,6 +367,26 @@
  ]
 }
 </script>
+
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0.55rem;
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.9rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.87rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+</style>
 <!-- BREADCRUMB:AUTO:START -->
 <script type="application/ld+json">
 {
@@ -396,7 +416,16 @@
             <a href="index.html" class="logo"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="lecture.html">강연 안내</a></li>
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="columns.html">칼럼</a></li>

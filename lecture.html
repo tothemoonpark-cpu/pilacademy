@@ -389,6 +389,39 @@
  ]
 }
 </script>
+
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:12px;padding:0.5rem 0;margin-top:0.55rem;
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.9rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.87rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+</style>
+
+<style id="field-pick-style">
+  .field-pick{background:#eef8f6;border-top:1px solid #d7eeeb;border-bottom:1px solid #d7eeeb;}
+  .fp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:1rem;}
+  .fp-card{display:flex;flex-direction:column;background:#fff;border:1px solid #d7eeeb;border-radius:16px;
+    padding:1.5rem 1.4rem;text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s;}
+  .fp-card:hover{transform:translateY(-3px);border-color:#2bb7ac;box-shadow:0 10px 26px rgba(43,183,172,0.16);}
+  .fp-tag{align-self:flex-start;font-size:0.72rem;font-weight:700;color:#1f9d93;background:#eef8f6;
+    border:1px solid #d7eeeb;padding:0.2rem 0.62rem;border-radius:20px;margin-bottom:0.7rem;}
+  .fp-card b{font-size:1.12rem;font-weight:700;color:#16181d;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+  .fp-desc{font-size:0.9rem;color:#5b6066;line-height:1.7;flex:1;}
+  .fp-go{margin-top:0.9rem;font-size:0.88rem;font-weight:700;color:#1f9d93;}
+</style>
 <!-- BREADCRUMB:AUTO:START -->
 <script type="application/ld+json">
 {
@@ -420,7 +453,16 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="lecture.html">강연 안내</a></li>
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="columns.html">칼럼</a></li>
@@ -472,6 +514,43 @@
                     </video>
                 </div>
                 <p class="hero-vcap">50초 소개 영상 — 조직에 무엇을 드릴 수 있는가</p>
+            </div>
+        </section>
+
+        <!-- 분야 바로가기 -->
+        <section class="block field-pick">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>어떤 강연을 찾으시나요</h2>
+                    <p>대상과 주제에 따라 안내가 나뉘어 있습니다. 해당하는 곳부터 보십시오.</p>
+                </div>
+                <div class="fp-grid">
+                    <a class="fp-card" href="career.html">
+                        <span class="fp-tag">학교</span>
+                        <b>진로·직업 특강</b>
+                        <span class="fp-desc">초·중·고 진로 특강. 전국 <span data-stat="schools">38</span>개교에서 진행했습니다.</span>
+                        <span class="fp-go">보러 가기 →</span>
+                    </a>
+                    <a class="fp-card" href="petloss.html">
+                        <span class="fp-tag">도서관·기관</span>
+                        <b>펫로스 치유 글쓰기</b>
+                        <span class="fp-desc">반려동물과의 이별을 쓰는 4주 과정. 성인 대상.</span>
+                        <span class="fp-go">보러 가기 →</span>
+                    </a>
+                    <a class="fp-card" href="petcare.html">
+                        <span class="fp-tag">보호자·가족</span>
+                        <b>반려동물 강연</b>
+                        <span class="fp-desc">함께 사는 동안을 다룹니다. 어린이·가족·보호자 대상.</span>
+                        <span class="fp-go">보러 가기 →</span>
+                    </a>
+                    <a class="fp-card" href="reading.html">
+                        <span class="fp-tag">도서관·학교</span>
+                        <b>독서·문해력·글쓰기</b>
+                        <span class="fp-desc">4~6회 연속 과정으로 자주 진행합니다.</span>
+                        <span class="fp-go">보러 가기 →</span>
+                    </a>
+                </div>
+                <p class="note">※ 기업·기관 커리어 강연, 교원 직무연수, 북토크는 아래에서 이어집니다.</p>
             </div>
         </section>
 
