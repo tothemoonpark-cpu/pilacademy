@@ -91,6 +91,12 @@
 .tbl-wrote .c-name { width: 38%; }
 .tbl-wrote td:first-child { padding-right: 0.6rem; }
 .tbl-wrote td:first-child b { line-height: 1.5; }
+.mag-proof { display:grid; grid-template-columns: 1.5fr 1fr; gap:1rem; align-items:start; margin-top:1.4rem; }
+.mag-proof figure { margin:0; }
+.mag-proof img { width:100%; height:auto; border:1px solid var(--line); border-radius:12px; display:block; }
+.mag-proof figcaption { font-size:0.82rem; color:var(--sub); margin-top:0.5rem; line-height:1.5; }
+@media (max-width: 560px){ .mag-proof { grid-template-columns:1fr; } }
+
         .note { margin-top: 0.9rem; font-size: 0.85rem; color: var(--sub); line-height: 1.7; }
 
         .pol-list { display: grid; gap: 0.8rem; }
@@ -462,6 +468,16 @@
             </tr>
           </tbody>
         </table>
+        <div class="mag-proof">
+          <figure>
+            <img src="monthly-reading-page.webp" alt="월간 『독서』 지면에 실린 「박근필의 진짜 독서」 코너 — 「읽는다는 것은 흔들리겠다는 뜻이다」" loading="lazy" width="900" height="1200">
+            <figcaption>월간 『독서』 지면의 고정 코너 「박근필의 진짜 독서」</figcaption>
+          </figure>
+          <figure>
+            <img src="monthly-reading-cover.webp" alt="월간 『독서』 1739호(2026년 7월호) 표지" loading="lazy" width="560" height="780">
+            <figcaption>1739호(2026년 7월호). 1970년 창간</figcaption>
+          </figure>
+        </div>
         <p class="note">※ 대상·인원·희망 날짜만 알려 주시면 구성안을 보내 드립니다. 학교 예산 규모에 맞춰 협의합니다.</p>
       </div>
     </section>
