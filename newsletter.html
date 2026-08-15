@@ -57,7 +57,7 @@
         .nav-links a {
             color: #16181d;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             transition: opacity 0.3s;
         }
         
@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
   footer{ background:#14161a !important; }
   .footer-links a:hover{ color:#16181d !important; }
 </style>
-<style id="mint-header-override">header{ background:#2bb7ac !important; border-bottom:none !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; }
+<style id="mint-header-override">header{ background:#1f9d93 !important; border-bottom:none !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; }
   header .logo, header .logo svg, header .nav-links a, header .dropbtn{ color:#ffffff !important; }
   header .nav-links a:hover, header .dropbtn:hover{ color:#ffffff !important; opacity:0.82 !important; }
   .menu-toggle span{ background:#ffffff !important; }
@@ -570,6 +570,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                     <ul class="nav-sub">
                         <li><a href="lecture.html">전체 강연 안내</a></li>
                         <li><a href="corporate.html">기업·공공기관 강연</a></li>
+                        <li><a href="senior.html">중장년·시니어 강연</a></li>
                         <li><a href="career.html">진로·직업 특강</a></li>
                         <li><a href="career-reading.html">진로 독서</a></li>
                         <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
@@ -849,23 +850,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            
-                            <!-- 구독 버튼 -->
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            
-                            <!-- 이메일 인증 프로세스 안내 -->
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 0; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -918,23 +903,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            
-                            <!-- 구독 버튼 -->
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            
-                            <!-- 이메일 인증 프로세스 안내 -->
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 0; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -989,23 +958,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            
-                            <!-- 구독 버튼 -->
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            
-                            <!-- 이메일 인증 프로세스 안내 -->
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 0; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1070,23 +1023,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            
-                            <!-- 구독 버튼 -->
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            
-                            <!-- 이메일 인증 프로세스 안내 -->
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 0; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1147,23 +1084,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            
-                            <!-- 구독 버튼 -->
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            
-                            <!-- 이메일 인증 프로세스 안내 -->
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 0; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1232,23 +1153,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            
-                            <!-- 구독 버튼 -->
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            
-                            <!-- 이메일 인증 프로세스 안내 -->
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 0; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1316,23 +1221,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            
-                            <!-- 구독 버튼 -->
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            
-                            <!-- 이메일 인증 프로세스 안내 -->
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 0; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1399,23 +1288,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            
-                            <!-- 구독 버튼 -->
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            
-                            <!-- 이메일 인증 프로세스 안내 -->
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 0; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1528,23 +1401,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            
-                            <!-- 구독 버튼 -->
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            
-                            <!-- 이메일 인증 프로세스 안내 -->
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; margin-top: 0; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1611,19 +1468,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1694,19 +1539,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1781,19 +1614,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1864,19 +1685,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -2037,19 +1846,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.6;">
                                  <strong>필레터는 매주 수요일 발행됩니다</strong><br>책 · 독서 · 글쓰기 · 책쓰기 · 삶의 성장, 그리고 수의사로서의 일상까지
                             </p>
-<!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -2209,19 +2006,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -2305,19 +2090,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -2392,19 +2165,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             </p>
                         </div>
 
-                        <!-- 구독 섹션 -->
-                        <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 15px; text-align: center; color: #16181d;">
-                            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
-                            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.3rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
-                            </a>
-                            <div style="background:#fff; padding: 1.2rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.7; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                <p style="margin: 0; opacity: 0.95; color: #16181d;">
-                                     <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
