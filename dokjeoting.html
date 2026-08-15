@@ -40,6 +40,13 @@
         p strong, li strong { color:var(--ink); }
         .pull { font-size:1.15rem; font-weight:500; color:var(--ink); line-height:1.7; }
 
+        .faq-list { display:grid; gap:0.9rem; }
+        .faq-item { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1.4rem 1.5rem; }
+        .faq-item h3 { font-size:1.02rem; font-weight:700; margin-bottom:0.5rem; letter-spacing:-0.01em; color:var(--ink); }
+        .faq-item h3::before { content:"Q. "; font-weight:700; }
+        .faq-item p { font-size:0.92rem; color:var(--sub); line-height:1.75; margin:0; }
+        .faq-item p + p { margin-top:0.6rem; }
+
         .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1.6rem 1.8rem; margin:1.2rem 0; }
         ul.clean { list-style:none; display:flex; flex-direction:column; gap:0.7rem; }
         ul.clean li { display:flex; gap:0.6rem; color:var(--sub); line-height:1.65; }
@@ -173,6 +180,96 @@
    "isPartOf": {
     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#website"
    }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/dokjeoting.html#faq",
+   "inLanguage": "ko",
+   "isPartOf": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/dokjeoting.html"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "책쓰기 컨설팅과 글쓰기 수업은 뭐가 다른가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "글쓰기 수업은 문장을 다듬고, 독저팅은 기획을 세운다. 출판 계약에서 원고의 비중은 20%, 기획의 비중은 80%다. 분야·콘텐츠(주제·소재·콘셉트)·제목과 부제·목차·출간기획서·저자 브랜딩이 기획에 해당한다. 문장은 편집자와 함께 고칠 수 있지만, 기획이 틀리면 원고가 좋아도 계약까지 가지 못한다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "글을 써 본 적이 없어도 되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "권하지 않는다. 독저팅은 쓸 이야기가 이미 있는 사람의 방향을 잡아 주는 컨설팅이며, 글쓰기를 처음부터 가르치는 수업이 아니다. 대필·첨삭·퇴고를 기대하거나 처음부터 끝까지 대신 해 주기를 바라는 경우에도 맞지 않는다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "소설이나 시도 가능한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "아니다. 에세이·자기계발 등 비문학 실용서만 다룬다. 저자가 다섯 권을 그 영역에서 출간했고, 계약 구조와 기획 문법이 문학과 다르기 때문이다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "정말 원고 없이 출판 계약이 되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "저자의 두 번째 책이 원고 없이 출간기획서 한 편으로 계약됐다. 세 번째 책 『마흔 더 늦기 전에 생각의 틀을 리셋하라』는 선인세 조건으로 계약해 출간 후 베스트셀러가 됐다. 흔한 일은 아니지만, 출판사가 보는 것이 원고가 아니라 기획이라는 사실을 보여 준다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "독저팅 기간은 얼마나 걸리나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "STANDARD는 자기소개서와 과제를 받은 뒤 2주 안에 기획 리포트를 제공하고 카톡 상담 8주가 이어진다. PREMIUM은 3주 안에 기획 리포트와 출간기획서 가이드를 제공하고, 줌 화상 코칭 1회와 카톡 상담 16주가 포함된다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "STANDARD와 PREMIUM 중 무엇을 골라야 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "목차 얼개까지 잡고 스스로 써 내려갈 사람이라면 STANDARD로 충분하다. 투고까지 염두에 둔다면 PREMIUM이다. 각 장의 꼭지까지 들어간 목차, 출간기획서 가이드, 줌 화상 코칭 1회, 16주 상담이 포함된다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "과제 설문지 문항이 60개쯤 되던데 꼭 해야 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "그렇다. 그 문항들이 컨설팅의 재료다. 답을 적는 동안 수강생 스스로 어떤 책을 써야 하는지 깨닫는 경우가 많다. 반대로 답이 부실하면 기획 리포트도 부실해진다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "독저팅 비용은 얼마인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "상담을 신청하면 비용을 포함한 상세 신청서를 보내 준다. 문의 → 이메일·연락처 입력 → 신청 서비스에서 '독저팅' 선택 → 문의 내용에 '독저팅 신청(상담)' 입력 순으로 진행된다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "수강이 끝나면 그걸로 끝인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "아니다. 저자가 실제 투고에 쓴 출간기획서 원본, 투고 이메일 제목과 원문, 출판사 이메일 리스트를 제공한다. 출간 계약에 이르면 추천사, 유튜브 「박근필의 피플인사이트」 출연 기회, SNS·블로그 홍보까지 지원한다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "이 방법을 정리한 책이 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "2026년 미다스북스에서 낸 『당신의 원고는 왜 계약되지 않는가』가 그 책이다. 왜 어떤 원고는 계약되고 어떤 원고는 거절되는지, 글쓰기와 책쓰기의 차이부터 출간 이후 저자 브랜딩까지 담았다."
+     }
+    }
+   ]
   }
  ]
 }
@@ -386,6 +483,23 @@
                     <li>신청 확인 후 독저팅 상세(비용 등) 내용이 포함된 신청서를 보내드립니다</li>
                 </ol>
                 <a href="contact.html" class="btn"><i data-lucide="pen-line" aria-hidden="true"></i>독저팅 신청하기</a>
+            </div>
+        </section>
+
+        <section class="block" id="faq">
+            <h2 class="sec">자주 묻는 질문</h2>
+            <p>상담을 신청하신 분들이 실제로 가장 많이 물어보신 것들입니다.</p>
+            <div class="faq-list">
+                <div class="faq-item"><h3>책쓰기 컨설팅과 글쓰기 수업은 뭐가 다른가요?</h3><p>글쓰기 수업은 문장을 다듬습니다. 독저팅은 <strong>기획</strong>을 세웁니다. 출판 계약에서 원고의 비중은 20%, 기획의 비중은 80%라고 봅니다. 분야·콘텐츠(주제·소재·콘셉트)·제목과 부제·목차·출간기획서·저자 브랜딩이 기획에 해당합니다. 문장은 편집자와 함께 얼마든지 고칠 수 있지만, 기획이 틀리면 원고가 아무리 좋아도 계약까지 가지 못합니다.</p></div>
+                <div class="faq-item"><h3>글을 써 본 적이 없어도 되나요?</h3><p>죄송하지만 그런 분께는 권하지 않습니다. 독저팅은 쓸 이야기가 이미 있는 분의 방향을 잡아 드리는 컨설팅이지, 글쓰기를 처음부터 가르치는 수업이 아닙니다. 대필·첨삭·퇴고를 기대하시는 분, 처음부터 끝까지 대신 해 주기를 바라시는 분께도 맞지 않습니다.</p></div>
+                <div class="faq-item"><h3>소설이나 시도 가능한가요?</h3><p>아닙니다. 에세이·자기계발 등 <strong>비문학 실용서</strong>만 다룹니다. 제가 다섯 권을 그 영역에서 출간했고, 계약 구조와 기획 문법이 문학과 다르기 때문입니다. 제가 해 보지 않은 것을 가르치지 않습니다.</p></div>
+                <div class="faq-item"><h3>정말 원고 없이 계약이 되나요?</h3><p>제 두 번째 책이 그렇게 계약됐습니다. 원고 없이 <strong>출간기획서 한 편</strong>으로 계약했고, 세 번째 책 『마흔 더 늦기 전에 생각의 틀을 리셋하라』는 선인세 조건으로 계약해 출간 후 베스트셀러가 됐습니다. 흔한 일은 아닙니다. 다만 그 두 번이 <strong>출판사가 보는 것은 원고가 아니라 기획</strong>이라는 사실을 증명합니다. 그 과정을 그대로 옮긴 것이 독저팅입니다.</p></div>
+                <div class="faq-item"><h3>기간은 얼마나 걸리나요?</h3><p>STANDARD는 자기소개서와 과제를 받은 뒤 2주 안에 기획 리포트를 드리고, 카톡 상담 8주가 이어집니다. PREMIUM은 3주 안에 기획 리포트와 출간기획서 가이드를 드리고, 줌 화상 코칭 1회와 카톡 상담 16주가 포함됩니다.</p></div>
+                <div class="faq-item"><h3>STANDARD와 PREMIUM 중 무엇을 골라야 하나요?</h3><p>목차 얼개까지 잡고 스스로 써 내려가실 분이라면 STANDARD로 충분합니다. <strong>투고까지 염두에 두신다면 PREMIUM</strong>입니다. 각 장의 꼭지까지 들어간 목차, 출간기획서 가이드, 줌 화상 코칭 1회, 16주 상담이 붙습니다.</p></div>
+                <div class="faq-item"><h3>과제(설문지) 문항이 60개쯤 되던데 꼭 해야 하나요?</h3><p>네. 그 문항들이 컨설팅의 재료입니다. 답을 적는 동안 수강생 스스로 <strong>내가 어떤 책을 써야 하는지</strong> 깨닫게 되는 경우가 많습니다. 반대로 답이 부실하면 기획 리포트도 부실해집니다. 대충 하고 싶지 않아서 문항이 많습니다.</p></div>
+                <div class="faq-item"><h3>비용은 얼마인가요?</h3><p>상담을 신청하시면 비용을 포함한 상세 신청서를 보내 드립니다. 문의 → 이메일·연락처 입력 → 신청 서비스에서 '독저팅' 선택 → 문의 내용에 "독저팅 신청(상담)" 입력 순으로 진행됩니다.</p></div>
+                <div class="faq-item"><h3>수강이 끝나면 그걸로 끝인가요?</h3><p>아닙니다. 제가 실제 투고에 쓴 출간기획서 원본, 투고 이메일 제목과 원문, 출판사 이메일 리스트를 드립니다. 출간 계약에 이르면 추천사, 유튜브 「박근필의 피플인사이트」 출연 기회, SNS·블로그 홍보까지 지원합니다.</p></div>
+                <div class="faq-item"><h3>이 방법을 정리한 책이 있나요?</h3><p>있습니다. 2026년 미다스북스에서 낸 『당신의 원고는 왜 계약되지 않는가』가 그 책입니다. 왜 어떤 원고는 계약되고 어떤 원고는 거절되는지, 글쓰기와 책쓰기의 차이부터 출간 이후 저자 브랜딩까지 담았습니다. <a href="books.html" style="font-weight:700;color:var(--ink);">저서 보기 →</a></p></div>
             </div>
         </section>
 
