@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="박근필성장연구소 - AI 시대, 더 귀해지는 건 사람이 하는 말입니다">
     <meta name="twitter:description" content="수의사이자 작가·강연가·커리어 스토리텔러 박근필. 진로·직업 특강, 기업·기관 커리어 강연 섭외.">
     <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-260815.png">
-    <meta name="description" content="수의사이자 작가·강연가 박근필의 공식 사이트. 청소년 진로·직업 특강(전국 38개교), 독서·문해력·글쓰기 강좌, 펫로스 치유 글쓰기 4주 과정. 부산시교육청영재교육진흥원 교원 직무연수 강사, 저서 5권, 25곳 매체 칼럼 연재. 강연 섭외 안내.">
+    <meta name="description" content="수의사이자 작가·강연가·커리어 스토리텔러 박근필의 공식 사이트. 청소년 진로·직업 특강(전국 38개교), 독서·문해력·글쓰기 강좌, 펫로스 치유 글쓰기 4주 과정. 부산시교육청영재교육진흥원 교원 직무연수 강사, 저서 5권, 25곳 매체 칼럼 연재.">
     <meta name="keywords" content="박근필, 진로 강연, 직업 특강, 진로특강 강사, 기업 강연, 커리어 강연, 커리어 스토리텔러, 강연 섭외, 청소년 진로, 문해력 강연, 독서 강연, 글쓰기 강연, 교원 연수, 북토크, 박근필성장연구소, 그로쓰 퍼실리테이터, 독저팅, 책쓰기">
     <script src="stats.js"></script>
     <meta name="author" content="박근필">
@@ -74,6 +74,13 @@
 
         .hero-proof { font-size: 0.83rem; color: var(--sub); line-height: 1.7; margin-top: 1.1rem; padding-top: 1rem; border-top: 1px dashed var(--line); }
         .hero-cta { display: flex; gap: 0.7rem; margin-top: 1.4rem; flex-wrap: wrap; }
+        .intro-band { padding: 2.6rem 0 0.4rem; }
+        .intro-wrap { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+        .intro-wrap p { font-size: 1.02rem; line-height: 1.95; color: var(--sub); margin-bottom: 1rem; }
+        .intro-wrap p b { color: var(--ink); font-weight: 700; }
+        .intro-wrap .intro-line { border-left: 3px solid var(--mint); background: var(--mint-soft); border-radius: 0 12px 12px 0; padding: 1rem 1.2rem; margin-bottom: 0; }
+        @media (max-width: 768px) { .intro-wrap p { font-size: 0.97rem; line-height: 1.85; } }
+
         .topics-band { background: var(--mint-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 3rem 0; }
         .topics-band .tw { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
         .topics-band h2 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.8rem; }
@@ -175,6 +182,49 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "Person",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person",
+   "name": "박근필",
+   "alternateName": [
+    "Park Geunpil",
+    "박근필 작가",
+    "박근필 소장"
+   ],
+   "url": "https://tothemoonpark-cpu.github.io/pilacademy/author.html",
+   "image": "https://tothemoonpark-cpu.github.io/pilacademy/author-profile0.png",
+   "jobTitle": [
+    "수의사",
+    "작가",
+    "강연가",
+    "칼럼니스트",
+    "커리어 스토리텔러"
+   ],
+   "description": "수의사이자 작가·강연가. 20년 가까이 임상 수의사로 일하다 마흔에 번아웃으로 동물병원을 정리하고 2022년 11월 블로그를 시작해 작가가 됐다. 수의사를 그만둔 것이 아니라 수의사와 작가를 병행한다. 학교 진로·직업 특강, 도서관 독서·문해력·글쓰기 강좌, 펫로스 치유 글쓰기, 교원 직무연수, 기업·기관 커리어 강연을 진행한다.",
+   "knowsAbout": [
+    "진로 교육",
+    "직업 탐색",
+    "직업인문학",
+    "독서",
+    "문해력",
+    "글쓰기",
+    "책쓰기",
+    "퍼스널 브랜딩",
+    "커리어 전환",
+    "펫로스",
+    "반려동물"
+   ],
+   "worksFor": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+   },
+   "sameAs": [
+    "https://litt.ly/tothemoonpark",
+    "https://blog.naver.com/tothemoon_park",
+    "https://brunch.co.kr/@tothemoonpark",
+    "https://www.youtube.com/@tothemoonpark",
+    "https://www.instagram.com/tothemoon_park/"
+   ]
+  },
+  {
    "@type": "WebSite",
    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#website",
    "url": "https://tothemoonpark-cpu.github.io/pilacademy/",
@@ -182,6 +232,9 @@
    "inLanguage": "ko",
    "publisher": {
     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+   },
+   "about": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
    }
   },
   {
@@ -261,7 +314,15 @@
             </div>
         </section>
 
-        
+        <section class="intro-band" aria-label="박근필성장연구소 소개">
+            <div class="intro-wrap">
+                <p><b>박근필성장연구소</b>는 수의사이자 작가, 커리어 스토리텔러 <b>박근필</b>이 운영하는 강연·집필 활동의 공식 사이트입니다. 20년 가까이 진료실을 지킨 임상 수의사로 일하다 마흔에 번아웃으로 동물병원을 정리했고, 2022년 11월 블로그를 시작해 작가가 됐습니다. <b>수의사를 그만둔 것이 아니라 수의사와 작가를 함께 하고 있습니다.</b></p>
+                <p>학교에서는 <b>진로·직업 특강</b>을, 도서관에서는 <b>독서·문해력·글쓰기 강좌</b>를, 보호자를 위해서는 <b>펫로스 치유 글쓰기</b>를 진행합니다. 기업·기관 커리어 강연과 교원 직무연수도 맡습니다. 지금까지 전국 초·중·고 <b><span data-stat="schools">38</span>개교</b>에서 강연했고, 저서 <b><span data-stat="books">5</span>권</b>을 냈으며, <b><span data-stat="columnOutlets">25</span>곳</b> 매체에 칼럼을 연재하고 있습니다.</p>
+                <p class="intro-line">직업을 이름이 아니라 <b>그 일을 살아가는 사람의 이야기</b>로 풀어내는 관점 — 이것을 <b>‘직업인문학’</b>이라 부릅니다. 강연도 글도 여기서 출발합니다.</p>
+            </div>
+        </section>
+
+
 <section class="topics-band" aria-label="강연 주제">
 <div class="tw">
 <h2>어떤 강연을 하는 사람인가</h2>
