@@ -147,18 +147,30 @@
 
   var schoolStats = computeSchoolStats();
 
-  /* ── 3. 나머지 수치 (수동 관리 — 바뀌면 여기만 고친다) ──── */
+  /* ── 3. 인터뷰 인원 (「N여 명」 표기 자동 산출) ────────────
+     피플인사이트는 매월 늘어난다. "62명"이라고 적으면 곧 63명이 되어
+     사이트 전체가 낡는다. 그래서 표기는 **10단위 내림 + '여 명'** 으로 고정한다.
+       · interviewsExact = 실제 최신 인원 (여기 한 곳만 고친다)
+       · interviews      = 대외 표기용 (자동 산출: 62 → 60, 70 → 70)
+     70번째 인터뷰가 올라오는 순간 사이트 전 페이지가 스스로 「70여 명」이 된다.
+     ⛔ HTML에 숫자를 직접 적지 말 것. <span data-stat="interviews"></span>여 명 형태만 사용.
+     ------------------------------------------------------------ */
+  var interviewsExact = 62;   // 2026-08-15 기준 (브런치 「예순두 번째 인터뷰이」 확인)
+  var interviewsRounded = Math.floor(interviewsExact / 10) * 10;
+
+  /* ── 4. 나머지 수치 (수동 관리 — 바뀌면 여기만 고친다) ──── */
   var SITE_STATS = {
     // 자동 집계
     schools: schoolStats.uniqueSchools,        // 완료 유니크 개교 (자동)
     schoolEvents: schoolStats.completedEvents, // 완료 강연 건수 (자동)
+    interviews: interviewsRounded,             // 대외 표기용 「N여 명」 (자동)
+    interviewsExact: interviewsExact,          // 정확 인원이 필요한 자리용
 
     // 수동 관리
     books: 5,               // 출간 저서 (집필 중 제외)
     columnOutlets: 25,      // 칼럼 연재 매체 수
     pressBook: 31,          // 신간 출간 보도 매체 수
     pressLecture: 23,       // 자립지원관 특강 보도 매체 수
-    interviews: 60,         // 피플인사이트 인터뷰 인원(약)
     followers: '2.6만',     // SNS 팔로워
     vodCount: 5,            // 자체 VOD 강좌 수
 

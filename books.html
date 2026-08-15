@@ -38,6 +38,17 @@
         .page-hero h1 { font-size: 2.3rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.7rem; }
         .page-hero p { color: var(--sub); font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
 
+        .books-intro { max-width: 920px; margin: 2rem auto 0; padding: 1.8rem 2rem; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; }
+        .books-intro h2 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.7rem; }
+        .books-intro p { font-size: 0.95rem; color: var(--sub); line-height: 1.8; margin-bottom: 1rem; }
+        .books-intro b { color: var(--ink); }
+        .books-intro ul { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-direction: column; gap: 0.55rem; }
+        .books-intro li { font-size: 0.93rem; color: var(--sub); line-height: 1.7; padding-left: 0.95rem; position: relative; }
+        .books-intro li::before { content: "·"; position: absolute; left: 0.15rem; color: var(--muted); font-weight: 700; }
+        .books-intro li span { display: inline-block; font-size: 0.76rem; font-weight: 600; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 50px; padding: 0.1rem 0.55rem; margin-left: 0.25rem; }
+        .books-intro__note { margin-bottom: 0 !important; padding-top: 0.9rem; border-top: 1px solid var(--line); }
+        @media (max-width: 768px) { .books-intro { margin: 1.4rem 1rem 0; padding: 1.4rem 1.3rem; } }
+
         .books { max-width: 920px; margin: 0 auto; padding: 3rem 1.5rem 4rem; display: flex; flex-direction: column; gap: 1.6rem; }
         .book { display: grid; grid-template-columns: 200px 1fr; gap: 2.4rem; background: var(--page); border: 1px solid var(--line); border-radius: 18px; padding: 2.2rem; transition: transform 0.2s ease, box-shadow 0.2s ease; }
         .book:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0,0,0,0.08); }
@@ -50,7 +61,15 @@
         .book__title { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.35rem; }
         .book__year { font-size: 0.9rem; color: var(--muted); margin-bottom: 1rem; }
         .book__tagline { font-size: 1.05rem; font-weight: 500; color: var(--ink); line-height: 1.6; margin-bottom: 0.8rem; }
-        .book__desc { font-size: 0.97rem; color: var(--sub); line-height: 1.75; margin-bottom: 1.6rem; }
+        .book__desc { font-size: 0.97rem; color: var(--sub); line-height: 1.75; margin-bottom: 1.1rem; }
+        .book__meta { font-size: 0.84rem; color: var(--muted); line-height: 1.7; border-top: 1px solid var(--line); padding-top: 0.8rem; margin-bottom: 1.1rem; }
+        .book__meta b { color: var(--sub); font-weight: 600; }
+        .book__for { background: var(--panel, #f7f8f9); border-radius: 12px; padding: 1rem 1.2rem; margin-bottom: 1.1rem; }
+        .book__for h3 { font-size: 0.86rem; font-weight: 700; color: var(--ink); margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+        .book__for ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+        .book__for li { font-size: 0.9rem; color: var(--sub); line-height: 1.6; padding-left: 0.9rem; position: relative; }
+        .book__for li::before { content: "·"; position: absolute; left: 0.15rem; color: var(--muted); font-weight: 700; }
+        .book__quote { font-size: 0.95rem; color: var(--ink); line-height: 1.75; border-left: 3px solid var(--ink); padding: 0.1rem 0 0.1rem 1rem; margin-bottom: 1.4rem; }
         .buy-button { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--ink); color: #fff; font-size: 0.92rem; font-weight: 500; padding: 0.7rem 1.4rem; border-radius: 10px; transition: opacity 0.2s, transform 0.2s; }
         .buy-button:hover { opacity: 0.88; transform: translateY(-1px); }
         .buy-button svg { width: 16px; height: 16px; }
@@ -122,77 +141,182 @@
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "ItemList",
- "name": "박근필 저서 목록",
- "numberOfItems": 5,
- "itemListOrder": "https://schema.org/ItemListOrderAscending",
- "itemListElement": [
-  {
-   "@type": "ListItem",
-   "position": 1,
-   "item": {
-    "@type": "Book",
-    "name": "할퀴고 물려도 나는 수의사니까",
-    "author": {
-     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
-    },
-    "datePublished": "2023",
-    "inLanguage": "ko"
+ "@type": "CollectionPage",
+ "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html",
+ "name": "박근필 저서",
+ "inLanguage": "ko",
+ "description": "수의사이자 작가 박근필의 저서. 반려동물 에세이, 글쓰기, 사고 리셋, 청소년 진로, 책쓰기 기획까지 5권을 출간했고 여섯 번째 책을 집필 중이다.",
+ "about": {
+  "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+ },
+ "mainEntity": {
+  "@type": "ItemList",
+  "name": "박근필 저서 목록",
+  "numberOfItems": 5,
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+   {
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+     "@type": "Book",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book1",
+     "name": "할퀴고 물려도 나는 수의사니까",
+     "alternativeHeadline": "오늘도 동물병원은 전쟁 중",
+     "author": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     },
+     "publisher": {
+      "@type": "Organization",
+      "name": "씽크스마트"
+     },
+     "datePublished": "2023-10-15",
+     "isbn": "9788965293743",
+     "numberOfPages": 140,
+     "bookFormat": "https://schema.org/Paperback",
+     "inLanguage": "ko",
+     "genre": "반려동물",
+     "description": "반려동물을 키우는 보호자의 궁금증과 애로사항에 답하는 책. 20년 가까이 진료실을 지킨 임상 수의사가 보호자들이 가장 많이 묻는 질문과 가장 자주 놓치는 것들을 주제별로 정리했다. 박근필의 첫 출간작.",
+     "audience": {
+      "@type": "Audience",
+      "audienceType": "반려동물 보호자, 예비 보호자, 수의사 직업에 관심 있는 청소년"
+     },
+     "url": "https://product.kyobobook.co.kr/detail/S000210401197"
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+     "@type": "Book",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book2",
+     "name": "나는 매일 두 번 출근합니다",
+     "alternativeHeadline": "본업 수의사, 부업 작가의 글쓰기 노하우",
+     "author": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     },
+     "publisher": {
+      "@type": "Organization",
+      "name": "미다스북스"
+     },
+     "datePublished": "2024-08-28",
+     "isbn": "9791169107686",
+     "numberOfPages": 296,
+     "bookFormat": "https://schema.org/Paperback",
+     "inLanguage": "ko",
+     "genre": "자기계발 > 독서/글쓰기",
+     "description": "글쓰기 경험이 전무했던 수의사가 1년 만에 작가가 되기까지의 과정과 글쓰기 노하우. 재능이 아니라 매일 두 번 출근하는 습관이 저자를 만들었다는 것이 논지다. 이 책은 원고 없이 출간기획서 한 편으로 출판 계약이 성사된 이례적 사례이기도 하다.",
+     "audience": {
+      "@type": "Audience",
+      "audienceType": "글을 쓰고 싶은 직장인, 본업을 유지하며 두 번째 정체성을 만들려는 사람, 첫 책 출간을 목표로 하는 예비 저자"
+     },
+     "url": "https://product.kyobobook.co.kr/detail/S000213996150"
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 3,
+    "item": {
+     "@type": "Book",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book3",
+     "name": "마흔 더 늦기 전에 생각의 틀을 리셋하라",
+     "alternativeHeadline": "숨 가쁘게 변하는 세상에서 진짜 나로 살기 위해",
+     "author": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     },
+     "publisher": {
+      "@type": "Organization",
+      "name": "알토북스"
+     },
+     "datePublished": "2025-08-10",
+     "isbn": "9791194655114",
+     "numberOfPages": 272,
+     "bookFormat": "https://schema.org/Paperback",
+     "inLanguage": "ko",
+     "genre": "자기계발 > 진로/직업/적성",
+     "description": "번아웃과 슬럼프를 통과하며 발견한 56가지 고정관념을 정리한 사고 리셋 매뉴얼. 20년 가까이 지킨 진료실을 마흔에 정리하고 다시 시작한 사람이 쓴 글이라 조언이 아니라 통과한 사람의 기록에 가깝다. 선인세 조건으로 계약됐고 출간 후 베스트셀러가 됐다.",
+     "audience": {
+      "@type": "Audience",
+      "audienceType": "마흔 전후로 방향을 다시 묻게 된 사람, 번아웃·슬럼프를 지나는 사람, 커리어 전환을 고민하는 사람"
+     },
+     "url": "https://product.kyobobook.co.kr/detail/S000217142150",
+     "award": "교보문고·예스24 자기계발 온라인 일간 베스트셀러 1위"
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 4,
+    "item": {
+     "@type": "Book",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book4",
+     "name": "방구석에서 혼자 읽는 직업 토크쇼",
+     "alternativeHeadline": "4인의 직업인이 전하는 청소년을 위한 진로 특강",
+     "author": [
+      {
+       "@type": "Person",
+       "name": "잇슈"
+      },
+      {
+       "@type": "Person",
+       "name": "나른"
+      },
+      {
+       "@type": "Person",
+       "name": "마잇 윤쌤"
+      },
+      {
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+      }
+     ],
+     "publisher": {
+      "@type": "Organization",
+      "name": "미다스북스"
+     },
+     "datePublished": "2025-10-27",
+     "isbn": "9791173555305",
+     "numberOfPages": 248,
+     "bookFormat": "https://schema.org/Paperback",
+     "inLanguage": "ko",
+     "genre": "청소년 진로",
+     "description": "심리사·초등교사·놀이치료사·수의사 4인의 직업인이 함께 집필한 진로 안내서. 직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어낸다는 점에서 저자가 학교 진로 특강에서 말하는 「직업인문학」의 관점과 같은 자리에 선 책이다.",
+     "audience": {
+      "@type": "Audience",
+      "audienceType": "진로를 고민하는 중·고등학생, 학부모, 진로 수업 자료를 찾는 교사"
+     },
+     "url": "https://product.kyobobook.co.kr/detail/S000218149226"
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 5,
+    "item": {
+     "@type": "Book",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book5",
+     "name": "당신의 원고는 왜 계약되지 않는가",
+     "alternativeHeadline": "책쓰기 8할은 기획이다",
+     "author": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     },
+     "publisher": {
+      "@type": "Organization",
+      "name": "미다스북스"
+     },
+     "datePublished": "2026-07-28",
+     "isbn": "9791176820158",
+     "numberOfPages": 224,
+     "bookFormat": "https://schema.org/Paperback",
+     "inLanguage": "ko",
+     "genre": "자기계발 > 독서/글쓰기",
+     "description": "왜 어떤 원고는 계약되고 어떤 원고는 거절되는가. 출간기획서만으로 출판 계약을 성사시킨 저자가 밝히는 기획의 원리. 글쓰기와 책쓰기의 차이부터 출간 이후 저자 브랜딩까지 담았다. 출판사는 필력보다 기획력을 먼저 본다는 것이 이 책의 핵심이다.",
+     "audience": {
+      "@type": "Audience",
+      "audienceType": "원고를 써 두고도 계약이 되지 않는 예비 저자, 출간기획서 작성이 막막한 사람, 책으로 퍼스널 브랜딩을 하려는 전문가"
+     },
+     "url": "https://product.kyobobook.co.kr/detail/S000220492295"
+    }
    }
-  },
-  {
-   "@type": "ListItem",
-   "position": 2,
-   "item": {
-    "@type": "Book",
-    "name": "나는 매일 두 번 출근합니다",
-    "author": {
-     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
-    },
-    "datePublished": "2024",
-    "inLanguage": "ko"
-   }
-  },
-  {
-   "@type": "ListItem",
-   "position": 3,
-   "item": {
-    "@type": "Book",
-    "name": "마흔 더 늦기 전에 생각의 틀을 리셋하라",
-    "author": {
-     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
-    },
-    "datePublished": "2025",
-    "inLanguage": "ko"
-   }
-  },
-  {
-   "@type": "ListItem",
-   "position": 4,
-   "item": {
-    "@type": "Book",
-    "name": "방구석에서 혼자 읽는 직업 토크쇼",
-    "author": {
-     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
-    },
-    "datePublished": "2025",
-    "inLanguage": "ko"
-   }
-  },
-  {
-   "@type": "ListItem",
-   "position": 5,
-   "item": {
-    "@type": "Book",
-    "name": "당신의 원고는 왜 계약되지 않는가",
-    "author": {
-     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
-    },
-    "datePublished": "2026",
-    "inLanguage": "ko"
-   }
-  }
- ]
+  ]
+ }
 }
 </script>
 </head>
@@ -225,6 +349,19 @@
             <p>수의사에서 베스트셀러 작가로, 인생 리셋의 여정을 담은 <span data-stat="books">5</span>권의 책</p>
         </section>
 
+        <section class="books-intro" aria-label="저서 한눈에">
+            <h2>한눈에 보기</h2>
+            <p>박근필은 2023년 첫 책을 낸 뒤 <b>해마다 한 권씩</b> 출간해 현재 <b><span data-stat="books">5</span>권</b>을 펴냈고, 여섯 번째 책을 집필 중이다. 진료실에서 시작해 글쓰기로, 사고의 전환으로, 청소년 진로로, 다시 책쓰기 자체로 주제가 옮겨 왔다. <b>한 사람이 통과한 순서가 그대로 목록이 된 셈이다.</b></p>
+            <ul>
+                <li><b>『할퀴고 물려도 나는 수의사니까』</b>(2023, 씽크스마트) — 진료실에서 본 반려동물과 보호자. <span>반려동물 에세이</span></li>
+                <li><b>『나는 매일 두 번 출근합니다』</b>(2024, 미다스북스) — 글쓰기 경험 없이 1년 만에 작가가 된 과정. <span>글쓰기</span></li>
+                <li><b>『마흔 더 늦기 전에 생각의 틀을 리셋하라』</b>(2025, 알토북스) — 번아웃을 통과하며 발견한 56가지 착각. <span>베스트셀러 1위</span></li>
+                <li><b>『방구석에서 혼자 읽는 직업 토크쇼』</b>(2025, 미다스북스) — 4인의 직업인이 쓴 청소년 진로 수업. <span>공저</span></li>
+                <li><b>『당신의 원고는 왜 계약되지 않는가』</b>(2026, 미다스북스) — 출판사가 보는 것은 원고가 아니라 기획이다. <span>신간</span></li>
+            </ul>
+            <p class="books-intro__note">여섯 번째 책 『알지 못하면 꿈꿀 수 없다 — 직업의 세계』(파지트)는 <b>원고도 출간기획서도 없이 출판사의 제안으로</b> 계약돼 2026년 하반기 출간 예정이다.</p>
+        </section>
+
         <section class="books" aria-label="저서 목록">
             <article class="book">
                 <div class="book__cover"><img src="book1.jpg" alt="할퀴고 물려도 나는 수의사니까"></div>
@@ -232,7 +369,17 @@
                     <h2 class="book__title">할퀴고 물려도 나는 수의사니까</h2>
                     <div class="book__year">2023년 출간</div>
                     <p class="book__tagline">반려동물과 보호자, 수의사는 한 팀입니다</p>
-                    <p class="book__desc">반려동물을 키우는 보호자의 궁금증과 애로사항에 답하는 책. 저자의 임상 경험을 바탕으로 반려동물을 키우는 데 유용한 정보를 주제별로 정리했다.</p>
+                    <p class="book__desc">반려동물을 키우는 보호자의 궁금증과 애로사항에 답하는 책. 20년 가까이 진료실을 지킨 임상 수의사가, 보호자들이 가장 많이 묻는 질문과 가장 자주 놓치는 것들을 주제별로 정리했다. 첫 책이자 첫 출간작이다.</p>
+                    <div class="book__quote">진료실에서 가장 자주 듣는 말은 “몰랐어요”다. 몰라서 늦고, 몰라서 후회한다. 그 간격을 조금이라도 좁히려고 쓴 책이다.</div>
+                    <div class="book__for">
+                        <h3>이런 분께</h3>
+                        <ul>
+                            <li>반려동물을 처음 맞이한 보호자</li>
+                            <li>동물병원에서 무엇을 물어야 할지 모르겠는 분</li>
+                            <li>수의사라는 직업의 실제 하루가 궁금한 분</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 씽크스마트 · <b>출간</b> 2023년 10월 15일 · <b>분량</b> 140쪽 · <b>ISBN</b> 9788965293743 · <b>분류</b> 반려동물 · 「잡문집 시리즈 1」</p>
                     <a href="https://product.kyobobook.co.kr/detail/S000210401197" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
                 </div>
             </article>
@@ -243,7 +390,17 @@
                     <h2 class="book__title">나는 매일 두 번 출근합니다</h2>
                     <div class="book__year">2024년 출간</div>
                     <p class="book__tagline">수의사부터 작가까지, 프로행동러가 들려주는 이야기!</p>
-                    <p class="book__desc">글쓰기 경험이 전무했던 저자가 1년 만에 작가가 되기까지의 과정과 글쓰기 노하우를 담았다.</p>
+                    <p class="book__desc">글쓰기 경험이 전무했던 수의사가 1년 만에 작가가 되기까지의 과정과 글쓰기 노하우를 담았다. 재능이 아니라 <b>매일 두 번 출근하는 습관</b>이 저자를 만들었다는 것이 이 책의 논지다. 이 책은 <b>원고 없이 출간기획서 한 편으로 출판 계약</b>이 성사된, 매우 이례적인 사례이기도 하다.</p>
+                    <div class="book__quote">글쓰기는 재능의 문제가 아니라 자리의 문제다. 매일 그 자리에 앉는 사람이 결국 쓴다.</div>
+                    <div class="book__for">
+                        <h3>이런 분께</h3>
+                        <ul>
+                            <li>글을 쓰고 싶지만 시작을 못 하고 있는 직장인</li>
+                            <li>본업을 유지하며 두 번째 정체성을 만들고 싶은 분</li>
+                            <li>첫 책 출간을 목표로 하는 예비 저자</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 미다스북스 · <b>출간</b> 2024년 8월 28일 · <b>분량</b> 296쪽 · <b>ISBN</b> 9791169107686 · <b>분류</b> 자기계발 &gt; 독서/글쓰기</p>
                     <a href="https://product.kyobobook.co.kr/detail/S000213996150" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
                 </div>
             </article>
@@ -255,7 +412,17 @@
                     <h2 class="book__title">마흔 더 늦기 전에 생각의 틀을 리셋하라</h2>
                     <div class="book__year">2025년 출간</div>
                     <p class="book__tagline">마흔, 다시 피어나기 위한 인생 리셋<br>마흔에야 깨달은, 나를 괴롭힌 56가지 착각</p>
-                    <p class="book__desc">"내 생각이 정말 맞는 걸까?" 지금 리셋하지 않으면 남은 삶도 다를 바 없다! 수의사인 저자가 번아웃과 슬럼프를 겪으며 발견한 56가지 고정관념을 정리한 실용적 사고 리셋 매뉴얼이다.</p>
+                    <p class="book__desc">"내 생각이 정말 맞는 걸까?" 지금 리셋하지 않으면 남은 삶도 다를 바 없다. 수의사인 저자가 번아웃과 슬럼프를 통과하며 발견한 <b>56가지 고정관념</b>을 정리한 사고 리셋 매뉴얼이다. 20년 가까이 지킨 진료실을 마흔에 정리하고 다시 시작한 사람이 쓴 글이라, 조언이 아니라 <b>통과한 사람의 기록</b>에 가깝다. 요즘 시장에서 흔치 않은 <b>선인세 조건으로 계약</b>됐고, 출간 후 교보문고·예스24 자기계발 일간 베스트셀러 1위에 올랐다.</p>
+                    <div class="book__quote">생각의 틀은 나를 지켜 주는 울타리인 줄 알았는데, 어느 순간 나를 가두는 벽이 되어 있었다.</div>
+                    <div class="book__for">
+                        <h3>이런 분께</h3>
+                        <ul>
+                            <li>마흔 전후로 방향을 다시 묻게 된 분</li>
+                            <li>번아웃·슬럼프를 지나는 중인 분</li>
+                            <li>커리어 전환을 고민하지만 확신이 없는 분</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 알토북스 · <b>출간</b> 2025년 8월 10일 · <b>분량</b> 272쪽 · <b>ISBN</b> 9791194655114 · <b>분류</b> 자기계발 &gt; 진로/직업/적성</p>
                     <a href="https://product.kyobobook.co.kr/detail/S000217142150" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
                 </div>
             </article>
@@ -266,7 +433,17 @@
                     <h2 class="book__title">방구석에서 혼자 읽는 직업 토크쇼</h2>
                     <div class="book__year">2025년 출간 · 공저</div>
                     <p class="book__tagline">"그래서, 어른들은 무슨 일 해요?"<br>심리사, 초등교사, 놀이치료사, 수의사가 들려주는 청소년을 위한 진로 수업</p>
-                    <p class="book__desc">방구석에서 솔직담백한 직업 토크쇼! 4인의 직업인이 함께 집필한 진로 안내서. 진로 탐색 중인 청소년과 학부모에게 두루 권한다.</p>
+                    <p class="book__desc">방구석에서 솔직담백한 직업 토크쇼. 심리사·초등교사·놀이치료사·수의사 <b>4인의 직업인이 함께 집필</b>한 진로 안내서다. 직업을 <b>이름이 아니라 그 일을 살아가는 사람의 이야기</b>로 풀어낸다는 점에서, 저자가 학교 진로 특강에서 말하는 「직업인문학」의 관점과 같은 자리에 선 책이다. 진로 탐색 중인 청소년과 학부모에게 두루 권한다.</p>
+                    <div class="book__quote">아이들에게 필요한 건 직업의 목록이 아니라, 그 일을 살아가는 사람이 무엇에 애를 쓰고 어디서 보람을 느끼는지다.</div>
+                    <div class="book__for">
+                        <h3>이런 분께</h3>
+                        <ul>
+                            <li>진로를 고민하는 중·고등학생</li>
+                            <li>아이와 직업 이야기를 나누고 싶은 학부모</li>
+                            <li>진로 수업 자료를 찾는 교사</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 미다스북스 · <b>출간</b> 2025년 10월 27일 · <b>분량</b> 248쪽 · <b>ISBN</b> 9791173555305 · <b>공저</b> 잇슈·나른·마잇 윤쌤·박근필</p>
                     <a href="https://product.kyobobook.co.kr/detail/S000218149226" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
                 </div>
             </article>
@@ -278,10 +455,44 @@
                     <div class="book__year">2026년 출간 · 미다스북스</div>
                     <p class="book__tagline">책쓰기 8할은 기획이다<br>"왜 어떤 원고는 계약되고, 어떤 원고는 거절되는가?"</p>
                     <p class="book__desc">출간기획서만으로 출판 계약을 성사시킨 저자가 밝히는, 출판사의 러브콜을 받는 기획의 비밀. 글쓰기와 책쓰기의 차이부터 출간 이후 저자 브랜딩까지, 책이 되는 글쓰기의 모든 것을 담았다.</p>
+                    <div class="book__quote">출판사는 필력보다 기획력을 먼저 본다. 문장은 편집자와 함께 고칠 수 있지만, 기획이 틀리면 원고가 아무리 좋아도 계약까지 가지 못한다.</div>
+                    <div class="book__for">
+                        <h3>이런 분께</h3>
+                        <ul>
+                            <li>원고를 써 두고도 계약이 되지 않는 예비 저자</li>
+                            <li>출간기획서를 어떻게 써야 할지 막막한 분</li>
+                            <li>책으로 퍼스널 브랜딩을 하려는 전문가</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 미다스북스 · <b>출간</b> 2026년 7월 28일 · <b>분량</b> 224쪽 · <b>ISBN</b> 9791176820158 · <b>분류</b> 자기계발 &gt; 독서/글쓰기</p>
+                    <p class="book__desc" style="margin-top:0.2rem;">이 책의 방법을 1:1로 적용하는 컨설팅이 <a href="dokjeoting.html" style="font-weight:700;color:var(--ink);">독저팅</a>이다.</p>
                     <div class="book__actions">
                         <a href="https://product.kyobobook.co.kr/detail/S000220492295" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
                         <button type="button" class="buy-button-outline" onclick="openPressModal()">출간 기사 모음 <i data-lucide="newspaper" aria-hidden="true"></i></button>
                     </div>
+                </div>
+            </article>
+
+            <article class="book" id="book6">
+                <div class="book__cover" style="display:flex;align-items:center;justify-content:center;background:var(--panel,#f7f8f9);border:1px dashed var(--line);border-radius:12px;min-height:280px;">
+                    <span style="font-size:0.86rem;color:var(--muted);text-align:center;line-height:1.7;padding:1rem;">여섯 번째 책<br>2026년 하반기<br>출간 예정</span>
+                </div>
+                <div class="book__body">
+                    <span class="badge"><i data-lucide="pen-line" aria-hidden="true"></i>집필 중</span>
+                    <h2 class="book__title">알지 못하면 꿈꿀 수 없다 — 직업의 세계</h2>
+                    <div class="book__year">2026년 하반기 출간 예정 · 파지트</div>
+                    <p class="book__tagline">AI 시대, 부모와 아이가 함께 여는 직업의 세계</p>
+                    <p class="book__desc">사라진 직업, 사라질 직업, 태어날 직업. 그리고 꿈이 없어도 괜찮다는 이야기까지. 진로를 <b>직업의 목록</b>이 아니라 <b>세계를 아는 일</b>로 다시 놓는 책이다. 1차 독자는 중·고생 학부모, 2차 독자는 청소년이다.</p>
+                    <div class="book__quote">알지 못하면 꿈꿀 수 없다. 아이가 꿈이 없는 게 아니라, 아직 그 세계를 본 적이 없는 것이다.</div>
+                    <div class="book__for" style="border:2px solid var(--ink);background:#fff;">
+                        <h3>이 책의 계약 경위 — 원고도, 출간기획서도 없었습니다</h3>
+                        <ul>
+                            <li>두 번째 책은 <b>원고 없이 출간기획서 한 편</b>으로 계약했습니다. 원고를 뺐습니다.</li>
+                            <li>이 책은 <b>기획서마저 없이, 출판사의 제안으로</b> 계약이 성사됐습니다. 쓴 것이 아무것도 없는 상태에서 출판사가 먼저 찾아왔습니다.</li>
+                            <li>기획은 콘셉트와 목차만이 아닙니다. <b>‘왜 하필 당신이 이 책을 써야 하는가’에 대한 답</b>까지가 기획입니다. 그 답이 쌓이면 투고하지 않아도 제안이 옵니다.</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 파지트 · <b>계약</b> 2026년 6월 · <b>출간</b> 2026년 하반기 예정 · <b>대상</b> 중·고생 학부모, 청소년</p>
                 </div>
             </article>
         </section>

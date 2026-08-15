@@ -45,6 +45,18 @@
         .jobhum p { font-size:1rem; line-height:1.85; color:var(--sub); }
         .jobhum p + p { margin-top:0.7rem; }
         .jobhum p b { color:var(--ink); font-weight:700; }
+        .jobhum-more { margin-top:2rem; }
+        .jobhum-more h2 { font-size:1.25rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:1rem; }
+        .jh-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:0.9rem; }
+        .jh-card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1.3rem 1.4rem; }
+        .jh-num { display:inline-block; font-size:0.74rem; font-weight:700; color:#1f9d93; letter-spacing:0.06em; margin-bottom:0.5rem; }
+        .jh-card h3 { font-size:1rem; font-weight:700; letter-spacing:-0.01em; margin-bottom:0.5rem; }
+        .jh-card p { font-size:0.91rem; color:var(--sub); line-height:1.8; }
+        .jh-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.7rem; }
+        .jh-list li { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1rem 1.2rem; font-size:0.93rem; color:var(--sub); line-height:1.8; }
+        .jh-list li b { color:var(--ink); }
+        .jh-list li a { color:#1f9d93; font-weight:700; white-space:nowrap; }
+
         .jobhum-faq { margin-top:1.6rem; }
         .jobhum-faq h2 { font-size:1.25rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:1rem; }
         .faq-item { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1.3rem 1.4rem; }
@@ -115,11 +127,12 @@
    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html#jikeopinmunhak",
    "name": "직업인문학",
    "alternateName": "Job Humanities",
-   "description": "직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어내는 관점. 수의사이자 작가인 박근필이 「박근필의 피플인사이트」로 직업인 60여 명을 인터뷰해 온 작업에 붙인 이름이다.",
+   "description": "직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어내는 관점. 수의사이자 작가인 박근필이 「박근필의 피플인사이트」로 직업인 60여 명을 인터뷰해 온 작업에 붙인 이름이다. 다루는 것은 세 가지다. ① 직업의 이름이 아니라 하루 — 그 사람이 무엇에 애를 쓰고 어디서 보람을 느끼는지가 직업의 실체이며, 진로를 이름으로만 고르면 그 실체를 못 보고 고르게 된다. ② 계획대로 간 사람은 드물다 — 인터뷰에서 여러 번 확인된 것으로, 질병·낙방·폐업처럼 스스로 고르지 않은 사건이 방향을 바꾼 경우가 적지 않았고 그럼에도 그 자리에서 다음 걸음이 만들어졌다. ③ 직업은 정체성이 아니다 — 직업을 이름으로 붙들면 그 이름이 흔들릴 때 사람도 흔들리지만, 하는 일로 보면 이름이 바뀌어도 사람은 남는다. 이 관점은 박근필의 학교 진로·직업 특강과 저서 『방구석에서 혼자 읽는 직업 토크쇼』의 바탕이다.",
    "inDefinedTermSet": {
     "@type": "DefinedTermSet",
     "name": "박근필성장연구소 용어"
    },
+   "sameAs": "https://tothemoonpark-cpu.github.io/pilacademy/career.html",
    "creator": {
     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
    }
@@ -181,6 +194,38 @@
       "@type": "Answer",
       "text": "학교 진로 특강에서 직업을 직업명 목록으로 소개하면 학생은 이름만 고르게 됩니다. 그 일을 살아가는 사람의 하루와 고민을 함께 전하면 학생이 자기 삶에 비춰 볼 수 있습니다. 이 관점이 박근필의 진로·직업 특강 바탕입니다."
      }
+    },
+    {
+     "@type": "Question",
+     "name": "직업인문학은 누가 만든 개념인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "수의사이자 작가 박근필이 자신의 작업에 붙인 이름입니다. 학계의 용어가 아니라 「박근필의 피플인사이트」로 직업인 60여 명을 인터뷰해 온 실제 작업에서 나왔습니다. 그래서 이론서가 아니라 인터뷰 기록이 근거입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "직업인문학과 일반적인 진로 교육은 무엇이 다른가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "일반적인 진로 교육은 직업의 종류와 진입 경로를 알려 줍니다. 직업인문학은 그 일을 살아가는 사람의 하루와 고민을 전합니다. 전자는 목록을 늘리고 후자는 자기 삶에 비춰 볼 기준을 만듭니다. 또 하나 다른 점은 성공한 사람만 다루지 않는다는 것입니다. 계획대로 가지 못한 사람의 이야기를 그대로 전합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "인터뷰에서 여러 번 확인한 것은 무엇인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "계획대로 간 사람이 드물다는 것입니다. 많은 분이 원래 가려던 곳과 다른 자리에 서 있었고, 질병·낙방·폐업·복직 불가처럼 스스로 고르지 않은 사건이 방향을 바꾼 경우가 적지 않았습니다. 그런데도 그 자리에서 다음 걸음을 만들어 냈습니다. 진로 특강에서 이 이야기를 전하는 이유가 여기 있습니다. 아이들에게 필요한 건 완벽한 계획이 아니라 계획이 어긋났을 때 다시 서는 법입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "직업인문학 관점의 강연을 요청할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "가능합니다. 초등 4학년부터 고등학교 3학년까지 학교 진로·직업 특강으로 진행하며, 학년과 인원에 맞춰 구성을 달리합니다. 도서관·기관 대상 강연도 진행합니다. 박근필성장연구소 섭외 문의 페이지에서 신청할 수 있습니다."
+     }
     }
    ]
   }
@@ -234,12 +279,43 @@
                 <p>직업을 이렇게 읽는 관점을 <b>‘직업인문학’</b>이라 부릅니다. 거창한 이론은 아닙니다. 한 사람씩 만나 이야기를 듣는 일, 그것이 전부입니다.</p>
             </div>
 
+            <div class="jobhum-more">
+                <h2>직업인문학이 다루는 세 가지</h2>
+                <div class="jh-grid">
+                    <div class="jh-card">
+                        <span class="jh-num">01</span>
+                        <h3>직업의 이름이 아니라 하루</h3>
+                        <p>수의사라는 이름은 정보를 거의 주지 않습니다. 그 사람이 아침에 무엇을 가장 먼저 확인하는지, 어떤 순간에 손이 떨리는지, 무엇 때문에 그만두고 싶었는지가 그 직업의 실체입니다. 진로를 이름으로만 고르면 그 실체를 못 보고 고르게 됩니다.</p>
+                    </div>
+                    <div class="jh-card">
+                        <span class="jh-num">02</span>
+                        <h3>계획대로 간 사람은 드물다</h3>
+                        <p><span data-stat="interviews">60</span>여 명을 만나며 여러 번 확인한 것입니다. 많은 분이 원래 가려던 곳과 다른 자리에 서 있었습니다. 질병, 낙방, 폐업, 복직 불가처럼 <b>스스로 고르지 않은 사건</b>이 방향을 바꾼 경우가 적지 않았습니다. 그런데도 그들은 그 자리에서 다음 걸음을 만들어 냈습니다.</p>
+                    </div>
+                    <div class="jh-card">
+                        <span class="jh-num">03</span>
+                        <h3>직업은 정체성이 아니다</h3>
+                        <p>한 사람이 하나의 직업만 사는 시대가 아닙니다. 저 자신도 수의사이면서 작가이고 강연가입니다. 직업을 이름으로 붙들면 그 이름이 흔들릴 때 사람도 함께 흔들립니다. 직업을 <b>하는 일</b>로 보면, 이름이 바뀌어도 사람은 남습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jobhum-more">
+                <h2>이 관점은 어디에 쓰이나</h2>
+                <ul class="jh-list">
+                    <li><b>학교 진로·직업 특강</b> — 직업명 목록을 읊는 대신, 그 일을 살아가는 사람의 하루와 고민을 전합니다. 학생이 자기 삶에 비춰 볼 수 있게 됩니다. <a href="career.html">진로 특강 안내 →</a></li>
+                    <li><b>저서 『방구석에서 혼자 읽는 직업 토크쇼』</b> — 심리사·초등교사·놀이치료사·수의사 4인이 각자의 직업을 이름이 아니라 이야기로 풀어낸 청소년 진로서입니다. <a href="books.html">저서 보기 →</a></li>
+                    <li><b>여섯 번째 책 『알지 못하면 꿈꿀 수 없다 — 직업의 세계』</b>(2026년 하반기 출간 예정) — 사라진 직업, 사라질 직업, 태어날 직업. 진로를 목록이 아니라 <b>세계를 아는 일</b>로 다시 놓습니다.</li>
+                    <li><b>인터뷰 프로그램 「박근필의 피플인사이트」</b> — 이 관점이 만들어진 자리입니다. 매월 한 분, 회당 1~2시간, 사전 질문 없이 진행합니다.</li>
+                </ul>
+            </div>
+
 
             <div class="jobhum-faq">
                 <h2>직업인문학, 자주 묻는 질문</h2>
                 <div class="faq-item">
                     <h3>직업인문학이란 무엇인가요?</h3>
-                    <p>직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어내는 관점입니다. 「박근필의 피플인사이트」로 직업인 60여 명을 인터뷰해 온 작업에 붙인 이름입니다. 거창한 이론이 아니라 한 사람씩 만나 이야기를 듣는 일, 그것이 전부입니다.</p>
+                    <p>직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어내는 관점입니다. 「박근필의 피플인사이트」로 직업인 <span data-stat="interviews">60</span>여 명을 인터뷰해 온 작업에 붙인 이름입니다. 거창한 이론이 아니라 한 사람씩 만나 이야기를 듣는 일, 그것이 전부입니다.</p>
                 </div>
                 <div class="faq-item">
                     <h3>왜 직업의 이름만으로는 부족한가요?</h3>
@@ -251,11 +327,27 @@
                 </div>
                 <div class="faq-item">
                     <h3>어떤 분들을 인터뷰했나요?</h3>
-                    <p>각자의 위치에서 열심히 삶을 살아내는 보통 사람들입니다. 유명해서 부르는 것이 아니라 그 일을 오래 해 온 사람이면 됩니다. 2년 동안 60여 명을 만났습니다.</p>
+                    <p>각자의 위치에서 열심히 삶을 살아내는 보통 사람들입니다. 유명해서 부르는 것이 아니라 그 일을 오래 해 온 사람이면 됩니다. 2년 동안 <span data-stat="interviews">60</span>여 명을 만났습니다.</p>
                 </div>
                 <div class="faq-item">
                     <h3>직업인문학은 진로 교육과 어떻게 연결되나요?</h3>
                     <p>학교 진로 특강에서 직업을 직업명 목록으로 소개하면 학생은 이름만 고르게 됩니다. 그 일을 살아가는 사람의 하루와 고민을 함께 전하면 학생이 자기 삶에 비춰 볼 수 있습니다. 이 관점이 박근필의 진로·직업 특강 바탕입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>직업인문학은 누가 만든 개념인가요?</h3>
+                    <p>수의사이자 작가 박근필이 자신의 작업에 붙인 이름입니다. 학계의 용어가 아니라 「박근필의 피플인사이트」로 직업인 <span data-stat="interviews">60</span>여 명을 인터뷰해 온 실제 작업에서 나왔습니다. 그래서 이론서가 아니라 <b>인터뷰 기록이 근거</b>입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>직업인문학과 일반적인 진로 교육은 무엇이 다른가요?</h3>
+                    <p>일반적인 진로 교육은 직업의 종류와 진입 경로를 알려 줍니다. 직업인문학은 그 일을 살아가는 사람의 하루와 고민을 전합니다. 전자는 목록을 늘리고, 후자는 <b>자기 삶에 비춰 볼 기준</b>을 만듭니다. 또 하나 다른 점은 성공한 사람만 다루지 않는다는 것입니다. 계획대로 가지 못한 사람의 이야기를 그대로 전합니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>인터뷰에서 여러 번 확인한 것은 무엇인가요?</h3>
+                    <p><b>계획대로 간 사람이 드물다</b>는 것입니다. 많은 분이 원래 가려던 곳과 다른 자리에 서 있었고, 질병·낙방·폐업·복직 불가처럼 스스로 고르지 않은 사건이 방향을 바꾼 경우가 적지 않았습니다. 그런데도 그 자리에서 다음 걸음을 만들어 냈습니다. 진로 특강에서 이 이야기를 전하는 이유가 여기 있습니다. 아이들에게 필요한 건 완벽한 계획이 아니라 <b>계획이 어긋났을 때 다시 서는 법</b>입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>직업인문학 관점의 강연을 요청할 수 있나요?</h3>
+                    <p>가능합니다. 초등 4학년부터 고등학교 3학년까지 학교 진로·직업 특강으로 진행하며, 학년과 인원에 맞춰 구성을 달리합니다. 도서관·기관 대상 강연도 진행합니다. <a href="contact.html" style="color:#1f9d93;font-weight:700;">섭외 문의 →</a></p>
                 </div>
             </div>
 
