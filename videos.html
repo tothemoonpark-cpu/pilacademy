@@ -379,6 +379,15 @@
     .nav-drop .nav-caret{display:none;}
   }
 </style>
+<style id="vid-tbl-style">
+  .vid-tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid #ececec;border-radius:14px;overflow:hidden;margin-top:1.1rem;}
+  .vid-tbl td{padding:0.9rem 1.1rem;border-bottom:1px solid #ececec;font-size:0.92rem;line-height:1.7;color:#5b6066;vertical-align:top;}
+  .vid-tbl td b{color:#16181d;}
+  .vid-tbl tr:last-child td{border-bottom:none;}
+  .vid-tbl .vt-d{width:96px;font-weight:700;color:#1f9d93;font-size:0.86rem;white-space:nowrap;}
+  .vid-tbl .vt-n{color:#5b6066;font-size:0.85rem;}
+  @media (max-width:600px){ .vid-tbl td{padding:0.7rem 0.8rem;font-size:0.87rem;} .vid-tbl .vt-d{width:70px;font-size:0.8rem;} }
+</style>
 <!-- BREADCRUMB:AUTO:START -->
 <script type="application/ld+json">
 {
@@ -525,7 +534,6 @@
           <b>강연을 검토 중이신가요?</b>
           <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
           한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
-          <p class="pil-cta-links"><a href="career.html">진로·직업 특강</a><a href="petloss.html">펫로스</a><a href="reading.html">독서·문해력·글쓰기</a><a href="petcare.html">반려동물 강연</a></p>
         </div>
         <div class="pil-cta-btns">
           <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
@@ -533,11 +541,25 @@
         </div>
       </div>
     </section>
+
+        <section class="vid-sec">
+            <h2>방송 출연 이력</h2>
+            <p class="vid-sub">영상으로 남지 않은 것까지 포함한 목록입니다. 전국 송출·고정 출연 여부를 함께 적었습니다.</p>
+            <table class="vid-tbl">
+              <tbody>
+                <tr><td class="vt-d">2026.8~</td><td><b>ONN TV 〈신비한 동물 사전〉</b> — <b>고정 출연</b> (2026.8.7 첫 회 녹화)</td></tr>
+                <tr><td class="vt-d">2026.8~9</td><td><b>한국시니어TV 〈생각을 바꾸는 시간, S클래스〉</b> — 2주에 걸쳐 방영. 1부(151회) 8.31 「100세 X AI 시대 - 직장인이 아니라 직업인으로, 평생 현역으로」 · 2부(152회) 9.7 「누구나 작가가 될 수 있습니다」 <span class="vt-n">(녹화 완료 · 방영 예정)</span></td></tr>
+                <tr><td class="vt-d">2026.7</td><td><b>그린닥터스 노을음악회</b> 방송 출연</td></tr>
+                <tr><td class="vt-d">2026.7</td><td>자녀 교육 대표 채널 <b>〈0교시 부모영역〉</b> 출연</td></tr>
+                <tr><td class="vt-d">2026.4</td><td><b>온닥터tv 〈이 책을 쓴 사람〉</b> 방송 출연 — <b>전국 송출</b></td></tr>
+                <tr><td class="vt-d">2026.4</td><td><b>부산시청소년자립지원관</b> 자립준비청소년 진로 특강 「길이 보이지 않아도 괜찮다」 — 언론 23개 매체 보도, 특강 영상 공개</td></tr>
+                <tr><td class="vt-d">2026.6</td><td><b>다꿈스쿨 TV</b> 인터뷰 촬영 — 「40대 직장인의 80%가 결국 후회하는 것」은 수의사 전문지 <b>데일리개원 「Vet Clip」 코너에 소개</b>됐습니다</td></tr>
+              </tbody>
+            </table>
+            <p class="vid-note">방송·촬영 협업 문의는 <a href="contact.html">섭외 문의</a>에서 받습니다. 대본 없는 자리에서 흐름을 만드는 일에 익숙합니다 — 인터뷰 프로그램 「박근필의 피플인사이트」를 2년째 진행하며 직업인 <span data-stat="interviews">60</span>여 명을 만나 왔습니다.</p>
+        </section>
     <style>
       .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
-      .pil-cta-links{display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.9rem !important;}
-      .pil-cta-links a{display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.42rem 0.9rem;border-radius:50px;text-decoration:none;transition:background .2s;}
-      .pil-cta-links a:hover{background:rgba(255,255,255,0.32);}
       .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
       .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
       .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
