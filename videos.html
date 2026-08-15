@@ -42,6 +42,18 @@
         .video-info h3 { font-size:1.05rem; font-weight:700; letter-spacing:-0.01em; margin-bottom:0.4rem; line-height:1.5; }
         .video-info p { color:var(--sub); font-size:0.9rem; }
 
+        .vid-intro { background:var(--mint-soft); border:1px solid #d7eeeb; border-radius:16px; padding:1.6rem 1.8rem; margin-bottom:2.4rem; }
+        .vid-intro p { font-size:0.97rem; color:var(--sub); line-height:1.9; margin-bottom:0.9rem; }
+        .vid-intro p:last-child { margin-bottom:0; }
+        .vid-intro b { color:var(--ink); font-weight:700; }
+        .vid-intro .vid-note { font-size:0.9rem; padding-top:0.9rem; border-top:1px solid #d7eeeb; }
+        .vid-intro a { color:var(--mint-dark); font-weight:700; }
+        .vid-h { font-size:1.3rem; font-weight:700; letter-spacing:-0.02em; margin:2.6rem 0 0.5rem; }
+        .vid-h:first-of-type { margin-top:0; }
+        .vid-sub { font-size:0.93rem; color:var(--sub); line-height:1.8; margin-bottom:1.3rem; }
+        .vid-sub b { color:var(--ink); }
+        @media (max-width:768px) { .vid-intro { padding:1.3rem 1.4rem; } }
+
         .back-link { display:flex; justify-content:center; margin-top:2.5rem; }
         .back-link a { display:flex; align-items:center; gap:0.4rem; font-size:0.92rem; font-weight:500; color:var(--sub); border:1px solid var(--line); background:#fff; padding:0.65rem 1.4rem; border-radius:50px; }
         .back-link a:hover { border-color:#d7eeeb; color:var(--mint-dark); }
@@ -400,6 +412,14 @@
         </section>
 
         <div class="wrap">
+            <div class="vid-intro">
+                <p><b>섭외를 검토 중이시라면 이 페이지가 가장 빠릅니다.</b> 소개서나 이력서로는 알 수 없는 것 — <b>강단에서 어떻게 말하는 사람인지</b>를 영상으로 직접 확인하실 수 있습니다.</p>
+                <p>아래 영상은 세 갈래입니다. <b>방송·인터뷰</b>는 진행자와 주고받는 모습을, <b>학교 강연 현장</b>은 실제 강당에서 학생들 앞에 선 모습을, <b>소개 영상</b>은 짧은 시간에 핵심을 전하는 방식을 보여 줍니다. 전교생 550명 대강당부터 중3 137명 교실까지, 인원과 공간이 다를 때 구성이 어떻게 달라지는지도 함께 보실 수 있습니다.</p>
+                <p class="vid-note">더 자세한 강연 주제와 실적은 <a href="lecture.html">강연 안내</a>에, 학교 진로 특강은 <a href="career.html">진로·직업 특강</a>에 정리해 두었습니다.</p>
+            </div>
+
+            <h2 class="vid-h">방송 · 인터뷰</h2>
+            <p class="vid-sub">방송 채널과 전문지에서 진행자와 마주 앉아 나눈 이야기입니다. 준비된 원고가 아니라 <b>즉석에서 답하는 방식</b>을 보실 수 있습니다.</p>
             <div class="video-grid">
                 <div class="video-card">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/iEW2093MslA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -421,6 +441,11 @@
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/6BcenZMpSc4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="video-info"><h3>자녀 교육 대표 채널 &lt;0교시 부모영역&gt; 출연</h3><p>자녀 교육 채널 '0교시 부모영역' 출연</p></div>
                 </div>
+            </div>
+
+            <h2 class="vid-h">학교 · 기관 강연 현장</h2>
+            <p class="vid-sub">실제 강당·교실에서 촬영된 영상입니다. <b>전교생 550명 대강당부터 중3 137명 교실까지</b>, 인원과 공간에 따라 구성과 호흡이 어떻게 달라지는지 보실 수 있습니다.</p>
+            <div class="video-grid">
                 <div class="video-card">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/yXY0kf-uTdw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="video-info"><h3>부산시청소년자립지원관 진로 특강</h3><p>길이 보이지 않아도 괜찮다, 걸어가면 그게 곧 내 길이다</p></div>
@@ -445,6 +470,11 @@
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/Vw3oT-859ao" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="video-info"><h3>중학교 1학년 135명 진로 콘서트, 동기 부여 강연</h3><p>중학교 1학년 135명 대상 진로·동기부여 강연</p></div>
                 </div>
+            </div>
+
+            <h2 class="vid-h">그 밖의 출연 · 소개</h2>
+            <p class="vid-sub">방송 출연분과 박근필을 짧게 소개하는 영상입니다.</p>
+            <div class="video-grid">
                 <div class="video-card">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/RiWhXP87mEs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="video-info"><h3>그린닥터스 노을음악회 방송 출연</h3><p>그린닥터스 노을음악회 방송 출연</p></div>

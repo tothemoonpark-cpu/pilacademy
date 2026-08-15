@@ -133,6 +133,18 @@
         .sub-links a:hover { border-color: #d7eeeb; color: var(--mint-dark); }
         .sub-links svg { width: 16px; height: 16px; }
 
+        .home-faq { background: var(--panel); border-top: 1px solid var(--line); padding: 3rem 0 3.2rem; margin-top: 2.4rem; }
+        .hf-wrap { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+        .home-faq h2 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+        .hf-lead { font-size: 0.96rem; color: var(--sub); margin-bottom: 1.6rem; }
+        .hf-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px,100%), 1fr)); gap: 0.9rem; }
+        .hf-item { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.3rem 1.4rem; }
+        .hf-item h3 { font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.45rem; }
+        .hf-item h3::before { content: "Q. "; color: var(--mint-dark); }
+        .hf-item p { font-size: 0.92rem; color: var(--sub); line-height: 1.8; }
+        .hf-item p b { color: var(--ink); }
+        .hf-item p a { color: var(--mint-dark); font-weight: 700; }
+
         footer { background: #14161a; color: #fff; text-align: center; padding: 2.4rem 1.5rem; }
         .footer-sns { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1rem; }
         .footer-sns a { color: rgba(255,255,255,0.85); font-size: 0.9rem; transition: color 0.2s; }
@@ -251,6 +263,64 @@
     "https://blog.naver.com/tothemoon_park",
     "https://brunch.co.kr/@tothemoonpark",
     "https://www.youtube.com/@tothemoonpark"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#faq",
+   "inLanguage": "ko",
+   "isPartOf": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#website"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "어떤 강연을 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "학교 진로·직업 특강, 도서관·평생교육 독서·문해력·글쓰기 강좌, 펫로스 치유 글쓰기, 교원 직무연수, 기업·기관 커리어 강연, 북토크를 진행합니다. 초등 4학년부터 성인까지 대상에 맞춰 구성을 달리합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "수의사인데 왜 진로 강연을 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "직업을 설명하는 사람이 아니라 직업을 살아 본 사람이기 때문입니다. 20년 가까이 임상 수의사로 일했고, 마흔에 번아웃으로 병원을 정리한 뒤 작가·강연가로 다시 시작했습니다. 진로 전환을 책으로 배운 것이 아니라 통과했습니다. 지금도 수의사와 작가를 함께 하고 있습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "강연 섭외는 어떻게 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "섭외 문의 양식에 기관·학교명, 대상과 인원, 희망 날짜와 시간, 주제나 목적을 남겨 주시면 됩니다. 주제가 정해지지 않았어도 괜찮습니다. 보통 하루 안에 답장드립니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "강사료는 어떻게 되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "기관 예산 기준에 맞춰 협의합니다. 학교·도서관 등 공공기관은 기관 단가 기준을 따르며, 기업·기관 강연은 별도로 협의합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "부산 외 지역도 가능한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "가능합니다. 부산 거주이며 인천·경남·전북 등 전국 출강 이력이 있습니다. 비대면 줌 강연도 진행합니다. 기관 서식의 강의계획서·강사 이력서도 작성해 드립니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "‘직업인문학’이 무엇인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어내는 관점입니다. 인터뷰 프로그램 「박근필의 피플인사이트」로 직업인 60여 명을 만나며 다듬어 온 시선이며, 진로 특강의 바탕입니다. 직업인문학이란 →"
+     }
+    }
    ]
   }
  ]
@@ -441,20 +511,25 @@
             </div>
         </section>
 
+        <section class="home-faq" id="faq" aria-label="자주 묻는 질문">
+            <div class="hf-wrap">
+                <h2>자주 묻는 질문</h2>
+                <p class="hf-lead">섭외 담당 선생님·기관 담당자분들이 가장 많이 물어보신 것들입니다.</p>
+                <div class="hf-list">
+                    <div class="hf-item"><h3>어떤 강연을 하나요?</h3><p>학교 <a href="career.html">진로·직업 특강</a>, 도서관·평생교육 <a href="reading.html">독서·문해력·글쓰기 강좌</a>, <a href="petloss.html">펫로스 치유 글쓰기</a>, 교원 직무연수, 기업·기관 커리어 강연, 북토크를 진행합니다. 초등 4학년부터 성인까지 대상에 맞춰 구성을 달리합니다.</p></div>
+                    <div class="hf-item"><h3>수의사인데 왜 진로 강연을 하나요?</h3><p>직업을 설명하는 사람이 아니라 <b>직업을 살아 본 사람</b>이기 때문입니다. 20년 가까이 임상 수의사로 일했고, 마흔에 번아웃으로 병원을 정리한 뒤 작가·강연가로 다시 시작했습니다. 진로 전환을 책으로 배운 것이 아니라 통과했습니다. 지금도 수의사와 작가를 함께 하고 있습니다.</p></div>
+                    <div class="hf-item"><h3>강연 섭외는 어떻게 하나요?</h3><p><a href="contact.html">섭외 문의</a> 양식에 기관·학교명, 대상과 인원, 희망 날짜와 시간, 주제나 목적을 남겨 주시면 됩니다. 주제가 정해지지 않았어도 괜찮습니다. 보통 <b>하루 안에</b> 답장드립니다.</p></div>
+                    <div class="hf-item"><h3>강사료는 어떻게 되나요?</h3><p>기관 예산 기준에 맞춰 협의합니다. 학교·도서관 등 공공기관은 기관 단가 기준을 따르며, 기업·기관 강연은 별도로 협의합니다.</p></div>
+                    <div class="hf-item"><h3>부산 외 지역도 가능한가요?</h3><p>가능합니다. 부산 거주이며 인천·경남·전북 등 전국 출강 이력이 있습니다. 비대면 줌 강연도 진행합니다. 기관 서식의 강의계획서·강사 이력서도 작성해 드립니다.</p></div>
+                    <div class="hf-item"><h3>‘직업인문학’이 무엇인가요?</h3><p>직업을 이름이 아니라 <b>그 일을 살아가는 사람의 이야기</b>로 풀어내는 관점입니다. 인터뷰 프로그램 「박근필의 피플인사이트」로 직업인 <span data-stat="interviews">60</span>여 명을 만나며 다듬어 온 시선이며, 진로 특강의 바탕입니다. <a href="people-insight.html">직업인문학이란 →</a></p></div>
+                </div>
+            </div>
+        </section>
+
         <div class="sub-links">
             <a href="notice.html"><i data-lucide="bell" aria-hidden="true"></i>공지사항</a>
         </div>
     </main>
-
-<section style="background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2rem 1.5rem;">
-  <div style="max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;">
-    <div>
-      <b style="display:block;font-size:1.12rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.3rem;">주제별 강연 안내</b>
-      <p style="font-size:0.92rem;opacity:0.95;margin:0;">대상과 목적에 따라 구성이 달라집니다. 분야별 안내를 먼저 보세요.</p>
-    </div>
-    <div style="display:flex;gap:0.55rem;flex-wrap:wrap;"><a href="career.html" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.45rem 1rem;border-radius:50px;text-decoration:none;">진로·직업 특강 →</a><a href="petloss.html" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.45rem 1rem;border-radius:50px;text-decoration:none;">펫로스 →</a><a href="reading.html" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.45rem 1rem;border-radius:50px;text-decoration:none;">독서·문해력·글쓰기 →</a></div>
-  </div>
-</section>
 
 
     <footer role="contentinfo">
