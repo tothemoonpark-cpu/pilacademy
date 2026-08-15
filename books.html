@@ -49,6 +49,16 @@
         .books-intro__note { margin-bottom: 0 !important; padding-top: 0.9rem; border-top: 1px solid var(--line); }
         @media (max-width: 768px) { .books-intro { margin: 1.4rem 1rem 0; padding: 1.4rem 1.3rem; } }
 
+        .bk-faq { max-width: 920px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+        .bk-faq h2 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1.1rem; }
+        .bk-faq-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px,100%), 1fr)); gap: 0.9rem; }
+        .bk-q { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 1.3rem 1.4rem; }
+        .bk-q h3 { font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.45rem; }
+        .bk-q h3::before { content: "Q. "; }
+        .bk-q p { font-size: 0.92rem; color: var(--sub); line-height: 1.8; }
+        .bk-q p b { color: var(--ink); }
+        .bk-q p a { color: var(--ink); font-weight: 700; }
+
         .books { max-width: 920px; margin: 0 auto; padding: 3rem 1.5rem 4rem; display: flex; flex-direction: column; gap: 1.6rem; }
         .book { display: grid; grid-template-columns: 200px 1fr; gap: 2.4rem; background: var(--page); border: 1px solid var(--line); border-radius: 18px; padding: 2.2rem; transition: transform 0.2s ease, box-shadow 0.2s ease; }
         .book:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0,0,0,0.08); }
@@ -141,182 +151,220 @@
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "CollectionPage",
- "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html",
- "name": "박근필 저서",
- "inLanguage": "ko",
- "description": "수의사이자 작가 박근필의 저서. 반려동물 에세이, 글쓰기, 사고 리셋, 청소년 진로, 책쓰기 기획까지 5권을 출간했고 여섯 번째 책을 집필 중이다.",
- "about": {
-  "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
- },
- "mainEntity": {
-  "@type": "ItemList",
-  "name": "박근필 저서 목록",
-  "numberOfItems": 5,
-  "itemListOrder": "https://schema.org/ItemListOrderAscending",
-  "itemListElement": [
-   {
-    "@type": "ListItem",
-    "position": 1,
-    "item": {
-     "@type": "Book",
-     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book1",
-     "name": "할퀴고 물려도 나는 수의사니까",
-     "alternativeHeadline": "오늘도 동물병원은 전쟁 중",
-     "author": {
-      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
-     },
-     "publisher": {
-      "@type": "Organization",
-      "name": "씽크스마트"
-     },
-     "datePublished": "2023-10-15",
-     "isbn": "9788965293743",
-     "numberOfPages": 140,
-     "bookFormat": "https://schema.org/Paperback",
-     "inLanguage": "ko",
-     "genre": "반려동물",
-     "description": "반려동물을 키우는 보호자의 궁금증과 애로사항에 답하는 책. 20년 가까이 진료실을 지킨 임상 수의사가 보호자들이 가장 많이 묻는 질문과 가장 자주 놓치는 것들을 주제별로 정리했다. 박근필의 첫 출간작.",
-     "audience": {
-      "@type": "Audience",
-      "audienceType": "반려동물 보호자, 예비 보호자, 수의사 직업에 관심 있는 청소년"
-     },
-     "url": "https://product.kyobobook.co.kr/detail/S000210401197"
-    }
+ "@graph": [
+  {
+   "@type": "CollectionPage",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html",
+   "name": "박근필 저서",
+   "inLanguage": "ko",
+   "description": "수의사이자 작가 박근필의 저서. 반려동물 에세이, 글쓰기, 사고 리셋, 청소년 진로, 책쓰기 기획까지 5권을 출간했고 여섯 번째 책을 집필 중이다.",
+   "about": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
    },
-   {
-    "@type": "ListItem",
-    "position": 2,
-    "item": {
-     "@type": "Book",
-     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book2",
-     "name": "나는 매일 두 번 출근합니다",
-     "alternativeHeadline": "본업 수의사, 부업 작가의 글쓰기 노하우",
-     "author": {
-      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
-     },
-     "publisher": {
-      "@type": "Organization",
-      "name": "미다스북스"
-     },
-     "datePublished": "2024-08-28",
-     "isbn": "9791169107686",
-     "numberOfPages": 296,
-     "bookFormat": "https://schema.org/Paperback",
-     "inLanguage": "ko",
-     "genre": "자기계발 > 독서/글쓰기",
-     "description": "글쓰기 경험이 전무했던 수의사가 1년 만에 작가가 되기까지의 과정과 글쓰기 노하우. 재능이 아니라 매일 두 번 출근하는 습관이 저자를 만들었다는 것이 논지다. 이 책은 원고 없이 출간기획서 한 편으로 출판 계약이 성사된 이례적 사례이기도 하다.",
-     "audience": {
-      "@type": "Audience",
-      "audienceType": "글을 쓰고 싶은 직장인, 본업을 유지하며 두 번째 정체성을 만들려는 사람, 첫 책 출간을 목표로 하는 예비 저자"
-     },
-     "url": "https://product.kyobobook.co.kr/detail/S000213996150"
-    }
-   },
-   {
-    "@type": "ListItem",
-    "position": 3,
-    "item": {
-     "@type": "Book",
-     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book3",
-     "name": "마흔 더 늦기 전에 생각의 틀을 리셋하라",
-     "alternativeHeadline": "숨 가쁘게 변하는 세상에서 진짜 나로 살기 위해",
-     "author": {
-      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
-     },
-     "publisher": {
-      "@type": "Organization",
-      "name": "알토북스"
-     },
-     "datePublished": "2025-08-10",
-     "isbn": "9791194655114",
-     "numberOfPages": 272,
-     "bookFormat": "https://schema.org/Paperback",
-     "inLanguage": "ko",
-     "genre": "자기계발 > 진로/직업/적성",
-     "description": "번아웃과 슬럼프를 통과하며 발견한 56가지 고정관념을 정리한 사고 리셋 매뉴얼. 20년 가까이 지킨 진료실을 마흔에 정리하고 다시 시작한 사람이 쓴 글이라 조언이 아니라 통과한 사람의 기록에 가깝다. 선인세 조건으로 계약됐고 출간 후 베스트셀러가 됐다.",
-     "audience": {
-      "@type": "Audience",
-      "audienceType": "마흔 전후로 방향을 다시 묻게 된 사람, 번아웃·슬럼프를 지나는 사람, 커리어 전환을 고민하는 사람"
-     },
-     "url": "https://product.kyobobook.co.kr/detail/S000217142150",
-     "award": "교보문고·예스24 자기계발 온라인 일간 베스트셀러 1위"
-    }
-   },
-   {
-    "@type": "ListItem",
-    "position": 4,
-    "item": {
-     "@type": "Book",
-     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book4",
-     "name": "방구석에서 혼자 읽는 직업 토크쇼",
-     "alternativeHeadline": "4인의 직업인이 전하는 청소년을 위한 진로 특강",
-     "author": [
-      {
-       "@type": "Person",
-       "name": "잇슈"
-      },
-      {
-       "@type": "Person",
-       "name": "나른"
-      },
-      {
-       "@type": "Person",
-       "name": "마잇 윤쌤"
-      },
-      {
-       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+   "mainEntity": {
+    "@type": "ItemList",
+    "name": "박근필 저서 목록",
+    "numberOfItems": 5,
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "Book",
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book1",
+       "name": "할퀴고 물려도 나는 수의사니까",
+       "alternativeHeadline": "오늘도 동물병원은 전쟁 중",
+       "author": {
+        "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+       },
+       "publisher": {
+        "@type": "Organization",
+        "name": "씽크스마트"
+       },
+       "datePublished": "2023-10-15",
+       "isbn": "9788965293743",
+       "numberOfPages": 140,
+       "bookFormat": "https://schema.org/Paperback",
+       "inLanguage": "ko",
+       "genre": "반려동물",
+       "description": "반려동물을 키우는 보호자의 궁금증과 애로사항에 답하는 책. 20년 가까이 진료실을 지킨 임상 수의사가 보호자들이 가장 많이 묻는 질문과 가장 자주 놓치는 것들을 주제별로 정리했다. 박근필의 첫 출간작.",
+       "audience": {
+        "@type": "Audience",
+        "audienceType": "반려동물 보호자, 예비 보호자, 수의사 직업에 관심 있는 청소년"
+       },
+       "url": "https://product.kyobobook.co.kr/detail/S000210401197"
       }
-     ],
-     "publisher": {
-      "@type": "Organization",
-      "name": "미다스북스"
      },
-     "datePublished": "2025-10-27",
-     "isbn": "9791173555305",
-     "numberOfPages": 248,
-     "bookFormat": "https://schema.org/Paperback",
-     "inLanguage": "ko",
-     "genre": "청소년 진로",
-     "description": "심리사·초등교사·놀이치료사·수의사 4인의 직업인이 함께 집필한 진로 안내서. 직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어낸다는 점에서 저자가 학교 진로 특강에서 말하는 「직업인문학」의 관점과 같은 자리에 선 책이다.",
-     "audience": {
-      "@type": "Audience",
-      "audienceType": "진로를 고민하는 중·고등학생, 학부모, 진로 수업 자료를 찾는 교사"
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "Book",
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book2",
+       "name": "나는 매일 두 번 출근합니다",
+       "alternativeHeadline": "본업 수의사, 부업 작가의 글쓰기 노하우",
+       "author": {
+        "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+       },
+       "publisher": {
+        "@type": "Organization",
+        "name": "미다스북스"
+       },
+       "datePublished": "2024-08-28",
+       "isbn": "9791169107686",
+       "numberOfPages": 296,
+       "bookFormat": "https://schema.org/Paperback",
+       "inLanguage": "ko",
+       "genre": "자기계발 > 독서/글쓰기",
+       "description": "글쓰기 경험이 전무했던 수의사가 1년 만에 작가가 되기까지의 과정과 글쓰기 노하우. 재능이 아니라 매일 두 번 출근하는 습관이 저자를 만들었다는 것이 논지다. 이 책은 원고 없이 출간기획서 한 편으로 출판 계약이 성사된 이례적 사례이기도 하다.",
+       "audience": {
+        "@type": "Audience",
+        "audienceType": "글을 쓰고 싶은 직장인, 본업을 유지하며 두 번째 정체성을 만들려는 사람, 첫 책 출간을 목표로 하는 예비 저자"
+       },
+       "url": "https://product.kyobobook.co.kr/detail/S000213996150"
+      }
      },
-     "url": "https://product.kyobobook.co.kr/detail/S000218149226"
-    }
-   },
-   {
-    "@type": "ListItem",
-    "position": 5,
-    "item": {
-     "@type": "Book",
-     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book5",
-     "name": "당신의 원고는 왜 계약되지 않는가",
-     "alternativeHeadline": "책쓰기 8할은 기획이다",
-     "author": {
-      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "Book",
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book3",
+       "name": "마흔 더 늦기 전에 생각의 틀을 리셋하라",
+       "alternativeHeadline": "숨 가쁘게 변하는 세상에서 진짜 나로 살기 위해",
+       "author": {
+        "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+       },
+       "publisher": {
+        "@type": "Organization",
+        "name": "알토북스"
+       },
+       "datePublished": "2025-08-10",
+       "isbn": "9791194655114",
+       "numberOfPages": 272,
+       "bookFormat": "https://schema.org/Paperback",
+       "inLanguage": "ko",
+       "genre": "자기계발 > 진로/직업/적성",
+       "description": "번아웃과 슬럼프를 통과하며 발견한 56가지 고정관념을 정리한 사고 리셋 매뉴얼. 20년 가까이 지킨 진료실을 마흔에 정리하고 다시 시작한 사람이 쓴 글이라 조언이 아니라 통과한 사람의 기록에 가깝다. 선인세 조건으로 계약됐고 출간 후 베스트셀러가 됐다.",
+       "audience": {
+        "@type": "Audience",
+        "audienceType": "마흔 전후로 방향을 다시 묻게 된 사람, 번아웃·슬럼프를 지나는 사람, 커리어 전환을 고민하는 사람"
+       },
+       "url": "https://product.kyobobook.co.kr/detail/S000217142150",
+       "award": "교보문고·예스24 자기계발 온라인 일간 베스트셀러 1위"
+      }
      },
-     "publisher": {
-      "@type": "Organization",
-      "name": "미다스북스"
+     {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+       "@type": "Book",
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book4",
+       "name": "방구석에서 혼자 읽는 직업 토크쇼",
+       "alternativeHeadline": "4인의 직업인이 전하는 청소년을 위한 진로 특강",
+       "author": [
+        {
+         "@type": "Person",
+         "name": "잇슈"
+        },
+        {
+         "@type": "Person",
+         "name": "나른"
+        },
+        {
+         "@type": "Person",
+         "name": "마잇 윤쌤"
+        },
+        {
+         "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+        }
+       ],
+       "publisher": {
+        "@type": "Organization",
+        "name": "미다스북스"
+       },
+       "datePublished": "2025-10-27",
+       "isbn": "9791173555305",
+       "numberOfPages": 248,
+       "bookFormat": "https://schema.org/Paperback",
+       "inLanguage": "ko",
+       "genre": "청소년 진로",
+       "description": "심리사·초등교사·놀이치료사·수의사 4인의 직업인이 함께 집필한 진로 안내서. 직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 풀어낸다는 점에서 저자가 학교 진로 특강에서 말하는 「직업인문학」의 관점과 같은 자리에 선 책이다.",
+       "audience": {
+        "@type": "Audience",
+        "audienceType": "진로를 고민하는 중·고등학생, 학부모, 진로 수업 자료를 찾는 교사"
+       },
+       "url": "https://product.kyobobook.co.kr/detail/S000218149226"
+      }
      },
-     "datePublished": "2026-07-28",
-     "isbn": "9791176820158",
-     "numberOfPages": 224,
-     "bookFormat": "https://schema.org/Paperback",
-     "inLanguage": "ko",
-     "genre": "자기계발 > 독서/글쓰기",
-     "description": "왜 어떤 원고는 계약되고 어떤 원고는 거절되는가. 출간기획서만으로 출판 계약을 성사시킨 저자가 밝히는 기획의 원리. 글쓰기와 책쓰기의 차이부터 출간 이후 저자 브랜딩까지 담았다. 출판사는 필력보다 기획력을 먼저 본다는 것이 이 책의 핵심이다.",
-     "audience": {
-      "@type": "Audience",
-      "audienceType": "원고를 써 두고도 계약이 되지 않는 예비 저자, 출간기획서 작성이 막막한 사람, 책으로 퍼스널 브랜딩을 하려는 전문가"
-     },
-     "url": "https://product.kyobobook.co.kr/detail/S000220492295"
-    }
+     {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+       "@type": "Book",
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book5",
+       "name": "당신의 원고는 왜 계약되지 않는가",
+       "alternativeHeadline": "책쓰기 8할은 기획이다",
+       "author": {
+        "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+       },
+       "publisher": {
+        "@type": "Organization",
+        "name": "미다스북스"
+       },
+       "datePublished": "2026-07-28",
+       "isbn": "9791176820158",
+       "numberOfPages": 224,
+       "bookFormat": "https://schema.org/Paperback",
+       "inLanguage": "ko",
+       "genre": "자기계발 > 독서/글쓰기",
+       "description": "왜 어떤 원고는 계약되고 어떤 원고는 거절되는가. 출간기획서만으로 출판 계약을 성사시킨 저자가 밝히는 기획의 원리. 글쓰기와 책쓰기의 차이부터 출간 이후 저자 브랜딩까지 담았다. 출판사는 필력보다 기획력을 먼저 본다는 것이 이 책의 핵심이다.",
+       "audience": {
+        "@type": "Audience",
+        "audienceType": "원고를 써 두고도 계약이 되지 않는 예비 저자, 출간기획서 작성이 막막한 사람, 책으로 퍼스널 브랜딩을 하려는 전문가"
+       },
+       "url": "https://product.kyobobook.co.kr/detail/S000220492295"
+      }
+     }
+    ]
    }
-  ]
- }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#faq",
+   "inLanguage": "ko",
+   "isPartOf": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "어떤 책부터 읽으면 좋을까요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "지금의 고민에 따라 다릅니다. 반려동물을 키우고 계시거나 반려동물 분야에 계시면 『할퀴고 물려도 나는 수의사니까』입니다. 20년 가까이 진료실을 지킨 수의사가 보호자들이 가장 많이 묻는 것과 가장 자주 놓치는 것을 담은 첫 책입니다. 마흔 전후로 방향을 다시 묻고 계시면 『마흔 더 늦기 전에 생각의 틀을 리셋하라』, 글을 쓰고 싶지만 시작을 못 하고 계시면 『나는 매일 두 번 출근합니다』, 책을 쓰려 하시면 『당신의 원고는 왜 계약되지 않는가』입니다. 자녀와 직업 이야기를 나누고 싶으시면 『방구석에서 혼자 읽는 직업 토크쇼』를 권합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "강연에서 다루는 내용과 책은 어떻게 다른가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "뿌리는 같고 형태가 다릅니다. 책은 혼자 읽고 스스로 정리하는 것이고, 강연은 그 자리에서 질문을 주고받는 것입니다. 강연에서는 대상에 맞춰 사례를 바꾸고 시간에 맞춰 덜어냅니다. 책을 읽고 오신 분께도 새로 들을 것이 있게 구성합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "북토크나 저자 강연을 요청할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "가능합니다. 도서관·학교·기업·기관에서 진행해 왔으며, 책 한 권을 중심으로 하는 북토크와 여러 책의 주제를 엮는 강연 두 형태가 모두 가능합니다. 섭외 문의에 대상과 인원을 알려 주시면 구성안을 보내 드립니다."
+     }
+    }
+   ]
+  }
+ ]
 }
 </script>
 <!-- BREADCRUMB:AUTO:START -->
@@ -517,6 +565,15 @@
                     <p class="book__meta"><b>출판사</b> 파지트 · <b>계약</b> 2026년 6월 · <b>출간</b> 2026년 하반기 예정 · <b>대상</b> 중·고생 학부모, 청소년</p>
                 </div>
             </article>
+        </section>
+
+        <section class="bk-faq" id="faq" aria-label="자주 묻는 질문">
+            <h2>자주 묻는 질문</h2>
+            <div class="bk-faq-list">
+                <div class="bk-q"><h3>어떤 책부터 읽으면 좋을까요?</h3><p>지금의 고민에 따라 다릅니다.</p><p><b>반려동물을 키우고 계시거나 반려동물 분야에 계시면</b> 『할퀴고 물려도 나는 수의사니까』입니다. 20년 가까이 진료실을 지킨 수의사가 보호자들이 가장 많이 묻는 것과 가장 자주 놓치는 것을 담은 첫 책입니다.</p><p><b>마흔 전후로 방향을 다시 묻고 계시면</b> 『마흔 더 늦기 전에 생각의 틀을 리셋하라』, <b>글을 쓰고 싶지만 시작을 못 하고 계시면</b> 『나는 매일 두 번 출근합니다』, <b>책을 쓰려 하시면</b> 『당신의 원고는 왜 계약되지 않는가』입니다. 자녀와 직업 이야기를 나누고 싶으시면 『방구석에서 혼자 읽는 직업 토크쇼』를 권합니다.</p></div>
+                <div class="bk-q"><h3>강연에서 다루는 내용과 책은 어떻게 다른가요?</h3><p>뿌리는 같고 형태가 다릅니다. 책은 <b>혼자 읽고 스스로 정리하는 것</b>이고, 강연은 <b>그 자리에서 질문을 주고받는 것</b>입니다. 강연에서는 대상에 맞춰 사례를 바꾸고 시간에 맞춰 덜어냅니다. 책을 읽고 오신 분께도 새로 들을 것이 있게 구성합니다.</p></div>
+                <div class="bk-q"><h3>북토크나 저자 강연을 요청할 수 있나요?</h3><p>가능합니다. 도서관·학교·기업·기관에서 진행해 왔으며, 책 한 권을 중심으로 하는 북토크와 여러 책의 주제를 엮는 강연 두 형태가 모두 가능합니다. <a href="contact.html">섭외 문의</a>에 대상과 인원을 알려 주시면 구성안을 보내 드립니다.</p></div>
+            </div>
         </section>
     </main>
 
