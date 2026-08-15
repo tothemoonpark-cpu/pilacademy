@@ -54,12 +54,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <!-- [VOD 비활성화 2026-08-09 확정 · 2026-08-15 재확인 — 되살릴 때만 주석 해제]
+       사유: 판매 거의 없고, VOD 가격 노출이 강연 단가 인식을 낮출 수 있음
   <url>
     <loc>https://tothemoonpark-cpu.github.io/pilacademy/vod.html</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  -->
   <url>
     <loc>https://tothemoonpark-cpu.github.io/pilacademy/newsletter.html</loc>
     <lastmod>2026-08-15</lastmod>

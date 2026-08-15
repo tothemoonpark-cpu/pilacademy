@@ -509,6 +509,28 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
  ]
 }
 </script>
+<!-- BREADCRUMB:AUTO:START -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "박근필성장연구소",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "필레터",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/newsletter.html"
+  }
+ ]
+}
+</script>
+<!-- BREADCRUMB:AUTO:END -->
 </head>
 <body>
     <header role="banner">
@@ -622,7 +644,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                               <div id="stb_subscribe">
                                 <form action="https://stibee.com/api/v1.0/lists/0fJXgRgUwHa-0b1wHoSg5i47yC2moQ==/public/subscribers" method="POST" target="_blank" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form" data-lang="" novalidate>
                                   
-                                  <h1 class="stb_form_title" style="color: #16181d;">필레터 구독하기</h1>
+                                  <h2 class="stb_form_title" style="color: #16181d;">필레터 구독하기</h2>
                                   
                                   <fieldset class="stb_form_set">
                                     <label for="stb_email" class="stb_form_set_label">이메일 주소<span class="stb_asterisk">*</span>
@@ -640,7 +662,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                                     <div class="stb_form_msg_error" id="stb_policy_error"></div>
                                     <div class="stb_form_modal stb_form_policy_text blind" id="stb_form_policy_modal">
                                       <div class="stb_form_modal_body">
-                                        <h1 class="stb_form_modal_title">개인정보 수집 및 이용</h1>
+                                        <h2 class="stb_form_modal_title">개인정보 수집 및 이용</h2>
                                         <div class="stb_form_modal_text">뉴스레터 발송을 위한 최소한의 개인정보를 수집하고 이용합니다. 수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료되거나 구독을 해지할 경우 즉시 파기됩니다.</div>
                                         <div class="stb_form_modal_btn">
                                           <button id="stb_form_modal_close" class="stb_form_modal_close_btn" data-modal="stb_form_policy_modal" type="button">닫기</button>
@@ -2864,6 +2886,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
           <b>강연을 검토 중이신가요?</b>
           <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
           한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+          <p class="pil-cta-links"><a href="career.html">진로·직업 특강</a><a href="petloss.html">펫로스</a><a href="reading.html">독서·문해력·글쓰기</a></p>
         </div>
         <div class="pil-cta-btns">
           <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
@@ -2873,6 +2896,9 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
     </section>
     <style>
       .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-links{display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.9rem !important;}
+      .pil-cta-links a{display:inline-flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#fff;font-weight:600;font-size:0.88rem;padding:0.42rem 0.9rem;border-radius:50px;text-decoration:none;transition:background .2s;}
+      .pil-cta-links a:hover{background:rgba(255,255,255,0.32);}
       .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
       .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
       .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
