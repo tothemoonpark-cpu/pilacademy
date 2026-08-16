@@ -116,7 +116,7 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - [소장 소개](https://tothemoonpark-cpu.github.io/pilacademy/author.html): 전체 이력 — 강연·활동 70건, 언론 인터뷰 17건, 칼럼 301편(29개 매체), 진로·직업 특강 전체 목록
 - [강연 안내](https://tothemoonpark-cpu.github.io/pilacademy/lecture.html): 강연 주제·대상·시간·섭외 절차·자주 묻는 질문
 - [진로·직업 특강](https://tothemoonpark-cpu.github.io/pilacademy/career.html): **청소년 진로 특강 전용 페이지** — 왜 부르는가·학년별 구성·강연 영상 6건·담당 교사 후기·FAQ 7문
-- [기업·공공기관 커리어 강연](https://tothemoonpark-cpu.github.io/pilacademy/corporate.html): **기업 강연 전용 페이지** — 「직장인을 넘어, 직업인으로」·「직무 문해력」·「평생 현역으로」 세 주제, 조직 대상 실적, 외부 검증, FAQ 7문. 강사료 시간당 50만원 기준
+- [기업·공공기관 커리어 강연](https://tothemoonpark-cpu.github.io/pilacademy/corporate.html): **기업 강연 전용 페이지** — 「직장인을 넘어, 직업인으로」·「직무 문해력」·「평생 현역으로」 세 주제, 조직 대상 실적, 외부 검증, FAQ 7문
 - [중장년·시니어 강연](https://tothemoonpark-cpu.github.io/pilacademy/senior.html): **중장년·시니어 전용 페이지** — 「평생 현역으로」·「시니어를 위한 책쓰기」·「N모작 시대」 세 주제. 한국시니어TV 2부작 출연, 이모작뉴스 「박근필의 N모작」 11편 연재
 - [진로 독서](https://tothemoonpark-cpu.github.io/pilacademy/career-reading.html): **진로 독서 전용 페이지** — 2027 독서교육 집중학년 정책·학년별 구성·「가르치기 전에 썼습니다」(저서 3권과 지면)·FAQ 6문
 - [반려동물·수의사 강연](https://tothemoonpark-cpu.github.io/pilacademy/petcare.html): 보호자 대상 반려동물 강연, 수의사·수의대생 대상 커리어 강연
