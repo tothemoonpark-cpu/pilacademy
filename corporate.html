@@ -151,7 +151,12 @@
 .press-quote { margin:1.4rem 0 0; padding:1.1rem 1.3rem; background:#f6faf9; border-left:4px solid var(--mint); border-radius:0 10px 10px 0; font-size:1.02rem; line-height:1.75; color:var(--ink); font-weight:600; }
 .press-quote cite { display:block; font-style:normal; font-weight:500; font-size:0.85rem; color:var(--sub); margin-top:0.7rem; }
 .press-quote cite a { color:var(--mint-dark); font-weight:600; }
-</style>
+
+        .host-card { margin: 0; background: #fff; border: 1px solid #d7eeeb; border-top: 4px solid var(--mint); border-radius: 14px; padding: 1.4rem 1.4rem 1.1rem; display: flex; flex-direction: column; }
+        .host-card p { font-size: 0.94rem; color: var(--ink); line-height: 1.75; margin: 0 0 0.9rem; flex-grow: 1; }
+        .host-card cite { font-style: normal; font-size: 0.82rem; font-weight: 700; color: var(--mint-dark); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
+        .rv-grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:1.1rem; }
+    </style>
 <style id="ko-wordbreak">
       body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
         word-break: keep-all;
@@ -230,9 +235,35 @@
     }
    }
   ]
- }
+ },
+ "review": [
+  {
+   "@type": "Review",
+   "reviewBody": "개인의 경쟁력이 모이면 회사와 조직의 경쟁력이 된다. 읽고 쓰는 힘은 개인의 무기이면서 동시에 조직의 무기가 될 수 있다.",
+   "author": {
+    "@type": "Person",
+    "name": "— 강사 전문지 한국강사신문 「강연 90초」(2026.8.6) · 90초 영상 보기"
+   }
+  },
+  {
+   "@type": "Review",
+   "reviewBody": "저도 섭외 하게 되어 아주 감사합니다. 다음에도 모셔보도록 하겠습니다!",
+   "author": {
+    "@type": "Person",
+    "name": "부산시교육청영재교육진흥원 · 담당 연구사 (교원 직무연수)"
+   }
+  },
+  {
+   "@type": "Review",
+   "reviewBody": "오늘 수고 많으셨습니다. 뜻 깊은 강연 덕분에 오늘 글로벌멘토링프로그램이 더욱 빛이 날 수 있었습니다.",
+   "author": {
+    "@type": "Person",
+    "name": "부산 중구진로교육지원센터 · 담당자"
+   }
+  }
+ ]
 }
-    </script>
+</script>
     <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -482,6 +513,20 @@
             <tr><td><b>연재</b></td><td>25곳 매체 연재 중. 그중 <b>직장인·커리어 매체 고정 코너만 다섯 곳</b>입니다 — 한국강사신문 「박근필의 직업인문학」 · 아웃소싱타임즈 「박근필 수의사의 직업·진로 인사이트」 10편 · 뉴스클레임 「박근필의 인생 수업」 20편 · 뉴스후플러스 「박근필의 커리어 인사이트」 · 커리어온뉴스 「박근필의 커리어 스토리」 <a href="columns.html">칼럼 아카이브 →</a></td></tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>부른 곳에서 보내온 말</h2>
+          <p>강연이 끝난 뒤 담당자께서 직접 보내 주신 메시지입니다.</p>
+        </div>
+        <div class="rv-grid2">
+          <blockquote class="host-card"><p>“저도 섭외 하게 되어 아주 감사합니다. <b>다음에도 모셔보도록 하겠습니다!</b>”</p><cite>부산시교육청영재교육진흥원 · 담당 연구사 (교원 직무연수)</cite></blockquote>
+          <blockquote class="host-card"><p>“오늘 수고 많으셨습니다. <b>뜻 깊은 강연 덕분에</b> 오늘 글로벌멘토링프로그램이 더욱 빛이 날 수 있었습니다.”</p><cite>부산 중구진로교육지원센터 · 담당자</cite></blockquote>
+        </div>
+        <p style="font-size:0.82rem;color:var(--sub);margin-top:1rem;">※ 담당자께서 보내 주신 메시지를 옮긴 것이며 개인 실명은 밝히지 않았습니다.</p>
       </div>
     </section>
 

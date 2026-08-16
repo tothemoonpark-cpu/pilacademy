@@ -147,7 +147,12 @@
 .tbl .c-k { width: 24%; }
 .tbl .src { display:block; font-size:0.8rem; color:var(--sub); margin-top:0.5rem; line-height:1.6; }
 @media (max-width: 640px){ .tbl-topic .c-topic { width: 36%; } .tbl .c-k { width: 30%; } }
-</style>
+
+        .host-card { margin: 0; background: #fff; border: 1px solid #d7eeeb; border-top: 4px solid var(--mint); border-radius: 14px; padding: 1.4rem 1.4rem 1.1rem; display: flex; flex-direction: column; }
+        .host-card p { font-size: 0.94rem; color: var(--ink); line-height: 1.75; margin: 0 0 0.9rem; flex-grow: 1; }
+        .host-card cite { font-style: normal; font-size: 0.82rem; font-weight: 700; color: var(--mint-dark); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
+        .rv-grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:1.1rem; }
+    </style>
 <style id="ko-wordbreak">
       body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
         word-break: keep-all;
@@ -226,9 +231,27 @@
     }
    }
   ]
- }
+ },
+ "review": [
+  {
+   "@type": "Review",
+   "reviewBody": "마침 평일에 시간이 있어서 신청하게 되었는데 장기적으로 했으면 하는 마음이 들 만큼 좋은 시간이었습니다. 나중에 또 이런 비슷한 강좌가 생기면 신청하고 싶습니다.",
+   "author": {
+    "@type": "Person",
+    "name": "수강생 (성인 4주 과정)"
+   }
+  },
+  {
+   "@type": "Review",
+   "reviewBody": "정말 많이 애써주셨습니다. 소장님 덕분에 따뜻한 분위기로 참가자분들께 의미있는 시간 드릴 수 있었어요. 다음에 또 다른 기회로 함께 수업 진행하면 좋겠습니다.",
+   "author": {
+    "@type": "Person",
+    "name": "김해율하도서관 · 담당 사서"
+   }
+  }
+ ]
 }
-    </script>
+</script>
     <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -256,7 +279,7 @@
    "name": "중장년 대상 강연 실적이 있나요?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "강연으로는 성인 대상 실적이 있습니다. 부산시청 공무원 200여 명 대상 저자 특강, 김해율하도서관 성인 4주 과정, 큐리어스 연속 특강 등입니다. 중장년·시니어 주제로는 방송과 지면에서 먼저 다뤄 왔습니다. 한국시니어TV 〈생각을 바꾸는 시간, S클래스〉에 2부작으로 출연했고, 중장년 매체 이모작뉴스에 「박근필의 N모작」 11편, 시니어 매체 캐어유뉴스에 칼럼 9편을 연재해 왔습니다."
+    "text": "강연으로는 성인 대상 실적이 있습니다. 부산시청 공무원 200여 명 대상 저자 특강, 김해율하도서관 성인 4주 과정, 큐리어스 온라인 연속 특강(중장년을 포함한 일반 성인 대상, 5회차 주제가 「평생 현역으로 사세요」였습니다) 등입니다. 중장년·시니어 주제로는 방송과 지면에서 먼저 다뤄 왔습니다. 한국시니어TV 〈생각을 바꾸는 시간, S클래스〉에 2부작으로 출연했고, 중장년 매체 이모작뉴스에 「박근필의 N모작」 11편, 시니어 매체 캐어유뉴스에 칼럼 9편을 연재해 왔습니다."
    }
   },
   {
@@ -444,10 +467,24 @@
             <tr><td><b>대학 평생교육원</b></td><td><b>부산대학교 미래시민교육원</b>(부산·양산) · <b>부경대학교 미래교육원</b> — 2026년 1학기 <b>신규 개설 강좌로 선정</b>(「책쓰기의 8할은 기획이다」). 국립대 두 곳이 심사에서 통과시킨 강좌입니다</td></tr>
             <tr><td><b>공적 인정</b></td><td><b>예술활동증명</b> 취득(2025.11.10, 한국예술인복지재단)</td></tr>
             <tr><td><b>성인 강연</b></td><td>부산시청 저자 초청 북세미나(공무원 200여 명) · 김해율하도서관 성인 4주 과정 전 회차 완주 · 큐리어스 연속 특강 · 클래스101 온라인 강의</td></tr>
-            <tr><td><b>연속 과정</b></td><td><b>김해율하도서관</b> 성인 4주 과정 전 회차 완주 · <b>큐리어스</b> 5회 연속 강의</td></tr>
+            <tr><td><b>연속 과정</b></td><td><b>김해율하도서관</b> 성인 4주 과정 전 회차 완주 · <b>큐리어스</b> 온라인 5회 연속 강의(중장년 포함 성인 · 5회차 「평생 현역으로 사세요」)</td></tr>
             <tr><td><b>재섭외</b></td><td><b>혁신어울림 작은도서관</b> — 첫 회차를 마친 이틀 뒤 도서관이 하반기 6회를 먼저 제안했습니다(초등 대상, 2026.10~11 진행 예정)</td></tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <section class="block alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>성인 연속 과정에서 받은 반응</h2>
+          <p>김해율하도서관 성인 4주 과정(펫로스 치유 글쓰기) 수강생과 담당 사서께서 남기신 말입니다. 중장년 주제는 아니지만, <b>성인을 상대로 여러 주를 끌고 간 자리</b>에서 어떤 반응이 나왔는지 보여 드립니다.</p>
+        </div>
+        <div class="rv-grid2">
+          <blockquote class="host-card"><p>“마침 평일에 시간이 있어서 신청하게 되었는데 <b>장기적으로 했으면 하는 마음이 들 만큼</b> 좋은 시간이었습니다. 나중에 또 이런 비슷한 강좌가 생기면 신청하고 싶습니다.”</p><cite>수강생 (성인 4주 과정)</cite></blockquote>
+          <blockquote class="host-card"><p>“정말 많이 애써주셨습니다. 소장님 덕분에 <b>따뜻한 분위기로 참가자분들께 의미있는 시간</b> 드릴 수 있었어요. 다음에 또 다른 기회로 함께 수업 진행하면 좋겠습니다.”</p><cite>김해율하도서관 · 담당 사서</cite></blockquote>
+        </div>
+        <p style="font-size:0.82rem;color:var(--sub);margin-top:1rem;">※ 중장년 대상 강좌는 2026년 하반기부터 진행합니다. 위는 성인 대상 연속 과정의 반응입니다.</p>
       </div>
     </section>
 
