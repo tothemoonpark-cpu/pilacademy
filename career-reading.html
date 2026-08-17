@@ -91,6 +91,12 @@
 .tbl-wrote .c-name { width: 38%; }
 .tbl-wrote td:first-child { padding-right: 0.6rem; }
 .tbl-wrote td:first-child b { line-height: 1.5; }
+
+.rv-grid2 { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }
+@media (max-width:640px){ .rv-grid2 { grid-template-columns:1fr; } }
+.host-card { margin:0; background:#fff; border:1px solid #d7eeeb; border-top:4px solid var(--mint); border-radius:14px; padding:1.4rem 1.4rem 1.1rem; display:flex; flex-direction:column; }
+.host-card p { font-size:0.94rem; line-height:1.72; color:var(--ink); margin-bottom:0.8rem; }
+.host-card cite { font-style:normal; font-size:0.83rem; color:var(--sub); margin-top:auto; }
 .mag-proof { display:grid; grid-template-columns: 1.5fr 1fr; gap:1rem; align-items:start; margin-top:1.4rem; }
 .mag-proof figure { margin:0; }
 .mag-proof img { width:100%; height:auto; border:1px solid var(--line); border-radius:12px; display:block; }
@@ -181,6 +187,20 @@
    "provider": {
     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
    },
+   "review": [
+    {
+     "@type": "Review",
+     "reviewBody": "아이들 오늘 독서, 글쓰기를 열심히 하는 아이들이 더 많이 생겼습니다.",
+     "author": { "@type": "Person", "name": "인천 계양중학교 담당 선생님" },
+     "inLanguage": "ko"
+    },
+    {
+     "@type": "Review",
+     "reviewBody": "오늘 수고 많으셨습니다. 뜻 깊은 강연 덕분에 오늘 글로벌멘토링프로그램이 더욱 빛이 날 수 있었습니다.",
+     "author": { "@type": "Person", "name": "부산 중구진로교육지원센터 담당자" },
+     "inLanguage": "ko"
+    }
+   ],
    "author": {
     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
    },
@@ -481,6 +501,20 @@
           </figure>
         </div>
         <p class="note">※ 대상·인원·희망 날짜만 알려 주시면 구성안을 보내 드립니다. 학교 예산 규모에 맞춰 협의합니다.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>수업을 받은 학교에서 보내온 말</h2>
+          <p>진로와 독서를 한 수업에서 다룬 뒤, 담당 선생님께서 직접 보내 주신 메시지입니다.</p>
+        </div>
+        <div class="rv-grid2">
+          <blockquote class="host-card"><p>“<b>아이들 오늘 독서, 글쓰기를 열심히 하는 아이들이 더 많이 생겼습니다.</b>”</p><cite>인천 계양중학교 · 담당 선생님 (3학년 170여 명 「진로 + 독서·글쓰기」 특강)</cite></blockquote>
+          <blockquote class="host-card"><p>“오늘 수고 많으셨습니다. 뜻 깊은 강연 덕분에 오늘 글로벌멘토링프로그램이 더욱 빛이 날 수 있었습니다.”</p><cite>부산 중구진로교육지원센터 · 담당자</cite></blockquote>
+        </div>
+        <p style="font-size:0.82rem;color:var(--sub);margin-top:1rem;">※ 담당 선생님께서 보내 주신 메시지를 옮긴 것이며 개인 실명은 밝히지 않았습니다.</p>
       </div>
     </section>
 
