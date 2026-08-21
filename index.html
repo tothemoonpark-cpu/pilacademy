@@ -305,7 +305,16 @@
 @media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
 /* [/SEARCH:AUTO] */
 
-    </style>
+
+    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
+       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
+       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
+       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:.74rem;font-weight:800;color:#1f9d93;
+    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
+    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
+    /* [/NAVSEP:AUTO] */
+        </style>
     <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -523,12 +532,14 @@
                     <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
                     <ul class="nav-sub">
                         <li><a href="lecture.html">전체 강연 안내</a></li>
-                        <li><a href="corporate.html">기업·공공기관 강연</a></li>
-                        <li><a href="senior.html">중장년·시니어 강연</a></li>
-                        <li><a href="career.html">진로·직업 특강</a></li>
-                        <li><a href="career-reading.html">진로독서</a></li>
+                        <li class="nav-sep">수의사로서</li>
                         <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
                         <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li class="nav-sep">작가 · 강연가로서</li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="career-reading.html">진로독서</a></li>
+                        <li><a href="corporate.html">기업·공공기관 강연</a></li>
+                        <li><a href="senior.html">중장년·시니어 강연</a></li>
                         <li><a href="reading.html">독서·문해력·글쓰기</a></li>
                     </ul>
                 </li>
