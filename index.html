@@ -103,7 +103,19 @@
         .tb-card p { font-size: 0.9rem; color: var(--sub); line-height: 1.7; }
         .tb-card p b { color: var(--ink); }
         .tb-more { display: inline-block; margin-top: 0.9rem; font-size: 0.85rem; font-weight: 700; color: var(--mint-dark); }
-        .tb-foot { margin-top: 1.6rem; font-size: 0.9rem; color: var(--sub); line-height: 1.8; }
+        /* [PILLAR:AUTO] 두 기둥 구조 — 2026-08-21 */
+.pillar-cross { margin-bottom: 2.4rem; }
+.pc-lead { font-size: 1rem; color: var(--sub); line-height: 1.9; margin-bottom: 1.1rem; }
+.pc-lead b { color: var(--ink); }
+.tb-card.cross { background: var(--mint-soft); border-color: var(--mint); }
+.tb-card.cross .tb-tag { background: #fff; }
+.tb-gh { display: flex; align-items: center; gap: 0.9rem; font-size: 0.85rem; font-weight: 700;
+         letter-spacing: 0.04em; color: var(--sub); margin: 0 0 1rem; }
+.tb-gh + .tb-grid { margin-bottom: 2.2rem; }
+.tb-gh::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.tb-grid.g-narrow { grid-template-columns: repeat(auto-fit, minmax(min(280px,100%), 420px)); }
+/* [/PILLAR:AUTO] */
+.tb-foot { margin-top: 1.6rem; font-size: 0.9rem; color: var(--sub); line-height: 1.8; }
         .tb-foot b { color: var(--ink); }
         .tb-foot a { color: var(--mint-dark); font-weight: 700; }
 
@@ -276,6 +288,18 @@
 
 
 
+
+
+
+    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
+       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
+       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
+       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:.74rem;font-weight:800;color:#1f9d93;
+    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
+    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
+    /* [/NAVSEP:AUTO] */
+
 /* [SEARCH:AUTO] 사이트 내 검색 */
 .site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
   display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
@@ -305,15 +329,6 @@
 @media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
 /* [/SEARCH:AUTO] */
 
-
-    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
-       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
-       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
-       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
-    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:.74rem;font-weight:800;color:#1f9d93;
-    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
-    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
-    /* [/NAVSEP:AUTO] */
         </style>
     <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
     <link rel="icon" href="favicon.ico" sizes="any">
@@ -576,6 +591,7 @@
         
         
         
+        
         <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
 <button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
   <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
@@ -702,6 +718,36 @@
   </table>
   <p class="thread-end">대상이 여럿인 것이 아니라, <b>한 사람의 생애를 이어서 봅니다.</b> 아래 일곱 가지가 그 이야기의 갈래입니다.</p>
 </div>
+<!-- [두 기둥 구조 2026-08-21 작가님 확정 · 사이트_확정결정.json: 브랜딩-두기둥]
+     ⛔ 펫로스를 「여섯 분야 중 하나」로 그리드에 섞지 말 것. 두 기둥이 만나는 접점으로 맨 위에 단독 배치한다.
+     ⛔ 두 축의 균형: 한쪽만 커지면 「반려동물 쪽 사람」이거나 「수의사인 게 그냥 이력」이 된다. -->
+<div class="pillar-cross">
+  <p class="pc-lead"><b>수의사여서</b> 할 수 있는 일이 있고, <b>작가·강연가여서</b> 할 수 있는 일이 있습니다.<br>그리고 <b>둘 다여야 가능한 자리</b>가 하나 있습니다.</p>
+  <a class="tb-card cross" href="petloss.html">
+    <span class="tb-tag">두 기둥이 만나는 자리</span>
+    <h3>펫로스 치유 글쓰기</h3>
+    <p>펫로스를 책으로 배운 사람이 아니라 <b>마지막 순간에 함께 있었던 수의사</b>입니다. 그리고 그 마음을 <b>글로 옮기는 법</b>을 가르치는 사람입니다. 상담사도, 작가도 혼자서는 서기 어려운 자리입니다. 「안녕, 나의 반려동물」 4주 과정, 도서관 전 회차 완주.</p>
+    <span class="tb-more">펫로스 강연 보기 →</span>
+  </a>
+</div>
+
+<h3 class="tb-gh"><span>수의사로서</span></h3>
+<div class="tb-grid g-narrow">
+  <a class="tb-card" href="petcare.html">
+    <span class="tb-tag">반려동물</span>
+    <h3>반려동물 강연·보호자 교육</h3>
+    <p>본업이 <b>수의사</b>입니다. 진료실에서 보호자에게 하던 이야기를 강연으로 옮깁니다. 성인 보호자·가족 단위·어린이 대상, 도서관 연속 과정도 진행합니다.</p>
+    <span class="tb-more">반려동물 강연 보기 →</span>
+  </a>
+  <a class="tb-card" href="contact.html">
+    <span class="tb-tag">자문·고문</span>
+    <h3>반려동물 산업 자문·고문</h3>
+    <p>사료·장묘·펫보험·반려동물 플랫폼처럼 <b>보호자에게 말을 건네야 하는 일</b>에는, 임상 현장을 아는 동시에 <b>그 말을 쓰고 다듬을 줄 아는 사람</b>이 필요합니다. 자문·고문·콘텐츠 감수 제안을 받고 있습니다.</p>
+    <span class="tb-more">자문 문의하기 →</span>
+  </a>
+</div>
+
+<h3 class="tb-gh"><span>작가 · 강연가로서</span></h3>
 <div class="tb-grid">
   <a class="tb-card" href="career.html">
     <span class="tb-tag">진로·직업</span>
@@ -721,18 +767,6 @@
     <p>읽는 법을 가르치는 사람이 아니라 <b>읽고 바뀐 사람</b>입니다. 저서 <b>5권</b>, <b>29개 매체 308편</b> 연재. 도서관 4~6회 연속 과정을 운영합니다.</p>
     <span class="tb-more">독서·문해력 강좌 보기 →</span>
   </a>
-  <a class="tb-card" href="petloss.html">
-    <span class="tb-tag">펫로스</span>
-    <h3>펫로스 치유 글쓰기</h3>
-    <p>펫로스를 책으로 배운 사람이 아니라 <b>마지막 순간에 함께 있었던 수의사</b>입니다. 「안녕, 나의 반려동물」 4주 과정, 도서관 전 회차 완주.</p>
-    <span class="tb-more">펫로스 강연 보기 →</span>
-  </a>
-  <a class="tb-card" href="petcare.html">
-    <span class="tb-tag">반려동물</span>
-    <h3>반려동물 강연·보호자 교육</h3>
-    <p>본업이 <b>수의사</b>입니다. 진료실에서 보호자에게 하던 이야기를 강연으로 옮깁니다. 성인 보호자·가족 단위·어린이 대상, 도서관 연속 과정도 진행합니다.</p>
-    <span class="tb-more">반려동물 강연 보기 →</span>
-  </a>
   <a class="tb-card" href="corporate.html">
     <span class="tb-tag">기업·기관</span>
     <h3>기업·공공기관 커리어 강연</h3>
@@ -748,6 +782,7 @@
 </div>
 <p class="tb-foot">
 <b>부산시교육청영재교육진흥원</b>은 <b>교사를 대상으로 하는 직무연수</b> 강사로 저를 섭외했습니다. 학부모 특강, 책쓰기 기획 컨설팅, 북토크도 진행합니다.
+교육기관·출판사·HRD 기업의 <b>자문·콘텐츠 감수</b> 제안도 받습니다.
 <a href="lecture.html">전체 강연 안내 →</a>
 </p>
 </div>
@@ -882,6 +917,9 @@
             if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
         }
     </script>
+<script>
+
+</script>
 <script>
 
 </script>
