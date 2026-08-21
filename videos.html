@@ -172,6 +172,9 @@
 
 
 
+
+
+
 /* [SEARCH:AUTO] 사이트 내 검색 */
 .site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
   display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
@@ -499,12 +502,15 @@
     box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
   .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
   .nav-sub li{display:block;}
+  header .nav-links .nav-sub a,
   .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.9rem;font-weight:500;
     color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  header .nav-links .nav-sub a:hover,
   .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
   @media (max-width:768px){
     .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
       padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    header .nav-links .nav-sub a,
     .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.87rem;opacity:0.9 !important;}
     .nav-sub a:hover{background:transparent;color:#fff !important;}
     .nav-drop .nav-caret{display:none;}
@@ -628,6 +634,7 @@
                 
                 
                 
+        
         
         
         
@@ -841,6 +848,9 @@
             if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
         }
     </script>
+<script>
+
+</script>
 <script>
 
 </script>
