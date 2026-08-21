@@ -212,7 +212,46 @@
 .one-thread .core3 b { display:block; font-size:1rem; color:#16181d; letter-spacing:-0.02em; }
 .one-thread .core3 em { display:block; font-style:normal; font-size:0.84rem; color:#5b6066; margin-top:0.3rem; line-height:1.55; }
 @media (max-width:640px){ .one-thread .core3 { grid-template-columns:1fr; gap:0.6rem; } }
-</style>
+
+
+
+    
+
+
+    
+
+
+    
+/* [SEARCH:AUTO] 사이트 내 검색 */
+.site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
+.site-search-btn:hover{background:rgba(255,255,255,.3)}
+.site-search-layer{position:fixed;inset:0;background:rgba(22,24,29,.5);backdrop-filter:blur(3px);
+  z-index:3000;display:none;padding:8vh 1rem 2rem}
+.site-search-layer.on{display:block}
+.site-search-box{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.site-search-bar{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid #ececec;color:#5b6066}
+.site-search-bar input{flex:1;border:0;outline:0;font-size:1.05rem;font-family:inherit;color:#16181d;background:transparent}
+.site-search-close{background:none;border:0;font-size:1.7rem;line-height:1;color:#9aa0a6;cursor:pointer;padding:0 .2rem}
+.site-search-hint{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;padding:.85rem 1.2rem;border-bottom:1px solid #f2f2f2}
+.site-search-hint span{font-size:.82rem;color:#9aa0a6;margin-right:.2rem}
+.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:.84rem;font-weight:600;
+  padding:.32rem .7rem;border-radius:999px;cursor:pointer;font-family:inherit}
+.site-search-hint button:hover{background:#2bb7ac;color:#fff}
+.site-search-results{max-height:56vh;overflow-y:auto;padding:.4rem 0}
+.ssr-item{display:block;padding:.9rem 1.2rem;border-bottom:1px solid #f4f4f4;color:inherit}
+.ssr-item:hover{background:#f7f9f9}
+.ssr-item:last-child{border-bottom:0}
+.ssr-t{font-weight:700;font-size:.98rem;color:#16181d;margin-bottom:.2rem}
+.ssr-k{font-size:.74rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
+.ssr-s{font-size:.86rem;color:#5b6066;line-height:1.55}
+.ssr-s mark{background:#fff1a8;color:inherit;padding:0 .1em;border-radius:2px}
+.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:.92rem}
+@media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
+/* [/SEARCH:AUTO] */
+
+    </style>
     <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -451,6 +490,36 @@
                 <!-- [필라이프 코칭 비활성화 2026-08-14 · 되살릴 때 주석 해제] <li><a href="phillife.html">필라이프 코칭</a></li> -->
                 <li><a href="notice.html">공지사항</a></li>
             </ul>
+                
+                
+                
+                <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
+<button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+</button>
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
         </nav>
     </header>
 
@@ -459,9 +528,9 @@
             <div class="hero-grid">
                 <div class="hero-media">
                     <div class="hero-video-frame">
-                        <video autoplay muted playsinline controls preload="auto" poster="lecture-intro-poster-260820-e8f0e8.jpg">
-                            <source src="lecture-intro-260820-e8f0e8.mp4" type="video/mp4">
-                            이 브라우저는 영상을 지원하지 않습니다. <a href="lecture-intro-260820-e8f0e8.mp4">영상 내려받기</a>
+                        <video autoplay muted playsinline controls preload="auto" poster="lecture-intro-poster-260821-e8f0e8.jpg">
+                            <source src="lecture-intro-260821-e8f0e8.mp4" type="video/mp4">
+                            이 브라우저는 영상을 지원하지 않습니다. <a href="lecture-intro-260821-e8f0e8.mp4">영상 내려받기</a>
                         </video>
                     </div>
                     <p class="hero-vcap">2분 11초 소개 — 어떤 강연을 하는 사람인가<br><a href="park-geunpil-lecture-brief.pdf" download="박근필_강연소개서.pdf" style="color:var(--mint-dark);font-weight:600;">강연 소개서 PDF 내려받기 (A4 2장)</a></p>
@@ -716,5 +785,87 @@
             if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
         }
     </script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+/* [SEARCH:AUTO] 사이트 내 검색 */
+var __ssIndex=null,__ssLoading=false;
+function openSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.add('on'); document.body.style.overflow='hidden';
+  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
+  loadSiteIndex();
+}
+function closeSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.remove('on'); document.body.style.overflow='';
+}
+function loadSiteIndex(){
+  if(__ssIndex||__ssLoading)return; __ssLoading=true;
+  fetch('search-index.json').then(function(r){return r.json();})
+    .then(function(d){__ssIndex=d;__ssLoading=false;
+      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
+    .catch(function(){__ssLoading=false;
+      var b=document.getElementById('siteSearchResults');
+      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
+}
+function quickSiteSearch(w){
+  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
+}
+function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function __ssSnippet(text,q){
+  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
+  if(i<0)return '';
+  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
+  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
+}
+function runSiteSearch(q){
+  var box=document.getElementById('siteSearchResults'); if(!box)return;
+  q=(q||'').trim();
+  if(q.length<2){box.innerHTML='';return;}
+  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
+  var lq=q.toLowerCase(),out=[];
+  __ssIndex.forEach(function(d){
+    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
+    var n=hay.split(lq).length-1;
+    if(n>0){
+      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      out.push({d:d,sc:sc});
+    }
+  });
+  if(!out.length){
+    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
+  out.sort(function(a,b){return b.sc-a.sc;});
+  box.innerHTML=out.slice(0,40).map(function(o){
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
+      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
+      +'<div class="ssr-s">'+sn+'</div></a>';
+  }).join('');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var i=document.getElementById('siteSearchInput');
+  if(i){
+    var tm=null;
+    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
+  }
+  var l=document.getElementById('siteSearchLayer');
+  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeSiteSearch();
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
+  });
+});
+/* [/SEARCH:AUTO] */
+</script>
 </body>
 </html>
