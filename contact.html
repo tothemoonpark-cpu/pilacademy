@@ -298,6 +298,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* [SEARCH:AUTO] 사이트 내 검색 */
 .site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
   display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
@@ -500,6 +512,28 @@
     .nav-sub a:hover{background:transparent;color:#fff !important;}
     .nav-drop .nav-caret{display:none;}
   }
+        .tbl { width: 100%; border-collapse: collapse; background:#fff; border:1px solid var(--line); border-radius: 14px; overflow: hidden; }
+        .tbl th, .tbl td { padding: 0.95rem 1.15rem; text-align: left; font-size: 0.92rem; border-bottom: 1px solid var(--line); line-height: 1.65; vertical-align: top; }
+        .tbl thead th { background: var(--panel); font-weight: 700; color: var(--ink); }
+        .tbl tbody td { color: var(--sub); }
+        .tbl tbody td b { color: var(--ink); }
+        .tbl tr:last-child td { border-bottom: none; }
+        .tbl td:first-child { white-space: nowrap; }
+        @media (max-width: 640px){ .tbl th, .tbl td { padding: 0.75rem 0.85rem; font-size: 0.87rem; } .tbl td:first-child { white-space: normal; } }
+
+        /* [수리 2026-08-23] 마크업만 이식되고 빠져 있던 공용 클래스 */
+        section.block { padding: 3.2rem 0; }
+        section.block.alt { background: var(--panel); }
+        .sec-head { margin-bottom: 1.6rem; }
+        .sec-head h2 { font-size: 1.45rem; letter-spacing: -0.02em; margin: 0 0 .5rem; color: var(--ink); }
+        .sec-head p { color: var(--sub); font-size: .93rem; line-height: 1.7; margin: 0; }
+        .note { font-size: .85rem; color: var(--sub); line-height: 1.7; margin-top: .9rem; }
+        .faq-list { display: grid; gap: .8rem; }
+        .faq-item { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.15rem 1.3rem; }
+        .faq-item h3 { font-size: 1rem; margin: 0 0 .5rem; color: var(--ink); }
+        .faq-item h3::before { content:"Q. "; color: var(--mint-dark); font-weight:800; }
+        .faq-item p { font-size: .92rem; color: var(--sub); line-height: 1.75; margin: 0; }
+        .vid-sec { padding: 3.2rem 0; }
 </style>
 <!-- BREADCRUMB:AUTO:START -->
 <script type="application/ld+json">
@@ -570,6 +604,10 @@
                 
                 
                 
+        
+        
+        
+        
         
         
         
@@ -811,6 +849,18 @@
             if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
         }
     </script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
 <script>
 
 </script>

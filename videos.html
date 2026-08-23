@@ -274,6 +274,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* [SEARCH:AUTO] 사이트 내 검색 */
 .site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
   display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
@@ -786,6 +798,10 @@
         
         
         
+        
+        
+        
+        
         <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
 <button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
   <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
@@ -864,7 +880,7 @@
                 </div>
                 <div class="video-card">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/fQn5JxAT9bc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>여자중학교 550명 진로 특강</h3><p>유락여자중학교 2·3학년 550명 대상. 대강당 규모에서도 강연이 어떻게 굴러가는지 볼 수 있는 영상입니다. 직업을 이름이 아니라 그 일을 살아가는 사람으로 보라는 이야기를 합니다.</p></div>
+                    <div class="video-info"><h3>여자중학교 550명 진로 특강</h3><p>유락여자중학교 2·3학년 550명 대상. 대강당 규모에서도 강연이 어떻게 굴러가는지 볼 수 있는 영상입니다. 직업을 이름이 아니라 그&nbsp;일을 살아가는 사람으로 보라는 이야기를 합니다.</p></div>
                 </div>
                 <div class="video-card">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/Yicc7oOyCwQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -930,6 +946,7 @@
     </section>
 
         <section class="vid-sec">
+<div class="wrap">
             <h2>방송 출연 이력</h2>
             <p class="vid-sub">영상으로 남지 않은 것까지 포함한 목록입니다. 전국 송출·고정 출연 여부를 함께 적었습니다.</p>
             <table class="vid-tbl">
@@ -944,7 +961,8 @@
               </tbody>
             </table>
             <p class="vid-note">방송·촬영 협업 문의는 <a href="contact.html">섭외 문의</a>에서 받습니다. 대본 없는 자리에서 흐름을 만드는 일에 익숙합니다 — 인터뷰 프로그램 「박근필의 피플인사이트」를 2년째 진행하며 직업인 <span data-stat="interviews">60</span>여 명을 만나 왔습니다.</p>
-        </section>
+        </div>
+</section>
     <style>
       .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
       .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
@@ -956,7 +974,21 @@
       .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
       .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
       @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
-    </style>
+    
+        /* [수리 2026-08-23] 마크업만 이식되고 빠져 있던 공용 클래스 */
+        section.block { padding: 3.2rem 0; }
+        section.block.alt { background: var(--panel); }
+        .sec-head { margin-bottom: 1.6rem; }
+        .sec-head h2 { font-size: 1.45rem; letter-spacing: -0.02em; margin: 0 0 .5rem; color: var(--ink); }
+        .sec-head p { color: var(--sub); font-size: .93rem; line-height: 1.7; margin: 0; }
+        .note { font-size: .85rem; color: var(--sub); line-height: 1.7; margin-top: .9rem; }
+        .faq-list { display: grid; gap: .8rem; }
+        .faq-item { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.15rem 1.3rem; }
+        .faq-item h3 { font-size: 1rem; margin: 0 0 .5rem; color: var(--ink); }
+        .faq-item h3::before { content:"Q. "; color: var(--mint-dark); font-weight:800; }
+        .faq-item p { font-size: .92rem; color: var(--sub); line-height: 1.75; margin: 0; }
+        .vid-sec { padding: 3.2rem 0; }
+</style>
 
     <footer role="contentinfo">
         <div class="footer-sns">
@@ -981,6 +1013,18 @@
             if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
         }
     </script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
 <script>
 
 </script>
