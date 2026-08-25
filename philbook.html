@@ -35,10 +35,14 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
+        /* [2026-08-26] 검색 버튼이 제 줄로 떨어지던 자리. 다른 페이지와 같은 flex 헤더로 통일 */
         nav {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         
         .logo {

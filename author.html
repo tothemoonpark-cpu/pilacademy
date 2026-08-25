@@ -586,8 +586,15 @@
                 display: none;
             }
             
+            /* [2026-08-26] ⛔ 여기가 「검색 돋보기가 페이지마다 다른 자리에 뜨는」 원인이었다.
+               이 페이지만 nav 가 display:grid 였다. grid 는 기본이 1열이라
+               로고 · 메뉴 · 검색버튼이 각각 제 줄을 차지해 3줄로 쌓였다
+               (검색 버튼이 나중에 추가되면서 원래 2칸 전제가 깨진 것).
+               ⭐ 다른 19개 페이지는 전부 flex + space-between 이다 — 거기에 맞춘다.
+               나머지 속성(max-width·align-items·justify-content)은
+               아래 header[role="banner"] nav 규칙이 준다. */
             nav {
-                display: grid !important;
+                display: flex !important;
             }
         }
             .au-faq { max-width:900px; margin:0 auto; padding:2.6rem 1.5rem 0.4rem; }
