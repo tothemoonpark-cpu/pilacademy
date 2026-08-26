@@ -5344,6 +5344,17 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
 .footer-sns { display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap; margin-bottom:1rem; }
 .footer-sns a { color:rgba(255,255,255,0.85); font-size:0.9rem; }
 .footer-copy { font-size:0.83rem; color:rgba(255,255,255,0.5); }
+/* [2026-08-26] 하단 섭외 CTA — 마크업만 넣으면 스타일 없이 깨진다(공용 CSS 없음) */
+.pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+.pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+.pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+.pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
+.pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+.pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.97rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
+.pil-btn-main:hover{transform:translateY(-2px);}
+.pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+.pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+@media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
 @media (max-width:768px) {
   .nav-links { display:none; } .menu-toggle { display:flex; }
   .nav-links.open { display:flex; flex-direction:column; position:absolute; top:100%; right:1.5rem; background:#2bb7ac; border-radius:14px; padding:1rem 1.3rem; gap:0.9rem; }
@@ -7122,6 +7133,24 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
 </ol></section>
 </div>
 </main>
+
+<!-- 공통 강연 섭외 CTA
+     [2026-08-26] 공통블록_검사.py 로 발견 — 칼럼 아카이브에만 이 밴드가 없었다.
+     309편이 실린 페이지라 검색 유입이 큰데, 끝까지 읽은 사람이 갈 곳이 없었다.
+     ⛔ columns.html 은 생성 파일이라 여기(템플릿)에 넣어야 살아남는다. -->
+<section class="pil-cta-band">
+  <div class="pil-cta-inner">
+    <div class="pil-cta-txt">
+      <b>강연을 검토 중이신가요?</b>
+      <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+      한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+    </div>
+    <div class="pil-cta-btns">
+      <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+      <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+    </div>
+  </div>
+</section>
 <footer role="contentinfo">
         <div class="footer-sns">
             

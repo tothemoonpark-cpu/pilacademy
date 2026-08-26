@@ -225,6 +225,17 @@
     letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
     .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
     /* [/NAVSEP:AUTO] */
+        
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.97rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
 
 /* [SEARCH:AUTO] 사이트 내 검색 */
 .site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
@@ -255,7 +266,7 @@
 @media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
 /* [/SEARCH:AUTO] */
 
-        </style>
+</style>
 <style id="ko-wordbreak">
       body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
         word-break: keep-all;
@@ -810,6 +821,24 @@
     </section>
 
   </main>
+
+    <!-- 공통 강연 섭외 CTA
+         [2026-08-26] 공통블록_검사.py 로 발견 — 이 밴드가 13/21 페이지에만 있었다.
+         페이지 끝까지 읽은 사람을 잡는 마지막 통로다. ⛔ CSS 도 함께 넣는다(공용 CSS 없음). -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+
 <footer role="contentinfo">
         <div class="footer-sns">
             <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
