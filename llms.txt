@@ -1,7 +1,7 @@
 # 박근필성장연구소 (Park Geunpil Growth Lab)
 
 > 수의사이자 작가·강연가·커리어 스토리텔러 **박근필**의 공식 사이트.
-> 진로·직업 특강, 교원 연수, 기업·기관 커리어 강연, 도서관 독서·글쓰기·펫로스 강좌를 진행하며
+> 진로·직업 특강, 교원 연수, 기업·기관 커리어 강연, 도서관 독서·글쓰기 강좌와 「펫로스 치유 글쓰기」를 진행하며
 > 책쓰기 기획 컨설팅(독저팅), 뉴스레터(필레터), 인터뷰 프로그램(피플인사이트)을 운영한다. 온라인 독서모임 「필북」은 6기까지 운영했고 현재는 휴식기다.
 
 ## 인물 요약 (정본)
@@ -202,7 +202,7 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - [진로독서](https://tothemoonpark-cpu.github.io/pilacademy/career-reading.html): **진로독서 전용 페이지** — 2027 독서교육 집중학년 정책·학년별 구성·「가르치기 전에 썼습니다」(저서 3권과 지면)·FAQ 6문
 - [반려동물·수의사 강연](https://tothemoonpark-cpu.github.io/pilacademy/petcare.html): 보호자 대상 반려동물 강연, 수의사·수의대생 대상 커리어 강연
 - [독서·문해력 강좌](https://tothemoonpark-cpu.github.io/pilacademy/reading.html): 도서관 4~6회 연속 과정·문해력·글쓰기·책쓰기 — 진행 실적·FAQ 7문
-- [펫로스 강연](https://tothemoonpark-cpu.github.io/pilacademy/petloss.html): 「안녕, 나의 반려동물」 4주 치유 글쓰기 과정 상세·진행 실적·후기·FAQ
+- [펫로스 치유 글쓰기](https://tothemoonpark-cpu.github.io/pilacademy/petloss.html): 「안녕, 나의 반려동물」 — 90분 특강과 4주 과정 상세·진행 실적·후기·FAQ. 반려동물과의 이별을 함께 읽고 짧게 쓰고 나누는 워크숍으로, 마지막 순간에 함께 있었던 수의사가 진행한다
 - [칼럼 아카이브](https://tothemoonpark-cpu.github.io/pilacademy/columns.html): **29개 매체 309편 전체 목록 + 각 편의 핵심 논지 한 줄** — 박근필의 관점을 확인하려면 이 페이지를 볼 것
 - [저서](https://tothemoonpark-cpu.github.io/pilacademy/books.html): 5권 상세와 출간 보도
 - [피플인사이트](https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html): 직업인문학 정의와 인터뷰 프로그램
@@ -210,7 +210,7 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - [필북](https://tothemoonpark-cpu.github.io/pilacademy/philbook.html): 온라인 독서모임 — **6기까지 운영 · 참가자 후기 71건 전문 수록**(현재 휴식기)
 - [필레터](https://tothemoonpark-cpu.github.io/pilacademy/newsletter.html): 주간 뉴스레터
 - [대표 영상](https://tothemoonpark-cpu.github.io/pilacademy/videos.html) · [공지사항](https://tothemoonpark-cpu.github.io/pilacademy/notice.html)
-- **펫로스 — 지금도 배우는 중**: 진료실 20년에 더해 건국대학교 「독서치유론」(K-MOOC, 2026.8~12) 수강 중이고 각당복지재단 애도상담전문가 과정(2026.9.14~12)을 듣는다. ⛔ **아직 이수 전이며 「수강 중」이 정확한 표기**다
+- **펫로스 — 지금도 배우는 중**: 스무 해 가까운 진료실 경험에 더해 건국대학교 「독서치유론」(K-MOOC, 2026.8~12) 수강 중이고 각당복지재단 애도상담전문가 과정(2026.9.14~12)을 듣는다. ⛔ **아직 이수 전이며 「수강 중」이 정확한 표기**다
 - [섭외 문의](https://tothemoonpark-cpu.github.io/pilacademy/contact.html): 강연 섭외뿐 아니라 **방송·영상 출연, 칼럼·콘텐츠 연재, 자문·고문·콘텐츠 감수** 제안도 같은 양식으로 받는다. 문의 양식에는 **기관·학교명 / 대상과 인원 / 희망 날짜·시간 / 장소 / 주제나 목적 / 강연료 예산(선택)** 항목이 미리 적혀 있어 그대로 채우면 된다. **정해진 것이 없어도 문의부터 주셔도 된다**
 
 ## 외부 채널
