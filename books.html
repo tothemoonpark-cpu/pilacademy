@@ -25,37 +25,37 @@
 
         header { background: rgba(255,255,255,0.85); backdrop-filter: saturate(180%) blur(10px); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 1000; }
         nav { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.5rem; }
-        .logo { display: flex; align-items: center; gap: 0.45rem; font-size: 1.18rem; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; white-space: nowrap; }
+        .logo { display: flex; align-items: center; gap: 0.45rem; font-size:1.2rem; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; white-space: nowrap; }
         .logo svg { width: 22px; height: 22px; }
         .nav-links { display: flex; gap: 1.35rem; list-style: none; align-items: center; flex-wrap: wrap; }
-        .nav-links a { color: var(--sub); font-weight: 600; font-size: 0.9rem; transition: color 0.2s; }
+        .nav-links a { color: var(--sub); font-weight: 600; font-size:0.94rem; transition: color 0.2s; }
         .nav-links a:hover { color: var(--ink); }
         .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
         .menu-toggle span { width: 24px; height: 2px; background: var(--ink); border-radius: 2px; }
 
         .page-hero { text-align: center; padding: 4.5rem 1.5rem 1rem; }
-        .page-hero .eyebrow { display: inline-block; font-size: 0.82rem; font-weight: 500; color: var(--sub); border: 1px solid var(--line); padding: 0.35rem 0.9rem; border-radius: 50px; margin-bottom: 1.2rem; }
-        .page-hero h1 { font-size: 2.3rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.7rem; }
-        .page-hero p { color: var(--sub); font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
+        .page-hero .eyebrow { display: inline-block; font-size:0.79rem; font-weight: 500; color: var(--sub); border: 1px solid var(--line); padding: 0.35rem 0.9rem; border-radius: 50px; margin-bottom: 1.2rem; }
+        .page-hero h1 { font-size:2.5rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.7rem; }
+        .page-hero p { color: var(--sub); font-size:1.02rem; max-width: 600px; margin: 0 auto; }
 
         .books-intro { max-width: 920px; margin: 2rem auto 0; padding: 1.8rem 2rem; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; }
-        .books-intro h2 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.7rem; }
-        .books-intro p { font-size: 0.95rem; color: var(--sub); line-height: 1.8; margin-bottom: 1rem; }
+        .books-intro h2 { font-size:1.2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.7rem; }
+        .books-intro p { font-size:0.94rem; color: var(--sub); line-height: 1.8; margin-bottom: 1rem; }
         .books-intro b { color: var(--ink); }
         .books-intro ul { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-direction: column; gap: 0.55rem; }
-        .books-intro li { font-size: 0.93rem; color: var(--sub); line-height: 1.7; padding-left: 0.95rem; position: relative; }
+        .books-intro li { font-size:0.94rem; color: var(--sub); line-height: 1.7; padding-left: 0.95rem; position: relative; }
         .books-intro li::before { content: "·"; position: absolute; left: 0.15rem; color: var(--muted); font-weight: 700; }
-        .books-intro li span { display: inline-block; font-size: 0.76rem; font-weight: 600; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 50px; padding: 0.1rem 0.55rem; margin-left: 0.25rem; }
+        .books-intro li span { display: inline-block; font-size:0.79rem; font-weight: 600; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 50px; padding: 0.1rem 0.55rem; margin-left: 0.25rem; }
         .books-intro__note { margin-bottom: 0 !important; padding-top: 0.9rem; border-top: 1px solid var(--line); }
         @media (max-width: 768px) { .books-intro { margin: 1.4rem 1rem 0; padding: 1.4rem 1.3rem; } }
 
         .bk-faq { max-width: 920px; margin: 0 auto; padding: 0 1.5rem 4rem; }
-        .bk-faq h2 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1.1rem; }
+        .bk-faq h2 { font-size:1.5rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1.1rem; }
         .bk-faq-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px,100%), 1fr)); gap: 0.9rem; }
         .bk-q { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 1.3rem 1.4rem; }
-        .bk-q h3 { font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.45rem; }
+        .bk-q h3 { font-size:1.02rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.45rem; }
         .bk-q h3::before { content: "Q. "; }
-        .bk-q p { font-size: 0.92rem; color: var(--sub); line-height: 1.8; }
+        .bk-q p { font-size:0.94rem; color: var(--sub); line-height: 1.8; }
         .bk-q p b { color: var(--ink); }
         .bk-q p a { color: var(--ink); font-weight: 700; }
 
@@ -66,49 +66,49 @@
         .book__cover { display: flex; align-items: flex-start; justify-content: center; }
         .book__cover img { width: 100%; max-width: 200px; height: auto; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.14); }
         .book__body { min-width: 0; }
-        .badge { display: inline-flex; align-items: center; gap: 0.35rem; background: var(--ink); color: #fff; font-size: 0.78rem; font-weight: 500; padding: 0.35rem 0.75rem; border-radius: 50px; margin-bottom: 0.9rem; }
+        .badge { display: inline-flex; align-items: center; gap: 0.35rem; background: var(--ink); color: #fff; font-size:0.79rem; font-weight: 500; padding: 0.35rem 0.75rem; border-radius: 50px; margin-bottom: 0.9rem; }
         .badge svg { width: 14px; height: 14px; }
         .book__title { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.35rem; }
-        .book__year { font-size: 0.9rem; color: var(--muted); margin-bottom: 1rem; }
-        .book__tagline { font-size: 1.05rem; font-weight: 500; color: var(--ink); line-height: 1.6; margin-bottom: 0.8rem; }
-        .book__desc { font-size: 0.97rem; color: var(--sub); line-height: 1.75; margin-bottom: 1.1rem; }
-        .book__meta { font-size: 0.84rem; color: var(--muted); line-height: 1.7; border-top: 1px solid var(--line); padding-top: 0.8rem; margin-bottom: 1.1rem; }
+        .book__year { font-size:0.94rem; color: var(--muted); margin-bottom: 1rem; }
+        .book__tagline { font-size:1.02rem; font-weight: 500; color: var(--ink); line-height: 1.6; margin-bottom: 0.8rem; }
+        .book__desc { font-size:0.94rem; color: var(--sub); line-height: 1.75; margin-bottom: 1.1rem; }
+        .book__meta { font-size:0.85rem; color: var(--muted); line-height: 1.7; border-top: 1px solid var(--line); padding-top: 0.8rem; margin-bottom: 1.1rem; }
         .book__meta b { color: var(--sub); font-weight: 600; }
         .book__for { background: var(--panel, #f7f8f9); border-radius: 12px; padding: 1rem 1.2rem; margin-bottom: 1.1rem; }
-        .book__for h3 { font-size: 0.86rem; font-weight: 700; color: var(--ink); margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+        .book__for h3 { font-size:0.85rem; font-weight: 700; color: var(--ink); margin-bottom: 0.5rem; letter-spacing: -0.01em; }
         .book__for ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.35rem; }
-        .book__for li { font-size: 0.9rem; color: var(--sub); line-height: 1.6; padding-left: 0.9rem; position: relative; }
+        .book__for li { font-size:0.94rem; color: var(--sub); line-height: 1.6; padding-left: 0.9rem; position: relative; }
         .book__for li::before { content: "·"; position: absolute; left: 0.15rem; color: var(--muted); font-weight: 700; }
-        .book__quote { font-size: 0.95rem; color: var(--ink); line-height: 1.75; border-left: 3px solid var(--ink); padding: 0.1rem 0 0.1rem 1rem; margin-bottom: 1.4rem; }
-        .buy-button { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--ink); color: #fff; font-size: 0.92rem; font-weight: 500; padding: 0.7rem 1.4rem; border-radius: 10px; transition: opacity 0.2s, transform 0.2s; }
+        .book__quote { font-size:0.94rem; color: var(--ink); line-height: 1.75; border-left: 3px solid var(--ink); padding: 0.1rem 0 0.1rem 1rem; margin-bottom: 1.4rem; }
+        .buy-button { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--ink); color: #fff; font-size:0.94rem; font-weight: 500; padding: 0.7rem 1.4rem; border-radius: 10px; transition: opacity 0.2s, transform 0.2s; }
         .buy-button:hover { opacity: 0.88; transform: translateY(-1px); }
         .buy-button svg { width: 16px; height: 16px; }
         .book__actions { display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem; }
-        .buy-button-outline { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--page); color: var(--ink); border: 1px solid var(--line); font-size: 0.92rem; font-weight: 500; padding: 0.7rem 1.4rem; border-radius: 10px; transition: all 0.2s; cursor: pointer; font-family: inherit; }
+        .buy-button-outline { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--page); color: var(--ink); border: 1px solid var(--line); font-size:0.94rem; font-weight: 500; padding: 0.7rem 1.4rem; border-radius: 10px; transition: all 0.2s; cursor: pointer; font-family: inherit; }
         .buy-button-outline:hover { border-color: var(--ink); transform: translateY(-1px); }
         .buy-button-outline svg { width: 16px; height: 16px; }
         .press-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 3000; align-items: center; justify-content: center; padding: 1.5rem; }
         .press-modal.open { display: flex; }
         .press-modal__box { background: var(--page); border-radius: 18px; max-width: 460px; width: 100%; max-height: 80vh; overflow-y: auto; padding: 2rem 1.8rem; position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
-        .press-modal__close { position: absolute; top: 0.8rem; right: 1.1rem; background: none; border: none; font-size: 1.9rem; line-height: 1; color: var(--muted); cursor: pointer; }
-        .press-modal__title { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.4rem; padding-right: 1.5rem; }
-        .press-modal__sub { font-size: 0.9rem; color: var(--sub); margin-bottom: 1.2rem; }
+        .press-modal__close { position: absolute; top: 0.8rem; right: 1.1rem; background: none; border: none; font-size:2.0rem; line-height: 1; color: var(--muted); cursor: pointer; }
+        .press-modal__title { font-size:1.2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.4rem; padding-right: 1.5rem; }
+        .press-modal__sub { font-size:0.94rem; color: var(--sub); margin-bottom: 1.2rem; }
         .press-modal__list { display: flex; flex-direction: column; gap: 0.55rem; }
-        .press-modal__list a { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.8rem 1rem; border: 1px solid var(--line); border-radius: 10px; font-size: 0.95rem; font-weight: 500; color: var(--ink); transition: all 0.15s; }
+        .press-modal__list a { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.8rem 1rem; border: 1px solid var(--line); border-radius: 10px; font-size:0.94rem; font-weight: 500; color: var(--ink); transition: all 0.15s; }
         .press-modal__list a:hover { border-color: var(--ink); background: var(--panel); }
         .press-modal__list a svg { width: 15px; height: 15px; color: var(--sub); }
 
         footer { background: #14161a; color: #fff; text-align: center; padding: 2.6rem 1.5rem; margin-top: 1rem; }
         .footer-sns { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1rem; }
-        .footer-sns a { color: rgba(255,255,255,0.85); font-size: 0.9rem; transition: color 0.2s; }
+        .footer-sns a { color: rgba(255,255,255,0.85); font-size:0.94rem; transition: color 0.2s; }
         .footer-sns a:hover { color: #fff; }
-        .footer-copy { font-size: 0.83rem; color: rgba(255,255,255,0.5); line-height: 1.8; }
+        .footer-copy { font-size:0.85rem; color: rgba(255,255,255,0.5); line-height: 1.8; }
 
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .menu-toggle { display: flex; }
             .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; right: 1.5rem; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.3rem; gap: 0.9rem; box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
-            .page-hero h1 { font-size: 1.8rem; }
+            .page-hero h1 { font-size:1.7rem; }
             .book { grid-template-columns: 1fr; gap: 1.4rem; padding: 1.6rem; }
             .book__cover img { max-width: 160px; }
         }
@@ -186,7 +186,7 @@
        메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
        수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
        ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
-    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:.74rem;font-weight:800;color:#1f9d93;
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:0.72rem;font-weight:800;color:#1f9d93;
     letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
     .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
     /* [/NAVSEP:AUTO] */
@@ -197,7 +197,7 @@
            ⛔ 3개만 둔다(전역지침 「한 화면에 강조 3개」). 모바일에서는 하단 가로 바로 바뀐다. */
         .pil-quick{position:fixed;right:14px;bottom:22px;z-index:900;display:flex;flex-direction:column;gap:8px;}
         .pil-quick a{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line,#ececec);
-          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.82rem;font-weight:600;color:var(--ink,#16181d);
+          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.79rem;font-weight:600;color:var(--ink,#16181d);
           text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.11);white-space:nowrap;transition:transform .15s;}
         .pil-quick a:hover{transform:translateY(-2px);}
         .pil-quick a.hi{background:var(--mint,#2bb7ac);color:#fff;border-color:var(--mint,#2bb7ac);}
@@ -205,7 +205,7 @@
         @media(max-width:760px){
           .pil-quick{right:0;left:0;bottom:0;flex-direction:row;gap:0;border-top:1px solid var(--line,#ececec);
             background:#fff;padding:0.45rem 0.5rem calc(0.45rem + env(safe-area-inset-bottom));}
-          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:10px;font-size:0.78rem;padding:0.55rem 0.3rem;}
+          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:10px;font-size:0.79rem;padding:0.55rem 0.3rem;}
           .pil-quick a.hi{border-radius:10px;}
         }
 
@@ -219,22 +219,22 @@
 .site-search-box{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
   box-shadow:0 24px 60px rgba(0,0,0,.28)}
 .site-search-bar{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid #ececec;color:#5b6066}
-.site-search-bar input{flex:1;border:0;outline:0;font-size:1.05rem;font-family:inherit;color:#16181d;background:transparent}
+.site-search-bar input{flex:1;border:0;outline:0;font-size:1.02rem;font-family:inherit;color:#16181d;background:transparent}
 .site-search-close{background:none;border:0;font-size:1.7rem;line-height:1;color:#9aa0a6;cursor:pointer;padding:0 .2rem}
 .site-search-hint{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;padding:.85rem 1.2rem;border-bottom:1px solid #f2f2f2}
-.site-search-hint span{font-size:.82rem;color:#9aa0a6;margin-right:.2rem}
-.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:.84rem;font-weight:600;
+.site-search-hint span{font-size:0.79rem;color:#9aa0a6;margin-right:.2rem}
+.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:0.85rem;font-weight:600;
   padding:.32rem .7rem;border-radius:999px;cursor:pointer;font-family:inherit}
 .site-search-hint button:hover{background:#2bb7ac;color:#fff}
 .site-search-results{max-height:56vh;overflow-y:auto;padding:.4rem 0}
 .ssr-item{display:block;padding:.9rem 1.2rem;border-bottom:1px solid #f4f4f4;color:inherit}
 .ssr-item:hover{background:#f7f9f9}
 .ssr-item:last-child{border-bottom:0}
-.ssr-t{font-weight:700;font-size:.98rem;color:#16181d;margin-bottom:.2rem}
-.ssr-k{font-size:.74rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
-.ssr-s{font-size:.86rem;color:#5b6066;line-height:1.55}
+.ssr-t{font-weight:700;font-size:0.94rem;color:#16181d;margin-bottom:.2rem}
+.ssr-k{font-size:0.72rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
+.ssr-s{font-size:0.85rem;color:#5b6066;line-height:1.55}
 .ssr-s mark{background:#fff1a8;color:inherit;padding:0 .1em;border-radius:2px}
-.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:.92rem}
+.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
 @media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
 /* [/SEARCH:AUTO] */
 
@@ -253,7 +253,7 @@
     <meta property="og:site_name" content="박근필성장연구소">
     <meta property="og:title" content="박근필 저서 - 베스트셀러 『마흔 더 늦기 전에 생각의 틀을 리셋하라』 외">
     <meta property="og:description" content="해마다 한 권 이상을 내는 저자의 책 5권. 북토크·저자 강연 섭외 가능.">
-    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-260828c.png">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-260828d.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/png">
@@ -263,7 +263,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="박근필 저서 - 베스트셀러 『마흔 더 늦기 전에 생각의 틀을 리셋하라』 외">
     <meta name="twitter:description" content="해마다 한 권 이상을 내는 저자의 책 5권. 북토크·저자 강연 섭외 가능.">
-    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-260828c.png">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-260828d.png">
     <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -506,7 +506,7 @@
   .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
   .nav-sub li{display:block;}
   header .nav-links .nav-sub a,
-  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.9rem;font-weight:500;
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.94rem;font-weight:500;
     color:#16181d !important;white-space:nowrap;opacity:1 !important;}
   header .nav-links .nav-sub a:hover,
   .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
@@ -514,7 +514,7 @@
     .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
       padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
     header .nav-links .nav-sub a,
-    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.87rem;opacity:0.9 !important;}
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.85rem;opacity:0.9 !important;}
     .nav-sub a:hover{background:transparent;color:#fff !important;}
     .nav-drop .nav-caret{display:none;}
   }
@@ -810,7 +810,7 @@
 
             <article class="book" id="book6">
                 <div class="book__cover" style="display:flex;align-items:center;justify-content:center;background:var(--panel,#f7f8f9);border:1px dashed var(--line);border-radius:12px;min-height:280px;">
-                    <span style="font-size:0.86rem;color:var(--muted);text-align:center;line-height:1.7;padding:1rem;">여섯 번째 책<br>2026년 하반기<br>출간 예정</span>
+                    <span style="font-size:0.85rem;color:var(--muted);text-align:center;line-height:1.7;padding:1rem;">여섯 번째 책<br>2026년 하반기<br>출간 예정</span>
                 </div>
                 <div class="book__body">
                     <span class="badge"><i data-lucide="pen-line" aria-hidden="true"></i>집필 중</span>
@@ -859,12 +859,12 @@
     <style>
       .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
       .pil-cta-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
-      .pil-cta-txt b{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
-      .pil-cta-txt p{font-size:0.92rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-txt b{display:block;font-size:1.2rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.94rem;line-height:1.65;opacity:0.95;margin:0;}
       .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
-      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.97rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.94rem;padding:0.8rem 1.6rem;border-radius:12px;text-decoration:none;transition:transform .2s;}
       .pil-btn-main:hover{transform:translateY(-2px);}
-      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.97rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.94rem;padding:0.8rem 1.4rem;border-radius:12px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
       .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
       @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
     </style>
