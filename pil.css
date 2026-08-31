@@ -73,14 +73,18 @@ body{
       그 색은 각 페이지의 `--panel` 이다. 그래서 여기서 `--panel` 하나만 덮는다.
       → 한 곳만 고치면 10개 페이지 33곳이 따라온다(2026-08-31 실측: --panel 이 2종이었다). */
 :root{ --panel:var(--pil-page-alt); }
-.pil-alt{ background:var(--pil-page-alt); }
+/* ⛔ `.pil-alt` 도 지웠다(2026-08-31) — 위 한 줄이 이미 그 일을 한다. 클래스를 새로 뿌릴 필요가 없었다. */
 /* ⛔ contact.html 은 `.ct-block` 이라는 다른 이름을 쓴다. 정의가 없어 `alt` 가 죽어 있었다
    (2026-08-31 실측: `.block.alt` 정의 10곳 / `.ct-block.alt` 정의 0곳). */
 .ct-block.alt{ background:var(--pil-page-alt); }
 
 /* ⭐ 섹션 영문 라벨 — 가장 싸고 효과가 큰 정돈 장치
-   쓰는 법: <p class="pil-eyebrow">PET LOSS</p> 를 섹션 제목 바로 위에 */
-.pil-eyebrow{
+   쓰는 법: <p class="pil-eyebrow">PET LOSS</p> 를 섹션 제목 바로 위에
+   ⛔ 클래스를 두 번 쓴 이유(2026-08-31 라이브 실측) — 페이지 인라인 `.sec-head p`(0,1,1) 가
+      `.pil-eyebrow`(0,1,0) 를 명시도에서 이겨 **색이 회색으로, 크기가 15.68px 로 덮여 있었다.**
+      `.pil-eyebrow.pil-eyebrow` 는 (0,2,0) 이라 이긴다. ⭐ 부모 이름(.sec-head·.ct-block…)에
+      기대지 않으므로 페이지마다 컨테이너 이름이 달라도 안전하다. ⛔ !important 는 쓰지 않는다. */
+.pil-eyebrow.pil-eyebrow{
   font-size:var(--pil-fs-cap);
   font-weight:700;
   letter-spacing:var(--pil-ls-label);
@@ -89,34 +93,19 @@ body{
   margin:0 0 6px;
 }
 
-/* ── 카드 — 그림자 없이 테두리 하나로 (참고 사이트 16개 중 14개가 그림자 없음) ── */
-.pil-card{
-  background:var(--pil-card);
-  border:1px solid var(--pil-line);
-  border-radius:var(--pil-r);
-  padding:var(--pil-card-p);
-  box-shadow:none;
-}
-
-/* ── 그리드 — ⛔ 모바일에서 절대 넘치지 않게 ───────────── */
-.pil-grid{
-  display:grid;
-  gap:var(--pil-gap);
-  grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));
-}
-.pil-grid-2{ grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr)); }
-.pil-grid-wide{ grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr)); }
-
-.pil-wrap{ max-width:var(--pil-w); margin:0 auto; padding-left:var(--pil-sec-x); padding-right:var(--pil-sec-x); }
-.pil-read{ max-width:var(--pil-w-read); margin:0 auto; }
-.pil-sec{ padding:var(--pil-sec-y) var(--pil-sec-x); }
+/* ⛔ 여기 있던 `.pil-card`·`.pil-grid`·`.pil-grid-2`·`.pil-grid-wide`·`.pil-wrap`·`.pil-read`·`.pil-sec`
+   일곱 종을 2026-08-31 에 지웠다. 이유 —
+   ⭐ 실측: 정의는 있는데 **적용이 전부 0곳**이었다. 그리고 사이트는 이미 `.wrap`(99곳)·
+      `.card`(188곳)·`.block`(100곳)·`.grid`(52곳) 로 같은 일을 하고 있다.
+   ⛔ 새 이름을 덧뿌리면 같은 일을 하는 클래스가 두 벌이 된다(누더기 금지 조항).
+      값을 바꿔야 할 땐 `--panel` 처럼 **기존 이름이 읽는 토큰 하나만 덮는다.**
+   ⛔ 「예비로 남겨 둔다」는 하지 않는다 — 「정의는 했는데 안 쓰는 것」을 아무도 안 보는 것이
+      바로 이번에 드러난 구멍이다. 필요해지면 그때 만든다. */
 
 /* ── 모바일 ───────────────────────────────────────────── */
 @media (max-width:768px){
-  :root{ --pil-sec-y:var(--pil-sec-y-sm); --pil-card-p:20px 18px; --pil-gap:14px; }
+  :root{ --pil-card-p:20px 18px; --pil-gap:14px; }
   body{ font-size:var(--pil-fs-sm); }
-  .pil-sec{ padding:var(--pil-sec-y-sm) 16px; }
-  .pil-wrap{ padding-left:16px; padding-right:16px; }
 }
 
 /* ⛔ 가로 스크롤 원천 차단 — 모바일에서 가장 흔한 사고 */
