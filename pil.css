@@ -68,8 +68,15 @@ body{
   letter-spacing:var(--pil-ls);
 }
 
-/* ⭐ 섹션 배경 교대 — 여백을 늘리지 않고 섹션을 갈라 보이게 하는 장치 */
+/* ⭐ 섹션 배경 교대 — 여백을 늘리지 않고 섹션을 갈라 보이게 하는 장치
+   ⛔ 새 클래스를 뿌리지 않는다. 사이트는 이미 `.block.alt` 로 교대를 하고 있고
+      그 색은 각 페이지의 `--panel` 이다. 그래서 여기서 `--panel` 하나만 덮는다.
+      → 한 곳만 고치면 10개 페이지 33곳이 따라온다(2026-08-31 실측: --panel 이 2종이었다). */
+:root{ --panel:var(--pil-page-alt); }
 .pil-alt{ background:var(--pil-page-alt); }
+/* ⛔ contact.html 은 `.ct-block` 이라는 다른 이름을 쓴다. 정의가 없어 `alt` 가 죽어 있었다
+   (2026-08-31 실측: `.block.alt` 정의 10곳 / `.ct-block.alt` 정의 0곳). */
+.ct-block.alt{ background:var(--pil-page-alt); }
 
 /* ⭐ 섹션 영문 라벨 — 가장 싸고 효과가 큰 정돈 장치
    쓰는 법: <p class="pil-eyebrow">PET LOSS</p> 를 섹션 제목 바로 위에 */
