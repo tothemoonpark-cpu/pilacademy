@@ -96,6 +96,17 @@ body{
 .block .wrap > p + p,
 .ct-block .wrap > p + p{ margin-top:0.8em; }
 
+/* ⛔ 2026-08-31 수리 — 위 규칙은 `> p + p`(직계)라 **카드 안 문단에 안 걸렸다.**
+   라이브 실측: petloss.html 문단 64개 중 40개가 margin 0 이었고,
+   그중 진짜 누락이 `.again-card` 안 연속 문단이었다.
+   전수로 세니 여백 규칙이 안 걸린 컨테이너가 **32종**(도구/문단여백_검사.py).
+   ⭐ 그래서 자손 선택자로 한 번에 덮는다 — 원본은 한 곳(전역지침).
+   ⛔ 단, 표 안은 되돌린다. 셀 안 문단에 여백이 붙으면 행 높이가 흐트러진다. */
+.block .wrap p + p,
+.ct-block .wrap p + p{ margin-top:0.8em; }
+.block .wrap td p + p, .block .wrap th p + p,
+.ct-block .wrap td p + p, .ct-block .wrap th p + p{ margin-top:0; }
+
 /* ⭐ 섹션 영문 라벨 — 가장 싸고 효과가 큰 정돈 장치
    쓰는 법: <p class="pil-eyebrow">PET LOSS</p> 를 섹션 제목 바로 위에
    ⛔ 클래스를 두 번 쓴 이유(2026-08-31 라이브 실측) — 페이지 인라인 `.sec-head p`(0,1,1) 가
