@@ -73,10 +73,28 @@ body{
       그 색은 각 페이지의 `--panel` 이다. 그래서 여기서 `--panel` 하나만 덮는다.
       → 한 곳만 고치면 10개 페이지 33곳이 따라온다(2026-08-31 실측: --panel 이 2종이었다). */
 :root{ --panel:var(--pil-page-alt); }
+
+/* ⛔⛔ `--page` 를 건드리지 마라 — 2026-08-31 실측으로 드러난 함정
+   각 페이지의 `--page:#ffffff` 는 **두 곳에서 쓰인다**(29곳 실측) —
+     ① `body{ background:var(--page) }`  ← 이건 아래 `body{}` 가 `--pil-page`(#fafbfb)로 덮는다
+     ② ⭐ `.tile`·`.video-card`·`.notice`·`.sub-links a`·`.press-modal__box` = **카드 배경**
+   ⭐ 그래서 지금 화면이 맞다 — 바탕 #fafbfb · 카드 #ffffff · 카드가 떠 보인다.
+   ⛔ 「배경에 흰색이 남아 있네」 하고 `--page` 를 #fafbfb 로 바꾸면
+      **카드가 배경과 같아져 통째로 사라진다.** 바탕을 바꾸려면 아래 `--pil-page` 를 바꿔라. */
 /* ⛔ `.pil-alt` 도 지웠다(2026-08-31) — 위 한 줄이 이미 그 일을 한다. 클래스를 새로 뿌릴 필요가 없었다. */
 /* ⛔ contact.html 은 `.ct-block` 이라는 다른 이름을 쓴다. 정의가 없어 `alt` 가 죽어 있었다
    (2026-08-31 실측: `.block.alt` 정의 10곳 / `.ct-block.alt` 정의 0곳). */
 .ct-block.alt{ background:var(--pil-page-alt); }
+
+/* ⭐ 문단 사이 숨 — firebook.kr 대조에서 나온 진짜 차이(2026-08-31 실측)
+   ⛔ 「빡빡하다」의 원인은 글자 크기가 아니었다. 나란히 재 보니 —
+      본문 글자: 우리 15.68px vs firebook 16.32px (4% 차이 · 문제 아님)
+      섹션 패딩: 우리 51.2px vs firebook 54~56px (거의 같음)
+      ⭐⭐ **문단 간격: 우리 본문 p 52개 중 51개가 margin 0** · firebook 은 24개 중 13개에 6~34px
+   → 문단이 각각 <p> 인데 간격이 0 이라 글이 벽처럼 붙어 있었다. 0.8em 을 준다.
+   ⛔ `.sec-head` 안 부제 p 는 건드리지 않는다(`> p + p` 라 안 걸린다). */
+.block .wrap > p + p,
+.ct-block .wrap > p + p{ margin-top:0.8em; }
 
 /* ⭐ 섹션 영문 라벨 — 가장 싸고 효과가 큰 정돈 장치
    쓰는 법: <p class="pil-eyebrow">PET LOSS</p> 를 섹션 제목 바로 위에
