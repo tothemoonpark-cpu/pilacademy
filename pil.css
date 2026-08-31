@@ -106,6 +106,14 @@ body{
 @media (max-width:768px){
   :root{ --pil-card-p:20px 18px; --pil-gap:14px; }
   body{ font-size:var(--pil-fs-sm); }
+
+  /* ⛔ 표가 화면 밖으로 나가고 있었다 — 라이브 실측(2026-08-31, 375px):
+        career-reading 3열 표가 364px 로 그려져 오른쪽으로 13px 삐져나왔다.
+        `.tbl` 은 5개 페이지 13곳인데 `overflow-x` 처리가 **0곳**이었다.
+     ⭐ 셀 좌우 패딩(13.6px)과 글자만 줄여 336px 로 들였다 — 넘침 0건 재실측.
+     ⛔ `display:block; overflow-x:auto` 는 쓰지 않았다. table 레이아웃이 사라져 열 정렬이 깨진다. */
+  .tbl{ font-size:13.2px; }
+  .tbl th, .tbl td{ padding-left:9px; padding-right:9px; }
 }
 
 /* ⛔ 가로 스크롤 원천 차단 — 모바일에서 가장 흔한 사고 */
