@@ -1,0 +1,117 @@
+/* ===========================================================================
+   pil.css — 박근필성장연구소 디자인 토큰 (2026-08-31 신설)
+
+   ⛔ 이 파일이 「값의 단일 출처」다. 페이지 인라인 style 에 새 값을 만들지 마라.
+   ⭐ 신설 이유(작가님 2026-08-31): 「좀 더 정돈되고 깔끔하고 세련되고 전문적으로」
+      실측 결과 값의 가짓수가 문제였다 — radius 29종·1,366회 / font-size 44종·2,302회
+      / max-width 31종 / 섹션 여백 10종. 참고 사이트(firebook.kr)는 radius 4종·여백 2값이었다.
+   ⭐ 정체성 색은 민트다. 참고 사이트의 주황을 따라가지 않는다(작가님 확정).
+   ⛔ 모바일 최적화 필수(작가님 지시 2026-08-31) — 모든 그리드는 minmax(min(Npx,100%),1fr)
+   =========================================================================== */
+
+:root{
+  /* ── 색: 민트 정체성 ───────────────────────────────── */
+  --pil-mint-50:#eef8f6;  --pil-mint-100:#d6f0ec; --pil-mint-200:#a9e2da;
+  --pil-mint-500:#2bb7ac; --pil-mint-600:#1f9d93; --pil-mint-700:#16867d;
+
+  /* ── 색: 종이와 잉크 ────────────────────────────────
+     ⭐ 핵심 발견 — 배경이 순백이면 흰 카드가 안 보인다.
+        배경을 아주 살짝 빼면 카드가 저절로 떠 보인다(그림자 없이도). */
+  --pil-page:#fafbfb;      /* 페이지 바탕 — 순백에서 살짝 뺀 값 */
+  --pil-page-alt:#f2f7f6;  /* 섹션 교대용(아주 옅은 민트 기운) */
+  --pil-card:#ffffff;      /* 카드 — 흰색 유지 */
+  --pil-ink:#16181d;       /* 본문 글자 */
+  --pil-ink-sub:#5b6066;   /* 보조 글자 */
+  --pil-ink-mute:#8a9096;  /* 흐린 글자 */
+  --pil-line:#e6eae9;      /* 테두리 — 배경과 가까운 값 하나로 통일 */
+  --pil-line-strong:#d3dad8;
+
+  /* ── 모서리: 29종 → 4종 ─────────────────────────────── */
+  --pil-r-sm:8px;     /* 칩·배지·작은 버튼 */
+  --pil-r:14px;       /* 카드 — 기본값 */
+  --pil-r-lg:20px;    /* 큰 패널·히어로 박스 */
+  --pil-r-pill:999px; /* 알약 */
+
+  /* ── 여백: 10종 → 2값 ───────────────────────────────── */
+  --pil-sec-y:72px;      /* 섹션 위아래(데스크톱) */
+  --pil-sec-y-sm:48px;   /* 섹션 위아래(모바일) */
+  --pil-sec-x:20px;      /* 섹션 좌우 */
+  --pil-card-p:26px 24px;/* 카드 안쪽 */
+  --pil-gap:18px;        /* 그리드 간격 */
+
+  /* ── 폭: 31종 → 3값 ─────────────────────────────────── */
+  --pil-w:1080px;      /* 기본 컨테이너 */
+  --pil-w-wide:1180px; /* 넓은 컨테이너 */
+  --pil-w-read:720px;  /* 읽는 영역(글이 길 때) */
+
+  /* ── 글자: 44종 → 7단 ───────────────────────────────── */
+  --pil-fs-cap:0.8rem;   /* 캡션·주석 */
+  --pil-fs-sm:0.88rem;   /* 작은 본문 */
+  --pil-fs:0.98rem;      /* 본문 — ⛔ 실측 12.64px 는 작았다 */
+  --pil-fs-md:1.06rem;   /* 큰 본문·리드 */
+  --pil-fs-h3:1.25rem;   /* 소제목 */
+  --pil-fs-h2:1.6rem;    /* 섹션 제목 */
+  --pil-fs-h1:2.2rem;    /* 페이지 제목 */
+
+  --pil-lh:1.75;         /* 본문 행간 — 실측 1.65 보다 넉넉하게 */
+  --pil-lh-tight:1.35;   /* 제목 행간 */
+  --pil-ls:-0.01em;      /* 본문 자간 */
+  --pil-ls-label:0.08em; /* ⭐ 영문 라벨만 양수 */
+}
+
+/* ── 페이지 바탕 ───────────────────────────────────────── */
+body{
+  background:var(--pil-page);
+  color:var(--pil-ink);
+  font-size:var(--pil-fs);
+  line-height:var(--pil-lh);
+  letter-spacing:var(--pil-ls);
+}
+
+/* ⭐ 섹션 배경 교대 — 여백을 늘리지 않고 섹션을 갈라 보이게 하는 장치 */
+.pil-alt{ background:var(--pil-page-alt); }
+
+/* ⭐ 섹션 영문 라벨 — 가장 싸고 효과가 큰 정돈 장치
+   쓰는 법: <p class="pil-eyebrow">PET LOSS</p> 를 섹션 제목 바로 위에 */
+.pil-eyebrow{
+  font-size:var(--pil-fs-cap);
+  font-weight:700;
+  letter-spacing:var(--pil-ls-label);
+  color:var(--pil-mint-600);
+  text-transform:uppercase;
+  margin:0 0 6px;
+}
+
+/* ── 카드 — 그림자 없이 테두리 하나로 (참고 사이트 16개 중 14개가 그림자 없음) ── */
+.pil-card{
+  background:var(--pil-card);
+  border:1px solid var(--pil-line);
+  border-radius:var(--pil-r);
+  padding:var(--pil-card-p);
+  box-shadow:none;
+}
+
+/* ── 그리드 — ⛔ 모바일에서 절대 넘치지 않게 ───────────── */
+.pil-grid{
+  display:grid;
+  gap:var(--pil-gap);
+  grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));
+}
+.pil-grid-2{ grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr)); }
+.pil-grid-wide{ grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr)); }
+
+.pil-wrap{ max-width:var(--pil-w); margin:0 auto; padding-left:var(--pil-sec-x); padding-right:var(--pil-sec-x); }
+.pil-read{ max-width:var(--pil-w-read); margin:0 auto; }
+.pil-sec{ padding:var(--pil-sec-y) var(--pil-sec-x); }
+
+/* ── 모바일 ───────────────────────────────────────────── */
+@media (max-width:768px){
+  :root{ --pil-sec-y:var(--pil-sec-y-sm); --pil-card-p:20px 18px; --pil-gap:14px; }
+  body{ font-size:var(--pil-fs-sm); }
+  .pil-sec{ padding:var(--pil-sec-y-sm) 16px; }
+  .pil-wrap{ padding-left:16px; padding-right:16px; }
+}
+
+/* ⛔ 가로 스크롤 원천 차단 — 모바일에서 가장 흔한 사고 */
+html,body{ max-width:100%; overflow-x:hidden; }
+img,svg,video,iframe,table{ max-width:100%; }

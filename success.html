@@ -25,7 +25,7 @@
         .success-container {
             background: white;
             padding: 3rem 2rem;
-            border-radius: 20px;
+            border-radius: 14px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.15);
             text-align: center;
             max-width: 500px;
@@ -53,13 +53,13 @@
         
         h1 {
             color: #2c3e50;
-            font-size:1.7rem;
+            font-size:1.6rem;
             margin-bottom: 1rem;
         }
         
         p {
             color: #666;
-            font-size:1.02rem;
+            font-size:0.98rem;
             line-height: 1.8;
             margin-bottom: 2rem;
         }
@@ -69,10 +69,10 @@
             background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
             color: white;
             padding: 1rem 2.5rem;
-            border-radius: 50px;
+            border-radius: 999px;
             text-decoration: none;
             font-weight: bold;
-            font-size:1.02rem;
+            font-size:0.98rem;
             transition: all 0.3s;
             box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
         }
@@ -91,7 +91,7 @@
            ⛔ 3개만 둔다(전역지침 「한 화면에 강조 3개」). 모바일에서는 하단 가로 바로 바뀐다. */
         .pil-quick{position:fixed;right:14px;bottom:22px;z-index:900;display:flex;flex-direction:column;gap:8px;}
         .pil-quick a{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line,#ececec);
-          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.79rem;font-weight:600;color:var(--ink,#16181d);
+          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.8rem;font-weight:600;color:var(--ink,#16181d);
           text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.11);white-space:nowrap;transition:transform .15s;}
         .pil-quick a:hover{transform:translateY(-2px);}
         .pil-quick a.hi{background:var(--mint,#2bb7ac);color:#fff;border-color:var(--mint,#2bb7ac);}
@@ -99,10 +99,11 @@
         @media(max-width:760px){
           .pil-quick{right:0;left:0;bottom:0;flex-direction:row;gap:0;border-top:1px solid var(--line,#ececec);
             background:#fff;padding:0.45rem 0.5rem calc(0.45rem + env(safe-area-inset-bottom));}
-          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:10px;font-size:0.79rem;padding:0.55rem 0.3rem;}
-          .pil-quick a.hi{border-radius:10px;}
+          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:14px;font-size:0.8rem;padding:0.55rem 0.3rem;}
+          .pil-quick a.hi{border-radius:14px;}
         }
         </style>
+  <link rel="stylesheet" href="pil.css">
 </head>
 <body>
     <div class="success-container">
