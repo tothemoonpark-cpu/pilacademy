@@ -148,15 +148,23 @@
         }
         
         @media (max-width: 768px) {
-            nav { padding: 0 1rem; }
+            /* ⛔ 2026-09-02 수리 — 여기 「nav { padding: 0 1rem; }」로 규칙이 일찍 닫혀
+               아래 선언 6줄이 셀렉터 없이 떠 있었다. CSS 파서는 복구하려고 다음 규칙까지
+               통째로 삼키고, 그 바람에 `.nav-links{display:none}` 이 버려졌다.
+               결과: 375px 에서 메뉴 19개가 다 펼쳐져 헤더 높이가 700px(첫 화면을 통째로 덮음).
+               ⛔ 검사기가 못 잡은 이유 — CSS 가 「없는」 게 아니라 「있는데 파서가 버린」 것이다. */
+            nav {
+                padding: 0 1rem;
                 flex-wrap: nowrap;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 grid-template-columns: none;
-            .nav-links { 
-                display: none; 
+            }
+            .menu-toggle { display: flex; z-index: 1001; }
+            .nav-links {
+                display: none;
                 position: fixed;
                 top: 70px;
                 left: 0;
