@@ -77,7 +77,7 @@ textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
 .btn:hover{opacity:.88}
 .btn.ghost{background:#fff;color:var(--ink)}
 .btn.small{padding:9px 16px;font-size:14.5px}
-.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btnrow{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
 
 .paths{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));margin-top:22px}
 .path{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 20px;
@@ -120,10 +120,42 @@ footer a{color:var(--accent)}
 
 .hidden{display:none!important}
 
+/* ══════════ 인쇄 = 편지지 ══════════
+   ⭐ 「빈 종이를 주지 않는다」 — 화면에서 쓴 것도, 손으로 쓸 빈 장도
+      같은 편지지 모양으로 나옵니다. 종이 서식을 따로 만들 필요가 없습니다. */
+@page{ size:A4; margin:13mm 12mm }
 @media print{
   header.top,footer,.noprint{display:none!important}
-  body{background:#fff;font-size:12pt}
-  .sheet{border:none;padding:0}
+  body{background:#fff;font-size:11.5pt;color:#2b2b2b}
+  .sheet{
+    border:1px solid #cfc3b4; border-radius:0;
+    padding:13mm 13mm 11mm; margin:0;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  /* 머리 — 이름표 한 줄 */
+  .sheet::before{
+    content:"펫러스 · 펫로스 치유 글쓰기";
+    display:block; text-align:center;
+    font-size:9pt; letter-spacing:.24em; color:#9c8e7e;
+    border-bottom:1px solid #e6dbcd; padding-bottom:5mm; margin-bottom:8mm;
+  }
+  .sheet .title{ font-size:16.5pt; text-align:center; margin-bottom:2mm }
+  .sheet .date{ text-align:center; font-size:9.5pt; color:#9c8e7e; margin-bottom:10mm }
+  .sheet .qa{ margin:0 0 9mm; page-break-inside:avoid }
+  .sheet .qa .qq{ font-size:10pt; color:#7d6f60; margin-bottom:2.5mm }
+  /* ⭐ 줄 — 이어서 손으로 쓸 수 있게 */
+  .sheet .qa .aa{
+    line-height:8.6mm; padding:0;
+    background-image:repeating-linear-gradient(to bottom,
+      transparent 0 8.2mm, #e9e0d5 8.2mm 8.6mm);
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .sheet .qa .aa.blank{ min-height:34.4mm }          /* 빈 장은 넉 줄 */
+  .sheet .qa .aa.blank.wide{ min-height:51.6mm }     /* 이별·편지 칸은 여섯 줄 */
+  .sheet .foot{
+    text-align:center; border-top:1px solid #e6dbcd;
+    color:#9c8e7e; font-size:9pt; margin-top:9mm; padding-top:5mm
+  }
 }
 @media (max-width:520px){
   h1{font-size:25px}
@@ -193,6 +225,10 @@ footer a{color:var(--accent)}
         <b>아직 곁에 있어요</b>
         <span>보내지 않았지만 그날이 두려운 분을 위한 자리입니다.</span>
       </button>
+      <button class="path" data-path="letter">
+        <b>편지 한 통</b>
+        <span>그 아이에게 씁니다. 원하시면 그 아이가 보내는 답장도 함께.</span>
+      </button>
     </div>
 
     <div class="safety">
@@ -239,6 +275,7 @@ footer a{color:var(--accent)}
     <div class="btnrow noprint">
       <button class="btn" id="btnSave">내 컴퓨터에 저장</button>
       <button class="btn ghost" id="btnPrint">인쇄 · PDF로 남기기</button>
+      <button class="btn ghost" id="btnBlank">빈 편지지 뽑기</button>
       <button class="btn ghost small" id="btnMore">더 써 볼게요</button>
     </div>
 
@@ -312,6 +349,13 @@ footer a{color:var(--accent)}
         (애도 Hedges' g = 0.388, 우울 0.308 · 전체 효과는 작은 편).
         같은 분석에서 <b>회차가 쌓일수록</b>, 그리고 <b>진행자가 반응을 돌려줄 때</b> 효과가 커졌습니다.
       </p>
+      <p class="small">
+        그렇다고 <b>한 번이 소용없다는 뜻은 아닙니다.</b>
+        <b>90분 특강</b>은 오늘 밤 혼자 해볼 수 있는 방법을 그 자리에서 손에 쥐여 드립니다.
+        <b>4주 과정</b>은 마지막에 글 한 편이 남습니다.
+        목적은 같습니다. 펫로스로 다친 마음을 회복하는 것입니다.
+        길이와 형식만 다소 차이가 있을 뿐입니다.
+      </p>
 
       <p class="small" style="margin-top:20px">
         ⛔ 다만 분명히 해 둘 것이 있습니다. <b>이 자리는 치료가 아닙니다.</b>
@@ -381,6 +425,23 @@ footer a{color:var(--accent)}
           hint: "① {N}에게 쓰는 편지  ② 언젠가의 그날에게 미리 쓰는 약속  ③ 자책을 벗는 한 줄 — 무엇을 쓸지는 직접 정하십니다." },
         { q: "기록 · {N}와 함께한 시간에서, 남은 삶으로 가져가고 싶은 것은 무엇인가요?",
           hint: "관계는 끝나지 않습니다. 무엇을 이어 갈지 적어 두는 자리입니다." }
+      ]
+    },
+    // ⭐ 편지 한 통 — 접목대장 항목 16(작가님 2026-08-30 채택) + 건국대 W9-2 「보내지 않은 편지」
+    //    ⛔ 두 갈래를 반드시 함께 연다 — 「그 아이 목소리를 흉내 내는 것 같아 싫다」는 분이 있다.
+    //    ⛔ 답장은 강요하지 않는다. 안 쓰고 넘겨도 되는 자리로 둔다.
+    letter: {
+      label: "편지 한 통",
+      close: "편지 한 통이 남았습니다.",
+      items: [
+        { q: "{N}에게 · 그동안 못 한 말이 있다면 무엇인가요?",
+          hint: "잘 쓰지 않으셔도 됩니다. 하려던 말을 그대로 적으시면 됩니다. 미안하다는 말이어도, 고맙다는 말이어도 좋습니다." },
+        { q: "{N}에게 · 요즘 당신은 어떻게 지내는지 알려 주세요.",
+          hint: "편지는 소식을 전하는 글입니다. 잘 지낸다고 쓰셔도, 아직 힘들다고 쓰셔도 됩니다." },
+        { q: "{N}가 답장을 쓴다면 · 그 아이는 당신에게 뭐라고 할까요?",
+          hint: "이 물음이 불편하시면 넘기셔도 됩니다. 흉내 내는 것 같아 싫으신 분도 계십니다. 쓰신다면 그 아이가 부르던 방식 그대로 적어 보세요." },
+        { q: "편지를 접으며 · 오늘 이 편지에 이름을 붙인다면?",
+          hint: "「미안하다는 편지」도, 「그냥 안부」도 됩니다. 이름을 붙이면 다시 찾아보기 쉬워집니다." }
       ]
     },
     stillhere: {
@@ -549,6 +610,27 @@ footer a{color:var(--accent)}
   $("btnMore").addEventListener("click", function(){ show("stepPath"); });
 
   $("btnPrint").addEventListener("click", function(){ window.print(); });
+
+  // ⭐ 빈 편지지 — 물음은 인쇄되고 답 자리는 줄로 비어 있게.
+  //    화면에서 쓰기 어려운 분, 손으로 쓰고 싶은 분, 기관이 미리 뽑아 나눠 주는 자리.
+  //    ⛔ 종이 서식을 따로 만들지 않기 위한 자리다(작가님 2026-09-07 「그런 품이 너무 많이 들어」).
+  $("btnBlank").addEventListener("click", function(){
+    var keep = $("sheet").innerHTML;
+    var set  = PATHS[state.path];
+    var nm   = state.name || "그 아이";
+    var html = '<div class="title">' + esc(nm) + '에게</div>';
+    html += '<div class="date">　　　　년　　　월　　　일 · ' + esc(set.label) + '</div>';
+    set.items.forEach(function(it){
+      var wide = /이별|편지/.test(it.q) ? " wide" : "";
+      html += '<div class="qa"><div class="qq">' + esc(fill(it.q)) + '</div>'
+            + '<div class="aa blank' + wide + '"></div></div>';
+    });
+    html += '<div class="foot">펫러스 · 펫로스 치유 글쓰기 — 박근필성장연구소<br>'
+          + 'tothemoonpark-cpu.github.io/pilacademy</div>';
+    $("sheet").innerHTML = html;
+    window.print();
+    setTimeout(function(){ $("sheet").innerHTML = keep; }, 400);
+  });
 
   $("btnSave").addEventListener("click", function(){
     var set = PATHS[state.path];
