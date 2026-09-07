@@ -46,6 +46,40 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;
  padding-top:14px;padding-bottom:14px;font-size:14px}
 header.top a{color:var(--sub);text-decoration:none}
 header.top a:hover{color:var(--accent)}
+/* ⭐ 2026-09-07 — 이 페이지가 사이트 표준(헤더 nav·푸터·섭외 CTA·검색)을 안 갖고 있었다.
+   공통블록_검사가 「22개 중 21개가 가진 것을 이 페이지만 없다」로 잡았다. */
+header.top nav{display:flex;align-items:center;gap:16px;width:100%;flex-wrap:wrap}
+header.top nav a:first-child{margin-right:auto;font-weight:600;color:var(--ink)}
+.site-search-open{background:var(--accent-soft);border:1px solid var(--line);color:var(--sub);
+ font:inherit;font-size:13px;padding:6px 13px;border-radius:9px;cursor:pointer;transition:.15s}
+.site-search-open:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+@media(max-width:600px){
+  header.top nav{gap:10px;font-size:13px}
+  header.top nav a:first-child{margin-right:auto;flex:1 1 100%}
+}
+
+/* ⭐ 혼자 쓴 뒤의 통로 — 글을 다 쓴 자리가 가장 강한 전환 지점이다 */
+.pw-cta{padding:12px 0 46px}
+.pw-cta-box{background:var(--panel);border:1px solid var(--line);border-radius:18px;
+ padding:38px 30px;text-align:center;box-shadow:0 2px 18px rgba(28,31,35,.05)}
+.pw-cta-ico{color:var(--accent);margin-bottom:14px}
+.pw-cta-box h2{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:0 0 16px;line-height:1.4}
+.pw-cta-box p{color:var(--sub);font-size:15.5px;line-height:1.85;margin:0 auto 14px;max-width:620px}
+.pw-cta-box p b{color:var(--ink)}
+.pw-cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:24px 0 16px}
+.pw-btn-main{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;
+ font-weight:700;font-size:15px;padding:13px 26px;border-radius:12px;text-decoration:none;transition:.18s}
+.pw-btn-main:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(138,106,79,.28)}
+.pw-btn-sub{display:inline-flex;align-items:center;background:var(--accent-soft);color:var(--accent);
+ font-weight:600;font-size:15px;padding:13px 22px;border-radius:12px;text-decoration:none;transition:.18s}
+.pw-btn-sub:hover{background:#e9dfd3}
+.pw-cta-sub{font-size:14px;color:var(--sub);margin:0 auto;max-width:560px}
+@media(max-width:600px){
+  .pw-cta-box{padding:28px 18px;border-radius:14px}
+  .pw-cta-box h2{font-size:19px}
+  .pw-cta-box p{font-size:15px}
+  .pw-cta-btns a{flex:1 1 100%;justify-content:center}
+}
 
 .hero{padding:54px 0 34px;text-align:center}
 .eyebrow{font-size:13px;letter-spacing:.14em;color:var(--accent);margin:0 0 14px}
@@ -225,8 +259,40 @@ footer a{color:var(--accent)}
 
 <header class="top">
   <div class="wrap">
-    <a href="index.html">← 박근필성장연구소</a>
-    <a href="petloss.html">펫로스 강연 안내</a>
+    <nav role="navigation" aria-label="주요 메뉴">
+      <a href="index.html">← 박근필성장연구소</a>
+      <a href="petloss.html">펫로스 강연 안내</a>
+      <a href="petcare.html">반려동물</a>
+      <a href="contact.html">섭외 문의</a>
+      <button type="button" class="site-search-open" onclick="openSiteSearch()" aria-label="사이트 내 검색 열기">검색</button>
+        <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
+<button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+</button>
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
+    </nav>
   </div>
 </header>
 
@@ -434,7 +500,42 @@ footer a{color:var(--accent)}
   </div>
 </section>
 
-<footer class="noprint">
+<!-- ══════════ 함께 쓰는 자리 — 혼자 쓴 뒤의 통로 ══════════ -->
+<section class="pw-cta noprint" aria-labelledby="pwCtaTitle">
+  <div class="wrap">
+    <div class="pw-cta-box">
+      <svg class="pw-cta-ico" viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor"
+           stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        <path d="M9 7h7"/><path d="M9 11h5"/>
+      </svg>
+      <h2 id="pwCtaTitle">혼자 쓰셨다면, 함께 쓰는 자리도 있습니다</h2>
+      <p>
+        여기 물음들은 <b>「펫로스 치유 글쓰기(펫러스)」</b> 4주 과정에서 실제로 쓰는 물음입니다.
+        펫러스는 펫로스에 러브와 쓰다를 붙인 말이고, 떠나보낸 마음을 사랑을 담아 쓴다는 뜻입니다.
+      </p>
+      <p>
+        90분 단회 특강은 그날 바로 써먹을 방법 하나를 손에 쥐여 드립니다.
+        4주 연속 과정은 회차마다 짧은 글이 쌓여 800자 안팎의 에세이 한 편이 남습니다.
+        목적은 같습니다. 펫로스로 다친 마음을 회복하는 것입니다. 길이와 형식만 다소 차이가 있을 뿐입니다.
+      </p>
+      <div class="pw-cta-btns">
+        <a class="pw-btn-main" href="contact.html">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          강연·워크숍 섭외 문의
+        </a>
+        <a class="pw-btn-sub" href="petloss.html">펫로스 강연 안내 보기</a>
+      </div>
+      <p class="pw-cta-sub">
+        도서관 · 기관 · 기업에서 <b>함께 쓰는 자리</b>로 열고 싶으시면 알려 주세요.
+        대상에 맞춰 횟수도 내용도 그 자리에 맞게 다시 짭니다.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="noprint" role="contentinfo">
   <div class="wrap">
     <p>
       <b>박근필성장연구소</b> · 수의사 · 작가 · 커리어 스토리텔러 박근필<br>
@@ -443,11 +544,37 @@ footer a{color:var(--accent)}
     </p>
     <p>
       <a href="petloss.html">펫로스 강연 안내</a> ·
+      <a href="petcare.html">반려동물</a> ·
       <a href="author.html">소장 소개</a> ·
-      <a href="contact.html">섭외 문의</a>
+      <a href="contact.html">섭외 문의</a> ·
+      <a href="index.html">박근필성장연구소</a>
     </p>
   </div>
 </footer>
+
+<!-- [SEARCH:AUTO] -->
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
 
 <script>
 (function(){
