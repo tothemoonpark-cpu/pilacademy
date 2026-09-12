@@ -31,5 +31,7 @@ Allow: /
 
 Sitemap: https://tothemoonpark-cpu.github.io/pilacademy/sitemap.xml
 
-# LLM 요약본
+# LLM 요약본 (llms.txt)
+# ⛔ robots.txt 의 Sitemap: 지시어는 XML 사이트맵 전용이라 llms.txt 를 넣으면 오류가 난다.
+# 발견 경로는 ①sitemap.xml 등재 ②각 페이지 <head> 의 <link rel="alternate"> ③푸터 링크 — 세 가지다.
 # https://tothemoonpark-cpu.github.io/pilacademy/llms.txt
