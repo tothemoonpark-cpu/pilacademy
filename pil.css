@@ -166,6 +166,8 @@ img,svg,video,iframe,table{ max-width:100%; }
 .up-tbl td{padding:1rem 1.2rem;border-bottom:1px solid var(--line,#e3e6ea);font-size:0.98rem;vertical-align:top}
 .up-tbl .up-d{width:26%;font-weight:700;color:var(--mint-dark,#1f9d93);white-space:nowrap}
 .up-tbl .up-t{color:#16181d}
+.up-tbl .up-t b{font-weight:700;display:block}
+.up-tbl .up-sz{display:block;margin-top:.25rem;font-size:0.88rem;color:var(--sub,#5b6066);line-height:1.6}
 .up-tbl .up-last{border-bottom:0}
 /* ⛔⛔ 2026-09-17 — 이 두 섹션에 `block` 클래스를 붙이면 안 된다.
    pil_섹션정돈.py 가 `.block` 의 alt 교대를 홀짝으로 맞추면서 여기에 `alt` 를 넣고,
@@ -174,7 +176,16 @@ img,svg,video,iframe,table{ max-width:100%; }
 .give-band,.up-band{padding:3.2rem 0;background:transparent}
 @media(max-width:600px){ .give-band,.up-band{padding:2.4rem 0} }
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-@media(max-width:600px){ .up-tbl td{padding:.8rem .9rem;font-size:0.9rem} .up-tbl .up-d{width:34%} }
+/* ⛔ 긴 URL·영문은 줄바꿈이 안 돼 가로 스크롤을 만든다 */
+.give-card span,.up-tbl .up-sz,.up-tbl .up-t{overflow-wrap:anywhere;word-break:keep-all}
+@media(max-width:600px){
+  .up-tbl td{padding:.75rem .8rem;font-size:0.9rem}
+  /* ⭐ 좁은 화면에서는 날짜를 줄여 본문에 폭을 준다 — 규모 문구가 길다(옥계 761명 줄) */
+  .up-tbl .up-d,.up-tbl .up-d.up-last{width:29%;font-size:0.84rem;white-space:normal}
+  .up-tbl .up-t b{font-size:0.94rem}
+  .up-tbl .up-sz{font-size:0.82rem;margin-top:.3rem}
+  .give-card{padding:16px 15px}
+}
 
 .pil-quickbar{position:fixed;left:0;right:0;bottom:0;z-index:900;
  display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;
@@ -190,10 +201,19 @@ img,svg,video,iframe,table{ max-width:100%; }
 .pil-quickbar .pq-sub{background:rgba(255,255,255,.14);color:#fff}
 .pil-quickbar .pq-main:hover{background:#25a99f}
 .pil-quickbar .pq-sub:hover{background:rgba(255,255,255,.26)}
+/* ⛔⛔ 2026-09-17 모바일 — 문구+버튼 두 줄이면 바 높이가 90px 가까이 된다.
+   작은 화면에서는 그게 화면의 15%다. ⭐ 문구를 숨기고 버튼만 한 줄에 둔다(약 52px).
+   ⛔ 버튼 문구 자체가 「강연 섭외 문의」라 무슨 바인지 알 수 있다 — 맥락이 사라지지 않는다. */
 @media(max-width:600px){
-  .pil-quickbar{gap:.5rem;padding:.6rem .7rem}
-  .pil-quickbar .pq-txt{flex:1 1 100%;font-size:0.82rem;text-align:center}
-  .pil-quickbar .pq-btns{flex:1 1 100%;justify-content:center}
+  .pil-quickbar{gap:.45rem;padding:.55rem .7rem;flex-wrap:nowrap}
+  .pil-quickbar .pq-txt{display:none}
+  .pil-quickbar .pq-btns{width:100%;justify-content:center}
+  .pil-quickbar a{font-size:0.86rem;padding:.55rem .9rem;flex:0 1 auto;
+    overflow:hidden;text-overflow:ellipsis}
+}
+/* ⛔ 화면이 아주 좁으면(360 미만) 버튼 두 개가 붙는다 */
+@media(max-width:360px){
+  .pil-quickbar a{font-size:0.8rem;padding:.5rem .7rem}
 }
 @media print{ .pil-quickbar{display:none!important} }
 /* [/PILBAR:AUTO] */
