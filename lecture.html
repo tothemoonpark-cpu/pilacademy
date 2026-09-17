@@ -1628,6 +1628,9 @@
     var h=document.documentElement.scrollHeight-window.innerHeight;
     var on=(h>600)&&(y/h>0.22)&&!bandSeen;
     bar.classList.toggle("on",on);
+    /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
+       ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
+    document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
   }
   window.addEventListener("scroll",paint,{passive:true});
   window.addEventListener("resize",paint); paint();
