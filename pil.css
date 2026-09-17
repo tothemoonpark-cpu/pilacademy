@@ -148,3 +148,52 @@ body{
 /* ⛔ 가로 스크롤 원천 차단 — 모바일에서 가장 흔한 사고 */
 html,body{ max-width:100%; overflow-x:hidden; }
 img,svg,video,iframe,table{ max-width:100%; }
+
+/* [PILBAR:AUTO] */
+/* ⛔ 자동 생성 — 도구/pil_공통구간_build.py. 손으로 고치지 말 것 */
+.give-grid{display:grid;gap:14px;margin-top:1.1rem;
+ grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
+.give-card{background:#fff;border:1px solid var(--line,#e3e6ea);border-radius:14px;padding:20px 18px}
+.give-card .give-ico{color:var(--mint-dark,#1f9d93);margin-bottom:.55rem;display:block}
+.give-card b{display:block;font-size:1.02rem;margin-bottom:.45rem;color:#16181d;line-height:1.45}
+.give-card span{display:block;color:var(--sub,#5b6066);font-size:0.94rem;line-height:1.75}
+.give-card .give-link{display:inline-block;margin-top:.6rem;font-size:0.9rem;font-weight:700;
+ color:var(--mint-dark,#1f9d93);text-decoration:none}
+.give-card .give-link:hover{text-decoration:underline}
+
+.up-tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line,#e3e6ea);
+ border-radius:14px;overflow:hidden;margin-top:1.1rem}
+.up-tbl td{padding:1rem 1.2rem;border-bottom:1px solid var(--line,#e3e6ea);font-size:0.98rem;vertical-align:top}
+.up-tbl .up-d{width:26%;font-weight:700;color:var(--mint-dark,#1f9d93);white-space:nowrap}
+.up-tbl .up-t{color:#16181d}
+.up-tbl .up-last{border-bottom:0}
+/* ⛔⛔ 2026-09-17 — 이 두 섹션에 `block` 클래스를 붙이면 안 된다.
+   pil_섹션정돈.py 가 `.block` 의 alt 교대를 홀짝으로 맞추면서 여기에 `alt` 를 넣고,
+   그다음 이 도구가 재생성하면서 그 `alt` 를 지운다. **두 도구가 서로 덮어쓴다.**
+   → `block` 을 빼고 같은 여백을 여기서 준다. */
+.give-band,.up-band{padding:3.2rem 0;background:transparent}
+@media(max-width:600px){ .give-band,.up-band{padding:2.4rem 0} }
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:600px){ .up-tbl td{padding:.8rem .9rem;font-size:0.9rem} .up-tbl .up-d{width:34%} }
+
+.pil-quickbar{position:fixed;left:0;right:0;bottom:0;z-index:900;
+ display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;
+ padding:.7rem 1rem;background:rgba(22,24,29,.95);color:#fff;
+ transform:translateY(110%);transition:transform .25s ease;
+ box-shadow:0 -4px 18px rgba(0,0,0,.18)}
+.pil-quickbar.on{transform:translateY(0)}
+.pil-quickbar .pq-txt{font-size:0.92rem;line-height:1.5}
+.pil-quickbar .pq-btns{display:flex;gap:.5rem;flex-shrink:0}
+.pil-quickbar a{text-decoration:none;font-weight:700;font-size:0.9rem;
+ padding:.5rem 1rem;border-radius:999px;line-height:1.4;white-space:nowrap}
+.pil-quickbar .pq-main{background:#2bb7ac;color:#fff}
+.pil-quickbar .pq-sub{background:rgba(255,255,255,.14);color:#fff}
+.pil-quickbar .pq-main:hover{background:#25a99f}
+.pil-quickbar .pq-sub:hover{background:rgba(255,255,255,.26)}
+@media(max-width:600px){
+  .pil-quickbar{gap:.5rem;padding:.6rem .7rem}
+  .pil-quickbar .pq-txt{flex:1 1 100%;font-size:0.82rem;text-align:center}
+  .pil-quickbar .pq-btns{flex:1 1 100%;justify-content:center}
+}
+@media print{ .pil-quickbar{display:none!important} }
+/* [/PILBAR:AUTO] */
