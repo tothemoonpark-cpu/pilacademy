@@ -424,9 +424,9 @@
 .notes-hero h1{font-size:clamp(28px,5vw,40px);line-height:1.25;margin:0 0 14px}
 .notes-hero .lead{font-size:17px;line-height:1.75;margin:0 0 10px}
 .notes-note{color:#5b6066;font-size:14.5px}
-.notes-toc{display:flex;flex-wrap:wrap;gap:.4rem .9rem;font-size:14px;margin:0 0 30px;padding:0;background:none;position:static;box-shadow:none}
+/* toc 숨김: 접는 방식이라 불필요 */.notes-toc{display:none!important;display:flex;flex-wrap:wrap;gap:.4rem .9rem;font-size:14px;margin:0 0 30px;padding:0;background:none;position:static;box-shadow:none}
 .notes-toc a{color:var(--n-accent)}
-.day h2{font-size:22px;margin:44px 0 18px;padding-bottom:8px;border-bottom:2px solid var(--n-line)}
+.day{border:1px solid var(--n-line);border-radius:14px;background:#fff;margin:0 0 14px;overflow:hidden}.day>summary{list-style:none;cursor:pointer;padding:18px 20px 18px 22px;position:relative;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}.day>summary::-webkit-details-marker{display:none}.day>summary::after{content:'펼치기 ▾';order:2;margin-left:auto;white-space:nowrap;font-size:13px;color:var(--n-accent);font-weight:700}.day[open]>summary::after{content:'접기 ▴'}.day[open]>summary{border-bottom:1px solid var(--n-line);background:var(--n-soft)}.day-date{font-size:19px;font-weight:800}.day-meta{font-size:13px;color:var(--n-accent);font-weight:700}.day-topics{order:3;flex-basis:100%;font-size:14.5px;color:var(--n-sub);line-height:1.6}.day-body{padding:18px 18px 4px}
 .note{background:var(--n-panel);border:1px solid var(--n-line);border-radius:14px;padding:22px 24px;margin:0 0 18px}
 .note h3{font-size:20px;line-height:1.45;margin:4px 0 12px}
 .note h4{font-size:17px;margin:18px 0 6px}
@@ -436,6 +436,7 @@
 .kind{display:inline-block;font-size:13px;font-weight:700;color:var(--n-accent);background:var(--n-soft);border-radius:999px;padding:2px 12px;margin:0}
 .vid{position:relative;padding-bottom:177%;height:0;max-width:360px;margin:6px 0 14px}
 .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:10px}
+.vid-mp4{display:block;width:100%;max-width:360px;aspect-ratio:9/16;background:#111;border-radius:10px;margin:6px 0 14px}
 </style>
 <!-- BREADCRUMB:AUTO:START -->
 <script type="application/ld+json">
@@ -601,7 +602,12 @@
 <p class="notes-note">이 노트는 진단을 대신하지 않습니다. 아이가 걱정되면 가까운 동물병원에서 먼저 확인해 주세요.</p></section>
 <div class="notes-wrap">
 <nav class="notes-toc" aria-label="날짜별 목차"><a href="#d260921">2026년 9월 21일</a></nav>
-<div class="day" id="d260921"><h2>2026년 9월 21일</h2><article class="note" id="n260921-1"><p class="kind">강아지</p><h3>잠든 강아지, 1분만 숨을 세어 보세요.</h3><img src="notes/260921_1.png" alt="잠든 강아지, 1분만 숨을 세어 보세요." loading="lazy" width="540" height="675"><div class="note-body"><p>가슴이 한 번 올라갔다 내려오면 1회입니다.<br>30초 동안 세고 2를 곱하면 됩니다.</p>
+<details class="day" id="d260921"><summary><span class="day-date">2026년 9월 21일</span><span class="day-meta">글 5편 · 블로그 · 숏폼</span><span class="day-topics">잠든 강아지의 호흡수 · 증상 없는 심장병 · 마지막을 지키지 못했다는 자책 · 슬픔의 크기 · 쓰기는 가장 사랑스러운 장면부터</span></summary><div class="day-body"><article class="note" id="s260921"><p class="kind">숏폼</p><h3>그레인프리 사료, 정말 심장병을 부를까? — 이달 나온 논문</h3><div class="vid"><iframe src="https://www.youtube.com/embed/qIkF7f72k4Q" title="그레인프리 사료, 정말 심장병을 부를까? — 이달 나온 논문" allowfullscreen loading="lazy"></iframe></div><div class="note-body"><p>그레인프리 사료, 정말 심장병을 부를까요?</p>
+<p>이달(2026년 9월) 미국 Dog Aging Project 연구팀이 발표한 논문입니다.<br>보호자가 그레인프리 사료를 먹인다고 답한 개와 아닌 개를 2년간 비교했더니, 새로 심장병 진단을 받는 비율에 차이가 없었습니다.</p>
+<p>더 눈여겨볼 점도 있었습니다.<br>보호자가 「그레인프리」라고 답한 사료를 성분표로 확인해 보니 실제로는 아닌 경우가 많았습니다.</p>
+<p>✔ 오늘 해 볼 일: 사료 포장지 앞면 말고 뒷면 성분표 확인하기<br>✔ 심장이 약한 아이, 특정 품종이라면 사료를 바꾸기 전에 담당 수의사와 먼저 상의하세요</p>
+<p>이 연구 하나로 논란이 끝난 것은 아닙니다. 보호자가 알려 준 진단을 모은 연구라 한계도 있습니다.</p>
+<p>궁금하신 주제 있으면 댓글로 남겨 주세요.</p></div></article><article class="note" id="n260921-1"><p class="kind">강아지</p><h3>잠든 강아지, 1분만 숨을 세어 보세요.</h3><img src="notes/260921_1.png" alt="잠든 강아지, 1분만 숨을 세어 보세요." loading="lazy" width="540" height="675"><div class="note-body"><p>가슴이 한 번 올라갔다 내려오면 1회입니다.<br>30초 동안 세고 2를 곱하면 됩니다.</p>
 <p>건강한 개는 잘 때 대개 1분에 30회를 넘지 않습니다.</p>
 <p>깨어 있을 때, 더울 때, 꿈꿀 때는 빨라지는 게 정상입니다.<br>그래서 푹 잠들었을 때 세는 겁니다.</p>
 <p>며칠 세어 두면 우리 아이의 평소 숫자가 생깁니다.<br>그 숫자가 기준이 됩니다.</p>
@@ -642,12 +648,7 @@
 <p>펫로스 치유 글쓰기(펫러스, PETLUS) 모임의 한 참가자는<br>행복했던 기억을 써 보니 자책이 많이 줄었다고 말씀하셨습니다.</p>
 <p>펫러스는 펫로스·러브·쓰다를 합친 말로, 떠나보낸 마음을 사랑을 담아 쓴다는 뜻입니다.<br>PETLUS는 PET Love US, 「그 아이가 우리를 사랑했다」는 뜻입니다.<br>내가 더 잘해 줬어야 했다는 자책 옆에, 그 아이가 나를 사랑했다는 사실을 함께 놓아 보세요.</p>
 <p>사랑을 다한 사람에게 자책은 어울리지 않습니다.</p>
-<p>오늘 떠오르는 그 아이의 장면은 무엇인가요?</p></div></article><article class="note" id="s260921"><p class="kind">숏폼</p><h3>그레인프리 사료, 정말 심장병을 부를까? — 이달 나온 논문</h3><div class="note-body"><p>그레인프리 사료, 정말 심장병을 부를까요?</p>
-<p>이달(2026년 9월) 미국 Dog Aging Project 연구팀이 발표한 논문입니다.<br>보호자가 그레인프리 사료를 먹인다고 답한 개와 아닌 개를 2년간 비교했더니, 새로 심장병 진단을 받는 비율에 차이가 없었습니다.</p>
-<p>더 눈여겨볼 점도 있었습니다.<br>보호자가 「그레인프리」라고 답한 사료를 성분표로 확인해 보니 실제로는 아닌 경우가 많았습니다.</p>
-<p>✔ 오늘 해 볼 일: 사료 포장지 앞면 말고 뒷면 성분표 확인하기<br>✔ 심장이 약한 아이, 특정 품종이라면 사료를 바꾸기 전에 담당 수의사와 먼저 상의하세요</p>
-<p>이 연구 하나로 논란이 끝난 것은 아닙니다. 보호자가 알려 준 진단을 모은 연구라 한계도 있습니다.</p>
-<p>궁금하신 주제 있으면 댓글로 남겨 주세요.</p></div></article></div>
+<p>오늘 떠오르는 그 아이의 장면은 무엇인가요?</p></div></article></div></details>
 </div>
 </main>
 
