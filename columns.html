@@ -7280,7 +7280,7 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
 <li>
 <a class="ct" href="https://www.outsourcing.co.kr/news/articleView.html?idxno=203701" target="_blank" rel="noopener">[박근필수의사의 직업·진로 인사이트] 공백이 길어지면 단가부터 내려간다 - 하한선은 일이 있을 때 정해 둬야 한다</a>
 <span class="dt">9.4</span>
-<p class="th">공백기에 낮아지는 것은 남이 내리는 값이 아니라 내 마음속 기준이고(벨기에 연구 연 5% 하락) 그렇게 받은 한 건은 「최근 얼마 받으셨죠」로 다음 자리까지 따라오니(미국 급여 이력 금지 후 여성 6.2%·비백인 5.8% 상승), 하한선은 불안할 때가 아니라 **일이 있을 때** 숫자로 적어 두고 내릴 때는 사유를 옆에 남겨 예외로 만들어라</p>
+<p class="th">공백기에 낮아지는 것은 남이 내리는 값이 아니라 내 마음속 기준이다(벨기에 연구 연 5% 하락). 그렇게 받은 한 건은 「최근 얼마 받으셨죠」로 다음 자리까지 따라온다(미국 급여 이력 금지 후 여성 6.2%·비백인 5.8% 상승). 그러니 하한선은 불안할 때가 아니라 **일이 있을 때** 숫자로 적어 두고 내릴 때는 사유를 옆에 남겨 예외로 만들어라</p>
 </li>
 <li>
 <a class="ct" href="https://www.outsourcing.co.kr/news/articleView.html?idxno=203463" target="_blank" rel="noopener">[박근필수의사의 직업·진로 인사이트] 후기는 내가 쓸 수 없는 이력서다 - 묻고, 모으고, 보이게 두자</a>
@@ -7414,7 +7414,7 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
 <li>
 <a class="ct" href="https://www.careyounews.org/news/articleView.html?idxno=11324" target="_blank" rel="noopener">[박근필 소장 칼럼] 나를 보던 눈이 하나씩 꺼질 때 - 자리가 줄어든 게 내 탓은 아니다</a>
 <span class="dt">9.1</span>
-<p class="th">나이 들며 줄어드는 시선을 우리는 「내가 밀려났다」는 개인적 거절로 읽지만, 리어리(1995) 실험에서 자존감을 낮춘 것은 배제 자체가 아니라 그것이 개인적 거절이라는 신호였다 — 그러니 빈자리를 만나면 「나 때문인가, 그냥 그렇게 된 일인가」를 먼저 묻고, 기다리는 쪽에서 먼저 안부를 묻는 쪽으로 한 걸음만 옮겨 앉으라</p>
+<p class="th">나이 들며 줄어드는 시선을 우리는 「내가 밀려났다」는 개인적 거절로 읽는다. 그러나 리어리(1995) 실험에서 자존감을 낮춘 것은 배제 자체가 아니라 그것이 개인적 거절이라는 신호였다. 그러니 빈자리를 만나면 「나 때문인가, 그냥 그렇게 된 일인가」를 먼저 묻고, 기다리는 쪽에서 먼저 안부를 묻는 쪽으로 한 걸음만 옮겨 앉으라</p>
 </li>
 <li>
 <a class="ct" href="https://www.careyounews.org/news/articleView.html?idxno=11141" target="_blank" rel="noopener">[박근필 소장 칼럼] "네, 알겠습니다" 하고 나온 날 - 묻지 못한 게 아니라 되짚는 한마디를 준비하지 않았을 뿐이다</a>
@@ -8058,11 +8058,16 @@ if(window.lucide) lucide.createIcons();
     new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
       .observe(band);
   }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
   function paint(){
     var y=window.scrollY||document.documentElement.scrollTop;
     var h=document.documentElement.scrollHeight-window.innerHeight;
-    var on=(h>600)&&(y/h>0.22)&&!bandSeen;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
     bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
     /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
        ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
     document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";

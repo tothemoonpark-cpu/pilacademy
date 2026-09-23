@@ -235,4 +235,11 @@ img,svg,video,iframe,table{ max-width:100%; }
   .pil-quickbar a{font-size:0.8rem;padding:.5rem .7rem}
 }
 @media print{ .pil-quickbar{display:none!important} }
+/* ⛔⛔ 2026-09-23 겹침 수리 — 이 바가 오른쪽 아래 퀵바(.pil-quick · 강연 섭외/강연 영상/칼럼 보기)를 덮었다.
+   휴대폰: 퀵바가 하단 가로 바(760px 이하)라 두 줄이 포개졌다 → 퀵바가 있는 페이지는 이 바를 숨긴다
+          (퀵바에 「강연 섭외」가 이미 있다 — 같은 말을 두 번 하지 않는다).
+   PC: 퀵바가 오른쪽 아래 세로 버튼이라 「칼럼 보기」가 바 뒤로 들어갔다 → 바가 뜨면 퀵바를 바 높이만큼 올린다. */
+@media(max-width:760px){ body.has-pq .pil-quickbar{display:none!important} }
+.pil-quick{transition:bottom .25s ease}
+@media(min-width:761px){ body.pqbar-on .pil-quick{bottom:calc(var(--pqbar-h,0px) + 16px)} }
 /* [/PILBAR:AUTO] */

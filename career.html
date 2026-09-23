@@ -858,7 +858,7 @@
           <div class="why-card">
             <h3>대학만이 길은 아닙니다</h3>
             <p>동물보건사가 되는 길은 하나가 아닙니다.
-               평가인증을 받은 전문대학 이상의 동물 간호 관련 학과를 졸업하는 길이 있고(응시일부터 6개월 안에 졸업할 예정이면 시험을 볼 수 있습니다),
+               평가인증을 받은 전문대학 이상의 동물 간호 관련 학과를 졸업하는 길이 있습니다(응시일부터 6개월 안에 졸업할 예정이면 시험을 볼 수 있습니다).
                <b>고등학교를 졸업한 뒤</b> 평가인증을 받은 평생교육기관의 교육과정을 이수하고
                동물 간호 관련 업무에 1년 이상 종사해 시험을 보는 길도 있습니다.
                농림축산식품부장관이 인정하는 외국 면허나 자격으로도 응시할 수 있습니다.</p>
@@ -1175,11 +1175,16 @@
     new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
       .observe(band);
   }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
   function paint(){
     var y=window.scrollY||document.documentElement.scrollTop;
     var h=document.documentElement.scrollHeight-window.innerHeight;
-    var on=(h>600)&&(y/h>0.22)&&!bandSeen;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
     bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
     /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
        ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
     document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";

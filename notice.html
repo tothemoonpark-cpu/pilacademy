@@ -569,7 +569,7 @@
                 <div class="notice__top"><span class="badge mint">방송</span><span class="notice__date">2026.8~9</span></div>
                 <h2 class="notice__title">한국시니어TV 〈생각을 바꾸는 시간, S클래스〉 방송 출연</h2>
                 <div class="notice__body">
-                    <p>시니어 전문 방송 한국시니어TV 〈생각을 바꾸는 시간, S클래스〉 출연, 2주에 걸쳐 방영 1부 (151회) 2026.8.31 방영 · 100세 X AI 시대 - 직장인이 아니라 직업인으로, 평생 현역으로 2부 (152회) 2026.9.7 방영 · 누구나 작가가 될 수 있습니다 - 시니어를 위한 책쓰기</p>
+                    <p>시니어 전문 방송 한국시니어TV 〈생각을 바꾸는 시간, S클래스〉에 출연했고, 2주에 걸쳐 방영됐습니다. 1부(151회)는 2026.8.31에 방영됐습니다. 주제는 「100세 X AI 시대 - 직장인이 아니라 직업인으로, 평생 현역으로」입니다. 2부(152회)는 2026.9.7에 방영됐습니다. 주제는 「누구나 작가가 될 수 있습니다 - 시니어를 위한 책쓰기」입니다.</p>
                     <a href="https://blog.naver.com/tothemoon_park/224367737136" target="_blank" rel="noopener" class="inline-btn"><i data-lucide="external-link" aria-hidden="true"></i>관련 정보 보기</a>
                 </div>
             </article>
@@ -645,7 +645,7 @@
                 <div class="notice__top"><span class="badge line">대학</span><span class="notice__date">2026.9</span></div>
                 <h2 class="notice__title">전북대학교 수의과대학 '반려동물 한마당' 강연</h2>
                 <div class="notice__body">
-                    <p>전북대학교 수의과대학 제38대 학생회 '다온'이 주최하는 '반려동물 한마당' — 2026.9.19(토) 16:00~17:00, 「지금 함께하는 시간을 더 잘 사랑하는 법과 건강한 이별 준비」 (부제: 펫로스 치유 글쓰기 ) 강연. 대한수의사회·전북특별자치도수의사회·전북대학교 국립대학육성사업 등이 후원하는 행사로, 수의학도·교수 등 학교 관계자부터 반려인을 포함한 시민까지 참여했습니다. 수의사 전문지 데일리벳 이 행사 전후로 두 차례 보도했습니다. 현장 보도(2026.9.23)에 따르면 이날 행사에는 약 1,600명 이 참여했고, 박근필 수의사의 펫로스 강연이 특강으로 소개됐습니다.</p>
+                    <p>2026.9.19(토) 16:00~17:00, 전북대학교 수의과대학 제38대 학생회 '다온'이 주최한 '반려동물 한마당'에서 강연했습니다. 제목은 「지금 함께하는 시간을 더 잘 사랑하는 법과 건강한 이별 준비」, 부제는 펫로스 치유 글쓰기 입니다. 대한수의사회·전북특별자치도수의사회·전북대학교 국립대학육성사업 등이 후원하는 행사로, 수의학도·교수 등 학교 관계자부터 반려인을 포함한 시민까지 참여했습니다. 수의사 전문지 데일리벳 이 행사 전후로 두 차례 보도했습니다. 현장 보도(2026.9.23)에 따르면 이날 행사에는 약 1,600명 이 참여했고, 박근필 수의사의 펫로스 강연이 특강으로 소개됐습니다.</p>
                     <a href="https://youtu.be/qxMwZeOjdik" target="_blank" rel="noopener" class="inline-btn"><i data-lucide="external-link" aria-hidden="true"></i>강연 영상 보기 — 지금 함께하는 시간을 더 잘 사랑하는 법과 건강한 이별 준비</a>
                     <a href="https://www.dailyvet.co.kr/news/college/294005" target="_blank" rel="noopener" class="inline-btn"><i data-lucide="external-link" aria-hidden="true"></i>데일리벳 사전 보도 보기</a>
                     <a href="https://www.dailyvet.co.kr/news/college/298148" target="_blank" rel="noopener" class="inline-btn"><i data-lucide="external-link" aria-hidden="true"></i>데일리벳 현장 보도 보기 — 1,600여 명 참여</a>
@@ -793,11 +793,16 @@
     new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
       .observe(band);
   }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
   function paint(){
     var y=window.scrollY||document.documentElement.scrollTop;
     var h=document.documentElement.scrollHeight-window.innerHeight;
-    var on=(h>600)&&(y/h>0.22)&&!bandSeen;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
     bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
     /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
        ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
     document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
