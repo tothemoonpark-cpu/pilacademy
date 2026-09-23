@@ -107,6 +107,25 @@ body{
 .block .wrap td p + p, .block .wrap th p + p,
 .ct-block .wrap td p + p, .ct-block .wrap th p + p{ margin-top:0; }
 
+/* ⭐ 소제목 앞 빈 줄 — 2026-09-22 작가님 지시 「적어도 소제목마다 한 줄 정도 빈 간격」
+   실측: petloss.html 긴 글 구간 소제목(h3) 7곳이 앞 문단에 0px로 붙어 있었다(`* {margin:0}` 초기화 탓).
+   ⛔ 직계(>)만 건다 — 카드 안 라벨(P.kind·.pil-eyebrow·번호) 바로 아래 제목은 붙어 있는 게 맞다.
+   ⛔ 클래스 없는 p 만 — 라벨 p(.kind 등) 뒤 제목까지 벌어지지 않게. */
+.block .wrap > :is(p:not([class]),ul,ol,blockquote,table,figure) + :is(h3,h4),
+.ct-block .wrap > :is(p:not([class]),ul,ol,blockquote,table,figure) + :is(h3,h4){ margin-top:2.2rem; }
+.block .wrap > :is(h3,h4) + :is(p,ul,ol),
+.ct-block .wrap > :is(h3,h4) + :is(p,ul,ol){ margin-top:0.55em; }
+/* 목록 앞뒤 숨 — 문단과 목록이 0px로 붙어 있었다(petloss.html 12곳) */
+.block .wrap > p + :is(ul,ol),
+.ct-block .wrap > p + :is(ul,ol){ margin-top:0.6em; }
+.block .wrap > :is(ul,ol) + p,
+.ct-block .wrap > :is(ul,ol) + p{ margin-top:0.9em; }
+.block .wrap > :is(ul,ol) > li + li,
+.ct-block .wrap > :is(ul,ol) > li + li{ margin-top:0.3em; }
+/* 번호 목록은 항목마다 굵은 소제목+설명이라 한 칸 더 띄운다 */
+.block .wrap > ol > li + li,
+.ct-block .wrap > ol > li + li{ margin-top:0.8em; }
+
 /* ⭐ 섹션 영문 라벨 — 가장 싸고 효과가 큰 정돈 장치
    쓰는 법: <p class="pil-eyebrow">PET LOSS</p> 를 섹션 제목 바로 위에
    ⛔ 클래스를 두 번 쓴 이유(2026-08-31 라이브 실측) — 페이지 인라인 `.sec-head p`(0,1,1) 가
