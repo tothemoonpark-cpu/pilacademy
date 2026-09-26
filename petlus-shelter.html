@@ -28,11 +28,13 @@
         a { text-decoration: none; color: inherit; }
 
         header { background:#1f9d93; box-shadow:0 2px 12px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 1000; }
-        nav { max-width: 1080px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.5rem; }
+        nav { max-width: 1160px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.5rem; }
         .logo { display: flex; align-items: center; gap: 0.45rem; font-size:1.25rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; white-space: nowrap; }
         .logo svg { width: 22px; height: 22px; color: #ffffff; }
-        .nav-links { display: flex; gap: 1.4rem; list-style: none; align-items: center; flex-wrap: wrap; }
+        .nav-links { display: flex; gap: 1.2rem; list-style: none; align-items: center; flex-wrap: wrap; }
         .nav-links a { color: #ffffff; font-weight: 600; font-size:0.98rem; transition: opacity 0.2s; }
+        @media (max-width: 1180px) { .nav-links { gap: 0.8rem; } .nav-links a { font-size: 0.88rem; } }
+        @media (max-width: 1100px) { nav { padding: 0.85rem 1rem; } .nav-links { gap: 0.6rem; } .nav-links a { font-size: 0.84rem; } }
         .nav-links a:hover { opacity: 0.82; }
         .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
         .menu-toggle span { width: 24px; height: 2px; background: #ffffff; border-radius: 8px; }
@@ -454,7 +456,8 @@
                     <ul class="nav-sub">
                         <li><a href="lecture.html">전체 강연 안내</a></li>
                         <li class="nav-sep">수의사로서</li>
-                        <li><a href="petloss.html" aria-current="page">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petlus-shelter.html" aria-current="page">펫러스(PETLUS) 쉼터</a></li>
                         <li><a href="petcare.html">반려동물 강연</a></li>
                         <li class="nav-sep">작가 · 강연가로서</li>
                         <li><a href="career.html">진로·직업 특강</a></li>
@@ -466,6 +469,7 @@
                 </li>
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="vet-notes.html">반려동물 노트</a></li>
+                <li><a href="petlus-shelter.html" aria-current="page">펫러스(PETLUS) 쉼터</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="columns.html">칼럼</a></li>
                 <li><a href="videos.html">대표 영상</a></li>
@@ -590,12 +594,19 @@
                     <li>글마다 삭제 비밀번호를 정해 두면 나중에 직접 지울 수 있습니다.</li>
                 </ul>
                 <p class="sh-host">이 쉼터는 수의사이자 작가 박근필이 운영합니다. <a href="petloss.html">펫로스 치유 글쓰기 안내 보기</a></p>
+                <div class="hero-video">
+                    <video autoplay muted playsinline controls preload="metadata" poster="page-intro-petlus-shelter-260926.jpg">
+                        <source src="page-intro-petlus-shelter-260926.mp4" type="video/mp4">
+                        <a href="page-intro-petlus-shelter-260926.mp4">영상 내려받기</a>
+                    </video>
+                </div>
+                <p class="hero-vcap">26초 소개 영상 — 소리를 켜면 배경음악과 함께 보실 수 있습니다</p>
             </div>
         </section>
 
         <div class="sh-wrap">
             <div class="sh-help" role="note">
-                <b>마음이 많이 힘드신가요?</b> 혼자 견디지 마시고 지금 바로 이야기하세요.
+                <b>마음이 많이 힘드신가요?</b> 혼자 견디지 마시고 지금 바로 이야기하세요.<br>
                 자살예방상담전화 <a href="tel:109">109</a> · 정신건강위기상담 <a href="tel:15770199">1577-0199</a> (24시간)
             </div>
 
@@ -612,8 +623,8 @@
                     <button type="button" id="shTStory" aria-pressed="false">내 이야기 · 질문</button>
                 </div>
                 <div class="sh-row">
-                    <label>별명(선택)<input id="shNick" maxlength="16" placeholder="예: 콩이 보호자 · 비우면 「익명의 보호자」"></label>
-                    <label>아이 이름(선택)<input id="shPet" maxlength="16" placeholder="예: 콩이"></label>
+                    <label>닉네임(선택)<input id="shNick" name="sh-nick" maxlength="16" autocomplete="off" data-1p-ignore data-lpignore="true" placeholder="예: 콩이 보호자 · 비우면 「익명의 보호자」"></label>
+                    <label>아이 이름(선택)<input id="shPet" name="sh-pet" maxlength="16" autocomplete="off" data-1p-ignore data-lpignore="true" placeholder="예: 콩이"></label>
                     <label>아이는(선택)<select id="shKind"><option value="">선택 안 함</option><option>강아지</option><option>고양이</option><option>그 밖의 동물</option></select></label>
                 </div>
                 <textarea id="shBody" maxlength="3000" rows="7" placeholder="내 아이에게 하고 싶은 말을 적어 보세요. 무엇을 써야 할지 모르겠다면 지금 마음을 한 단어로 적어도 됩니다."></textarea>
@@ -640,7 +651,7 @@
                 <div id="shList" aria-live="polite"><p class="sh-hint">글을 불러오는 중…</p></div>
                 <button type="button" class="sh-btn" id="shMore" hidden>이전 글 더 보기</button>
             </section>
-            <p class="sh-foot">글쓰기에는 로봇을 막기 위한 Cloudflare 확인이 함께 쓰입니다. 쉼터는 글·별명·작성 시각과, 도배를 막기 위해 알아볼 수 없게 바꾼 접속 기록만 저장합니다. 지우고 싶은 글은 삭제 비밀번호로 직접 지우거나 <a href="mailto:tothemoon_park@naver.com">tothemoon_park@naver.com</a>으로 알려 주세요.
+            <p class="sh-foot">글쓰기에는 로봇을 막기 위한 Cloudflare 확인이 함께 쓰입니다. 쉼터는 글·닉네임·작성 시각과, 도배를 막기 위해 알아볼 수 없게 바꾼 접속 기록만 저장합니다. 지우고 싶은 글은 삭제 비밀번호로 직접 지우거나 <a href="mailto:tothemoon_park@naver.com">tothemoon_park@naver.com</a>으로 알려 주세요.
                 <button type="button" class="sh-link sh-adminbtn" id="shAdminOpen">관리자</button></p>
         </div>
     </main>
@@ -880,14 +891,13 @@ document.addEventListener('DOMContentLoaded',function(){
   async function hide(type,id,h,postId){ await api("/api/admin/hide",{body:{type,id,hidden:h}}); if(type==="post") await load(true); else await loadCmts(postId); loadReports(); }
 
   function inlineForm(postId,parentId){ const f=el("div","sh-inline"); const ta=el("textarea"); ta.maxLength=1000; ta.rows=3; ta.placeholder=parentId?"답글을 적어 주세요":"따뜻한 댓글을 남겨 주세요";
-    const row=el("div","sh-row"); const nick=el("input"); nick.maxLength=16; nick.placeholder="별명(선택) · 비우면 「익명」"; const pw=el("input"); pw.type="password"; pw.maxLength=32; pw.placeholder="삭제 비밀번호(4자 이상)"; pw.autocomplete="new-password"; row.append(nick,pw);
-    const cl=el("label","sh-consent mini"); const cb=el("input"); cb.type="checkbox"; cl.append(cb,el("span",null,"강연·글에 이름 없이 소개되어도 괜찮아요 (선택)"));
+    const row=el("div","sh-row"); const nick=el("input"); nick.maxLength=16; nick.autocomplete="off"; nick.name="sh-cnick"; nick.placeholder="닉네임(선택) · 비우면 「익명」"; const pw=el("input"); pw.type="password"; pw.maxLength=32; pw.placeholder="삭제 비밀번호(4자 이상)"; pw.autocomplete="new-password"; row.append(nick,pw);
     const note=el("div"); const e=el("div","sh-err"); ta.oninput=()=>{note.innerHTML=""; const c=check(ta.value); if(c.crisis) note.append(crisisBox()); if(c.blocked.length) note.append(el("div","sh-warn",[...new Set(c.blocked)].join("·")+"으로 보이는 부분은 빼 주세요."));};
     const ok=btn("올리기","sh-primary",async()=>{ e.textContent=""; const t=ta.value.trim(); if(!t){e.textContent="내용을 적어 주세요.";return;} if(check(t+" "+nick.value).blocked.length){e.textContent="병원·수의사 이름이나 연락처를 빼 주세요.";return;} if(pw.value.length<4){e.textContent="삭제 비밀번호를 4자 이상 정해 주세요.";return;}
       const token=tsGet(); if(!isAdmin&&!token){e.textContent="잠시 뒤 다시 눌러 주세요. (로봇 확인이 끝나지 않았습니다)";return;}
-      ok.disabled=true; try{ await api("/api/posts/"+postId+"/comments",{body:{body:t,nick:nick.value,password:pw.value,parentId:parentId||null,consent:cb.checked,token}}); ui={}; toast(parentId?"답글을 달았습니다":"댓글을 달았습니다"); await loadCmts(postId); const p=posts.find(x=>x.id===postId); if(p) p.comments++; }catch(x){e.textContent=x.message; ok.disabled=false;} });
+      ok.disabled=true; try{ await api("/api/posts/"+postId+"/comments",{body:{body:t,nick:nick.value,password:pw.value,parentId:parentId||null,consent:false,token}}); ui={}; toast(parentId?"답글을 달았습니다":"댓글을 달았습니다"); await loadCmts(postId); const p=posts.find(x=>x.id===postId); if(p) p.comments++; }catch(x){e.textContent=x.message; ok.disabled=false;} });
     const act=el("div","sh-row"); act.append(ok,btn("취소","",()=>{ui={};render();}));
-    f.append(ta,note,row,cl,act,e); return f; }
+    f.append(ta,note,row,act,e); return f; }
 
   function renderCmt(p,c,reply){ const b=el("div","sh-cmt"+(reply?" reply":"")); const m=el("div","sh-meta"); m.append(el("span","sh-who",c.nick)); if(c.byHost) m.append(el("span","sh-hostbadge","수의사 · 작가 박근필")); if(isAdmin&&c.consent) m.append(el("span","sh-ok","소개 허락")); if(c.hidden) m.append(el("span",null,"숨김 처리됨")); m.append(el("span",null,when(c.createdAt))); b.append(m);
     if(c.hidden&&!isAdmin){ b.append(el("p","sh-hint","관리자가 숨긴 글입니다.")); return b; }
