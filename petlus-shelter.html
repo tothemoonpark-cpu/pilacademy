@@ -8,7 +8,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="펫러스(PETLUS) 쉼터 - 반려동물을 떠나보낸 분들의 편지와 이야기">
     <meta property="og:description" content="이름을 밝히지 않아도 됩니다. 내 아이에게 쓰는 편지도, 「요즘 이런데 다들 그러셨나요?」 하고 묻는 글도 괜찮습니다.">
-    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-260925.png">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-260926b.png">
     <meta property="og:locale" content="ko_KR">
     <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/petlus-shelter.html">
     <meta property="og:site_name" content="박근필성장연구소">
@@ -745,79 +745,6 @@
 })();
 </script>
 <!-- [/QUICKBAR:AUTO] -->
-<script>
-/* [SEARCH:AUTO] 사이트 내 검색 */
-var __ssIndex=null,__ssLoading=false;
-function openSiteSearch(){
-  var l=document.getElementById('siteSearchLayer'); if(!l)return;
-  l.classList.add('on'); document.body.style.overflow='hidden';
-  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
-  loadSiteIndex();
-}
-function closeSiteSearch(){
-  var l=document.getElementById('siteSearchLayer'); if(!l)return;
-  l.classList.remove('on'); document.body.style.overflow='';
-}
-function loadSiteIndex(){
-  if(__ssIndex||__ssLoading)return; __ssLoading=true;
-  fetch('search-index.json').then(function(r){return r.json();})
-    .then(function(d){__ssIndex=d;__ssLoading=false;
-      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
-    .catch(function(){__ssLoading=false;
-      var b=document.getElementById('siteSearchResults');
-      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
-}
-function quickSiteSearch(w){
-  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
-}
-function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-function __ssSnippet(text,q){
-  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
-  if(i<0)return '';
-  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
-  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
-  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
-  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
-}
-function runSiteSearch(q){
-  var box=document.getElementById('siteSearchResults'); if(!box)return;
-  q=(q||'').trim();
-  if(q.length<2){box.innerHTML='';return;}
-  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
-  var lq=q.toLowerCase(),out=[];
-  __ssIndex.forEach(function(d){
-    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
-    var n=hay.split(lq).length-1;
-    if(n>0){
-      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
-      out.push({d:d,sc:sc});
-    }
-  });
-  if(!out.length){
-    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
-  out.sort(function(a,b){return b.sc-a.sc;});
-  box.innerHTML=out.slice(0,40).map(function(o){
-    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
-    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
-      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
-      +'<div class="ssr-s">'+sn+'</div></a>';
-  }).join('');
-}
-document.addEventListener('DOMContentLoaded',function(){
-  var i=document.getElementById('siteSearchInput');
-  if(i){
-    var tm=null;
-    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
-  }
-  var l=document.getElementById('siteSearchLayer');
-  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
-  document.addEventListener('keydown',function(e){
-    if(e.key==='Escape')closeSiteSearch();
-    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
-  });
-});
-/* [/SEARCH:AUTO] */
-</script>
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
 <script>
@@ -946,5 +873,78 @@ document.addEventListener('DOMContentLoaded',function(){
 })();
 </script>
 
+<script>
+/* [SEARCH:AUTO] 사이트 내 검색 */
+var __ssIndex=null,__ssLoading=false;
+function openSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.add('on'); document.body.style.overflow='hidden';
+  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
+  loadSiteIndex();
+}
+function closeSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.remove('on'); document.body.style.overflow='';
+}
+function loadSiteIndex(){
+  if(__ssIndex||__ssLoading)return; __ssLoading=true;
+  fetch('search-index.json').then(function(r){return r.json();})
+    .then(function(d){__ssIndex=d;__ssLoading=false;
+      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
+    .catch(function(){__ssLoading=false;
+      var b=document.getElementById('siteSearchResults');
+      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
+}
+function quickSiteSearch(w){
+  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
+}
+function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function __ssSnippet(text,q){
+  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
+  if(i<0)return '';
+  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
+  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
+}
+function runSiteSearch(q){
+  var box=document.getElementById('siteSearchResults'); if(!box)return;
+  q=(q||'').trim();
+  if(q.length<2){box.innerHTML='';return;}
+  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
+  var lq=q.toLowerCase(),out=[];
+  __ssIndex.forEach(function(d){
+    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
+    var n=hay.split(lq).length-1;
+    if(n>0){
+      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      out.push({d:d,sc:sc});
+    }
+  });
+  if(!out.length){
+    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
+  out.sort(function(a,b){return b.sc-a.sc;});
+  box.innerHTML=out.slice(0,40).map(function(o){
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
+      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
+      +'<div class="ssr-s">'+sn+'</div></a>';
+  }).join('');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var i=document.getElementById('siteSearchInput');
+  if(i){
+    var tm=null;
+    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
+  }
+  var l=document.getElementById('siteSearchLayer');
+  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeSiteSearch();
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
+  });
+});
+/* [/SEARCH:AUTO] */
+</script>
 </body>
 </html>
