@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>펫러스(PETLUS) 쉼터 · 반려동물을 떠나보낸 분들의 편지와 이야기 - 박근필성장연구소</title>
+    <meta name="description" content="반려동물을 떠나보낸 분들이 이름을 밝히지 않고 내 아이에게 쓰는 편지와 요즘 마음을 남기고, 서로 댓글과 답글로 마음을 나누는 곳. 수의사이자 작가 박근필이 운영하는 펫러스(PETLUS) 쉼터입니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="펫러스(PETLUS) 쉼터 - 반려동물을 떠나보낸 분들의 편지와 이야기">
+    <meta property="og:description" content="이름을 밝히지 않아도 됩니다. 내 아이에게 쓰는 편지도, 「요즘 이런데 다들 그러셨나요?」 하고 묻는 글도 괜찮습니다.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-260925.png">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/petlus-shelter.html">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/petlus-shelter.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="stats.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --ink: #16181d; --sub: #5b6066; --mint: #2bb7ac; --mint-dark: #1f9d93;
+            --mint-soft: #eef8f6; --line: #ececec; --page: #ffffff; --panel: #f7f9f9;
+        }
+        body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.65; color: var(--ink); background: var(--page); -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+
+        header { background:#1f9d93; box-shadow:0 2px 12px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1080px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.5rem; }
+        .logo { display: flex; align-items: center; gap: 0.45rem; font-size:1.25rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; white-space: nowrap; }
+        .logo svg { width: 22px; height: 22px; color: #ffffff; }
+        .nav-links { display: flex; gap: 1.4rem; list-style: none; align-items: center; flex-wrap: wrap; }
+        .nav-links a { color: #ffffff; font-weight: 600; font-size:0.98rem; transition: opacity 0.2s; }
+        .nav-links a:hover { opacity: 0.82; }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+        .menu-toggle span { width: 24px; height: 2px; background: #ffffff; border-radius: 8px; }
+
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+        /* ⭐ 2026-09-07 — 2026-09-06 에 마크업만 넣고 정의를 안 만든 클래스. 클래스_정의검사가 잡았다.
+           한글은 한 줄에 20자는 들어가야 읽히고, 긴 설명 블록은 좁혀야 읽힌다(칸폭_가독성검사 조항). */
+        .wrap.narrow { max-width: 760px; }
+        /* ⭐ 2026-09-07 모바일 점검 — 4주 흐름도가 가로 스크롤인데 그 표시가 없었다.
+           밀 수 있다는 것을 모르면 그 그림은 반만 보이고 끝난다. 데스크톱에서는 안 보인다. */
+        .swipe-hint { display: none; }
+        @media (max-width: 700px) {
+            .swipe-hint { display: block; font-size: 0.85rem; color: var(--mint-dark);
+                          margin: 1.4rem 0 0; letter-spacing: 0.01em; }
+        }
+
+        /* Hero */
+        .lec-hero { background: linear-gradient(160deg, #eef8f6 0%, #ffffff 70%); padding: 3.4rem 0 3rem; border-bottom: 1px solid var(--line); }
+        .lec-hero .eyebrow { display:inline-block; font-size:0.8rem; font-weight: 600; color: var(--mint-dark); background: #fff; border:1px solid #d7eeeb; padding: 0.35rem 0.9rem; border-radius: 999px; margin-bottom: 1.1rem; }
+        .lec-hero h1 { font-size:2.2rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.32; margin-bottom: 1rem; }
+        .lec-hero h1 .accent { color: var(--mint); }
+        .lec-hero .lead { font-size:0.98rem; color: var(--sub); max-width: 720px; }
+        .stat-row { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.8rem; }
+        .stat-chip { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0.75rem 1.15rem; }
+        .stat-chip b { display:block; font-size:1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+        .stat-chip > span { font-size:0.8rem; color: var(--sub); }
+        .hero-cta { display: flex; gap: 0.7rem; margin-top: 1.8rem; flex-wrap: wrap; }
+        .btn-primary { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--mint); color: #fff; font-weight: 700; font-size:0.98rem; padding: 0.85rem 1.7rem; border-radius: 14px; transition: background 0.2s, transform 0.2s; }
+        .btn-primary:hover { background: var(--mint-dark); transform: translateY(-2px); }
+        .btn-ghost { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--ink); border: 1px solid var(--line); background:#fff; font-weight: 500; font-size:0.98rem; padding: 0.85rem 1.5rem; border-radius: 14px; transition: border-color 0.2s; }
+        .btn-ghost:hover { border-color: var(--mint); color: var(--mint-dark); }
+        .btn-primary svg, .btn-ghost svg { width: 17px; height: 17px; }
+
+        .hero-video { margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); background:#000; line-height:0; }
+        .hero-video video { width: 100%; height: auto; display: block; }
+        .hero-vcap { margin-top: 0.7rem; font-size:0.88rem; color: var(--sub); text-align: center; }
+
+        .hero-shot { position: relative; margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); max-height: 420px; }
+        .hero-shot img { width: 100%; height: 100%; max-height: 420px; object-fit: cover; object-position: center 42%; display: block; }
+        .hero-shot span { position: absolute; left: 0; right: 0; bottom: 0; padding: 1rem 1.2rem; font-size:0.88rem; font-weight: 600; color: #fff;
+                          background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%); }
+
+        .faq-list { display:grid; gap:0.9rem; }
+        .faq-item { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.4rem 1.5rem; }
+        .faq-item h3 { font-size:0.98rem; font-weight:700; margin-bottom:0.5rem; letter-spacing:-0.01em; }
+        .faq-item h3::before { content:"Q. "; color:var(--mint-dark); font-weight:700; }
+        .faq-item p { font-size:0.98rem; color:var(--sub); line-height:1.75; }
+        section.block { padding: 3.2rem 0; }
+        section.block.alt { background: var(--panel); }
+        .sec-head { margin-bottom: 1.9rem; }
+        .sec-head h2 { font-size:1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+        .sec-head p { font-size:0.98rem; color: var(--sub); }
+
+        /* 왜 박근필인가 */
+        .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+        .why-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.6rem 1.4rem; }
+        .why-card .ic { width: 42px; height: 42px; border-radius: 14px; background: var(--mint-soft); color: var(--mint-dark); display:flex; align-items:center; justify-content:center; margin-bottom: 0.9rem; }
+        .why-card .ic svg { width: 21px; height: 21px; }
+        .why-card h3 { font-size:0.98rem; font-weight: 700; margin-bottom: 0.45rem; letter-spacing:-0.01em; }
+        .why-card p { font-size:0.88rem; color: var(--sub); line-height: 1.62; }
+
+        /* 다시 부르는 강연 */
+        .again-lead { font-size: 0.98rem; color: var(--ink); line-height: 1.8; background:#fff; border-left: 4px solid var(--mint); border-radius: 0 14px 14px 0; padding: 1.2rem 1.4rem; margin-bottom: 1.4rem; }
+        .again-quote { display:inline-block; margin-top: 0.7rem; font-weight: 700; color: var(--mint-dark); font-size: 0.98rem; }
+        .again-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 1.1rem; }
+        .again-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.6rem 1.4rem; }
+        .again-num { display:inline-block; font-size:1.6rem; font-weight: 700; color: var(--mint-dark); letter-spacing: -0.02em; background: var(--mint-soft); padding: 0.3rem 0.9rem; border-radius: 14px; margin-bottom: 0.9rem; }
+        .again-card h3 { font-size:0.98rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.01em; line-height: 1.45; }
+        .again-card p { font-size:0.88rem; color: var(--sub); line-height: 1.65; }
+        .again-note { margin-top: 1.3rem; font-size:0.88rem; color: var(--sub); line-height: 1.7; text-align: center; }
+
+        /* 섭외 담당자 후기 */
+        .host-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr)); gap: 1.1rem; }
+        .host-card { margin: 0; background: #fff; border: 1px solid #d7eeeb; border-top: 4px solid var(--mint); border-radius: 14px; padding: 1.4rem 1.4rem 1.1rem; display: flex; flex-direction: column; }
+        .host-card p { font-size: 0.98rem; color: var(--ink); line-height: 1.75; margin: 0 0 0.9rem; flex-grow: 1; }
+        .host-card cite { font-style: normal; font-size:0.8rem; font-weight: 700; color: var(--mint-dark); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
+
+        /* 수강생 후기 */
+        .rv-grid { columns: 3; column-gap: 1.1rem; }
+        .rv-card { break-inside: avoid; margin: 0 0 1.1rem; background:#fff; border:1px solid var(--line); border-left: 4px solid var(--mint); border-radius: 0 14px 14px 0; padding: 1.3rem 1.35rem; position: relative; }
+        .rv-card::before { content:'“'; position:absolute; top:0.1rem; right:0.9rem; font-size:2.2rem; line-height:1; color:var(--mint-soft); font-weight:700; }
+        .rv-card p { font-size:0.98rem; color: var(--ink); line-height: 1.75; margin:0; position: relative; z-index:1; }
+        .rv-note { margin-top: 0.6rem; font-size:0.8rem; color: var(--sub); text-align:center; }
+        @media (max-width: 1000px) { .rv-grid { columns: 2; } }
+        @media (max-width: 680px) { .rv-grid { columns: 1; } }
+
+        /* 주제 라인업 */
+        .topic-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+        .topic-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.5rem 1.45rem; border-top: 4px solid var(--mint); }
+        .topic-card .tag { display:inline-block; font-size: 0.8rem; font-weight: 700; color: var(--mint-dark); background: var(--mint-soft); padding: 0.22rem 0.62rem; border-radius: 14px; margin-bottom: 0.75rem; }
+        .topic-card h3 { font-size:0.98rem; font-weight: 700; margin-bottom: 0.7rem; }
+        .topic-card ul { list-style: none; }
+        .topic-card li { font-size:0.98rem; color: var(--sub); padding: 0.32rem 0 0.32rem 1rem; position: relative; line-height: 1.55; }
+        .topic-card li::before { content: ''; position: absolute; left: 0; top: 0.78rem; width: 5px; height: 5px; border-radius: 50%; background: var(--mint); }
+        .topic-card .note { margin-top: 0.8rem; font-size:0.8rem; color: var(--sub); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
+
+        /* 실적 */
+        .proof-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        .proof-card { background:#fff; border:1px solid var(--line); border-radius: 14px; padding: 1.3rem 1.4rem; }
+        .proof-card .lab { font-size: 0.8rem; font-weight: 700; color: var(--mint-dark); background: var(--mint-soft); display:inline-block; padding: 0.2rem 0.58rem; border-radius: 14px; margin-bottom: 0.6rem; }
+        .proof-card .ttl { font-size:0.98rem; font-weight: 700; line-height: 1.5; margin-bottom: 0.3rem; }
+        .proof-card .dsc { font-size:0.88rem; color: var(--sub); line-height: 1.55; }
+        .proof-card a { color: var(--mint-dark); font-weight: 600; font-size: 0.88rem; }
+
+        /* 강연 현장 사진 */
+        .ph-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 1rem; }
+        .ph-item { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: var(--panel); aspect-ratio: 4/3; }
+        .ph-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+        .ph-item:hover img { transform: scale(1.04); }
+        .ph-cap { position:absolute; left:0; right:0; bottom:0; padding:0.75rem 0.9rem; font-size:0.88rem; font-weight:600; color:#fff;
+                  background:linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.72) 100%); }
+
+        /* 영상 */
+        .vid-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+        .vid-card { border-radius: 14px; overflow: hidden; border:1px solid var(--line); background:#fff; }
+        .vid-frame { position: relative; padding-bottom: 56.25%; height: 0; }
+        .vid-frame iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+        .vid-card .cap { padding: 0.85rem 1rem; font-size:0.88rem; font-weight: 600; line-height:1.5; }
+
+        /* 진행 안내 */
+        .info-table { width: 100%; border-collapse: collapse; background:#fff; border:1px solid var(--line); border-radius: 14px; overflow: hidden; }
+        .info-table th, .info-table td { padding: 0.95rem 1.15rem; text-align: left; font-size:0.98rem; border-bottom: 1px solid var(--line); }
+        .info-table th { width: 170px; background: var(--panel); font-weight: 700; color: var(--ink); }
+        .info-table td { color: var(--sub); }
+        .info-table tr:last-child th, .info-table tr:last-child td { border-bottom: none; }
+
+        /* CTA */
+        .cta-box { background: linear-gradient(135deg, #2bb7ac 0%, #1f9d93 100%); border-radius: 14px; padding: 2.6rem 2rem; text-align: center; color:#fff; }
+        .cta-box h2 { font-size:1.6rem; font-weight: 700; margin-bottom: 0.7rem; letter-spacing:-0.02em; }
+        .cta-box p { font-size:0.98rem; opacity: 0.94; margin-bottom: 1.5rem; line-height:1.7; }
+        .cta-box .btn-white { display:inline-flex; align-items:center; gap:0.45rem; background:#fff; color: var(--mint-dark); font-weight:700; font-size:0.98rem; padding:0.9rem 1.9rem; border-radius:14px; transition: transform 0.2s; }
+        .cta-box .btn-white:hover { transform: translateY(-2px); }
+        .cta-box .btn-white svg { width:17px; height:17px; }
+        .cta-sub { margin-top: 1.1rem; font-size: 0.88rem; opacity: 0.9; }
+        .cta-sub a { color:#fff; text-decoration: underline; }
+
+        footer { background: #14161a; color: #fff; text-align: center; padding: 2.4rem 1.5rem; margin-top: 3rem; }
+        .footer-sns { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .footer-sns a { color: rgba(255,255,255,0.85); font-size:0.98rem; transition: color 0.2s; }
+        .footer-sns a:hover { color: var(--mint); }
+        .footer-copy { font-size:0.88rem; color: rgba(255,255,255,0.5); line-height: 1.8; }
+
+        @media (max-width: 900px) {
+            .why-grid, .vid-grid { grid-template-columns: 1fr; }
+            .topic-grid, .proof-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 560px) {
+            .lec-hero { padding: 2.4rem 0 2.2rem; }
+            .lec-hero h1 { font-size:1.6rem; }
+            .lec-hero .lead { font-size:0.98rem; }
+            .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+            .stat-chip { padding: 0.65rem 0.8rem; }
+            .stat-chip b { font-size:1.25rem; }
+            .stat-chip > span { font-size: 0.8rem; }
+            .hero-cta a { flex: 1 1 100%; justify-content: center; }
+            .hero-shot { max-height: 240px; }
+            .hero-shot img { max-height: 240px; }
+            .again-lead { font-size:0.98rem; padding: 1rem 1.1rem; }
+            .again-quote { font-size:0.98rem; }
+            section.block { padding: 2.4rem 0; }
+            .sec-head h2 { font-size:1.25rem; }
+            .cta-box { padding: 2rem 1.2rem; }
+            .cta-box h2 { font-size:1.25rem; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .menu-toggle { display: flex; }
+            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; right: 1.5rem; background: #2bb7ac; border-radius: 14px; padding: 1rem 1.3rem; gap: 0.9rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+            .lec-hero h1 { font-size:1.6rem; }
+            .info-table th { width: 110px; font-size: 0.88rem; }
+        }
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
+       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
+       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
+       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:0.8rem;font-weight:800;color:#1f9d93;
+    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
+    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
+    /* [/NAVSEP:AUTO] */
+        
+      /* [2026-08-26] 강연 사진 그리드 — 온담 벤치마킹.
+         ⛔ 이 페이지들은 사진이 0장이었다(실측). 텍스트를 줄이지 않고 숨통을 틔운다. */
+      .ph-band{background:var(--panel,#f7f8f9);padding:2.6rem 1.5rem;}
+      .ph-inner{max-width:1032px;margin:0 auto;}
+      .ph-head{text-align:center;margin-bottom:1.4rem;}
+      .ph-head b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;color:var(--ink,#16181d);}
+      .ph-head span{display:block;font-size:0.88rem;color:var(--sub,#5b6066);margin-top:0.35rem;}
+      .ph-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.9rem;}
+      .ph-cell{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,0.07);}
+      .ph-cell img{width:100%;height:186px;object-fit:cover;display:block;}
+      .ph-cell figcaption{font-size:0.8rem;color:var(--sub,#5b6066);padding:0.6rem 0.75rem;line-height:1.5;}
+      @media(max-width:820px){.ph-grid{grid-template-columns:repeat(2,1fr);}.ph-cell img{height:150px;}}
+      @media(max-width:520px){.ph-grid{grid-template-columns:1fr;}.ph-cell img{height:200px;}}
+
+        /* [2026-08-26] 고정 퀵바 — 온담 벤치마킹 OD-8
+           ⭐ 온담은 전 페이지에 「문의하기·강사영상·칼럼보기」 3버튼을 고정 노출한다.
+              하단 CTA 밴드까지 못 내려간 방문자를 잡는 장치다.
+           ⛔ 3개만 둔다(전역지침 「한 화면에 강조 3개」). 모바일에서는 하단 가로 바로 바뀐다. */
+        .pil-quick{position:fixed;right:14px;bottom:22px;z-index:900;display:flex;flex-direction:column;gap:8px;}
+        .pil-quick a{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line,#ececec);
+          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.8rem;font-weight:600;color:var(--ink,#16181d);
+          text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.11);white-space:nowrap;transition:transform .15s;}
+        .pil-quick a:hover{transform:translateY(-2px);}
+        .pil-quick a.hi{background:var(--mint,#2bb7ac);color:#fff;border-color:var(--mint,#2bb7ac);}
+        .pil-quick svg{width:15px;height:15px;flex:0 0 auto;}
+        @media(max-width:760px){
+          .pil-quick{right:0;left:0;bottom:0;flex-direction:row;gap:0;border-top:1px solid var(--line,#ececec);
+            background:#fff;padding:0.45rem 0.5rem calc(0.45rem + env(safe-area-inset-bottom));}
+          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:14px;font-size:0.8rem;padding:0.55rem 0.3rem;}
+          .pil-quick a.hi{border-radius:14px;}
+        }
+
+/* [SEARCH:AUTO] 사이트 내 검색 */
+.site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
+.site-search-btn:hover{background:rgba(255,255,255,.3)}
+.site-search-layer{position:fixed;inset:0;background:rgba(22,24,29,.5);backdrop-filter:blur(3px);
+  z-index:3000;display:none;padding:8vh 1rem 2rem}
+.site-search-layer.on{display:block}
+.site-search-box{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.site-search-bar{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid #ececec;color:#5b6066}
+.site-search-bar input{flex:1;border:0;outline:0;font-size:1.02rem;font-family:inherit;color:#16181d;background:transparent}
+.site-search-close{background:none;border:0;font-size:1.7rem;line-height:1;color:#9aa0a6;cursor:pointer;padding:0 .2rem}
+.site-search-hint{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;padding:.85rem 1.2rem;border-bottom:1px solid #f2f2f2}
+.site-search-hint span{font-size:0.79rem;color:#9aa0a6;margin-right:.2rem}
+.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:0.85rem;font-weight:600;
+  padding:.32rem .7rem;border-radius:999px;cursor:pointer;font-family:inherit}
+.site-search-hint button:hover{background:#2bb7ac;color:#fff}
+.site-search-results{max-height:56vh;overflow-y:auto;padding:.4rem 0}
+.ssr-item{display:block;padding:.9rem 1.2rem;border-bottom:1px solid #f4f4f4;color:inherit}
+.ssr-item:hover{background:#f7f9f9}
+.ssr-item:last-child{border-bottom:0}
+.ssr-t{font-weight:700;font-size:0.94rem;color:#16181d;margin-bottom:.2rem}
+.ssr-k{font-size:0.72rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
+.ssr-s{font-size:0.85rem;color:#5b6066;line-height:1.55}
+.ssr-s mark{background:#fff1a8;color:inherit;padding:0 .1em;border-radius:2px}
+.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
+@media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
+/* [/SEARCH:AUTO] */
+
+        </style>
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:14px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  header .nav-links .nav-sub a,
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.98rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  header .nav-links .nav-sub a:hover,
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    header .nav-links .nav-sub a,
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.88rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+        /* [2026-09-21] 펫로스 증후군(펫로스 신드롬) vs 지속성 애도 장애 비교표 */
+        .pgd-wrap{overflow-x:auto;margin:1rem 0 1.2rem;}
+        .pgd-tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line,#e3e6ea);border-radius:12px;overflow:hidden;font-size:.95rem;}
+        .pgd-tbl th,.pgd-tbl td{padding:.75rem .9rem;text-align:left;vertical-align:top;line-height:1.65;border-bottom:1px solid var(--line,#e3e6ea);}
+        .pgd-tbl thead th{background:rgba(31,157,147,.08);font-weight:700;}
+        .pgd-tbl tbody th{font-weight:700;width:4.2em;}
+        @media (max-width:560px){.pgd-tbl{font-size:.84rem;}.pgd-tbl th,.pgd-tbl td{padding:.55rem .5rem;}}
+    </style>
+  <link rel="stylesheet" href="pil.css">
+
+<style id="shelter">
+  .sh-meaning{margin:.2rem 0 .9rem;color:#4b6b67;font-size:.95rem}.sh-meaning b{color:#1f8f86}
+  .sh-lead{color:#3d4247;line-height:1.85;max-width:44rem;margin-bottom:1rem}
+  .sh-rules{margin:0 0 .8rem 1.1rem;color:#5b6066;font-size:.92rem;line-height:1.8}
+  .sh-host{font-size:.9rem;color:#5b6066}.sh-host a{color:#1f8f86;font-weight:600}
+  .sh-wrap{max-width:760px;margin:0 auto;padding:2rem 20px 3.5rem;display:flex;flex-direction:column;gap:1.6rem}
+  .sh-wrap h2{font-size:1.2rem;margin:0}
+  .sh-help{background:#fff7f2;border:1px solid #f5d6c4;border-radius:14px;padding:14px 18px;font-size:.92rem;line-height:1.7;color:#6b3f24}.sh-help a{color:#b4491c;font-weight:700}
+  .sh-compose,.sh-admin{background:#fff;border:1px solid #e6eae9;border-radius:20px;padding:24px 22px;display:flex;flex-direction:column;gap:14px;box-shadow:0 6px 24px rgba(20,60,55,.05)}
+  .sh-admin{border-color:#2bb7ac}.sh-admin small{font-size:.75rem;color:#8a9096;font-weight:500;margin-left:6px}
+  .sh-seg{display:flex;gap:8px;flex-wrap:wrap}
+  .sh-seg button{border:1px solid #d3dad8;background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:#3d4247}
+  .sh-seg button[aria-pressed="true"]{background:#1f8f86;border-color:#1f8f86;color:#fff;font-weight:600}
+  .sh-row{display:flex;gap:10px;flex-wrap:wrap}.sh-row label{flex:1 1 180px;display:flex;flex-direction:column;gap:6px;font-size:.85rem;color:#5b6066}
+  .sh-row input,.sh-row select,.sh-compose textarea,.sh-inline textarea,.sh-inline input{font:inherit;font-size:.95rem;border:1px solid #d3dad8;border-radius:10px;padding:10px 12px;background:#fafbfb;color:#16181d;width:100%;box-sizing:border-box}
+  .sh-compose textarea,.sh-inline textarea{resize:vertical;line-height:1.7;min-height:8em}
+  .sh-end{align-items:flex-end}.sh-send{display:flex;gap:10px;align-items:center;flex:0 0 auto}
+  .sh-consent{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border:1px solid #e6eae9;border-radius:12px;background:#f2f7f6;font-size:.9rem;line-height:1.55;cursor:pointer}
+  .sh-consent input{width:18px;height:18px;margin-top:2px;flex:0 0 auto;accent-color:#1f8f86}.sh-consent small{display:block;color:#5b6066;font-size:.8rem;margin-top:3px}
+  .sh-consent.mini{padding:8px 10px;font-size:.85rem}
+  .sh-btn{font:inherit;font-size:.92rem;border:1px solid #d3dad8;background:#fff;border-radius:999px;padding:9px 18px;cursor:pointer;color:#16181d}
+  .sh-primary{background:#1f8f86;border-color:#1f8f86;color:#fff;font-weight:700}.sh-primary:disabled{opacity:.5;cursor:default}
+  .sh-link{background:none;border:none;padding:4px 6px;color:#1f8f86;font:inherit;font-size:.85rem;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+  .sh-hint{color:#8a9096;font-size:.85rem}.sh-err{color:#c0392b;font-size:.88rem;min-height:1.2em}
+  .sh-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .sh-post{background:#fff;border:1px solid #e6eae9;border-radius:16px;padding:20px;margin-bottom:14px}
+  .sh-post.hid{opacity:.6;border-style:dashed}
+  .sh-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:.8rem;color:#8a9096;margin-bottom:10px}
+  .sh-type{background:#eef8f6;color:#1f8f86;border-radius:999px;padding:2px 10px;font-weight:600}
+  .sh-who{color:#16181d;font-weight:700;font-size:.88rem}
+  .sh-hostbadge{background:#1f8f86;color:#fff;border-radius:999px;padding:2px 9px;font-weight:600}
+  .sh-ok{background:#f5a623;color:#fff;border-radius:999px;padding:1px 8px;font-weight:600}
+  .sh-body{white-space:pre-wrap;line-height:1.85;color:#16181d;margin:0}
+  .sh-acts{display:flex;flex-wrap:wrap;gap:2px;margin-top:8px}
+  .sh-cmts{border-top:1px solid #eef1f0;margin-top:12px;padding-top:10px;display:flex;flex-direction:column;gap:10px}
+  .sh-cmt{background:#fafbfb;border-radius:12px;padding:12px 14px}.sh-cmt.reply{margin-left:22px;border-left:3px solid #cfe9e6}
+  .sh-cmt p{margin:0;white-space:pre-wrap;line-height:1.75;font-size:.93rem}
+  .sh-inline{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+  .sh-confirm{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:#fff7f2;border-radius:10px;padding:10px;margin-top:8px;font-size:.88rem}
+  .sh-confirm input{border:1px solid #d3dad8;border-radius:8px;padding:6px 10px;font:inherit}
+  .sh-crisis{background:#fff7f2;border:1px solid #f5d6c4;border-radius:10px;padding:10px 12px;font-size:.85rem;color:#6b3f24;margin-top:8px;line-height:1.6}
+  .sh-warn{background:#fff4e5;border-radius:10px;padding:8px 12px;font-size:.85rem;color:#8a5a00}
+  .sh-foot{font-size:.8rem;color:#8a9096;line-height:1.7}.sh-foot a{color:#5b6066}
+  .sh-adminbtn{font-size:.75rem;color:#b0b5b9}
+  .sh-toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#16181d;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;z-index:999;opacity:0;transition:opacity .3s}
+  .sh-toast.on{opacity:1}
+  .sh-ts{min-height:0}
+  [hidden]{display:none!important}
+  @media (max-width:560px){.sh-compose,.sh-admin{padding:18px 14px}.sh-cmt.reply{margin-left:12px}}
+</style>
+
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li class="nav-sep">수의사로서</li>
+                        <li><a href="petloss.html" aria-current="page">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li class="nav-sep">작가 · 강연가로서</li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="career-reading.html">진로독서</a></li>
+                        <li><a href="corporate.html">기업·공공기관 강연</a></li>
+                        <li><a href="senior.html">중장년·시니어 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
+                <li><a href="author.html">소장소개</a></li>
+                <li><a href="vet-notes.html">반려동물 노트</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="columns.html">칼럼</a></li>
+                <li><a href="videos.html">대표 영상</a></li>
+                <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
+                <li><a href="dokjeoting.html">독저팅</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
+                <!-- [필라이프 코칭 비활성화 2026-08-14 · 되살릴 때 주석 해제] <li><a href="phillife.html">필라이프 코칭</a></li> -->
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
+<button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+</button>
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
+                                                        </nav>
+    </header>
+
+    <main role="main" id="shelter">
+        <section class="lec-hero">
+            <div class="wrap">
+                <span class="eyebrow">펫로스 치유 글쓰기 · 펫러스(PETLUS)</span>
+                <h1>펫러스(PETLUS) 쉼터</h1>
+                <p class="sh-meaning"><b>펫러스</b> = 펫로스 + 러브 + 쓰다 <span aria-hidden="true">·</span> <span style="white-space:nowrap"><b>PETLUS</b> = PET Love US</span></p>
+                <p class="sh-lead">반려동물을 떠나보낸 분들이 서로의 이야기를 읽고 마음을 나누는 곳입니다.<br>이름을 밝히지 않아도 됩니다.<br>내 아이에게 쓰는 편지도, 「요즘 이런데 다들 그러셨나요?」 하고 묻는 글도 괜찮습니다.<br>글마다 누구나 댓글과 답글을 달 수 있습니다.<br>허락해 주신 글만, 누구인지 알아볼 수 없게 다듬어 강연·집필에 소개할 수 있습니다.</p>
+                <ul class="sh-rules">
+                    <li>다른 분의 슬픔을 재거나 비교하지 않습니다.</li>
+                    <li>동물병원·수의사 이름, 전화번호 같은 개인정보는 적지 않습니다.</li>
+                    <li>글마다 삭제 비밀번호를 정해 두면 나중에 직접 지울 수 있습니다.</li>
+                </ul>
+                <p class="sh-host">이 쉼터는 수의사이자 작가 박근필이 운영합니다. <a href="petloss.html">펫로스 치유 글쓰기 안내 보기</a></p>
+            </div>
+        </section>
+
+        <div class="sh-wrap">
+            <div class="sh-help" role="note">
+                <b>마음이 많이 힘드신가요?</b> 혼자 견디지 마시고 지금 바로 이야기하세요.
+                자살예방상담전화 <a href="tel:109">109</a> · 정신건강위기상담 <a href="tel:15770199">1577-0199</a> (24시간)
+            </div>
+
+            <section id="shAdmin" class="sh-admin" hidden aria-labelledby="shAdminTitle">
+                <h2 id="shAdminTitle">관리자 화면 <small>작가님에게만 보입니다</small></h2>
+                <div id="shReports" class="sh-hint">신고를 불러오는 중…</div>
+                <button type="button" class="sh-btn sh-link" id="shLogout">관리자 모드 끄기</button>
+            </section>
+
+            <section class="sh-compose" aria-labelledby="shComposeTitle">
+                <h2 id="shComposeTitle">글 남기기</h2>
+                <div class="sh-seg" role="group" aria-label="글 종류">
+                    <button type="button" id="shTLetter" aria-pressed="true">내 아이에게 편지</button>
+                    <button type="button" id="shTStory" aria-pressed="false">내 이야기 · 질문</button>
+                </div>
+                <div class="sh-row">
+                    <label>별명(선택)<input id="shNick" maxlength="16" placeholder="예: 콩이 보호자 · 비우면 「익명의 보호자」"></label>
+                    <label>아이 이름(선택)<input id="shPet" maxlength="16" placeholder="예: 콩이"></label>
+                    <label>아이는(선택)<select id="shKind"><option value="">선택 안 함</option><option>강아지</option><option>고양이</option><option>그 밖의 동물</option></select></label>
+                </div>
+                <textarea id="shBody" maxlength="3000" rows="7" placeholder="내 아이에게 하고 싶은 말을 적어 보세요. 무엇을 써야 할지 모르겠다면 지금 마음을 한 단어로 적어도 됩니다."></textarea>
+                <div id="shNotice" aria-live="polite"></div>
+                <label class="sh-consent"><input type="checkbox" id="shConsent"><span>이 글이 박근필 작가의 강연이나 글에 소개되어도 괜찮아요. (선택)<small>이름·아이 이름·사는 곳은 빼거나 바꿔서 소개합니다. 체크하지 않으면 쓰지 않습니다. 글을 지우면 더 이상 쓰지 않습니다.</small></span></label>
+                <div class="sh-row sh-end">
+                    <label>삭제 비밀번호(4자 이상)<input id="shPw" type="password" maxlength="32" autocomplete="new-password"></label>
+                    <div class="sh-send"><span class="sh-hint" id="shLen">0 / 3000</span><button type="button" class="sh-btn sh-primary" id="shSend">올리기</button></div>
+                </div>
+                <div id="shTurnstile" class="sh-ts"></div>
+                <div class="sh-err" id="shErr" role="alert"></div>
+            </section>
+
+            <section aria-labelledby="shListTitle">
+                <div class="sh-bar">
+                    <h2 id="shListTitle">남겨진 글</h2>
+                    <div class="sh-seg" role="group" aria-label="보기">
+                        <button type="button" id="shFAll" aria-pressed="true">전체</button>
+                        <button type="button" id="shFLetter" aria-pressed="false">편지</button>
+                        <button type="button" id="shFStory" aria-pressed="false">이야기 · 질문</button>
+                        <button type="button" id="shFOk" aria-pressed="false" hidden>소개 허락한 글·댓글 (작가님만)</button>
+                    </div>
+                </div>
+                <div id="shList" aria-live="polite"><p class="sh-hint">글을 불러오는 중…</p></div>
+                <button type="button" class="sh-btn" id="shMore" hidden>이전 글 더 보기</button>
+            </section>
+            <p class="sh-foot">글쓰기에는 로봇을 막기 위한 Cloudflare 확인이 함께 쓰입니다. 쉼터는 글·별명·작성 시각과, 도배를 막기 위해 알아볼 수 없게 바꾼 접속 기록만 저장합니다. 지우고 싶은 글은 삭제 비밀번호로 직접 지우거나 <a href="mailto:tothemoon_park@naver.com">tothemoon_park@naver.com</a>으로 알려 주세요.
+                <button type="button" class="sh-link sh-adminbtn" id="shAdminOpen">관리자</button></p>
+        </div>
+    </main>
+
+<footer role="contentinfo">
+        <div class="footer-sns">
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+            <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024–2026 박근필성장연구소 by 박근필. All rights reserved.<br>읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+
+        /* ── 강연 현장 사진 ─────────────────────────────
+           사진은 위 HTML에 직접 넣어 두었습니다(검색엔진 노출을 위해).
+           · 사진 추가: ph-grid 안에 .ph-item 블록을 복사해 파일명·캡션만 바꾸면 됩니다.
+           · 파일이 없으면 그 칸은 자동으로 사라지고, 한 장도 없으면 섹션 전체가 숨겨집니다. */
+        (function () {
+            var box = document.getElementById('lecturePhotos');
+            var sec = document.getElementById('photos');
+            if (!box || !sec) return;
+            var items = box.querySelectorAll('.ph-item');
+            var left = items.length;
+            if (!left) { sec.style.display = 'none'; return; }
+            items.forEach(function (it) {
+                var img = it.querySelector('img');
+                if (!img) return;
+                img.addEventListener('error', function () {
+                    it.remove();
+                    if (!box.querySelectorAll('.ph-item').length) sec.style.display = 'none';
+                });
+            });
+        })();
+
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+    </script>
+
+<!-- [2026-08-26] 고정 퀵바 (온담 OD-8) — 하단 CTA 밴드에 닿지 못한 방문자를 잡는다 -->
+<nav class="pil-quick" aria-label="바로가기">
+  <a class="hi" href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>강연 섭외</a>
+  <a href="videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 8 6 4-6 4Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg>강연 영상</a>
+  <a href="columns.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2Z"/><path d="M17 8h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2"/><path d="M8 8h5M8 12h5"/></svg>칼럼 보기</a>
+</nav>
+<!-- [QUICKBAR:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json -->
+<div class="pil-quickbar" id="pilQuickbar" role="complementary" aria-label="강연 섭외 문의">
+  <span class="pq-txt">강연 섭외와 일정 문의는 언제든 편하게 주세요</span>
+  <span class="pq-btns">
+    <a class="pq-sub" href="author.html">실적 · 이력 보기</a>
+    <a class="pq-main" href="contact.html">섭외 문의</a>
+  </span>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById("pilQuickbar"); if(!bar) return;
+  /* ⭐ 페이지 끝 CTA 밴드가 보이면 바를 숨긴다 — 같은 말을 두 번 하지 않는다 */
+  var band=document.querySelector(".pil-cta-band"), bandSeen=false;
+  if(band&&"IntersectionObserver" in window){
+    new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
+      .observe(band);
+  }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
+  function paint(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
+    bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
+    /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
+       ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
+    document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
+  }
+  window.addEventListener("scroll",paint,{passive:true});
+  window.addEventListener("resize",paint); paint();
+})();
+</script>
+<!-- [/QUICKBAR:AUTO] -->
+<script>
+/* [SEARCH:AUTO] 사이트 내 검색 */
+var __ssIndex=null,__ssLoading=false;
+function openSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.add('on'); document.body.style.overflow='hidden';
+  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
+  loadSiteIndex();
+}
+function closeSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.remove('on'); document.body.style.overflow='';
+}
+function loadSiteIndex(){
+  if(__ssIndex||__ssLoading)return; __ssLoading=true;
+  fetch('search-index.json').then(function(r){return r.json();})
+    .then(function(d){__ssIndex=d;__ssLoading=false;
+      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
+    .catch(function(){__ssLoading=false;
+      var b=document.getElementById('siteSearchResults');
+      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
+}
+function quickSiteSearch(w){
+  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
+}
+function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function __ssSnippet(text,q){
+  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
+  if(i<0)return '';
+  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
+  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
+}
+function runSiteSearch(q){
+  var box=document.getElementById('siteSearchResults'); if(!box)return;
+  q=(q||'').trim();
+  if(q.length<2){box.innerHTML='';return;}
+  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
+  var lq=q.toLowerCase(),out=[];
+  __ssIndex.forEach(function(d){
+    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
+    var n=hay.split(lq).length-1;
+    if(n>0){
+      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      out.push({d:d,sc:sc});
+    }
+  });
+  if(!out.length){
+    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
+  out.sort(function(a,b){return b.sc-a.sc;});
+  box.innerHTML=out.slice(0,40).map(function(o){
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
+      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
+      +'<div class="ssr-s">'+sn+'</div></a>';
+  }).join('');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var i=document.getElementById('siteSearchInput');
+  if(i){
+    var tm=null;
+    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
+  }
+  var l=document.getElementById('siteSearchLayer');
+  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeSiteSearch();
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
+  });
+});
+/* [/SEARCH:AUTO] */
+</script>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+<script>
+(function(){
+  const API = window.SHELTER_API || "https://petlus-shelter.tothemoon-park.workers.dev";
+  const SITEKEY = window.SHELTER_SITEKEY || "0x4AAAAAAFEXq5j2efhG-5o_";
+  const CRISIS = /(죽고\s*싶|따라\s*가고\s*싶|따라가고\s*싶|사라지고\s*싶|살기\s*싫|살고\s*싶지\s*않|자살|목숨을\s*끊|끝내고\s*싶|극단적\s*선택)/;
+  const GENERIC = /^(우리|동네|근처|가까운|다니던|다니는|큰|작은|대학|대학교|응급|24시|24시간|야간|그|그때|이|저|어떤|다른|여러|많은|좋은|친절한|젊은|담당|주치의|동물|동물병원|병원|의사|수의|간호|처음|마지막|두|세|한)$/;
+  const RULES = [
+    { re: /([가-힣A-Za-z0-9]{2,})(동물병원|동물의료센터|동물메디컬센터|메디컬센터|동물의료원)/g, msg: "동물병원 이름" },
+    { re: /(?:^|[\s(「"'])([가-힣]{2,3})\s?(원장님|원장|수의사님|수의사)/g, msg: "수의사·원장 이름", adj: true },
+    { re: /0\d{1,2}[-.\s]?\d{3,4}[-.\s]?\d{4}/g, msg: "전화번호", plain: true },
+    { re: /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, msg: "이메일 주소", plain: true } ];
+  function check(t){ const o={crisis:CRISIS.test(t),blocked:[]}; for(const r of RULES){ for(const m of t.matchAll(r.re)){ if(r.plain||(!GENERIC.test(m[1])&&!(r.adj&&/[운한던은는신된인의께가이을를에서도만]$/.test(m[1])))){o.blocked.push(r.msg);break;} } } return o; }
+
+  const $=id=>document.getElementById(id);
+  const el=(t,c,x)=>{const e=document.createElement(t); if(c) e.className=c; if(x!=null) e.textContent=x; return e;};
+  const btn=(label,cls,fn)=>{const b=el("button","sh-btn "+(cls||""),label); b.type="button"; b.onclick=fn; return b;};
+  const lnk=(label,fn)=>{const b=el("button","sh-link",label); b.type="button"; b.onclick=fn; return b;};
+  const when=ts=>{const d=new Date(ts),n=Date.now(),s=(n-ts)/1000; if(s<60) return "방금"; if(s<3600) return Math.floor(s/60)+"분 전"; if(s<86400) return Math.floor(s/3600)+"시간 전"; return d.getFullYear()+"."+(d.getMonth()+1)+"."+d.getDate();};
+  function toast(m){let t=document.querySelector(".sh-toast"); if(!t){t=el("div","sh-toast");document.body.append(t);} t.textContent=m; t.classList.add("on"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("on"),2200);}
+  function crisisBox(){const d=el("div","sh-crisis"); d.innerHTML='혼자 견디지 않으셔도 됩니다. 자살예방상담전화 <a href="tel:109">109</a>, 정신건강위기상담 <a href="tel:15770199">1577-0199</a>에서 24시간 이야기를 들어 줍니다.'; return d;}
+  let adminKey=""; try{ adminKey=sessionStorage.getItem("sh_admin")||""; }catch(e){}
+  let isAdmin=false, ptype="letter", filt="all", posts=[], cursor=null, open={}, cmts={}, ui={};
+
+  async function api(path, opt){ const h={"Content-Type":"application/json"}; if(adminKey) h["X-Admin-Key"]=adminKey;
+    const r=await fetch(API+path,{method:opt&&opt.body?"POST":"GET",headers:h,body:opt&&opt.body?JSON.stringify(opt.body):undefined});
+    const d=await r.json().catch(()=>({ok:false,error:"서버와 연결하지 못했습니다."})); if(!r.ok||!d.ok) throw new Error(d.error||"처리하지 못했습니다."); return d; }
+
+  // 로봇 확인(Turnstile)
+  let tsId=null, tsToken="";
+  function tsRender(){ if(isAdmin||!window.turnstile||tsId!==null) return; tsId=turnstile.render("#shTurnstile",{sitekey:SITEKEY,size:"flexible",language:"ko",appearance:"interaction-only",callback:t=>{tsToken=t;},"expired-callback":()=>{tsToken="";}}); }
+  const tsWait=setInterval(()=>{ if(window.turnstile){ clearInterval(tsWait); tsRender(); } },300);
+  function tsGet(){ if(isAdmin) return ""; const t=tsToken; tsToken=""; if(window.turnstile&&tsId!==null) turnstile.reset(tsId); return t; }
+
+  // 글쓰기
+  const PH={letter:"내 아이에게 하고 싶은 말을 적어 보세요. 무엇을 써야 할지 모르겠다면 지금 마음을 한 단어로 적어도 됩니다.",story:"요즘 마음이 어떤지, 궁금한 것이 있는지 편하게 적어 주세요. 「저만 이런 걸까요?」 같은 질문도 괜찮습니다."};
+  function setType(t){ptype=t;$("shTLetter").setAttribute("aria-pressed",t==="letter");$("shTStory").setAttribute("aria-pressed",t==="story");$("shBody").placeholder=PH[t];}
+  $("shTLetter").onclick=()=>setType("letter"); $("shTStory").onclick=()=>setType("story");
+  $("shBody").oninput=()=>{const v=$("shBody").value; $("shLen").textContent=v.length+" / 3000"; const n=$("shNotice"); n.innerHTML=""; const c=check(v+" "+$("shNick").value+" "+$("shPet").value); if(c.crisis) n.append(crisisBox()); if(c.blocked.length) n.append(el("div","sh-warn",[...new Set(c.blocked)].join("·")+"으로 보이는 부분은 빼 주세요."));};
+  $("shSend").onclick=async()=>{ const e=$("shErr"); e.textContent=""; const body=$("shBody").value.trim();
+    if(body.length<2){e.textContent="한 단어라도 적어 주세요.";return;}
+    if(check(body+" "+$("shNick").value+" "+$("shPet").value).blocked.length){e.textContent="병원·수의사 이름이나 연락처를 빼고 다시 올려 주세요.";return;}
+    if($("shPw").value.length<4){e.textContent="삭제 비밀번호를 4자 이상 정해 주세요.";return;}
+    const token=tsGet(); if(!isAdmin&&!token){e.textContent="잠시 뒤 다시 눌러 주세요. (로봇 확인이 끝나지 않았습니다)";return;}
+    $("shSend").disabled=true;
+    try{ await api("/api/posts",{body:{ptype,nick:$("shNick").value,pet:$("shPet").value,kind:$("shKind").value,body,password:$("shPw").value,consent:$("shConsent").checked,token}});
+      $("shBody").value="";$("shPw").value="";$("shConsent").checked=false;$("shNotice").innerHTML="";$("shLen").textContent="0 / 3000"; toast("글을 올렸습니다"); await load(true);
+    }catch(x){ e.textContent=x.message; }
+    $("shSend").disabled=false; };
+
+  // 목록
+  function setFilt(f){filt=f;[["shFAll","all"],["shFLetter","letter"],["shFStory","story"],["shFOk","ok"]].forEach(([id,v])=>$(id).setAttribute("aria-pressed",f===v)); load(true);}
+  $("shFAll").onclick=()=>setFilt("all");$("shFLetter").onclick=()=>setFilt("letter");$("shFStory").onclick=()=>setFilt("story");$("shFOk").onclick=()=>setFilt("ok");
+  $("shMore").onclick=()=>load(false);
+  let okCmts=[];
+  async function load(reset){
+    try{
+      if(filt==="ok"){ const d=await api("/api/admin/consented"); posts=d.posts; okCmts=d.comments; cursor=null; render(); return; }
+      const q="?"+(filt!=="all"?"type="+filt+"&":"")+(!reset&&cursor?"before="+cursor:"");
+      const d=await api("/api/posts"+q); posts=reset?d.posts:posts.concat(d.posts); cursor=d.posts.length?d.posts[d.posts.length-1].createdAt:null;
+      $("shMore").hidden=d.posts.length<30; render();
+    }catch(x){ $("shList").innerHTML=""; $("shList").append(el("p","sh-err",x.message)); }
+  }
+  async function loadCmts(id){ try{ const d=await api("/api/posts/"+id+"/comments"); cmts[id]=d.comments; }catch(x){ cmts[id]=[]; } render(); }
+
+  function confirmBox(label,needPw,onOk){ const b=el("div","sh-confirm"); b.append(el("span",null,label)); let pw=null; if(needPw){pw=el("input");pw.type="password";pw.placeholder="삭제 비밀번호";b.append(pw);} const e=el("span","sh-err");
+    b.append(btn("확인","sh-primary",async()=>{e.textContent="";try{await onOk(pw&&pw.value);}catch(x){e.textContent=x.message;}}),btn("취소","",()=>{ui={};render();}),e); return b; }
+  async function del(type,id,pw){ await api("/api/delete",{body:{type,id,password:pw||""}}); ui={}; toast("지웠습니다"); if(type==="post") await load(true); else await loadCmts(ui.post||Object.keys(open).find(k=>open[k])); }
+  async function report(type,id){ await api("/api/report",{body:{type,id}}); ui={}; toast("신고했습니다. 관리자가 확인합니다"); render(); }
+  async function hide(type,id,h,postId){ await api("/api/admin/hide",{body:{type,id,hidden:h}}); if(type==="post") await load(true); else await loadCmts(postId); loadReports(); }
+
+  function inlineForm(postId,parentId){ const f=el("div","sh-inline"); const ta=el("textarea"); ta.maxLength=1000; ta.rows=3; ta.placeholder=parentId?"답글을 적어 주세요":"따뜻한 댓글을 남겨 주세요";
+    const row=el("div","sh-row"); const nick=el("input"); nick.maxLength=16; nick.placeholder="별명(선택) · 비우면 「익명」"; const pw=el("input"); pw.type="password"; pw.maxLength=32; pw.placeholder="삭제 비밀번호(4자 이상)"; pw.autocomplete="new-password"; row.append(nick,pw);
+    const cl=el("label","sh-consent mini"); const cb=el("input"); cb.type="checkbox"; cl.append(cb,el("span",null,"강연·글에 이름 없이 소개되어도 괜찮아요 (선택)"));
+    const note=el("div"); const e=el("div","sh-err"); ta.oninput=()=>{note.innerHTML=""; const c=check(ta.value); if(c.crisis) note.append(crisisBox()); if(c.blocked.length) note.append(el("div","sh-warn",[...new Set(c.blocked)].join("·")+"으로 보이는 부분은 빼 주세요."));};
+    const ok=btn("올리기","sh-primary",async()=>{ e.textContent=""; const t=ta.value.trim(); if(!t){e.textContent="내용을 적어 주세요.";return;} if(check(t+" "+nick.value).blocked.length){e.textContent="병원·수의사 이름이나 연락처를 빼 주세요.";return;} if(pw.value.length<4){e.textContent="삭제 비밀번호를 4자 이상 정해 주세요.";return;}
+      const token=tsGet(); if(!isAdmin&&!token){e.textContent="잠시 뒤 다시 눌러 주세요. (로봇 확인이 끝나지 않았습니다)";return;}
+      ok.disabled=true; try{ await api("/api/posts/"+postId+"/comments",{body:{body:t,nick:nick.value,password:pw.value,parentId:parentId||null,consent:cb.checked,token}}); ui={}; toast(parentId?"답글을 달았습니다":"댓글을 달았습니다"); await loadCmts(postId); const p=posts.find(x=>x.id===postId); if(p) p.comments++; }catch(x){e.textContent=x.message; ok.disabled=false;} });
+    const act=el("div","sh-row"); act.append(ok,btn("취소","",()=>{ui={};render();}));
+    f.append(ta,note,row,cl,act,e); return f; }
+
+  function renderCmt(p,c,reply){ const b=el("div","sh-cmt"+(reply?" reply":"")); const m=el("div","sh-meta"); m.append(el("span","sh-who",c.nick)); if(c.byHost) m.append(el("span","sh-hostbadge","수의사 · 작가 박근필")); if(isAdmin&&c.consent) m.append(el("span","sh-ok","소개 허락")); if(c.hidden) m.append(el("span",null,"숨김 처리됨")); m.append(el("span",null,when(c.createdAt))); b.append(m);
+    if(c.hidden&&!isAdmin){ b.append(el("p","sh-hint","관리자가 숨긴 글입니다.")); return b; }
+    b.append(el("p",null,c.body)); if(c.crisis) b.append(crisisBox());
+    const k="c:"+c.id, a=el("div","sh-acts"); a.append(lnk("답글",()=>{ui={reply:c.id,post:p.id};render();}),lnk("신고",()=>{ui={report:k};render();}),lnk("삭제",()=>{ui={del:k,post:p.id};render();}));
+    if(isAdmin) a.append(lnk(c.hidden?"숨김 풀기":"숨기기",()=>hide("comment",c.id,!c.hidden,p.id))); b.append(a);
+    if(ui.del===k) b.append(confirmBox("이 댓글을 지울까요? 달린 답글도 함께 지워집니다.",!isAdmin,pw=>del("comment",c.id,pw)));
+    if(ui.report===k) b.append(confirmBox("이 글을 관리자에게 신고할까요?",false,()=>report("comment",c.id)));
+    if(ui.reply===c.id) b.append(inlineForm(p.id,c.id)); return b; }
+
+  function renderPost(p){ const a=el("article","sh-post"+(p.hidden?" hid":"")); const m=el("div","sh-meta");
+    m.append(el("span","sh-type",p.ptype==="story"?"이야기 · 질문":"편지"),el("span","sh-who",p.nick)); if(p.byHost) m.append(el("span","sh-hostbadge","수의사 · 작가 박근필"));
+    if(p.pet||p.kind) m.append(el("span",null,[p.pet,p.kind].filter(Boolean).join(" · "))); if(isAdmin&&p.consent) m.append(el("span","sh-ok","소개 허락")); if(p.hidden) m.append(el("span",null,"숨김 처리됨")); m.append(el("span",null,when(p.createdAt))); a.append(m);
+    a.append(el("p","sh-body",p.body)); if(p.crisis) a.append(crisisBox());
+    const k="p:"+p.id, acts=el("div","sh-acts");
+    acts.append(lnk(open[p.id]?"댓글 접기":"댓글 "+(p.comments||0)+"개 · 쓰기",()=>{open[p.id]=!open[p.id]; if(open[p.id]) loadCmts(p.id); else render();}),lnk("신고",()=>{ui={report:k};render();}),lnk("삭제",()=>{ui={del:k};render();}));
+    if(isAdmin) acts.append(lnk(p.hidden?"숨김 풀기":"숨기기",()=>hide("post",p.id,!p.hidden)));
+    a.append(acts);
+    if(ui.del===k) a.append(confirmBox("이 글과 달린 댓글을 모두 지울까요?",!isAdmin,pw=>del("post",p.id,pw)));
+    if(ui.report===k) a.append(confirmBox("이 글을 관리자에게 신고할까요?",false,()=>report("post",p.id)));
+    if(open[p.id]){ const box=el("div","sh-cmts"); const list=cmts[p.id];
+      if(!list) box.append(el("p","sh-hint","댓글을 불러오는 중…"));
+      else { const top=list.filter(c=>!c.parentId); top.forEach(c=>{ box.append(renderCmt(p,c,false)); list.filter(r=>r.parentId===c.id).forEach(r=>box.append(renderCmt(p,r,true))); }); if(!list.length) box.append(el("p","sh-hint","첫 댓글을 남겨 주세요.")); }
+      if(ui.reply===null||ui.reply===undefined) box.append(inlineForm(p.id,null)); a.append(box); }
+    return a; }
+
+  function render(){ const L=$("shList"); L.innerHTML="";
+    if(filt==="ok"){ if(!posts.length&&!okCmts.length){L.append(el("p","sh-hint","소개를 허락한 글이 아직 없습니다."));return;}
+      posts.forEach(p=>L.append(renderPost(p))); if(okCmts.length){ L.append(el("h3",null,"소개를 허락한 댓글")); okCmts.forEach(c=>{const b=renderCmt({id:c.postId},c,false); L.append(b);}); } return; }
+    if(!posts.length){ L.append(el("p","sh-hint","아직 남겨진 글이 없습니다. 첫 이야기를 남겨 주세요.")); return; }
+    posts.forEach(p=>L.append(renderPost(p))); }
+
+  // 관리자
+  async function loadReports(){ if(!isAdmin) return; try{ const d=await api("/api/admin/reports"); const box=$("shReports"); box.innerHTML="";
+      if(!d.reports.length){ box.textContent="처리할 신고가 없습니다."; return; }
+      d.reports.forEach(r=>{ const row=el("div","sh-confirm"); row.append(el("span",null,(r.type==="post"?"글":"댓글")+" · "+when(r.createdAt)+" · 「"+r.summary+"」"),
+        btn("숨기기","",()=>hide(r.type,r.targetId,true,r.postId)),btn("그대로 두기","",async()=>{await api("/api/admin/resolve",{body:{id:r.id}});loadReports();})); box.append(row); });
+    }catch(x){ $("shReports").textContent=x.message; } }
+  async function enterAdmin(){ if(!adminKey) return; try{ await api("/api/admin/check"); isAdmin=true; $("shAdmin").hidden=false; $("shFOk").hidden=false; $("shTurnstile").hidden=true; loadReports(); }
+    catch(x){ isAdmin=false; adminKey=""; try{sessionStorage.removeItem("sh_admin");}catch(e){} toast("관리자 키가 맞지 않습니다"); } load(true); }
+  $("shAdminOpen").onclick=()=>{ const f=$("shAdminForm"); if(f){f.remove();return;} const box=el("div","sh-confirm"); box.id="shAdminForm"; const i=el("input"); i.type="password"; i.placeholder="관리자 키"; i.autocomplete="current-password";
+    box.append(i,btn("들어가기","sh-primary",()=>{ adminKey=i.value.trim(); try{sessionStorage.setItem("sh_admin",adminKey);}catch(e){} box.remove(); enterAdmin(); })); $("shAdminOpen").after(box); i.focus(); };
+  $("shLogout").onclick=()=>{ adminKey=""; isAdmin=false; try{sessionStorage.removeItem("sh_admin");}catch(e){} $("shAdmin").hidden=true; $("shFOk").hidden=true; $("shTurnstile").hidden=false; if(filt==="ok") filt="all"; tsRender(); load(true); };
+
+  if(adminKey) enterAdmin(); else load(true);
+})();
+</script>
+
+</body>
+</html>
