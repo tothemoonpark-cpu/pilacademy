@@ -458,7 +458,9 @@
   .sh-thead{border-top:2px solid #1f8f86;border-bottom:1px solid #e6eae9;font-size:.8rem;color:#8a9096;font-weight:600}
   .sh-thead span:nth-child(2){text-align:left}
   .sh-trow{border-bottom:1px solid #eef1f0;color:#16181d;text-decoration:none;font-size:.93rem}
-  .sh-trow:hover{background:#f7fbfa}.sh-trow.hid{opacity:.55}
+  .sh-trow:hover{background:#f7fbfa}
+  .sh-cnt{font-size:.8em;opacity:.75;margin-left:2px}
+  .sh-fold{margin-top:18px}.sh-fold summary{cursor:pointer;color:#6b7775;font-size:.88rem;text-align:center;list-style:none}.sh-fold summary::-webkit-details-marker{display:none}.sh-fold summary::after{content:" ▾"}.sh-fold[open] summary::after{content:" ▴"}.sh-fold p{margin-top:10px}.sh-trow.hid{opacity:.55}
   .sh-ttype{font-size:.75rem;font-weight:700;border-radius:999px;padding:2px 0;text-align:center}
   .sh-ttype.letter{background:#eef8f6;color:#1f8f86}.sh-ttype.story{background:#fff4e5;color:#b86a00}
   .sh-ttitle{display:flex;gap:6px;min-width:0}.sh-ttext{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
@@ -727,8 +729,8 @@
                     <h2 id="shListTitle">남겨진 글</h2><button type="button" class="sh-btn sh-primary" id="shWrite">✎ 글쓰기</button>
                     <div class="sh-seg" role="group" aria-label="보기">
                         <button type="button" id="shFAll" aria-pressed="true">전체</button>
-                        <button type="button" id="shFLetter" aria-pressed="false">편지</button>
-                        <button type="button" id="shFStory" aria-pressed="false">이야기 · 질문</button>
+                        <button type="button" id="shFLetter" aria-pressed="false">편지 <span class="sh-cnt" id="shCLetter"></span></button>
+                        <button type="button" id="shFStory" aria-pressed="false">이야기 · 질문 <span class="sh-cnt" id="shCStory"></span></button>
                         <button type="button" id="shFOk" aria-pressed="false" hidden>소개 허락한 글·댓글 (작가님만)</button>
                     </div>
                 </div>
@@ -738,8 +740,8 @@
             </section>
             <div id="shView" hidden aria-live="polite"></div>
 
-            <p class="sh-foot">글쓰기에는 로봇을 막기 위한 Cloudflare 확인이 함께 쓰입니다. 쉼터는 글·닉네임·작성 시각과, 도배를 막기 위해 알아볼 수 없게 바꾼 접속 기록만 저장합니다. 지우고 싶은 글은 삭제 비밀번호로 직접 지우거나 <a href="mailto:tothemoon_park@naver.com">tothemoon_park@naver.com</a>으로 알려 주세요.
-                <button type="button" class="sh-link sh-adminbtn" id="shAdminOpen">관리자</button></p>
+            <details class="sh-foot sh-fold"><summary>개인정보 · 글 삭제 안내</summary><p>글쓰기에는 로봇을 막기 위한 Cloudflare 확인이 함께 쓰입니다. 쉼터는 글·닉네임·작성 시각과, 도배를 막기 위해 알아볼 수 없게 바꾼 접속 기록만 저장합니다. 지우고 싶은 글은 삭제 비밀번호로 직접 지우거나 <a href="mailto:tothemoon_park@naver.com">tothemoon_park@naver.com</a>으로 알려 주세요.
+                <button type="button" class="sh-link sh-adminbtn" id="shAdminOpen">관리자</button></p></details>
         </div>
     </main>
     <section class="sh-cta" aria-labelledby="shCtaTitle">
@@ -874,7 +876,7 @@
   function crisisBox(){const d=el("div","sh-crisis"); d.innerHTML='혼자 견디지 않으셔도 됩니다. 자살예방상담전화 <a href="tel:109">109</a>, 정신건강위기상담 <a href="tel:15770199">1577-0199</a>에서 24시간 이야기를 들어 줍니다.'; return d;}
   let adminKey=""; try{ adminKey=sessionStorage.getItem("sh_admin")||""; }catch(e){}
   let isAdmin=false, ptype="letter", filt="all", posts=[], cursor=null, more=false, page=1, cmts={}, ui={}, viewId=null;
-  const PER=15;
+  const PER=10;
 
   async function api(path, opt){ const h={"Content-Type":"application/json"}; if(adminKey) h["X-Admin-Key"]=adminKey;
     const r=await fetch(API+path,{method:opt&&opt.body?"POST":"GET",headers:h,body:opt&&opt.body?JSON.stringify(opt.body):undefined});
@@ -914,7 +916,8 @@
   function setFilt(f){filt=f;[["shFAll","all"],["shFLetter","letter"],["shFStory","story"],["shFOk","ok"]].forEach(([id,v])=>$(id).setAttribute("aria-pressed",f===v)); page=1; load(true);}
   $("shFAll").onclick=()=>setFilt("all");$("shFLetter").onclick=()=>setFilt("letter");$("shFStory").onclick=()=>setFilt("story");$("shFOk").onclick=()=>setFilt("ok");
   let okCmts=[];
-  async function load(reset){
+  async function loadCounts(){ for(const [t,id] of [["letter","shCLetter"],["story","shCStory"]]){ try{ const d=await api("/api/posts?type="+t); const n=d.posts.length; $(id).textContent=n?(n>=30?"30+":String(n)):""; }catch(x){} } }
+  async function load(reset){ if(reset&&filt!=="ok") loadCounts();
     try{
       if(filt==="ok"){ const d=await api("/api/admin/consented"); posts=d.posts; okCmts=d.comments; cursor=null; more=false; render(); return; }
       const q="?"+(filt!=="all"?"type="+filt+"&":"")+(!reset&&cursor?"before="+cursor:"");
@@ -973,14 +976,16 @@
     const who=el("span","sh-twho",p.nick+(p.byHost?" · 박근필":"")); const d=el("span","sh-tdate",when(p.createdAt));
     r.append(t,ti,who,d); return r; }
   function pager(){ const P=$("shPager"); P.innerHTML=""; const n=Math.max(1,Math.ceil(posts.length/PER));
-    if(n>1) for(let i=1;i<=n;i++){ const b=el("button","sh-pg"+(i===page?" on":""),String(i)); b.type="button"; b.onclick=()=>{page=i;render();window.scrollTo({top:$("shBoard").offsetTop-80,behavior:"smooth"});}; P.append(b); }
-    if(more) P.append(btn("이전 글 더 불러오기","",async()=>{ await load(false); page=Math.ceil(posts.length/PER); render(); })); }
+    const go=i=>{page=i;render();window.scrollTo({top:$("shBoard").offsetTop-80,behavior:"smooth"});};
+    if(n>1||more) for(let i=1;i<=n;i++){ const b=el("button","sh-pg"+(i===page?" on":""),String(i)); b.type="button"; b.onclick=()=>go(i); P.append(b); }
+    if(more){ const b=el("button","sh-pg",String(n+1)+" ›"); b.type="button"; b.onclick=async()=>{ await load(false); go(Math.min(n+1,Math.ceil(posts.length/PER))); }; P.append(b); } }
 
   function render(){ const L=$("shList"), V=$("shView");
     if(viewId){ $("shBoard").hidden=true; V.hidden=false; renderView(posts.find(x=>x.id===viewId)); return; }
     V.hidden=true; $("shBoard").hidden=false; L.innerHTML="";
     if(filt==="ok"){ if(!posts.length&&!okCmts.length){L.append(el("p","sh-hint","소개를 허락한 글이 아직 없습니다."));} posts.forEach(p=>L.append(row(p)));
       if(okCmts.length){ L.append(el("h3",null,"소개를 허락한 댓글")); okCmts.forEach(c=>L.append(renderCmt({id:c.postId},c,true))); } $("shPager").innerHTML=""; return; }
+    $("shWrite2").hidden=!posts.length;
     if(!posts.length){ L.append(el("p","sh-hint sh-empty","아직 남겨진 글이 없습니다. 「글쓰기」를 눌러 첫 이야기를 남겨 주세요.")); $("shPager").innerHTML=""; return; }
     const head=el("div","sh-thead"); ["종류","제목","닉네임","날짜"].forEach(x=>head.append(el("span",null,x))); L.append(head);
     posts.slice((page-1)*PER,page*PER).forEach(p=>L.append(row(p))); pager(); }
