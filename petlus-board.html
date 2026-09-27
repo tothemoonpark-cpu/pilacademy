@@ -450,14 +450,7 @@
   @media (max-width:560px){.sh-compose,.sh-admin{padding:18px 14px}.sh-cmt.reply{margin-left:12px}}
 
   /* 게시판 (2026-09-27) */
-  .sh-howto{margin:12px 0 4px;border:1px solid #d9ebe8;background:#f5fbfa;border-radius:12px}
-  .sh-howto summary{cursor:pointer;padding:12px 14px;font-size:.93rem;color:#1f5f59;list-style:none}
-  .sh-howto summary::-webkit-details-marker{display:none}
-  .sh-howto summary::before{content:"▶ ";color:#1f8f86;font-size:.8rem}
-  .sh-howto[open] summary::before{content:"▼ "}
-  .sh-howto-in{padding:0 14px 14px}
-  .sh-howto video{display:block;width:100%;max-width:340px;height:auto;margin:0 auto;border-radius:14px;background:#f7f4ee}
-  .sh-howto .sh-hint{margin-top:8px;font-size:.82rem;text-align:center}
+  .sh-howto-v{max-width:300px;margin-left:auto;margin-right:auto;border-radius:18px}
   @media(min-width:700px){.sh-bar .sh-seg{margin-left:auto}.sh-bar #shWrite{order:3}}
   .sh-hero-sm{padding-bottom:1.4rem}.sh-hero-sm h1{margin-bottom:.4rem}
   .sh-board-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
@@ -681,6 +674,13 @@
                 <h1>쉼터 게시판</h1>
                 <p class="sh-lead">반려동물을 떠나보낸 분들이 이름 없이 남긴 글입니다.<br>제목을 누르면 본문과 댓글을 볼 수 있고, 「글쓰기」로 내 이야기를 남길 수 있습니다.</p>
                 <p class="sh-host">다른 분의 슬픔을 재거나 비교하지 않습니다 · 병원·수의사 이름, 연락처는 적지 않습니다 · <a href="petlus-shelter.html">쉼터 소개 보기</a></p>
+                <div class="hero-video sh-howto-v">
+                    <video autoplay muted playsinline controls preload="metadata" poster="petlus-board-howto-poster.jpg">
+                        <source src="petlus-board-howto-260927.mp4" type="video/mp4">
+                        <a href="petlus-board-howto-260927.mp4">영상 내려받기</a>
+                    </video>
+                </div>
+                <p class="hero-vcap">1분 사용법 영상 — 제목 누르기 · 댓글 · 글쓰기 · 삭제 비밀번호 · 내 글 지우기 (화면 속 글은 예시)</p>
             </div>
         </section>
 
@@ -690,15 +690,6 @@
                 자살예방상담전화 <a href="tel:109">109</a> · 정신건강위기상담 <a href="tel:15770199">1577-0199</a> (24시간)
             </div>
 
-            <details class="sh-howto">
-                <summary>처음이신가요? <b>1분 사용법 영상</b> 보기</summary>
-                <div class="sh-howto-in">
-                    <video controls playsinline preload="none" poster="petlus-board-howto-poster.jpg" width="1080" height="1920">
-                        <source src="petlus-board-howto-260927.mp4" type="video/mp4">
-                    </video>
-                    <p class="sh-hint">제목 누르기 → 댓글 달기 → 「글쓰기」 → 편지·이야기 고르기 → 삭제 비밀번호 정하기 → 올리기 → 내 글 지우기. 화면 속 글은 모두 예시입니다.</p>
-                </div>
-            </details>
 
             <section id="shAdmin" class="sh-admin" hidden aria-labelledby="shAdminTitle">
                 <h2 id="shAdminTitle">관리자 화면 <small>작가님에게만 보입니다</small></h2>
