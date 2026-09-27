@@ -438,7 +438,7 @@
   .sh-cmt p{margin:0;white-space:pre-wrap;line-height:1.75;font-size:.93rem}
   .sh-inline{display:flex;flex-direction:column;gap:8px;margin-top:8px}
   .sh-confirm{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:#fff7f2;border-radius:10px;padding:10px;margin-top:8px;font-size:.88rem}
-  .sh-confirm input{border:1px solid #d3dad8;border-radius:8px;padding:6px 10px;font:inherit}
+  .sh-confirm input{border:1px solid #d3dad8;border-radius:8px;padding:6px 10px;font:inherit;box-sizing:border-box;min-width:0;max-width:100%;flex:1 1 140px}
   .sh-crisis{background:#fff7f2;border:1px solid #f5d6c4;border-radius:10px;padding:10px 12px;font-size:.85rem;color:#6b3f24;margin-top:8px;line-height:1.6}
   .sh-warn{background:#fff4e5;border-radius:10px;padding:8px 12px;font-size:.85rem;color:#8a5a00}
   .sh-foot{font-size:.8rem;color:#8a9096;line-height:1.7}.sh-foot a{color:#5b6066}
@@ -450,6 +450,14 @@
   @media (max-width:560px){.sh-compose,.sh-admin{padding:18px 14px}.sh-cmt.reply{margin-left:12px}}
 
   /* 게시판 (2026-09-27) */
+  .sh-howto{margin:12px 0 4px;border:1px solid #d9ebe8;background:#f5fbfa;border-radius:12px}
+  .sh-howto summary{cursor:pointer;padding:12px 14px;font-size:.93rem;color:#1f5f59;list-style:none}
+  .sh-howto summary::-webkit-details-marker{display:none}
+  .sh-howto summary::before{content:"▶ ";color:#1f8f86;font-size:.8rem}
+  .sh-howto[open] summary::before{content:"▼ "}
+  .sh-howto-in{padding:0 14px 14px}
+  .sh-howto video{display:block;width:100%;max-width:340px;height:auto;margin:0 auto;border-radius:14px;background:#f7f4ee}
+  .sh-howto .sh-hint{margin-top:8px;font-size:.82rem;text-align:center}
   @media(min-width:700px){.sh-bar .sh-seg{margin-left:auto}.sh-bar #shWrite{order:3}}
   .sh-hero-sm{padding-bottom:1.4rem}.sh-hero-sm h1{margin-bottom:.4rem}
   .sh-board-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
@@ -480,6 +488,25 @@
   @media (max-width:640px){.sh-thead{display:none}.sh-trow{grid-template-columns:52px 1fr auto;row-gap:2px}.sh-trow .sh-ttype{grid-row:1}.sh-trow .sh-ttitle{grid-column:2/4}.sh-trow .sh-twho{grid-column:2;grid-row:2;text-align:left}.sh-trow .sh-tdate{grid-column:3;grid-row:2;text-align:right}.sh-view{padding:18px 14px}}
 </style>
 
+<!-- 게시판 사용법 영상 구조화 데이터 — 빵부스러기 자동 구간 밖에 둔다 -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "VideoObject",
+ "name": "펫러스(PETLUS) 쉼터 게시판 사용법",
+ "description": "반려동물을 떠나보낸 보호자가 펫러스 쉼터 게시판에서 글을 읽고, 댓글을 달고, 이름 없이 편지나 이야기를 남기고, 삭제 비밀번호로 직접 지우는 방법을 1분으로 보여 주는 안내 영상. 화면 속 글은 예시.",
+ "thumbnailUrl": "https://tothemoonpark-cpu.github.io/pilacademy/petlus-board-howto-poster.jpg",
+ "uploadDate": "2026-09-27",
+ "duration": "PT1M1S",
+ "contentUrl": "https://tothemoonpark-cpu.github.io/pilacademy/petlus-board-howto-260927.mp4",
+ "inLanguage": "ko",
+ "publisher": {
+  "@type": "Person",
+  "name": "박근필",
+  "url": "https://tothemoonpark-cpu.github.io/pilacademy/author.html"
+ }
+}
+</script>
 <!-- BREADCRUMB:AUTO:START -->
 <script type="application/ld+json">
 {
@@ -662,6 +689,16 @@
                 <b>마음이 많이 힘드신가요?</b> 혼자 견디지 마시고 지금 바로 이야기하세요.<br>
                 자살예방상담전화 <a href="tel:109">109</a> · 정신건강위기상담 <a href="tel:15770199">1577-0199</a> (24시간)
             </div>
+
+            <details class="sh-howto">
+                <summary>처음이신가요? <b>1분 사용법 영상</b> 보기</summary>
+                <div class="sh-howto-in">
+                    <video controls playsinline preload="none" poster="petlus-board-howto-poster.jpg" width="1080" height="1920">
+                        <source src="petlus-board-howto-260927.mp4" type="video/mp4">
+                    </video>
+                    <p class="sh-hint">제목 누르기 → 댓글 달기 → 「글쓰기」 → 편지·이야기 고르기 → 삭제 비밀번호 정하기 → 올리기 → 내 글 지우기. 화면 속 글은 모두 예시입니다.</p>
+                </div>
+            </details>
 
             <section id="shAdmin" class="sh-admin" hidden aria-labelledby="shAdminTitle">
                 <h2 id="shAdminTitle">관리자 화면 <small>작가님에게만 보입니다</small></h2>
