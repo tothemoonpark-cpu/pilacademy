@@ -634,6 +634,7 @@
 <!-- BREADCRUMB:AUTO:END -->
 </head>
 <body>
+<!-- [SKIP:AUTO] --><style>.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#111;color:#fff;padding:10px 16px;border-radius:0 0 8px 0;font-weight:700}.pil-skip:focus{left:0}</style><a class="pil-skip" href="#main-content">본문 바로가기</a>
     <header role="banner">
         <nav role="navigation" aria-label="주요 메뉴">
             <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
@@ -771,7 +772,7 @@
                                                         </nav>
     </header>
 
-    <main role="main">
+    <main role="main" id="main-content">
         <!-- HERO -->
         <section class="lec-hero">
             <div class="wrap">
@@ -808,10 +809,27 @@
             </div>
         </section>
 
+        <!-- [2026-09-29] 보호자용 첫 입구 — 작가님 「반영하면 좋을 점들은 모두 즉시 반영」(pet-loss.kr 분석 2번).
+             ⛔ 카드 본문은 작가님 노트 원문 그대로(각 카드가 그 노트로 연결). 제목만 보호자 목소리로. -->
+        <section class="block" id="feel-cards" aria-labelledby="feelTitle">
+            <div class="wrap">
+                <p class="eyebrow" style="color:#1f9d93;font-weight:700;margin:0 0 6px">반려동물을 떠나보내셨나요</p>
+                <p class="pil-eyebrow">FOR WHOM</p>
+                <h2 id="feelTitle">혹시 이런 마음이신가요?</h2>
+                <div class="feel-grid">
+                    <a class="feel-card" href="notes/n260921-3.html"><b>마지막을 지키지 못한 것이<br>계속 마음에 걸립니다</b><span>못 지킨 건 당신 잘못이 아닙니다.<br>그걸로 스스로를 벌하지 않으셔도 됩니다.</span><em>수의사 노트 읽기 →</em></a>
+                    <a class="feel-card" href="notes/n260925_2-9.html"><b>「내가 과한가, 내가 이상한가」<br>싶습니다</b><span>같은 상실을 겪은 사람들 앞에서<br>「나만 이런 게 아니구나」를 알게 됩니다.</span><em>수의사 노트 읽기 →</em></a>
+                    <a class="feel-card" href="notes/n260922-8.html"><b>그 아이 물건을<br>아직 정리하지 못했습니다</b><span>치우는 것도 애도이고,<br>두는 것도 애도입니다.</span><em>수의사 노트 읽기 →</em></a>
+                </div>
+                <p class="feel-more"><a href="petlus-shelter.html">이름 없이 편지를 남기는 펫러스 쉼터 →</a><a href="vet-notes.html#k=펫로스">펫로스 노트 모두 보기 →</a></p>
+            </div>
+            <style>#feel-cards .feel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 10px}#feel-cards .feel-card{display:flex;flex-direction:column;gap:10px;padding:20px;border:1px solid #d9ece9;border-radius:16px;background:#f6fbfa;color:inherit;text-decoration:none;transition:transform .15s,box-shadow .15s}#feel-cards .feel-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.06)}#feel-cards .feel-card b{font-size:18px;line-height:1.45}#feel-cards .feel-card span{font-size:15px;line-height:1.7;color:#4b5563}#feel-cards .feel-card em{font-style:normal;font-weight:700;color:#1f9d93;font-size:14px;margin-top:auto}#feel-cards .feel-more{display:flex;flex-wrap:wrap;gap:8px 22px;font-weight:700}#feel-cards .feel-more a{color:#1f9d93}@media(max-width:760px){#feel-cards .feel-grid{grid-template-columns:1fr}}</style>
+        </section>
+
         <!-- [2026-09-21] 펫로스증후군 — 작가님 제공 원문을 출처 대조 후 반영.
              ⛔ 출처는 문장 끝에 달지 않고 섹션 말미에 작게 모은다(작가님 지시).
              ⛔ AVMA 가 말하지 않은 것을 AVMA 이름으로 쓰지 않는다 — 2026-09-21 원문 대조 결과로 문장 조정. -->
-        <section class="block" id="petloss-syndrome">
+        <section class="block alt" id="petloss-syndrome">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">UNDERSTANDING</p>
@@ -982,7 +1000,7 @@
         </section>
 
         <!-- 왜 글쓰기인가 (2026-09-21 작가님: 「왜 상담이 아니라」는 상담가·정신과 전문의에게 상담이 필요 없다고 읽힐 수 있어 폐기) -->
-        <section class="block alt">
+        <section class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">APPROACH</p>
@@ -1099,7 +1117,7 @@
         </section>
 
         <!-- [2026-09-06] 펫러스 웹 도구 입구. 혼자 쓰는 자리(1층) — 서버 없음·전송 없음. -->
-        <section class="block">
+        <section class="block alt">
             <div class="wrap narrow">
                 <p class="eyebrow">WRITE</p>
                 <p class="pil-eyebrow">ONLINE</p>
@@ -1146,7 +1164,7 @@
 
         <!-- [2026-09-06] 독서치료 축 신설. ⛔ 출처는 1차 문헌(Hynes & Hynes-Berry 1986/1994)이며
              수강 중인 강의를 근거로 쓰지 않는다(전역지침 「남의 강의도 지형도다」 2026-09-01). -->
-        <section class="block alt">
+        <section class="block">
             <div class="wrap narrow">
                 <p class="eyebrow">METHOD</p>
                 <p class="pil-eyebrow">APPROACH</p>
@@ -1210,7 +1228,7 @@
         </section>
 
         <!-- 왜 이 강연인가 -->
-        <section class="block">
+        <section class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">WHY</p>
@@ -1282,7 +1300,7 @@
         </section>
 
         <!-- 프로그램 개요 -->
-        <section class="block alt" id="curriculum">
+        <section class="block" id="curriculum">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">PROGRAM</p>
@@ -1445,7 +1463,7 @@
         </section>
 
         <!-- 진행 실적 -->
-        <section class="block">
+        <section class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">TRACK RECORD</p>
@@ -1546,7 +1564,7 @@
         </section>
 
         <!-- 후기 -->
-        <section class="block alt">
+        <section class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">REVIEWS</p>
@@ -1586,7 +1604,7 @@
         </section>
 
         <!-- 진행 안내 -->
-        <section class="block">
+        <section class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">PROCESS</p>
@@ -1637,7 +1655,7 @@
             </div>
         </section>
         <!-- 이런 분께 권합니다 (MZ-7 · 2026-08-28) -->
-        <section class="block alt">
+        <section class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">FOR WHOM</p>
@@ -1658,7 +1676,7 @@
 
 
         <!-- 자주 묻는 질문 -->
-        <section class="block" id="faq">
+        <section class="block alt" id="faq">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">FAQ</p>
@@ -1720,7 +1738,7 @@
         </section>
 
         <!-- CTA -->
-        <section class="block alt">
+        <section class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">BOOKING</p>
@@ -1885,6 +1903,7 @@
 })();
 </script>
 <!-- [/QUICKBAR:AUTO] -->
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
 <script>
 /* [SEARCH:AUTO] 사이트 내 검색 */
 var __ssIndex=null,__ssLoading=false;

@@ -818,6 +818,7 @@
 <!-- BREADCRUMB:AUTO:END -->
 </head>
 <body>
+<!-- [SKIP:AUTO] --><style>.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#111;color:#fff;padding:10px 16px;border-radius:0 0 8px 0;font-weight:700}.pil-skip:focus{left:0}</style><a class="pil-skip" href="#main-content">본문 바로가기</a>
         <header role="banner">
         <nav role="navigation" aria-label="주요 메뉴">
             <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
@@ -959,7 +960,7 @@
          지금 헤더는 sticky 라 제 자리를 차지하므로 이 칸은 죽은 여백이었다.
          (philbook·vod 는 아직 fixed 라 그 자리받이가 필요하다 — 함께 지우지 말 것) -->
 
-    <main role="main">
+    <main role="main" id="main-content">
     <div style="max-width: 880px; margin: 0 auto; padding: 4rem 2rem;">
         <div>
             <h1 style="font-size: 2.2rem; margin-bottom: 1.6rem; color: #16181d;">박근필 소장</h1>
@@ -1501,6 +1502,10 @@
             </div>
         </div>
     </div>
+
+    <!-- [2026-09-29] 이력 기준일 — pet-loss.kr 분석 8번(「경력 정보 · 2026년 7월 기준」 같은 신뢰 장치). 날짜를 손으로 적으면 낡으므로 페이지가 올라간 날짜를 자동 표시 -->
+    <p id="au-updated" style="max-width:1100px;margin:8px auto 0;padding:0 22px;font-size:13.5px;color:#6b7280;text-align:right">이 페이지의 이력·실적 최종 갱신: <span id="auUpd"></span></p>
+    <script>(function(){var d=new Date(document.lastModified);if(isNaN(d))return;document.getElementById('auUpd').textContent=d.getFullYear()+'년 '+(d.getMonth()+1)+'월 '+d.getDate()+'일';})();</script>
 
     <section class="au-faq" id="faq" aria-label="박근필 소장에 대해 자주 묻는 질문">
         <p class="pil-eyebrow">FAQ</p>
@@ -3027,6 +3032,7 @@ var lectureData = {
 })();
 </script>
 <!-- [/QUICKBAR:AUTO] -->
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
 <script>
 /* [SEARCH:AUTO] 사이트 내 검색 */
 var __ssIndex=null,__ssLoading=false;
