@@ -716,7 +716,7 @@
                 <div id="shNotice" aria-live="polite"></div>
                 <label class="sh-consent"><input type="checkbox" id="shConsent"><span>이 글이 박근필 작가의 강연이나 글에 소개되어도 괜찮아요. (선택)<small>이름·아이 이름·사는 곳은 빼거나 바꿔서 소개합니다. 체크하지 않은 글은 소개하지 않습니다.</small></span></label>
                 <div class="sh-row sh-end">
-                    <label>삭제 비밀번호(4자 이상)<input id="shPw" type="password" maxlength="32" autocomplete="new-password"></label>
+                    <label>수정·삭제 비밀번호(4자 이상)<input id="shPw" type="password" maxlength="32" autocomplete="new-password"></label>
                     <div class="sh-send"><span class="sh-hint" id="shLen">0 / 2900</span><button type="button" class="sh-btn sh-primary" id="shSend">올리기</button></div>
                 </div>
                 <div id="shTurnstile" class="sh-ts"></div>
@@ -904,7 +904,7 @@
     if(title.length<1){e.textContent="제목을 적어 주세요.";return;}
     if(text.length<2){e.textContent="본문에 한 단어라도 적어 주세요.";return;}
     if(check(title+" "+text+" "+$("shNick").value+" "+$("shPet").value).blocked.length){e.textContent="병원·수의사 이름이나 연락처를 빼고 다시 올려 주세요.";return;}
-    if($("shPw").value.length<4){e.textContent="삭제 비밀번호를 4자 이상 정해 주세요.";return;}
+    if($("shPw").value.length<4){e.textContent="수정·삭제 비밀번호를 4자 이상 정해 주세요.";return;}
     const token=tsGet(); if(!isAdmin&&!token){e.textContent="잠시 뒤 다시 눌러 주세요. (로봇 확인이 끝나지 않았습니다)";return;}
     $("shSend").disabled=true;
     try{ const d=await api("/api/posts",{body:{ptype,nick:$("shNick").value,pet:$("shPet").value,kind:$("shKind").value,body:TM+title+"\n"+text,password:$("shPw").value,consent:$("shConsent").checked,token}});
@@ -930,13 +930,21 @@
   function confirmBox(label,needPw,onOk){ const b=el("div","sh-confirm"); b.append(el("span",null,label)); let pw=null; if(needPw){pw=el("input");pw.type="password";pw.placeholder="삭제 비밀번호";b.append(pw);} const e=el("span","sh-err");
     b.append(btn("확인","sh-primary",async()=>{e.textContent="";try{await onOk(pw&&pw.value);}catch(x){e.textContent=x.message;}}),btn("취소","",()=>{ui={};render();}),e); return b; }
   async function del(type,id,pw,postId){ await api("/api/delete",{body:{type,id,password:pw||""}}); ui={}; toast("지웠습니다"); if(type==="post"){ location.hash=""; await load(true); } else await loadCmts(postId); }
+  function editBox(type,obj,postId){ const f=el("div","sh-inline"); let ti=null; const ta=el("textarea");
+    if(type==="post"){ const s=split(obj); ti=el("input"); ti.maxLength=60; ti.value=s.title==="(제목 없음)"?"":s.title; ti.placeholder="제목"; ta.maxLength=2900; ta.rows=8; ta.value=s.text; f.append(ti); } else { ta.maxLength=1000; ta.rows=3; ta.value=obj.body; }
+    let pw=null; if(!isAdmin){ pw=el("input"); pw.type="password"; pw.maxLength=32; pw.placeholder="글 쓸 때 정한 비밀번호"; pw.autocomplete="current-password"; }
+    const note=el("div"), e=el("div","sh-err"); ta.oninput=()=>{note.innerHTML=""; const c=check((ti?ti.value+" ":"")+ta.value); if(c.crisis) note.append(crisisBox()); if(c.blocked.length) note.append(el("div","sh-warn",[...new Set(c.blocked)].join("·")+"으로 보이는 부분은 빼 주세요."));};
+    const ok=btn("고친 내용 저장","sh-primary",async()=>{ e.textContent=""; const t=ta.value.trim(); if(!t){e.textContent="내용을 적어 주세요.";return;} if(check((ti?ti.value+" ":"")+t).blocked.length){e.textContent="병원·수의사 이름이나 연락처를 빼 주세요.";return;} if(pw&&pw.value.length<4){e.textContent="글 쓸 때 정한 비밀번호를 적어 주세요.";return;}
+      const body=type==="post"?TM+(ti.value.trim()||"(제목 없음)")+"\n"+t:t;
+      ok.disabled=true; try{ await api("/api/edit",{body:{type,id:obj.id,password:pw?pw.value:"",body}}); ui={}; toast("고쳤습니다"); if(type==="post"){ obj.body=body; render(); } else await loadCmts(postId); }catch(x){e.textContent=x.message; ok.disabled=false;} });
+    const act=el("div","sh-row"); act.append(ok,btn("취소","",()=>{ui={};render();})); f.append(ta,note); if(pw) f.append(pw); f.append(act,e); return f; }
   async function report(type,id){ await api("/api/report",{body:{type,id}}); ui={}; toast("신고했습니다. 관리자가 확인합니다"); render(); }
   async function hide(type,id,h,postId){ await api("/api/admin/hide",{body:{type,id,hidden:h}}); if(type==="post") await load(true); else await loadCmts(postId); loadReports(); }
 
   function inlineForm(postId,parentId){ const f=el("div","sh-inline"); const ta=el("textarea"); ta.maxLength=1000; ta.rows=3; ta.placeholder=parentId?"답글을 적어 주세요":"따뜻한 댓글을 남겨 주세요";
-    const row=el("div","sh-row"); const nick=el("input"); nick.maxLength=16; nick.autocomplete="off"; nick.name="sh-cnick"; nick.placeholder="닉네임(선택) · 비우면 「익명」"; const pw=el("input"); pw.type="password"; pw.maxLength=32; pw.placeholder="삭제 비밀번호(4자 이상)"; pw.autocomplete="new-password"; row.append(nick,pw);
+    const row=el("div","sh-row"); const nick=el("input"); nick.maxLength=16; nick.autocomplete="off"; nick.name="sh-cnick"; nick.placeholder="닉네임(선택) · 비우면 「익명」"; const pw=el("input"); pw.type="password"; pw.maxLength=32; pw.placeholder="수정·삭제 비밀번호(4자 이상)"; pw.autocomplete="new-password"; row.append(nick,pw);
     const note=el("div"); const e=el("div","sh-err"); ta.oninput=()=>{note.innerHTML=""; const c=check(ta.value); if(c.crisis) note.append(crisisBox()); if(c.blocked.length) note.append(el("div","sh-warn",[...new Set(c.blocked)].join("·")+"으로 보이는 부분은 빼 주세요."));};
-    const ok=btn(parentId?"답글 올리기":"댓글 올리기","sh-primary",async()=>{ e.textContent=""; const t=ta.value.trim(); if(!t){e.textContent="내용을 적어 주세요.";return;} if(check(t+" "+nick.value).blocked.length){e.textContent="병원·수의사 이름이나 연락처를 빼 주세요.";return;} if(pw.value.length<4){e.textContent="삭제 비밀번호를 4자 이상 정해 주세요.";return;}
+    const ok=btn(parentId?"답글 올리기":"댓글 올리기","sh-primary",async()=>{ e.textContent=""; const t=ta.value.trim(); if(!t){e.textContent="내용을 적어 주세요.";return;} if(check(t+" "+nick.value).blocked.length){e.textContent="병원·수의사 이름이나 연락처를 빼 주세요.";return;} if(pw.value.length<4){e.textContent="수정·삭제 비밀번호를 4자 이상 정해 주세요.";return;}
       const token=tsGet(); if(!isAdmin&&!token){e.textContent="잠시 뒤 다시 눌러 주세요. (로봇 확인이 끝나지 않았습니다)";return;}
       ok.disabled=true; try{ await api("/api/posts/"+postId+"/comments",{body:{body:t,nick:nick.value,password:pw.value,parentId:parentId||null,consent:false,token}}); ui={}; toast(parentId?"답글을 달았습니다":"댓글을 달았습니다"); const p=posts.find(x=>x.id===postId); if(p) p.comments++; await loadCmts(postId); }catch(x){e.textContent=x.message; ok.disabled=false;} });
     const act=el("div","sh-row"); act.append(ok); if(parentId) act.append(btn("취소","",()=>{ui={};render();}));
@@ -945,8 +953,9 @@
   function renderCmt(p,c,reply){ const b=el("div","sh-cmt"+(reply?" reply":"")); const m=el("div","sh-meta"); m.append(el("span","sh-who",c.nick)); if(c.byHost) m.append(el("span","sh-hostbadge","수의사 · 작가 박근필")); if(isAdmin&&c.consent) m.append(el("span","sh-ok","소개 허락")); if(c.hidden) m.append(el("span",null,"숨김 처리됨")); m.append(el("span",null,when(c.createdAt))); b.append(m);
     if(c.hidden&&!isAdmin){ b.append(el("p","sh-hint","관리자가 숨긴 글입니다.")); return b; }
     b.append(el("p",null,c.body)); if(c.crisis) b.append(crisisBox());
-    const k="c:"+c.id, a=el("div","sh-acts"); if(!reply) a.append(lnk("답글",()=>{ui={reply:c.id};render();})); a.append(lnk("신고",()=>{ui={report:k};render();}),lnk("삭제",()=>{ui={del:k};render();}));
+    const k="c:"+c.id, a=el("div","sh-acts"); if(!reply) a.append(lnk("답글",()=>{ui={reply:c.id};render();})); a.append(lnk("수정",()=>{ui={edit:k};render();}),lnk("신고",()=>{ui={report:k};render();}),lnk("삭제",()=>{ui={del:k};render();}));
     if(isAdmin) a.append(lnk(c.hidden?"숨김 풀기":"숨기기",()=>hide("comment",c.id,!c.hidden,p.id))); b.append(a);
+    if(ui.edit===k) b.append(editBox("comment",c,p.id));
     if(ui.del===k) b.append(confirmBox("이 댓글을 지울까요? 달린 답글도 함께 지워집니다.",!isAdmin,pw=>del("comment",c.id,pw,p.id)));
     if(ui.report===k) b.append(confirmBox("이 글을 관리자에게 신고할까요?",false,()=>report("comment",c.id)));
     if(ui.reply===c.id) b.append(inlineForm(p.id,c.id)); return b; }
@@ -959,8 +968,9 @@
     const m=el("div","sh-meta"); m.append(el("span","sh-who",p.nick)); if(p.byHost) m.append(el("span","sh-hostbadge","수의사 · 작가 박근필"));
     if(p.pet||p.kind) m.append(el("span",null,[p.pet,p.kind].filter(Boolean).join(" · "))); if(isAdmin&&p.consent) m.append(el("span","sh-ok","소개 허락")); if(p.hidden) m.append(el("span",null,"숨김 처리됨")); m.append(el("span",null,when(p.createdAt))); a.append(m);
     if(p.hidden&&!isAdmin) a.append(el("p","sh-hint","관리자가 숨긴 글입니다.")); else { a.append(el("p","sh-body",s.text)); if(p.crisis) a.append(crisisBox()); }
-    const k="p:"+p.id, acts=el("div","sh-acts"); acts.append(lnk("신고",()=>{ui={report:k};render();}),lnk("삭제",()=>{ui={del:k};render();}));
+    const k="p:"+p.id, acts=el("div","sh-acts"); acts.append(lnk("수정",()=>{ui={edit:k};render();}),lnk("신고",()=>{ui={report:k};render();}),lnk("삭제",()=>{ui={del:k};render();}));
     if(isAdmin) acts.append(lnk(p.hidden?"숨김 풀기":"숨기기",()=>hide("post",p.id,!p.hidden))); a.append(acts);
+    if(ui.edit===k) a.append(editBox("post",p,null));
     if(ui.del===k) a.append(confirmBox("이 글과 달린 댓글을 모두 지울까요?",!isAdmin,pw=>del("post",p.id,pw)));
     if(ui.report===k) a.append(confirmBox("이 글을 관리자에게 신고할까요?",false,()=>report("post",p.id)));
     const box=el("div","sh-cmts"); const list=cmts[p.id]; box.append(el("h3","sh-ctitle","댓글 "+(list?list.length:(p.comments||0))+"개"));
