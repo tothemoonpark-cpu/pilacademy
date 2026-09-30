@@ -107,6 +107,8 @@
 
         /* 섭외 담당자 후기 */
         .host-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr)); gap: 1.1rem; }
+        /* 2026-09-30 자가 검수: 후기 7장이 3열에서 3+3+1로 갈려 마지막 한 장이 왼쪽에 홀로 남던 것 → 홀로 남으면 한 줄을 다 쓴다 */
+        .host-grid > .host-card:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
         .host-card { margin: 0; background: #fff; border: 1px solid #d7eeeb; border-top: 4px solid var(--mint); border-radius: 14px; padding: 1.4rem 1.4rem 1.1rem; display: flex; flex-direction: column; }
         .host-card p { font-size: 0.98rem; color: var(--ink); line-height: 1.75; margin: 0 0 0.9rem; flex-grow: 1; }
         .host-card cite { font-style: normal; font-size:0.8rem; font-weight: 700; color: var(--mint-dark); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
@@ -608,6 +610,8 @@
 <style id="field-pick-style">
   .field-pick{background:#eef8f6;border-top:1px solid #d7eeeb;border-bottom:1px solid #d7eeeb;}
   .fp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:1rem;}
+  /* 2026-09-30 자가 검수: 카드 5장이 데스크톱에서 4+1로 갈려 마지막 한 장이 왼쪽에 홀로 남던 것 → 넓은 화면은 한 줄 5열 */
+  @media (min-width:1080px){.fp-grid{grid-template-columns:repeat(5,1fr);}}
   .fp-card{display:flex;flex-direction:column;background:#fff;border:1px solid #d7eeeb;border-radius:14px;
     padding:1.5rem 1.4rem;text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s;}
   .fp-card:hover{transform:translateY(-3px);border-color:#2bb7ac;box-shadow:0 10px 26px rgba(43,183,172,0.16);}
