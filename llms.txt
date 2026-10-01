@@ -96,6 +96,7 @@
 **펫로스 · 반려동물**
 - ⭐⭐ **세계일보 「펫 상실학 개론」**(2026.9~) — 세계일보가 만든 코너에 필자로 참여. 코너 소개문: 「1500만 반려인의 가슴 아픈 사연을 소개하기 위해 세계일보가 만드는 코너 … '상실학 교과서'」. 1회 「그날 진료실에 있던 또 한 사람」(2026.9.3)
 - 뉴스프리존 「애니멀케어 인사이트」 — 펫로스 연재
+- 한국강사신문 「박근필의 직업인문학」 「반려동물을 떠나보낸 직원에게 회사는 무슨 말을 하는가」(2026.9.28) — 펫로스를 겪은 직원을 회사가 어떻게 대할지 다룬 글 https://www.lecturernews.com/news/articleView.html?idxno=211196
 
 **중장년**
 - 이모작뉴스 「박근필의 N모작」(13편) · 캐어유뉴스 「박근필 소장 칼럼」(12편)
@@ -307,7 +308,26 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (212편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (232편)
+- [강아지] 강아지 이빨, 몇 개나 뽑게 될까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261001-1.html
+- [강아지] 진료대에서 떠는 강아지, 쓰다듬어 줘도 될까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261001-2.html
+- [강아지] 강아지 발톱, 병원에서 깎는 개는 얼마나 될까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261001-3.html
+- [고양이] 실내에서만 사는 고양이, 한 살부터 체중을 보세요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261001-4.html
+- [고양이] 나이 든 고양이, 울음이 부쩍 늘었다면: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261001-5.html
+- [고양이] 「수염 스트레스 없는 밥그릇」, 정말 필요할까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261001-6.html
+- [펫로스] 「나도 그랬어, 다 지나가더라」는 위로가 될까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261001-7.html
+- [펫로스] 떠난 아이에게 미안하다는 말이 멈추지 않을 때: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261001-8.html
+- [펫로스] 손글씨로 써야 하나요, 휴대폰에 써도 되나요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261001-9.html
+- [긴 글] 나이 든 고양이, 울음이 부쩍 늘었다면? 수의사가 알려 드리는 고양이 인지기능장애: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261001.html
+- [강아지] 가을 비 온 뒤 물웅덩이, 마시게 두어도 될까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_3-1.html
+- [강아지] 강아지가 몸을 부르르 털면 스트레스일까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_3-2.html
+- [강아지] 사료 바꿀 때, 천천히 섞어야 할까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_3-3.html
+- [고양이] 두 고양이, 노는 걸까 싸우는 걸까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_3-4.html
+- [고양이] 풀 먹고 토하는 고양이, 헤어볼 때문일까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_3-5.html
+- [고양이] 쥐약, 고양이 중독 원인 중 가장 많았다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_3-6.html
+- [펫로스] 몇 달이 지났는데 아직도 이래요, 제가 이상한 건가요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_3-7.html
+- [펫로스] 잊어야 낫는 건가요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_3-8.html
+- [펫로스] 쓴 걸 남에게 보여줘야 하나요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_3-9.html
 - [강아지] 가을에 눈을 자꾸 비빈다면, 눈 속 기생충일 수 있다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_2-1.html
 - [강아지] 강아지는 잘 때 사람 곁을 고를까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_2-2.html
 - [강아지] 강아지 밥그릇, 재질보다 씻는 주기가 먼저: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930_2-3.html
@@ -326,6 +346,7 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - [펫로스] 떠나보낸 반려동물 사진을 못 보겠어요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930-7.html
 - [펫로스] 쓰다가 더 슬퍼졌어요, 계속해도 되나요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930-8.html
 - [펫로스] 반려동물을 보낸 뒤, 꼭 다시 입양해야 회복되나요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260930-9.html
+- [긴 글] 가을 비 온 뒤 물웅덩이, 강아지가 마셔도 괜찮을까? 수의사가 알려 드리는 렙토스피라: https://tothemoonpark-cpu.github.io/pilacademy/notes/b260930_3.html
 - [긴 글] 강아지 진드기약, 고양이에게 발라도 될까? 수의사가 알려 드리는 퍼메트린 중독: https://tothemoonpark-cpu.github.io/pilacademy/notes/b260930_2.html
 - [긴 글] 고양이 부동액 중독, 조금만 핥아도 위험할까? 수의사가 알려 드립니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/b260930.html
 - [강아지] 산책길 도토리, 강아지가 먹으면 위험할까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n260929-1.html
