@@ -446,6 +446,15 @@
   .sh-toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#16181d;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;z-index:999;opacity:0;transition:opacity .3s}
   .sh-toast.on{opacity:1}
   .sh-ts{min-height:0}
+  .sh-photo{display:flex;flex-direction:column;gap:6px}
+  .sh-photo-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .sh-photo-pick{display:inline-flex;align-items:center;gap:6px;font-size:.88rem;padding:7px 14px;cursor:pointer}
+  .sh-photo-prev{position:relative;display:inline-block;max-width:220px}
+  .sh-photo-prev img{display:block;max-width:100%;max-height:220px;border-radius:12px;border:1px solid #e6eae9}
+  .sh-photo-note{font-size:.8rem;color:#8a9096;line-height:1.6}
+  .sh-pic{display:block;margin:12px 0 4px}.sh-pic img{display:block;max-width:100%;max-height:520px;border-radius:14px;border:1px solid #eef1f0;background:#f6f8f7}
+  .sh-cmt .sh-pic img{max-height:320px}
+  .sh-tpic{color:#8a9096;font-size:.78rem;flex:0 0 auto}
   [hidden]{display:none!important}
   @media (max-width:560px){.sh-compose,.sh-admin{padding:18px 14px}.sh-cmt.reply{margin-left:12px}}
 
@@ -715,6 +724,7 @@
                 <input id="shTitle" class="sh-titlein" maxlength="40" autocomplete="off" data-1p-ignore data-lpignore="true" placeholder="예) 보고 싶은 콩이에게" aria-label="제목">
                 <textarea id="shBody" maxlength="2900" rows="7" placeholder="내 아이에게 하고 싶은 말을 적어 보세요. 무엇을 써야 할지 모르겠다면 지금 마음을 한 단어로 적어도 됩니다."></textarea>
                 <div id="shNotice" aria-live="polite"></div>
+                <div id="shPhotoSlot"></div>
                 <label class="sh-consent"><input type="checkbox" id="shConsent"><span>이 글이 박근필 작가의 강연이나 글에 소개되어도 괜찮아요. (선택)<small>이름·아이 이름·사는 곳은 빼거나 바꿔서 소개합니다. 체크하지 않은 글은 소개하지 않습니다.</small></span></label>
                 <div class="sh-row sh-end">
                     <label>수정·삭제 비밀번호(4자 이상)<input id="shPw" type="password" maxlength="32" autocomplete="new-password"></label>
@@ -874,6 +884,31 @@
   const lnk=(label,fn)=>{const b=el("button","sh-link",label); b.type="button"; b.onclick=fn; return b;};
   const when=ts=>{const d=new Date(ts),n=Date.now(),s=(n-ts)/1000; if(s<60) return "방금"; if(s<3600) return Math.floor(s/60)+"분 전"; if(s<86400) return Math.floor(s/3600)+"시간 전"; return d.getFullYear()+"."+(d.getMonth()+1)+"."+d.getDate();};
   function toast(m){let t=document.querySelector(".sh-toast"); if(!t){t=el("div","sh-toast");document.body.append(t);} t.textContent=m; t.classList.add("on"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("on"),2200);}
+  // 사진: 브라우저에서 다시 그려 저장 → 위치·촬영 정보(EXIF)가 사라지고 크기도 줄어든다 (2026-10-02)
+  const IMG_MAX=1280, IMG_CHARS=520000;
+  async function shrink(file){
+    if(!/^image\//.test(file.type||"")&&!/\.(jpe?g|png|webp|gif|heic|heif)$/i.test(file.name||"")) throw new Error("사진 파일만 올릴 수 있습니다.");
+    if(file.size>25*1024*1024) throw new Error("사진이 너무 큽니다(25MB 이하).");
+    let src; try{ src=await createImageBitmap(file,{imageOrientation:"from-image"}); }catch(e){ src=await new Promise((ok,no)=>{const u=URL.createObjectURL(file),im=new Image(); im.onload=()=>{URL.revokeObjectURL(u);ok(im);}; im.onerror=()=>{URL.revokeObjectURL(u);no(new Error("이 사진은 열 수 없습니다. JPG나 PNG 사진으로 골라 주세요."));}; im.src=u;}); }
+    const W=src.width||src.naturalWidth, H=src.height||src.naturalHeight;
+    let side=IMG_MAX, q=.82, out="";
+    for(let i=0;i<6;i++){ const r=Math.min(1,side/Math.max(W,H)), c=document.createElement("canvas"); c.width=Math.round(W*r); c.height=Math.round(H*r);
+      const x=c.getContext("2d"); x.fillStyle="#fff"; x.fillRect(0,0,c.width,c.height); x.drawImage(src,0,0,c.width,c.height);
+      out=c.toDataURL("image/webp",q); if(!out.startsWith("data:image/webp")) out=c.toDataURL("image/jpeg",q);
+      if(out.length<=IMG_CHARS) break; q-=.1; side=Math.round(side*.85); }
+    if(src.close) src.close();
+    if(out.length>IMG_CHARS) throw new Error("사진을 줄이지 못했습니다. 다른 사진으로 골라 주세요.");
+    return out; }
+  function photoPicker(cur){ const w=el("div","sh-photo"), row=el("div","sh-photo-row"), inp=el("input"); inp.type="file"; inp.accept="image/*"; inp.hidden=true;
+    const pick=el("label","sh-btn sh-photo-pick"); pick.append(document.createTextNode(cur?"사진 바꾸기":"사진 1장 넣기(선택)"),inp);
+    const info=el("span","sh-hint"), prev=el("div"), e=el("div","sh-err"); let data="", removed=false;
+    const rm=lnk("사진 빼기",()=>{ data=""; inp.value=""; prev.innerHTML=""; rm.hidden=true; if(cur){ removed=true; info.textContent="저장하면 기존 사진이 지워집니다."; } else info.textContent=""; }); rm.hidden=!cur;
+    inp.onchange=async()=>{ e.textContent=""; const f=inp.files&&inp.files[0]; if(!f) return; info.textContent="사진을 줄이는 중…";
+      try{ data=await shrink(f); prev.innerHTML=""; const box=el("div","sh-photo-prev"), im=el("img"); im.src=data; im.alt="올릴 사진 미리보기"; box.append(im); prev.append(box); info.textContent="위치 정보는 지우고 작게 줄여 올립니다."; rm.hidden=false; removed=false; }
+      catch(x){ data=""; inp.value=""; info.textContent=""; e.textContent=x.message; } };
+    row.append(pick,rm,info); w.append(row,prev,e,el("div","sh-photo-note","아이 사진만 올려 주세요. 사람 얼굴·차 번호판·연락처가 보이는 사진은 관리자가 지울 수 있습니다."));
+    return { el:w, get:()=>data, removed:()=>removed, clear:()=>{ data=""; removed=false; inp.value=""; prev.innerHTML=""; info.textContent=""; e.textContent=""; rm.hidden=true; } }; }
+  function picEl(id){ const a=el("a","sh-pic"); a.href=API+"/api/img/"+id; a.target="_blank"; a.rel="noopener"; const im=el("img"); im.src=a.href; im.loading="lazy"; im.decoding="async"; im.alt="보호자가 올린 아이 사진"; a.append(im); return a; }
   function crisisBox(){const d=el("div","sh-crisis"); d.innerHTML='혼자 견디지 않으셔도 됩니다. 자살예방상담전화 <a href="tel:109">109</a>, 정신건강위기상담 <a href="tel:15770199">1577-0199</a>에서 24시간 이야기를 들어 줍니다.'; return d;}
   let adminKey=""; try{ adminKey=sessionStorage.getItem("sh_admin")||""; }catch(e){}
   let isAdmin=false, ptype="letter", filt="all", posts=[], cursor=null, more=false, page=1, cmts={}, ui={}, viewId=null;
@@ -892,6 +927,7 @@
   // 글쓰기 창
   function openWrite(){ $("shModal").hidden=false; document.body.classList.add("sh-lock"); setTimeout(()=>$("shTitle").focus(),50); }
   function closeWrite(){ $("shModal").hidden=true; document.body.classList.remove("sh-lock"); if(location.hash==="#write") history.replaceState(null,"",location.pathname); }
+  const composePic=photoPicker(null); $("shPhotoSlot").append(composePic.el);
   $("shWrite").onclick=openWrite; $("shWrite2").onclick=openWrite; $("shClose").onclick=closeWrite;
   $("shModal").addEventListener("click",e=>{ if(e.target===$("shModal")) closeWrite(); });
   document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!$("shModal").hidden) closeWrite(); });
@@ -908,8 +944,8 @@
     if($("shPw").value.length<4){e.textContent="수정·삭제 비밀번호를 4자 이상 정해 주세요.";return;}
     const token=tsGet(); if(!isAdmin&&!token){e.textContent="잠시 뒤 다시 눌러 주세요. (로봇 확인이 끝나지 않았습니다)";return;}
     $("shSend").disabled=true;
-    try{ const d=await api("/api/posts",{body:{ptype,nick:$("shNick").value,pet:$("shPet").value,kind:$("shKind").value,body:TM+title+"\n"+text,password:$("shPw").value,consent:$("shConsent").checked,token}});
-      $("shTitle").value="";$("shBody").value="";$("shPw").value="";$("shConsent").checked=false;$("shNotice").innerHTML="";$("shLen").textContent="0 / 2900"; closeWrite(); toast("글을 올렸습니다"); await load(true); if(d.id) location.hash="#p="+d.id;
+    try{ const d=await api("/api/posts",{body:{ptype,nick:$("shNick").value,pet:$("shPet").value,kind:$("shKind").value,body:TM+title+"\n"+text,password:$("shPw").value,consent:$("shConsent").checked,token,image:composePic.get()||undefined}});
+      $("shTitle").value="";$("shBody").value="";$("shPw").value="";$("shConsent").checked=false;$("shNotice").innerHTML="";$("shLen").textContent="0 / 2900"; composePic.clear(); closeWrite(); toast("글을 올렸습니다"); await load(true); if(d.id) location.hash="#p="+d.id;
     }catch(x){ e.textContent=x.message; }
     $("shSend").disabled=false; };
 
@@ -934,26 +970,28 @@
   function editBox(type,obj,postId){ const f=el("div","sh-inline"); let ti=null; const ta=el("textarea");
     if(type==="post"){ const s=split(obj); ti=el("input"); ti.maxLength=60; ti.value=s.title==="(제목 없음)"?"":s.title; ti.placeholder="제목"; ta.maxLength=2900; ta.rows=8; ta.value=s.text; f.append(ti); } else { ta.maxLength=1000; ta.rows=3; ta.value=obj.body; }
     let pw=null; if(!isAdmin){ pw=el("input"); pw.type="password"; pw.maxLength=32; pw.placeholder="글 쓸 때 정한 비밀번호"; pw.autocomplete="current-password"; }
+    const ep=photoPicker(obj.img||null);
     const note=el("div"), e=el("div","sh-err"); ta.oninput=()=>{note.innerHTML=""; const c=check((ti?ti.value+" ":"")+ta.value); if(c.crisis) note.append(crisisBox()); if(c.blocked.length) note.append(el("div","sh-warn",[...new Set(c.blocked)].join("·")+"으로 보이는 부분은 빼 주세요."));};
     const ok=btn("고친 내용 저장","sh-primary",async()=>{ e.textContent=""; const t=ta.value.trim(); if(!t){e.textContent="내용을 적어 주세요.";return;} if(check((ti?ti.value+" ":"")+t).blocked.length){e.textContent="병원·수의사 이름이나 연락처를 빼 주세요.";return;} if(pw&&pw.value.length<4){e.textContent="글 쓸 때 정한 비밀번호를 적어 주세요.";return;}
       const body=type==="post"?TM+(ti.value.trim()||"(제목 없음)")+"\n"+t:t;
-      ok.disabled=true; try{ await api("/api/edit",{body:{type,id:obj.id,password:pw?pw.value:"",body}}); ui={}; toast("고쳤습니다"); if(type==="post"){ obj.body=body; render(); } else await loadCmts(postId); }catch(x){e.textContent=x.message; ok.disabled=false;} });
-    const act=el("div","sh-row"); act.append(ok,btn("취소","",()=>{ui={};render();})); f.append(ta,note); if(pw) f.append(pw); f.append(act,e); return f; }
+      ok.disabled=true; try{ await api("/api/edit",{body:{type,id:obj.id,password:pw?pw.value:"",body,image:ep.get()||undefined,removeImage:ep.removed()||undefined}}); ui={}; toast("고쳤습니다"); if(type==="post"){ if(ep.get()||ep.removed()) await load(true); else { obj.body=body; render(); } } else await loadCmts(postId); }catch(x){e.textContent=x.message; ok.disabled=false;} });
+    const act=el("div","sh-row"); act.append(ok,btn("취소","",()=>{ui={};render();})); f.append(ta,note,ep.el); if(pw) f.append(pw); f.append(act,e); return f; }
   async function report(type,id){ await api("/api/report",{body:{type,id}}); ui={}; toast("신고했습니다. 관리자가 확인합니다"); render(); }
   async function hide(type,id,h,postId){ await api("/api/admin/hide",{body:{type,id,hidden:h}}); if(type==="post") await load(true); else await loadCmts(postId); loadReports(); }
 
   function inlineForm(postId,parentId){ const f=el("div","sh-inline"); const ta=el("textarea"); ta.maxLength=1000; ta.rows=3; ta.placeholder=parentId?"답글을 적어 주세요":"따뜻한 댓글을 남겨 주세요";
     const row=el("div","sh-row"); const nick=el("input"); nick.maxLength=16; nick.autocomplete="off"; nick.name="sh-cnick"; nick.placeholder="닉네임(선택) · 비우면 「익명」"; const pw=el("input"); pw.type="password"; pw.maxLength=32; pw.placeholder="수정·삭제 비밀번호(4자 이상)"; pw.autocomplete="new-password"; row.append(nick,pw);
+    const cp=photoPicker(null);
     const note=el("div"); const e=el("div","sh-err"); ta.oninput=()=>{note.innerHTML=""; const c=check(ta.value); if(c.crisis) note.append(crisisBox()); if(c.blocked.length) note.append(el("div","sh-warn",[...new Set(c.blocked)].join("·")+"으로 보이는 부분은 빼 주세요."));};
     const ok=btn(parentId?"답글 올리기":"댓글 올리기","sh-primary",async()=>{ e.textContent=""; const t=ta.value.trim(); if(!t){e.textContent="내용을 적어 주세요.";return;} if(check(t+" "+nick.value).blocked.length){e.textContent="병원·수의사 이름이나 연락처를 빼 주세요.";return;} if(pw.value.length<4){e.textContent="수정·삭제 비밀번호를 4자 이상 정해 주세요.";return;}
       const token=tsGet(); if(!isAdmin&&!token){e.textContent="잠시 뒤 다시 눌러 주세요. (로봇 확인이 끝나지 않았습니다)";return;}
-      ok.disabled=true; try{ await api("/api/posts/"+postId+"/comments",{body:{body:t,nick:nick.value,password:pw.value,parentId:parentId||null,consent:false,token}}); ui={}; toast(parentId?"답글을 달았습니다":"댓글을 달았습니다"); const p=posts.find(x=>x.id===postId); if(p) p.comments++; await loadCmts(postId); }catch(x){e.textContent=x.message; ok.disabled=false;} });
+      ok.disabled=true; try{ await api("/api/posts/"+postId+"/comments",{body:{body:t,nick:nick.value,password:pw.value,parentId:parentId||null,consent:false,token,image:cp.get()||undefined}}); ui={}; toast(parentId?"답글을 달았습니다":"댓글을 달았습니다"); const p=posts.find(x=>x.id===postId); if(p) p.comments++; await loadCmts(postId); }catch(x){e.textContent=x.message; ok.disabled=false;} });
     const act=el("div","sh-row"); act.append(ok); if(parentId) act.append(btn("취소","",()=>{ui={};render();}));
-    f.append(ta,note,row,act,e); return f; }
+    f.append(ta,note,cp.el,row,act,e); return f; }
 
   function renderCmt(p,c,reply){ const b=el("div","sh-cmt"+(reply?" reply":"")); const m=el("div","sh-meta"); m.append(el("span","sh-who",c.nick)); if(c.byHost) m.append(el("span","sh-hostbadge","수의사 · 작가 박근필")); if(isAdmin&&c.consent) m.append(el("span","sh-ok","소개 허락")); if(c.hidden) m.append(el("span",null,"숨김 처리됨")); m.append(el("span",null,when(c.createdAt))); b.append(m);
     if(c.hidden&&!isAdmin){ b.append(el("p","sh-hint","관리자가 숨긴 글입니다.")); return b; }
-    b.append(el("p",null,c.body)); if(c.crisis) b.append(crisisBox());
+    b.append(el("p",null,c.body)); if(c.img) b.append(picEl(c.img)); if(c.crisis) b.append(crisisBox());
     const k="c:"+c.id, a=el("div","sh-acts"); if(!reply) a.append(lnk("답글",()=>{ui={reply:c.id};render();})); a.append(lnk("수정",()=>{ui={edit:k};render();}),lnk("신고",()=>{ui={report:k};render();}),lnk("삭제",()=>{ui={del:k};render();}));
     if(isAdmin) a.append(lnk(c.hidden?"숨김 풀기":"숨기기",()=>hide("comment",c.id,!c.hidden,p.id))); b.append(a);
     if(ui.edit===k) b.append(editBox("comment",c,p.id));
@@ -968,7 +1006,7 @@
     a.append(el("span","sh-type",p.ptype==="story"?"이야기 · 질문":"편지")); a.append(el("h2","sh-vtitle",s.title));
     const m=el("div","sh-meta"); m.append(el("span","sh-who",p.nick)); if(p.byHost) m.append(el("span","sh-hostbadge","수의사 · 작가 박근필"));
     if(p.pet||p.kind) m.append(el("span",null,[p.pet,p.kind].filter(Boolean).join(" · "))); if(isAdmin&&p.consent) m.append(el("span","sh-ok","소개 허락")); if(p.hidden) m.append(el("span",null,"숨김 처리됨")); m.append(el("span",null,when(p.createdAt))); a.append(m);
-    if(p.hidden&&!isAdmin) a.append(el("p","sh-hint","관리자가 숨긴 글입니다.")); else { a.append(el("p","sh-body",s.text)); if(p.crisis) a.append(crisisBox()); }
+    if(p.hidden&&!isAdmin) a.append(el("p","sh-hint","관리자가 숨긴 글입니다.")); else { a.append(el("p","sh-body",s.text)); if(p.img) a.append(picEl(p.img)); if(p.crisis) a.append(crisisBox()); }
     const k="p:"+p.id, acts=el("div","sh-acts"); acts.append(lnk("수정",()=>{ui={edit:k};render();}),lnk("신고",()=>{ui={report:k};render();}),lnk("삭제",()=>{ui={del:k};render();}));
     if(isAdmin) acts.append(lnk(p.hidden?"숨김 풀기":"숨기기",()=>hide("post",p.id,!p.hidden))); a.append(acts);
     if(ui.edit===k) a.append(editBox("post",p,null));
@@ -983,7 +1021,7 @@
   // 목록(게시판 표)
   function row(p){ const s=split(p), r=el("a","sh-trow"+(p.hidden?" hid":"")); r.href="#p="+p.id;
     const t=el("span","sh-ttype "+(p.ptype==="story"?"story":"letter"),p.ptype==="story"?"이야기":"편지");
-    const ti=el("span","sh-ttitle"); ti.append(el("span","sh-ttext",s.title)); if(p.comments) ti.append(el("span","sh-tcnt","["+p.comments+"]"));
+    const ti=el("span","sh-ttitle"); ti.append(el("span","sh-ttext",s.title)); if(p.img) ti.append(el("span","sh-tpic","[사진]")); if(p.comments) ti.append(el("span","sh-tcnt","["+p.comments+"]"));
     const who=el("span","sh-twho",p.nick+(p.byHost?" · 박근필":"")); const d=el("span","sh-tdate",when(p.createdAt));
     r.append(t,ti,who,d); return r; }
   function pager(){ const P=$("shPager"); P.innerHTML=""; const n=Math.max(1,Math.ceil(posts.length/PER));
@@ -1013,7 +1051,10 @@
       d.reports.forEach(r=>{ const rw=el("div","sh-confirm"); rw.append(el("span",null,(r.type==="post"?"글":"댓글")+" · "+when(r.createdAt)+" · 「"+r.summary.replace(TM,"")+"」"),
         btn("보기","",()=>{location.hash="#p="+r.postId;}),btn("숨기기","",()=>hide(r.type,r.targetId,true,r.postId)),btn("그대로 두기","",async()=>{await api("/api/admin/resolve",{body:{id:r.id}});loadReports();})); box.append(rw); });
     }catch(x){ $("shReports").textContent=x.message; } }
-  async function enterAdmin(){ if(!adminKey) return; try{ await api("/api/admin/check"); isAdmin=true; $("shAdmin").hidden=false; $("shFOk").hidden=false; $("shTurnstile").hidden=true; loadReports(); }
+  function showStore(s){ let b=$("shStore"); if(!b){ b=el("div","sh-hint"); b.id="shStore"; $("shReports").before(b); } if(!s){ b.textContent=""; return; }
+    const mb=x=>(x/1048576).toFixed(1)+"MB", pct=Math.round(s.bytes/s.limit*100); b.textContent="사진 저장 공간: "+s.count+"장 · "+mb(s.bytes)+" / "+mb(s.limit)+" ("+pct+"%)";
+    if(pct>=80){ b.className="sh-warn"; b.textContent+=" — 80%를 넘었습니다. 오래된 사진 정리나 저장소 늘리기가 필요합니다."; } }
+  async function enterAdmin(){ if(!adminKey) return; try{ const ck=await api("/api/admin/check"); isAdmin=true; showStore(ck.images); $("shAdmin").hidden=false; $("shFOk").hidden=false; $("shTurnstile").hidden=true; loadReports(); }
     catch(x){ isAdmin=false; adminKey=""; try{sessionStorage.removeItem("sh_admin");}catch(e){} toast("관리자 키가 맞지 않습니다"); } await load(true); route(); }
   $("shAdminOpen").onclick=()=>{ const f=$("shAdminForm"); if(f){f.remove();return;} const box=el("div","sh-confirm"); box.id="shAdminForm"; const i=el("input"); i.type="password"; i.placeholder="관리자 키"; i.autocomplete="current-password";
     box.append(i,btn("들어가기","sh-primary",()=>{ adminKey=i.value.trim(); try{sessionStorage.setItem("sh_admin",adminKey);}catch(e){} box.remove(); enterAdmin(); })); $("shAdminOpen").after(box); i.focus(); };
