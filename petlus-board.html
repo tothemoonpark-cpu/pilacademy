@@ -480,6 +480,8 @@
   .sh-pg{min-width:36px;height:36px;border:1px solid #d3dad8;background:#fff;border-radius:10px;font:inherit;font-size:.88rem;cursor:pointer}
   .sh-pg.on{background:#1f8f86;border-color:#1f8f86;color:#fff;font-weight:700}
   .sh-viewbar{display:flex;justify-content:space-between;margin:4px 0 12px}
+  .sh-find{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 12px}.sh-find input{flex:1;min-width:200px;max-width:420px;border:1px solid #d3dad8;border-radius:10px;padding:9px 12px;font:inherit;font-size:.92rem}.sh-find input:focus{outline:2px solid #2bb7ac;border-color:#2bb7ac}
+  .sh-urgent{background:#fff7f2;border:1px solid #f5d6c4;border-radius:12px;padding:12px 14px;margin:10px 0;font-size:.9rem;line-height:1.7;color:#6b3f24}.sh-urgent a{color:#b4491c;font-weight:700}
   .sh-view{padding:26px 24px}.sh-vtitle{font-size:1.3rem;margin:.6rem 0 .5rem;line-height:1.45;word-break:keep-all}
   .sh-ctitle{font-size:.95rem;margin:0}
   .sh-modal{position:fixed;inset:0;background:rgba(15,25,30,.55);z-index:1000;display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:5vh 14px}
@@ -746,6 +748,7 @@
                         <button type="button" id="shFOk" aria-pressed="false" hidden>소개 허락한 글·댓글 (작가님만)</button>
                     </div>
                 </div>
+                <div class="sh-find"><input type="search" id="shQ" placeholder="글 찾기 — 예: 무지개다리, 고양이, 안락사" aria-label="쉼터 글 찾기" autocomplete="off"><span id="shQInfo" class="sh-hint" aria-live="polite"></span></div>
                 <div id="shList" aria-live="polite"><p class="sh-hint">글을 불러오는 중…</p></div>
                 <div id="shPager"></div>
                 <p style="text-align:center;margin-top:18px"><button type="button" class="sh-btn sh-primary" id="shWrite2">✎ 글쓰기</button></p>
@@ -912,7 +915,7 @@
   function picEl(id){ const a=el("a","sh-pic"); a.href=API+"/api/img/"+id; a.target="_blank"; a.rel="noopener"; const im=el("img"); im.src=a.href; im.loading="lazy"; im.decoding="async"; im.alt="보호자가 올린 아이 사진"; a.append(im); return a; }
   function crisisBox(){const d=el("div","sh-crisis"); d.innerHTML='혼자 견디지 않으셔도 됩니다. 자살예방상담전화 <a href="tel:109">109</a>, 정신건강위기상담 <a href="tel:15770199">1577-0199</a>에서 24시간 이야기를 들어 줍니다.'; return d;}
   let adminKey=""; try{ adminKey=sessionStorage.getItem("sh_admin")||""; }catch(e){}
-  let isAdmin=false, ptype="letter", filt="all", posts=[], cursor=null, more=false, page=1, cmts={}, ui={}, viewId=null;
+  let isAdmin=false, ptype="letter", filt="all", posts=[], cursor=null, more=false, page=1, cmts={}, ui={}, viewId=null, qWord="";
   const PER=10;
 
   async function api(path, opt){ const h={"Content-Type":"application/json"}; if(adminKey) h["X-Admin-Key"]=adminKey;
@@ -977,6 +980,14 @@
       const body=type==="post"?TM+(ti.value.trim()||"(제목 없음)")+"\n"+t:t;
       ok.disabled=true; try{ await api("/api/edit",{body:{type,id:obj.id,password:pw?pw.value:"",body,image:ep.get()||undefined,removeImage:ep.removed()||undefined}}); ui={}; toast("고쳤습니다"); if(type==="post"){ if(ep.get()||ep.removed()) await load(true); else { obj.body=body; render(); } } else await loadCmts(postId); }catch(x){e.textContent=x.message; ok.disabled=false;} });
     const act=el("div","sh-row"); act.append(ok,btn("취소","",()=>{ui={};render();})); f.append(ta,note,ep.el); if(pw) f.append(pw); f.append(act,e); return f; }
+  async function copyLink(id){ const u=location.origin+location.pathname+"#p="+id;
+    try{ await navigator.clipboard.writeText(u); toast("링크를 복사했습니다. 가족·지인에게 보내실 수 있습니다"); }
+    catch(e){ const t=document.createElement("textarea"); t.value=u; document.body.append(t); t.select(); try{document.execCommand("copy"); toast("링크를 복사했습니다");}catch(x){ prompt("아래 주소를 복사해 주세요",u); } t.remove(); } }
+  function urgentBox(p){ const b=el("div","sh-urgent");
+    b.append(el("p",null,"이름·연락처·주소처럼 누군지 알 수 있는 정보가 드러났거나, 지금 바로 내려야 할 글이라면 알려 주세요. 확인하는 대로 먼저 숨긴 뒤 살펴봅니다."));
+    const m=document.createElement("a"); m.href="mailto:tothemoon_park@naver.com?subject="+encodeURIComponent("[펫러스 쉼터] 긴급 비공개 요청 — 글 번호 "+p.id); m.textContent="메일로 알리기 (tothemoon_park@naver.com)";
+    const go=btn("관리자에게 바로 알리기","sh-primary",async()=>{ try{ await api("/api/report",{body:{type:"post",id:p.id}}); toast("알렸습니다. 확인하는 대로 먼저 숨깁니다"); ui={}; render(); }catch(x){ toast(x.message); } });
+    const r1=el("p",null); r1.append(go); const r2=el("p",null); r2.append("또는 ",m); b.append(r1,r2); return b; }
   async function report(type,id){ await api("/api/report",{body:{type,id}}); ui={}; toast("신고했습니다. 관리자가 확인합니다"); render(); }
   async function hide(type,id,h,postId){ await api("/api/admin/hide",{body:{type,id,hidden:h}}); if(type==="post") await load(true); else await loadCmts(postId); loadReports(); }
 
@@ -1003,16 +1014,18 @@
   // 본문 보기
   function renderView(p){ const V=$("shView"); V.innerHTML=""; const top=el("div","sh-viewbar"); top.append(btn("← 목록으로","",()=>{location.hash="";})); V.append(top);
     if(!p){ V.append(el("p","sh-hint","글을 찾을 수 없습니다. 지워졌거나 오래된 글일 수 있습니다.")); return; }
+    top.append(btn("링크 복사","",()=>copyLink(p.id)));
     const s=split(p), a=el("article","sh-post sh-view"+(p.hidden?" hid":""));
     a.append(el("span","sh-type",p.ptype==="story"?"이야기 · 질문":"편지")); a.append(el("h2","sh-vtitle",s.title));
     const m=el("div","sh-meta"); m.append(el("span","sh-who",p.nick)); if(p.byHost) m.append(el("span","sh-hostbadge","수의사 · 작가 박근필"));
     if(p.pet||p.kind) m.append(el("span",null,[p.pet,p.kind].filter(Boolean).join(" · "))); if(isAdmin&&p.consent) m.append(el("span","sh-ok","소개 허락")); if(p.hidden) m.append(el("span",null,"숨김 처리됨")); m.append(el("span",null,when(p.createdAt))); a.append(m);
     if(p.hidden&&!isAdmin) a.append(el("p","sh-hint","관리자가 숨긴 글입니다.")); else { a.append(el("p","sh-body",s.text)); if(p.img) a.append(picEl(p.img)); if(p.crisis) a.append(crisisBox()); }
-    const k="p:"+p.id, acts=el("div","sh-acts"); acts.append(lnk("수정",()=>{ui={edit:k};render();}),lnk("신고",()=>{ui={report:k};render();}),lnk("삭제",()=>{ui={del:k};render();}));
+    const k="p:"+p.id, acts=el("div","sh-acts"); acts.append(lnk("수정",()=>{ui={edit:k};render();}),lnk("신고",()=>{ui={report:k};render();}),lnk("긴급 비공개 요청",()=>{ui={urgent:k};render();}),lnk("삭제",()=>{ui={del:k};render();}));
     if(isAdmin) acts.append(lnk(p.hidden?"숨김 풀기":"숨기기",()=>hide("post",p.id,!p.hidden))); a.append(acts);
     if(ui.edit===k) a.append(editBox("post",p,null));
     if(ui.del===k) a.append(confirmBox("이 글과 달린 댓글을 모두 지울까요?",!isAdmin,pw=>del("post",p.id,pw)));
     if(ui.report===k) a.append(confirmBox("이 글을 관리자에게 신고할까요?",false,()=>report("post",p.id)));
+    if(ui.urgent===k) a.append(urgentBox(p));
     const box=el("div","sh-cmts"); const list=cmts[p.id]; box.append(el("h3","sh-ctitle","댓글 "+(list?list.length:(p.comments||0))+"개"));
     if(!list) box.append(el("p","sh-hint","댓글을 불러오는 중…"));
     else { list.filter(c=>!c.parentId).forEach(c=>{ box.append(renderCmt(p,c,false)); list.filter(r=>r.parentId===c.id).forEach(r=>box.append(renderCmt(p,r,true))); }); if(!list.length) box.append(el("p","sh-hint","첫 댓글을 남겨 주세요. 먼저 지나온 분의 한 줄이 큰 위로가 됩니다.")); }
@@ -1025,10 +1038,11 @@
     const ti=el("span","sh-ttitle"); ti.append(el("span","sh-ttext",s.title)); if(p.img) ti.append(el("span","sh-tpic","[사진]")); if(p.comments) ti.append(el("span","sh-tcnt","["+p.comments+"]"));
     const who=el("span","sh-twho",p.nick+(p.byHost?" · 박근필":"")); const d=el("span","sh-tdate",when(p.createdAt));
     r.append(t,ti,who,d); return r; }
-  function pager(){ const P=$("shPager"); P.innerHTML=""; const n=Math.max(1,Math.ceil(posts.length/PER));
+  function shown(){ if(!qWord) return posts; const w=qWord.toLowerCase(); return posts.filter(p=>{ const s=split(p); return (s.title+" "+s.text+" "+(p.nick||"")+" "+(p.pet||"")+" "+(p.kind||"")).toLowerCase().includes(w); }); }
+  function pager(){ const P=$("shPager"); P.innerHTML=""; const n=Math.max(1,Math.ceil(shown().length/PER));
     const go=i=>{page=i;render();window.scrollTo({top:$("shBoard").offsetTop-80,behavior:"smooth"});};
     if(n>1||more) for(let i=1;i<=n;i++){ const b=el("button","sh-pg"+(i===page?" on":""),String(i)); b.type="button"; b.onclick=()=>go(i); P.append(b); }
-    if(more){ const b=el("button","sh-pg",String(n+1)+" ›"); b.type="button"; b.onclick=async()=>{ await load(false); go(Math.min(n+1,Math.ceil(posts.length/PER))); }; P.append(b); } }
+    if(more&&!qWord){ const b=el("button","sh-pg",String(n+1)+" ›"); b.type="button"; b.onclick=async()=>{ await load(false); go(Math.min(n+1,Math.ceil(posts.length/PER))); }; P.append(b); } }
 
   function render(){ const L=$("shList"), V=$("shView");
     if(viewId){ $("shBoard").hidden=true; V.hidden=false; renderView(posts.find(x=>x.id===viewId)); return; }
@@ -1037,8 +1051,14 @@
       if(okCmts.length){ L.append(el("h3",null,"소개를 허락한 댓글")); okCmts.forEach(c=>L.append(renderCmt({id:c.postId},c,true))); } $("shPager").innerHTML=""; return; }
     $("shWrite2").hidden=!posts.length;
     if(!posts.length){ L.append(el("p","sh-hint sh-empty","아직 남겨진 글이 없습니다. 「글쓰기」를 눌러 첫 이야기를 남겨 주세요.")); $("shPager").innerHTML=""; return; }
+    const list=shown(); if(qWord&&!list.length){ L.append(el("p","sh-hint sh-empty","「"+qWord+"」이(가) 들어간 글이 아직 없습니다. 다른 낱말로 찾아보시거나, 첫 이야기를 남겨 주세요.")); $("shPager").innerHTML=""; return; }
     const head=el("div","sh-thead"); ["종류","제목","닉네임","날짜"].forEach(x=>head.append(el("span",null,x))); L.append(head);
-    posts.slice((page-1)*PER,page*PER).forEach(p=>L.append(row(p))); pager(); }
+    list.slice((page-1)*PER,page*PER).forEach(p=>L.append(row(p))); pager(); }
+  let qT=null;
+  async function runFind(){ qWord=$("shQ").value.trim(); page=1;
+    if(qWord){ $("shQInfo").textContent="찾는 중…"; let n=0; while(more&&n<20){ await load(false); n++; } $("shQInfo").textContent="「"+qWord+"」 "+shown().length+"건"; }
+    else $("shQInfo").textContent=""; render(); }
+  $("shQ").addEventListener("input",()=>{ clearTimeout(qT); qT=setTimeout(runFind,350); });
 
   async function route(){ const h=location.hash; if(h==="#write"){ viewId=null; render(); openWrite(); return; }
     const m=h.match(/^#p=([a-z0-9]{8,32})$/); viewId=m?m[1]:null; ui={};

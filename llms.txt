@@ -43,7 +43,7 @@
 
 ## 주요 실적
 
-- 전국 초·중·고 **38개교** 진로·직업 특강 (2·3학년 550명 대강당부터 학급 단위까지)
+- 전국 초·중·고 **38개교** 진로·직업 특강 (전교생 414명 대강당부터 학급 단위까지)
 - **예술활동증명**(2025.11.10, 한국예술인복지재단) — 국가 재단의 공적 인정
 - **부산대학교 미래시민교육원(부산·양산) · 부경대학교 미래교육원** 2026년 1학기 신규 개설 강좌 선정(「책쓰기의 8할은 기획이다」). ⛔ 사실은 「강좌 선정」까지다 — 「강의했다」로 쓰지 말 것
 - **부산시교육청영재교육진흥원** 교원 직무연수 강사 — 「2026년 초중등 영재교육 담당교원 기초과정 직무연수」에서 「AI 시대, 우리 아이에게 정말 필요한 것」 **3차시** 원격연수(2026.7~8 송출 완료 · 강의 자료는 연수 교재로 제작). 영재학급 담당 교원이 반드시 이수해야 하는 필수 연수이며 부산 교원 80명이 수강했다.
@@ -261,6 +261,7 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 
 - [소장 소개](https://tothemoonpark-cpu.github.io/pilacademy/author.html): 전체 이력 — 강연·활동 81건, 언론 인터뷰 17건, 칼럼 351편(누적 30개 매체 · 현재 26곳 연재 중), 진로·직업 특강 전체 목록
 - [강연 안내](https://tothemoonpark-cpu.github.io/pilacademy/lecture.html): 강연 주제·대상·시간·섭외 절차·자주 묻는 질문
+- [강연 현장 기록](https://tothemoonpark-cpu.github.io/pilacademy/lecture-news.html): 실제로 다녀온 강연을 날짜순으로 정리한 기록 — 날짜·장소·대상·인원·사진·후기·보도 링크. 전북대학교 수의과대학 반려동물 한마당(2026.9.19), 김해율하도서관 펫로스 치유 글쓰기 4주 과정, 중·고등학교 진로 특강, 부산시청 북세미나 등
 - [진로·직업 특강](https://tothemoonpark-cpu.github.io/pilacademy/career.html): **청소년 진로 특강 전용 페이지** — 왜 부르는가·학년별 구성·강연 영상 6건·담당 교사 후기·FAQ 7문
 - [기업·공공기관 커리어 강연](https://tothemoonpark-cpu.github.io/pilacademy/corporate.html): **기업 강연 전용 페이지** — 「직장인을 넘어, 직업인으로」·「직무 문해력」·「가닿는 말」·「평생 현역으로」·「반려동물을 떠나보낸 동료에게」(반려동물 장례 휴가 뒤 돌아온 동료에게 건넬 말 — 관리자·동료 교육 60분) 다섯 주제, 조직 대상 실적, 외부 검증, FAQ 7문
 - [중장년·시니어 강연](https://tothemoonpark-cpu.github.io/pilacademy/senior.html): **중장년·시니어 전용 페이지** — 「평생 현역으로」·「시니어를 위한 책쓰기」·「N모작 시대」 세 주제. 한국시니어TV 2부작 출연, 이모작뉴스 「박근필의 N모작」 11편 연재
@@ -309,7 +310,16 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (272편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (282편)
+- [강아지] 추위를 부쩍 타고 살이 찐다면 — 강아지 갑상선기능저하증: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-1.html
+- [강아지] 강아지를 혼내서 가르치면?: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-2.html
+- [강아지] 강아지 설사, 유산균부터 먹여야 할까?: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-3.html
+- [고양이] 가을에도 벼룩이? — 영국 기록은 9월이 가장 많았다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-4.html
+- [고양이] 손님 냄새, 고양이는 보호자 냄새보다 더 오래 맡았다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-5.html
+- [고양이] 고양이 간식, 절반은 사랑이라서 준다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-6.html
+- [펫로스] 펫로스 상담에서는 어떤 이야기를 나눌까요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-7.html
+- [펫로스] 문을 열어도 반겨 줄 아이가 없을 때: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-8.html
+- [펫로스] 먼저 겪은 보호자들이 꼽은 「도움이 된 것」: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-9.html
 - [강아지] 밥 안 먹고 토하는 강아지 — 배를 아파하지 않아도 병원에 가야 하는 이유: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_1-1.html
 - [강아지] 입양한 강아지, 적응까지 얼마나 걸릴까?: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_1-2.html
 - [강아지] 노령견 사료, 성견 사료와 정말 다를까?: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_1-3.html
@@ -319,6 +329,7 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - [펫로스] 반려동물을 잃은 슬픔, 수의사도 비켜 가지 못합니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_1-7.html
 - [펫로스] 혼자 사시는 부모님이 반려동물을 떠나보냈다면: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_1-8.html
 - [펫로스] 편안히 보냈는데, 왜 이렇게 힘들까요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_1-9.html
+- [긴 글] 반려동물 안락사, 제가 결정한 게 맞았을까요?: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261003_2.html
 - [긴 글] 입양한 강아지 적응 기간, 얼마나 걸릴까? 수의사가 알려 드리는 독일 구조견 158마리 6개월 기록: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261003_1.html
 - [강아지] 미용 다녀온 뒤 강아지가 눈을 잘 못 떠요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261002_2-1.html
 - [강아지] 혼자 있을 때 TV 틀어 주면, 강아지가 정말 볼까?: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261002_2-2.html
