@@ -310,7 +310,47 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (282편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (322편)
+- [강아지] 나이 든 강아지, 만지면 예민해지고 뚜렷한 이유 없이 짖는다면 — 노령견 삶의 질: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-1.html
+- [강아지] 암 진단을 받은 강아지, 기본 백신 항체는 남아 있을까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-2.html
+- [강아지] 날고기 사료와 항생제 내성균, 수의사와 보호자는 다르게 본다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-3.html
+- [고양이] 고양이도 조류인플루엔자(H5N1)에 걸린다 — 보호자가 할 일: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-4.html
+- [고양이] 척추를 다친 고양이, 수술 뒤 8주면 대부분 다시 걸었다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-5.html
+- [고양이] 나이 든 고양이의 관절 통증, 치료하면 달라진다 — 숨기는 통증: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-6.html
+- [펫로스] 어릴 때 반려동물을 보낸 경험이 남기는 것 — 미국 36명 인터뷰: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-7.html
+- [펫로스] 암에 걸린 강아지, 보호자들이 결정의 기준으로 삼은 것은 「좋은 날」: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-8.html
+- [펫로스] 당뇨가 있는 강아지를 돌보는 보호자의 무게 — 노르웨이 수의사 125명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-9.html
+- [긴 글] 떠난 아이에게 쓰는 편지, 첫 줄은 어떻게 시작할까요?: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261006_1.html
+- [강아지] 똥을 먹는 강아지, 장 건강은 괜찮을까 — 강아지 식분증: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261005_1-1.html
+- [강아지] 강아지 예방접종, 보호자 2,585명은 어떻게 하고 있을까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261005_1-2.html
+- [강아지] 나이 들수록 보호자 곁을 더 찾는 강아지 — 노령견의 애착: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261005_1-3.html
+- [고양이] 실내 고양이, 한 살부터 살찔 위험이 높았다 — 덴마크 192마리: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261005_1-4.html
+- [고양이] 보호자가 바른 소염진통 크림, 고양이에게 위험할 수 있다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261005_1-5.html
+- [고양이] 혼자 밖에 나가는 고양이, 사람에게 옮을 수 있는 병원체 3~5배: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261005_1-6.html
+- [펫로스] 슬픔을 말하지 못한 사람일수록 더 힘들었다 — 튀르키예 210명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261005_1-7.html
+- [펫로스] 치매 노견을 돌보는 보호자의 마음 — 헝가리 보호자 22명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261005_1-8.html
+- [펫로스] 마지막을 판단할 때, 삶의 질 평가표를 쓴 사람은 7.3%: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261005_1-9.html
+- [긴 글] 반려동물이 떠난 날, 무엇부터 해야 할까요?: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261005_1.html
+- [강아지] 안아 주고 뽀뽀하다 물린다 — 강아지에게 물리는 순간: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_2-1.html
+- [강아지] 노령견이 집 안에서 실수를 한다면 — 강아지 인지기능 저하 신호: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_2-2.html
+- [강아지] 단두종 강아지 코골이 — 자는 동안 숨이 막힐 수 있습니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_2-3.html
+- [고양이] 고양이는 아파도 숨긴다 — 응급 진료 고양이 4건 중 1건은 생명이 위급: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_2-4.html
+- [고양이] 7년 동안 지켜본 고양이 209마리 — 나이 들면 가장 흔한 병: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_2-5.html
+- [고양이] 집 안에만 사는 고양이도 예방접종이 필요할까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_2-6.html
+- [펫로스] 반려동물과의 이별이 가장 힘들었다는 사람들 — 영국 975명 조사: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_2-7.html
+- [펫로스] 떠난 강아지에게 부고를 쓰는 사람들 — 추모글 102편이 남긴 것: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_2-8.html
+- [펫로스] 마지막 결정을 돌아본 보호자 143명 — 도움이 된 것은 미리 나눈 이야기: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_2-9.html
+- [강아지] 오래가는 기침, 소형 노령견이라면 — 강아지 기관허탈: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_1-1.html
+- [강아지] 강아지도 질투할까 — 보이지 않아도 반응했다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_1-2.html
+- [강아지] 유독 먹을 것을 밝히는 강아지 — 식탐 유전자 연구: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_1-3.html
+- [고양이] 고양이 눈 질환, 가장 많이 탈이 나는 곳은 각막: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_1-4.html
+- [고양이] 고양이는 보호자가 고양이에게 하는 말투를 구별한다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_1-5.html
+- [고양이] 고양이 사료, 완전한 한 끼인지 어떻게 알까 — 2028년 「반려동물완전사료」: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_1-6.html
+- [펫로스] 아픈 마지막 모습만 자꾸 떠오를 때: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_1-7.html
+- [펫로스] 다시 키우기 전에 정해 둘 세 가지: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_1-8.html
+- [펫로스] 반려동물을 보낸 날 묻지 못한 것, 지금 담당 수의사에게 물어도 됩니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261004_1-9.html
+- [긴 글] 반려동물을 떠나보낸 뒤, 다시 키워도 될까요?: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261004_2.html
+- [긴 글] 반려동물의 죽음, 자녀에게 어떻게 말해야 할까요?: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261004_1.html
 - [강아지] 추위를 부쩍 타고 살이 찐다면 — 강아지 갑상선기능저하증: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-1.html
 - [강아지] 강아지를 혼내서 가르치면?: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-2.html
 - [강아지] 강아지 설사, 유산균부터 먹여야 할까?: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261003_2-3.html

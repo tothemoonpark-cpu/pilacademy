@@ -353,4 +353,402 @@
   box-shadow:0 24px 60px rgba(0,0,0,.28)}
 .site-search-bar{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid #ececec;color:#5b6066}
 .site-search-bar input{flex:1;border:0;outline:0;font-size:1.02rem;font-family:inherit;color:#16181d;background:transparent}
-.site-search-close{background:none;border:0;font-siz
+.site-search-close{background:none;border:0;font-size:1.7rem;line-height:1;color:#9aa0a6;cursor:pointer;padding:0 .2rem}
+.site-search-hint{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;padding:.85rem 1.2rem;border-bottom:1px solid #f2f2f2}
+.site-search-hint span{font-size:0.79rem;color:#9aa0a6;margin-right:.2rem}
+.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:0.85rem;font-weight:600;
+  padding:.32rem .7rem;border-radius:999px;cursor:pointer;font-family:inherit}
+.site-search-hint button:hover{background:#2bb7ac;color:#fff}
+.site-search-results{max-height:56vh;overflow-y:auto;padding:.4rem 0}
+.ssr-item{display:block;padding:.9rem 1.2rem;border-bottom:1px solid #f4f4f4;color:inherit}
+.ssr-item:hover{background:#f7f9f9}
+.ssr-item:last-child{border-bottom:0}
+.ssr-t{font-weight:700;font-size:0.94rem;color:#16181d;margin-bottom:.2rem}
+.ssr-k{font-size:0.72rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
+.ssr-s{font-size:0.85rem;color:#5b6066;line-height:1.55}
+.ssr-s mark{background:#fff1a8;color:inherit;padding:0 .1em;border-radius:2px}
+.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
+@media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
+/* [/SEARCH:AUTO] */
+
+        </style>
+<style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:14px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  header .nav-links .nav-sub a,
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.98rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  header .nav-links .nav-sub a:hover,
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    header .nav-links .nav-sub a,
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.88rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+        .tbl { width: 100%; border-collapse: collapse; background:#fff; border:1px solid var(--line); border-radius: 14px; overflow: hidden; }
+        .tbl th, .tbl td { padding: 0.95rem 1.15rem; text-align: left; font-size:0.98rem; border-bottom: 1px solid var(--line); line-height: 1.65; vertical-align: top; }
+        .tbl thead th { background: var(--panel); font-weight: 700; color: var(--ink); }
+        .tbl tbody td { color: var(--sub); }
+        .tbl tbody td b { color: var(--ink); }
+        .tbl tr:last-child td { border-bottom: none; }
+        .tbl td:first-child { white-space: nowrap; }
+        @media (max-width: 640px){ .tbl th, .tbl td { padding: 0.75rem 0.85rem; font-size:0.88rem; } .tbl td:first-child { white-space: normal; } }
+</style>
+  <link rel="stylesheet" href="../pil.css">
+<!-- BREADCRUMB:AUTO:START -->
+<!-- BREADCRUMB:AUTO:END -->
+
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "고양이 키우면 임신 준비 못 하나요? — 톡소플라스마", "alternativeHeadline": "고양이 키우면 임신 준비 못 하나요?", "description": "톡소플라스마 때문에 이런 걱정을 하시는 분이 많습니다. 국내에서 사람 1,787명의 톡소플라스마 항체를 검사한 연구가 있습니다(2017년). 캣시터처럼 고양이를 자주 만나는 사람은 6.4%, 일반인…", "datePublished": "2026-10-02", "dateModified": "2026-10-02", "inLanguage": "ko", "image": "https://tothemoonpark-cpu.github.io/pilacademy/notes/261002_2_4.png", "url": "https://tothemoonpark-cpu.github.io/pilacademy/notes/n261002_2-4.html", "mainEntityOfPage": "https://tothemoonpark-cpu.github.io/pilacademy/notes/n261002_2-4.html", "author": {"@type": "Person", "name": "박근필", "jobTitle": "수의사 · 작가", "url": "https://tothemoonpark-cpu.github.io/pilacademy/author.html"}, "publisher": {"@type": "Organization", "name": "박근필성장연구소", "url": "https://tothemoonpark-cpu.github.io/pilacademy/"}, "isPartOf": {"@type": "Blog", "name": "수의사의 반려동물 노트", "url": "https://tothemoonpark-cpu.github.io/pilacademy/vet-notes.html"}, "articleSection": "고양이"}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "박근필성장연구소", "item": "https://tothemoonpark-cpu.github.io/pilacademy/"}, {"@type": "ListItem", "position": 2, "name": "수의사의 반려동물 노트", "item": "https://tothemoonpark-cpu.github.io/pilacademy/vet-notes.html"}, {"@type": "ListItem", "position": 3, "name": "고양이 키우면 임신 준비 못 하나요?", "item": "https://tothemoonpark-cpu.github.io/pilacademy/notes/n261002_2-4.html"}]}</script>
+    <style>.one-note{max-width:680px;margin:0 auto;padding:2rem 20px 3rem}.one-note .crumb{display:block!important;position:static!important;background:none!important;padding:0!important;font-size:.85rem;color:#6b7280;margin-bottom:1rem}.one-note .crumb a{color:inherit}.one-note .kind{display:inline-block;font-size:13px;font-weight:700;color:#1f9d93;background:#e6f5f3;border-radius:999px;padding:2px 12px;margin:0}.one-note .note-title{font-size:1.5rem;line-height:1.45;margin:.5rem 0 .6rem}.one-note .date{font-size:.9rem;color:#6b7280;margin:0 0 1rem}.one-note img{display:block;max-width:100%;height:auto;border-radius:12px;margin:.4rem 0 1rem}.one-note .note-body p{line-height:1.85;margin:0 0 1rem;font-size:16.5px}.one-note .note-body h4{font-size:1.1rem;margin:2rem 0 .5rem}.one-note .next{margin:1.2rem 0 0;padding-top:.8rem;border-top:1px dashed #e3e7ea;font-size:14.5px;color:#5b6066}.one-note .next a{color:#1f9d93;font-weight:700}.help{margin:12px 0 0;padding:10px 12px;background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;font-size:13.5px;line-height:1.6;color:#7c2d12}.help a{color:#7c2d12;font-weight:700}.note-tools{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:14px 0 0;font-size:14px}.note-tools a{color:#1f9d93;font-weight:700}.copy-url{border:1px solid #e3e7ea;background:#fff;border-radius:999px;padding:5px 14px;font-size:13.5px;cursor:pointer}.copy-url.done{background:#e6f5f3;color:#1f9d93}.one-note .more{margin-top:2.2rem;border-top:1px solid #e5e7eb;padding-top:1.2rem}.one-note .more h2{font-size:1.02rem;margin:1.2rem 0 .6rem}.one-note .more li{margin:.4rem 0;line-height:1.5}.one-note .back{display:inline-block;margin-top:1.4rem;font-weight:700;color:#1f9d93}.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#16181d;color:#fff;padding:10px 16px;font-weight:700}.pil-skip:focus{left:0}</style>
+</head>
+<body>
+<a class="pil-skip" href="#main-content">본문 바로가기</a>
+<header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="../index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-drop">
+                    <a href="../lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="../lecture.html">전체 강연 안내</a></li>
+                        <li class="nav-sep">수의사로서</li>
+                        <li><a href="../petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="../petlus-shelter.html">펫러스(PETLUS) 쉼터</a></li>
+                        <li><a href="../petcare.html">반려동물 강연</a></li>
+                        <li class="nav-sep">작가 · 강연가로서</li>
+                        <li><a href="../career.html">진로·직업 특강</a></li>
+                        <li><a href="../career-reading.html">진로독서</a></li>
+                        <li><a href="../corporate.html">기업·공공기관 강연</a></li>
+                        <li><a href="../senior.html">중장년·시니어 강연</a></li>
+                        <li><a href="../reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
+                <li><a href="../author.html">소장소개</a></li>
+                <li><a href="../vet-notes.html">반려동물 노트</a></li>
+                <li><a href="../petlus-shelter.html">펫러스 쉼터</a></li>
+                <li><a href="../books.html">저서</a></li>
+                <li><a href="../columns.html">칼럼</a></li>
+                <li><a href="../videos.html">대표 영상</a></li>
+                <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="../vod.html">VOD 강의</a></li> -->
+                <li><a href="../dokjeoting.html">독저팅</a></li>
+                <li><a href="../people-insight.html">피플인사이트</a></li>
+                <li><a href="../newsletter.html">필레터</a></li>
+                <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="../philbook.html">필북</a></li> -->
+                <!-- [필라이프 코칭 비활성화 2026-08-14 · 되살릴 때 주석 해제] <li><a href="../phillife.html">필라이프 코칭</a></li> -->
+                <li><a href="../notice.html">공지사항</a></li>
+            </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
+<button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+</button>
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
+                                                        </nav>
+    </header>
+<main role="main" class="one-note">
+<nav class="crumb" aria-label="현재 위치"><a href="../index.html">박근필성장연구소</a> › <a href="../vet-notes.html">수의사의 반려동물 노트</a> › 고양이</nav>
+<p class="date">10월 2일 · 수의사 박근필</p>
+<p class="kind">고양이</p><h1 class="note-title" id="main-content">고양이 키우면 임신 준비 못 하나요?</h1><img src="../notes/261002_2_4.png" alt="고양이 키우면 임신 준비 못 하나요?" width="540" height="675"><div class="note-body"><p>톡소플라스마 때문에 이런 걱정을 하시는 분이 많습니다.<br>국내에서 사람 1,787명의 톡소플라스마 항체를 검사한 연구가 있습니다(2017년).<br>캣시터처럼 고양이를 자주 만나는 사람은 6.4%, 일반인은 8.0%로, 뚜렷한 차이가 없었습니다.<br>다만 밖에 나가는 고양이를 키우는 사람은 실내 고양이만 키우는 사람보다 양성이 2배였습니다.</p>
+<p>미국 질병통제예방센터(CDC)는 고양이 화장실을 매일 치우라고 안내합니다.<br>톡소플라스마는 대변으로 나온 뒤 1~5일이 지나야 감염력이 생기기 때문입니다.<br>고양이에게 날고기나 덜 익힌 고기를 주지 말라고도 안내합니다.<br>임신 중이라도 고양이를 다른 곳에 보낼 필요는 없다고 합니다.</p>
+<p>✔ 화장실은 매일 치우고, 임신 중이면 다른 가족이 치우거나 일회용 장갑을 끼고 치운 뒤 손 씻기<br>✔ 고양이는 실내에서 키우고, 날고기 주지 않기<br>✔ 사람이 먹는 고기는 익혀 먹고, 흙을 만질 땐 장갑 끼기<br>✔ 임신을 계획하고 있다면 산부인과에서 먼저 상담하기</p>
+<p>2017년 한 번 조사한 결과이고, 고양이 때문에 절대 걸리지 않는다는 뜻은 아닙니다.<br>임신 중 검사와 주의할 점은 산부인과 의사와 상의해 주세요.</p>
+<p>고양이와 함께 임신을 준비하고 계신가요?</p></div><p class="next">보호자가 가장 많이 묻는 질문에 답한 책 — <a href="https://product.kyobobook.co.kr/detail/S000210401197" target="_blank" rel="noopener">『할퀴고 물려도 나는 수의사니까』</a></p>
+
+<p class="note-tools"><button type="button" class="copy-url" data-url="https://tothemoonpark-cpu.github.io/pilacademy/notes/n261002_2-4.html">글 주소 복사</button></p>
+<section class="more"><h2>관련 글 — 고양이</h2><ul><li><a href="n261006_1-4.html">고양이도 조류인플루엔자(H5N1)에 걸립니다.</a></li><li><a href="n261006_1-5.html">척추를 다친 고양이, 수술 뒤 8주면 대부분 다시 걸었습니다.</a></li><li><a href="n261006_1-6.html">나이 든 고양이의 관절 통증, 치료하면 달라질 수 있습니다.</a></li></ul><h2>같은 날 쓴 노트</h2><ul><li><a href="n261002_2-1.html">미용 다녀온 뒤, 강아지가 눈을 잘 못 떠요.</a></li><li><a href="n261002_2-2.html">혼자 있을 때 TV 틀어 주면, 강아지가 정말 볼까요?</a></li><li><a href="n261002_2-3.html">사람 음식처럼 만든 「화식」 사료, 영양은 다 들어 있을까요?</a></li><li><a href="n261002_2-5.html">레이저 포인터로 놀아 줘도 될까요?</a></li><li><a href="n261002_2-6.html">사료 봉지에 적힌 급여량, 그대로 줘도 될까요?</a></li><li><a href="n261002_2-7.html">안락사로 보낸 나, 자연사였다면 달랐을까요?</a></li></ul>
+<a class="back" href="../vet-notes.html#n261002_2-4">← 노트 전체 보기</a></section>
+</main>
+<section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>반려동물 이야기를 보호자에게 전해야 하나요?</b>
+          <p>보호자 대상 반려동물 강연, 펫로스 치유 글쓰기 과정, 반려동물 콘텐츠 감수·집필을 맡습니다.<br>
+          동물병원에서 스무 해 가까이 보호자의 질문을 들어 온 수의사가 직접 씁니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="../petcare.html">반려동물 강연 보기</a>
+          <a class="pil-btn-sub" href="../writing-request.html">감수·집필 의뢰</a>
+        </div>
+      </div>
+    </section>
+
+<footer role="contentinfo">
+        <div class="footer-sns">
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+            <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024–2026 박근필성장연구소 by 박근필. All rights reserved.<br>읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+
+        /* ── 강연 현장 사진 ─────────────────────────────
+           사진은 위 HTML에 직접 넣어 두었습니다(검색엔진 노출을 위해).
+           · 사진 추가: ph-grid 안에 .ph-item 블록을 복사해 파일명·캡션만 바꾸면 됩니다.
+           · 파일이 없으면 그 칸은 자동으로 사라지고, 한 장도 없으면 섹션 전체가 숨겨집니다. */
+        (function () {
+            var box = document.getElementById('lecturePhotos');
+            var sec = document.getElementById('photos');
+            if (!box || !sec) return;
+            var items = box.querySelectorAll('.ph-item');
+            var left = items.length;
+            if (!left) { sec.style.display = 'none'; return; }
+            items.forEach(function (it) {
+                var img = it.querySelector('img');
+                if (!img) return;
+                img.addEventListener('error', function () {
+                    it.remove();
+                    if (!box.querySelectorAll('.ph-item').length) sec.style.display = 'none';
+                });
+            });
+        })();
+
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+    </script>
+
+<!-- [2026-08-26] 고정 퀵바 (온담 OD-8) — 하단 CTA 밴드에 닿지 못한 방문자를 잡는다 -->
+<nav class="pil-quick" aria-label="바로가기">
+  <a class="hi" href="../contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>강연 섭외</a>
+  <a href="../videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 8 6 4-6 4Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg>강연 영상</a>
+  <a href="../columns.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2Z"/><path d="M17 8h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2"/><path d="M8 8h5M8 12h5"/></svg>칼럼 보기</a>
+</nav>
+<!-- [QUICKBAR:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json -->
+<div class="pil-quickbar" id="pilQuickbar" role="complementary" aria-label="강연 섭외 문의">
+  <span class="pq-txt">강연 섭외와 일정 문의는 언제든 편하게 주세요</span>
+  <span class="pq-btns">
+    <a class="pq-sub" href="../author.html">실적 · 이력 보기</a>
+    <a class="pq-main" href="../contact.html">섭외 문의</a>
+  </span>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById("pilQuickbar"); if(!bar) return;
+  /* ⭐ 페이지 끝 CTA 밴드가 보이면 바를 숨긴다 — 같은 말을 두 번 하지 않는다 */
+  var band=document.querySelector(".pil-cta-band"), bandSeen=false;
+  if(band&&"IntersectionObserver" in window){
+    new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
+      .observe(band);
+  }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
+  function paint(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
+    bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
+    /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
+       ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
+    document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
+  }
+  window.addEventListener("scroll",paint,{passive:true});
+  window.addEventListener("resize",paint); paint();
+})();
+</script>
+<!-- [/QUICKBAR:AUTO] -->
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
+<script>
+/* [SEARCH:AUTO] 사이트 내 검색 */
+var __ssIndex=null,__ssLoading=false;
+function openSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.add('on'); document.body.style.overflow='hidden';
+  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
+  loadSiteIndex();
+}
+function closeSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.remove('on'); document.body.style.overflow='';
+}
+function loadSiteIndex(){
+  if(__ssIndex||__ssLoading)return; __ssLoading=true;
+  fetch('../search-index.json').then(function(r){return r.json();})
+    .then(function(d){__ssIndex=d;__ssLoading=false;
+      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
+    .catch(function(){__ssLoading=false;
+      var b=document.getElementById('siteSearchResults');
+      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
+}
+function quickSiteSearch(w){
+  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
+}
+function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function __ssSnippet(text,q){
+  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
+  if(i<0)return '';
+  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
+  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
+}
+function runSiteSearch(q){
+  var box=document.getElementById('siteSearchResults'); if(!box)return;
+  q=(q||'').trim();
+  if(q.length<2){box.innerHTML='';return;}
+  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
+  var lq=q.toLowerCase(),out=[];
+  __ssIndex.forEach(function(d){
+    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
+    var n=hay.split(lq).length-1;
+    if(n>0){
+      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      out.push({d:d,sc:sc});
+    }
+  });
+  if(!out.length){
+    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
+  out.sort(function(a,b){return b.sc-a.sc;});
+  box.innerHTML=out.slice(0,40).map(function(o){
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    return '<a class="ssr-item" href="'+(/^https?:/.test(d.u)?d.u:'../'+d.u)+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
+      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
+      +'<div class="ssr-s">'+sn+'</div></a>';
+  }).join('');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var i=document.getElementById('siteSearchInput');
+  if(i){
+    var tm=null;
+    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
+  }
+  var l=document.getElementById('siteSearchLayer');
+  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeSiteSearch();
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
+  });
+});
+/* [/SEARCH:AUTO] */
+</script>
+
+<script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.copy-url');if(!b)return;var u=b.getAttribute('data-url');(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.textContent='복사했습니다';b.classList.add('done');},function(){window.prompt('아래 주소를 복사해 주세요',u);});});</script>
+</body>
+</html>
