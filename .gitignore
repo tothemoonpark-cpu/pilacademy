@@ -10,3 +10,11 @@ notes/*_shortform.jpg
 
 # 2026-10-06 지울 파일 모음 — 배포 대상 아님
 _to_delete/
+
+# 2026-10-06 옛 사이트 사본·압축·점검 스크립트 — 공개 저장소에서 뺌(작가님 컴퓨터 파일은 그대로)
+pilacademy_FINAL/
+pilacademy_deploy/
+pilacademy_배포_260808/
+pila_233840/
+pilacademy_최종본.zip
+pilacademy_check.sh
