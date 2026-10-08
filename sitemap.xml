@@ -171,6 +171,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://tothemoonpark-cpu.github.io/pilacademy/privacy.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
   <!-- [NOTES:AUTO] -->
   <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-1.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261006_1-2.html</loc><lastmod>2026-10-06</lastmod></url>
