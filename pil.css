@@ -258,3 +258,8 @@ img,svg,video,iframe,table{ max-width:100%; }
   header[role="banner"] .nav-links { gap: 0.6rem; }
   header[role="banner"] .nav-links > li > a { font-size: 0.84rem; }
 }
+
+/* [2026-10-08] 상단 메뉴 한 줄 유지 — 「자료실」 추가로 12칸이 되어 1280~1440 폭에서 두 줄로 깨짐 → 간격·글자 크기만 조금 줄임
+   실측(클라우드 렌더): 1101·1150·1180·1200·1250·1280·1320·1366·1440·1600·1920 폭 전부 한 줄 · index·author·resources */
+@media (min-width:1101px){#navLinks{gap:.85rem}#navLinks a{font-size:.92rem}}
+@media (min-width:1101px) and (max-width:1320px){#navLinks{gap:.62rem}#navLinks a{font-size:.86rem}}
