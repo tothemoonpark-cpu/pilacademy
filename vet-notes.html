@@ -347,6 +347,9 @@
           .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:14px;font-size:0.8rem;padding:0.55rem 0.3rem;}
           .pil-quick a.hi{border-radius:14px;}
         }
+        .hero-video { margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); background:#000; line-height:0; }
+        .hero-video video { width: 100%; height: auto; display: block; }
+        .hero-video.pg-intro { max-width: 880px; margin-left: auto; margin-right: auto; }
 
 /* [SEARCH:AUTO] 사이트 내 검색 */
 .site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
@@ -500,7 +503,8 @@
                 <li><a href="columns.html">칼럼</a></li>
                 <li><a href="videos.html">대표 영상</a></li>
                 <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
-                <li><a href="dokjeoting.html">독저팅</a></li>
+                <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <li><a href="dokjeoting.html">독저팅</a></li> -->
+                <li><a href="writing-request.html">집필·감수 의뢰</a></li>
                 <li><a href="people-insight.html">피플인사이트</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
                 <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
@@ -609,7 +613,13 @@
 <main role="main" id="main-content">
 <section class="notes-hero"><p class="eyebrow">매일 새로 쌓입니다</p><h1>수의사의 반려동물 노트</h1>
 <p class="lead">동물병원에서 일하는 수의사 박근필이 매일 씁니다. 강아지·고양이 건강 이야기는 <b>최신 논문과 학회 지침을 직접 확인한 것만</b> 적고, 펫로스 이야기는 <b>펫로스 치유 글쓰기(펫러스, PETLUS)</b> 현장에서 나온 글입니다.</p>
-<p class="notes-note">이 노트는 진단을 대신하지 않습니다. 아이가 걱정되면 가까운 동물병원에서 먼저 확인해 주세요.</p></section>
+<p class="notes-note">이 노트는 진단을 대신하지 않습니다. 아이가 걱정되면 가까운 동물병원에서 먼저 확인해 주세요.</p>
+<div class="hero-video pg-intro" style="max-width:880px;margin:2rem auto 0;border-radius:14px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,0.16);background:#000;line-height:0">
+    <video autoplay muted playsinline controls preload="metadata" poster="page-intro-vet-notes-261008.jpg" aria-label="수의사의 반려동물 노트 소개 영상 — 최신 논문과 학회 지침으로 확인한 것만 쓰는 수의사 박근필의 매일 노트" style="width:100%;height:auto;display:block">
+        <source src="page-intro-vet-notes-261008.mp4" type="video/mp4">
+        <a href="page-intro-vet-notes-261008.mp4">영상 내려받기</a>
+    </video>
+</div></section>
 <div class="notes-wrap">
 <div class="notes-filter" role="search"><button type="button" data-k="" aria-pressed="true">전체</button><button type="button" data-k="강아지" aria-pressed="false">강아지</button><button type="button" data-k="고양이" aria-pressed="false">고양이</button><button type="button" data-k="펫로스" aria-pressed="false">펫로스</button><button type="button" data-k="긴 글" aria-pressed="false">긴 글</button><input type="search" id="noteQ" placeholder="노트 검색 (예: 관절, 사료, 죄책감)" aria-label="노트 검색"></div><p class="notes-count" id="noteCount" aria-live="polite"></p>
 <nav class="notes-toc" aria-label="날짜별 목차"><a href="#d261006">2026년 10월 6일</a> <a href="#d261005">2026년 10월 5일</a> <a href="#d261004">2026년 10월 4일</a> <a href="#d261003">2026년 10월 3일</a> <a href="#d261002">2026년 10월 2일</a> <a href="#d261001">2026년 10월 1일</a> <a href="#d260930">2026년 9월 30일</a> <a href="#d260929">2026년 9월 29일</a> <a href="#d260928">2026년 9월 28일</a> <a href="#d260927">2026년 9월 27일</a> <a href="#d260926">2026년 9월 26일</a> <a href="#d260925">2026년 9월 25일</a> <a href="#d260924">2026년 9월 24일</a> <a href="#d260923">2026년 9월 23일</a> <a href="#d260922">2026년 9월 22일</a> <a href="#d260921">2026년 9월 21일</a></nav>

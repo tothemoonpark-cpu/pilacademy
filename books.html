@@ -209,6 +209,9 @@
           .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:14px;font-size:0.8rem;padding:0.55rem 0.3rem;}
           .pil-quick a.hi{border-radius:14px;}
         }
+        .hero-video { margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); background:#000; line-height:0; }
+        .hero-video video { width: 100%; height: auto; display: block; }
+        .hero-video.pg-intro { max-width: 880px; margin-left: auto; margin-right: auto; }
 
 /* [SEARCH:AUTO] 사이트 내 검색 */
 .site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
@@ -576,7 +579,8 @@
                 <li><a href="columns.html">칼럼</a></li>
                 <li><a href="videos.html">대표 영상</a></li>
                 <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
-                <li><a href="dokjeoting.html">독저팅</a></li>
+                <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <li><a href="dokjeoting.html">독저팅</a></li> -->
+                <li><a href="writing-request.html">집필·감수 의뢰</a></li>
                 <li><a href="people-insight.html">피플인사이트</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
                 <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
@@ -688,6 +692,12 @@
             <span class="eyebrow">Books</span>
             <h1>박근필 작가의 저서</h1>
             <p>수의사에서 베스트셀러 작가로, 인생 리셋의 여정을 담은 <span data-stat="books">5</span>권의 책</p>
+            <div class="hero-video pg-intro" style="max-width:880px;margin:2rem auto 0;border-radius:14px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,0.16);background:#000;line-height:0">
+                <video autoplay muted playsinline controls preload="metadata" poster="page-intro-books-261008.jpg" aria-label="박근필 작가의 저서 소개 영상 — 2023년부터 해마다 한 권, 저서 5권과 집필 중인 여섯 번째 책" style="width:100%;height:auto;display:block">
+                    <source src="page-intro-books-261008.mp4" type="video/mp4">
+                    <a href="page-intro-books-261008.mp4">영상 내려받기</a>
+                </video>
+            </div>
         </section>
 
         <section class="books-intro" aria-label="저서 한눈에">
@@ -990,6 +1000,7 @@
 })();
 </script>
 <!-- [/QUICKBAR:AUTO] -->
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
 <script>
 /* [SEARCH:AUTO] 사이트 내 검색 */
 var __ssIndex=null,__ssLoading=false;

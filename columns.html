@@ -6192,6 +6192,9 @@ nav { max-width:1080px; margin:0 auto; display:flex; align-items:center; justify
 .page-hero h1 em { font-style:normal; color:var(--mint-dark); }
 .page-hero p { color:var(--sub); font-size:1.02rem; line-height:1.75; max-width:640px; margin:0 auto 1.9rem; }
 .page-hero p b { color:var(--ink); font-weight:700; }
+.hero-video { margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); background:#000; line-height:0; }
+.hero-video video { width: 100%; height: auto; display: block; }
+.hero-video.pg-intro { max-width: 880px; margin-left: auto; margin-right: auto; }
 .wrap { max-width:820px; margin:0 auto; padding:2.6rem 1.5rem 4rem; }
 .intro { background:#fff; border:1px solid var(--line); border-left:4px solid var(--mint); border-radius:0 16px 16px 0; padding:1.7rem 1.8rem; margin-bottom:2.8rem; font-size:0.94rem; color:var(--sub); line-height:1.9; }
 .intro b { color:var(--ink); }
@@ -6348,7 +6351,8 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
                 <li><a href="columns.html">칼럼</a></li>
                 <li><a href="videos.html">대표 영상</a></li>
                 <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
-                <li><a href="dokjeoting.html">독저팅</a></li>
+                <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <li><a href="dokjeoting.html">독저팅</a></li> -->
+                <li><a href="writing-request.html">집필·감수 의뢰</a></li>
                 <li><a href="people-insight.html" aria-current="page">피플인사이트</a></li>
                 <li><a href="newsletter.html">필레터</a></li>
                 <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
@@ -6463,6 +6467,12 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
     <span class="chip"><b>360</b>편</span>
     <span class="chip"><b>30</b>개 매체</span>
     <span class="chip chip-soft">진로 · 독서 · 글쓰기 · 문해력 · 커리어</span>
+  </div>
+  <div class="hero-video pg-intro" style="max-width:880px;margin:2rem auto 0;border-radius:14px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,0.16);background:#000;line-height:0">
+      <video autoplay muted playsinline controls preload="metadata" poster="page-intro-columns-261008.jpg" aria-label="박근필 칼럼 아카이브 소개 영상 — 30개 매체에 연재한 360편, 각 편의 논지를 한 줄로" style="width:100%;height:auto;display:block">
+          <source src="page-intro-columns-261008.mp4" type="video/mp4">
+          <a href="page-intro-columns-261008.mp4">영상 내려받기</a>
+      </video>
   </div>
 </section>
 <div class="wrap">
@@ -7209,6 +7219,8 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
 <section class="outlet"><h2>PPSS <span class="meta">2026.3~ · 21편</span></h2><ol class="clist">
 <li>
 <a class="ct" href="https://www.ppss.kr/news/articleView.html?idxno=314444" target="_blank" rel="noopener">기회를 가져오는 사람은 적당히 먼 사람이다 - 가족도 절친도 아니다</a>
+<span class="dt">10.7</span>
+<p class="th">이직 고민은 가까운 사람에게 털어놓지만 기회는 겹치는 지인이 조금 있고 연락이 뜸한 「적당히 먼 사람」에게서 오니(그래노베터 약한 연결·2022 사이언스 링크드인 실험) 연락처를 늘리기보다 한 번 본 인연을 끊기지 않게 잇고 먼저 건네는 쪽이 되라</p>
 </li>
 <li>
 <a class="ct" href="https://www.ppss.kr/news/articleView.html?idxno=310430" target="_blank" rel="noopener">[박근필 칼럼] 좋아하는 일을 찾으라는 말 - 좋아함은 직업이 아니라 업무에 붙어 있다</a>
@@ -8353,6 +8365,7 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
 function toggleMenu(){var n=document.getElementById('navLinks');if(n)n.classList.toggle('open');}
 if(window.lucide) lucide.createIcons();
 </script>
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
 <!-- [QUICKBAR:AUTO] -->
 <!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json -->
 <div class="pil-quickbar" id="pilQuickbar" role="complementary" aria-label="강연 섭외 문의">
