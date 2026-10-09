@@ -468,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function(){ philbookData.check(); 
     <meta property="og:site_name" content="박근필성장연구소">
     <meta property="og:title" content="필북 - 동반성장 북클럽">
     <meta property="og:description" content="함께 읽고 쓰는 독서모임. 독서·글쓰기 강연 섭외도 가능합니다.">
-    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261009.png">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261008.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/png">
@@ -478,7 +478,7 @@ document.addEventListener('DOMContentLoaded', function(){ philbookData.check(); 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="필북 - 동반성장 북클럽">
     <meta name="twitter:description" content="함께 읽고 쓰는 독서모임. 독서·글쓰기 강연 섭외도 가능합니다.">
-    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261009.png">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261008.png">
     <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -1840,7 +1840,7 @@ document.addEventListener('DOMContentLoaded', function(){ philbookData.check(); 
                                 <ul style="margin-left: 1.5rem; line-height: 1.8;">
                                     <li>두 번째 책『이 시대의 신중년이 사는 법』 출간 10일 만에 2쇄 돌파</li>
                                     <li>강연가로도 왕성한 활동</li>
-                                    <li>SNS 팔로워 약 <span data-stat="followers">2.7만</span> 명</li>
+                                    <li>SNS 팔로워 약 <span data-stat="followers">2.6만</span> 명</li>
                                 </ul>
                                 <a href="https://blog.naver.com/yuni_yuli" target="_blank" style="display: inline-block; background: white; color: #16181d; padding: 0.6rem 1.2rem; border-radius: 999px; text-decoration: none; font-weight: bold; margin-top: 1rem;">더블와이파파 작가 블로그 →
                                 </a>
