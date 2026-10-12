@@ -142,6 +142,8 @@
             section.block { padding: 2.4rem 0; }
             .sec-head h2 { font-size:1.25rem; }
             .tbl th, .tbl td { padding: 0.75rem 0.85rem; font-size:0.88rem; }
+            /* 2026-10-12 375px 점검: 긴 기관명(부산시교육청영재교육진흥원 등)이 줄바꿈되지 않아 표가 화면 밖으로 9px 넘쳤다 */
+            .tbl td:nth-child(2) { overflow-wrap: anywhere; }
   .tbl-wrote .c-name { width: 42%; }
         }
         @media (max-width: 768px) {
