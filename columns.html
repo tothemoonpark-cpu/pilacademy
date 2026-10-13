@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="박근필성장연구소">
 <meta property="og:title" content="칼럼 아카이브 — 30개 매체 363편 | 박근필">
 <meta property="og:description" content="진로·독서·글쓰기·문해력·커리어 전환. 363편의 칼럼과 각 편의 핵심 논지를 한눈에.">
-<meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261012.png">
+<meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261013.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
@@ -6536,6 +6536,8 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
 <section class="outlet"><h2>코스미안뉴스 <span class="meta">2026.3~ · 29편</span></h2><ol class="clist">
 <li>
 <a class="ct" href="https://www.cosmiannews.com/news/519991" target="_blank" rel="noopener">[박근필 칼럼] 그 사람은 겁이 없어서 해낸 게 아니다 - 성공한 사람은 두려움이 없다는 오해</a>
+<span class="dt">10.13</span>
+<p class="th">남의 두려움은 0으로, 내 두려움은 그대로 재는 계산이 「나는 아직 자격이 없다」는 핑계를 만든다(스탠퍼드 2011 — 남의 부정적 감정을 적게 짐작) · 부러운 사람에게 처음에 어땠는지 묻고 내 두려움을 먼저 꺼내 계산을 바로잡자</p>
 </li>
 <li>
 <a class="ct" href="https://www.cosmiannews.com/news/513793" target="_blank" rel="noopener">[박근필 칼럼] 이유를 못 대서 버린 느낌 - 근거를 대라는 말에 밀린 적이 있다</a>
@@ -8431,6 +8433,43 @@ function toggleMenu(){var n=document.getElementById('navLinks');if(n)n.classList
 if(window.lucide) lucide.createIcons();
 </script>
 <!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
+<!-- [QUICKBAR:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json -->
+<div class="pil-quickbar" id="pilQuickbar" role="complementary" aria-label="강연 섭외 문의">
+  <span class="pq-txt">강연 섭외와 일정 문의는 언제든 편하게 주세요</span>
+  <span class="pq-btns">
+    <a class="pq-sub" href="author.html">실적 · 이력 보기</a>
+    <a class="pq-main" href="contact.html">섭외 문의</a>
+  </span>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById("pilQuickbar"); if(!bar) return;
+  /* ⭐ 페이지 끝 CTA 밴드가 보이면 바를 숨긴다 — 같은 말을 두 번 하지 않는다 */
+  var band=document.querySelector(".pil-cta-band"), bandSeen=false;
+  if(band&&"IntersectionObserver" in window){
+    new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
+      .observe(band);
+  }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
+  function paint(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
+    bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
+    /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
+       ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
+    document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
+  }
+  window.addEventListener("scroll",paint,{passive:true});
+  window.addEventListener("resize",paint); paint();
+})();
+</script>
+<!-- [/QUICKBAR:AUTO] -->
 <script>
 /* [SEARCH:AUTO] 사이트 내 검색 */
 var __ssIndex=null,__ssLoading=false;
