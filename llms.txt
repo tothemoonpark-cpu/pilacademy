@@ -315,7 +315,57 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (343편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (393편)
+- [강아지] 병이 쌓일수록 사망 위험도 높았다 — 미국 반려견 5만여 마리, 골관절염·과체중·암이 흔했다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-1.html
+- [강아지] 생후 6개월 전의 힘든 경험이 커서 두려움·공격성과 이어졌다 — 반려견 4,497마리 (체벌 포함): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-2.html
+- [강아지] 사료 단백질이 너무 많아도, 너무 적어도 행동과 이어졌다 — 미국 골든 리트리버 연구: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-3.html
+- [고양이] 신장병 고양이의 삶의 질 — 식욕이 평소와 다르거나 변비가 있으면 더 낮았다 (미국·영국 연구진, 신장병 고양이 68마리): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-4.html
+- [고양이] 사람이 많아지면 고양이는 높은 곳으로 — 스웨덴 고양이 카페 27마리, 227시간 관찰: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-5.html
+- [고양이] 습식 사료만 먹은 고양이, 치석과 잇몸 염증 점수가 더 높았다 — 미국 20마리 28주 실험: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-6.html
+- [펫로스] 아직 곁에 있는데 벌써 슬프다면 — 미리 찾아오는 슬픔(예기 슬픔) — 호주 노견 보호자 347명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-7.html
+- [펫로스] 임시 보호한 아이를 보낸 뒤의 허전함 — 미국 보호소 임시 보호자 131명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-8.html
+- [펫로스] 슬픔을 알아줄 때 회복을 돕는다 — 반려동물을 떠나보낸 31명 인터뷰: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-9.html
+- [긴 글] 반려동물을 잃은 슬픔, 가족을 잃은 슬픔만큼 클 수 있을까요? — 펫로스 증후군(펫로스 신드롬)에 대한 연구: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261014_1.html
+- [강아지] 소형견이 이를 뽑게 되는 가장 큰 이유 — 한국 소형·중형견 2,201마리: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261013_1-1.html
+- [강아지] 보호자가 다른 사람과 나누는 대화를 엿듣기만 해도 새 이름을 배운 강아지들 — 사이언스 2026: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261013_1-2.html
+- [강아지] 물린 상처로 외상센터에 온 강아지 12,412마리 — 95%가 살아서 퇴원했다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261013_1-3.html
+- [고양이] 건강한 성묘 2마리 중 1마리꼴로 과체중 — 보호자가 체형을 낮게 본 경우 위험했다 (프랑스 274마리): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261013_1-4.html
+- [고양이] 고양이는 쓰다듬기보다 「먼저 와서 비비기」가 행복과 이어졌다 — 보호자 443명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261013_1-5.html
+- [고양이] 집에서 고양이 소변을 받아 갈 때 — 바닥재에 따라 시간이 지나면 검사값이 바뀔 수 있었다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261013_1-6.html
+- [펫로스] 마지막 결정에서 밀려났다고 느낄수록 슬픔이 컸다 — 포르투갈 보호자 123명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261013_1-7.html
+- [펫로스] 마지막 시간의 치료, 목표는 「낫게」가 아니라 「편하게」 — 보호자 118명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261013_1-8.html
+- [펫로스] 아이에게 반려동물의 죽음을 어떻게 말할까 — 이탈리아 부모 28명 인터뷰: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261013_1-9.html
+- [긴 글] 안락사를 결정한 게 맞았을까요 — 펫로스 증후군(펫로스 신드롬)과 결정 뒤에 남는 마음: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261013_1.html
+- [강아지] 같은 다리 병이어도 아픈 정도는 강아지마다 크게 달랐다 — 흔한 정형외과 병 다섯 가지: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261012_1-1.html
+- [강아지] 푸들 믹스는 훈련이 쉽다? — 영국 9,402마리 비교, 믿음과 달랐다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261012_1-2.html
+- [강아지] 천천히 움직인 차 바퀴에 깔린 강아지 150마리 — 85%는 보호자나 가족이 운전한 차였다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261012_1-3.html
+- [고양이] 얼굴이 납작한 고양이, 마취 위험이 약 2배 — 고양이 14,964마리 분석: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261012_1-4.html
+- [고양이] 입원한 고양이에게 숨을 상자를 주면 — 연구 5편 중 4편에서 스트레스 점수가 낮았다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261012_1-5.html
+- [고양이] 고양이 앞발톱은 뒷발톱보다 빨리 자란다 — 실내 성묘 17마리: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261012_1-6.html
+- [펫로스] 언젠가 올 그 결정, 건강할 때 미리 — 영국 강아지 29,865마리의 마지막: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261012_1-7.html
+- [펫로스] 반려동물을 떠나보낸 어르신, 몸도 마음도 무거워진다 — 캐나다 98명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261012_1-8.html
+- [펫로스] 나이 든 고양이의 마지막, 혼자 정하지 않아도 된다 — 뉴질랜드 보호자 14명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261012_1-9.html
+- [긴 글] 몇 달이 지났는데 아직도 무너진다면 — 펫로스 증후군(펫로스 신드롬)은 기간이 아니라 생활을 봐요: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261012_1.html
+- [강아지] 건강해 보이는 노령견 902마리, 확진된 암의 83%는 만져지는 혹 검사에서 나왔다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261011_1-1.html
+- [강아지] 함께 걷고 함께 노는 노령견, 인지 저하 점수가 낮았다 — 노령견 858마리: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261011_1-2.html
+- [강아지] 바닷가에서 복어를 문 강아지 372마리 — 2시간 넘게 늦으면 증상이 더 많았다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261011_1-3.html
+- [고양이] 고양이 홍채에 생긴 갈색 점 — 92마리를 따라가 보니 천천히 번진 경우가 많았다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261011_1-4.html
+- [고양이] 보호자가 돌아오면 고양이는 더 다가오고 더 운다 — 독일 82쌍 관찰: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261011_1-5.html
+- [고양이] 밖에 나가던 고양이를 실내로 — 3주 시험, 적응은 고양이마다 달랐다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261011_1-6.html
+- [펫로스] 새로 온 반려동물이 반가우면서도, 떠난 아이가 그립다 — 치료견을 떠나보낸 247명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261011_1-7.html
+- [펫로스] 떠나기 직전 반짝 기운을 차리는 아이 — 동물보건사 43명이 겪은 마지막 순간: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261011_1-8.html
+- [펫로스] 갑작스러운 재난 속 반려동물 상실 — 사랑이 부족해서가 아닙니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261011_1-9.html
+- [긴 글] 새로 온 반려동물이 반가운데 미안해진다면 — 펫로스 증후군(펫로스 신드롬)과 함께 있는 두 마음: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261011_1.html
+- [강아지] 터진 비장 혹, 3마리 중 1마리는 양성이었다 — 미국 강아지 345마리: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261010_1-1.html
+- [강아지] 한 살 무렵 강아지, 곤란한 행동이 가장 많았다 — 영국 1,219마리: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261010_1-2.html
+- [강아지] 전자담배를 씹은 강아지 321마리 — 먹은 양으로는 심한 정도를 알 수 없었다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261010_1-3.html
+- [고양이] 래그돌이 가장 자주 걸린 병 — 영국 2,025마리, 치주질환·설사·비만: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261010_1-4.html
+- [고양이] 만지다 물리는 고양이, 가장 흔한 계기는 털 손질 — 태국 연구: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261010_1-5.html
+- [고양이] 보호자들이 가장 많이 해 주는 환경 풍부화는 함께 놀기 — 브라질 3,083명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261010_1-6.html
+- [펫로스] 같이 보낸 날들이 그리워서 — 반려동물을 보낸 젊은 성인 32명의 이야기: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261010_1-7.html
+- [펫로스] 반려동물 장례, 마음을 움직인 것은 가족·친구의 생각과 그 아이와의 가까움 — 중국 504명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261010_1-8.html
+- [펫로스] 반려동물을 잃은 아픔, 말해도 되는 아픔입니다 — 브라질 온라인 애도 모임: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261010_1-9.html
+- [긴 글] 먼저 떠난 반려동물 사진, 아직 못 보겠다면 — 펫로스 증후군(펫로스 신드롬)과 함께한 기억에 대한 그리움: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261010_1.html
 - [강아지] 강아지 입안의 혹, 겉모습만으로는 알 수 없다 — 국내 조직검사 338건: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261008_1-1.html
 - [강아지] 산책 줄을 당기는 힘, 생각보다 세다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261008_1-2.html
 - [강아지] 차에 탈 때, 강아지 10마리 중 6마리는 고정 없이 탄다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261008_1-3.html
@@ -662,8 +712,13 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 <!-- [/NOTES:AUTO] -->
 
 <!-- [STORIES:AUTO] -->
-## 펫로스 이야기 — 수의사가 답하는 반려동물 이별의 질문 (9편)
+## 펫로스 이야기 — 수의사가 답하는 반려동물 이별의 질문 (14편)
 - 모음: https://tothemoonpark-cpu.github.io/pilacademy/petloss-stories.html
+- 반려동물을 잃은 슬픔, 가족을 잃은 슬픔만큼 클 수 있을까요? — 펫로스 증후군(펫로스 신드롬)에 대한 연구: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261014_1.html
+- 안락사를 결정한 게 맞았을까요 — 펫로스 증후군(펫로스 신드롬)과 결정 뒤에 남는 마음: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261013_1.html
+- 몇 달이 지났는데 아직도 무너진다면 — 펫로스 증후군(펫로스 신드롬)은 기간이 아니라 생활을 봐요: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261012_1.html
+- 새로 온 반려동물이 반가운데 미안해진다면 — 펫로스 증후군(펫로스 신드롬)과 함께 있는 두 마음: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261011_1.html
+- 먼저 떠난 반려동물 사진, 아직 못 보겠다면 — 펫로스 증후군(펫로스 신드롬)과 함께한 기억에 대한 그리움: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261010_1.html
 - 떠난 아이를 잊어야 덜 아플까요? — 펫로스 증후군(펫로스 신드롬)과 이어진 끈: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261008_1.html
 - 반려동물을 보낸 사람에게, 어떤 말을 건네야 할까요?: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261007_1.html
 - 떠난 아이에게 쓰는 편지, 첫 줄은 어떻게 시작할까요?: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261006_1.html
