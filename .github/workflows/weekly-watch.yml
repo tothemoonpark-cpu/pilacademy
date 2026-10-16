@@ -1,0 +1,70 @@
+name: 주간 감시·브리핑
+
+on:
+  schedule:
+    # 한국시간 월 09:07 = UTC 월 00:07 → 강사 공고·기회 감시
+    - cron: "7 0 * * 1"
+    # 한국시간 화·금 09:07 = UTC 화·금 00:07 → 콘텐츠 브리핑
+    - cron: "7 0 * * 2,5"
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: "실행할 작업"
+        type: choice
+        default: 공고
+        options:
+          - 공고
+          - 브리핑
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 작업 종류 정하기
+        id: kind
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+          INPUT_KIND: ${{ github.event.inputs.kind }}
+        run: |
+          if [ -n "$INPUT_KIND" ]; then
+            echo "kind=$INPUT_KIND" >> "$GITHUB_OUTPUT"
+          elif [ "$SCHEDULE" = "7 0 * * 1" ]; then
+            echo "kind=공고" >> "$GITHUB_OUTPUT"
+          else
+            echo "kind=브리핑" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 감시·브리핑 실행
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/weekly_watch.py "${{ steps.kind.outputs.kind }}"
+
+      - name: 보고서 커밋·푸시
+        run: |
+          git config user.name "pil-watch"
+          git config user.email "pil-watch@users.noreply.github.com"
+          git add reports/weekly
+          if git diff --cached --quiet; then
+            echo "새 보고서 없음(키 없음 등) — 커밋 생략"
+            exit 0
+          fi
+          git commit -m "주간 보고서 추가 (${{ steps.kind.outputs.kind }})"
+          for i in 1 2 3; do
+            git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}" && exit 0
+            sleep 5
+          done
+          exit 1
