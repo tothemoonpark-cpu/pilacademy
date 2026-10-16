@@ -391,7 +391,7 @@ footer a{color:var(--accent)}
         <div class="body" id="pastBody"></div>
       </div>
 
-      <textarea id="answer" placeholder="한 문장이어도 괜찮습니다."></textarea>
+      <textarea id="answer" aria-label="답변" placeholder="한 문장이어도 괜찮습니다."></textarea>
 
       <div class="btnrow">
         <button class="btn" id="btnNext">다 썼습니다</button>
@@ -584,29 +584,6 @@ footer a{color:var(--accent)}
   </div>
 </footer>
 
-<!-- [SEARCH:AUTO] -->
-<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
-  <div class="site-search-box">
-    <div class="site-search-bar">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
-           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
-      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
-             autocomplete="off" aria-label="검색어">
-      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
-    </div>
-    <div class="site-search-hint" id="siteSearchHint">
-      <span>자주 찾는 것</span>
-      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
-      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
-      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
-      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
-      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
-      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
-    </div>
-    <div class="site-search-results" id="siteSearchResults"></div>
-  </div>
-</div>
-<!-- [/SEARCH:AUTO] -->
 
 <script>
 (function(){
