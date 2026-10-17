@@ -263,3 +263,89 @@ img,svg,video,iframe,table{ max-width:100%; }
    실측(클라우드 렌더): 1101·1150·1180·1200·1250·1280·1320·1366·1440·1600·1920 폭 전부 한 줄 · index·author·resources */
 @media (min-width:1101px){#navLinks{gap:.85rem}#navLinks a{font-size:.92rem}}
 @media (min-width:1101px) and (max-width:1320px){#navLinks{gap:.62rem}#navLinks a{font-size:.86rem}}
+
+/* ===========================================================================
+   [2026-10-17] 모바일(360px)·데스크톱 점검 — CSS 전용
+   ⛔ 글 내용·수치는 건드리지 않았다. 아래는 간격·터치 영역·표 폭·본문 폭만 다룬다.
+   ⭐ 실측: 433개 페이지를 360px·1280px 로 열어 재고, 걸린 곳만 고쳤다.
+      (소제목 간격 0 · 터치 영역 40px 미만 · 표가 칸 밖으로 삐져나감 · 데스크톱 한 줄 1000px 넘는 문단)
+   ⛔ 값이 페이지 인라인 style 에 박힌 곳(.ev 표 셀)만 !important 를 쓴다. 나머지는 명시도로 이긴다.
+   =========================================================================== */
+
+/* ── ① 소제목 위아래 숨 ─────────────────────────────────── */
+/* 홈: 「수의사로서」 소제목이 바로 윗줄(펫러스 쉼터 링크)에 0px 로 붙어 있었다 */
+.topics-band p + .tb-gh{ margin-top:1.8rem; }
+/* 제목 바로 아래 리드 문단이 0px 로 붙던 곳 — 펫로스 · 시니어 CTA · 영상 */
+main .wrap.narrow > h2 + p.lead,
+main .wrap.pil-cta-band > h2 + p,
+.vid-sec .wrap > h2 + p.vid-sub{ margin-top:.6rem; }
+
+/* ── ② 본문 가독성 ──────────────────────────────────────── */
+/* 데스크톱: 한 줄이 1000px 를 넘으면 눈이 줄을 잃는다 → 글줄만 46em(약 720px)로 묶는다.
+   ⭐ 카드·박스 자체의 폭은 그대로 둔다(문단·FAQ 답변 글줄만 묶음). */
+@media (min-width:900px){
+  .block .wrap > p:not([class]):not([style]),
+  .faq-item p,
+  .ln-q > p{ max-width:46em; }
+  /* 박스 자체는 가로 전체를 유지하고 글줄만 46em 로 — 오른쪽 안쪽 여백으로 묶는다 */
+  .again-lead,.pol-item{ padding-right:max(1.4rem, calc(100% - 46em)); }
+}
+/* 모바일: 카드 안 설명은 글자가 작은 만큼(14px) 행간이 빡빡했다(1.5~1.65) */
+@media (max-width:768px){
+  .why-card p,.again-card p,.proof-card .dsc,.vid-card .cap,.pil-cta-txt p,.pol-item{ line-height:1.75; }
+}
+
+/* ── ③ 표가 칸 밖으로 삐져나가던 곳(360px 실측) ──────────── */
+/* career·reading 「.ev」: 긴 단어(keep-all)가 칸을 밀어 표가 343px(칸 312px)로 그려져 오른쪽이 화면 끝에 붙었다 */
+/* vet-dream 「.vt-table」: 오른쪽 열이 잘려 가로 스크롤을 해야만 보였다 */
+@media (max-width:600px){
+  table.ev td + td{ overflow-wrap:anywhere; }   /* 설명 칸만 — 왼쪽 라벨(공공기관 등)은 단어 중간에서 끊지 않는다 */
+  table.ev td{ padding-left:.8rem !important; padding-right:.8rem !important; }   /* 인라인 style 이라 !important */
+  .vt-table th,.vt-table td{ padding:.65rem .4rem; font-size:.82rem; }
+}
+
+/* ── ④ 터치 영역 44px (모바일 768px 이하) ─────────────────── */
+@media (max-width:768px){
+  /* 상단: 로고·메뉴·검색 — 버튼이 커진 만큼 위아래 안쪽 여백을 줄여 헤더 높이는 거의 그대로 */
+  header[role="banner"] nav{ padding-top:.4rem; padding-bottom:.4rem; }
+  header[role="banner"] .logo{ min-height:44px; }
+  header[role="banner"] .menu-toggle{ min-width:44px; min-height:44px; padding:0; border:0; background:none; align-items:center; justify-content:center; }
+  header[role="banner"] .site-search-btn{ width:44px; height:44px; }
+  header[role="banner"] .nav-links .nav-sub a{ display:flex; align-items:center; min-height:44px; padding-top:0; padding-bottom:0; }
+
+  /* 하단: SNS 링크 · 저작권 줄 링크 · 필북/VOD 푸터 링크 */
+  footer .footer-sns a,
+  footer[role="contentinfo"] > div > div > a{ display:inline-flex; align-items:center; justify-content:center; min-height:44px; min-width:44px; }
+  footer .footer-copy a{ display:inline-block; padding:.85rem .2rem; margin:-.85rem 0; }
+
+  /* 문장 속·카드 속 링크는 줄 간격이 밀리지 않게 안쪽 여백 + 같은 크기의 음수 바깥 여백 */
+  nav.crumb a,
+  .feel-more a,.proof-card .dsc a,.cta-sub a,.sh-help a,
+  .pl-title,.sh-fold .sh-adminbtn{ display:inline-block; padding-top:.9rem; padding-bottom:.9rem; margin-top:-.9rem; margin-bottom:-.9rem; }
+
+  /* 카드 하단의 단독 링크·버튼 */
+  main .give-card .give-link,main .card .more,main .res-card .res-link,
+  .ln-ask,.ln-links a,.note-tools a,.note-tools .copy-url,.one-note .back,
+  .notes-filter button,.notes-filter input,.ln-filter button,.sh-seg button,.stb_form_modal_open_btn{ display:inline-flex; align-items:center; min-height:44px; }
+  .notes-filter input{ display:block; }
+
+  /* 노트 하단 「관련 글」·「같은 날 쓴 노트」 목록 — 글 제목 자체가 링크라 한 줄 단위로 44px */
+  .one-note .more li a{ display:flex; align-items:center; min-height:44px; }
+  .one-note .more li{ margin:.1rem 0; }
+
+  /* 펼침(FAQ) 머리글 */
+  main .faq > details > summary,main .sh-fold > summary{ padding-top:.8rem; padding-bottom:.8rem; margin-top:-.8rem; margin-bottom:-.8rem; }
+
+  /* 스티비 구독 폼 입력·버튼(19~22px 였다) */
+  #stb_subscribe .stb_form_set_input,
+  #stb_subscribe .stb_form_submit_button,
+  #stb_form_modal_close{ min-height:44px; min-width:44px; }
+}
+@media (max-width:600px){
+  /* 하단 고정 바(강연 섭외·칼럼 보기) */
+  .pil-quickbar a{ min-height:44px; display:inline-flex; align-items:center; justify-content:center; }
+  .pil-quickbar{ padding-top:.4rem; padding-bottom:.4rem; }
+}
+@media (max-width:760px){
+  .pil-quick a{ min-height:44px; }
+}

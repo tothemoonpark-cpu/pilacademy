@@ -279,7 +279,12 @@ footer a{color:var(--accent)}
 .ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
 @media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
 /* [/SEARCH:AUTO] */
-
+/* [2026-10-17] 모바일 터치 영역 44px — 상단 메뉴 링크·검색 버튼 (글 내용 무변경) */
+@media (max-width:768px){
+  header.top a, header.top .site-search-open{min-height:44px;display:inline-flex;align-items:center}
+  header.top .site-search-btn{width:44px;height:44px}
+  header.top .site-search-open{min-width:44px;justify-content:center}
+}
 </style>
 <!-- BREADCRUMB:AUTO:START -->
 <script type="application/ld+json">
