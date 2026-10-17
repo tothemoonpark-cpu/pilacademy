@@ -615,6 +615,16 @@
   }
 </style>
 
+<style id="topic-guide-style">
+  .tg-list{margin:0;}
+  .tg-list>div{display:grid;grid-template-columns:7.2em 1fr;gap:.5rem;padding:.55rem 0;border-top:1px dashed var(--line);}
+  .tg-list dt{font-size:.88rem;font-weight:700;color:var(--mint-dark);}
+  .tg-list dd{margin:0;font-size:.95rem;line-height:1.6;color:var(--sub);}
+  .tg-link{margin-top:.8rem;font-size:.88rem;font-weight:700;}
+  .tg-link a{color:var(--mint-dark);}
+  .tg-cta{margin-top:1.6rem;text-align:center;}
+  @media (max-width:640px){.tg-list>div{grid-template-columns:1fr;gap:.15rem;}}
+</style>
 <style id="field-pick-style">
   .field-pick{background:#eef8f6;border-top:1px solid #d7eeeb;border-bottom:1px solid #d7eeeb;}
   .fp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:1rem;}
@@ -630,6 +640,90 @@
   .fp-go{margin-top:0.9rem;font-size:0.88rem;font-weight:700;color:#1f9d93;}
 </style>
   <link rel="stylesheet" href="pil.css">
+<!-- 강연 주제별 소개 구조화 데이터 — 화면 #topic-guide 문구와 동일 텍스트 -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ItemList",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/lecture.html#topic-guide",
+   "name": "강연 주제별 소개",
+   "description": "섭외 검토에 필요한 대상 · 소요시간 · 청중이 얻는 것을 주제별로 정리했습니다. 스무 해 가까이 임상 수의사로 일해 왔고 지금도 동물병원에서 일하는 박근필이 진행하며, 시간은 실제 진행 이력이고 기관 사정에 맞춰 조절합니다(일반 기준 45~120분).",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "item": {
+      "@type": "Service",
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/lecture.html#topic-guide-1",
+      "name": "직장인을 넘어, 직업인으로",
+      "provider": {
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+      },
+      "audience": {
+       "@type": "Audience",
+       "audienceType": "기업 임직원 · 공공기관 직원 (부산시청 공무원 200여 명 저자 특강)"
+      },
+      "description": "대상: 기업 임직원 · 공공기관 직원 (부산시청 공무원 200여 명 저자 특강) / 소요시간: 90분~2시간 (부산시청 공직자 대상 2시간 특강 · KB국민은행 인재양성 프로그램 온라인 특강 90분) / 청중이 얻는 것: 조직이 끝까지 함께 가고 싶은 직원은 어떤 사람인지, AI가 실무를 가져가는 자리에서 사람에게 남는 판단력은 무엇인지를 가져갑니다."
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "item": {
+      "@type": "Service",
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/lecture.html#topic-guide-2",
+      "name": "진로·직업 특강 / 진로 토크 콘서트",
+      "provider": {
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+      },
+      "audience": {
+       "@type": "Audience",
+       "audienceType": "초·중·고 학생 (초등학교 1학년부터 성인까지 진행) · 학교 진로 특강 대규모 진행 사례는 유락여자중학교 2·3학년 550명(강당 규모에 맞춰 학년별로 나눠 진행)"
+      },
+      "description": "대상: 초·중·고 학생 (초등학교 1학년부터 성인까지 진행) · 학교 진로 특강 대규모 진행 사례는 유락여자중학교 2·3학년 550명(강당 규모에 맞춰 학년별로 나눠 진행) / 소요시간: 1시간~1시간 40분 (유락여자중학교 학년별 각 1시간 · 학산여자중학교 전교생 진로 토크 콘서트 1시간 40분) / 청중이 얻는 것: 직업을 직업명이 아니라 그 일을 살아가는 사람의 이야기로, 보람과 힘든 지점을 함께 듣고 「길이 보이지 않아도 괜찮다」는 이야기를 가져갑니다."
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "Service",
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/lecture.html#topic-guide-3",
+      "name": "펫로스 치유 글쓰기(펫러스)",
+      "provider": {
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+      },
+      "audience": {
+       "@type": "Audience",
+       "audienceType": "반려동물을 떠나보낸 성인 · 가족 단위 (김해율하도서관 성인 대상 4주 과정)"
+      },
+      "description": "대상: 반려동물을 떠나보낸 성인 · 가족 단위 (김해율하도서관 성인 대상 4주 과정) / 소요시간: 단발 특강 60~120분 또는 연속 과정 4~6주 (김해율하도서관 4주 과정은 회당 2시간) / 청중이 얻는 것: 함께 읽고, 짧게 쓰고, 천천히 나누는 자리입니다. 4주 과정에서는 1~3주차 글을 엮은 짧은 에세이 한 편을 손에 쥐고 돌아갑니다. 상담이나 치료를 대신하지 않습니다."
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "item": {
+      "@type": "Service",
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/lecture.html#topic-guide-4",
+      "name": "독서 · 글쓰기 · 문해력 (어린이 독서문화강좌)",
+      "provider": {
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+      },
+      "audience": {
+       "@type": "Audience",
+       "audienceType": "초등 4~6학년 (혁신어울림 작은도서관 어린이 독서문화강좌)"
+      },
+      "description": "대상: 초등 4~6학년 (혁신어울림 작은도서관 어린이 독서문화강좌) / 소요시간: 회당 90분 · 주 1회 연속 (여름 4회 전 회차 완주 · 하반기 6회 강좌를 도서관이 먼저 제안) / 청중이 얻는 것: 읽기 → 문해력 → 질문 → 쓰기 4단계로 쓰는 힘을 기르는 수업입니다. 도서관 담당자 회신: 「아이들도 즐거운 수업이 되었다고 설문조사를 해주었습니다」."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
 <!-- [2026-09-25] 예정 행사 구조화 데이터(연구소 점검 21번) — 행사가 지나면 지운다 -->
 <script type="application/ld+json">
 {
@@ -1368,6 +1462,57 @@
                         <p class="note">교보문고·예스24 자기계발 온라인 일간 베스트셀러 1위 저자 · 매년 신간 출간</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- 강연 주제별 소개 (섭외 전환용 · 화면 문구와 JSON-LD #topic-guide는 같은 텍스트) -->
+        <section class="block" id="topic-guide">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">TOPIC GUIDE</p>
+                    <h2>강연 주제별 소개</h2>
+                    <p>섭외 검토에 필요한 대상 · 소요시간 · 청중이 얻는 것을 주제별로 정리했습니다. 스무 해 가까이 임상 수의사로 일해 왔고 지금도 동물병원에서 일하는 박근필이 진행하며, 시간은 실제 진행 이력이고 기관 사정에 맞춰 조절합니다(일반 기준 45~120분).</p>
+                </div>
+                <div class="topic-grid">
+                    <div class="topic-card tg-card" id="topic-guide-1">
+                        <span class="tag">기업 · 기관</span>
+                        <h3>직장인을 넘어, 직업인으로</h3>
+                        <dl class="tg-list">
+                            <div><dt>대상</dt><dd>기업 임직원 · 공공기관 직원 (부산시청 공무원 200여 명 저자 특강)</dd></div>
+                            <div><dt>소요시간</dt><dd>90분~2시간 (부산시청 공직자 대상 2시간 특강 · KB국민은행 인재양성 프로그램 온라인 특강 90분)</dd></div>
+                            <div><dt>청중이 얻는 것</dt><dd>조직이 끝까지 함께 가고 싶은 직원은 어떤 사람인지, AI가 실무를 가져가는 자리에서 사람에게 남는 판단력은 무엇인지를 가져갑니다.</dd></div>
+                        </dl>
+                    </div>
+                    <div class="topic-card tg-card" id="topic-guide-2">
+                        <span class="tag">청소년 · 학교</span>
+                        <h3>진로·직업 특강 / 진로 토크 콘서트</h3>
+                        <dl class="tg-list">
+                            <div><dt>대상</dt><dd>초·중·고 학생 (초등학교 1학년부터 성인까지 진행) · 학교 진로 특강 대규모 진행 사례는 유락여자중학교 2·3학년 550명(강당 규모에 맞춰 학년별로 나눠 진행)</dd></div>
+                            <div><dt>소요시간</dt><dd>1시간~1시간 40분 (유락여자중학교 학년별 각 1시간 · 학산여자중학교 전교생 진로 토크 콘서트 1시간 40분)</dd></div>
+                            <div><dt>청중이 얻는 것</dt><dd>직업을 직업명이 아니라 그 일을 살아가는 사람의 이야기로, 보람과 힘든 지점을 함께 듣고 「길이 보이지 않아도 괜찮다」는 이야기를 가져갑니다.</dd></div>
+                        </dl>
+                    </div>
+                    <div class="topic-card tg-card" id="topic-guide-3">
+                        <span class="tag">도서관 · 평생교육</span>
+                        <h3>펫로스 치유 글쓰기(펫러스)</h3>
+                        <dl class="tg-list">
+                            <div><dt>대상</dt><dd>반려동물을 떠나보낸 성인 · 가족 단위 (김해율하도서관 성인 대상 4주 과정)</dd></div>
+                            <div><dt>소요시간</dt><dd>단발 특강 60~120분 또는 연속 과정 4~6주 (김해율하도서관 4주 과정은 회당 2시간)</dd></div>
+                            <div><dt>청중이 얻는 것</dt><dd>함께 읽고, 짧게 쓰고, 천천히 나누는 자리입니다. 4주 과정에서는 1~3주차 글을 엮은 짧은 에세이 한 편을 손에 쥐고 돌아갑니다. 상담이나 치료를 대신하지 않습니다.</dd></div>
+                        </dl>
+                        <p class="tg-link"><a href="#petloss">펫로스 강연 자세히 보기 →</a></p>
+                    </div>
+                    <div class="topic-card tg-card" id="topic-guide-4">
+                        <span class="tag">도서관 · 독서</span>
+                        <h3>독서 · 글쓰기 · 문해력 (어린이 독서문화강좌)</h3>
+                        <dl class="tg-list">
+                            <div><dt>대상</dt><dd>초등 4~6학년 (혁신어울림 작은도서관 어린이 독서문화강좌)</dd></div>
+                            <div><dt>소요시간</dt><dd>회당 90분 · 주 1회 연속 (여름 4회 전 회차 완주 · 하반기 6회 강좌를 도서관이 먼저 제안)</dd></div>
+                            <div><dt>청중이 얻는 것</dt><dd>읽기 → 문해력 → 질문 → 쓰기 4단계로 쓰는 힘을 기르는 수업입니다. 도서관 담당자 회신: 「아이들도 즐거운 수업이 되었다고 설문조사를 해주었습니다」.</dd></div>
+                        </dl>
+                    </div>
+                </div>
+                <p class="tg-cta"><a class="btn-primary" href="contact.html"><i data-lucide="send" aria-hidden="true"></i>이 주제로 강연 섭외 문의하기</a></p>
             </div>
         </section>
 
