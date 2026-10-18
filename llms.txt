@@ -315,7 +315,10 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (393편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (396편)
+- [긴 글] 반려동물 장례식장, 허가받은 곳인지 어떻게 확인하나요? — 보호자를 위한 다섯 가지 체크리스트: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261017_q.html
+- [긴 글] 슬플 때 글을 쓰면 정말 도움이 될까요? — 표현적 글쓰기 연구 40년이 말해 주는 것: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261016_1.html
+- [긴 글] 반려동물에게 편지를 남기고 싶을 때 — 이름 없이 쓰는 「펫러스(PETLUS) 쉼터」 사용법: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261015_1.html
 - [강아지] 병이 쌓일수록 사망 위험도 높았다 — 미국 반려견 5만여 마리, 골관절염·과체중·암이 흔했다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-1.html
 - [강아지] 생후 6개월 전의 힘든 경험이 커서 두려움·공격성과 이어졌다 — 반려견 4,497마리 (체벌 포함): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-2.html
 - [강아지] 사료 단백질이 너무 많아도, 너무 적어도 행동과 이어졌다 — 미국 골든 리트리버 연구: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-3.html
@@ -712,8 +715,10 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 <!-- [/NOTES:AUTO] -->
 
 <!-- [STORIES:AUTO] -->
-## 펫로스 이야기 — 수의사가 답하는 반려동물 이별의 질문 (14편)
+## 펫로스 이야기 — 수의사가 답하는 반려동물 이별의 질문 (16편)
 - 모음: https://tothemoonpark-cpu.github.io/pilacademy/petloss-stories.html
+- 슬플 때 글을 쓰면 정말 도움이 될까요? — 표현적 글쓰기 연구 40년이 말해 주는 것: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261016_1.html
+- 반려동물에게 편지를 남기고 싶을 때 — 이름 없이 쓰는 「펫러스(PETLUS) 쉼터」 사용법: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261015_1.html
 - 반려동물을 잃은 슬픔, 가족을 잃은 슬픔만큼 클 수 있을까요? — 펫로스 증후군(펫로스 신드롬)에 대한 연구: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261014_1.html
 - 안락사를 결정한 게 맞았을까요 — 펫로스 증후군(펫로스 신드롬)과 결정 뒤에 남는 마음: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261013_1.html
 - 몇 달이 지났는데 아직도 무너진다면 — 펫로스 증후군(펫로스 신드롬)은 기간이 아니라 생활을 봐요: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261012_1.html
