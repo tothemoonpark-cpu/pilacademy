@@ -18,3 +18,6 @@ pilacademy_배포_260808/
 pila_233840/
 pilacademy_최종본.zip
 pilacademy_check.sh
+
+# 파일 서버(FUSE)가 남기는 임시 조각 — 배포 대상 아님
+.fuse_hidden*
