@@ -263,3 +263,11 @@ img,svg,video,iframe,table{ max-width:100%; }
    실측(클라우드 렌더): 1101·1150·1180·1200·1250·1280·1320·1366·1440·1600·1920 폭 전부 한 줄 · index·author·resources */
 @media (min-width:1101px){#navLinks{gap:.85rem}#navLinks a{font-size:.92rem}}
 @media (min-width:1101px) and (max-width:1320px){#navLinks{gap:.62rem}#navLinks a{font-size:.86rem}}
+
+/* 2026-10-19 모바일 터치 영역·작은 글자 보강(연구소 점검) — 눈에 보이는 크기는 그대로 두고 누르는 영역만 키움. 데스크톱 영향 없음 */
+@media (max-width:768px){
+  .menu-toggle{padding:14px 10px;margin:-14px -10px}
+  .footer-sns a,.footer-copy a,.note-tools a,.next a,.help a,.ct,.pl-title{padding-top:7px;padding-bottom:7px}
+  .copy-url{min-height:36px}
+  .dt{font-size:12.5px}
+}
