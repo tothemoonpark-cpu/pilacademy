@@ -8,6 +8,7 @@ import datetime
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 
@@ -15,6 +16,9 @@ API_URL = "https://api.anthropic.com/v1/messages"
 MODEL = "claude-sonnet-5-5"
 WEB_SEARCH_TOOL = {"type": "web_search_20260209", "name": "web_search", "max_uses": 15}
 MAX_CONTINUES = 6
+RETRY_CODES = (429, 500, 502, 503, 529)
+MAX_RETRIES = 3
+RETRY_WAIT = 20  # 초
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
 REPORT_DIR = os.environ.get(
@@ -107,11 +111,21 @@ def call_api(api_key, prompt):
                 "anthropic-version": "2023-06-01",
             },
         )
-        try:
-            with urllib.request.urlopen(req, timeout=600) as resp:
-                data = json.load(resp)
-        except urllib.error.HTTPError as e:
-            raise RuntimeError(f"API 오류 {e.code}: {e.read().decode('utf-8', 'replace')[:500]}")
+        for attempt in range(MAX_RETRIES + 1):
+            try:
+                with urllib.request.urlopen(req, timeout=600) as resp:
+                    data = json.load(resp)
+                break
+            except urllib.error.HTTPError as e:
+                if e.code in RETRY_CODES and attempt < MAX_RETRIES:
+                    time.sleep(RETRY_WAIT * (attempt + 1))
+                    continue
+                raise RuntimeError(f"API 오류 {e.code}: {e.read().decode('utf-8', 'replace')[:500]}")
+            except (urllib.error.URLError, TimeoutError) as e:
+                if attempt < MAX_RETRIES:
+                    time.sleep(RETRY_WAIT * (attempt + 1))
+                    continue
+                raise RuntimeError(f"API 연결 실패: {e}")
         usage = data.get("usage", {})
         in_tok += usage.get("input_tokens", 0)
         out_tok += usage.get("output_tokens", 0)
