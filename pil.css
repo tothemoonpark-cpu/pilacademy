@@ -271,3 +271,40 @@ img,svg,video,iframe,table{ max-width:100%; }
   .copy-url{min-height:36px}
   .dt{font-size:12.5px}
 }
+
+/* ── 2026-10-19 문의 안내 — 강연 관련 페이지 상단·하단 ──────────────────────
+   기관·학교·기업 담당자가 「양식 / 메일 / 프로필」 세 길을 한 곳에서 찾게 한다.
+   ⭐ 연락 메일의 정본은 tothemoon_park@naver.com 하나다. 다른 주소를 만들지 않는다.
+   ⛔ 버튼 높이 44px 이상 — 모바일에서 손가락으로 누르기 쉬워야 한다. */
+.pil-inquiry{background:var(--pil-card);border-top:1px solid var(--pil-line);border-bottom:1px solid var(--pil-line);
+  padding:2rem var(--pil-sec-x)}
+.pil-inquiry-in{max-width:var(--pil-w);margin:0 auto;display:flex;align-items:center;
+  justify-content:space-between;gap:1.4rem 2rem;flex-wrap:wrap}
+.pil-inquiry-h{margin:0 0 1.75rem;font-size:var(--pil-fs-md);font-weight:700;color:var(--pil-mint-600);letter-spacing:var(--pil-ls)}
+.pil-inquiry-txt{margin:0;font-size:var(--pil-fs);line-height:var(--pil-lh);color:var(--pil-ink)}
+.pil-inquiry-btns{display:flex;gap:.65rem;flex-wrap:wrap}
+.pil-inquiry-btns a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;
+  padding:0 1.3rem;border-radius:var(--pil-r);font-size:var(--pil-fs);font-weight:600;text-decoration:none;
+  overflow-wrap:anywhere;text-align:center}
+.pil-inquiry-btns .pil-iq-main{background:var(--pil-mint-500);color:#fff;font-weight:700}
+.pil-inquiry-btns .pil-iq-main:hover{background:var(--pil-mint-600)}
+.pil-inquiry-btns .pil-iq-sub{background:#fff;color:var(--pil-ink);border:1px solid var(--pil-line-strong)}
+.pil-inquiry-btns .pil-iq-sub:hover{border-color:var(--pil-mint-500);color:var(--pil-mint-600)}
+@media(max-width:560px){
+  .pil-inquiry{padding:1.75rem var(--pil-sec-x)}
+  .pil-inquiry-in{flex-direction:column;align-items:stretch}
+  .pil-inquiry-btns{flex-direction:column}
+  .pil-inquiry-btns a{width:100%;min-height:48px}
+}
+@media print{ .pil-inquiry{display:none} }
+
+/* 2026-10-19 모바일 문의 링크 터치 영역 — 눈에 보이는 모양은 그대로, 누르는 영역만 44px 이상으로 */
+@media (max-width:768px){
+  .footer-sns a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;
+    padding-top:0;padding-bottom:0}
+  .pil-quick a{min-height:44px}
+  a.ln-ask{display:inline-flex;align-items:center;min-height:44px}
+  a[href^="mailto:"]:not([class]),
+  a[href^="contact.html"]:not([class]),
+  a[href$="/contact.html"]:not([class]){padding:.85rem .5rem;margin:0 -.5rem}
+}
