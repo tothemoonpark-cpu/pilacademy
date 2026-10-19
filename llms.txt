@@ -315,9 +315,37 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (396편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (424편)
+- [강아지] 신경 문제로 오지 않은 개 4마리 중 1마리에서 보인 발 위치 감각 이상: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261019_1-1.html
+- [강아지] 강아지 인슐린종, 발작·쓰러짐·근육 떨림이 가장 흔한 증상이었습니다(영국 1차 진료 278마리): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261019_1-2.html
+- [강아지] 강아지와 같이 자면 사람이 잠을 설칠까: 가속도계로 재 보니 동침의 영향은 찾지 못했다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261019_1-3.html
+- [고양이] 설사가 없어도 지아르디아가 나올 수 있다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261019_1-4.html
+- [고양이] 만성 신장병 고양이를 돌보는 보호자의 46%가 의미 있는 부담 기준을 넘었다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261019_1-5.html
+- [고양이] 진찰실에서 캣닢이나 얼굴 페로몬을 쓰면 고양이의 지표가 달라질까?: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261019_1-6.html
+- [펫로스] 안락사 뒤 만족과 슬픔, 무엇과 관련이 있었을까: 수속·후속 돌봄·유해 돌봄 (캐나다 연구진, 보호자 2,354명): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261019_1-7.html
+- [펫로스] 개를 보낸 직후, 몸·마음·관계의 생활이 함께 흔들립니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261019_1-8.html
+- [펫로스] 이별을 바라보는 방식과 마음: 한국 보호자 303명 설문: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261019_1-9.html
+- [긴 글] 나이 든 반려동물, 오늘은 괜찮은 걸까요? — 하루 한 칸 「좋은 날 달력」 쓰는 법: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261018_q.html
 - [긴 글] 반려동물 장례식장, 허가받은 곳인지 어떻게 확인하나요? — 보호자를 위한 다섯 가지 체크리스트: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261017_q.html
+- [강아지] 큰 개가 더 빨리 늙는 흔적, 몸 안에서 보였다 — 미국 반려견 894마리 노화 시계: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261016_1-1.html
+- [강아지] 애매할 때의 판단, 견종보다 개마다 달랐다 — 미국·호주 연구, 10개 견종 118마리: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261016_1-2.html
+- [강아지] 강아지 다이어트, 사료든 집밥이든 칼로리가 먼저 — 브라질 과체중견 34마리 104일: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261016_1-3.html
+- [고양이] 보호자가 쓰는 탈모약 미녹시딜, 고양이에게는 위험하다 — 미국피부과학회·영국 고양이 보호 단체 경고: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261016_1-4.html
+- [고양이] 고양이가 싫다는 신호, 수의대생도 놓쳤다 — 호주 수의대생 설문, 사람과 고양이 영상: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261016_1-5.html
+- [고양이] 노령묘 영양, 아직 공식 기준이 없다 — 국제 고양이 의학 학술지 2026 리뷰: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261016_1-6.html
+- [펫로스] 햄스터·새·물고기도, 정이 깊었다면 슬픔은 같았다 — 보호자 464명 설문: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261016_1-7.html
+- [펫로스] 마지막 시기, 수의사와의 대화가 좋았을수록 후회가 적었다 — 미국 보호자 802명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261016_1-8.html
+- [펫로스] 동물이 나오는 책, 어린아이의 애도에 다리가 된다고 봤다 — 호주 아동 애도 실무자 47명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261016_1-9.html
 - [긴 글] 슬플 때 글을 쓰면 정말 도움이 될까요? — 표현적 글쓰기 연구 40년이 말해 주는 것: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261016_1.html
+- [강아지] AI가 짜 준 강아지 집밥, 영양은 맞을까 — AI 4종이 짠 식단 11개, 영양소 61%가 기준 미달: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261015_1-1.html
+- [강아지] 강아지 진드기약 성분, 강아지 몸에도 들어올까 — 국내 반려견 47마리 소변 97%에서 검출, 위험 지수는 기준선 아래: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261015_1-2.html
+- [강아지] 나이 든 강아지가 낮잠이 늘고 혼자 있기 힘들어한다면 — 미국 노령견 1만여 마리, 인지장애와 행동 변화: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261015_1-3.html
+- [고양이] 고양이 털 고르기, 정상과 이상은 어떻게 다를까 — 영상 118개, 심인성 탈모 고양이는 피부를 10배 오래 깨물었다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261015_1-4.html
+- [고양이] 고양이 소변 냄새에는 이름표가 있다 — 소변 속 지방산 조합이 고양이마다 다르고, 다른 고양이는 그 차이를 가려냈다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261015_1-5.html
+- [고양이] 우리 고양이가 가장 좋아하는 것은 무엇일까 — 간식·장난감·손길을 한꺼번에 내놓고 고르게 했다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261015_1-6.html
+- [펫로스] 슬픔을 글로 나눌 곳이 있을 때 — 온라인 모임을 오래 이용한 보호자 15명 인터뷰: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261015_1-7.html
+- [펫로스] 청소년들은 반려동물을 잃은 슬픔을 진짜 슬픔으로 본다 — 독일 청소년 226명이 생각하는 「슬퍼해도 되는 슬픔」: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261015_1-8.html
+- [펫로스] 아이를 보낸 뒤에도 동물병원에 기대도 된다 — 미국 호스피스 수의사가 정리한 「보낸 뒤의 돌봄」: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261015_1-9.html
 - [긴 글] 반려동물에게 편지를 남기고 싶을 때 — 이름 없이 쓰는 「펫러스(PETLUS) 쉼터」 사용법: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261015_1.html
 - [강아지] 병이 쌓일수록 사망 위험도 높았다 — 미국 반려견 5만여 마리, 골관절염·과체중·암이 흔했다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-1.html
 - [강아지] 생후 6개월 전의 힘든 경험이 커서 두려움·공격성과 이어졌다 — 반려견 4,497마리 (체벌 포함): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261014_1-2.html
