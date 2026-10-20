@@ -271,3 +271,12 @@ img,svg,video,iframe,table{ max-width:100%; }
   .copy-url{min-height:36px}
   .dt{font-size:12.5px}
 }
+
+/* ⭐ 소제목 위아래 간격 — 2026-10-20 작가님 지시 「소제목마다 적어도 한 줄 빈 간격」(사이트 전체 규칙)
+   h2·h3 아래는 한 줄 높이(1.5em, 작은 제목은 1.5rem 바닥)로 벌리고, 위쪽도 같은 값 이상으로 둔다.
+   ⛔ margin-bottom 은 페이지 인라인 style 의 `.card h3 { margin-bottom:.5rem }` 같은 개별 값을 덮어야 해서 !important.
+   ⛔ margin-top 은 !important 를 쓰지 않는다 — 위의 `.block .wrap > p + h3 { margin-top:2.2rem }` 처럼 더 큰 값은 그대로 두고,
+      값이 없는 제목에만 바닥을 깐다(첫 자식은 제외 — 카드·섹션 맨 위 제목이 불필요하게 밀리지 않게).
+   ⛔ 클래스 달린 p(.pil-eyebrow·.kind 같은 라벨) 바로 뒤 제목은 라벨과 한 묶음이라 위로 띄우지 않는다. */
+:is(h2,h3):not(:first-child):not(p[class] + *){ margin-top:max(1.5em,1.5rem); }
+:is(h2,h3){ margin-bottom:max(1.5em,1.5rem) !important; }
