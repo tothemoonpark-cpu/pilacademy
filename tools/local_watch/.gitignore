@@ -1,0 +1,12 @@
+# 비밀값·로그인 상태·실행 결과는 커밋하지 않습니다.
+config/*.json
+!config/*.example.json
+!config/selectors.json
+!config/rules.json
+storage_state.json
+results/*
+!results/.gitkeep
+state/*
+!state/.gitkeep
+__pycache__/
+*.pyc

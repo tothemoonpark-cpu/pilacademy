@@ -1,0 +1,7 @@
+# 알림·감시(watch_runner)만 쓸 때는 설치할 것이 없습니다(표준 라이브러리만 사용).
+# 숨고 감시(soomgo_watch.py)에 필요:
+playwright>=1.40
+beautifulsoup4>=4.12
+# 선택: 알림 채널이 하나도 없을 때 Windows 토스트로 대체(둘 중 하나)
+win10toast>=0.9; sys_platform == "win32"
+plyer>=2.1
