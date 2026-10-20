@@ -1,0 +1,13 @@
+{
+  "_설명": "이 파일을 notify.json 으로 복사해 값을 채우세요. notify.json 은 .gitignore 라 커밋되지 않습니다. 채널을 비워 두면 Windows 토스트로 대체됩니다.",
+  "ntfy": {
+    "enabled": true,
+    "server": "https://ntfy.sh",
+    "topic": "여기에-추측-불가능한-긴-토픽명"
+  },
+  "telegram": {
+    "enabled": false,
+    "token": "123456:ABC-텔레그램봇토큰",
+    "chat_id": "123456789"
+  }
+}

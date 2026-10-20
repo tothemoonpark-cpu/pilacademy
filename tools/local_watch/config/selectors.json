@@ -1,0 +1,31 @@
+{
+  "_설명": "숨고 화면 셀렉터. 아래 값은 실제 화면을 확인하기 전의 '미검증 초기값'입니다. python soomgo_watch.py --check-selectors 로 매칭 개수를 점검하고, --dump-html 로 저장된 HTML을 보며 고치세요. 빈 문자열은 '사용 안 함'입니다.",
+  "_verified": false,
+  "chats": {
+    "url": "https://soomgo.com/pro/chats",
+    "wait_for": "a[href*='/pro/chats/']",
+    "room": "a[href*='/pro/chats/']",
+    "room_id_regex": "/pro/chats/([^/?#]+)",
+    "name": "[class*='name']",
+    "last_text": "[class*='message'], [class*='last']",
+    "bubble": "",
+    "customer_marker": "[class*='customer'], [class*='received'], [class*='unread']",
+    "pro_marker": "[class*='pro'], [class*='sent'], [class*='mine']"
+  },
+  "requests": {
+    "url": "https://soomgo.com/requests/received",
+    "wait_for": "a[href*='/requests/']",
+    "card": "a[href*='/requests/']",
+    "id_regex": "/requests/(\\d+)",
+    "title": "h3, [class*='title']",
+    "category": "[class*='category'], [class*='service']",
+    "body": "p, [class*='content'], [class*='desc']",
+    "quote_count": "[class*='quote'], [class*='estimate']",
+    "elapsed": "time, [class*='time'], [class*='elapsed']",
+    "client_usage": "[class*='usage'], [class*='history']"
+  },
+  "send": {
+    "_설명": "--send 일 때만 사용. 비어 있으면 --send 는 아무 것도 클릭하지 않고 거부합니다. 최종 제출 버튼은 의도적으로 정의하지 않습니다.",
+    "open_button": ""
+  }
+}

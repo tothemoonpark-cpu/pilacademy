@@ -1,0 +1,10 @@
+{
+  "_설명": "이 파일을 watch.json 으로 복사해 사용하세요.",
+  "workdir": "C:\\Users\\본인\\칼럼",
+  "patterns": ["⛔", "🔴", "ALERT:"],
+  "dedupe_hours": 4,
+  "jobs": [
+    {"name": "전수점검", "cmd": ["python", "도구/전수점검.py"], "interval_minutes": 60, "timeout_sec": 600},
+    {"name": "세트감시", "cmd": ["python", "도구/세트감시.py"], "interval_minutes": 30, "timeout_sec": 300}
+  ]
+}
