@@ -1,0 +1,29 @@
+{
+  "model": "claude-sonnet-5-5",
+  "topics": {
+    "years": 2,
+    "pool_per_topic": 6,
+    "queries": {
+      "dog": {
+        "label": "강아지",
+        "query": "(dogs[MeSH Terms] OR dog[Title/Abstract] OR dogs[Title/Abstract] OR canine[Title/Abstract]) AND (owner[Title/Abstract] OR owners[Title/Abstract] OR pet[Title/Abstract] OR companion[Title/Abstract] OR veterinary[Title/Abstract] OR clinic[Title/Abstract]) AND hasabstract"
+      },
+      "cat": {
+        "label": "고양이",
+        "query": "(cats[MeSH Terms] OR feline[Title/Abstract] OR \"domestic cat\"[Title/Abstract] OR \"domestic cats\"[Title/Abstract] OR \"pet cat\"[Title/Abstract]) AND (owner[Title/Abstract] OR owners[Title/Abstract] OR pet[Title/Abstract] OR companion[Title/Abstract] OR veterinary[Title/Abstract] OR clinic[Title/Abstract]) AND hasabstract"
+      },
+      "petloss": {
+        "label": "펫로스",
+        "query": "(\"pet loss\"[Title/Abstract] OR \"pet bereavement\"[Title/Abstract] OR \"pet grief\"[Title/Abstract] OR \"companion animal loss\"[Title/Abstract] OR \"companion animal death\"[Title/Abstract] OR \"death of a pet\"[Title/Abstract] OR \"loss of a pet\"[Title/Abstract] OR \"loss of a companion animal\"[Title/Abstract]) AND hasabstract"
+      }
+    }
+  },
+  "kinds": [
+    {"name": "sns_set", "label": "반려동물 SNS 세트", "max_tokens": 3000},
+    {"name": "petloss_blog", "label": "펫로스 블로그", "max_tokens": 3500},
+    {"name": "petlus_news", "label": "펫러스뉴스 기사", "max_tokens": 3000},
+    {"name": "shortform_script", "label": "숏폼 낭독 대본", "max_tokens": 1500}
+  ],
+  "take": 3,
+  "items": []
+}
