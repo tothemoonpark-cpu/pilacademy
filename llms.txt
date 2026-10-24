@@ -318,7 +318,16 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (464편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (474편)
+- [강아지] 해외에서 들여온 수입견, 영국 수의사 413명이 본 것: 이동 중 사망과 위조 의심 서류: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-1.html
+- [강아지] 만성 장 질환 의심 개, 분석한 20마리 중 14마리, 곤충 단백 사료를 먹은 뒤 호전 반응 (아일랜드): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-2.html
+- [강아지] 치료 중 의료 실수가 있었다면 바로 알고 싶다: 미국 반려동물 보호자 5,026명 설문: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-3.html
+- [고양이] 고양이에게 일반 사료가 아닌 식단을 주는 보호자, 성격 특성과의 연관 — 프랑스 1,566명 설문: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-4.html
+- [고양이] 코가 눌린 고양이의 콧구멍 수술 뒤, 보호자는 6개월 넘게 지나서도 증상이 좋아졌다고 답했습니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-5.html
+- [고양이] 실내 고양이와 바깥 출입 고양이의 털 코르티솔, 차이가 없었습니다 — 브라질 34마리: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-6.html
+- [펫로스] 떠나기 전부터 시작되는 슬픔도 슬픔입니다 — 영국 설문 667명·인터뷰 41명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-7.html
+- [펫로스] 이별 뒤 회복탄력성에는 이야기를 나누는 과정이 있다: 말을 떠나보낸 실무자 84명 연구: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-8.html
+- [펫로스] 수의사도 반려동물을 잃습니다 — 죽음을 자주 보는 직업인의 펫로스: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-9.html
 - [강아지] 수의사가 「산책을 줄이세요」라고 해도, 행동 문제가 이유일 때는 따르기 더 어려워했다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261023_1-1.html
 - [강아지] 강아지도 「부바」는 둥근 모양, 「키키」는 뾰족한 모양과 짝지을까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261023_1-2.html
 - [강아지] 강아지 사료 표시 성분과 실제 분석값: 생식 사료 6종은 모두 달랐다 (칠레 사료 16종): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261023_1-3.html
@@ -328,6 +337,7 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - [펫로스] 함께 일하던 보조견이 은퇴하거나 떠날 때: 호주 보조견 단체 직원 9명의 이야기: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261023_1-7.html
 - [펫로스] 말이 죽은 뒤, 곁에서 일하던 사람들이 한 일: 말 보조 프로그램 실무자 84건: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261023_1-8.html
 - [펫로스] 동물원에서 동물을 잃은 뒤, 일터에는 슬퍼할 자리가 있었을까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261023_1-9.html
+- [긴 글] 기일이 다가오면 다시 아파지는 이유 — 「기념일 반응」과 펫로스 증후군(펫로스 신드롬): https://tothemoonpark-cpu.github.io/pilacademy/notes/b261023_q.html
 - [강아지] 발작처럼 보이지만 뇌전증이 아닌 「발작성 운동이상」, 글루텐 없는 식단으로 바꾼 뒤 강아지 41마리의 경과: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261022_1-1.html
 - [강아지] 강아지 입 속 원충(트리코모나스), 나이 많고 치석이 심한 개에서 더 자주 나왔다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261022_1-2.html
 - [강아지] 체온이 정상으로 나와도 안심하기 이른 이유: 보호소 개 121마리에서 눈 적외선 체온과 직장 체온이 이상 체온을 찾은 정도: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261022_1-3.html
@@ -786,8 +796,9 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 <!-- [/NOTES:AUTO] -->
 
 <!-- [STORIES:AUTO] -->
-## 펫로스 이야기 — 수의사가 답하는 반려동물 이별의 질문 (20편)
+## 펫로스 이야기 — 수의사가 답하는 반려동물 이별의 질문 (21편)
 - 모음: https://tothemoonpark-cpu.github.io/pilacademy/petloss-stories.html
+- 기일이 다가오면 다시 아파지는 이유 — 「기념일 반응」과 펫로스 증후군(펫로스 신드롬): https://tothemoonpark-cpu.github.io/pilacademy/notes/b261023_q.html
 - 분노 단계는 언제 끝나나요? — 슬픔은 「다섯 단계」대로 오지 않습니다, 펫로스 증후군(펫로스 신드롬)과 단계에 대한 오해: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261022_q.html
 - 울다가 웃는 나, 이상한 걸까요? — 슬픔과 일상을 오가는 「이중 과정 모델」과 펫로스 증후군(펫로스 신드롬): https://tothemoonpark-cpu.github.io/pilacademy/notes/b261021_q.html
 - 남은 아이도 슬퍼할까요? — 함께 살던 개와 고양이에게 보이는 변화, 그리고 펫로스 증후군(펫로스 신드롬)을 겪는 보호자: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261020_q.html
