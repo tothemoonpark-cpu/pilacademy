@@ -126,6 +126,13 @@
         .tile.tile-feature { border-color: var(--mint); background: linear-gradient(180deg, var(--mint-soft) 0%, #ffffff 55%); }
         .tile.tile-feature .tile-icon { background: var(--mint); color: #fff; }
         .tile-badge { display: inline-block; align-self: flex-start; font-size: 0.8rem; font-weight: 700; color: #fff; background: var(--mint); padding: 0.16rem 0.5rem; border-radius: 14px; margin-bottom: 0.5rem; }
+        .pn-band { background:#15233D; color:#fff; }
+        .pn-wrap { max-width:1100px; margin:0 auto; padding:1.1rem 1.25rem; display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+        .pn-tag { font-size:.75rem; font-weight:700; letter-spacing:.08em; background:#fff; color:#15233D; padding:.25rem .65rem; border-radius:999px; }
+        .pn-text { flex:1 1 280px; font-size:.98rem; line-height:1.6; margin:0; }
+        .pn-text b { font-size:1.05rem; }
+        .pn-btn { display:inline-flex; align-items:center; gap:.4rem; background:#fff; color:#15233D; font-weight:700; padding:.65rem 1.2rem; border-radius:12px; }
+        .pn-btn:hover { background:#eef8f6; }
         .btn-primary { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--mint); color: #fff; font-weight: 700; font-size: 0.98rem; padding: 0.85rem 1.7rem; border-radius: 14px; transition: background 0.2s, transform 0.2s; }
         .btn-primary:hover { background: var(--mint-dark); transform: translateY(-2px); }
         .btn-ghost { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--ink); border: 1px solid var(--line); font-weight: 500; font-size: 0.98rem; padding: 0.85rem 1.5rem; border-radius: 14px; transition: border-color 0.2s; }
@@ -628,6 +635,7 @@
                 <li><a href="author.html">소장소개</a></li>
                 <li><a href="vet-notes.html">반려동물 노트</a></li>
                 <li><a href="petlus-shelter.html">펫러스 쉼터</a></li>
+                <li><a href="https://petlusnews.com/" target="_blank" rel="noopener">펫러스뉴스</a></li>
                 <li><a href="books.html">저서</a></li>
                 <li><a href="columns.html">칼럼</a></li>
                 <li><a href="videos.html">대표 영상</a></li>
@@ -802,6 +810,14 @@
                         <a class="btn-ghost" href="author.html">소장 소개 <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="pn-band" aria-label="펫러스뉴스">
+            <div class="pn-wrap">
+                <span class="pn-tag">NEWS</span>
+                <p class="pn-text"><b>펫러스뉴스</b> — 현직 수의사 박근필이 발행하는 반려동물·펫로스 전문 인터넷신문입니다. 건강·행동·생활·펫로스 기사를 확인한 사실로 전합니다.</p>
+                <a class="pn-btn" href="https://petlusnews.com/" target="_blank" rel="noopener">펫러스뉴스 읽기 <i data-lucide="arrow-right" aria-hidden="true"></i></a>
             </div>
         </section>
 

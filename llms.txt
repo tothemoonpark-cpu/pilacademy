@@ -319,7 +319,26 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (474편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (494편)
+- [강아지] 강아지가 아픈 신호, 보호자는 얼마나 알아볼까요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261026_1-1.html
+- [강아지] 만성 장 질환이 있는 강아지는 마음의 신호도 달랐습니다 — 보호자 설문 (스웨덴): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261026_1-2.html
+- [강아지] 보호자는 자기 개와 낯선 개에게 다른 목소리로 말했습니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261026_1-3.html
+- [고양이] 건강한 고양이의 먹기·화장실 습관, 스마트 급식기와 화장실로 그려 봤습니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261026_1-4.html
+- [고양이] 방광 문제로 치료받은 고양이 보호자 167건, 집안 환경 조언을 어떻게 받아들였나: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261026_1-5.html
+- [고양이] 고양이 관절염 알림 콘텐츠를 본 보호자 53명, 지식과 자신감이 달라졌습니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261026_1-6.html
+- [펫로스] 반려동물을 잃은 슬픔과 사람을 잃은 슬픔, 측정해 보니 차이가 없었습니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261026_1-7.html
+- [펫로스] 반려동물을 잃은 사람의 슬픔은 가장 덜 정당하다고 평가됐습니다 — 시나리오 실험 306명(포르투갈): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261026_1-8.html
+- [펫로스] 인정받지 못하는 슬픔에도 이름이 있다 — 「다툼이 있는 슬픔」이라는 개념(핀란드, 2025년): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261026_1-9.html
+- [강아지] 강아지 렙토스피라증, 여러 마리가 모이는 실내 시설과 관련이 있었을까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261025_1-1.html
+- [강아지] 강아지 진드기·벼룩 예방, 1년 내내 이어가고 있을까요? 폴란드 개 19,351마리의 처방 기록: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261025_1-2.html
+- [강아지] 강아지에게 칸나비디올을 먹여 본 보호자는 29% — 프랑스 반려인 2,050명 설문: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261025_1-3.html
+- [고양이] 건강해 보이는 나이 든 고양이, 행동 변화와 체형·혈액검사 수치가 함께 나타났다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261025_1-4.html
+- [고양이] 중국 보험 가입 고양이 163,890마리를 보니, 가장 많이 청구된 병은 소화기 질환, 그다음은 비뇨기 질환이었습니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261025_1-5.html
+- [고양이] 덴마크 시골 마을, 24년 사이 고양이 키우는 방식의 변화: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261025_1-6.html
+- [펫로스] 반려동물을 잃은 뒤 슬픔 곁에 올라오는 죄책감 — 질적 연구 정리: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261025_1-7.html
+- [펫로스] 슬픔 속에서 보호자들이 써 온 방법들 — 연구 48편을 모은 문헌고찰: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261025_1-8.html
+- [펫로스] 죽음을 말하기 어려운 사회에서, 호스피스·완화 수의사 20명이 본 반려동물의 마지막: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261025_1-9.html
+- [긴 글] 회사에 「반려동물이 떠나서」라고 말해도 될까요? — 펫로스 증후군(펫로스 신드롬)과 일터에서 슬픔을 말하는 법: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261025_q.html
 - [강아지] 해외에서 들여온 수입견, 영국 수의사 413명이 본 것: 이동 중 사망과 위조 의심 서류: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-1.html
 - [강아지] 만성 장 질환 의심 개, 분석한 20마리 중 14마리, 곤충 단백 사료를 먹은 뒤 호전 반응 (아일랜드): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-2.html
 - [강아지] 치료 중 의료 실수가 있었다면 바로 알고 싶다: 미국 반려동물 보호자 5,026명 설문: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-3.html
@@ -329,6 +348,7 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - [펫로스] 떠나기 전부터 시작되는 슬픔도 슬픔입니다 — 영국 설문 667명·인터뷰 41명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-7.html
 - [펫로스] 이별 뒤 회복탄력성에는 이야기를 나누는 과정이 있다: 말을 떠나보낸 실무자 84명 연구: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-8.html
 - [펫로스] 수의사도 반려동물을 잃습니다 — 죽음을 자주 보는 직업인의 펫로스: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261024_1-9.html
+- [긴 글] 편지가 어렵다면 이렇게 써 보세요 — 펫로스 증후군(펫로스 신드롬) 속에서 떠난 아이를 기억하는 여섯 가지 글: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261024_q.html
 - [강아지] 수의사가 「산책을 줄이세요」라고 해도, 행동 문제가 이유일 때는 따르기 더 어려워했다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261023_1-1.html
 - [강아지] 강아지도 「부바」는 둥근 모양, 「키키」는 뾰족한 모양과 짝지을까: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261023_1-2.html
 - [강아지] 강아지 사료 표시 성분과 실제 분석값: 생식 사료 6종은 모두 달랐다 (칠레 사료 16종): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261023_1-3.html
@@ -797,8 +817,10 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 <!-- [/NOTES:AUTO] -->
 
 <!-- [STORIES:AUTO] -->
-## 펫로스 이야기 — 수의사가 답하는 반려동물 이별의 질문 (21편)
+## 펫로스 이야기 — 수의사가 답하는 반려동물 이별의 질문 (23편)
 - 모음: https://tothemoonpark-cpu.github.io/pilacademy/petloss-stories.html
+- 회사에 「반려동물이 떠나서」라고 말해도 될까요? — 펫로스 증후군(펫로스 신드롬)과 일터에서 슬픔을 말하는 법: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261025_q.html
+- 편지가 어렵다면 이렇게 써 보세요 — 펫로스 증후군(펫로스 신드롬) 속에서 떠난 아이를 기억하는 여섯 가지 글: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261024_q.html
 - 기일이 다가오면 다시 아파지는 이유 — 「기념일 반응」과 펫로스 증후군(펫로스 신드롬): https://tothemoonpark-cpu.github.io/pilacademy/notes/b261023_q.html
 - 분노 단계는 언제 끝나나요? — 슬픔은 「다섯 단계」대로 오지 않습니다, 펫로스 증후군(펫로스 신드롬)과 단계에 대한 오해: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261022_q.html
 - 울다가 웃는 나, 이상한 걸까요? — 슬픔과 일상을 오가는 「이중 과정 모델」과 펫로스 증후군(펫로스 신드롬): https://tothemoonpark-cpu.github.io/pilacademy/notes/b261021_q.html
