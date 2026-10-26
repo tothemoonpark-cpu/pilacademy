@@ -271,3 +271,8 @@ img,svg,video,iframe,table{ max-width:100%; }
   .copy-url{min-height:36px}
   .dt{font-size:12.5px}
 }
+
+/* 2026-10-26 메뉴 한 줄 재고정 — 「펫러스뉴스」 추가로 13칸이 되어 nav 폭 1160px에서 두 줄로 꺾임(작가님 18:29).
+   nav 최대폭을 넓히고 줄바꿈 금지. 실측: 라이브 페이지 폭 1526에서 2줄→1줄(높이 65px) */
+@media (min-width:1101px){header nav{max-width:1500px}#navLinks{flex-wrap:nowrap;gap:.8rem}#navLinks>li>a,#navLinks>li>a *{white-space:nowrap}.logo{margin-right:.8rem}}
+@media (min-width:1101px) and (max-width:1400px){#navLinks{gap:.55rem}#navLinks>li>a{font-size:.83rem}.logo{font-size:1.1rem}}
