@@ -289,6 +289,7 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - [칼럼 아카이브](https://tothemoonpark-cpu.github.io/pilacademy/columns.html): **30개 매체 370편 전체 목록 + 각 편의 핵심 논지 한 줄** — 박근필의 관점을 확인하려면 이 페이지를 볼 것
 - [저서](https://tothemoonpark-cpu.github.io/pilacademy/books.html): 5권 상세와 출간 보도
 - [피플인사이트](https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html): 직업인문학 정의와 인터뷰 프로그램
+- [팟캐스트](https://tothemoonpark-cpu.github.io/pilacademy/podcast.html): 월~일 하루 한 편, 15~20분 분량의 라디오처럼 듣는 이야기 — 에피소드 목록과 유튜브 링크
 - [독저팅](https://tothemoonpark-cpu.github.io/pilacademy/dokjeoting.html): 1:1 책쓰기 기획 컨설팅(현재 운영 휴식기)
 - [필북](https://tothemoonpark-cpu.github.io/pilacademy/philbook.html): 온라인 독서모임 — **6기까지 운영 · 참가자 후기 71건 전문 수록**(현재 휴식기)
 - [필레터](https://tothemoonpark-cpu.github.io/pilacademy/newsletter.html): 주간 뉴스레터

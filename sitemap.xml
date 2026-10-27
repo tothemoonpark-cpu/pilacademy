@@ -70,6 +70,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://tothemoonpark-cpu.github.io/pilacademy/podcast.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
