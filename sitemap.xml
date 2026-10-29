@@ -160,6 +160,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://tothemoonpark-cpu.github.io/pilacademy/vet-questions.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tothemoonpark-cpu.github.io/pilacademy/career-reading-sheet.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tothemoonpark-cpu.github.io/pilacademy/one-page-writing.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tothemoonpark-cpu.github.io/pilacademy/good-days.html</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -723,7 +741,7 @@
   </url>
   <url>
     <loc>https://tothemoonpark-cpu.github.io/pilacademy/resources.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
