@@ -61,12 +61,55 @@ a{color:inherit}
 .wrap{max-width:860px;margin:0 auto;padding:0 22px}
 
 /* ── 머리 ─────────────────────────────────────────── */
-header.top{background:var(--ink);color:#fff}
-header.top .wrap{display:flex;align-items:center;flex-wrap:wrap;
- gap:.2rem 1.1rem;padding-top:14px;padding-bottom:14px}
-header.top nav{display:flex;align-items:center;flex-wrap:wrap;gap:.2rem 1.1rem;width:100%}
-header.top a{color:#fff;text-decoration:none;font-size:15px;padding:6px 0;display:inline-block}
-header.top a:hover{opacity:.8}
+/* [헤더 표준 2026-10-29] 사이트 공통 헤더(resources.html)와 같은 모양 */
+header[role="banner"]{background:#1f9d93;box-shadow:0 2px 12px rgba(0,0,0,.07);position:sticky;top:0;z-index:1000}
+header[role="banner"] nav{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.5rem}
+header[role="banner"] ul{margin:0;padding:0;list-style:none}
+header[role="banner"] a{text-decoration:none}
+header[role="banner"] .logo{display:flex;align-items:center;gap:.45rem;font-size:1.25rem;font-weight:700;color:#fff;letter-spacing:-.02em;white-space:nowrap}
+header[role="banner"] .logo svg{width:22px;height:22px;color:#fff}
+header[role="banner"] .nav-links{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+header[role="banner"] .nav-links a{color:#fff;font-weight:600;font-size:.98rem;padding:0;transition:opacity .2s}
+header[role="banner"] .nav-links a:hover{opacity:.82}
+header[role="banner"] .menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer}
+header[role="banner"] .menu-toggle span{width:24px;height:2px;background:#fff;border-radius:8px}
+@media (min-width:769px) and (max-width:1180px){header[role="banner"] .nav-links{gap:.8rem}header[role="banner"] .nav-links>li>a{font-size:.88rem}}
+@media (min-width:769px) and (max-width:1100px){header[role="banner"] nav{padding-left:1rem;padding-right:1rem}header[role="banner"] .nav-links{gap:.6rem}header[role="banner"] .nav-links>li>a{font-size:.84rem}}
+@media (max-width:768px){
+  header[role="banner"] .nav-links{display:none}
+  header[role="banner"] .menu-toggle{display:flex}
+  header[role="banner"] .nav-links.open{display:flex;flex-direction:column;position:absolute;top:100%;right:1.5rem;background:#2bb7ac;border-radius:14px;padding:1rem 1.3rem;gap:.9rem;box-shadow:0 12px 30px rgba(0,0,0,.15)}
+}
+  .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:14px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  header .nav-links .nav-sub a,
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.98rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  header .nav-links .nav-sub a:hover,
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    header .nav-links .nav-sub a,
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.88rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
+       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
+       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
+       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:0.8rem;font-weight:800;color:#1f9d93;
+    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
+    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
+    /* [/NAVSEP:AUTO] */
 .site-search-open{background:none;border:0;color:#fff;font-size:15px;font-family:inherit;
  cursor:pointer;padding:6px 0;display:none}
 
@@ -166,7 +209,7 @@ footer a{color:var(--accent)}
    ⭐ 화면에서는 기관 담당자가 읽고, 인쇄하면 보호자에게 드릴 한 장만 나옵니다. */
 @page{ size:A4; margin:12mm 11mm }
 @media print{
-  header.top,footer,.noprint{display:none!important}
+  header[role="banner"],footer,.noprint{display:none!important}
   body{background:#fff;font-size:10.5pt;color:#2b2b2b}
   .wrap{max-width:none;padding:0}
   .sheet{border:0;border-radius:0;padding:0;margin:0;box-shadow:none;
@@ -357,13 +400,47 @@ footer a{color:var(--accent)}
 <body>
 <!-- [SKIP:AUTO] --><style>.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#16181d;color:#fff;padding:10px 16px;border-radius:0 0 8px 0;font-weight:700}.pil-skip:focus{left:0}</style><a class="pil-skip" href="#main-content">본문 바로가기</a>
 
-<header class="top">
-  <div class="wrap">
-    <nav role="navigation" aria-label="주요 메뉴">
-      <a href="index.html">← 박근필성장연구소</a>
-      <a href="petcare.html">반려동물</a>
-      <a href="petloss.html">펫로스 강연 안내</a>
-      <a href="contact.html">섭외 문의</a>
+<header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li class="nav-sep">수의사로서</li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petlus-shelter.html">펫러스(PETLUS) 쉼터</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li class="nav-sep">작가 · 강연가로서</li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="career-reading.html">진로독서</a></li>
+                        <li><a href="corporate.html">기업·공공기관 강연</a></li>
+                        <li><a href="senior.html">중장년·시니어 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
+                <li><a href="author.html">소장소개</a></li>
+                <li><a href="vet-notes.html">반려동물 노트</a></li>
+                <li><a href="petlus-shelter.html">펫러스 쉼터</a></li>
+                <li><a href="https://petlusnews.com/" target="_blank" rel="noopener">펫러스뉴스</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="columns.html">칼럼</a></li>
+                <li><a href="videos.html">대표 영상</a></li>
+                <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
+                <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <li><a href="dokjeoting.html">독저팅</a></li> -->
+                <li><a href="writing-request.html">집필·감수 의뢰</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="resources.html">자료실</a></li>
+                <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
+                <!-- [필라이프 코칭 비활성화 2026-08-14 · 되살릴 때 주석 해제] <li><a href="phillife.html">필라이프 코칭</a></li> -->
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+                
       <button type="button" class="site-search-open" onclick="openSiteSearch()" aria-label="사이트 내 검색 열기">검색</button>
         <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
 <button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
@@ -392,9 +469,8 @@ footer a{color:var(--accent)}
   </div>
 </div>
 <!-- [/SEARCH:AUTO] -->
-    </nav>
-  </div>
-</header>
+        </nav>
+    </header>
 
 <section class="hero noprint">
   <div class="wrap">
@@ -620,6 +696,16 @@ footer a{color:var(--accent)}
 </footer>
 
 
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+if (window.lucide) { lucide.createIcons(); }
+function toggleMenu() {
+  var nav = document.getElementById('navLinks');
+  var btn = document.querySelector('.menu-toggle');
+  var open = nav.classList.toggle('open');
+  if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+</script>
 <script>
 /* [SEARCH:AUTO] 사이트 내 검색 */
 var __ssIndex=null,__ssLoading=false;
