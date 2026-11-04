@@ -329,11 +329,16 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (555편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (560편)
+- [강아지] 골관절염이 있는 강아지 79마리, 재활을 포함한 관리 뒤 보호자가 평가한 통증 점수: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261104_1-1.html
+- [고양이] 동물복지센터 고양이 35마리, 입소 2주 전후 대변 속 스트레스 관련 물질을 견주다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261104_1-2.html
+- [펫로스] 아이와의 유대가 깊을수록 슬픔도 컸습니다 — 18~35세 204명 설문, 애착 유형의 영향은 크지 않았다: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261104_1-3.html
+- [쉼터] 펫러스(PETLUS) 쉼터 안내: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261104_1-4.html
 - [강아지] 강아지의 중간 수명은 몸집에 따라 달랐습니다 — 미국 강아지 41,047마리 추적: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261103_1-1.html
 - [고양이] 고양이 전용 공간이나 전용 시간대가 있는 병원과 없는 병원, 보호자가 본 고양이의 스트레스(포르투갈 204명): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261103_1-2.html
 - [펫로스] 반려동물의 마지막 결정을 겪은 보호자 143명 — 안락사를 고민한 마음과 병원에 바란 것: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261103_1-3.html
 - [쉼터] 펫러스(PETLUS) 쉼터 안내: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261103_1-4.html
+- [긴 글] 아이의 마지막을 정할 때 마음이 갈라지는 건 이상한 일일까요? — 보호자 143명의 응답: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261103_q.html
 - [강아지] 장이 오래 아픈 강아지를 돌보는 보호자의 부담, 독일 설문 연구(보호자 223명 대 447명): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261102_1-1.html
 - [고양이] 나이 든 고양이 건강검진에서 발견된 병, 영국 동물병원 두 곳의 8살 이상 고양이 549마리 기록: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261102_1-2.html
 - [펫로스] 예상치 못한 죽음 뒤의 마음, 반려동물을 떠나보낸 보호자 4,902명 설문(미국 대학 연구진): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261102_1-3.html
