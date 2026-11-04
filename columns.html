@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="박근필성장연구소">
 <meta property="og:title" content="칼럼 아카이브 — 30개 매체 371편 | 박근필">
 <meta property="og:description" content="진로·독서·글쓰기·문해력·커리어 전환. 371편의 칼럼과 각 편의 핵심 논지를 한눈에.">
-<meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261103.png">
+<meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261104.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
@@ -6452,7 +6452,6 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
    왜 여기 있나: columns.html 은 columns_build.py 가 이 템플릿으로 **통째 재생성**한다.
    search_build 가 넣은 CSS 가 그때 날아가고, 다시 넣으면 columns_build 가 「어긋남」으로 본다.
    → 두 도구가 서로 덮어쓰는 순환이라 **템플릿에 박아** 끊는다. (2026-08-23) */
-
 /* [SEARCH:AUTO] 사이트 내 검색 */
 .site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
   display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
@@ -6481,31 +6480,8 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
 .ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
 @media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
 /* [/SEARCH:AUTO] */
-
 </style>
   <link rel="stylesheet" href="pil.css">
-<!-- BREADCRUMB:AUTO:START -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "BreadcrumbList",
- "itemListElement": [
-  {
-   "@type": "ListItem",
-   "position": 1,
-   "name": "박근필성장연구소",
-   "item": "https://tothemoonpark-cpu.github.io/pilacademy/"
-  },
-  {
-   "@type": "ListItem",
-   "position": 2,
-   "name": "칼럼 아카이브",
-   "item": "https://tothemoonpark-cpu.github.io/pilacademy/columns.html"
-  }
- ]
-}
-</script>
-<!-- BREADCRUMB:AUTO:END -->
 </head>
 <body>
 <!-- [SKIP:AUTO] --><style>.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#16181d;color:#fff;padding:10px 16px;border-radius:0 0 8px 0;font-weight:700}.pil-skip:focus{left:0}</style><a class="pil-skip" href="#main-content">본문 바로가기</a>
@@ -8601,7 +8577,7 @@ footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5re
             <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
             <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
         </div>
-        <div class="footer-copy">© 2024–2026 박근필성장연구소 by 박근필. All rights reserved. · <a href="privacy.html" style="color:inherit;text-decoration:underline">개인정보처리방침</a> · <a href="resources.html" style="color:inherit;text-decoration:underline">자료실</a><br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
+        <div class="footer-copy">© 2024–2026 박근필성장연구소 by 박근필. All rights reserved.<br>박근필성장연구소 대표 박근필 · 사업자등록번호 262-95-02242 · <a href="privacy.html" style="color:inherit;text-decoration:underline">개인정보처리방침</a> · <a href="resources.html" style="color:inherit;text-decoration:underline">자료실</a><br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
     </footer>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 <script>
@@ -8646,78 +8622,5 @@ if(window.lucide) lucide.createIcons();
 })();
 </script>
 <!-- [/QUICKBAR:AUTO] -->
-<script>
-/* [SEARCH:AUTO] 사이트 내 검색 */
-var __ssIndex=null,__ssLoading=false;
-function openSiteSearch(){
-  var l=document.getElementById('siteSearchLayer'); if(!l)return;
-  l.classList.add('on'); document.body.style.overflow='hidden';
-  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
-  loadSiteIndex();
-}
-function closeSiteSearch(){
-  var l=document.getElementById('siteSearchLayer'); if(!l)return;
-  l.classList.remove('on'); document.body.style.overflow='';
-}
-function loadSiteIndex(){
-  if(__ssIndex||__ssLoading)return; __ssLoading=true;
-  fetch('search-index.json').then(function(r){return r.json();})
-    .then(function(d){__ssIndex=d;__ssLoading=false;
-      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
-    .catch(function(){__ssLoading=false;
-      var b=document.getElementById('siteSearchResults');
-      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
-}
-function quickSiteSearch(w){
-  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
-}
-function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-function __ssSnippet(text,q){
-  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
-  if(i<0)return '';
-  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
-  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
-  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
-  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
-}
-function runSiteSearch(q){
-  var box=document.getElementById('siteSearchResults'); if(!box)return;
-  q=(q||'').trim();
-  if(q.length<2){box.innerHTML='';return;}
-  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
-  var lq=q.toLowerCase(),out=[];
-  __ssIndex.forEach(function(d){
-    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
-    var n=hay.split(lq).length-1;
-    if(n>0){
-      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
-      out.push({d:d,sc:sc});
-    }
-  });
-  if(!out.length){
-    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
-  out.sort(function(a,b){return b.sc-a.sc;});
-  box.innerHTML=out.slice(0,40).map(function(o){
-    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
-    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
-      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
-      +'<div class="ssr-s">'+sn+'</div></a>';
-  }).join('');
-}
-document.addEventListener('DOMContentLoaded',function(){
-  var i=document.getElementById('siteSearchInput');
-  if(i){
-    var tm=null;
-    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
-  }
-  var l=document.getElementById('siteSearchLayer');
-  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
-  document.addEventListener('keydown',function(e){
-    if(e.key==='Escape')closeSiteSearch();
-    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
-  });
-});
-/* [/SEARCH:AUTO] */
-</script>
 </body>
 </html>
