@@ -276,3 +276,48 @@ img,svg,video,iframe,table{ max-width:100%; }
    nav 최대폭을 넓히고 줄바꿈 금지. 실측: 라이브 페이지 폭 1526에서 2줄→1줄(높이 65px) */
 @media (min-width:1101px){header nav{max-width:1500px}#navLinks{flex-wrap:nowrap;gap:.8rem}#navLinks>li>a,#navLinks>li>a *{white-space:nowrap}.logo{margin-right:.8rem}}
 @media (min-width:1101px) and (max-width:1400px){#navLinks{gap:.55rem}#navLinks>li>a{font-size:.83rem}.logo{font-size:1.1rem}}
+
+/* 2026-11-08 상단 메뉴 호버 반응 */
+@media (min-width:1101px) and (hover:hover){
+  #navLinks>li>a{position:relative;padding:.38rem .55rem;border-radius:999px;transition:background-color .18s ease,color .18s ease,transform .18s ease;}
+  #navLinks>li>a::after{content:"";position:absolute;left:.55rem;right:.55rem;bottom:.1rem;height:2px;border-radius:2px;background:#1f9d93;transform:scaleX(0);transform-origin:center;transition:transform .2s ease;}
+  #navLinks>li>a:hover,#navLinks>li>a:focus-visible,#navLinks>li.nav-drop:hover>a{background:#eef8f6;color:#1f9d93 !important;opacity:1;transform:translateY(-1px);}
+  #navLinks>li>a:hover::after,#navLinks>li>a:focus-visible::after,#navLinks>li.nav-drop:hover>a::after{transform:scaleX(1);}
+}
+@media (prefers-reduced-motion:reduce){#navLinks>li>a,#navLinks>li>a::after{transition:none;}}
+
+/* 2026-11-08 반응형 상호작용 보강 */
+html{scroll-behavior:smooth;}
+a:focus-visible,button:focus-visible{outline:3px solid #1f9d93;outline-offset:2px;border-radius:6px;}
+@media (hover:hover){
+  .video-card,.book__cover,.tile-icon{overflow:hidden;}
+  .video-card img,.book__cover img{transition:transform .35s ease;}
+  .video-card:hover img,.book:hover .book__cover img{transform:scale(1.045);}
+  .tile:hover .tile-icon{transform:translateY(-2px) scale(1.06);}
+  .tile-icon{transition:transform .2s ease;}
+  .pn-btn,.btn-ghost,.pil-btn-main,.pil-btn-sub,.pq-main,.pq-sub{transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease;}
+  .pn-btn:hover,.btn-ghost:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(31,157,147,.18);}
+  .hf-item,.tb-card{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
+  .hf-item:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(31,157,147,.10);}
+}
+.pn-btn:active,.btn-ghost:active,.pil-btn-main:active,.pil-btn-sub:active,.pq-main:active,.pq-sub:active{transform:translateY(0) scale(.98);}
+@media (min-width:1101px){
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{animation:pilDrop .18s ease-out;}
+}
+@keyframes pilDrop{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}.nav-sub{animation:none !important;}.video-card img,.book__cover img,.tile-icon,.pn-btn,.btn-ghost,.hf-item,.tb-card{transition:none !important;}}
+
+/* 2026-11-08 가독성 정돈 — 본문 문단·목록·소제목 숨통 */
+main p{word-break:keep-all;overflow-wrap:break-word;text-wrap:pretty;}
+main p + p{margin-top:.95rem;}
+main :is(p,ul,ol) + :is(ul,ol){margin-top:.7rem;}
+main :is(ul,ol) + p{margin-top:.95rem;}
+main :is(ul,ol):not([class]) > li + li{margin-top:.4rem;}
+main :is(ul,ol):not([class]) > li{line-height:1.8;}
+main :is(p,ul,ol,table) + :is(h3,h4){margin-top:1.7rem;}
+main :is(h2,h3,h4){text-wrap:balance;word-break:keep-all;}
+main :is(h2,h3,h4) + p{margin-top:.55rem;}
+@media (max-width:640px){
+  main p + p{margin-top:1.05rem;}
+  main p{line-height:1.85;}
+}
