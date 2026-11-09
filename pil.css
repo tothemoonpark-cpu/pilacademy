@@ -321,3 +321,17 @@ main :is(h2,h3,h4) + p{margin-top:.55rem;}
   main p + p{margin-top:1.05rem;}
   main p{line-height:1.85;}
 }
+
+/* 2026-11-09 메뉴 hover 패딩 때문에 1440폭에서 「공지사항」이 5px 잘림 → 패딩·간격 축소 실측 보정 */
+@media (min-width:1101px){#navLinks>li>a{padding:.38rem .36rem}#navLinks>li>a::after{left:.36rem;right:.36rem}#navLinks{gap:.5rem}}
+
+/* 2026-11-09 모바일 터치 영역·줄 간격 보정(390px 전 페이지 실측: 가로 넘침 0, 작은 터치 영역·좁은 줄 간격만 남아 있었음) */
+@media (max-width:768px){
+  p:not([class]){line-height:1.8}
+  .footer-sns a,.footer-copy a,.site-foot a,footer a{display:inline-block;min-height:40px;min-width:40px;line-height:40px;text-align:center}
+  .footer-copy a{padding:0 .4rem}
+  .pq-btns a{display:inline-block;min-height:40px;line-height:40px;padding-top:0;padding-bottom:0}
+  .dsc a,.res-link,.give-card a,td>a{display:inline-block;padding:.6rem .2rem;min-height:40px;line-height:1.4;box-sizing:border-box}
+  .menu-toggle{min-width:44px;min-height:44px}
+  td.sum{font-size:11px}
+}
