@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업·공공기관 커리어 강연 — 직무 문해력 | 박근필성장연구소</title>
+    <meta name="description" content="기업·공공기관 커리어 강연. 읽고 쓰고 말하는 힘을 직무역량으로 바꾸는 강연입니다. 대표 주제는 「직장인을 넘어, 직업인으로」와 「직무 문해력」. 부산시청 공무원 200여 명 특강, 부산시교육청영재교육진흥원 교원 직무연수 진행.">
+    <link rel="alternate" type="text/plain" href="llms.txt" title="박근필성장연구소 — AI 답변엔진용 요약본(llms.txt)">
+    <meta name="keywords" content="기업 강연, 기업 교육, 직무 문해력, 커리어 강연, 조직 문화 강연, 공공기관 강연, 직장인 강연, 전직 지원, 강연 섭외, 박근필">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/corporate.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="stats.js"></script>
+    <script src="lightbox.js" defer></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="기업·공공기관 커리어 강연 — 직무 문해력 | 박근필">
+    <meta property="og:description" content="AI가 못 가져가는 것은 경험에서 나온 판단, 맥락을 읽는 힘, 사람을 움직이는 말입니다. 그&nbsp;힘은 읽고·쓰고·말하는 훈련에서 만들어집니다.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="박근필성장연구소 — 수의사이자 작가·강연가·커리어 스토리텔러 박근필">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/corporate.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="기업·공공기관 커리어 강연 — 직무 문해력 | 박근필">
+    <meta name="twitter:description" content="AI가 못 가져가는 건 읽고 쓰고 말하는 힘입니다. 기업·공공기관 커리어 강연 안내.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+<style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --ink: #16181d; --sub: #5b6066; --mint: #2bb7ac; --mint-dark: #1f9d93;
+            --mint-soft: #eef8f6; --line: #ececec; --page: #ffffff; --panel: #f7f9f9;
+        }
+        body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.65; color: var(--ink); background: var(--page); -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+
+        header { background:#1f9d93; box-shadow:0 2px 12px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1160px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.5rem; }
+        .logo { display: flex; align-items: center; gap: 0.45rem; font-size:1.25rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; white-space: nowrap; }
+        .logo svg { width: 22px; height: 22px; color: #ffffff; }
+        .nav-links { display: flex; gap: 1.2rem; list-style: none; align-items: center; flex-wrap: wrap; }
+        .nav-links a { color: #ffffff; font-weight: 600; font-size:0.98rem; transition: opacity 0.2s; }
+        @media (max-width: 1180px) { .nav-links { gap: 0.8rem; } .nav-links a { font-size: 0.88rem; } }
+        @media (max-width: 1100px) { nav { padding: 0.85rem 1rem; } .nav-links { gap: 0.6rem; } .nav-links a { font-size: 0.84rem; } }
+        .nav-links a:hover { opacity: 0.82; }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+        .menu-toggle span { width: 24px; height: 2px; background: #ffffff; border-radius: 8px; }
+
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+        .lec-hero { background: linear-gradient(160deg, #eef8f6 0%, #ffffff 70%); padding: 3.4rem 0 3rem; border-bottom: 1px solid var(--line); }
+        .lec-hero .eyebrow { display:inline-block; font-size:0.8rem; font-weight: 600; color: var(--mint-dark); background: #fff; border:1px solid #d7eeeb; padding: 0.35rem 0.9rem; border-radius: 999px; margin-bottom: 1.1rem; }
+        .lec-hero h1 { font-size:2.2rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.34; margin-bottom: 1rem; }
+        .lec-hero h1 .accent { color: var(--mint); }
+        .lec-hero .lead { font-size:0.98rem; color: var(--sub); max-width: 740px; }
+        .stat-row { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.8rem; }
+        .stat-chip { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0.75rem 1.15rem; }
+        .stat-chip b { display:block; font-size:1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+        .stat-chip > span { font-size:0.8rem; color: var(--sub); }
+        .hero-cta { display: flex; gap: 0.7rem; margin-top: 1.8rem; flex-wrap: wrap; }
+        .btn-primary { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--mint); color: #fff; font-weight: 700; font-size:0.98rem; padding: 0.85rem 1.7rem; border-radius: 14px; transition: background 0.2s, transform 0.2s; }
+        .btn-primary:hover { background: var(--mint-dark); transform: translateY(-2px); }
+        .btn-ghost { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--ink); border: 1px solid var(--line); background:#fff; font-weight: 500; font-size:0.98rem; padding: 0.85rem 1.5rem; border-radius: 14px; transition: border-color 0.2s; }
+        .btn-ghost:hover { border-color: var(--mint); color: var(--mint-dark); }
+        .btn-primary svg, .btn-ghost svg { width: 17px; height: 17px; }
+
+        section.block { padding: 3.2rem 0; }
+        section.block.alt { background: var(--panel); }
+        /* ⛔ 맨 아래 섭외 CTA — 앞 섹션의 아래 패딩(3.2rem)과 겹쳐 6.4rem이 되면서
+           FAQ 박스와 「강연 문의」 사이가 지나치게 벌어져 보였다(2026-08-17 작가님 지적).
+           위쪽만 줄여 앞 내용과 붙인다. */
+        section.block.cta-tight { padding-top: 1.2rem; }
+        .pil-cta-band h2 { margin-bottom: 0.45rem; }
+        .sec-head { margin-bottom: 1.9rem; }
+        .sec-head h2 { font-size:1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+        .sec-head p { font-size:0.98rem; color: var(--sub); }
+
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+        .why-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.6rem 1.4rem; }
+        .why-card h3 { font-size:0.98rem; font-weight: 700; margin-bottom: 0.45rem; letter-spacing:-0.01em; }
+        .why-card p { font-size:0.88rem; color: var(--sub); line-height: 1.68; }
+
+        .tbl { width: 100%; border-collapse: collapse; background:#fff; border:1px solid var(--line); border-radius: 14px; overflow: hidden; }
+        .tbl th, .tbl td { padding: 0.95rem 1.15rem; text-align: left; font-size:0.98rem; border-bottom: 1px solid var(--line); line-height: 1.65; vertical-align: top; }
+        .tbl thead th { background: var(--panel); font-weight: 700; color: var(--ink); }
+        .tbl tbody td { color: var(--sub); }
+        .tbl tbody td b { color: var(--ink); }
+        .tbl tr:last-child td { border-bottom: none; }
+/* 「가르치기 전에 썼습니다」 표 — 좌측 제목 칸을 넓혀 두세 줄로 받는다(우측이 좁아져도 무방).
+   좁은 칸에 강제 줄바꿈을 넣으면 남는 빈 영역이 어색해 보이던 문제를 해결. */
+.tbl-wrote .c-name { width: 38%; }
+.tbl-wrote td:first-child { padding-right: 0.6rem; }
+.tbl-wrote td:first-child b { line-height: 1.5; }
+.mag-proof { display:grid; grid-template-columns: 1.5fr 1fr; gap:1rem; align-items:start; margin-top:1.4rem; }
+.mag-proof figure { margin:0; }
+.mag-proof img { width:100%; height:auto; border:1px solid var(--line); border-radius:14px; display:block; }
+.mag-proof figcaption { font-size:0.8rem; color:var(--sub); margin-top:0.5rem; line-height:1.5; }
+@media (max-width: 560px){ .mag-proof { grid-template-columns:1fr; } }
+
+        .note { margin-top: 0.9rem; font-size: 0.88rem; color: var(--sub); line-height: 1.7; }
+
+        .pol-list { display: grid; gap: 0.8rem; }
+        .pol-item { background:#fff; border:1px solid var(--line); border-left: 4px solid var(--mint); border-radius: 0 14px 14px 0; padding: 1.1rem 1.3rem; }
+        .pol-item > b:first-child { display:block; font-size:0.98rem; margin-bottom: 0.25rem; }
+        .pol-item span b { color: var(--ink); font-weight: 700; }
+        .pol-item span { font-size:0.88rem; color: var(--sub); line-height: 1.7; }
+        .pol-src { margin-top: 1.1rem; font-size:0.88rem; color: var(--sub); }
+        .pol-src a { color: var(--mint-dark); font-weight: 600; }
+
+        .faq-list { display:grid; gap:0.9rem; }
+        .faq-item { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.4rem 1.5rem; }
+        .faq-item h3 { font-size:0.98rem; font-weight:700; margin-bottom:0.5rem; letter-spacing:-0.01em; }
+        .faq-item h3::before { content:"Q. "; color:var(--mint-dark); font-weight:700; }
+        .faq-item p { font-size:0.98rem; color:var(--sub); line-height:1.75; }
+
+        footer { background: #14161a; color: #fff; text-align: center; padding: 2.4rem 1.5rem; margin-top: 3rem; }
+        .footer-sns { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .footer-sns a { color: rgba(255,255,255,0.85); font-size:0.98rem; transition: color 0.2s; }
+        .footer-sns a:hover { color: var(--mint); }
+        .footer-copy { font-size:0.88rem; color: rgba(255,255,255,0.5); line-height: 1.8; }
+
+        @media (max-width: 900px) { .why-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 560px) {
+            .lec-hero { padding: 2.4rem 0 2.2rem; }
+            .lec-hero h1 { font-size: 1.6rem; }
+            .lec-hero .lead { font-size:0.98rem; }
+            .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+            .stat-chip { padding: 0.65rem 0.8rem; }
+            .stat-chip b { font-size:1.25rem; }
+            .stat-chip > span { font-size: 0.8rem; }
+            .hero-cta a { flex: 1 1 100%; justify-content: center; }
+            section.block { padding: 2.4rem 0; }
+            .sec-head h2 { font-size:1.25rem; }
+            .tbl th, .tbl td { padding: 0.75rem 0.85rem; font-size:0.88rem; }
+  .tbl-wrote .c-name { width: 42%; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .menu-toggle { display: flex; }
+            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; right: 1.5rem; background: #2bb7ac; border-radius: 14px; padding: 1rem 1.3rem; gap: 0.9rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+            .lec-hero h1 { font-size: 1.6rem; }
+        }
+    
+.tbl-topic .c-topic { width: 30%; }
+.tbl-topic td:first-child b { display:block; line-height:1.5; }
+.tbl-topic .dur { display:block; font-size:0.8rem; color:var(--sub); font-weight:500; margin-top:0.35rem; }
+.tbl .c-k { width: 24%; }
+.tbl .src { display:block; font-size:0.8rem; color:var(--sub); margin-top:0.5rem; line-height:1.6; }
+@media (max-width: 640px){ .tbl-topic .c-topic { width: 36%; } .tbl .c-k { width: 30%; } }
+
+.press-quote { margin:1.4rem 0 0; padding:1.1rem 1.3rem; background:#f6faf9; border-left:4px solid var(--mint); border-radius:0 14px 14px 0; font-size:0.98rem; line-height:1.75; color:var(--ink); font-weight:600; }
+.press-quote cite { display:block; font-style:normal; font-weight:500; font-size:0.88rem; color:var(--sub); margin-top:0.7rem; }
+.press-quote cite a { color:var(--mint-dark); font-weight:600; }
+
+        .host-card { margin: 0; background: #fff; border: 1px solid #d7eeeb; border-top: 4px solid var(--mint); border-radius: 14px; padding: 1.4rem 1.4rem 1.1rem; display: flex; flex-direction: column; }
+        .host-card p { font-size: 0.98rem; color: var(--ink); line-height: 1.75; margin: 0 0 0.9rem; flex-grow: 1; }
+        .host-card cite { font-style: normal; font-size:0.8rem; font-weight: 700; color: var(--mint-dark); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
+        .rv-grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:1.1rem; }
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
+       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
+       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
+       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:0.8rem;font-weight:800;color:#1f9d93;
+    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
+    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
+    /* [/NAVSEP:AUTO] */
+        
+      /* [2026-08-26] 강연 사진 그리드 — 온담 벤치마킹.
+         ⛔ 이 페이지들은 사진이 0장이었다(실측). 텍스트를 줄이지 않고 숨통을 틔운다. */
+      .ph-band{background:var(--panel,#f7f8f9);padding:2.6rem 1.5rem;}
+      .ph-inner{max-width:1032px;margin:0 auto;}
+      .ph-head{text-align:center;margin-bottom:1.4rem;}
+      .ph-head b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;color:var(--ink,#16181d);}
+      .ph-head span{display:block;font-size:0.88rem;color:var(--sub,#5b6066);margin-top:0.35rem;}
+      .ph-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.9rem;}
+      .ph-cell{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,0.07);}
+      .ph-cell img{width:100%;height:186px;object-fit:cover;display:block;}
+      .ph-cell figcaption{font-size:0.8rem;color:var(--sub,#5b6066);padding:0.6rem 0.75rem;line-height:1.5;}
+      @media(max-width:820px){.ph-grid{grid-template-columns:repeat(2,1fr);}.ph-cell img{height:150px;}}
+      @media(max-width:520px){.ph-grid{grid-template-columns:1fr;}.ph-cell img{height:200px;}}
+
+        /* [2026-08-26] 고정 퀵바 — 온담 벤치마킹 OD-8
+           ⭐ 온담은 전 페이지에 「문의하기·강사영상·칼럼보기」 3버튼을 고정 노출한다.
+              하단 CTA 밴드까지 못 내려간 방문자를 잡는 장치다.
+           ⛔ 3개만 둔다(전역지침 「한 화면에 강조 3개」). 모바일에서는 하단 가로 바로 바뀐다. */
+        .pil-quick{position:fixed;right:14px;bottom:22px;z-index:900;display:flex;flex-direction:column;gap:8px;}
+        .pil-quick a{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line,#ececec);
+          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.8rem;font-weight:600;color:var(--ink,#16181d);
+          text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.11);white-space:nowrap;transition:transform .15s;}
+        .pil-quick a:hover{transform:translateY(-2px);}
+        .pil-quick a.hi{background:var(--mint,#2bb7ac);color:#fff;border-color:var(--mint,#2bb7ac);}
+        .pil-quick svg{width:15px;height:15px;flex:0 0 auto;}
+        @media(max-width:760px){
+          .pil-quick{right:0;left:0;bottom:0;flex-direction:row;gap:0;border-top:1px solid var(--line,#ececec);
+            background:#fff;padding:0.45rem 0.5rem calc(0.45rem + env(safe-area-inset-bottom));}
+          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:14px;font-size:0.8rem;padding:0.55rem 0.3rem;}
+          .pil-quick a.hi{border-radius:14px;}
+        }
+                .hero-video { margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); background:#000; line-height:0; }
+        .hero-video video { width: 100%; height: auto; display: block; }
+        .hero-vcap { margin-top: 0.7rem; font-size:0.88rem; color: var(--sub); text-align: center; }
+
+/* [SEARCH:AUTO] 사이트 내 검색 */
+.site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
+.site-search-btn:hover{background:rgba(255,255,255,.3)}
+.site-search-layer{position:fixed;inset:0;background:rgba(22,24,29,.5);backdrop-filter:blur(3px);
+  z-index:3000;display:none;padding:8vh 1rem 2rem}
+.site-search-layer.on{display:block}
+.site-search-box{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.site-search-bar{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid #ececec;color:#5b6066}
+.site-search-bar input{flex:1;border:0;outline:0;font-size:1.02rem;font-family:inherit;color:#16181d;background:transparent}
+.site-search-close{background:none;border:0;font-size:1.7rem;line-height:1;color:#9aa0a6;cursor:pointer;padding:0 .2rem}
+.site-search-hint{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;padding:.85rem 1.2rem;border-bottom:1px solid #f2f2f2}
+.site-search-hint span{font-size:0.79rem;color:#9aa0a6;margin-right:.2rem}
+.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:0.85rem;font-weight:600;
+  padding:.32rem .7rem;border-radius:999px;cursor:pointer;font-family:inherit}
+.site-search-hint button:hover{background:#2bb7ac;color:#fff}
+.site-search-results{max-height:56vh;overflow-y:auto;padding:.4rem 0}
+.ssr-item{display:block;padding:.9rem 1.2rem;border-bottom:1px solid #f4f4f4;color:inherit}
+.ssr-item:hover{background:#f7f9f9}
+.ssr-item:last-child{border-bottom:0}
+.ssr-t{font-weight:700;font-size:0.94rem;color:#16181d;margin-bottom:.2rem}
+.ssr-k{font-size:0.72rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
+.ssr-s{font-size:0.85rem;color:#5b6066;line-height:1.55}
+.ssr-s mark{background:#fff1a8;color:inherit;padding:0 .1em;border-radius:2px}
+.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
+@media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
+/* [/SEARCH:AUTO] */
+
+</style>
+<style id="ko-wordbreak">
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:14px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  header .nav-links .nav-sub a,
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.98rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  header .nav-links .nav-sub a:hover,
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    header .nav-links .nav-sub a,
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.88rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+</style>
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "@id": "https://tothemoonpark-cpu.github.io/pilacademy/corporate.html#service",
+ "name": "기업·공공기관 커리어 강연 — 직무 문해력",
+ "serviceType": "기업 교육·조직 역량 강연",
+ "description": "읽고 쓰고 말하는 힘을 직무역량으로 바꾸는 기업·공공기관 강연이다. AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는 힘, 사람을 움직이는 말, 최종 검증이며 그&nbsp;힘은 훈련에서 만들어진다는 것이 논지다. 대표 주제는 다섯 가지다. ① 직장인을 넘어, 직업인으로 — 조직 안에서 대체되지 않는 사람이 어떻게 만들어지는가 ② 직무 문해력 — 보고서가 안 읽히고 회의가 겉도는 이유를 읽기·쓰기 훈련으로 다룬다 ③ 가닿는 말 — 보고·회의·피드백이 통하게 하는 법 ④ 평생 현역으로 — 중장년 재직자와 전직 지원 대상 ⑤ 반려동물을 떠나보낸 동료에게 — 장례 휴가 그다음, 관리자와 동료를 위한 교육. 강사 박근필은 임상 수의사로 20년 가까이 일하며 마흔에 번아웃으로 약 10년간 운영하던 동물병원을 정리했고, 그 뒤 읽고 쓰기 시작해 3년에 다섯 권의 책을 냈다. 부산시청 공무원 200여 명 대상 저자 특강, 부산시교육청영재교육진흥원 교원 직무연수를 진행했다.",
+ "provider": {
+  "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+ },
+ "author": {
+  "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+ },
+ "areaServed": {
+  "@type": "Country",
+  "name": "대한민국"
+ },
+ "audience": {
+  "@type": "BusinessAudience",
+  "audienceType": "기업 재직자, 공공기관 종사자, 중장년 재직자, 전직 지원 대상, 교육 담당자"
+ },
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "기업·공공기관 강연 주제",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "직장인을 넘어, 직업인으로 — 대체 불가능한 인재 되기",
+     "description": "직장은 자원을 주지만 직업은 자원 없이도 1인분을 하게 한다. 조직 안에서 자기 몫을 키우는 사람이 어떻게 만들어지는지를 강사 본인의 실패와 회복으로 다룬다. 60분·90분."
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "직무 문해력 — 읽고 이해하고 표현하는 힘이 곧 직무역량이다",
+     "description": "보고서가 안 읽히는 이유, 회의가 겉도는 이유는 대개 문해력이다. 읽기와 쓰기를 업무 언어로 옮겨 조직의 소통 비용을 줄이는 훈련을 다룬다. 60분·90분·2회 과정."
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "가닿는 말 — 보고·회의·피드백이 통하게 하는 법",
+     "description": "말의 정체는 화자가 한 것이 아니라 청자가 받은 것이다. 보내기 전 통과시킬 세 개의 문(사실·필요·따뜻함), 1on1에서 충고·조언·평가·판단을 멈추는 법, 화가 난 상대 앞에서 설명이 가닿게 하는 법을 다룬다. 수의사로 스무 해 가까이 일하며, 반려동물이 아픈 자리에서 감정이 높은 보호자에게 설명을 전한 현장 경험이 근거다. 60분·90분·2회 과정."
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "평생 현역으로 — 마흔 이후의 커리어를 다시 그리는 법",
+     "description": "중장년 재직자와 전직 지원 대상. 마흔에 무너지고 다시 세운 3년을 그대로 쓴다. 위로가 아니라 실제로 한 일을 말한다. 60분·90분."
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "반려동물을 떠나보낸 동료에게 — 장례 휴가 그다음, 관리자와 동료를 위한 교육",
+     "description": "반려동물 장례 휴가를 두는 회사가 생겼지만, 휴가를 마치고 돌아온 동료에게 무슨 말을 건네야 하는지는 누구도 알려 주지 않는다. 몰라서 상처가 되는 말, 대신 건넬 수 있는 말, 도움이 필요한 때를 알아보는 기준을 다룬다. 수의사로 스무 해 가까이 반려동물의 마지막을 보호자와 함께 지킨 현장 경험과 김해율하도서관 「펫로스 치유 글쓰기」 4주 과정이 근거다. 60분."
+    }
+   }
+  ]
+ },
+ "review": [
+  {
+   "@type": "Review",
+   "reviewBody": "개인의 경쟁력이 모이면 회사와 조직의 경쟁력이 된다. 읽고 쓰는 힘은 개인의 무기이면서 동시에 조직의 무기가 될 수 있다.",
+   "author": {
+    "@type": "Person",
+    "name": "— 강사 전문지 한국강사신문 「강연 90초」(2026.8.6) · 90초 영상 보기"
+   }
+  },
+  {
+   "@type": "Review",
+   "reviewBody": "저도 섭외하게 되어 아주 감사합니다. 다음에도 모셔보도록 하겠습니다!",
+   "author": {
+    "@type": "Person",
+    "name": "부산시교육청영재교육진흥원 · 담당 연구사 (교원 직무연수)"
+   }
+  },
+  {
+   "@type": "Review",
+   "reviewBody": "오늘 수고 많으셨습니다. 뜻 깊은 강연 덕분에 오늘 글로벌멘토링프로그램이 더욱 빛이 날 수 있었습니다.",
+   "author": {
+    "@type": "Person",
+    "name": "부산 중구진로교육지원센터 · 담당자"
+   }
+  },
+  {
+   "@type": "Review",
+   "reviewBody": "금번 2주 차 모임은 제가 회사 생활을 하고 있어서인지 특강과 책 내용, 박근필 작가님, 멤버들의 의견이 마음에 많이 와닿았습니다.",
+   "author": {
+    "@type": "Person",
+    "name": "필북 참가자 (직장인) · 온라인 독서모임 2주차"
+   }
+  }
+ ]
+}
+</script>
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "@id": "https://tothemoonpark-cpu.github.io/pilacademy/corporate.html#faq",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "수의사인데 왜 기업 강연을 하시나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "직장 안에서 대체되지 않는 사람이 되는 법을 겪어서 알기 때문입니다. 마흔에 번아웃으로 병원을 정리하고 다시 세운 3년이 있습니다. 이론으로 배운 것이 아니라 직접 건너온 이야기를 합니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "「직무 문해력」은 일반 문해력 강의와 무엇이 다른가요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "다루는 자리가 다릅니다. 책을 더 읽자는 이야기가 아니라 보고서가 안 읽히는 이유, 회의가 겉도는 이유를 다룹니다. 읽기와 쓰기를 업무 언어로 옮기는 것이 목표입니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "조직 대상 강연 실적이 있나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "부산시청 공무원 200여 명 대상 2시간 특강, 부산시교육청영재교육진흥원 교원 직무연수를 진행했습니다. KB국민은행 「KB Dream Wave 2030」 인재양성 프로그램((사)사피엔스4.0 운영)에서는 선발 대학생 65명 대상 비대면 단독 특강을 맡았습니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "시간과 형태는 어떻게 되나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "60분과 90분이 가장 많고 2회 이상 연속 과정도 진행합니다. 대면과 비대면 모두 가능합니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "강사료는 어떻게 되나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "기관 기준과 강연 형태(단발·연속 과정)에 맞춰 협의합니다. 대상·인원·시간을 알려 주시면 그에 맞춰 안내해 드립니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "지방에서도 부를 수 있나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "가능합니다. 부산에 거주하며 서울·인천·충북·경남 등 전국 출강 이력이 있습니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "강연 내용을 미리 확인할 방법이 있나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "90초 요약 영상은 강사 전문지 한국강사신문 「강연 90초」 코너에 있습니다.길게 말하는 모습은 다꿈스쿨 TV 인터뷰 두 편에서 보실 수 있습니다 — 「40대 직장인의 80%가 결국 후회하는 것」(35분), 「50살 정년, N잡이 선택 아닌 필수인 이유」(27분). 둘 다 직장인·커리어 주제를 길게 다뤘습니다.한국강사신문 「박근필의 직업인문학」에 칼럼 22편을 연재해 왔고, 강연 주제마다 근거가 된 연재 글을 함께 밝혀 두었습니다."
+   }
+  }
+ ]
+}
+    </script>
+    <link rel="stylesheet" href="pil.css">
+<!-- BREADCRUMB:AUTO:START -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "박근필성장연구소",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "강연 안내",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/lecture.html"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "기업·공공기관 강연",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/corporate.html"
+  }
+ ]
+}
+</script>
+<!-- BREADCRUMB:AUTO:END -->
+</head>
+<body>
+<!-- [SKIP:AUTO] --><style>.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#16181d;color:#fff;padding:10px 16px;border-radius:0 0 8px 0;font-weight:700}.pil-skip:focus{left:0}</style><a class="pil-skip" href="#main-content">본문 바로가기</a>
+<header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li class="nav-sep">수의사로서</li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petlus-shelter.html">펫러스(PETLUS) 쉼터</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li class="nav-sep">작가 · 강연가로서</li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="career-reading.html">진로독서</a></li>
+                        <li><a href="corporate.html" aria-current="page">기업·공공기관 강연</a></li>
+                        <li><a href="senior.html">중장년·시니어 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
+                <li><a href="author.html">대표소개</a></li>
+                <li><a href="vet-notes.html">반려동물 노트</a></li>
+                <li><a href="petlus-shelter.html">펫러스 쉼터</a></li>
+                <li><a href="petlus-board.html">쉼터 게시판</a></li>
+                <li><a href="https://petlusnews.com/" target="_blank" rel="noopener">펫러스뉴스</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="columns.html">칼럼</a></li>
+                <li><a href="videos.html">대표 영상</a></li>
+                <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
+                <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <li><a href="dokjeoting.html">독저팅</a></li> -->
+                <li><a href="writing-request.html">집필·감수 의뢰</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="podcast.html">팟캐스트</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="resources.html">자료실</a></li>
+                <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
+                <!-- [필라이프 코칭 비활성화 2026-08-14 · 되살릴 때 주석 해제] <li><a href="phillife.html">필라이프 코칭</a></li> -->
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
+<button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+</button>
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
+                                                        </nav>
+    </header>
+  <main role="main" id="main-content">
+
+    <section class="lec-hero">
+      <div class="wrap">
+        <h1><span class="eyebrow">기업·공공기관 직무 문해력 강연 · 수의사 작가 박근필</span><br>AI가 못 가져가는 건 <span class="accent">읽고 쓰고 말하는 힘</span>입니다.</h1>
+        <p class="lead">
+          AI는 정리하고 요약하고 초안을 씁니다. 그러나 경험에서 나온 판단, 맥락을 읽는 힘,
+          사람을 움직이는 말, 최종 검증은 가져가지 못합니다.
+          그&nbsp;힘은 타고나는 것이 아니라 <b>훈련에서 만들어집니다.</b> 저는 그 훈련을 조직 안에 심는 강연을 합니다.
+        </p>
+        <blockquote class="press-quote">
+          “개인의 경쟁력이 모이면 회사와 조직의 경쟁력이 된다.<br>
+          읽고 쓰는 힘은 개인의 무기이면서 동시에 조직의 무기가 될 수 있다.”
+          <cite>— 강사 전문지 <b>한국강사신문</b> 「강연 90초」(2026.8.6) · <a href="https://youtu.be/iEW2093MslA" target="_blank" rel="noopener">90초 영상 보기</a></cite>
+        </blockquote>
+        <div class="stat-row">
+          <div class="stat-chip"><b>200여 명</b><span>부산시청 공무원 특강</span></div>
+          <div class="stat-chip"><b>교원 직무연수</b><span>부산시교육청영재교육진흥원 · 3차시 · 부산 교원 80명</span></div>
+          <div class="stat-chip"><b>저서 5권</b><span>3년에 다섯 권</span></div>
+          <div class="stat-chip"><b>20편</b><span>한국강사신문 연재</span></div>
+        </div>
+        <div class="hero-cta">
+          <a class="btn-primary" href="contact.html">강연 문의하기</a>
+          <a class="btn-ghost" href="https://youtu.be/iEW2093MslA" target="_blank" rel="noopener">90초 영상으로 먼저 보기</a>
+        <div class="hero-video">
+          <video autoplay muted playsinline controls preload="metadata" poster="page-intro-corporate-260926.jpg">
+            <source src="page-intro-corporate-260926.mp4" type="video/mp4">
+            <a href="page-intro-corporate-260926.mp4">영상 내려받기</a>
+          </video>
+        </div>
+        <p class="hero-vcap">27초 소개 영상 — 소리를 켜면 배경음악과 함께 보실 수 있습니다</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">WHY</p>
+          <h2>왜 이 사람인가</h2>
+          <p>대체되지 않는 사람이 되는 법을 겪어서 아는 사람입니다.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <h3>무너져 본 사람</h3>
+            <p>임상 수의사로 20년 가까이 일했습니다. 마흔에 번아웃으로 약 10년간 운영하던 동물병원을 정리했습니다.</p>
+            <p>그때 읽고 쓰기 시작해 <b>3년에 다섯 권</b>을 냈습니다. 위로가 아니라 실제로 한 일을 말합니다.</p>
+          </div>
+          <div class="why-card">
+            <h3>지금도 조직 안에 있는 사람</h3>
+            <p>강연만 하는 사람이 아닙니다. <b>한 우물을 깊게 파되 여러 우물도 같이</b> — 지금도 동물병원에서 일하며 강단에 함께 섭니다.</p>
+            <p>조직에서 일하는 사람의 고단함을 어제 겪은 일로 말합니다. 사례가 오래되지 않습니다.</p>
+          </div>
+          <div class="why-card">
+            <h3>말하기가 본업인 사람</h3>
+            <p>전국 초·중·고 <b><span data-stat="schools">38</span>개교</b>와 도서관·공공기관에서 강연했습니다.</p>
+            <p>전교생 414명 대강당부터 도서관 소그룹 강좌까지, 규모에 맞춰 구성을 달리해 왔습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">TOPICS</p>
+          <h2>강연 주제</h2>
+          <p>읽기·쓰기·말하기 — <b>다섯 주제 모두 연재에서 나왔습니다.</b></p>
+        </div>
+        <table class="tbl tbl-topic">
+          <colgroup><col class="c-topic"><col></colgroup>
+          <tbody>
+            <tr>
+              <td><b>직장인을 넘어,<br>직업인으로</b> <span class="dur">60분 / 90분</span><span class="dur" style="color:var(--mint-dark);">데모 영상 제목 「회사가 끝까지 붙잡는 사람」</span></td>
+              <td>직장은 자원을 줍니다. 직업은 자원 없이도 1인분을 하게 합니다. 조직 안에서 자기 몫을 키우는 사람이 어떻게 만들어지는지를 제 실패와 회복으로 이야기합니다.
+                <span class="src">연재 근거 — 「직장인을 멈추고, 직업인이 되어라」 · 「딸깍 시대, 대체되지 않는 사람의 조건」</span></td>
+            </tr>
+            <tr>
+              <td><b>직무 문해력</b> <span class="dur">60분 / 90분 / 2회 과정</span></td>
+              <td>보고서가 안 읽히는 이유, 회의가 겉도는 이유는 대개 문해력입니다. 읽기와 쓰기를 업무 언어로 옮겨 조직의 소통 비용을 줄이는 훈련을 다룹니다.
+                <span class="src">연재 근거 — 「문해력이 무너지면 경쟁력도 무너진다」 · 「글쓰기가 곧 경쟁력이다」 · 「박수는 나에게 남고, 보고서는 그 사람에게 남는다」</span></td>
+            </tr>
+            <tr>
+              <td><b>가닿는 말</b> <span class="dur">60분 / 90분 / 2회 과정</span><span class="dur" style="color:var(--mint-dark);">보고·회의·피드백이 통하게 하는 법</span></td>
+              <td>말의 정체는 내가 한 것이 아니라 <b>상대가 받은 것</b>입니다.<br>보내기 전 통과시킬 세 개의 문(사실·필요·따뜻함), 1on1에서 충고·조언·평가·판단을 멈추는 법, 그리고 <b>화가 난 상대 앞에서 설명이 가닿게 하는 법</b>을 다룹니다.<br><br>마지막은 협업입니다. 내가 발표를 잘해도 그 자리가 끝나면 <b>담당자는 그것을 문서로 정리해 윗선에 올려야 합니다.</b> 상대가 그 보고를 편하게 쓸 수 있도록 미리 챙기는 것 — 그게 실제로 다시 찾게 만드는 힘입니다.
+                <span class="src">현장 근거 — 수의사로 스무 해 가까이 일하며, 반려동물이 아픈 자리에서 화가 난 보호자에게 설명이 닿게 하는 일을 매일 했습니다<br>연재 근거 — 「말은 화자가 아니라 청자의 것이다」 · 「다 같은 공감이 아니다」 · 「말이 통하지 않는 보호자를 만났을 때」</span></td>
+            </tr>
+            <tr>
+              <td><b>평생 현역으로</b> <span class="dur">60분 / 90분</span></td>
+              <td><b>퇴직을 앞둔 직원, 마흔을 넘긴 재직자</b>를 위한 교육입니다. 회사를 떠난 뒤가 아니라 <b>다니는 동안 무엇을 쌓아 두어야 하는지</b>를 다룹니다. 마흔에 무너지고 다시 세운 3년을 그대로 씁니다.<br><br>평생학습관·50플러스 등 기관 발주는 <a href="senior.html">중장년·시니어 강연 안내</a>에 따로 정리했습니다.
+                <span class="src">연재 근거 — 「N잡러는 선택이 아니라 생존이다」 · 「당신의 전문성은 끝난 게 아니라, 형태가 바뀌는 중이다」</span></td>
+            </tr>
+            <tr>
+              <td><b>반려동물을 떠나보낸<br>동료에게</b> <span class="dur">60분</span><span class="dur" style="color:var(--mint-dark);">장례 휴가 그다음 — 관리자와 동료를 위한 교육</span></td>
+              <td>반려동물 장례 휴가를 두는 회사가 생겼습니다. 그런데 휴가를 마치고 돌아온 동료에게 무슨 말을 건네야 하는지는 누구도 알려 주지 않습니다. <b>몰라서 상처가 되는 말, 대신 건넬 수 있는 말, 도움이 필요한 때를 알아보는 기준</b>을 다룹니다.
+                <span class="src">현장 근거 — 수의사로 스무 해 가까이 반려동물의 마지막을 보호자와 함께 지켰습니다 · 김해율하도서관 「펫로스 치유 글쓰기」 4주 과정 전 회차 완주<br>연재 근거 — 세계일보 「펫 상실학 개론」 · 뉴스프리존 「애니멀케어」</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note">이 밖에 <b>책쓰기·출간</b>(『당신의 원고는 왜 계약되지 않는가』 저자), <b>퍼스널 브랜딩</b> 과정도 진행합니다.<br>
+        ※ 대상·인원·희망 시간만 알려 주시면 그에 맞춘 구성안을 보내 드립니다.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">TRACK RECORD</p>
+          <h2>이미 성인 앞에 서 왔습니다</h2>
+          <p>청소년 강연만 하는 사람이 아닙니다.</p>
+        </div>
+        <table class="tbl">
+          <colgroup><col class="c-k"><col></colgroup>
+          <tbody>
+            <tr><td><b>공공기관</b></td><td>부산시청 저자 초청 북세미나(북코스모스 주최) — 공무원 <b>200여 명</b> 대상 2시간 특강</td></tr>
+            <tr><td><b>교원 직무연수</b></td><td>부산시교육청영재교육진흥원 「2026년 초중등 영재교육 담당교원 기초과정 직무연수」 — 「AI 시대, 우리 아이에게 정말 필요한 것」 3차시 원격연수. 영재학급 담당 교원이 반드시 이수해야 하는 필수 연수로, 부산 교원 80명이 수강했습니다(강의 자료는 연수 교재로 제작)</td></tr>
+            <tr><td><b>대기업 사회공헌</b></td><td>KB국민은행 「KB Dream Wave 2030」 인재양성 프로그램((사)사피엔스4.0 운영) — 선발 대학생 65명 대상 비대면 단독 특강(90분)</td></tr>
+            <tr><td><b>성인 연속 과정</b></td><td><b>큐리어스</b> 온라인 5회 연속 강의 — 청중은 중장년을 포함한 일반 성인. 5회차 주제가 「평생 현역으로 사세요」였습니다 · <b>김해율하도서관</b> 성인 4주 과정 전 회차 완주</td></tr>
+            <tr><td><b>직장인 커뮤니티</b></td><td><b>트레바리 부산 클럽</b> 「나답게 일하기, 나답게 성장하기」 파트너(리더) — <b>4개월간 매달</b> 직장인들과 커리어를 주제로 진행했습니다(1기 종료)</td></tr>
+            <tr><td><b>기업·온라인</b></td><td>하오스터디 퍼스널 브랜딩 특강 · 클래스101 온라인 강의 「책쓰기와 출판 계약, 성공을 좌우하는 기획력의 모든 것」</td></tr>
+            <tr><td><b>재섭외</b></td><td><b>혁신어울림 작은도서관</b> — 첫 회차를 마친 이틀 뒤 도서관이 하반기 6회를 먼저 제안했습니다(초등 대상, 2026.10~11 진행 예정)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">VIDEO</p>
+          <h2>90초로 먼저 보십시오</h2>
+          <p>강사 전문지 <b>한국강사신문</b>이 「강연 90초」 코너에 실은 기업 강연 영상입니다. 실제 강연 톤을 그대로 보실 수 있습니다.</p>
+        </div>
+        <div style="max-width:760px;margin:0 auto;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff">
+          <div style="position:relative;padding-bottom:56.25%;height:0">
+            <iframe src="https://www.youtube.com/embed/iEW2093MslA"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
+                    title="[강연 90초] AI 시대 대체되지 않는 경쟁력은 읽고 쓰는 힘에서 나온다" loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+          <div style="padding:0.9rem 1.1rem;font-size:0.9rem;font-weight:600;line-height:1.55">[강연 90초] AI 시대 대체되지 않는 경쟁력은 읽고 쓰는 힘에서 나온다 &middot; 한국강사신문 브랜딩연구소 (2026.8)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">EVIDENCE</p>
+          <h2>밖에서 먼저 확인했습니다</h2>
+          <p>제가 하는 말이 아니라 다른 곳이 남긴 기록입니다.</p>
+        </div>
+        <table class="tbl">
+          <colgroup><col class="c-k"><col></colgroup>
+          <tbody>
+            <tr><td><b>연사 등록</b></td><td>매일경제교육센터(매경미디어그룹)의 기업·기관 강연 연사 풀 <b>MK Speaker</b> 연사 등록(2026.9) — 등록 주제: 직장인을 넘어, 직업인으로 · 직무 문해력 · 평생 현역으로 · 펫로스 치유 글쓰기 — <a href="http://www.mkspeaker.co.kr/speaker_view.php?no=424" target="_blank" rel="noopener">연사 페이지 보기</a></td></tr>
+            <tr><td><b>강사 업계</b></td><td>한국강사신문 브랜딩연구소 「오늘의 인물」 선정(2026.8) · 「강연 90초」 소개 — <a href="https://youtu.be/iEW2093MslA" target="_blank" rel="noopener">영상 보기</a></td></tr>
+            <tr><td><b>국가 공인</b></td><td><b>예술활동증명</b>(2025.11, 한국예술인복지재단) — 글 쓰는 사람으로서의 활동을 국가 재단이 확인한 것입니다</td></tr>
+            <tr><td><b>방송</b></td><td>한국시니어TV 〈생각을 바꾸는 시간, S클래스〉 2부작 「직장인이 아니라 직업인으로」(1부 8.31 방영 · 2부 9.7 방영) · ONN TV 〈신비한 동물 사전〉 고정 출연(1회 8.30 방영 · 2회 9.27 방영 · 3회 10.11 방영 · <a href="https://www.youtube.com/watch?v=1vVLYerjO34" target="_blank" rel="noopener">3회 영상 보기</a>) · 기업기관 교육플랫폼 온담커뮤니케이션 <b>온토리TV</b> 「반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디」(2026.9.15 공개 · <a href="https://www.youtube.com/watch?v=7NgkYHHt47c" target="_blank" rel="noopener">영상 보기</a>)</td></tr>
+            <tr><td><b>언론</b></td><td>경향신문 인물 인터뷰 · 다섯 번째 책 출간 보도 <b>31개 매체</b></td></tr>
+            <tr><td><b>저서</b></td><td>5권 — 『마흔 더 늦기 전에 생각의 틀을 리셋하라』는 교보문고·예스24 자기계발 온라인 일간 1위. <b>여섯 번째 책은 출판사가 먼저 제안</b>해 계약했습니다</td></tr>
+            <tr><td><b>대기업 협업</b></td><td>두산 계열 온라인 백과사전 <b>두피디아</b>와 계약 체결 후 <b>동물 백과사전 항목 집필</b>(2026.1~) — 현장의 지식을 검증된 항목으로 정리하는 작업입니다. 2026년 8월 20일 개편 오픈한 <b>네이버 지식백과 「N지식백과 x 두피디아」</b>로 서비스되고 있습니다.</td></tr>
+            <tr><td><b>연재</b></td><td>26곳 매체 연재 중. 그중 <b>직장인·커리어 매체 고정 코너만 다섯 곳</b>입니다 — 한국강사신문 「박근필의 직업인문학」 · 아웃소싱타임즈 「박근필 수의사의 직업·진로 인사이트」 14편 · 뉴스클레임 「박근필의 인생 수업」 25편 · 뉴스후플러스 「박근필의 커리어 인사이트」(연재 종료) · 커리어온뉴스 「박근필의 커리어 스토리」(연재 종료) <a href="columns.html">칼럼 아카이브 →</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">REVIEWS</p>
+          <h2>부른 곳에서 보내온 말</h2>
+          <p>강연이 끝난 뒤 담당자께서 직접 보내 주신 메시지입니다.</p>
+        </div>
+        <div class="rv-grid2">
+          <blockquote class="host-card"><p>“저도 섭외하게 되어 아주 감사합니다. <b>다음에도 모셔보도록 하겠습니다!</b>”</p><cite>부산시교육청영재교육진흥원 · 담당 연구사 (교원 직무연수)</cite></blockquote>
+          <blockquote class="host-card"><p>“오늘 수고 많으셨습니다. <b>뜻 깊은 강연 덕분에</b> 오늘 글로벌멘토링프로그램이 더욱 빛이 날 수 있었습니다.”</p><cite>부산 중구진로교육지원센터 · 담당자 (남성여자고등학교 글로벌 멘토링 콘서트 · 1·2학년 210여 명)</cite></blockquote>
+          <blockquote class="host-card"><p>“금번 2주 차 모임은 제가 <b>회사 생활을 하고 있어서인지</b> 특강과 책 내용, 박근필 작가님, 멤버들의 의견이 마음에 많이 와닿았습니다.”</p><cite>필북 참가자 (직장인) · 온라인 독서모임 2주차</cite></blockquote>
+        </div>
+        <p style="font-size:0.8rem;color:var(--sub);margin-top:1rem;">※ 담당자께서 보내 주신 메시지를 옮긴 것이며 개인 실명은 밝히지 않았습니다.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">PROCESS</p>
+          <h2>이렇게 진행됩니다</h2>
+          <p>품의서에 그대로 옮겨 적으실 수 있도록 적었습니다.</p>
+        </div>
+        <table class="tbl">
+          <colgroup><col class="c-k"><col></colgroup>
+          <tbody>
+            <tr><td><b>시간</b></td><td>60분 · 90분 · 120분 / 「직무 문해력」은 <b>2회 과정</b>으로도 진행합니다</td></tr>
+            <tr><td><b>규모</b></td><td>소규모 팀 단위부터 <b>200여 명 대강당</b>까지 진행 경험이 있습니다(부산시청 공무원 200여 명 2시간). 대상·인원에 맞춰 사례와 실습 비중을 조정합니다</td></tr>
+            <tr><td><b>형태</b></td><td>대면 · 비대면 모두 가능합니다. 비대면 단독 특강 경험이 있고(KB국민은행 90분), 온라인 연속 강의도 진행했습니다(큐리어스 5회)</td></tr>
+            <tr><td><b>지역</b></td><td>전국. 부산 기반이며 수도권·지방 출강 모두 진행합니다</td></tr>
+            <tr><td><b>준비 사항</b></td><td>노트북·빔프로젝터·마이크. 강연 자료는 <b>사전 발송</b>합니다. 기관이 쓰시는 서식에 강의계획서·강사 이력서를 <b>직접 채워 제출한 이력이 있습니다</b>(기장군민대학 44기 강좌 개설 신청 등)</td></tr>
+            <tr><td><b>진행 절차</b></td><td>문의 접수 → 대상·목적·시간 협의 → <b>구성안 제안</b> → 확정 → 자료 사전 발송 → 진행</td></tr>
+            <tr><td><b>강사료</b></td><td>기관 규정에 맞춰 협의합니다. 공공기관 강사료 기준에 따른 진행 경험이 있습니다</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.88rem;color:var(--sub);margin-top:1.1rem;">
+          내부 검토용 자료가 필요하시면 <a href="park-geunpil-lecture-brief.pdf" target="_blank" rel="noopener"><b>강연 소개서(PDF)</b></a>를 내려받으실 수 있습니다.
+        </p>
+      </div>
+    </section>
+        <!-- 이런 분께 권합니다 (MZ-7 · 2026-08-28) -->
+        <section class="block alt">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">FOR WHOM</p>
+                    <h2>이런 조직에 권합니다</h2>
+                    <p>읽고 쓰고 말하는 힘을 업무 언어로 옮깁니다.</p>
+                </div>
+                <ul style="margin:0 0 1.1rem;padding-left:1.15rem;line-height:1.85;">
+                        <li><b>보고서가 안 읽힌다</b>는 말이 나오는 조직</li>
+                        <li><b>1on1·피드백이 겉돈다</b>고 느끼는 팀</li>
+                        <li>임직원 <b>커리어·자기계발</b> 교육을 찾고 계신 곳</li>
+                </ul>
+                <p style="margin:0;padding:0.9rem 1.1rem;background:#f7f9f9;border-radius:14px;line-height:1.75;">
+                    법정의무교육이나 직무 기술 교육을 찾으신다면 전문 기관이 낫습니다. 이 강연이 다루는 것은 <b>AI가 못 가져가는 읽고 쓰고 말하는 힘</b>입니다.
+                </p>
+            </div>
+        </section>
+
+
+    <section class="block" id="faq">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">FAQ</p>
+          <h2>자주 묻는 질문</h2>
+          <p>섭외 전에 확인이 필요한 항목을 정리했습니다.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item"><h3>수의사인데 왜 기업 강연을 하시나요?</h3><p>직장 안에서 대체되지 않는 사람이 되는 법을 겪어서 알기 때문입니다. 마흔에 번아웃으로 병원을 정리하고 다시 세운 3년이 있습니다. 이론으로 배운 것이 아니라 직접 건너온 이야기를 합니다.</p></div>
+          <div class="faq-item"><h3>「직무 문해력」은 일반 문해력 강의와 무엇이 다른가요?</h3><p>다루는 자리가 다릅니다. 책을 더 읽자는 이야기가 아니라 <b>보고서가 안 읽히는 이유, 회의가 겉도는 이유</b>를 다룹니다. 읽기와 쓰기를 업무 언어로 옮기는 것이 목표입니다.</p></div>
+          <div class="faq-item"><h3>조직 대상 강연 실적이 있나요?</h3><p>부산시청 공무원 200여 명 대상 2시간 특강, 부산시교육청영재교육진흥원 교원 직무연수를 진행했습니다. KB국민은행 「KB Dream Wave 2030」 인재양성 프로그램((사)사피엔스4.0 운영)에서는 선발 대학생 65명 대상 비대면 단독 특강을 맡았습니다.</p></div>
+          <div class="faq-item"><h3>시간과 형태는 어떻게 되나요?</h3><p>60분과 90분이 가장 많고 2회 이상 연속 과정도 진행합니다. 대면과 비대면 모두 가능합니다.</p></div>
+          <div class="faq-item"><h3>강사료는 어떻게 되나요?</h3><p>기관 기준과 강연 형태(단발·연속 과정)에 맞춰 협의합니다. 대상·인원·시간을 알려 주시면 그에 맞춰 안내해 드립니다.</p></div>
+          <div class="faq-item"><h3>지방에서도 부를 수 있나요?</h3><p>가능합니다. 부산에 거주하며 서울·인천·충북·경남 등 전국 출강 이력이 있습니다.</p></div>
+          <div class="faq-item"><h3>강연 내용을 미리 확인할 방법이 있나요?</h3><p>90초 요약 영상은 강사 전문지 한국강사신문 「강연 90초」 코너에 있습니다.</p><p>길게 말하는 모습은 다꿈스쿨 TV 인터뷰 두 편에서 보실 수 있습니다 — <a href="https://youtu.be/AKNnh0UItBU" target="_blank" rel="noopener">「40대 직장인의 80%가 결국 후회하는 것」(35분)</a>, <a href="https://youtu.be/UODkpNrBnDc" target="_blank" rel="noopener">「50살 정년, N잡이 선택 아닌 필수인 이유」(27분)</a>. 둘 다 직장인·커리어 주제를 길게 다뤘습니다.</p><p>한국강사신문 「박근필의 직업인문학」에 칼럼 22편을 연재해 왔고, <b>강연 주제마다 근거가 된 연재 글을 함께 밝혀 두었습니다.</b></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block cta-tight">
+      <div class="wrap pil-cta-band">
+        <h2>기업·공공기관 강연 문의</h2>
+        <p>대상·인원·희망 날짜만 알려 주시면 구성안을 보내 드립니다.</p>
+        <p class="pil-cta-links"><a class="btn-primary" href="contact.html">강연 문의하기</a></p>
+      </div>
+    </section>
+<!-- [GIVE:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json · 도구/pil_공통구간_build.py -->
+    <section class="give-band" aria-labelledby="giveTitle">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">WHAT COMES WITH IT</p>
+          <h2 id="giveTitle">강연 하나에 함께 가는 것들</h2>
+          <p>강연은 그날 90분으로 끝나지 않습니다. 준비와 그 뒤에 남는 것까지 함께 만들어 드립니다.</p>
+        </div>
+        <div class="give-grid">
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v4H4z"/><path d="M4 12h10"/><path d="M4 17h7"/></svg>
+        <b>구성안을 먼저 보내 드립니다</b>
+        <span>학년과 인원, 가능한 시간만 알려 주시면 그 자리에 맞춘 구성안을 미리 만들어 보내 드립니다. 확정 전 검토 단계에서도 됩니다.</span>
+      </div>
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 14h6"/></svg>
+        <b>요청하시면 진행 자료도 만들어 드립니다</b>
+        <span>사회자용 질문지나 사전 안내문처럼 진행에 필요한 것이 있으면 말씀해 주세요. 필요하다고 하신 자리에 한해 함께 만들어 드립니다.</span>
+      </div>
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <b>요청하시면 앞서 읽을 책을 골라 드립니다</b>
+        <span>연수나 북콘서트 전에 읽어 두시면 좋을 책이 필요하시면 말씀해 주세요. 그 자리의 주제에 맞춰 추천해 드립니다.</span>
+      </div>
+        </div>
+      </div>
+    </section>
+<!-- [/GIVE:AUTO] -->
+</main>
+
+    <!-- [2026-08-26] 강연 사진 그리드 (온담 벤치마킹) — 이 페이지는 사진이 0장이었다 -->
+    <section class="ph-band">
+      <div class="ph-inner">
+        <div class="ph-head"><b>강연하는 자리</b><span>기업·공공기관에서 읽고 쓰는 힘을 업무 언어로 옮깁니다.</span></div>
+        <div class="ph-grid">
+          <figure class="ph-cell"><img src="photo-busancity.jpg" alt="부산시청 저자 초청 북세미나 — 공무원 200여 명" loading="lazy"><figcaption>부산시청 저자 초청 북세미나 — 공무원 200여 명</figcaption></figure>
+          <figure class="ph-cell"><img src="photo-stage.jpg" alt="대강당 — 전교생 414명 (부산영상예술고)" loading="lazy"><figcaption>대강당 — 전교생 414명 (부산영상예술고)</figcaption></figure>
+          <figure class="ph-cell"><img src="photo-workshop.jpg" alt="소규모 연속 과정 — ㄷ자 배치 (김해율하도서관 4주)" loading="lazy"><figcaption>소규모 연속 과정 — ㄷ자 배치 (김해율하도서관 4주)</figcaption></figure>
+        </div>
+      </div>
+    </section>
+<footer role="contentinfo">
+        <div class="footer-sns">
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+            <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024–2026 박근필성장연구소 by 박근필. All rights reserved.<br>박근필성장연구소 대표 박근필 · 사업자등록번호 262-95-02242 · <a href="privacy.html" style="color:inherit;text-decoration:underline">개인정보처리방침</a> · <a href="resources.html" style="color:inherit;text-decoration:underline">자료실</a><br>읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+    </script>
+
+<!-- [2026-08-26] 고정 퀵바 (온담 OD-8) — 하단 CTA 밴드에 닿지 못한 방문자를 잡는다 -->
+<nav class="pil-quick" aria-label="바로가기">
+  <a class="hi" href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>강연 섭외</a>
+  <a href="videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 8 6 4-6 4Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg>강연 영상</a>
+  <a href="columns.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2Z"/><path d="M17 8h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2"/><path d="M8 8h5M8 12h5"/></svg>칼럼 보기</a>
+</nav>
+<!-- [QUICKBAR:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json -->
+<div class="pil-quickbar" id="pilQuickbar" role="complementary" aria-label="강연 섭외 문의">
+  <span class="pq-txt">강연 섭외와 일정 문의는 언제든 편하게 주세요</span>
+  <span class="pq-btns">
+    <a class="pq-sub" href="author.html">실적 · 이력 보기</a>
+    <a class="pq-main" href="contact.html">섭외 문의</a>
+  </span>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById("pilQuickbar"); if(!bar) return;
+  /* ⭐ 페이지 끝 CTA 밴드가 보이면 바를 숨긴다 — 같은 말을 두 번 하지 않는다 */
+  var band=document.querySelector(".pil-cta-band"), bandSeen=false;
+  if(band&&"IntersectionObserver" in window){
+    new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
+      .observe(band);
+  }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
+  function paint(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
+    bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
+    /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
+       ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
+    document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
+  }
+  window.addEventListener("scroll",paint,{passive:true});
+  window.addEventListener("resize",paint); paint();
+})();
+</script>
+<!-- [/QUICKBAR:AUTO] -->
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
+<script>
+/* [SEARCH:AUTO] 사이트 내 검색 */
+var __ssIndex=null,__ssLoading=false;
+function openSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.add('on'); document.body.style.overflow='hidden';
+  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
+  loadSiteIndex();
+}
+function closeSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.remove('on'); document.body.style.overflow='';
+}
+function loadSiteIndex(){
+  if(__ssIndex||__ssLoading)return; __ssLoading=true;
+  fetch('search-index.json').then(function(r){return r.json();})
+    .then(function(d){__ssIndex=d;__ssLoading=false;
+      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
+    .catch(function(){__ssLoading=false;
+      var b=document.getElementById('siteSearchResults');
+      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
+}
+function quickSiteSearch(w){
+  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
+}
+function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function __ssSnippet(text,q){
+  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
+  if(i<0)return '';
+  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
+  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
+}
+function runSiteSearch(q){
+  var box=document.getElementById('siteSearchResults'); if(!box)return;
+  q=(q||'').trim();
+  if(q.length<2){box.innerHTML='';return;}
+  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
+  var lq=q.toLowerCase(),out=[];
+  __ssIndex.forEach(function(d){
+    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
+    var n=hay.split(lq).length-1;
+    if(n>0){
+      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      out.push({d:d,sc:sc});
+    }
+  });
+  if(!out.length){
+    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
+  out.sort(function(a,b){return b.sc-a.sc;});
+  box.innerHTML=out.slice(0,40).map(function(o){
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
+      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
+      +'<div class="ssr-s">'+sn+'</div></a>';
+  }).join('');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var i=document.getElementById('siteSearchInput');
+  if(i){
+    var tm=null;
+    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
+  }
+  var l=document.getElementById('siteSearchLayer');
+  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeSiteSearch();
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
+  });
+});
+/* [/SEARCH:AUTO] */
+</script>
+</body>
+</html>

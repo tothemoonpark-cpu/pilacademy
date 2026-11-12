@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>펫로스 치유 글쓰기 · 펫로스 증후군(펫로스 신드롬) · 반려동물 상실 강연 - 박근필성장연구소</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="펫로스 강연 · 반려동물과의 이별을 다루는 자리 - 수의사 작가 박근필">
+    <meta property="og:description" content="20년 가까이 동물병원에서 이별을 지켜본 수의사가 진행하는 펫로스 강연. 「펫로스 치유 글쓰기(펫러스) — 마음을 회복하는 4주」 4주 과정. 도서관·기관·기업 섭외 안내.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="박근필성장연구소 — 수의사이자 작가·강연가·커리어 스토리텔러 박근필">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/petloss.html">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="펫로스 증후군(펫로스 신드롬)이란 무엇이고 무엇이 도움이 되는지, 수의사가 원문을 확인해 정리했습니다. 펫로스 강연 섭외 안내. 수의사이자 작가·커리어 스토리텔러 박근필이 진행하는 펫로스 치유 글쓰기 4주 과정. 김해율하도서관 전 회차 완주, 수강생·담당자 후기 수록.">
+    <link rel="alternate" type="text/plain" href="llms.txt" title="박근필성장연구소 — AI 답변엔진용 요약본(llms.txt)">
+    <meta name="keywords" content="펫로스 치유 글쓰기, 펫로스, 펫로스 강연, 펫로스 증후군, 펫로스 신드롬, 반려동물 이별, 반려동물 상실, 펫로스 치유, 펫로스 글쓰기, 무지개다리, 도서관 펫로스 프로그램, 수의사 강연, 박근필, 반려동물 강연">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/petloss.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="stats.js"></script>
+    <script src="lightbox.js" defer></script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --ink: #16181d; --sub: #5b6066; --mint: #2bb7ac; --mint-dark: #1f9d93;
+            --mint-soft: #eef8f6; --line: #ececec; --page: #ffffff; --panel: #f7f9f9;
+        }
+        body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.65; color: var(--ink); background: var(--page); -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+
+        header { background:#1f9d93; box-shadow:0 2px 12px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1160px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.5rem; }
+        .logo { display: flex; align-items: center; gap: 0.45rem; font-size:1.25rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; white-space: nowrap; }
+        .logo svg { width: 22px; height: 22px; color: #ffffff; }
+        .nav-links { display: flex; gap: 1.2rem; list-style: none; align-items: center; flex-wrap: wrap; }
+        .nav-links a { color: #ffffff; font-weight: 600; font-size:0.98rem; transition: opacity 0.2s; }
+        @media (max-width: 1180px) { .nav-links { gap: 0.8rem; } .nav-links a { font-size: 0.88rem; } }
+        @media (max-width: 1100px) { nav { padding: 0.85rem 1rem; } .nav-links { gap: 0.6rem; } .nav-links a { font-size: 0.84rem; } }
+        .nav-links a:hover { opacity: 0.82; }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+        .menu-toggle span { width: 24px; height: 2px; background: #ffffff; border-radius: 8px; }
+
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+        /* ⭐ 2026-09-07 — 2026-09-06 에 마크업만 넣고 정의를 안 만든 클래스. 클래스_정의검사가 잡았다.
+           한글은 한 줄에 20자는 들어가야 읽히고, 긴 설명 블록은 좁혀야 읽힌다(칸폭_가독성검사 조항). */
+        .wrap.narrow { max-width: 760px; }
+        /* ⭐ 2026-09-07 모바일 점검 — 4주 흐름도가 가로 스크롤인데 그 표시가 없었다.
+           밀 수 있다는 것을 모르면 그 그림은 반만 보이고 끝난다. 데스크톱에서는 안 보인다. */
+        .swipe-hint { display: none; }
+        @media (max-width: 700px) {
+            .swipe-hint { display: block; font-size: 0.85rem; color: var(--mint-dark);
+                          margin: 1.4rem 0 0; letter-spacing: 0.01em; }
+        }
+
+        /* Hero */
+        .lec-hero { background: linear-gradient(160deg, #eef8f6 0%, #ffffff 70%); padding: 3.4rem 0 3rem; border-bottom: 1px solid var(--line); }
+        .lec-hero .eyebrow { display:inline-block; font-size:0.8rem; font-weight: 600; color: var(--mint-dark); background: #fff; border:1px solid #d7eeeb; padding: 0.35rem 0.9rem; border-radius: 999px; margin-bottom: 1.1rem; }
+        .lec-hero h1 { font-size:2.2rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.32; margin-bottom: 1rem; }
+        .lec-hero h1 .accent { color: var(--mint); }
+        .lec-hero .lead { font-size:0.98rem; color: var(--sub); max-width: 720px; }
+        .stat-row { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.8rem; }
+        .stat-chip { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0.75rem 1.15rem; }
+        .stat-chip b { display:block; font-size:1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+        .stat-chip > span { font-size:0.8rem; color: var(--sub); }
+        .hero-cta { display: flex; gap: 0.7rem; margin-top: 1.8rem; flex-wrap: wrap; }
+        .btn-primary { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--mint); color: #fff; font-weight: 700; font-size:0.98rem; padding: 0.85rem 1.7rem; border-radius: 14px; transition: background 0.2s, transform 0.2s; }
+        .btn-primary:hover { background: var(--mint-dark); transform: translateY(-2px); }
+        .btn-ghost { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--ink); border: 1px solid var(--line); background:#fff; font-weight: 500; font-size:0.98rem; padding: 0.85rem 1.5rem; border-radius: 14px; transition: border-color 0.2s; }
+        .btn-ghost:hover { border-color: var(--mint); color: var(--mint-dark); }
+        .btn-primary svg, .btn-ghost svg { width: 17px; height: 17px; }
+
+        .hero-video { margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); background:#000; line-height:0; }
+        .hero-video video { width: 100%; height: auto; display: block; }
+        .hero-vcap { margin-top: 0.7rem; font-size:0.88rem; color: var(--sub); text-align: center; }
+
+        .hero-shot { position: relative; margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); max-height: 420px; }
+        .hero-shot img { width: 100%; height: 100%; max-height: 420px; object-fit: cover; object-position: center 42%; display: block; }
+        .hero-shot span { position: absolute; left: 0; right: 0; bottom: 0; padding: 1rem 1.2rem; font-size:0.88rem; font-weight: 600; color: #fff;
+                          background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%); }
+
+        .faq-list { display:grid; gap:0.9rem; }
+        .faq-item { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.4rem 1.5rem; }
+        .faq-item h3 { font-size:0.98rem; font-weight:700; margin-bottom:0.5rem; letter-spacing:-0.01em; }
+        .faq-item h3::before { content:"Q. "; color:var(--mint-dark); font-weight:700; }
+        .faq-item p { font-size:0.98rem; color:var(--sub); line-height:1.75; }
+        section.block { padding: 3.2rem 0; }
+        section.block.alt { background: var(--panel); }
+        .sec-head { margin-bottom: 1.9rem; }
+        .sec-head h2 { font-size:1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+        .sec-head p { font-size:0.98rem; color: var(--sub); }
+
+        /* 왜 박근필인가 */
+        .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+        .why-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.6rem 1.4rem; }
+        .why-card .ic { width: 42px; height: 42px; border-radius: 14px; background: var(--mint-soft); color: var(--mint-dark); display:flex; align-items:center; justify-content:center; margin-bottom: 0.9rem; }
+        .why-card .ic svg { width: 21px; height: 21px; }
+        .why-card h3 { font-size:0.98rem; font-weight: 700; margin-bottom: 0.45rem; letter-spacing:-0.01em; }
+        .why-card p { font-size:0.88rem; color: var(--sub); line-height: 1.62; }
+
+        /* 다시 부르는 강연 */
+        .again-lead { font-size: 0.98rem; color: var(--ink); line-height: 1.8; background:#fff; border-left: 4px solid var(--mint); border-radius: 0 14px 14px 0; padding: 1.2rem 1.4rem; margin-bottom: 1.4rem; }
+        .again-quote { display:inline-block; margin-top: 0.7rem; font-weight: 700; color: var(--mint-dark); font-size: 0.98rem; }
+        .again-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 1.1rem; }
+        .again-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.6rem 1.4rem; }
+        .again-num { display:inline-block; font-size:1.6rem; font-weight: 700; color: var(--mint-dark); letter-spacing: -0.02em; background: var(--mint-soft); padding: 0.3rem 0.9rem; border-radius: 14px; margin-bottom: 0.9rem; }
+        .again-card h3 { font-size:0.98rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.01em; line-height: 1.45; }
+        .again-card p { font-size:0.88rem; color: var(--sub); line-height: 1.65; }
+        .again-note { margin-top: 1.3rem; font-size:0.88rem; color: var(--sub); line-height: 1.7; text-align: center; }
+
+        /* 섭외 담당자 후기 */
+        .host-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr)); gap: 1.1rem; }
+        .host-card { margin: 0; background: #fff; border: 1px solid #d7eeeb; border-top: 4px solid var(--mint); border-radius: 14px; padding: 1.4rem 1.4rem 1.1rem; display: flex; flex-direction: column; }
+        .host-card p { font-size: 0.98rem; color: var(--ink); line-height: 1.75; margin: 0 0 0.9rem; flex-grow: 1; }
+        .host-card cite { font-style: normal; font-size:0.8rem; font-weight: 700; color: var(--mint-dark); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
+
+        /* 수강생 후기 */
+        .rv-grid { columns: 3; column-gap: 1.1rem; }
+        .rv-card { break-inside: avoid; margin: 0 0 1.1rem; background:#fff; border:1px solid var(--line); border-left: 4px solid var(--mint); border-radius: 0 14px 14px 0; padding: 1.3rem 1.35rem; position: relative; }
+        .rv-card::before { content:'“'; position:absolute; top:0.1rem; right:0.9rem; font-size:2.2rem; line-height:1; color:var(--mint-soft); font-weight:700; }
+        .rv-card p { font-size:0.98rem; color: var(--ink); line-height: 1.75; margin:0; position: relative; z-index:1; }
+        .rv-note { margin-top: 0.6rem; font-size:0.8rem; color: var(--sub); text-align:center; }
+        @media (max-width: 1000px) { .rv-grid { columns: 2; } }
+        @media (max-width: 680px) { .rv-grid { columns: 1; } }
+
+        /* 주제 라인업 */
+        .topic-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+        .topic-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.5rem 1.45rem; border-top: 4px solid var(--mint); }
+        .topic-card .tag { display:inline-block; font-size: 0.8rem; font-weight: 700; color: var(--mint-dark); background: var(--mint-soft); padding: 0.22rem 0.62rem; border-radius: 14px; margin-bottom: 0.75rem; }
+        .topic-card h3 { font-size:0.98rem; font-weight: 700; margin-bottom: 0.7rem; }
+        .topic-card ul { list-style: none; }
+        .topic-card li { font-size:0.98rem; color: var(--sub); padding: 0.32rem 0 0.32rem 1rem; position: relative; line-height: 1.55; }
+        .topic-card li::before { content: ''; position: absolute; left: 0; top: 0.78rem; width: 5px; height: 5px; border-radius: 50%; background: var(--mint); }
+        .topic-card .note { margin-top: 0.8rem; font-size:0.8rem; color: var(--sub); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
+
+        /* 실적 */
+        .proof-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        .proof-card { background:#fff; border:1px solid var(--line); border-radius: 14px; padding: 1.3rem 1.4rem; }
+        .proof-card .lab { font-size: 0.8rem; font-weight: 700; color: var(--mint-dark); background: var(--mint-soft); display:inline-block; padding: 0.2rem 0.58rem; border-radius: 14px; margin-bottom: 0.6rem; }
+        .proof-card .ttl { font-size:0.98rem; font-weight: 700; line-height: 1.5; margin-bottom: 0.3rem; }
+        .proof-card .dsc { font-size:0.88rem; color: var(--sub); line-height: 1.55; }
+        .proof-card a { color: var(--mint-dark); font-weight: 600; font-size: 0.88rem; }
+
+        /* 강연 현장 사진 */
+        .ph-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 1rem; }
+        .ph-item { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: var(--panel); aspect-ratio: 4/3; }
+        .ph-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+        .ph-item:hover img { transform: scale(1.04); }
+        .ph-cap { position:absolute; left:0; right:0; bottom:0; padding:0.75rem 0.9rem; font-size:0.88rem; font-weight:600; color:#fff;
+                  background:linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.72) 100%); }
+
+        /* 영상 */
+        .vid-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+        .vid-card { border-radius: 14px; overflow: hidden; border:1px solid var(--line); background:#fff; }
+        .vid-frame { position: relative; padding-bottom: 56.25%; height: 0; }
+        .vid-frame iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+        .vid-card .cap { padding: 0.85rem 1rem; font-size:0.88rem; font-weight: 600; line-height:1.5; }
+
+        /* 진행 안내 */
+        .info-table { width: 100%; border-collapse: collapse; background:#fff; border:1px solid var(--line); border-radius: 14px; overflow: hidden; }
+        .info-table th, .info-table td { padding: 0.95rem 1.15rem; text-align: left; font-size:0.98rem; border-bottom: 1px solid var(--line); }
+        .info-table th { width: 170px; background: var(--panel); font-weight: 700; color: var(--ink); }
+        .info-table td { color: var(--sub); }
+        .info-table tr:last-child th, .info-table tr:last-child td { border-bottom: none; }
+
+        /* CTA */
+        .cta-box { background: linear-gradient(135deg, #2bb7ac 0%, #1f9d93 100%); border-radius: 14px; padding: 2.6rem 2rem; text-align: center; color:#fff; }
+        .cta-box h2 { font-size:1.6rem; font-weight: 700; margin-bottom: 0.7rem; letter-spacing:-0.02em; }
+        .cta-box p { font-size:0.98rem; opacity: 0.94; margin-bottom: 1.5rem; line-height:1.7; }
+        .cta-box .btn-white { display:inline-flex; align-items:center; gap:0.45rem; background:#fff; color: var(--mint-dark); font-weight:700; font-size:0.98rem; padding:0.9rem 1.9rem; border-radius:14px; transition: transform 0.2s; }
+        .cta-box .btn-white:hover { transform: translateY(-2px); }
+        .cta-box .btn-white svg { width:17px; height:17px; }
+        .cta-sub { margin-top: 1.1rem; font-size: 0.88rem; opacity: 0.9; }
+        .cta-sub a { color:#fff; text-decoration: underline; }
+
+        footer { background: #14161a; color: #fff; text-align: center; padding: 2.4rem 1.5rem; margin-top: 3rem; }
+        .footer-sns { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .footer-sns a { color: rgba(255,255,255,0.85); font-size:0.98rem; transition: color 0.2s; }
+        .footer-sns a:hover { color: var(--mint); }
+        .footer-copy { font-size:0.88rem; color: rgba(255,255,255,0.5); line-height: 1.8; }
+
+        @media (max-width: 900px) {
+            .why-grid, .vid-grid { grid-template-columns: 1fr; }
+            .topic-grid, .proof-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 560px) {
+            .lec-hero { padding: 2.4rem 0 2.2rem; }
+            .lec-hero h1 { font-size:1.6rem; }
+            .lec-hero .lead { font-size:0.98rem; }
+            .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+            .stat-chip { padding: 0.65rem 0.8rem; }
+            .stat-chip b { font-size:1.25rem; }
+            .stat-chip > span { font-size: 0.8rem; }
+            .hero-cta a { flex: 1 1 100%; justify-content: center; }
+            .hero-shot { max-height: 240px; }
+            .hero-shot img { max-height: 240px; }
+            .again-lead { font-size:0.98rem; padding: 1rem 1.1rem; }
+            .again-quote { font-size:0.98rem; }
+            section.block { padding: 2.4rem 0; }
+            .sec-head h2 { font-size:1.25rem; }
+            .cta-box { padding: 2rem 1.2rem; }
+            .cta-box h2 { font-size:1.25rem; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .menu-toggle { display: flex; }
+            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; right: 1.5rem; background: #2bb7ac; border-radius: 14px; padding: 1rem 1.3rem; gap: 0.9rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+            .lec-hero h1 { font-size:1.6rem; }
+            .info-table th { width: 110px; font-size: 0.88rem; }
+        }
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
+       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
+       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
+       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:0.8rem;font-weight:800;color:#1f9d93;
+    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
+    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
+    /* [/NAVSEP:AUTO] */
+        
+      /* [2026-08-26] 강연 사진 그리드 — 온담 벤치마킹.
+         ⛔ 이 페이지들은 사진이 0장이었다(실측). 텍스트를 줄이지 않고 숨통을 틔운다. */
+      .ph-band{background:var(--panel,#f7f8f9);padding:2.6rem 1.5rem;}
+      .ph-inner{max-width:1032px;margin:0 auto;}
+      .ph-head{text-align:center;margin-bottom:1.4rem;}
+      .ph-head b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;color:var(--ink,#16181d);}
+      .ph-head span{display:block;font-size:0.88rem;color:var(--sub,#5b6066);margin-top:0.35rem;}
+      .ph-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.9rem;}
+      .ph-cell{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,0.07);}
+      .ph-cell img{width:100%;height:186px;object-fit:cover;display:block;}
+      .ph-cell figcaption{font-size:0.8rem;color:var(--sub,#5b6066);padding:0.6rem 0.75rem;line-height:1.5;}
+      @media(max-width:820px){.ph-grid{grid-template-columns:repeat(2,1fr);}.ph-cell img{height:150px;}}
+      @media(max-width:520px){.ph-grid{grid-template-columns:1fr;}.ph-cell img{height:200px;}}
+
+        /* [2026-08-26] 고정 퀵바 — 온담 벤치마킹 OD-8
+           ⭐ 온담은 전 페이지에 「문의하기·강사영상·칼럼보기」 3버튼을 고정 노출한다.
+              하단 CTA 밴드까지 못 내려간 방문자를 잡는 장치다.
+           ⛔ 3개만 둔다(전역지침 「한 화면에 강조 3개」). 모바일에서는 하단 가로 바로 바뀐다. */
+        .pil-quick{position:fixed;right:14px;bottom:22px;z-index:900;display:flex;flex-direction:column;gap:8px;}
+        .pil-quick a{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line,#ececec);
+          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.8rem;font-weight:600;color:var(--ink,#16181d);
+          text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.11);white-space:nowrap;transition:transform .15s;}
+        .pil-quick a:hover{transform:translateY(-2px);}
+        .pil-quick a.hi{background:var(--mint,#2bb7ac);color:#fff;border-color:var(--mint,#2bb7ac);}
+        .pil-quick svg{width:15px;height:15px;flex:0 0 auto;}
+        @media(max-width:760px){
+          .pil-quick{right:0;left:0;bottom:0;flex-direction:row;gap:0;border-top:1px solid var(--line,#ececec);
+            background:#fff;padding:0.45rem 0.5rem calc(0.45rem + env(safe-area-inset-bottom));}
+          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:14px;font-size:0.8rem;padding:0.55rem 0.3rem;}
+          .pil-quick a.hi{border-radius:14px;}
+        }
+
+/* [SEARCH:AUTO] 사이트 내 검색 */
+.site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
+.site-search-btn:hover{background:rgba(255,255,255,.3)}
+.site-search-layer{position:fixed;inset:0;background:rgba(22,24,29,.5);backdrop-filter:blur(3px);
+  z-index:3000;display:none;padding:8vh 1rem 2rem}
+.site-search-layer.on{display:block}
+.site-search-box{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.site-search-bar{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid #ececec;color:#5b6066}
+.site-search-bar input{flex:1;border:0;outline:0;font-size:1.02rem;font-family:inherit;color:#16181d;background:transparent}
+.site-search-close{background:none;border:0;font-size:1.7rem;line-height:1;color:#9aa0a6;cursor:pointer;padding:0 .2rem}
+.site-search-hint{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;padding:.85rem 1.2rem;border-bottom:1px solid #f2f2f2}
+.site-search-hint span{font-size:0.79rem;color:#9aa0a6;margin-right:.2rem}
+.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:0.85rem;font-weight:600;
+  padding:.32rem .7rem;border-radius:999px;cursor:pointer;font-family:inherit}
+.site-search-hint button:hover{background:#2bb7ac;color:#fff}
+.site-search-results{max-height:56vh;overflow-y:auto;padding:.4rem 0}
+.ssr-item{display:block;padding:.9rem 1.2rem;border-bottom:1px solid #f4f4f4;color:inherit}
+.ssr-item:hover{background:#f7f9f9}
+.ssr-item:last-child{border-bottom:0}
+.ssr-t{font-weight:700;font-size:0.94rem;color:#16181d;margin-bottom:.2rem}
+.ssr-k{font-size:0.72rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
+.ssr-s{font-size:0.85rem;color:#5b6066;line-height:1.55}
+.ssr-s mark{background:#fff1a8;color:inherit;padding:0 .1em;border-radius:2px}
+.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
+@media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
+/* [/SEARCH:AUTO] */
+
+        </style>
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Course",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/petloss.html#course",
+   "name": "펫로스 치유 글쓰기(펫러스) — 마음을 회복하는 4주",
+   "description": "반려동물과의 이별을 함께 읽고 짧게 쓰고 나누는 4주 글쓰기 워크숍. 만남→추억→이별→기록의 네 단계로 진행하며 마지막 회차에 800~1,000자 에세이 한 편을 완성한다. 상담이나 치료를 대신하지 않고, 그 곁에서 함께 쓰는 글쓰기 워크숍이다.",
+   "inLanguage": "ko",
+   "provider": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+   },
+   "author": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+   },
+   "teaches": [
+    "펫로스",
+    "반려동물 상실 애도",
+    "치유 글쓰기",
+    "기록"
+   ],
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Offline",
+    "courseWorkload": "PT2H",
+    "repeatCount": 4,
+    "instructor": {
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+    }
+   },
+   "review": [
+    {
+     "@type": "Review",
+     "reviewBody": "너무 좋았습니다. 처음엔 많이 울었는데 쓰다보니 행복한 기억들이 쓰나미처럼 밀려와서 행복했었습니다. 4회차 동안 진행해주신 작가님께 감사드리고 이런 소중한 프로그램을만들어주신 사서님께도 감사합니다.",
+     "author": {
+      "@type": "Person",
+      "name": "수강생"
+     }
+    },
+    {
+     "@type": "Review",
+     "reviewBody": "강아지에 대해 얘기나눌 시간이 없는데 내가 유별나지않다는 걸 알게되고, 진짜 힐링되는 시간이었어요. 수의사님이셔서 더 얘기가 잘통하고 수업오는시간이 기다려졌어요. 뜨거운여름날 이겨내고 오고싶은 수업이었어요. 행복했어요!",
+     "author": {
+      "@type": "Person",
+      "name": "수강생"
+     }
+    },
+    {
+     "@type": "Review",
+     "reviewBody": "마침 평일에 시간이 있어서 신청하게 되었는데 장기적으로 했으면 하는 마음이 들 만큼 좋은 시간이었습니다. 나중에 또 이런 비슷한 강좌가 생기면 신청하고 싶습니다. 여러모로 따뜻한 시간이 되었던 것 같습니다. 감사합니다^_^",
+     "author": {
+      "@type": "Person",
+      "name": "수강생"
+     }
+    },
+    {
+     "@type": "Review",
+     "reviewBody": "참 좋았어요! 애완견주로서 다정한 생각을 정리할 수 있게돼 자기정화를 가질 수 있는 시간이었습니다.",
+     "author": {
+      "@type": "Person",
+      "name": "수강생"
+     }
+    },
+    {
+     "@type": "Review",
+     "reviewBody": "힐링되고, 즐거운 시간이었어요.",
+     "author": {
+      "@type": "Person",
+      "name": "수강생"
+     }
+    },
+    {
+     "@type": "Review",
+     "reviewBody": "정말 많이 애써주셨습니다.^^ 소장님 덕분에 따뜻한 분위기로 참가자분들께 의미있는 시간 드릴 수 있었어요. 항상 하시는 일 잘 되시고 다음에 또 다른 기회로 함께 수업 진행하면 좋겠습니다~ 건강하세요!^^",
+     "author": {
+      "@type": "Person",
+      "name": "김해율하도서관 · 담당 사서 (펫로스 치유 글쓰기 4주)"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/petloss.html#service",
+   "name": "펫로스 강연·워크숍 섭외",
+   "serviceType": "펫로스 강연",
+   "provider": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "대한민국"
+   },
+   "audience": {
+    "@type": "Audience",
+    "audienceType": "도서관·기관·기업·가족 단위"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/petloss.html#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "펫로스 증후군(펫로스 신드롬)이란 무엇인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "반려동물의 죽음·실종·안락사 뒤에 겪는 깊은 슬픔, 그리움, 죄책감, 우울·불안 등으로 일상이 오래 흔들리는 상태를 말합니다. 공식 정신질환 진단명은 아니고, 반려동물과 사별한 뒤의 애도 반응을 설명하려고 널리 쓰는 표현입니다. 흔히 겪는 모습과 도움이 되는 방법, 전문가의 도움이 필요한 신호는 펫로스 증후군(펫로스 신드롬)이란 무엇인가에 정리해 두었습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "펫로스 증후군(펫로스 신드롬)과 지속성 애도 장애(PGD)는 어떻게 다른가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "펫로스 증후군(펫로스 신드롬)은 반려동물을 떠나보낸 뒤의 슬픔·죄책감·불면·불안·우울 같은 반응을 넓게 부르는 말이고, 공식 진단명이 아닙니다. 지속성 애도 장애는 DSM-5-TR과 ICD-11에 올라 있는 진단으로, 강한 그리움과 고통이 오래(DSM-5-TR 성인 12개월 이상, ICD-11 최소 6개월 이상) 이어지며 일상이 뚜렷이 무너질 때 검토합니다. 다만 현재 기준은 가까운 사람을 잃은 경우로 정해져 있어, 반려동물 사별에 곧바로 적용하기는 어렵습니다. 연구에서는 반려동물 사별 뒤에도 사람을 잃었을 때와 같은 구조의 애도 증상이 나타날 수 있다는 결과가 쌓이고 있습니다. 자세한 비교는 펫로스 증후군(펫로스 신드롬)이란 무엇인가에 있습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "펫로스를 겪은 가족이나 친구에게 뭐라고 말해야 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "먼저 하지 말아야 할 말을 아는 편이 도움이 됩니다. 「또 키우면 되지」, 「그 정도로 뭘 그래」, 「그 아이도 네가 슬퍼하는 걸 원치 않을 거야, 빨리 털고 일어나」 같은 말입니다. 나쁜 마음으로 하는 분은 없지만, 듣는 사람은 「내가 지금 과하구나」 하고 슬픔을 거둬들이게 됩니다. 말은 하는 사람이 아니라 듣는 사람이 기준입니다. 할 말이 떠오르지 않으면 침묵이 낫습니다. 그래도 한마디를 건네고 싶다면 「나 네 곁에 있어. 힘들면 언제든 불러. 들어줄게.」면 충분합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "안락사를 선택한 것이 아이를 포기한 걸까요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "아닙니다. 안락사는 보호자가 원한다고 되는 것이 아닙니다. 기준은 병원마다 다르지만, 적어도 제가 일해 온 병원들에서는 담당 수의사가 아이의 상태를 보고 함께 판단했습니다. 그러니 「나만 편하자고 한 건 아닐까」, 「너무 서두른 건 아닐까」 하는 의심은 내려놓으셔도 됩니다. 그 결정은 보호자 혼자 내린 것이 아닙니다. 어떤 이유로 내린 결정이든, 아이의 고통을 덜어 주려는 마음에서 나온 결정입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "펫로스 강연은 몇 회 과정이 적당한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "두 가지가 있고, 목적이 다릅니다. 단발 특강(60~120분)은 처음 만나는 자리로, 동물병원에서 본 마지막 순간 이야기와 오늘 밤 혼자 해볼 수 있는 글쓰기 방법을 함께 드립니다. 연속 과정(4~6주)은 만남→추억→이별→기록의 네 단계로 함께 쓰고 나누는 자리이며, 김해율하도서관에서 전 회차 완주로 검증됐습니다. 6주로 넓히거나 60~120분으로 조절할 수 있습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "단발 특강 한 번만 열어도 괜찮을까요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "괜찮습니다. 오히려 처음 여는 기관에는 단발 특강을 권합니다. 당감도서관에서는 주제는 다르지만 아이와 부모가 함께 듣는 가족 단위 단발 특강으로 진행했습니다. 특강은 한 번으로 끝나도 손에 남는 것이 있도록 설계돼 있고, 반응을 보시고 나서 과정으로 넓히셔도 됩니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "몇 명 규모가 적당한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "12명 내외 소규모에서 가장 잘 작동합니다. ㄷ자 또는 원형 좌석 배치를 권합니다. 서로의 이야기가 들리는 거리여야 나눔이 열립니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "심리 상담 프로그램인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "상담이나 치료를 대신하는 프로그램이 아니라, 그 곁에서 함께 쓰는 글쓰기 워크숍이며, 강사는 진행자(퍼실리테이터) 역할을 합니다. 전문적인 도움이 필요한 분께는 상담과 치료를 먼저 권합니다. 펫로스는 사회적으로 인정받지 못해 놓을 자리가 없는 슬픔이기도 합니다(케네스 도카). 이 과정은 그 슬픔을 함께 들어 주는 자리입니다. 합평이나 비평 없이 함께 듣기만 하고, 낭독도 전원 자율입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "왜 수의사가 펫로스 강연을 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "제 역할은 가르치는 것이 아니라 안전한 자리를 만드는 것입니다. 반려동물을 보낸 슬픔은 말할 자리가 없어서 더 오래 갑니다. 그래서 이 과정은 합평도 비평도 하지 않고, 낭독도 전원 자율입니다. 쓰기만 하고 가셔도 됩니다. 건국대학교 「독서치유론」(K-MOOC)을 이수했고(2026.10.26), 각당복지재단 애도상담전문가 기본교육을 수강 중이며, 펫로스를 다룬 책을 집필 중입니다. 스무 해 가까이 임상 수의사로 일하며 보호자들이 마지막 결정을 내리는 자리에 함께 있었기 때문입니다. 펫로스를 책으로 배운 사람이 아니라 그 현장에 있었던 사람입니다. 그 자리는 수의사만이 설 수 있는 자리입니다. 또 하나가 있습니다. 제가 글쓰기로 먼저 지나온 사람이라는 것입니다. 마흔 무렵 마음의 지진이 있었고, 번아웃으로 약 10년간 운영하던 동물병원을 정리했습니다. 그 시기를 지나가게 한 것이 읽기와 쓰기였습니다. 글쓰기가 사람을 치유한다는 것을 배워서 아는 것이 아니라 겪어서 압니다. 펫로스에 글쓰기를 붙인 것은 그 경험 때문이고, 실제로 해 보니 김해율하도서관 4주 과정이 전 회차 완주로 이어졌습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "참가자가 사전에 준비할 것이 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "사전 읽기 과제가 없습니다. 발췌문과 워크시트는 강사가 인쇄해 현장에서 제공합니다. 참가자는 반려동물 사진 한 장만 준비하시면 됩니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "강연료는 어떻게 되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "기관 기준과 규모·횟수에 따라 협의합니다. 예산 범위를 알려주시면 그에 맞는 구성으로 제안해 드립니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "반려동물을 떠나보낸 사람들끼리 이야기를 나눌 곳이 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "펫러스(PETLUS) 쉼터가 있습니다. 이름 없이 내 아이에게 편지를 남기고, 먼저 지나온 분들의 글에 댓글로 마음을 나눌 수 있습니다. 무료이고 가입하지 않아도 됩니다."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:14px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  header .nav-links .nav-sub a,
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.98rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  header .nav-links .nav-sub a:hover,
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    header .nav-links .nav-sub a,
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.88rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+        /* [2026-09-21] 펫로스 증후군(펫로스 신드롬) vs 지속성 애도 장애 비교표 */
+        .pgd-wrap{overflow-x:auto;margin:1rem 0 1.2rem;}
+        .pgd-tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line,#e3e6ea);border-radius:12px;overflow:hidden;font-size:.95rem;}
+        .pgd-tbl th,.pgd-tbl td{padding:.75rem .9rem;text-align:left;vertical-align:top;line-height:1.65;border-bottom:1px solid var(--line,#e3e6ea);}
+        .pgd-tbl thead th{background:rgba(31,157,147,.08);font-weight:700;}
+        .pgd-tbl tbody th{font-weight:700;width:4.2em;}
+        @media (max-width:560px){.pgd-tbl{font-size:.84rem;}.pgd-tbl th,.pgd-tbl td{padding:.55rem .5rem;}}
+    </style>
+  <link rel="stylesheet" href="pil.css">
+<!-- BREADCRUMB:AUTO:START -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "박근필성장연구소",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "강연 안내",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/lecture.html"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "펫로스 치유 글쓰기",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/petloss.html"
+  }
+ ]
+}
+</script>
+<!-- BREADCRUMB:AUTO:END -->
+</head>
+<body>
+<!-- [SKIP:AUTO] --><style>.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#16181d;color:#fff;padding:10px 16px;border-radius:0 0 8px 0;font-weight:700}.pil-skip:focus{left:0}</style><a class="pil-skip" href="#main-content">본문 바로가기</a>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li class="nav-sep">수의사로서</li>
+                        <li><a href="petloss.html" aria-current="page">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petlus-shelter.html">펫러스(PETLUS) 쉼터</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li class="nav-sep">작가 · 강연가로서</li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="career-reading.html">진로독서</a></li>
+                        <li><a href="corporate.html">기업·공공기관 강연</a></li>
+                        <li><a href="senior.html">중장년·시니어 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
+                <li><a href="author.html">대표소개</a></li>
+                <li><a href="vet-notes.html">반려동물 노트</a></li>
+                <li><a href="petlus-shelter.html">펫러스 쉼터</a></li>
+                <li><a href="petlus-board.html">쉼터 게시판</a></li>
+                <li><a href="https://petlusnews.com/" target="_blank" rel="noopener">펫러스뉴스</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="columns.html">칼럼</a></li>
+                <li><a href="videos.html">대표 영상</a></li>
+                <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
+                <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <li><a href="dokjeoting.html">독저팅</a></li> -->
+                <li><a href="writing-request.html">집필·감수 의뢰</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="podcast.html">팟캐스트</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="resources.html">자료실</a></li>
+                <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
+                <!-- [필라이프 코칭 비활성화 2026-08-14 · 되살릴 때 주석 해제] <li><a href="phillife.html">필라이프 코칭</a></li> -->
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
+<button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+</button>
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
+                                                        </nav>
+    </header>
+
+    <main role="main" id="main-content">
+        <!-- HERO -->
+        <section class="lec-hero">
+            <div class="wrap">
+                <h1><span class="eyebrow">펫로스 치유 글쓰기(펫러스) 강연 · 수의사 작가 박근필</span><br>슬퍼해도 되는 자리가<br><span class="accent">없어서 그렇습니다</span></h1>
+                <p class="lead">
+                    반려동물을 떠나보낸 사람들이 가장 많이 하는 말은 “이렇게까지 힘들 줄 몰랐다”가 아닙니다.
+                    <b>“이만한 일로 이러는 게 이상한가 봐요”</b>입니다.
+                    20년 가까이 동물병원에서 그&nbsp;이별을 곁에서 지켜본 수의사가, 함께 읽고 쓰고 나누는 <b>안전한 자리</b>를 만듭니다.
+                    합평도 비평도 없고, 낭독도 전원 자율입니다. 쓰기만 하고 가셔도 됩니다.
+                    상담이나 치료를 대신하지 않고, 그 곁에서 <b>함께 쓰는 글쓰기 워크숍</b>입니다.
+                </p>
+
+                <div class="stat-row">
+                    <div class="stat-chip"><b>4주</b><span>도서관 성인 과정 전 회차 완주</span></div>
+                    <div class="stat-chip"><b>스무 해</b><span>가까이 임상 수의사 · 이별의 현장</span></div>
+                    <div class="stat-chip"><b>5권</b><span>저서 · 펫로스 칼럼 연재</span></div>
+                    <div class="stat-chip"><b>2시간</b><span>회당 표준 · 12명 내외 워크숍</span></div>
+                </div>
+
+                <div class="hero-cta">
+                    <a class="btn-primary" href="contact.html"><i data-lucide="send" aria-hidden="true"></i>펫로스 강연 문의하기</a>
+                    <a class="btn-ghost" href="petlus-shelter.html"><i data-lucide="heart-handshake" aria-hidden="true"></i>펫러스(PETLUS) 쉼터 가기</a>
+                    <a class="btn-ghost" href="#curriculum">4주 커리큘럼 보기 <i data-lucide="arrow-down" aria-hidden="true"></i></a>
+                    <a class="btn-ghost" href="lecture.html"><i data-lucide="arrow-left" aria-hidden="true"></i>전체 강연 안내</a>
+                    <a class="btn-ghost" href="park-geunpil-petloss-brief.pdf" download="박근필_펫로스_강연소개서.pdf"><i data-lucide="file-down" aria-hidden="true"></i>펫로스 강연 소개서(PDF)</a>
+        <div class="hero-video">
+          <video autoplay muted playsinline controls preload="metadata" poster="page-intro-petloss-260926.jpg">
+            <source src="page-intro-petloss-260926.mp4" type="video/mp4">
+            <a href="page-intro-petloss-260926.mp4">영상 내려받기</a>
+          </video>
+        </div>
+        <p class="hero-vcap">27초 소개 영상 — 소리를 켜면 배경음악과 함께 보실 수 있습니다</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- [2026-09-29] 보호자용 첫 입구 — 작가님 「반영하면 좋을 점들은 모두 즉시 반영」(pet-loss.kr 분석 2번).
+             ⛔ 카드 본문은 작가님 노트 원문 그대로(각 카드가 그 노트로 연결). 제목만 보호자 목소리로. -->
+        <section class="block" id="feel-cards" aria-labelledby="feelTitle">
+            <div class="wrap">
+                <p class="eyebrow" style="color:#1f9d93;font-weight:700;margin:0 0 6px">반려동물을 떠나보내셨나요</p>
+                <p class="pil-eyebrow">FOR WHOM</p>
+                <h2 id="feelTitle">혹시 이런 마음이신가요?</h2>
+                <div class="feel-grid">
+                    <a class="feel-card" href="notes/n260921-3.html"><b>마지막을 지키지 못한 것이<br>계속 마음에 걸립니다</b><span>못 지킨 건 당신 잘못이 아닙니다.<br>그걸로 스스로를 벌하지 않으셔도 됩니다.</span><em>수의사 노트 읽기 →</em></a>
+                    <a class="feel-card" href="notes/n260925_2-9.html"><b>「내가 과한가, 내가 이상한가」<br>싶습니다</b><span>같은 상실을 겪은 사람들 앞에서<br>「나만 이런 게 아니구나」를 알게 됩니다.</span><em>수의사 노트 읽기 →</em></a>
+                    <a class="feel-card" href="notes/n260922-8.html"><b>그 아이 물건을<br>아직 정리하지 못했습니다</b><span>치우는 것도 애도이고,<br>두는 것도 애도입니다.</span><em>수의사 노트 읽기 →</em></a>
+                </div>
+                <p class="feel-more"><a href="petlus-shelter.html">이름 없이 편지를 남기는 펫러스 쉼터 →</a><a href="vet-notes.html#k=펫로스">펫로스 노트 모두 보기 →</a><a href="petloss-stories.html">수의사가 답한 펫로스 이야기 →</a></p>
+            </div>
+            <style>#feel-cards .feel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 10px}#feel-cards .feel-card{display:flex;flex-direction:column;gap:10px;padding:20px;border:1px solid #d9ece9;border-radius:16px;background:#f6fbfa;color:inherit;text-decoration:none;transition:transform .15s,box-shadow .15s}#feel-cards .feel-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.06)}#feel-cards .feel-card b{font-size:18px;line-height:1.45}#feel-cards .feel-card span{font-size:15px;line-height:1.7;color:#4b5563}#feel-cards .feel-card em{font-style:normal;font-weight:700;color:#1f9d93;font-size:14px;margin-top:auto}#feel-cards .feel-more{display:flex;flex-wrap:wrap;gap:8px 22px;font-weight:700}#feel-cards .feel-more a{color:#1f9d93}@media(max-width:760px){#feel-cards .feel-grid{grid-template-columns:1fr}}</style>
+        </section>
+
+        <!-- [2026-09-21] 펫로스증후군 — 작가님 제공 원문을 출처 대조 후 반영.
+             ⛔ 출처는 문장 끝에 달지 않고 섹션 말미에 작게 모은다(작가님 지시).
+             ⛔ AVMA 가 말하지 않은 것을 AVMA 이름으로 쓰지 않는다 — 2026-09-21 원문 대조 결과로 문장 조정. -->
+        <section class="block alt" id="petloss-syndrome">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">UNDERSTANDING</p>
+                    <h2>펫로스 증후군(펫로스 신드롬)이란 무엇인가</h2>
+                    <p>반려동물을 떠나보낸 뒤의 슬픔은 약함이 아니라 사랑의 흔적입니다.</p>
+                </div>
+                <p>
+                    <b>펫로스 증후군(펫로스 신드롬)</b>은 반려동물의 죽음·실종·안락사 뒤에 겪는 깊은 슬픔, 그리움, 죄책감, 우울·불안 등으로
+                    일상이 오래 흔들리는 상태를 말합니다.
+                </p>
+                <p>
+                    다만 ‘펫로스 증후군(펫로스 신드롬)’은 공식 정신질환 진단명이 아닙니다.
+                    반려동물과 사별한 뒤의 애도 반응을 설명하려고 널리 쓰는 표현입니다.
+                </p>
+
+                <h3>왜 이렇게 힘든가</h3>
+                <p>
+                    반려동물은 단순히 “키우는 동물”이 아닌 경우가 많습니다.
+                    생활 리듬, 돌봄의 역할, 마음의 안전감, 가족이라는 정체성과 이어져 있습니다.
+                </p>
+                <p>
+                    그래서 사별 뒤의 반응은 가족이나 가까운 친구를 잃었을 때의 애도와 비슷하게 나타날 수 있습니다.
+                    미국수의사회(AVMA)도 반려동물을 잃은 사람이 가족이나 가까운 친구를 잃은 사람과 비슷한 슬픔을 겪는다고 설명합니다.
+                </p>
+                <p>
+                    게다가 반려동물 사별은 “새로 키우면 되지” 같은 말로 쉽게 작아집니다.
+                    슬픔을 충분히 드러내지도, 지지받지도 못하는 <b>인정받지 못한 애도</b>가 되기 쉽습니다.
+                    이것이 고립감과 자책을 더 키웁니다.<br>(이 개념은 바로 아래 「왜 글쓰기인가」에서 더 자세히 다룹니다.)
+                </p>
+
+                <h3>흔히 겪는 모습</h3>
+                <p>사람마다 강도와 모습은 다르지만, 다음과 같은 경험은 드물지 않습니다.</p>
+                <ul>
+                    <li>빈자리와 일상의 습관 때문에 자꾸 눈물이 나고 멍해집니다.</li>
+                    <li>밥그릇·장난감·산책길·잠자리에서 그리움이 크게 밀려옵니다.</li>
+                    <li>“조금만 빨리 병원에 갔더라면”, “안락사를 결정하지 말았어야 했나” 같은 죄책감과 후회가 듭니다.</li>
+                    <li>잠을 못 자거나 입맛이 변하고, 집중이 안 되고, 무기력하거나 불안해집니다. 공황에 가까운 몸의 반응이 오기도 합니다.</li>
+                    <li>아이가 아직 집에 있는 것 같아 이름을 부르게 됩니다.</li>
+                    <li>다른 사람의 가벼운 반응에 상처받고, 사람을 피하게 됩니다.</li>
+                </ul>
+                <p>
+                    이런 감정은 비정상이라기보다 상실에 대한 자연스러운 애도 반응일 수 있습니다.
+                    애도에는 정해진 순서도, 정해진 회복 기한도 없습니다.
+                </p>
+
+                <h3>도움이 되는 방법</h3>
+                <ol>
+                    <li><b>슬픔을 없애려 하기보다 인정하기</b><br>
+                        “동물인데 내가 너무 유난인가” 하고 자신을 탓하지 않는 것이 중요합니다.
+                        울음, 그리움, 분노, 안도감처럼 서로 어긋나 보이는 감정이 함께 올 수 있습니다.</li>
+                    <li><b>추억을 관계의 형태로 남기기</b><br>
+                        사진첩, 편지, 추억 상자, 발도장, 짧은 기록, 추모식이 도움이 됩니다.
+                        “잊어야 한다”가 아니라 “기억을 품고 살아간다”는 쪽입니다.
+                        AVMA도 지난 사진을 보고 <b>아이를 기리는 글을 써 보라</b>고 권합니다.</li>
+                    <li><b>죄책감을 사실과 떼어 놓고 보기</b><br>
+                        사별 뒤에는 결과를 안 지금의 눈으로 그때의 결정을 평가하기 쉽습니다.
+                        그때 알았던 정보, 아이의 상태, 돈과 시간의 현실, 내가 했던 돌봄을 함께 <b>적어 보세요</b>.
+                        “나는 그때 알던 것 안에서 할 수 있는 만큼 했다”는 것이 보입니다.</li>
+                    <li><b>비어 버린 돌봄 시간을 새로 채우기</b><br>
+                        매일 하던 산책 시간, 밥 주던 시간, 귀가 후 인사하던 시간이 특히 공허합니다.
+                        그 시간에 가벼운 산책, 짧은 기록, 스트레칭, 믿는 사람과의 통화 같은 작은 일을 놓아 보세요.</li>
+                    <li><b>공감해 줄 사람에게 말하기</b><br>
+                        반려동물을 가족으로 이해하는 가족·친구, 반려동물을 먼저 떠나보낸 사람, 상담자와 이야기를 나누세요.
+                        “이제 그만 극복해”라는 재촉을 받을수록 애도는 더 어려워집니다.</li>
+                    <li><b>새 입양은 내 마음의 속도대로</b><br>
+                        입양은 정답도, 배신도 아닙니다.
+                        빨리 입양하든 오래 기다리든, 떠난 아이를 향한 마음이 줄어드는 것은 아닙니다.</li>
+                </ol>
+
+                <div style="margin:1.6rem 0;padding:1.1rem 1.3rem;border-left:4px solid var(--mint-dark,#1f9d93);background:rgba(31,157,147,.07);border-radius:8px;">
+                    <p style="margin:0 0 .5rem;"><b>2번과 3번은 결국 ‘쓰는 일’입니다.</b></p>
+                    <p style="margin:0;">
+                        기억을 남기는 일도, 죄책감을 사실과 떼어 놓는 일도 글로 적을 때 가장 또렷해집니다.
+                        그래서 이 강연은 <b>펫로스 치유 글쓰기(펫러스, PETLUS)</b>로 진행합니다.
+                        왜 글쓰기인지는 바로 아래에, 4주 과정은 <a href="#curriculum">커리큘럼</a>에 있습니다.
+                        혼자 먼저 써 보고 싶으시면 <a href="petloss-write.html">펫러스 — 오늘 밤, 한 편</a>에서 시작하셔도 됩니다.
+                    </p>
+                </div>
+
+                <h3>오래 슬퍼한다고 곧 병은 아닙니다 — 펫로스 증후군(펫로스 신드롬)과 지속성 애도 장애</h3>
+                <p>
+                    펫로스 증후군(펫로스 신드롬)은 반려동물을 떠나보낸 뒤 겪는 슬픔·죄책감·불면·불안·우울 같은 여러 반응을 넓게 부르는 말입니다.
+                    반면 <b>지속성 애도 장애</b>(PGD, Prolonged Grief Disorder)는 강한 그리움과 고통이 오래 이어지고 일과 관계, 일상이 뚜렷하게 무너질 때 검토하는 정신건강 진단입니다.
+                </p>
+                <div class="pgd-wrap">
+                <table class="pgd-tbl">
+                    <thead><tr><th></th><th>펫로스 증후군(펫로스 신드롬)</th><th>지속성 애도 장애(PGD)</th></tr></thead>
+                    <tbody>
+                        <tr><th>성격</th><td>공식 진단명이 아닌, 널리 쓰는 말</td><td>미국정신의학회 DSM-5-TR과 세계보건기구 ICD-11에 올라 있는 진단</td></tr>
+                        <tr><th>대상</th><td>반려동물을 잃은 보호자</td><td>현재 기준은 가까운 <b>사람</b>이 세상을 떠난 경우</td></tr>
+                        <tr><th>내용</th><td>그리움, 슬픔, 죄책감, 분노, 불면, 식욕 변화, 무기력, 사람을 피하게 됨 등 폭넓은 반응</td><td>떠난 대상에 대한 강한 그리움이나 몰두가 계속되고, 정체감 혼란·회피·무감각·삶의 의미 상실·외로움 등이 오래가며 일상 기능을 해치는 상태</td></tr>
+                        <tr><th>시간</th><td>사별 직후부터 몇 달, 몇 년까지 사람마다 다름</td><td>DSM-5-TR은 성인의 경우 사별 후 12개월 이상, ICD-11은 최소 6개월 이상 지난 뒤 검토</td></tr>
+                        <tr><th>묻는 것</th><td>“상실 뒤에 힘들다”</td><td>“고통이 계속되고 일상이 뚜렷이 무너졌는가”</td></tr>
+                    </tbody>
+                </table>
+                </div>
+                <p>
+                    반려동물을 잃은 뒤의 강한 슬픔 자체는 흔하고, 정상적인 애도의 범위일 수 있습니다.
+                    다만 도움이 필요한 수준까지 가는 분도 적지 않습니다.<br><br>2023년 국내 학술지 <i>JKMS</i>(대한의학회)에 실린 연구에서는 반려동물을 잃은 국내 성인 137명 가운데 55%가 치료가 필요할 수 있는 수준의 복합 애도 점수를 보였습니다.
+                </p>
+                <p>
+                    여기서 한 가지 선을 알아 두셔야 합니다.
+                    DSM-5-TR과 ICD-11은 이 진단을 가까운 사람이 세상을 떠났을 때로 정해 두었습니다.
+                    그래서 반려동물을 잃은 뒤 고통이 오래가더라도, 지금 기준으로는 지속성 애도 장애 진단을 곧바로 붙이기 어렵습니다.
+                </p>
+                <p>
+                    그렇다고 가벼운 슬픔이라는 뜻은 아닙니다.<br><br>2020년 미국 연구는 반려동물을 잃은 성인 395명에게서 DSM-5가 제안한 애도 장애(지속성 복합 애도 장애) 증상 묶음이 사람을 잃었을 때와 같은 모양으로 나타난다고 보고했습니다.
+                    2026년 영국 연구도 같은 방향의 결과를 냈습니다(아래 「이 슬픔은 유별난 것이 아닙니다」).<br><br>진단을 반려동물에게 바로 넓히자는 결론이라기보다, 반려동물을 잃은 슬픔을 가볍게 여겨서는 안 된다는 근거에 가깝습니다.
+                </p>
+                <div class="stat-row" style="margin:0 0 1.4rem;">
+                    <div class="stat-chip"><b>55%</b><span>국내 반려동물 상실 137명 · 치료가 필요할 수 있는 수준(2023)</span></div>
+                    <div class="stat-chip"><b>7.5%</b><span>영국 반려동물 사별 성인 · PGD 설문 기준 충족(2026)</span></div>
+                    <div class="stat-chip"><b>395명</b><span>미국 연구 · 사람 사별과 같은 애도 증상 구조(2020)</span></div>
+                    <div class="stat-chip"><b>12개월 · 6개월</b><span>PGD 검토 시점 · DSM-5-TR 성인 · ICD-11 최소</span></div>
+                </div>
+                <p>
+                    기념일이나 특정 장소, 물건, 계절에 다시 크게 슬퍼지는 것은 자연스러운 애도 과정에서 흔히 있는 일입니다.
+                    그래서 “내가 펫로스 증후군(펫로스 신드롬)인가”보다 이렇게 묻는 편이 실제로 도움이 됩니다.<br><br><b>이 슬픔이 혼자 견디기 어려울 만큼 내 삶을 멈추게 하고 있는가.</b>
+                    그 판단에 쓸 신호를 바로 아래에 모았습니다.<br><br>이런 상태가 이어지면 진단명을 먼저 붙이기보다 전문가의 도움을 받는 것이 맞습니다.
+                </p>
+
+                <h3>전문가의 도움이 필요한 신호</h3>
+                <p>다음과 같다면 정신건강의학과, 심리상담센터, 애도상담 전문가의 도움을 받아 보세요.</p>
+                <ul>
+                    <li>잠·식사·씻기·출근·학업 같은 기본 일상이 계속 유지되지 않습니다.</li>
+                    <li>시간이 지나도 슬픔이나 죄책감이 전혀 나아지지 않고 더 심해집니다.</li>
+                    <li>심한 불안, 공황, 오래가는 우울감이 있거나 술·약물에 기대게 됩니다.</li>
+                    <li>“나도 죽고 싶다”, “살 이유가 없다”는 생각이나 자해 충동이 듭니다.</li>
+                    <li>이별 장면이나 안락사 과정이 자꾸 떠올라 괴롭고, 그것을 피하려는 마음이 커집니다.</li>
+                </ul>
+                <p>
+                    반려동물을 떠나보낸 슬픔을 누군가에게 전화로 이야기하고 싶다면, <b>사랑의전화복지재단 상담센터 <a href="tel:15662525">1566-2525</a></b>에서 펫로스 상담을 받으실 수 있습니다.
+                </p>
+                <p>
+                    자살이나 자해가 걱정되거나 지금 안전이 걱정된다면 혼자 있지 마시고 가까운 사람에게 알리세요.<br><br>그리고 <b>자살예방 상담전화 109</b>, <b>정신건강 상담전화 1577-0199</b>에 연락하세요.<br>응급 상황에서는 <b>119</b> 또는 <b>112</b>에 바로 연락하세요.
+                </p>
+
+                <h3>기억해 주세요</h3>
+                <p>
+                    펫로스는 반려동물을 얼마나 사랑했는지의 흔적이지, 약함의 증거가 아닙니다.
+                    중요한 것은 빨리 잊는 것이 아닙니다.
+                    그 관계가 내 삶에 남긴 의미를 다치지 않게 품고, 조금씩 일상으로 돌아오는 것입니다.
+                </p>
+                <p>
+                    AVMA는 애도에 필요한 일로 여섯 가지를 듭니다.
+                    죽음을 현실로 받아들이기, 아픔을 피하지 않기, 기억으로 관계를 이어 가기,
+                    달라진 나를 받아들이기, 의미를 찾기, 다른 사람의 지지를 받아들이기입니다.
+                </p>
+
+                <p style="font-size:0.84rem;color:#5b6066;line-height:1.7;margin-top:1.6rem;">
+                    참고 —
+                    <a href="https://www.avma.org/resources-tools/pet-owners/petcare/coping-loss-pet" target="_blank" rel="noopener">AVMA 「Coping with the loss of a pet」</a> ·
+                    <a href="https://www.avma.org/resources-tools/avma-policies/avma-animal-loss-support-services" target="_blank" rel="noopener">AVMA 정책 「Animal Loss Support Services」</a> ·
+                    <a href="https://www.dailyvet.co.kr/news/practice/companion-animal/252563" target="_blank" rel="noopener">데일리벳(2025.7.23) 「1년 넘게 지속된 펫로스 증후군 5명 중 1명인데..공감 받지 못한 슬픔」</a> ·
+                    <a href="https://www.qeios.com/read/LAS0GT.5" target="_blank" rel="noopener">Mariano S.(2024) 「Are Pain and Mourning for a Pet and a Family Member the Same?」 Qeios(프리프린트)</a> ·
+                    <a href="https://www.129.go.kr/109" target="_blank" rel="noopener">보건복지상담센터 — 자살예방 상담전화 109</a> ·
+                    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10506898/" target="_blank" rel="noopener">Ahn J 외(2023) <i>J Korean Med Sci</i> — 국내 반려동물 상실 137명</a> ·
+                    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10291380/" target="_blank" rel="noopener">Eisma MC(2023) 「Prolonged grief disorder in ICD-11 and DSM-5-TR」 <i>Aust N Z J Psychiatry</i></a> ·
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0165178119320918" target="_blank" rel="noopener">Lee SA(2020) 「Does the DSM-5 grief disorder apply to owners of deceased pets?」 <i>Psychiatry Research</i></a> ·
+                    WHO ICD-11 6B42 지속성 애도 장애
+                </p>
+            </div>
+        </section>
+
+        <!-- 왜 글쓰기인가 (2026-09-21 작가님: 「왜 상담이 아니라」는 상담가·정신과 전문의에게 상담이 필요 없다고 읽힐 수 있어 폐기) -->
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">APPROACH</p>
+                    <h2>왜 글쓰기인가</h2>
+                    <p>덜어내야 할 감정이 아니라, 놓을 자리가 없는 마음이기 때문입니다.</p>
+                </div>
+                <p>
+                    1989년 미국의 죽음학자 케네스 도카(Kenneth Doka)는 <b>공개적으로 인정받지 못하고,
+                    사회적으로 승인되지 않으며, 공적으로 애도될 수 없는 슬픔</b>을 하나의 이름으로 묶었습니다.
+                    반려동물과의 이별이 그 대표적인 경우입니다.
+                </p>
+                <p>
+                    가족도 친구도 그것을 “진짜 상실”로 여겨 주지 않을 때, 슬픔은 사라지지 않고 안으로 들어갑니다.
+                </p>
+                <p>
+                    그래서 <b>“이만한 일로 이러는 게 이상한가 봐요”</b>라는 말이 나옵니다.
+                    감정이 과한 것이 아니라 <b>슬퍼해도 되는 자리가 없었던 것</b>입니다.
+                </p>
+                <p>
+                    없앨 것이 아니라 <b>자리를 만들어야 하는 문제</b>이고, 그래서 이 과정은
+                    <b>펫로스 치유 글쓰기</b>입니다. 상담이나 치료를 대신하는 것이 아니라, 그 곁에서 슬퍼해도 되는 자리를 만듭니다. 자리를 만드는 방법은 설계 안에 들어 있습니다.
+                </p>
+                <ul>
+                    <li><b>12명 내외 · ㄷ자 또는 원형 좌석</b> — 서로의 이야기가 들리는 거리에 앉습니다.</li>
+                    <li><b>합평도 비평도 없이 듣기만 합니다</b> — 평가받지 않아야 꺼낼 수 있습니다.</li>
+                    <li><b>낭독은 전원 자율</b> — 말하지 않을 자유가 있어야 말할 수 있습니다.</li>
+                    <li><b>회차마다 짧은 글이 남습니다</b> — 마지막에 800~1,000자 에세이 한 편이 손에 남습니다.</li>
+                </ul>
+                <p>
+                    같은 자리에 앉은 사람들이 서로의 이별을 끝까지 들어 주는 두 시간.
+                    그것이 이 워크숍이 하는 일입니다. 상담과 치료가 하는 일과 나란히 놓이는 또 하나의 자리입니다.
+                </p>
+                <h3>이 슬픔은 유별난 것이 아닙니다</h3>
+                <p>
+                    반려동물을 보내고 힘들어하면 「그렇게까지 할 일인가」라는 말을 듣습니다.
+                    그 한마디에 슬픔을 숨기게 되고, 숨긴 슬픔은 더 오래 갑니다.
+                </p>
+                <p>
+                    2026년 1월 국제 학술지 <i>PLOS ONE</i>에 실린 연구가 이 문제를 정면으로 다뤘습니다.
+                    영국 성인 <b>975명</b>을 조사한 전국 대표표본 연구입니다.
+                </p>
+                <ul>
+                    <li>사람과 반려동물을 <b>둘 다 잃은 사람</b> 중 <b>21.0%</b>가
+                        반려동물 쪽을 가장 괴로운 사별로 꼽았습니다.</li>
+                    <li>반려동물을 떠나보낸 사람 중 <b>7.5%</b>가
+                        <b>지속성 애도 장애</b>(PGD) 기준을 충족했습니다.</li>
+                    <li><b>애도 증상의 구조가 사람을 잃었을 때와 같았습니다.</b>
+                        연구진의 표현은 이렇습니다 —
+                        「떠난 이가 어떤 종이든 관계없이 애도 증상은 같은 방식으로 나타난다」.</li>
+                </ul>
+                <p>
+                    지속성 애도 장애는 세계보건기구 국제질병분류(ICD-11)에 올라 있는 정식 진단명입니다.
+                    다만 현재 기준은 <b>사람을 잃은 경우에만</b> 이 진단을 허용합니다.
+                    이 연구는 그 선 긋기가 타당한지를 묻습니다.
+                </p>
+                <p>
+                    <b>그러니 유별난 것이 아닙니다.</b>
+                    많은 분이 겪는 일이고, 그중 일부는 도움이 필요한 상태까지 갑니다.<br><br>이 워크숍은 진단하거나 치료하는 자리가 아닙니다.
+                    다만 「이래도 되는 슬픔인가」를 혼자 묻고 계신 분께,
+                    그 물음에 답이 이미 나와 있다는 것을 알려 드리는 자리이기도 합니다.
+                </p>
+                <p style="font-size:.9em;color:var(--muted);">
+                    Hyland P (2026). No pets allowed: Evidence that prolonged grief disorder can occur
+                    following the death of a pet. <i>PLOS ONE</i> 21(1): e0339213.
+                </p>
+
+                <h3>글로 쓰는 것이 정말 도움이 되는가</h3>
+                <p>
+                    2025년 학술지 <i>Research on Social Work Practice</i>에 실린 메타분석이
+                    사별한 사람들을 대상으로 한 <b>무작위대조시험 13편</b>을 모아 분석했습니다.
+                </p>
+                <p>
+                    글로 감정을 쓰는 방식은 애도와 우울을 줄이는 데 효과가 있었습니다.
+                    다만 <b>전체 효과는 작았습니다</b>(애도 Hedges’ <i>g</i> = 0.388, 우울 0.308).
+                </p>
+                <p>
+                    <b>먼저 확인된 것은 “쓰는 것 자체가 도움이 된다”는 사실입니다.</b>
+                    90분 특강에서 한 편을 쓰고 돌아가시는 것도 그래서 의미가 있습니다.
+                    그날 밤 혼자 다시 써 볼 수 있는 방법이 손에 남습니다.
+                </p>
+                <p>
+                    그 위에 하나가 더 있습니다. 같은 분석이 <b>어떤 조건에서 효과가 더 커지는지</b>를 함께 봤습니다.
+                </p>
+                <ul>
+                    <li><b>회차가 쌓일수록 효과가 커졌습니다</b> — 0.388에서 <b>0.583</b>으로.</li>
+                    <li><b>진행자가 피드백을 줄 때 효과가 커졌습니다</b> — 0.388에서 <b>0.679</b>로.
+                        (원 논문의 표현은 ‘치료사 피드백’입니다.)</li>
+                </ul>
+                <p>
+                    연속 과정이 그 자리에 있습니다. 회차마다 짧은 글이 쌓이고, 그때마다 반응이 돌아옵니다.
+                    <b>단발 특강</b>은 오늘 바로 써먹을 방법을 쥐여 드리고,
+                    <b>연속 과정</b>은 마지막에 에세이 한 편이 남습니다.<br><br><b>목적은 같습니다. 펫로스로 다친 마음을 회복하는 것입니다. 길이와 형식만 다소 차이가 있을 뿐입니다.</b><br><br><span style="color:var(--muted);">시간과 회차는 기관 사정에 맞춰 조절하고, 현장 상황에 따라 시간 배분은 유동적으로 진행됩니다.</span>
+                </p>
+                <p>
+                    한 가지 더 있습니다. 사별을 다룬 초기 글쓰기 연구들은 <b>효과가 잘 나오지 않았습니다.</b>
+                    원인으로 지목된 것은 <b>참가자에게 상실에 대해 쓰라고 강제한 점</b>이었습니다.
+                    원래의 방식은 쓸 주제를 본인이 고르는 것이 전제였는데, 그 부분이 빠져 있었던 것입니다.
+                </p>
+                <p>
+                    그래서 이 과정의 3회차는 <b>세 갈래 중 하나를 고르게</b> 합니다 —
+                    떠나보낸 아이에게 쓰는 편지, 언젠가의 그날에게 미리 쓰는 약속,
+                    그리고 자책을 벗는 한 줄. 무엇을 쓸지는 각자가 정합니다.
+                </p>
+                <p style="font-size:0.88rem;color:#5b6066;line-height:1.7;">
+                    ※ 위 연구는 반려동물 상실이 아니라 <b>사별 애도 전반</b>을 다룬 것입니다.
+                    출처: Yao D. 외(2025), <i>Expressive Writing for Grief: A Meta-Analysis of Randomized
+                    Controlled Trials</i>, <i>Research on Social Work Practice</i>,
+                    <a href="https://journals.sagepub.com/doi/10.1177/10497315251371566" target="_blank" rel="noopener">doi.org/10.1177/10497315251371566</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- [2026-09-06] 펫러스 웹 도구 입구. 혼자 쓰는 자리(1층) — 서버 없음·전송 없음. -->
+        <section class="block alt">
+            <div class="wrap narrow">
+                <p class="eyebrow">WRITE</p>
+                <p class="pil-eyebrow">ONLINE</p>
+                <h2>지금 혼자서도 한 편은 쓰실 수 있습니다</h2>
+                <p class="lead">
+                    강좌를 기다리지 않으셔도 됩니다.
+                    4주 과정에서 쓰는 물음을 그대로 옮겨 둔 자리를 열어 두었습니다.
+                </p>
+                <p>
+                    <b>펫러스(펫로스 + 러브 + 쓰다 · PETLUS : PET Love US)</b> — 그 아이 이름을 적으면
+                    이후 모든 물음에 그 이름이 들어갑니다.
+                    물음은 <b>하나씩만</b> 나오고, 셋을 쓰면 <b>오늘은 여기까지</b>로 닫습니다.
+                    쓰신 글은 <b>내 브라우저 안에만 남고</b> 어디로도 전송되지 않습니다.
+                </p>
+                <p>
+                    <a class="btn-primary" href="petloss-write.html">
+                        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        펫러스 · 오늘 밤 한 편 쓰러 가기
+                    </a>
+                </p>
+                <p style="font-size:0.9rem;color:#5b6066;">
+                    ※ 진행자가 곁에 없는 자리입니다. 지금 많이 힘드시다면
+                    쓰기보다 먼저 사람을 만나시는 편이 낫습니다.
+                    기관에서 <b>함께 쓰는 자리</b>로 열고 싶으시면 아래 섭외 문의로 알려 주세요.
+                </p>
+
+                <!-- [2026-09-08] 종이 갈래 입구. ⛔ 이 링크가 없으면 배포용 한 장이 사이트에서 고립된다
+                     (sitemap·llms·검색색인에만 있고 사람이 클릭할 자리가 0곳이 된다). -->
+                <p style="margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid #e3e6ea;">
+                    <b>화면 말고 종이로 드리고 싶으시면</b> — 도서관·동물병원·반려동물 장례업체가
+                    보호자에게 그대로 인쇄해 드릴 수 있는 <b>A4 한 장</b>을 따로 만들어 두었습니다.
+                    물음 세 가지와 손으로 쓸 자리가 담겨 있고, 부수 제한 없이 쓰실 수 있습니다.
+                </p>
+                <p>
+                    <a class="btn-primary" href="petloss-handout.html">
+                        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+                        기관 배포용 한 장 보기
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- [2026-09-06] 독서치료 축 신설. ⛔ 출처는 1차 문헌(Hynes & Hynes-Berry 1986/1994)이며
+             수강 중인 강의를 근거로 쓰지 않는다(전역지침 「남의 강의도 지형도다」 2026-09-01). -->
+        <section class="block">
+            <div class="wrap narrow">
+                <p class="eyebrow">METHOD</p>
+                <p class="pil-eyebrow">APPROACH</p>
+                <h2>
+                    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"
+                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                         style="vertical-align:-3px;margin-right:7px;color:var(--mint-dark)">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>이 자리는 어느 방법론 위에 서 있는가</h2>
+                <p class="lead">읽고 쓰는 자리에는 오래 쌓인 연구가 있습니다. 이 과정은 그 위에 서 있습니다.</p>
+
+                <p>
+                    글을 읽고 이야기를 나누며 마음을 돌보는 일에는 <b>독서치료(bibliotherapy)</b>라는 이름이 붙어 있습니다.
+                    1986년 아를린 하인스와 메리 하인스-베리는 그 과정을 <b>네 단계</b>로 정리했고,
+                    이 모형은 지금도 세계 여러 나라의 상담자·교육자·사서가 함께 쓰는 표준입니다.
+                </p>
+
+                <ul>
+                    <li><b>인식(recognition)</b> — 글의 어느 대목이 내 이야기처럼 읽히는 순간입니다.
+                        1주차에 <b>사진 한 장</b>으로 여는 이유가 여기 있습니다.</li>
+                    <li><b>고찰(examination)</b> — 그 느낌이 나에게 무슨 의미인지 들여다봅니다.
+                        2주차에 <b>냄새·소리·좋아하던 자리</b>처럼 아주 작은 것에 머무는 자리입니다.</li>
+                    <li><b>병치(juxtaposition)</b> — 예전의 인상과 새로 생긴 인상을 <b>나란히 놓고 견주어 봅니다.</b>
+                        3주차에 <b>그날에게 편지를 쓰는</b> 자리가 그렇습니다. 그때의 나와 지금의 나가 나란히 놓입니다.</li>
+                    <li><b>자기적용(self-application)</b> — 알게 된 것을 <b>내 삶으로 가져옵니다.</b>
+                        4주차에 <b>에세이 한 편</b>이 손에 남는 이유입니다.</li>
+                </ul>
+
+                <p>
+                    <b>4주 구성은 이 네 단계를 그대로 따라갑니다.</b>
+                    만남 → 추억 → 이별 → 기록이라는 이름만 다르게 붙였을 뿐입니다.
+                    김해율하도서관에서 전 회차 완주로 확인한 구성이기도 합니다.
+                </p>
+
+                <p>
+                    한국에서 독서치료를 세 갈래로 정리한 이영식(2006)의 분류를 빌리면,
+                    책을 골라 주는 <b>정보제공형</b>, 대화로 함께 읽는 <b>상호작용형</b>,
+                    그리고 <b>글이나 말로 직접 표현하게 하는 유형</b>이 있습니다.
+                    이 과정은 <b>세 번째 자리</b>에 있습니다. 읽는 데서 그치지 않고 <b>쓰게 하는 자리</b>입니다.
+                </p>
+
+                <p>
+                    다만 분명히 해 둘 것이 있습니다. <b>이 과정은 치료가 아닙니다.</b>
+                    학교·도서관·공동체에서 이루어지는 <b>발달적 독서치료</b>의 자리이고,
+                    의료기관에서 이루어지는 임상적 개입과는 다른 칸입니다.
+                    강사는 진행자이며, 상실은 병이 아니라 <b>누구나 지나가는 삶의 과정</b>이라는 전제 위에 있습니다.
+                </p>
+
+                <p style="font-size:0.88rem;color:#5b6066;line-height:1.7;">
+                    ※ 출처: Hynes, A. M. &amp; Hynes-Berry, M.(1986/1994),
+                    <i>Biblio/Poetry Therapy: The Interactive Process — A Handbook</i> ·
+                    이영식(2006), 『독서치료 어떻게 할 것인가』, 학지사 ·
+                    Stroebe, M. &amp; Schut, H.(1999),
+                    <i>The Dual Process Model of Coping with Bereavement</i>, Death Studies 23(3) ·
+                    Klass, D., Silverman, P. R. &amp; Nickman, S.(1996),
+                    <i>Continuing Bonds: New Understandings of Grief</i>.
+                    위 문헌은 반려동물 상실이 아니라 <b>독서치료·애도 연구 일반</b>을 다룬 것이며,
+                    회차 구성에 적용한 것은 저자의 해석입니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- 왜 이 강연인가 -->
+        <section class="block alt">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">WHY</p>
+                    <h2>왜 수의사가 이 자리를 여는가</h2>
+                    <p>먼저 밝힙니다. 저는 정신건강의학과 전문의도, 상담사도 아닙니다.
+                    치료를 약속하지 않고, 상담과 치료가 하는 일 곁에서 함께 쓰는 자리를 엽니다.
+                    깊은 우울이나 일상이 무너지는 상태라면 전문 상담·진료를 먼저 안내합니다.</p>
+                    <p>펫로스를 다루는 사람은 늘고 있습니다. 아래 다섯은 흔치 않습니다.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="ic"><i data-lucide="heart-handshake" aria-hidden="true"></i></div>
+                        <h3>같은 자리에 서 봤던 사람</h3>
+                        <p><b>열일곱 해를 함께한 고양이 솜이를 보냈습니다.</b>
+                        그래서 이 자리는 가르치러 여는 자리가 아닙니다.
+                        같은 자리에 서 봤던 사람으로 섭니다.
+                        지금 겪고 계신 그 마음을 저도 겪었고, 지금도 가끔 겪습니다.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="ic"><i data-lucide="stethoscope" aria-hidden="true"></i></div>
+                        <h3>마지막 순간에 함께 있었던 사람</h3>
+                        <p>펫로스를 책으로 배운 사람이 아닙니다. 20년 가까이 임상 수의사로 일하며
+                        <b>보호자들이 마지막 결정을 내리는 자리</b>에 함께 있었습니다.
+                        그 자리는 수의사만이 설 수 있는 자리입니다.<br>수강생 후기에 <b>“수의사님이셔서 더 얘기가 잘통하고”</b>라는 말이 남았습니다.</p>
+                        <p style="margin-top:.7rem">제 역할은 가르치는 것이 아니라 <b>안전한 자리를 만드는 것</b>입니다. 반려동물을 보낸 슬픔은 말할 자리가 없어서 더 오래 갑니다. 그래서 이 과정은 합평도 비평도 하지 않고, 낭독도 전원 자율입니다. 쓰기만 하고 가셔도 됩니다.<br>
+                        건국대학교 「독서치유론」(K-MOOC)을 이수했고(2026.10.26), 각당복지재단 애도상담전문가 기본교육을 수강 중이며, 펫로스를 다룬 책을 집필 중입니다.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="ic"><i data-lucide="pen-line" aria-hidden="true"></i></div>
+                        <h3>글쓰기로 풀어내는 진행자</h3>
+                        <p>다섯 권의 책을 냈고 여러 매체에 칼럼을 연재하는 현역 필자입니다.
+                        슬픔을 말로 설명하게 하지 않고 <b>짧은 글로 꺼내게</b> 합니다.
+                        글은 남고, 남은 글은 다음에 다시 꺼내 볼 수 있습니다.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="ic"><i data-lucide="sunrise" aria-hidden="true"></i></div>
+                        <h3>이 방법으로 먼저 지나온 사람</h3>
+                        <p>마흔 무렵 저에게도 <b>마음의 지진</b>이 있었습니다.
+                        번아웃으로 약 10년간 운영하던 동물병원을 정리했습니다.
+                        그 어두운 터널을 지나가게 한 것이 <b>읽기와 쓰기</b>였습니다.
+                        2022년 11월에 블로그를 시작했고 1년 만에 첫 책이 나왔습니다.<br><br><b>글쓰기가 사람을 치유한다는 것을 배워서 아는 것이 아니라 겪어서 압니다.</b>
+                        펫로스에 글쓰기를 붙인 것은 그 경험 때문입니다.<br><br>지금도 동물병원에서 일하며 쓰고 말합니다.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="ic"><i data-lucide="layers" aria-hidden="true"></i></div>
+                        <h3>90분이든 4주든 빈손으로 돌아가지 않게</h3>
+                        <p><b>90분 특강</b>은 오늘 밤 혼자 해볼 수 있는 방법을 손에 쥐어 드립니다.
+                        <b>4주 과정</b>은 회차마다 짧은 글이 쌓여 마지막에 <b>800~1,000자 에세이 한 편</b>이 남습니다.<br>목적은 같습니다. 펫로스로 다친 마음을 회복하는 것입니다. 길이와 형식만 다소 차이가 있을 뿐입니다.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="ic"><i data-lucide="book-open-check" aria-hidden="true"></i></div>
+                        <h3>현장 경험에 더해, 지금도 배웁니다</h3>
+                        <p>동물병원에서 마지막 순간을 지켜봐 온 스무 해 가까운 시간으로도 부족하다고 느꼈습니다.<br><br>그래서 <b>애도</b>와 <b>글쓰기 치유</b>를 따로 배우고 있습니다.<br><br>건국대학교 <b>「독서치유론」</b>(K-MOOC)을 <b>2026년 10월 26일</b>에 <b>이수</b>했고,<br>각당복지재단 <b>애도상담전문가 기본교육</b>을 <b>9월 7일부터 12월 11일까지</b> 듣습니다.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="ic"><i data-lucide="shield-check" aria-hidden="true"></i></div>
+                        <h3>실제로 완주시킨 과정</h3>
+                        <p>김해율하도서관 담당 사서의 제안으로 열린 성인 4주 과정을
+                        <b>전 회차 완주</b>했습니다. 무료 강좌는 중도 이탈이 흔합니다.
+                        진행 과정은 언론에도 보도됐고, 담당 사서에게서 다음에 또 함께하면 좋겠다는 말을 들었습니다.</p>
+                    </div>
+                </div>
+                <p style="margin:1.6rem 0 0;text-align:center;color:#5b6066;">펫로스 글과 반려동물 숏폼은 매일 <a href="vet-notes.html" style="font-weight:700;">수의사의 반려동물 노트</a>에 올립니다.</p>
+            </div>
+        </section>
+
+        <!-- 프로그램 개요 -->
+        <section class="block" id="curriculum">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">PROGRAM</p>
+                    <h2>펫로스 치유 글쓰기(펫러스) — 마음을 회복하는 4주</h2>
+                    <p><b>펫러스</b> : 펫로스 + 러브 + 쓰다<br>
+                    떠나보낸 마음을 사랑을 담아 쓴다는 뜻입니다.<br>
+                    <b>PETLUS</b> : PET Love US<br>
+                    영문으로는 그 아이가 우리를 사랑했다는 뜻입니다.</p>
+                    <p>90분 특강으로도, 여러 주 과정으로도 엽니다. 회차 수는 기관 일정에 맞춰 조정합니다.</p>
+                </div>
+
+                <div class="again-lead">
+                    4주 동안 <b>만남 → 추억 → 이별 → 기록</b>의 네 단계로 천천히 나아갑니다.
+                    울어도 괜찮은 자리입니다. 그리고 우리 아이의 이름과 작은 버릇과 가장 좋아하던 자리를 함께 떠올리며 짧게 써 보는 자리입니다.<br>
+                    <span class="again-quote">오래 아픈 것은 오래 사랑한 자리에서 옵니다. 다만 슬픔은 사랑을 재는 눈금이 아닙니다.</span><br>
+                    <span style="display:inline-block;margin-top:.9rem;font-size:0.98rem;opacity:.85;">
+                    울어도 된다, 오래 슬퍼해도 된다, 빨리 일상으로 돌아와도 된다 — 어느 쪽이든 <b>그 아이를 사랑하는 방식</b>입니다. 다른 사람의 슬픔과 견주지 않으셔도 됩니다.</span>
+                </div>
+
+                <!-- 4주 흐름도 — 「만남 → 추억 → 이별 → 기록」을 한눈에 (2026-09-04 신설) -->
+                <!-- ⛔ 2026-09-23 휴대폰에서는 가로 흐름도가 1·2주만 보여 옆으로 밀어야 했다 → 600px 이하에서는 세로 흐름으로 바꿔 보여 준다(내용 동일) -->
+                <style>
+                  .flow4-m{display:none}
+                  @media(max-width:600px){
+                    .flow4-d,.flow4-hint{display:none!important}
+                    .flow4-m{display:block;list-style:none;margin:0.4rem 0 2rem;padding:0}
+                    .flow4-m li{display:flex;align-items:center;gap:14px;padding:10px 0}
+                    .flow4-m .n{flex:0 0 46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+                      background:var(--mint-soft);border:2px solid var(--mint);color:var(--mint-dark);font-weight:700;font-size:0.95rem}
+                    .flow4-m li.last .n{background:var(--mint);border-color:var(--mint-dark);color:#fff}
+                    .flow4-m b{display:block;font-size:1.02rem;color:var(--ink)}
+                    .flow4-m span{display:block;font-size:0.9rem;color:var(--sub)}
+                    .flow4-m .step{padding:0 0 0 60px;font-size:0.82rem;color:var(--sub)}
+                  }
+                </style>
+                <ol class="flow4-m" aria-label="펫로스 치유 글쓰기 4주 흐름: 1주차 만남, 2주차 추억, 3주차 이별, 4주차 기록">
+                  <li><span class="n">1주</span><div><b>만남</b><span>너를 소개합니다</span></div></li>
+                  <li class="step" aria-hidden="true">↓ 떠올리기</li>
+                  <li><span class="n">2주</span><div><b>추억</b><span>너만의 작은 디테일</span></div></li>
+                  <li class="step" aria-hidden="true">↓ 머무르기</li>
+                  <li><span class="n">3주</span><div><b>이별</b><span>가벼이도, 무겁게도 아니게</span></div></li>
+                  <li class="step" aria-hidden="true">↓ 남기기</li>
+                  <li class="last"><span class="n">4주</span><div><b>기록</b><span>잊지 않는 다정한 방법</span></div></li>
+                </ol>
+                <p class="swipe-hint flow4-hint" aria-hidden="true">옆으로 밀어 보세요 →</p>
+                <div class="flow4-d" style="overflow-x:auto; margin:0.4rem 0 2rem;" role="group" aria-label="4주 흐름도 — 가로로 스크롤할 수 있습니다">
+                  <svg viewBox="0 0 900 150" role="img" aria-label="펫로스 치유 글쓰기 4주 흐름: 1주차 만남, 2주차 추억, 3주차 이별, 4주차 기록"
+                       style="width:100%; min-width:620px; height:auto; display:block;">
+                    <line x1="60" y1="60" x2="840" y2="60" stroke="var(--line)" stroke-width="2"/>
+                    <g font-family="inherit" text-anchor="middle">
+                      <g>
+                        <circle cx="105" cy="60" r="26" fill="var(--mint-soft)" stroke="var(--mint)" stroke-width="2"/>
+                        <text x="105" y="66" font-size="15" font-weight="700" fill="var(--mint-dark)">1주</text>
+                        <text x="105" y="112" font-size="17" font-weight="700" fill="var(--ink)">만남</text>
+                        <text x="105" y="134" font-size="13" fill="var(--sub)">너를 소개합니다</text>
+                      </g>
+                      <g>
+                        <circle cx="350" cy="60" r="26" fill="var(--mint-soft)" stroke="var(--mint)" stroke-width="2"/>
+                        <text x="350" y="66" font-size="15" font-weight="700" fill="var(--mint-dark)">2주</text>
+                        <text x="350" y="112" font-size="17" font-weight="700" fill="var(--ink)">추억</text>
+                        <text x="350" y="134" font-size="13" fill="var(--sub)">너만의 작은 디테일</text>
+                      </g>
+                      <g>
+                        <circle cx="595" cy="60" r="26" fill="var(--mint-soft)" stroke="var(--mint)" stroke-width="2"/>
+                        <text x="595" y="66" font-size="15" font-weight="700" fill="var(--mint-dark)">3주</text>
+                        <text x="595" y="112" font-size="17" font-weight="700" fill="var(--ink)">이별</text>
+                        <text x="595" y="134" font-size="13" fill="var(--sub)">가벼이도, 무겁게도 아니게</text>
+                      </g>
+                      <g>
+                        <circle cx="840" cy="60" r="26" fill="var(--mint)" stroke="var(--mint-dark)" stroke-width="2"/>
+                        <text x="840" y="66" font-size="15" font-weight="700" fill="#ffffff">4주</text>
+                        <text x="840" y="112" font-size="17" font-weight="700" fill="var(--ink)">기록</text>
+                        <text x="840" y="134" font-size="13" fill="var(--sub)">잊지 않는 다정한 방법</text>
+                      </g>
+                      <text x="227" y="42" font-size="13" fill="var(--sub)">떠올리기</text>
+                      <text x="472" y="42" font-size="13" fill="var(--sub)">머무르기</text>
+                      <text x="717" y="42" font-size="13" fill="var(--sub)">남기기</text>
+                    </g>
+                  </svg>
+                </div>
+
+                <div class="topic-grid">
+                    <div class="topic-card">
+                        <span class="tag">1주차</span>
+                        <h3>만남 — 너를 소개합니다</h3>
+                        <ul>
+                            <li>반려동물 사진으로 여는 첫 인사 · 4주 전체 흐름 안내</li>
+                            <li>짧은 글: <b>우리 아이의 가장 사랑스러운 한 컷</b> (약 300자)</li>
+                            <li>부담 없는 톤을 먼저 만듭니다 — 잘 쓰는 자리가 아닙니다</li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <span class="tag">2주차</span>
+                        <h3>추억 — 너만의 작은 디테일</h3>
+                        <ul>
+                            <li>냄새·소리·촉감·좋아하던 자리·버릇을 오감으로 떠올리기</li>
+                            <li>짧은 글: <b>「너의 ___」</b> 잊을 수 없는 사소한 디테일 하나 (약 500자)</li>
+                            <li>거창한 추억보다 <b>아주 작은 한 가지</b>에 머무릅니다</li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <span class="tag">3주차</span>
+                        <h3>이별 — 가벼이도, 무겁게도 아니게</h3>
+                        <ul>
+                            <li>수의사로서 진료 현장에서 본 이별 이야기 한 토막</li>
+                            <li>짧은 글(택1): 떠나보낸 너에게 쓰는 편지 / 미리 쓰는 한 줄 약속 / 자책을 벗는 한 줄</li>
+                            <li><b>사랑을 다한 사람에게 자책은 어울리지 않습니다</b></li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <span class="tag">4주차</span>
+                        <h3>기록 — 너를 잊지 않는 가장 다정한 방법</h3>
+                        <ul>
+                            <li>1~3주차 글을 엮어 <b>800~1,000자 에세이 한 편</b> 완성</li>
+                            <li>원하는 분만 자기 글 한 단락 낭독 · 액자에 한 줄 메시지</li>
+                            <li><b>관계는 끝나지 않는다</b> — 4주의 마무리</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="topic-grid" style="margin-top:1.1rem;">
+                    <div class="topic-card">
+                        <span class="tag">회당 진행</span>
+                        <h3>2시간 표준 구성</h3>
+                        <ul>
+                            <li>도입·체크인 15~20분 → 함께 읽을 짧은 발췌 10~15분</li>
+                            <li>추억 떠올리기 안내 10분 → <b>짧은 글쓰기 40~45분</b></li>
+                            <li>자율 낭독·나눔 30~35분 → 마무리 5~10분</li>
+                        </ul>
+                        <p class="note">발췌문·워크시트는 강사가 인쇄해 현장에서 제공합니다. 사전 읽기 과제가 없습니다.</p>
+                    </div>
+                    <div class="topic-card">
+                        <span class="tag">운영 원칙</span>
+                        <h3>지키는 것들</h3>
+                        <ul>
+                            <li>합평·비평이 아닌 <b>함께 듣기</b>만 · 낭독은 전원 자율</li>
+                            <li>울어도 괜찮고, <b>따뜻한 추억 나눔</b>도 함께</li>
+                            <li>상담·치료를 대신하지 않으며, 강사는 진행자(퍼실리테이터) 역할</li>
+                            <li>결석해도 따라올 수 있도록 회차별 안내문 별도 제공</li>
+                            <li>수강생이 쓴 글은 <b>본인의 것</b>입니다 · 1회차에 동의서를 돌리지 않습니다 — 마지막 회차에 연락처만 받고, 실을 글이 생기면 그때 따로 여쭙습니다</li>
+                        </ul>
+                        <p class="note">ㄷ자 또는 원형 좌석 배치를 권합니다. 12명 내외 소규모에서 가장 잘 작동합니다.</p>
+                    </div>
+                </div>
+
+                <div class="topic-grid" style="margin-top:1.1rem;">
+                    <div class="topic-card">
+                        <span class="tag">함께 읽는 글</span>
+                        <h3>작가가 고른 시와 문장</h3>
+                        <ul>
+                            <li>회차마다 <b>짧은 시나 산문 한 편</b>을 함께 읽고 시작합니다</li>
+                            <li>슬픔을 설명하는 글이 아니라, <b>슬픔 곁에 잠깐 앉아 보게 하는 글</b>을 고릅니다</li>
+                            <li>예: 류시화 「민들레」 (시집 『그대가 곁에 있어도 나는 그대가 그립다』)</li>
+                            <li><b>고르는 사람이 작가입니다</b> — 심리 기법이 아니라 읽고 쓰는 힘으로 고릅니다</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 진행 실적 -->
+        <section class="block alt">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">TRACK RECORD</p>
+                    <h2>실제로 진행한 자리</h2>
+                    <p>기획안이 아니라 이미 열렸고 끝난 과정입니다. <b>주제가 펫로스인 자리와, 반려동물을 다룬 다른 주제의 자리를 함께 싣습니다</b> — 각 카드에 그때의 강좌 제목을 그대로 적어 두었습니다.</p>
+                </div>
+
+                <div class="again-grid">
+                    <div class="again-card" style="border-color:var(--mint-dark);">
+                        <div class="again-num">연재</div>
+                        <h3>세계일보 「펫 상실학 개론」 — 이제 그 코너에 직접 씁니다</h3>
+                        <p>보도 이후 <b>세계일보가 원고를 청탁했습니다.</b> 코너를 만든 기자가 직접 연락해 왔고,
+                        2026년 9월 3일 <b>1회 「그날 진료실에 있던 또 한 사람」</b>이 게재됐습니다.<br>코너 소개문은 이렇게 시작합니다 — <b>「1500만 반려인의 가슴 아픈 사연을 소개하기 위해 세계일보가 만드는 코너」</b>.</p>
+                        <p style="margin-top:.7rem">1회의 논지는 하나입니다. <b>그 방에는 슬퍼하는 사람이 둘이었다.</b>
+                        그날 보호자 곁에서 수의사도 함께 마음 아파하고 있었습니다.<br><br>근거는 학술지 <b>Death Studies</b>에 실린 동물 돌봄 종사자 139명 연구입니다 —
+                        51.1%가 지난 한 달 우울하거나 희망이 없다고 느꼈고, 66.2%가 그 감정에 대처하기 어렵다고 답했습니다.<br>연구는 이것을 <b>박탈된 애도(disenfranchised grief)</b>라 부릅니다.<br><br><a href="https://www.segye.com/newsView/20260903510324" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">세계일보 1회 — 그날 진료실에 있던 또 한 사람</a></p>
+                    </div>
+                    <div class="again-card" style="border-color:var(--mint-dark);">
+                        <div class="again-num">보도</div>
+                        <h3>세계일보 「펫 상실학 개론」 — 요청하지 않았는데 실렸습니다</h3>
+                        <p>2026년 8월 30일, <b>세계일보</b>가 연재 코너 <b>「펫 상실학 개론」</b>에서 펫로스 케어의 여러 애도 방식을 짚으면서
+                        <b>김해율하도서관 「안녕, 나의 반려동물 — 추억과 이별을 쓰는 펫로스 치유 글쓰기」 4주 워크숍</b>을 소개했습니다.<br><br><b>저희가 자료를 보낸 것이 아닙니다.</b> 기사에 실린 포스터의 출처는 「김해율하도서관 제공」으로,
+                        <b>기자가 도서관에 직접 연락해 받은 자료</b>입니다.<br><br>추모 액자·천도재·AI 펫로스 케어와 나란히 놓인 네 가지 애도 방식 가운데 <b>실명이 나온 사람은 한 사람뿐</b>이었습니다.<br><br><a href="https://www.segye.com/newsView/20260828512568" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">기사 보기</a></p>
+                    </div>
+                    <div class="again-card" style="border-color:var(--mint-dark);">
+                        <div class="again-num">보도</div>
+                        <h3>한국강사신문 — 강좌가 열릴 때 가장 먼저 실렸습니다</h3>
+                        <p>2026년 7월, <b>한국강사신문</b>이 「박근필 작가, 김해율하도서관 '펫로스 치유 글쓰기' 4주 강좌 시작」으로
+                        보도했습니다. <b>강좌가 끝나기 전, 열리는 시점에 실린 기사</b>입니다.
+                        제목에 <b>「펫로스 치유 글쓰기」</b>가 그대로 들어갔습니다.
+                        <a href="https://www.lecturernews.com/news/articleView.html?idxno=206183" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">기사 보기</a></p>
+                    </div>
+                    <div class="again-card">
+                        <div class="again-num">4주</div>
+                        <h3>김해율하도서관 · 성인 과정 전 회차 완주</h3>
+                        <p>2026년 7월, 담당 사서의 제안으로 열린 성인 대상 4주 과정(회당 2시간).
+                        「안녕, 나의 반려동물 — 추억과 이별을 쓰는 펫로스 치유 글쓰기」.
+                        <b>4회 전 회차를 완주</b>했습니다.<br><br>1회차에는 휴지가 모자랄 만큼 우시던 분들이 회차가 지날수록 더 자주 웃으셨습니다.<br><br>강좌가 열릴 때 <b>한국강사신문</b>이 「박근필 작가, 김해율하도서관 '펫로스 치유 글쓰기' 4주 강좌 시작」으로
+                        먼저 보도했습니다.<br><br><a href="https://www.lecturernews.com/news/articleView.html?idxno=206183" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">기사 보기</a></p>
+                    </div>
+                    <div class="again-card">
+                        <div class="again-num">가족</div>
+                        <h3>당감도서관 · 가족 특강</h3>
+                        <p>2026년 6월 「강아지와 행복하게 산다는 것」.
+                        아이와 부모가 함께 듣는 가족 단위 단발 특강으로 진행했습니다.</p>
+                    </div>
+                    <div class="again-card">
+                        <div class="again-num">4주</div>
+                        <h3>부산진구 기적의 도서관 · 여름방학 과정</h3>
+                        <p>2025년 8월 「수의사가 들려주는 반려동물 이야기」 4주 과정.
+                        어린이 대상으로 반려동물과 사는 일을 다뤘습니다.</p>
+                    </div>
+                    <div class="again-card">
+                        <div class="again-num">완료</div>
+                        <h3>전북대학교 수의과대학 「반려동물 한마당」 — 펫로스 강연</h3>
+                        <p><b>「지금 함께하는 시간을 더 잘 사랑하는 법과 건강한 이별 준비」</b><br>
+                        <span style="color:var(--muted);">부제 · </span><b>펫로스 치유 글쓰기</b></p>
+                        <p>2026년 9월 19일(토) 16:00~17:00.
+                        전북대학교 수의과대학이 주최하는 행사로, <b>수의학도와 교수 등 학교 관계자부터
+                        반려인을 포함한 시민까지</b> 참여 대상이 넓습니다.<br>보호자만이 아니라 <b>그&nbsp;이별을 곁에서 지켜보는 사람들</b>에게 이야기하는 자리입니다.</p>
+                        <p style="font-size:0.98rem;">대한수의사회·전북특별자치도수의사회 등이 후원하는 행사로, 수의사 전문지
+                        <a href="https://www.dailyvet.co.kr/news/college/294005" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">데일리벳이 보도</a>했습니다.
+                        행사 뒤 <a href="https://www.dailyvet.co.kr/news/college/298148" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">현장 보도(2026.9.23)</a>에서는
+                        이날 <b>약 1,600명</b>이 참여했고, 펫로스 강연이 특강으로 소개됐습니다.</p>
+                        <p style="font-size:0.98rem;"><a href="https://youtu.be/qxMwZeOjdik" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">강연 영상 보기 →</a></p>
+                        <img src="jbnu-petfest-260919.png" alt="전북대학교 수의과대학 반려동물 한마당 강연 강사진 포스터 — 윤홍준 수의사 「고양이와 오래 함께하는 방법」, 박근필 수의사 「지금 함께하는 시간을 더 잘 사랑하는 법과 건강한 이별 준비(펫로스 치유 글쓰기)」" loading="lazy" style="display:block;width:100%;max-width:240px;margin:.9rem auto 0;border-radius:14px;border:1px solid var(--line);">
+                    </div>
+                    <div class="again-card">
+                        <div class="again-num">영상</div>
+                        <h3>온담커뮤니케이션 온토리TV — 펫로스 주제 촬영</h3>
+                        <p>기업기관 교육플랫폼 <b>온담커뮤니케이션</b>의 <b>온토리TV</b>에서 펫로스를 주제로 한 영상을 <b>촬영했습니다</b>(2026년 8월 24일, 판교 스튜디오).
+                        도서관에서 4주에 걸쳐 나눈 이야기를 <b>영상으로도 남기는 자리</b>였습니다. <b>2026년 9월 15일 공개됐습니다</b> — 「반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디」 <a href="https://www.youtube.com/watch?v=7NgkYHHt47c" target="_blank" rel="noopener">영상 보기 →</a></p>
+                    </div>
+                </div>
+
+
+                <p class="rv-note" style="margin-top:1.2rem;">
+                    ※ 이 밖에도 여러 매체에 펫로스 칼럼을 써 왔습니다.
+                </p>
+                <ul class="rv-note" style="margin:.4rem 0 0 1.1rem;padding:0;line-height:1.8;">
+                    <li>데일리벳 <a href="https://www.dailyvet.co.kr/news/practice/companion-animal/300124" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">「보호자가 다시 들고 오는 세 문장」</a>(2026.10.12)</li>
+                    <li>데일리벳 <a href="https://www.dailyvet.co.kr/news/practice/companion-animal/298177" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">「'지금인가요'의 물음을 바꾸는 법, 안락사 결정 앞에서」</a>(2026.9.23)</li>
+                    <li>데일리벳 「펫로스 앞에서 수의사가 할 수 있는 것 — 관계는 끝나지 않는다」</li>
+                    <li>뉴스프리존 「충분히 슬퍼해도 된다 — '펫로스'를 겪은 당신에게」</li>
+                    <li>경인열린신문 「펫로스를 대하는 자세 — 잘 떠나보내기, 그리고 다시 사랑하기」</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 후기 -->
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">REVIEWS</p>
+                    <h2>수강생과 담당자가 남긴 말</h2>
+                    <p>김해율하도서관 4주 과정을 마친 뒤 도서관 설문으로 받은 실제 응답입니다.</p>
+                </div>
+
+                <div class="rv-grid">
+                    <blockquote class="rv-card">
+                        <p>“너무 좋았습니다. 처음엔 많이 울었는데 쓰다보니 행복한 기억들이 쓰나미처럼 밀려와서 행복했었습니다.
+                        4회차 동안 진행해주신 작가님께 감사드리고 이런 소중한 프로그램을만들어주신 사서님께도 감사합니다.”</p>
+                    </blockquote>
+                    <blockquote class="rv-card">
+                        <p>“강아지에 대해 얘기나눌 시간이 없는데 내가 유별나지않다는 걸 알게되고, 진짜 힐링되는 시간이었어요.
+                        <b>수의사님이셔서 더 얘기가 잘통하고</b> 수업오는시간이 기다려졌어요. 뜨거운여름날 이겨내고 오고싶은 수업이었어요. 행복했어요!”</p>
+                    </blockquote>
+                    <blockquote class="rv-card">
+                        <p>“마침 평일에 시간이 있어서 신청하게 되었는데 <b>장기적으로 했으면 하는 마음이 들 만큼</b> 좋은 시간이었습니다.
+                        나중에 또 이런 비슷한 강좌가 생기면 신청하고 싶습니다. 여러모로 따뜻한 시간이 되었던 것 같습니다. 감사합니다^_^”</p>
+                    </blockquote>
+                    <blockquote class="rv-card">
+                        <p>“참 좋았어요! 애완견주로서 다정한 생각을 정리할 수 있게돼 자기정화를 가질 수 있는 시간이었습니다.”</p>
+                    </blockquote>
+                    <blockquote class="rv-card">
+                        <p>“힐링되고, 즐거운 시간이었어요.”</p>
+                    </blockquote>
+                </div>
+
+                <blockquote class="host-card" style="margin-top:1.4rem;">
+                    <p>“정말 많이 애써주셨습니다.^^ 소장님 덕분에 <b>따뜻한 분위기로 참가자분들께 의미있는 시간</b> 드릴 수 있었어요.
+                    항상 하시는 일 잘 되시고 다음에 또 다른 기회로 함께 수업 진행하면 좋겠습니다~ 건강하세요!^^”</p>
+                    <cite>김해율하도서관 · 담당 사서 (펫로스 치유 글쓰기 4주)</cite>
+                </blockquote>
+
+                <p class="rv-note">※ 표기는 원문 그대로 두었습니다. 개인 실명은 밝히지 않았습니다.</p>
+            </div>
+        </section>
+
+        <!-- 미니 강의 후기 (2026-11-10 추가: 펫로스 치유 글쓰기 미니 강의 11월 9일, 큐리어스 후기 + 구글폼) -->
+        <section class="block alt">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">MINI CLASS</p>
+                    <h2>펫로스 치유 글쓰기(펫러스) 미니 강의 후기</h2>
+                    <p>2026년 11월 9일 온라인 미니 강의를 마친 뒤 수강생이 큐리어스 후기와 구글폼으로 남긴 말입니다.</p>
+                </div>
+                <div class="rv-grid">
+                    <blockquote class="rv-card"><p>“펫로스의 심각성을 알고 <b>나 혼자 그러는 게 아니라는 작가님의 말씀에 큰 위로</b>를 받았어요. 애도의 농도는 시간과 반비례하지 않아요. 이런 시간이 주는 위로 좋았어요.”</p><p style="margin-top:.6rem;font-size:.9em;opacity:.85;">리더 박근필 답글 · “도움이 되셨다니 보람을 느끼네요. 고맙습니다.”</p></blockquote>
+                    <blockquote class="rv-card"><p>“위로가 되는 강의였습니다. 전문가의 손길로 이해를 함께 해보니 남다른 생각의 전환도 있었고 <b>글쓰기로 풀어갈 수 있다는 것</b>을 알게 되었습니다.”</p></blockquote>
+                    <blockquote class="rv-card"><p>“생각지 못한 귀한 경험을 했습니다. (…) <b>아이한테 편지를 쓸 생각 못했는데</b> 오늘 너무너무 감사하고 귀한 시간이었어요.”</p></blockquote>
+                    <blockquote class="rv-card"><p>“둘째 냥이를 갑자기 떠나보낸 지 3년이 다 되어 가지만 (…) 이런 시간을 더 가져보고 싶어서 추가 수업도 신청하게 되었습니다. <b>펫로스로 아픈 마음을 털어놓을 곳이 없는 분들께 추천합니다.</b>”</p></blockquote>
+                    <blockquote class="rv-card"><p>“요즘은 반려동물이 중요해서 이런 시간이 필요한 것 같습니다.”</p></blockquote>
+                    <blockquote class="rv-card"><p>“글을 쓰면 마음이 더 복잡해질 것 같았는데 <b>오히려 편안해졌습니다.</b>”</p></blockquote>
+                    <blockquote class="rv-card"><p>“오랜만에 깊이 있게 떠나간 아이를 생각하고 편지글을 썼네요. (…) <b>미안하고 고맙다는 말을 할 수 있는 기회</b>를 갖게 해 주셔서 감사합니다. 같은 마음을 나눌 수 있는 귀중한 시간이었습니다.”</p></blockquote>
+                </div>
+                <p class="rv-note">※ 큐리어스 후기와 구글폼 응답을 옮긴 것이며, 줄임은 (…)로 표시했습니다. 개인 실명은 밝히지 않았습니다.</p>
+            </div>
+        </section>
+
+
+        <!-- 재신청 이유 (2026-11-11 추가: 미니 강의 후 3주 강의를 다시 신청한 분들이 신청서에 적은 이유) -->
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">WHY AGAIN</p>
+                    <h2>미니 강의 뒤 3주 강의를 신청하신 이유</h2>
+                    <p>미니 강의를 들은 뒤 3주 과정을 신청하신 분들이 큐리어스 신청서에 적어 주신 말입니다.</p>
+                </div>
+                <div class="rv-grid">
+                    <blockquote class="rv-card"><p>“첫 회에 참여해 보고, <b>정기적으로 힐링과 소통</b>을 해 보고자 신청합니다.”</p></blockquote>
+                    <blockquote class="rv-card"><p>“아이를 천국으로 보낸 이후부터 생긴 <b>자책과 원망, 분노에서 자유하고 싶습니다.</b>”</p></blockquote>
+                    <blockquote class="rv-card"><p>“무료 강의를 듣고 <b>더 해 보고 싶어서</b> 신청했습니다.”</p></blockquote>
+                    <blockquote class="rv-card"><p>“<b>그동안 못 했던 이야기</b>를 충분히 해 보고 싶어요.”</p></blockquote>
+                </div>
+                <p class="rv-note">※ 큐리어스 신청서의 답변을 옮긴 것이며, 맞춤법만 다듬었습니다. 개인 실명은 밝히지 않았습니다.</p>
+            </div>
+        </section>
+
+
+        <!-- 진행 안내 -->
+        <section class="block alt">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">PROCESS</p>
+                    <h2>이렇게 진행합니다</h2>
+                    <p>90분 한 번으로도, 여러 주 과정으로도 엽니다. 목적에 맞는 쪽을 고르시면 됩니다.</p>
+                </div>
+
+                <div class="topic-grid">
+                    <div class="topic-card">
+                        <span class="tag">단발 특강</span>
+                        <h3>90분 한 번으로</h3>
+                        <ul>
+                            <li>동물병원에서 본 마지막 순간 이야기 + <b>오늘 밤 혼자 해볼 수 있는 방법</b></li>
+                            <li>이미 보내신 분도, <b>아직 곁에 아이가 있는 분</b>도 함께 들을 수 있게</li>
+                            <li>도서관·기관 시민 강좌, 기업 임직원, 가족 단위(아이+부모)</li>
+                            <li>60~120분으로 조절하거나 글쓰기 없이 <b>이야기 중심</b>으로도 가능</li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <span class="tag">연속 과정</span>
+                        <h3>4주 · 6주</h3>
+                        <ul>
+                            <li>4주 = 만남 → 추억 → 이별 → 기록 (검증된 표준 구성)</li>
+                            <li>6주 = 각 단계를 넓히고 <b>합평 없는 낭독 회차</b>를 추가</li>
+                            <li>회차마다 산출물이 남아 중도 이탈이 적습니다</li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <span class="tag">기업 · 단체</span>
+                        <h3>반려동물 관련 조직</h3>
+                        <ul>
+                            <li>동물병원·펫 산업 종사자 대상 — <b>보호자를 대하는 말</b></li>
+                            <li>임직원 복지 프로그램 · 고객 대상 브랜드 강연</li>
+                            <li>수의사이자 작가라는 위치에서만 가능한 구성</li>
+                        </ul>
+                    </div>
+                    <div class="topic-card">
+                        <span class="tag">준비물</span>
+                        <h3>기관에서 준비해 주실 것</h3>
+                        <ul>
+                            <li>책상·필기구·메모지, 명찰, 참가자 반려동물 사진</li>
+                            <li>화이트보드 또는 플립차트(있으면 활용)</li>
+                            <li>발췌문 인쇄본과 워크시트는 <b>강사가 준비</b>합니다</li>
+                        </ul>
+                        <p class="note">강연료는 기관 기준과 규모·횟수에 따라 협의합니다. 편하게 문의해 주세요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 이런 분께 권합니다 (MZ-7 · 2026-08-28) -->
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">FOR WHOM</p>
+                    <h2>이런 분께 권합니다</h2>
+                    <p>고르시기 편하도록, 어떤 자리에 맞는지 적어 두었습니다.</p>
+                </div>
+                <ul style="margin:0 0 1.1rem;padding-left:1.15rem;line-height:1.85;">
+                        <li>반려동물을 떠나보낸 분들이 <b>마음 둘 자리</b>를 찾고 계신 도서관·기관</li>
+                        <li>아직 곁에 아이가 있고 <b>그날을 준비하고 싶은</b> 보호자가 모이는 자리</li>
+                        <li>동물병원·펫 산업 종사자처럼 <b>남의 이별을 곁에서 보는</b> 분들</li>
+                </ul>
+                <p style="margin:0;padding:0.9rem 1.1rem;background:#f7f9f9;border-radius:14px;line-height:1.75;">
+                    다만 지금 <b>치료가 필요한 상태</b>라면, 이 자리보다 전문가를 먼저 만나시는 편이 낫습니다. 이 과정은 치료를 대신하지 않고, 그 곁에서 <b>슬퍼해도 되는 자리</b>를 만드는 일입니다.
+                </p>
+            </div>
+        </section>
+
+
+
+        <!-- 자주 묻는 질문 -->
+        <section class="block alt" id="faq">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">FAQ</p>
+                    <h2>자주 묻는 질문</h2>
+                    <p>담당자분들이 실제로 가장 많이 물어보신 것들입니다.</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>펫로스 증후군(펫로스 신드롬)이란 무엇인가요?</h3>
+                        <p>반려동물의 죽음·실종·안락사 뒤에 겪는 깊은 슬픔, 그리움, 죄책감, 우울·불안 등으로 일상이 오래 흔들리는 상태를 말합니다. 공식 정신질환 진단명은 아니고, 반려동물과 사별한 뒤의 애도 반응을 설명하려고 널리 쓰는 표현입니다. 흔히 겪는 모습과 도움이 되는 방법, 전문가의 도움이 필요한 신호는 <a href="#petloss-syndrome">펫로스 증후군(펫로스 신드롬)이란 무엇인가</a>에 정리해 두었습니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>펫로스 증후군(펫로스 신드롬)과 지속성 애도 장애(PGD)는 어떻게 다른가요?</h3>
+                        <p>펫로스 증후군(펫로스 신드롬)은 반려동물을 떠나보낸 뒤의 슬픔·죄책감·불면·불안·우울 같은 반응을 넓게 부르는 말이고, 공식 진단명이 아닙니다.</p>
+                        <p style="margin-top:.7rem">지속성 애도 장애는 DSM-5-TR과 ICD-11에 올라 있는 진단으로, 강한 그리움과 고통이 오래(DSM-5-TR 성인 12개월 이상, ICD-11 최소 6개월 이상) 이어지며 일상이 뚜렷이 무너질 때 검토합니다. 다만 현재 기준은 가까운 사람을 잃은 경우로 정해져 있어, 반려동물 사별에 곧바로 적용하기는 어렵습니다.</p>
+                        <p style="margin-top:.7rem">연구에서는 반려동물 사별 뒤에도 사람을 잃었을 때와 같은 구조의 애도 증상이 나타날 수 있다는 결과가 쌓이고 있습니다. 자세한 비교는 <a href="#petloss-syndrome">펫로스 증후군(펫로스 신드롬)이란 무엇인가</a>에 있습니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>펫로스를 겪은 가족이나 친구에게 뭐라고 말해야 하나요?</h3>
+                        <p>먼저 <b>하지 말아야 할 말</b>을 아는 편이 도움이 됩니다. 「또 키우면 되지」, 「그 정도로 뭘 그래」, 「그 아이도 네가 슬퍼하는 걸 원치 않을 거야, 빨리 털고 일어나」 같은 말입니다. 나쁜 마음으로 하는 분은 없지만, 듣는 사람은 「내가 지금 과하구나」 하고 슬픔을 거둬들이게 됩니다. <b>말은 하는 사람이 아니라 듣는 사람이 기준입니다.</b> 할 말이 떠오르지 않으면 침묵이 낫습니다. 그래도 한마디를 건네고 싶다면 「나 네 곁에 있어. 힘들면 언제든 불러. 들어줄게.」면 충분합니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>안락사를 선택한 것이 아이를 포기한 걸까요?</h3>
+                        <p>아닙니다. 안락사는 보호자가 원한다고 되는 것이 아닙니다. 기준은 병원마다 다르지만, 적어도 제가 일해 온 병원들에서는 <b>담당 수의사가 아이의 상태를 보고 함께 판단</b>했습니다. 그러니 「나만 편하자고 한 건 아닐까」, 「너무 서두른 건 아닐까」 하는 의심은 내려놓으셔도 됩니다. 그 결정은 보호자 혼자 내린 것이 아닙니다. 어떤 이유로 내린 결정이든, 아이의 고통을 덜어 주려는 마음에서 나온 결정입니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>펫로스 강연은 몇 회 과정이 적당한가요?</h3>
+                        <p>두 가지가 있고, 목적이 다릅니다. <b>단발 특강</b>(60~120분)은 처음 만나는 자리로, 동물병원에서 본 마지막 순간 이야기와 오늘 밤 혼자 해볼 수 있는 글쓰기 방법을 함께 드립니다. <b>연속 과정</b>(4~6주)은 만남 → 추억 → 이별 → 기록의 네 단계로 함께 쓰고 나누는 자리이며, 김해율하도서관에서 전 회차 완주로 검증됐습니다. 6주로 넓히거나 60~120분으로 조절할 수 있습니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>단발 특강 한 번만 열어도 괜찮을까요?</h3>
+                        <p>괜찮습니다. 오히려 처음 여는 기관에는 단발 특강을 권합니다. 당감도서관에서는 주제는 다르지만 아이와 부모가 함께 듣는 가족 단위 단발 특강으로 진행했습니다. 특강은 한 번으로 끝나도 손에 남는 것이 있도록 설계돼 있고, 반응을 보시고 나서 과정으로 넓히셔도 됩니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>몇 명 규모가 적당한가요?</h3>
+                        <p>12명 내외 소규모에서 가장 잘 작동합니다. ㄷ자 또는 원형 좌석 배치를 권합니다. 서로의 이야기가 들리는 거리여야 나눔이 열립니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>심리 상담 프로그램인가요?</h3>
+                        <p>상담이나 치료를 대신하는 프로그램이 아니라, 그 곁에서 함께 쓰는 글쓰기 워크숍이며, 강사는 진행자(퍼실리테이터) 역할을 합니다. 전문적인 도움이 필요한 분께는 상담과 치료를 먼저 권합니다. 펫로스는 사회적으로 인정받지 못해 <b>놓을 자리가 없는 슬픔</b>이기도 합니다(케네스 도카). 이 과정은 그 슬픔을 <b>함께 들어 주는 자리</b>입니다. 합평이나 비평 없이 함께 듣기만 하고, 낭독도 전원 자율입니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>왜 수의사가 펫로스 강연을 하나요?</h3>
+                        <p>제 역할은 가르치는 것이 아니라 <b>안전한 자리를 만드는 것</b>입니다. 반려동물을 보낸 슬픔은 말할 자리가 없어서 더 오래 갑니다. 그래서 이 과정은 합평도 비평도 하지 않고, 낭독도 전원 자율입니다. 쓰기만 하고 가셔도 됩니다. 건국대학교 「독서치유론」(K-MOOC)을 이수했고(2026.10.26), 각당복지재단 애도상담전문가 기본교육을 수강 중이며, 펫로스를 다룬 책을 집필 중입니다.</p>
+                        <p>스무 해 가까이 임상 수의사로 일하며 보호자들이 마지막 결정을 내리는 자리에 함께 있었기 때문입니다. 펫로스를 책으로 배운 사람이 아니라 그 현장에 있었던 사람입니다. 그 자리는 수의사만이 설 수 있는 자리입니다.<br><br>또 하나가 있습니다. <b>제가 글쓰기로 먼저 지나온 사람</b>이라는 것입니다. 마흔 무렵 <b>마음의 지진</b>이 있었고, 번아웃으로 약 10년간 운영하던 동물병원을 정리했습니다. 그 시기를 지나가게 한 것이 읽기와 쓰기였습니다. <b>글쓰기가 사람을 치유한다는 것을 배워서 아는 것이 아니라 겪어서 압니다.</b> 펫로스에 글쓰기를 붙인 것은 그 경험 때문이고, 실제로 해 보니 김해율하도서관 4주 과정이 전 회차 완주로 이어졌습니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>참가자가 사전에 준비할 것이 있나요?</h3>
+                        <p>사전 읽기 과제가 없습니다. 발췌문과 워크시트는 강사가 인쇄해 현장에서 제공합니다. 참가자는 반려동물 사진 한 장만 준비하시면 됩니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>반려동물을 떠나보낸 사람들끼리 이야기를 나눌 곳이 있나요?</h3>
+                        <p><a href="petlus-shelter.html">펫러스(PETLUS) 쉼터</a>가 있습니다. 이름 없이 내 아이에게 편지를 남기고, 먼저 지나온 분들의 글에 댓글로 마음을 나눌 수 있습니다. 무료이고 가입하지 않아도 됩니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>강연료는 어떻게 되나요?</h3>
+                        <p>기관 기준과 규모·횟수에 따라 협의합니다. 예산 범위를 알려주시면 그에 맞는 구성으로 제안해 드립니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">BOOKING</p>
+                    <h2>펫로스 강연을 검토 중이시라면</h2>
+                    <p>대상과 인원, 가능한 횟수만 알려 주시면 구성안을 먼저 제안해 드립니다.</p>
+                </div>
+                <div class="again-lead">
+                    “우리 기관에 이런 프로그램이 맞을까요?” 같은 질문도 괜찮습니다.
+                    확정된 일정이 없어도, 검토 단계에서 편하게 물어봐 주세요.<br>
+                    <span class="again-quote">몸이 곁을 떠나도, 그 아이와 함께 산 시간과 그 안에서 맺은 관계까지 사라지는 것은 아닙니다.<br>참가자들이 스스로 쓴 글로 그것을 확인하는 자리를 만듭니다.</span>
+                </div>
+                <div class="hero-cta">
+                    <a class="btn-primary" href="contact.html"><i data-lucide="send" aria-hidden="true"></i>섭외 문의하기</a>
+                    <a class="btn-ghost" href="park-geunpil-petloss-brief.pdf" download="박근필_펫로스_강연소개서.pdf"><i data-lucide="file-down" aria-hidden="true"></i>펫로스 소개서 PDF</a>
+                    <a class="btn-ghost" href="author.html"><i data-lucide="user" aria-hidden="true"></i>소장 이력 보기</a>
+                    <a class="btn-ghost" href="lecture.html"><i data-lucide="presentation" aria-hidden="true"></i>전체 강연 안내</a>
+                </div>
+            </div>
+        </section>
+<!-- [GIVE:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json · 도구/pil_공통구간_build.py -->
+    <section class="give-band" aria-labelledby="giveTitle">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">WHAT COMES WITH IT</p>
+          <h2 id="giveTitle">강연 하나에 함께 가는 것들</h2>
+          <p>강연은 그날 90분으로 끝나지 않습니다. 준비와 그 뒤에 남는 것까지 함께 만들어 드립니다.</p>
+        </div>
+        <div class="give-grid">
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v4H4z"/><path d="M4 12h10"/><path d="M4 17h7"/></svg>
+        <b>구성안을 먼저 보내 드립니다</b>
+        <span>학년과 인원, 가능한 시간만 알려 주시면 그 자리에 맞춘 구성안을 미리 만들어 보내 드립니다. 확정 전 검토 단계에서도 됩니다.</span>
+      </div>
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 14h6"/></svg>
+        <b>요청하시면 진행 자료도 만들어 드립니다</b>
+        <span>사회자용 질문지나 사전 안내문처럼 진행에 필요한 것이 있으면 말씀해 주세요. 필요하다고 하신 자리에 한해 함께 만들어 드립니다.</span>
+      </div>
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <b>요청하시면 앞서 읽을 책을 골라 드립니다</b>
+        <span>연수나 북콘서트 전에 읽어 두시면 좋을 책이 필요하시면 말씀해 주세요. 그 자리의 주제에 맞춰 추천해 드립니다.</span>
+      </div>
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+        <b>보호자에게 드릴 A4 한 장</b>
+        <span>강연을 열지 않는 날에도 기관이 그대로 인쇄해 보호자에게 드릴 수 있는 한 장입니다.</span>
+        <a class="give-link" href="petloss-handout.html">기관 배포용 한 장 보기 →</a>
+      </div>
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+        <b>강연 뒤에도 열려 있는 자리</b>
+        <span>그날 다 쓰지 못한 분이 집에서 이어 쓸 수 있는 온라인 페이지입니다. 강연이 끝나도 남습니다.</span>
+        <a class="give-link" href="petloss-write.html">온라인으로 쓰는 자리 보기 →</a>
+      </div>
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+        <b>자료실</b>
+        <span>보호자에게 드릴 기록장과 배포용 한 장을 한곳에 모아 두었습니다. 기관에서 그대로 인쇄해 쓰셔도 됩니다.</span>
+        <a class="give-link" href="resources.html">자료실 보기 →</a>
+      </div>
+        </div>
+      </div>
+    </section>
+<!-- [/GIVE:AUTO] -->
+</main>
+
+
+    
+    <!-- [2026-08-26] 강연 사진 그리드 (온담 벤치마킹) — 이 페이지는 사진이 0장이었다 -->
+    <section class="ph-band">
+      <div class="ph-inner">
+        <div class="ph-head"><b>이 자리는 이렇게 생겼습니다</b><span>합평도 비평도 없습니다. 함께 읽고 짧게 쓰고 천천히 나눕니다.</span></div>
+        <div class="ph-grid">
+          <figure class="ph-cell"><img src="photo-petloss.jpg" alt="김해율하도서관 성인 4주 과정 — 회당 2시간" loading="lazy"><figcaption>김해율하도서관 성인 4주 과정 — 회당 2시간</figcaption></figure>
+          <figure class="ph-cell"><img src="photo-workshop.jpg" alt="ㄷ자 또는 원형 배치 — 12명 내외 소규모" loading="lazy"><figcaption>ㄷ자 또는 원형 배치 — 12명 내외 소규모</figcaption></figure>
+          <figure class="ph-cell"><img src="photo-class4.jpg" alt="마지막 회차 — 800~1,000자 에세이 한 편" loading="lazy"><figcaption>마지막 회차 — 800~1,000자 에세이 한 편</figcaption></figure>
+        </div>
+      </div>
+    </section>
+<footer role="contentinfo">
+        <div class="footer-sns">
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+            <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024–2026 박근필성장연구소 by 박근필. All rights reserved.<br>박근필성장연구소 대표 박근필 · 사업자등록번호 262-95-02242 · <a href="privacy.html" style="color:inherit;text-decoration:underline">개인정보처리방침</a> · <a href="resources.html" style="color:inherit;text-decoration:underline">자료실</a><br>읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+
+        /* ── 강연 현장 사진 ─────────────────────────────
+           사진은 위 HTML에 직접 넣어 두었습니다(검색엔진 노출을 위해).
+           · 사진 추가: ph-grid 안에 .ph-item 블록을 복사해 파일명·캡션만 바꾸면 됩니다.
+           · 파일이 없으면 그 칸은 자동으로 사라지고, 한 장도 없으면 섹션 전체가 숨겨집니다. */
+        (function () {
+            var box = document.getElementById('lecturePhotos');
+            var sec = document.getElementById('photos');
+            if (!box || !sec) return;
+            var items = box.querySelectorAll('.ph-item');
+            var left = items.length;
+            if (!left) { sec.style.display = 'none'; return; }
+            items.forEach(function (it) {
+                var img = it.querySelector('img');
+                if (!img) return;
+                img.addEventListener('error', function () {
+                    it.remove();
+                    if (!box.querySelectorAll('.ph-item').length) sec.style.display = 'none';
+                });
+            });
+        })();
+
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+    </script>
+
+<!-- [2026-08-26] 고정 퀵바 (온담 OD-8) — 하단 CTA 밴드에 닿지 못한 방문자를 잡는다 -->
+<nav class="pil-quick" aria-label="바로가기">
+  <a class="hi" href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>강연 섭외</a>
+  <a href="videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 8 6 4-6 4Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg>강연 영상</a>
+  <a href="columns.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2Z"/><path d="M17 8h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2"/><path d="M8 8h5M8 12h5"/></svg>칼럼 보기</a>
+</nav>
+<!-- [QUICKBAR:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json -->
+<div class="pil-quickbar" id="pilQuickbar" role="complementary" aria-label="강연 섭외 문의">
+  <span class="pq-txt">강연 섭외와 일정 문의는 언제든 편하게 주세요</span>
+  <span class="pq-btns">
+    <a class="pq-sub" href="author.html">실적 · 이력 보기</a>
+    <a class="pq-main" href="contact.html">섭외 문의</a>
+  </span>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById("pilQuickbar"); if(!bar) return;
+  /* ⭐ 페이지 끝 CTA 밴드가 보이면 바를 숨긴다 — 같은 말을 두 번 하지 않는다 */
+  var band=document.querySelector(".pil-cta-band"), bandSeen=false;
+  if(band&&"IntersectionObserver" in window){
+    new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
+      .observe(band);
+  }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
+  function paint(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
+    bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
+    /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
+       ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
+    document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
+  }
+  window.addEventListener("scroll",paint,{passive:true});
+  window.addEventListener("resize",paint); paint();
+})();
+</script>
+<!-- [/QUICKBAR:AUTO] -->
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
+<script>
+/* [SEARCH:AUTO] 사이트 내 검색 */
+var __ssIndex=null,__ssLoading=false;
+function openSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.add('on'); document.body.style.overflow='hidden';
+  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
+  loadSiteIndex();
+}
+function closeSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.remove('on'); document.body.style.overflow='';
+}
+function loadSiteIndex(){
+  if(__ssIndex||__ssLoading)return; __ssLoading=true;
+  fetch('search-index.json').then(function(r){return r.json();})
+    .then(function(d){__ssIndex=d;__ssLoading=false;
+      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
+    .catch(function(){__ssLoading=false;
+      var b=document.getElementById('siteSearchResults');
+      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
+}
+function quickSiteSearch(w){
+  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
+}
+function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function __ssSnippet(text,q){
+  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
+  if(i<0)return '';
+  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
+  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
+}
+function runSiteSearch(q){
+  var box=document.getElementById('siteSearchResults'); if(!box)return;
+  q=(q||'').trim();
+  if(q.length<2){box.innerHTML='';return;}
+  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
+  var lq=q.toLowerCase(),out=[];
+  __ssIndex.forEach(function(d){
+    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
+    var n=hay.split(lq).length-1;
+    if(n>0){
+      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      out.push({d:d,sc:sc});
+    }
+  });
+  if(!out.length){
+    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
+  out.sort(function(a,b){return b.sc-a.sc;});
+  box.innerHTML=out.slice(0,40).map(function(o){
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
+      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
+      +'<div class="ssr-s">'+sn+'</div></a>';
+  }).join('');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var i=document.getElementById('siteSearchInput');
+  if(i){
+    var tm=null;
+    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
+  }
+  var l=document.getElementById('siteSearchLayer');
+  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeSiteSearch();
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
+  });
+});
+/* [/SEARCH:AUTO] */
+</script>
+</body>
+</html>

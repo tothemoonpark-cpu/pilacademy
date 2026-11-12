@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박근필 저서 5권 — 수의사 작가의 책 | 박근필성장연구소</title>
+    <meta name="description" content="박근필 저서 5권 소개. 베스트셀러 『마흔 더 늦기 전에 생각의 틀을 리셋하라』, 『당신의 원고는 왜 계약되지 않는가』 등. 북토크·저자 강연 섭외 가능.">
+    <link rel="alternate" type="text/plain" href="llms.txt" title="박근필성장연구소 — AI 답변엔진용 요약본(llms.txt)">
+    <meta name="keywords" content="박근필, 저서, 베스트셀러, 마흔 생각의 틀을 리셋하라, 당신의 원고는 왜 계약되지 않는가, 북토크, 저자 강연, 작가 초청">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/books.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --ink: #16181d; --sub: #5b6066; --muted: #8a9099;
+            --line: #ececec; --panel: #f7f8f9; --page: #ffffff;
+        }
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7; color: var(--ink); background: var(--page); -webkit-font-smoothing: antialiased;
+        }
+        a { text-decoration: none; color: inherit; }
+
+        header { background: rgba(255,255,255,0.85); backdrop-filter: saturate(180%) blur(10px); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1080px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.5rem; }
+        .logo { display: flex; align-items: center; gap: 0.45rem; font-size:1.25rem; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; white-space: nowrap; }
+        .logo svg { width: 22px; height: 22px; }
+        .nav-links { display: flex; gap: 1.35rem; list-style: none; align-items: center; flex-wrap: wrap; }
+        .nav-links a { color: var(--sub); font-weight: 600; font-size:0.98rem; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--ink); }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+        .menu-toggle span { width: 24px; height: 2px; background: var(--ink); border-radius: 8px; }
+
+        .page-hero { text-align: center; padding: 4.5rem 1.5rem 1rem; }
+        .page-hero .eyebrow { display: inline-block; font-size:0.8rem; font-weight: 500; color: var(--sub); border: 1px solid var(--line); padding: 0.35rem 0.9rem; border-radius: 999px; margin-bottom: 1.2rem; }
+        .page-hero h1 { font-size:2.2rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.7rem; }
+        .page-hero p { color: var(--sub); font-size:0.98rem; max-width: 600px; margin: 0 auto; }
+
+        .books-intro { max-width: 920px; margin: 2rem auto 0; padding: 1.8rem 2rem; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; }
+        .books-intro h2 { font-size:1.25rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.7rem; }
+        .books-intro p { font-size:0.98rem; color: var(--sub); line-height: 1.8; margin-bottom: 1rem; }
+        .books-intro b { color: var(--ink); }
+        .books-intro ul { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-direction: column; gap: 0.55rem; }
+        .books-intro li { font-size:0.98rem; color: var(--sub); line-height: 1.7; padding-left: 0.95rem; position: relative; }
+        .books-intro li::before { content: "·"; position: absolute; left: 0.15rem; color: var(--muted); font-weight: 700; }
+        .books-intro li span { display: inline-block; font-size:0.8rem; font-weight: 600; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 0.1rem 0.55rem; margin-left: 0.25rem; }
+        .books-intro__note { margin-bottom: 0 !important; padding-top: 0.9rem; border-top: 1px solid var(--line); }
+        @media (max-width: 768px) { .books-intro { margin: 1.4rem 1rem 0; padding: 1.4rem 1.3rem; } }
+
+        .bk-faq { max-width: 920px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+        .bk-faq h2 { font-size:1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1.1rem; }
+        .bk-faq-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px,100%), 1fr)); gap: 0.9rem; }
+        .bk-q { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 1.3rem 1.4rem; }
+        .bk-q h3 { font-size:0.98rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.45rem; }
+        .bk-q h3::before { content: "Q. "; }
+        .bk-q p { font-size:0.98rem; color: var(--sub); line-height: 1.8; }
+        .bk-q p b { color: var(--ink); }
+        .bk-q p a { color: var(--ink); font-weight: 700; }
+
+        .books { max-width: 920px; margin: 0 auto; padding: 3rem 1.5rem 4rem; display: flex; flex-direction: column; gap: 1.6rem; }
+        .book { display: grid; grid-template-columns: 200px 1fr; gap: 2.4rem; background: var(--page); border: 1px solid var(--line); border-radius: 14px; padding: 2.2rem; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .book:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0,0,0,0.08); }
+        .book.featured { border-color: var(--ink); }
+        .book__cover { display: flex; align-items: flex-start; justify-content: center; }
+        .book__cover img { width: 100%; max-width: 200px; height: auto; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.14); }
+        .book__body { min-width: 0; }
+        .badge { display: inline-flex; align-items: center; gap: 0.35rem; background: var(--ink); color: #fff; font-size:0.8rem; font-weight: 500; padding: 0.35rem 0.75rem; border-radius: 999px; margin-bottom: 0.9rem; }
+        .badge svg { width: 14px; height: 14px; }
+        .book__title { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.35rem; }
+        .book__year { font-size:0.98rem; color: var(--muted); margin-bottom: 1rem; }
+        .book__tagline { font-size:0.98rem; font-weight: 500; color: var(--ink); line-height: 1.6; margin-bottom: 0.8rem; }
+        .book__desc { font-size:0.98rem; color: var(--sub); line-height: 1.75; margin-bottom: 1.1rem; }
+        .book__meta { font-size:0.88rem; color: var(--muted); line-height: 1.7; border-top: 1px solid var(--line); padding-top: 0.8rem; margin-bottom: 1.1rem; }
+        .book__meta b { color: var(--sub); font-weight: 600; }
+        .book__for { background: var(--panel, #f7f8f9); border-radius: 14px; padding: 1rem 1.2rem; margin-bottom: 1.1rem; }
+        .book__for h3 { font-size:0.88rem; font-weight: 700; color: var(--ink); margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+        .book__for ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+        .book__for li { font-size:0.98rem; color: var(--sub); line-height: 1.6; padding-left: 0.9rem; position: relative; }
+        .book__for li::before { content: "·"; position: absolute; left: 0.15rem; color: var(--muted); font-weight: 700; }
+        .book__quote { font-size:0.98rem; color: var(--ink); line-height: 1.75; border-left: 3px solid var(--ink); padding: 0.1rem 0 0.1rem 1rem; margin-bottom: 1.4rem; }
+        .buy-button { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--ink); color: #fff; font-size:0.98rem; font-weight: 500; padding: 0.7rem 1.4rem; border-radius: 14px; transition: opacity 0.2s, transform 0.2s; }
+        .buy-button:hover { opacity: 0.88; transform: translateY(-1px); }
+        .buy-button svg { width: 16px; height: 16px; }
+        .book__actions { display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem; }
+        .buy-button-outline { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--page); color: var(--ink); border: 1px solid var(--line); font-size:0.98rem; font-weight: 500; padding: 0.7rem 1.4rem; border-radius: 14px; transition: all 0.2s; cursor: pointer; font-family: inherit; }
+        .buy-button-outline:hover { border-color: var(--ink); transform: translateY(-1px); }
+        .buy-button-outline svg { width: 16px; height: 16px; }
+        .press-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 3000; align-items: center; justify-content: center; padding: 1.5rem; }
+        .press-modal.open { display: flex; }
+        .press-modal__box { background: var(--page); border-radius: 14px; max-width: 460px; width: 100%; max-height: 80vh; overflow-y: auto; padding: 2rem 1.8rem; position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        .press-modal__close { position: absolute; top: 0.8rem; right: 1.1rem; background: none; border: none; font-size:2.2rem; line-height: 1; color: var(--muted); cursor: pointer; }
+        .press-modal__title { font-size:1.25rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.4rem; padding-right: 1.5rem; }
+        .press-modal__sub { font-size:0.98rem; color: var(--sub); margin-bottom: 1.2rem; }
+        .press-modal__list { display: flex; flex-direction: column; gap: 0.55rem; }
+        .press-modal__list a { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.8rem 1rem; border: 1px solid var(--line); border-radius: 14px; font-size:0.98rem; font-weight: 500; color: var(--ink); transition: all 0.15s; }
+        .press-modal__list a:hover { border-color: var(--ink); background: var(--panel); }
+        .press-modal__list a svg { width: 15px; height: 15px; color: var(--sub); }
+
+        footer { background: #14161a; color: #fff; text-align: center; padding: 2.6rem 1.5rem; margin-top: 1rem; }
+        .footer-sns { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .footer-sns a { color: rgba(255,255,255,0.85); font-size:0.98rem; transition: color 0.2s; }
+        .footer-sns a:hover { color: #fff; }
+        .footer-copy { font-size:0.88rem; color: rgba(255,255,255,0.5); line-height: 1.8; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .menu-toggle { display: flex; }
+            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; right: 1.5rem; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.3rem; gap: 0.9rem; box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+            .page-hero h1 { font-size:1.6rem; }
+            .book { grid-template-columns: 1fr; gap: 1.4rem; padding: 1.6rem; }
+            .book__cover img { max-width: 160px; }
+        }
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
+       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
+       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
+       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:0.8rem;font-weight:800;color:#1f9d93;
+    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
+    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
+    /* [/NAVSEP:AUTO] */
+        
+        /* [2026-08-26] 고정 퀵바 — 온담 벤치마킹 OD-8
+           ⭐ 온담은 전 페이지에 「문의하기·강사영상·칼럼보기」 3버튼을 고정 노출한다.
+              하단 CTA 밴드까지 못 내려간 방문자를 잡는 장치다.
+           ⛔ 3개만 둔다(전역지침 「한 화면에 강조 3개」). 모바일에서는 하단 가로 바로 바뀐다. */
+        .pil-quick{position:fixed;right:14px;bottom:22px;z-index:900;display:flex;flex-direction:column;gap:8px;}
+        .pil-quick a{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line,#ececec);
+          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.8rem;font-weight:600;color:var(--ink,#16181d);
+          text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.11);white-space:nowrap;transition:transform .15s;}
+        .pil-quick a:hover{transform:translateY(-2px);}
+        .pil-quick a.hi{background:var(--mint,#2bb7ac);color:#fff;border-color:var(--mint,#2bb7ac);}
+        .pil-quick svg{width:15px;height:15px;flex:0 0 auto;}
+        @media(max-width:760px){
+          .pil-quick{right:0;left:0;bottom:0;flex-direction:row;gap:0;border-top:1px solid var(--line,#ececec);
+            background:#fff;padding:0.45rem 0.5rem calc(0.45rem + env(safe-area-inset-bottom));}
+          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:14px;font-size:0.8rem;padding:0.55rem 0.3rem;}
+          .pil-quick a.hi{border-radius:14px;}
+        }
+        .hero-video { margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); background:#000; line-height:0; }
+        .hero-video video { width: 100%; height: auto; display: block; }
+        .hero-video.pg-intro { max-width: 880px; margin-left: auto; margin-right: auto; }
+
+/* [SEARCH:AUTO] 사이트 내 검색 */
+.site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
+.site-search-btn:hover{background:rgba(255,255,255,.3)}
+.site-search-layer{position:fixed;inset:0;background:rgba(22,24,29,.5);backdrop-filter:blur(3px);
+  z-index:3000;display:none;padding:8vh 1rem 2rem}
+.site-search-layer.on{display:block}
+.site-search-box{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.site-search-bar{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid #ececec;color:#5b6066}
+.site-search-bar input{flex:1;border:0;outline:0;font-size:1.02rem;font-family:inherit;color:#16181d;background:transparent}
+.site-search-close{background:none;border:0;font-size:1.7rem;line-height:1;color:#9aa0a6;cursor:pointer;padding:0 .2rem}
+.site-search-hint{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;padding:.85rem 1.2rem;border-bottom:1px solid #f2f2f2}
+.site-search-hint span{font-size:0.79rem;color:#9aa0a6;margin-right:.2rem}
+.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:0.85rem;font-weight:600;
+  padding:.32rem .7rem;border-radius:999px;cursor:pointer;font-family:inherit}
+.site-search-hint button:hover{background:#2bb7ac;color:#fff}
+.site-search-results{max-height:56vh;overflow-y:auto;padding:.4rem 0}
+.ssr-item{display:block;padding:.9rem 1.2rem;border-bottom:1px solid #f4f4f4;color:inherit}
+.ssr-item:hover{background:#f7f9f9}
+.ssr-item:last-child{border-bottom:0}
+.ssr-t{font-weight:700;font-size:0.94rem;color:#16181d;margin-bottom:.2rem}
+.ssr-k{font-size:0.72rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
+.ssr-s{font-size:0.85rem;color:#5b6066;line-height:1.55}
+.ssr-s mark{background:#fff1a8;color:inherit;padding:0 .1em;border-radius:2px}
+.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
+@media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
+/* [/SEARCH:AUTO] */
+
+        </style>
+<style id="mint-header-override">
+  header{ background:#1f9d93 !important; border-bottom:none !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; }
+  header .logo, header .logo svg, header .nav-links a, header .dropbtn{ color:#ffffff !important; }
+  header .nav-links a:hover, header .dropbtn:hover{ color:#ffffff !important; opacity:0.82 !important; }
+  .menu-toggle span{ background:#ffffff !important; }
+  .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
+  .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
+</style>
+    <script src="stats.js"></script>
+    <script src="lightbox.js" defer></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="박근필 저서 - 베스트셀러 『마흔 더 늦기 전에 생각의 틀을 리셋하라』 외">
+    <meta property="og:description" content="해마다 한 권 이상을 내는 저자의 책 5권. 북토크·저자 강연 섭외 가능.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="박근필성장연구소 — 수의사이자 작가·강연가·커리어 스토리텔러 박근필">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/books.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="박근필 저서 - 베스트셀러 『마흔 더 늦기 전에 생각의 틀을 리셋하라』 외">
+    <meta name="twitter:description" content="해마다 한 권 이상을 내는 저자의 책 5권. 북토크·저자 강연 섭외 가능.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "CollectionPage",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html",
+   "name": "박근필 저서",
+   "inLanguage": "ko",
+   "description": "수의사이자 작가·커리어 스토리텔러 박근필의 저서. 반려동물 문답집, 글쓰기, 사고 리셋, 청소년 진로, 책쓰기 기획까지 5권을 출간했고 여섯 번째 책을 집필 중이다.",
+   "about": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+   },
+   "mainEntity": {
+    "@type": "ItemList",
+    "name": "박근필 저서 목록",
+    "numberOfItems": 5,
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "Book",
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book1",
+       "name": "할퀴고 물려도 나는 수의사니까",
+       "alternativeHeadline": "오늘도 동물병원은 전쟁 중",
+       "author": {
+        "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+       },
+       "publisher": {
+        "@type": "Organization",
+        "name": "씽크스마트"
+       },
+       "datePublished": "2023-10-15",
+       "isbn": "9788965293743",
+       "numberOfPages": 140,
+       "bookFormat": "https://schema.org/Paperback",
+       "inLanguage": "ko",
+       "genre": "반려동물",
+       "description": "반려동물을 키우는 보호자의 궁금증과 애로사항에 답하는 책. 스무 해 가까이 동물병원을 지킨 임상 수의사가 보호자들이 가장 많이 묻는 질문과 가장 자주 놓치는 것들을 주제별로 정리했다. 박근필의 첫 출간작.",
+       "audience": {
+        "@type": "Audience",
+        "audienceType": "반려동물 보호자, 예비 보호자, 수의사 직업에 관심 있는 청소년"
+       },
+       "url": "https://product.kyobobook.co.kr/detail/S000210401197"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "Book",
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book2",
+       "name": "나는 매일 두 번 출근합니다",
+       "alternativeHeadline": "본업 수의사, 부업 작가의 글쓰기 노하우",
+       "author": {
+        "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+       },
+       "publisher": {
+        "@type": "Organization",
+        "name": "미다스북스"
+       },
+       "datePublished": "2024-08-28",
+       "isbn": "9791169107686",
+       "numberOfPages": 296,
+       "bookFormat": "https://schema.org/Paperback",
+       "inLanguage": "ko",
+       "genre": "자기계발 > 독서/글쓰기",
+       "description": "글쓰기 경험이 전무했던 수의사가 1년 만에 작가가 되기까지의 과정과 글쓰기 노하우. 재능이 아니라 매일 두 번 출근하는 습관이 저자를 만들었다는 것이 논지다. 이 책은 원고 없이 출간기획서 한 편으로 출판 계약이 성사된 이례적 사례이기도 하다.",
+       "audience": {
+        "@type": "Audience",
+        "audienceType": "글을 쓰고 싶은 직장인, 본업을 유지하며 두 번째 정체성을 만들려는 사람, 첫 책 출간을 목표로 하는 예비 저자"
+       },
+       "url": "https://product.kyobobook.co.kr/detail/S000213996150"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "Book",
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book3",
+       "name": "마흔 더 늦기 전에 생각의 틀을 리셋하라",
+       "alternativeHeadline": "숨 가쁘게 변하는 세상에서 진짜 나로 살기 위해",
+       "author": {
+        "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+       },
+       "publisher": {
+        "@type": "Organization",
+        "name": "알토북스"
+       },
+       "datePublished": "2025-08-10",
+       "isbn": "9791194655114",
+       "numberOfPages": 272,
+       "bookFormat": "https://schema.org/Paperback",
+       "inLanguage": "ko",
+       "genre": "자기계발 > 진로/직업/적성",
+       "description": "번아웃과 슬럼프를 통과하며 발견한 56가지 고정관념을 정리한 사고 리셋 매뉴얼. 스무 해 가까이 수의사로 일해 오다 마흔에 운영하던 동물병원을 정리하고 다시 시작한 사람이 쓴 글이라 조언이 아니라 통과한 사람의 기록에 가깝다. 선인세 조건으로 계약됐고 출간 후 베스트셀러가 됐다.",
+       "audience": {
+        "@type": "Audience",
+        "audienceType": "마흔 전후로 방향을 다시 묻게 된 사람, 번아웃·슬럼프를 지나는 사람, 커리어 전환을 고민하는 사람"
+       },
+       "url": "https://product.kyobobook.co.kr/detail/S000217142150",
+       "award": "교보문고·예스24 자기계발 온라인 일간 베스트셀러 1위"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+       "@type": "Book",
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book4",
+       "name": "방구석에서 혼자 읽는 직업 토크쇼",
+       "alternativeHeadline": "4인의 직업인이 전하는 청소년을 위한 진로 특강",
+       "author": [
+        {
+         "@type": "Person",
+         "name": "잇슈"
+        },
+        {
+         "@type": "Person",
+         "name": "나른"
+        },
+        {
+         "@type": "Person",
+         "name": "마잇 윤쌤"
+        },
+        {
+         "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+        }
+       ],
+       "publisher": {
+        "@type": "Organization",
+        "name": "미다스북스"
+       },
+       "datePublished": "2025-10-27",
+       "isbn": "9791173555305",
+       "numberOfPages": 248,
+       "bookFormat": "https://schema.org/Paperback",
+       "inLanguage": "ko",
+       "genre": "청소년 진로",
+       "description": "심리사·초등교사·놀이치료사·수의사 4인의 직업인이 함께 집필한 진로 안내서. 직업을 이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기로 풀어낸다는 점에서 저자가 학교 진로 특강에서 말하는 「직업인문학」의 관점과 같은 자리에 선 책이다.",
+       "audience": {
+        "@type": "Audience",
+        "audienceType": "진로를 고민하는 중·고등학생, 학부모, 진로 수업 자료를 찾는 교사"
+       },
+       "url": "https://product.kyobobook.co.kr/detail/S000218149226"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+       "@type": "Book",
+       "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#book5",
+       "name": "당신의 원고는 왜 계약되지 않는가",
+       "alternativeHeadline": "책쓰기 8할은 기획이다",
+       "author": {
+        "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+       },
+       "publisher": {
+        "@type": "Organization",
+        "name": "미다스북스"
+       },
+       "datePublished": "2026-07-28",
+       "isbn": "9791176820158",
+       "numberOfPages": 224,
+       "bookFormat": "https://schema.org/Paperback",
+       "inLanguage": "ko",
+       "genre": "자기계발 > 독서/글쓰기",
+       "description": "왜 어떤 원고는 계약되고 어떤 원고는 거절되는가. 출간기획서만으로 출판 계약을 성사시킨 저자가 밝히는 기획의 원리. 글쓰기와 책쓰기의 차이부터 출간 이후 저자 브랜딩까지 담았다. 출판사는 필력보다 기획력을 먼저 본다는 것이 이 책의 핵심이다.",
+       "audience": {
+        "@type": "Audience",
+        "audienceType": "원고를 써 두고도 계약이 되지 않는 예비 저자, 출간기획서 작성이 막막한 사람, 책으로 퍼스널 브랜딩을 하려는 전문가"
+       },
+       "url": "https://product.kyobobook.co.kr/detail/S000220492295"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html#faq",
+   "inLanguage": "ko",
+   "isPartOf": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/books.html"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "어떤 책부터 읽으면 좋을까요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "지금의 고민에 따라 다릅니다.반려동물을 키우고 계시거나 반려동물 분야에 계시면 『할퀴고 물려도 나는 수의사니까』입니다. 스무 해 가까이 동물병원에서 일해 온 수의사가 보호자들이 가장 많이 묻는 것과 가장 자주 놓치는 것을 담은 첫 책입니다.마흔 전후로 방향을 다시 묻고 계시면 『마흔 더 늦기 전에 생각의 틀을 리셋하라』입니다. 글을 쓰고 싶지만 시작을 못 하고 계시면 『나는 매일 두 번 출근합니다』, 책을 쓰려 하시면 『당신의 원고는 왜 계약되지 않는가』입니다. 자녀와 직업 이야기를 나누고 싶으시면 『방구석에서 혼자 읽는 직업 토크쇼』를 권합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "강연에서 다루는 내용과 책은 어떻게 다른가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "뿌리는 같고 형태가 다릅니다. 책은 혼자 읽고 스스로 정리하는 것이고, 강연은 그 자리에서 질문을 주고받는 것입니다. 강연에서는 대상에 맞춰 사례를 바꾸고 시간에 맞춰 덜어냅니다. 책을 읽고 오신 분께도 새로 들을 것이 있게 구성합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "북토크나 저자 강연을 요청할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "가능합니다. 도서관·학교·기업·기관에서 진행해 왔으며, 책 한 권을 중심으로 하는 북토크와 여러 책의 주제를 엮는 강연 두 형태가 모두 가능합니다. 섭외 문의에 대상과 인원을 알려 주시면 구성안을 보내 드립니다."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
+  .nav-drop .nav-caret{font-size:0.85em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:14px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  header .nav-links .nav-sub a,
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.98rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  header .nav-links .nav-sub a:hover,
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    header .nav-links .nav-sub a,
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.88rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+</style>
+  <link rel="stylesheet" href="pil.css">
+<!-- BREADCRUMB:AUTO:START -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "박근필성장연구소",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "저서",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/books.html"
+  }
+ ]
+}
+</script>
+<!-- BREADCRUMB:AUTO:END -->
+</head>
+<body>
+<!-- [SKIP:AUTO] --><style>.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#16181d;color:#fff;padding:10px 16px;border-radius:0 0 8px 0;font-weight:700}.pil-skip:focus{left:0}</style><a class="pil-skip" href="#main-content">본문 바로가기</a>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li class="nav-sep">수의사로서</li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petlus-shelter.html">펫러스(PETLUS) 쉼터</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li class="nav-sep">작가 · 강연가로서</li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="career-reading.html">진로독서</a></li>
+                        <li><a href="corporate.html">기업·공공기관 강연</a></li>
+                        <li><a href="senior.html">중장년·시니어 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
+                <li><a href="author.html">대표소개</a></li>
+                <li><a href="vet-notes.html">반려동물 노트</a></li>
+                <li><a href="petlus-shelter.html">펫러스 쉼터</a></li>
+                <li><a href="petlus-board.html">쉼터 게시판</a></li>
+                <li><a href="https://petlusnews.com/" target="_blank" rel="noopener">펫러스뉴스</a></li>
+                <li><a href="books.html" aria-current="page">저서</a></li>
+                <li><a href="columns.html">칼럼</a></li>
+                <li><a href="videos.html">대표 영상</a></li>
+                <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
+                <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <li><a href="dokjeoting.html">독저팅</a></li> -->
+                <li><a href="writing-request.html">집필·감수 의뢰</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="podcast.html">팟캐스트</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="resources.html">자료실</a></li>
+                <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
+                <!-- [필라이프 코칭 비활성화 2026-08-14 · 되살릴 때 주석 해제] <li><a href="phillife.html">필라이프 코칭</a></li> -->
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
+<button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+</button>
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
+                                                        </nav>
+    </header>
+
+    <main role="main" id="main-content">
+        <section class="page-hero">
+            <span class="eyebrow">Books</span>
+            <h1>박근필 작가의 저서</h1>
+            <p>수의사에서 베스트셀러 작가로, 인생 리셋의 여정을 담은 <span data-stat="books">5</span>권의 책</p>
+            <div class="hero-video pg-intro" style="max-width:880px;margin:2rem auto 0;border-radius:14px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,0.16);background:#000;line-height:0">
+                <video autoplay muted playsinline controls preload="metadata" poster="page-intro-books-261008.jpg" aria-label="박근필 작가의 저서 소개 영상 — 2023년부터 해마다 한 권, 저서 5권과 집필 중인 여섯 번째 책" style="width:100%;height:auto;display:block">
+                    <source src="page-intro-books-261008.mp4" type="video/mp4">
+                    <a href="page-intro-books-261008.mp4">영상 내려받기</a>
+                </video>
+            </div>
+        </section>
+
+        <section class="books-intro" aria-label="저서 한눈에">
+            <p class="pil-eyebrow">IN PRINT</p>
+            <h2>한눈에 보기</h2>
+            <p>박근필은 2023년 첫 책을 낸 뒤 <b>해마다 한 권 이상</b>을 출간해 현재 <b><span data-stat="books">5</span>권</b>을 펴냈고, 여섯 번째 책을 집필 중이다. 진료실에서 시작해 글쓰기로, 사고의 전환으로, 청소년 진로로, 다시 책쓰기 자체로 주제가 옮겨 왔다. <b>한 사람이 통과한 순서가 그대로 목록이 된 셈이다.</b></p>
+            <ul>
+                <li><b>『할퀴고 물려도 나는 수의사니까』</b>(2023, 씽크스마트) — 보호자가 가장 많이 묻는 것에 답한 책. <span>반려동물 문답집</span></li>
+                <li><b>『나는 매일 두 번 출근합니다』</b>(2024, 미다스북스) — 글쓰기 경험 없이 1년 만에 작가가 된 과정. <span>글쓰기</span><span>독서</span></li>
+                <li><b>『마흔 더 늦기 전에 생각의 틀을 리셋하라』</b>(2025, 알토북스) — 번아웃을 통과하며 발견한 56가지 착각. <span>베스트셀러 1위</span></li>
+                <li><b>『방구석에서 혼자 읽는 직업 토크쇼』</b>(2025, 미다스북스) — 4인의 직업인이 쓴 청소년 진로 수업. <span>공저</span></li>
+                <li><b>『당신의 원고는 왜 계약되지 않는가』</b>(2026, 미다스북스) — 출판사가 보는 것은 원고가 아니라 기획이다. <span>신간</span></li>
+            </ul>
+            <p class="books-intro__note">여섯 번째 책 『알지 못하면 꿈꿀 수 없다 — 직업의 세계(가제)』(파지트)는 <strong>청소년 진로를 부모 쪽에서 바라본 책</strong>입니다. <b>직업을 이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기로</b> 풀어낸다. 「직업인문학」이라는 관점으로, 커리어 스토리텔러가 써 온 것이 그대로 한 권이 됐다. <b>원고도 출간기획서도 없이 출판사의 제안으로</b> 계약돼 올 하반기나 내년 상반기 출간 예정이다.</p>
+        </section>
+
+        <section class="books" aria-label="저서 목록">
+            <article class="book">
+                <div class="book__cover"><img src="book1.jpg" alt="할퀴고 물려도 나는 수의사니까"></div>
+                <div class="book__body">
+                    <h2 class="book__title">할퀴고 물려도 나는 수의사니까</h2>
+                    <div class="book__year">2023년 출간</div>
+                    <p class="book__tagline">반려동물과 보호자, 수의사는 한 팀입니다</p>
+                    <p class="book__desc">반려동물을 키우는 보호자의 궁금증과 애로사항에 답하는 책. 스무 해 가까이 동물병원을 지킨 임상 수의사가, 보호자들이 가장 많이 묻는 질문과 가장 자주 놓치는 것들을 주제별로 정리했다. 첫 책이자 첫 출간작이다.</p>
+                    <div class="book__quote">진료실에서 가장 자주 듣는 말은 “몰랐어요”다. 몰라서 늦고, 몰라서 후회한다. 그 간격을 조금이라도 좁히려고 쓴 책이다.</div>
+                    <div class="book__for">
+                        <h3>이런 분께</h3>
+                        <ul>
+                            <li>반려동물을 처음 맞이한 보호자</li>
+                            <li>동물병원에서 무엇을 물어야 할지 모르겠는 분</li>
+                            <li>수의사라는 직업의 실제 하루가 궁금한 분</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 씽크스마트 · <b>출간</b> 2023년 10월 15일 · <b>분량</b> 140쪽 · <b>ISBN</b> 9788965293743 · <b>분류</b> 반려동물 · 「잡문집 시리즈 1」</p>
+                    <a href="https://product.kyobobook.co.kr/detail/S000210401197" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=326356915" class="buy-button-outline" target="_blank" rel="noopener">알라딘</a><a href="https://www.yes24.com/product/goods/122893874" class="buy-button-outline" target="_blank" rel="noopener">YES24</a>
+                </div>
+            </article>
+
+            <article class="book">
+                <div class="book__cover"><img src="book2.jpg" alt="나는 매일 두 번 출근합니다" loading="lazy" decoding="async"></div>
+                <div class="book__body">
+                    <h2 class="book__title">나는 매일 두 번 출근합니다</h2>
+                    <div class="book__year">2024년 출간</div>
+                    <p class="book__tagline">수의사부터 작가까지, 프로행동러가 들려주는 이야기!</p>
+                    <p class="book__desc">글쓰기 경험이 전무했던 수의사가 1년 만에 작가가 되기까지의 과정과 글쓰기 노하우를 담았다. 재능이 아니라 <b>매일 두 번 출근하는 습관</b>이 저자를 만들었다는 것이 이 책의 논지다. 이 책은 <b>원고 없이 출간기획서 한 편으로 출판 계약</b>이 성사된, 매우 이례적인 사례이기도 하다.</p>
+                    <div class="book__quote">글쓰기는 재능의 문제가 아니라 자리의 문제다. 매일 그 자리에 앉는 사람이 결국 쓴다.</div>
+                    <div class="book__for">
+                        <h3>이런 분께</h3>
+                        <ul>
+                            <li>글을 쓰고 싶지만 시작을 못 하고 있는 직장인</li>
+                            <li>본업을 유지하며 두 번째 정체성을 만들고 싶은 분</li>
+                            <li>첫 책 출간을 목표로 하는 예비 저자</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 미다스북스 · <b>출간</b> 2024년 8월 28일 · <b>분량</b> 296쪽 · <b>ISBN</b> 9791169107686 · <b>분류</b> 자기계발 &gt; 독서/글쓰기</p>
+                    <a href="https://product.kyobobook.co.kr/detail/S000213996150" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=344435953" class="buy-button-outline" target="_blank" rel="noopener">알라딘</a><a href="https://www.yes24.com/product/goods/130159184" class="buy-button-outline" target="_blank" rel="noopener">YES24</a>
+                </div>
+            </article>
+
+            <article class="book featured">
+                <div class="book__cover"><img src="book3.jpg" alt="마흔 더 늦기 전에 생각의 틀을 리셋하라" loading="lazy" decoding="async"></div>
+                <div class="book__body">
+                    <span class="badge"><i data-lucide="award" aria-hidden="true"></i>교보문고·예스24 온라인 일간 베스트셀러 1위</span>
+                    <h2 class="book__title">마흔 더 늦기 전에 생각의 틀을 리셋하라</h2>
+                    <div class="book__year">2025년 출간</div>
+                    <p class="book__tagline">마흔, 다시 피어나기 위한 인생 리셋<br>마흔에야 깨달은, 나를 괴롭힌 56가지 착각</p>
+                    <p class="book__desc">"내 생각이 정말 맞는 걸까?" 지금 리셋하지 않으면 남은 삶도 다를 바 없다. 수의사인 저자가 번아웃과 슬럼프를 통과하며 발견한 <b>56가지 고정관념</b>을 정리한 사고 리셋 매뉴얼이다. 스무 해 가까이 수의사로 일해 오다 마흔에 운영하던 동물병원을 정리하고 다시 시작한 사람이 쓴 글이라, 조언이 아니라 <b>통과한 사람의 기록</b>에 가깝다. 요즘 시장에서 흔치 않은 <b>선인세 조건으로 계약</b>됐고, 출간 후 교보문고·예스24 자기계발 온라인 일간 베스트셀러 1위에 올랐다.</p>
+                    <div class="book__quote">생각의 틀은 나를 지켜 주는 울타리인 줄 알았는데, 어느 순간 나를 가두는 벽이 되어 있었다.</div>
+                    <div class="book__for">
+                        <h3>이런 분께</h3>
+                        <ul>
+                            <li>마흔 전후로 방향을 다시 묻게 된 분</li>
+                            <li>번아웃·슬럼프를 지나는 중인 분</li>
+                            <li>커리어 전환을 고민하지만 확신이 없는 분</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 알토북스 · <b>출간</b> 2025년 8월 10일 · <b>분량</b> 272쪽 · <b>ISBN</b> 9791194655114 · <b>분류</b> 자기계발 &gt; 진로/직업/적성</p>
+                    <a href="https://product.kyobobook.co.kr/detail/S000217142150" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=368639248" class="buy-button-outline" target="_blank" rel="noopener">알라딘</a><a href="https://www.yes24.com/product/goods/149866197" class="buy-button-outline" target="_blank" rel="noopener">YES24</a>
+                </div>
+            </article>
+
+            <article class="book">
+                <div class="book__cover"><img src="book4.jpg" alt="방구석에서 혼자 읽는 직업 토크쇼" loading="lazy" decoding="async"></div>
+                <div class="book__body">
+                    <h2 class="book__title">방구석에서 혼자 읽는 직업 토크쇼</h2>
+                    <div class="book__year">2025년 출간 · 공저</div>
+                    <p class="book__tagline">"그래서, 어른들은 무슨 일 해요?"<br>심리사, 초등교사, 놀이치료사, 수의사가 들려주는 청소년을 위한 진로 수업</p>
+                    <p class="book__desc">방구석에서 솔직담백한 직업 토크쇼. 심리사·초등교사·놀이치료사·수의사 <b>4인의 직업인이 함께 집필</b>한 진로 안내서다. 직업을 <b>이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기</b>로 풀어낸다는 점에서, 저자가 학교 진로 특강에서 말하는 「직업인문학」의 관점과 같은 자리에 선 책이다. 진로 탐색 중인 청소년과 학부모에게 두루 권한다. <b>구로도서관이 진로 프로그램 「진로동행, 꿈을 잇는 만남」의 연계 도서로 지정</b>해, 2026년 7월 윤중중학교 3학년 137명 대상 진로 특강과 함께 진행됐다.</p>
+                    <div class="book__quote">아이들에게 필요한 건 직업의 목록이 아니라, 그&nbsp;일을 살아가는 사람이 무엇에 애를 쓰고 어디서 보람을 느끼는지다.</div>
+                    <div class="book__for">
+                        <h3>이런 분께</h3>
+                        <ul>
+                            <li>진로를 고민하는 중·고등학생</li>
+                            <li>아이와 직업 이야기를 나누고 싶은 학부모</li>
+                            <li>진로 수업 자료를 찾는 교사</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 미다스북스 · <b>출간</b> 2025년 10월 27일 · <b>분량</b> 248쪽 · <b>ISBN</b> 9791173555305 · <b>공저</b> 잇슈·나른·마잇 윤쌤·박근필</p>
+                    <a href="https://product.kyobobook.co.kr/detail/S000218149226" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=374263035" class="buy-button-outline" target="_blank" rel="noopener">알라딘</a><a href="https://www.yes24.com/product/goods/158698104" class="buy-button-outline" target="_blank" rel="noopener">YES24</a>
+                </div>
+            </article>
+            <article class="book">
+                <div class="book__cover"><img src="book5.jpg" alt="당신의 원고는 왜 계약되지 않는가" loading="lazy" decoding="async"></div>
+                <div class="book__body">
+                    <span class="badge"><i data-lucide="sparkles" aria-hidden="true"></i>2026 신간</span>
+                    <h2 class="book__title">당신의 원고는 왜 계약되지 않는가</h2>
+                    <div class="book__year">2026년 출간 · 미다스북스</div>
+                    <p class="book__tagline">책쓰기 8할은 기획이다<br>"왜 어떤 원고는 계약되고, 어떤 원고는 거절되는가?"</p>
+                    <p class="book__desc">출간기획서만으로 출판 계약을 성사시킨 저자가 밝히는, 출판사의 러브콜을 받는 기획의 비밀. 글쓰기와 책쓰기의 차이부터 출간 이후 저자 브랜딩까지, 책이 되는 글쓰기의 모든 것을 담았다.</p>
+                    <div class="book__quote">출판사는 필력보다 기획력을 먼저 본다. 문장은 편집자와 함께 고칠 수 있지만, 기획이 틀리면 원고가 아무리 좋아도 계약까지 가지 못한다.</div>
+                    <div class="book__for">
+                        <h3>이런 분께</h3>
+                        <ul>
+                            <li>원고를 써 두고도 계약이 되지 않는 예비 저자</li>
+                            <li>출간기획서를 어떻게 써야 할지 막막한 분</li>
+                            <li>책으로 퍼스널 브랜딩을 하려는 전문가</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 미다스북스 · <b>출간</b> 2026년 7월 28일 · <b>분량</b> 224쪽 · <b>ISBN</b> 9791176820158 · <b>분류</b> 자기계발 &gt; 독서/글쓰기</p>
+                    <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <p class="book__desc" style="margin-top:0.2rem;">이 책의 방법을 1:1로 적용하는 컨설팅이 <a href="dokjeoting.html" style="font-weight:700;color:var(--ink);">독저팅</a>이다.</p> -->
+                    <div class="book__actions">
+                        <a href="https://product.kyobobook.co.kr/detail/S000220492295" class="buy-button" target="_blank" rel="noopener">교보문고 구매하기 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=397720004" class="buy-button-outline" target="_blank" rel="noopener">알라딘</a><a href="https://www.yes24.com/product/goods/193407255" class="buy-button-outline" target="_blank" rel="noopener">YES24</a>
+                        <button type="button" class="buy-button-outline" onclick="openPressModal()">출간 기사 모음 <i data-lucide="newspaper" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="book" id="book6">
+                <div class="book__cover" style="display:flex;align-items:center;justify-content:center;background:var(--panel,#f7f8f9);border:1px dashed var(--line);border-radius:14px;min-height:280px;">
+                    <span style="font-size:0.88rem;color:var(--muted);text-align:center;line-height:1.7;padding:1rem;">여섯 번째 책<br>올 하반기나<br>내년 상반기 출간 예정</span>
+                </div>
+                <div class="book__body">
+                    <span class="badge"><i data-lucide="pen-line" aria-hidden="true"></i>집필 중</span>
+                    <h2 class="book__title">알지 못하면 꿈꿀 수 없다 — 직업의 세계<span style="font-size:0.85em;font-weight:500;color:var(--muted);margin-left:0.3em;">(가제)</span></h2>
+                    <div class="book__year">올 하반기나 내년 상반기 출간 예정 · 파지트</div>
+                    <p class="book__tagline">AI 시대, 부모와 아이가 함께 여는 직업의 세계</p>
+                    <p class="book__desc">사라진 직업, 사라질 직업, 태어날 직업. 그리고 꿈이 없어도 괜찮다는 이야기까지. 진로를 <b>직업의 목록</b>이 아니라 <b>세계를 아는 일</b>로 다시 놓는 책이다. 1차 독자는 중·고생 학부모, 2차 독자는 청소년이다.</p>
+                    <div class="book__quote">알지 못하면 꿈꿀 수 없다. 아이가 꿈이 없는 게 아니라, 아직 그 세계를 본 적이 없는 것이다.</div>
+                    <div class="book__for" style="border:2px solid var(--ink);background:#fff;">
+                        <h3>이 책의 계약 경위 — 원고도, 출간기획서도 없었습니다</h3>
+                        <ul>
+                            <li>두 번째 책은 <b>원고 없이 출간기획서 한 편</b>으로 계약했습니다.</li>
+                            <li>이 책은 <b>기획서마저 없이, 출판사의 제안으로</b> 계약이 성사됐습니다. 쓴 것이 아무것도 없는 상태에서 출판사가 먼저 찾아왔습니다.</li>
+                            <li>기획은 콘셉트와 목차만이 아닙니다. <b>‘왜 하필 당신이 이 책을 써야 하는가’에 대한 답</b>까지가 기획입니다. 그 답이 쌓이면 투고하지 않아도 제안이 옵니다.</li>
+                        </ul>
+                    </div>
+                    <p class="book__meta"><b>출판사</b> 파지트 · <b>계약</b> 2026년 6월 · <b>출간</b> 올 하반기나 내년 상반기 예정 · <b>대상</b> 중·고생 학부모, 청소년</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="bk-faq" id="faq" aria-label="자주 묻는 질문">
+            <p class="pil-eyebrow">FAQ</p>
+            <h2>자주 묻는 질문</h2>
+            <div class="bk-faq-list">
+                <div class="bk-q"><h3>어떤 책부터 읽으면 좋을까요?</h3><p>지금의 고민에 따라 다릅니다.</p><p><b>반려동물을 키우고 계시거나 반려동물 분야에 계시면</b> 『할퀴고 물려도 나는 수의사니까』입니다. 스무 해 가까이 동물병원에서 일해 온 수의사가 보호자들이 가장 많이 묻는 것과 가장 자주 놓치는 것을 담은 첫 책입니다.</p><p><b>마흔 전후로 방향을 다시 묻고 계시면</b> 『마흔 더 늦기 전에 생각의 틀을 리셋하라』입니다. <b>글을 쓰고 싶지만 시작을 못 하고 계시면</b> 『나는 매일 두 번 출근합니다』, <b>책을 쓰려 하시면</b> 『당신의 원고는 왜 계약되지 않는가』입니다. 자녀와 직업 이야기를 나누고 싶으시면 『방구석에서 혼자 읽는 직업 토크쇼』를 권합니다.</p></div>
+                <div class="bk-q"><h3>강연에서 다루는 내용과 책은 어떻게 다른가요?</h3><p>뿌리는 같고 형태가 다릅니다. 책은 <b>혼자 읽고 스스로 정리하는 것</b>이고, 강연은 <b>그 자리에서 질문을 주고받는 것</b>입니다. 강연에서는 대상에 맞춰 사례를 바꾸고 시간에 맞춰 덜어냅니다. 책을 읽고 오신 분께도 새로 들을 것이 있게 구성합니다.</p></div>
+                <div class="bk-q"><h3>북토크나 저자 강연을 요청할 수 있나요?</h3><p>가능합니다. 도서관·학교·기업·기관에서 진행해 왔으며, 책 한 권을 중심으로 하는 북토크와 여러 책의 주제를 엮는 강연 두 형태가 모두 가능합니다. <a href="contact.html">섭외 문의</a>에 대상과 인원을 알려 주시면 구성안을 보내 드립니다.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 공통 강연 섭외 CTA -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+    <style>
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1032px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.98rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.98rem;padding:0.8rem 1.6rem;border-radius:14px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.98rem;padding:0.8rem 1.4rem;border-radius:14px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
+    </style>
+
+    <footer role="contentinfo">
+        <div class="footer-sns">
+            
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+           <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024–2026 박근필성장연구소 by 박근필. All rights reserved.<br>박근필성장연구소 대표 박근필 · 사업자등록번호 262-95-02242 · <a href="privacy.html" style="color:inherit;text-decoration:underline">개인정보처리방침</a> · <a href="resources.html" style="color:inherit;text-decoration:underline">자료실</a><br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
+    </footer>
+
+    <div class="press-modal" id="pressModal" role="dialog" aria-modal="true" aria-labelledby="pressModalTitle">
+      <div class="press-modal__box">
+        <button class="press-modal__close" type="button" onclick="closePressModal()" aria-label="닫기">&times;</button>
+        <h3 class="press-modal__title" id="pressModalTitle">『당신의 원고는 왜 계약되지 않는가』<br>출간 기사</h3>
+        <p class="press-modal__sub">포털 뉴스 2곳을 포함해 <b>31개 매체</b>가 신간 출간을 보도했습니다.</p>
+        <div class="press-modal__list">
+          <a href="https://www.readingnews.kr/news/articleView.html?idxno=20984" target="_blank" rel="noopener">한국독서교육신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.newsnjob.com/news/articleView.html?idxno=33974" target="_blank" rel="noopener">뉴스앤잡 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.mediafine.co.kr/news/articleView.html?idxno=82919" target="_blank" rel="noopener">미디어파인 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.edpl.co.kr/news/articleView.html?idxno=21059" target="_blank" rel="noopener">교육플러스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.lecturernews.com/news/articleView.html?idxno=205840" target="_blank" rel="noopener">한국강사신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.ppss.kr/news/articleView.html?idxno=301440" target="_blank" rel="noopener">PPSS <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.cosmiannews.com/news/479598" target="_blank" rel="noopener">코스미안뉴스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.eroun.net/news/articleView.html?idxno=84938" target="_blank" rel="noopener">이로운넷 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.newsfreezone.co.kr/news/articleView.html?idxno=698444" target="_blank" rel="noopener">뉴스프리존 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.dailyvet.co.kr/news/etc/289431" target="_blank" rel="noopener">데일리벳 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.ntoday.co.kr/news/articleView.html?idxno=128081" target="_blank" rel="noopener">투데이신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.ihopenews.com/news/articleView.html?idxno=255164" target="_blank" rel="noopener">호남교육신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://m.newspic.kr/view.html?nid=2026070818223135518" target="_blank" rel="noopener">뉴스픽 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="http://www.kiyln.kr/bbs/board.php?bo_table=culture&wr_id=1761" target="_blank" rel="noopener">경인열린신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.koreayouthdaily.com/news/519611" target="_blank" rel="noopener">대한청년일보 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.nbiznews.net/news/479580" target="_blank" rel="noopener">농업경영교육신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.mediayouth.kr/news/971194" target="_blank" rel="noopener">미디어유스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.kpetnews.com/news/973994" target="_blank" rel="noopener">반려동물뉴스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.eanews.kr/news/973994" target="_blank" rel="noopener">얼리어답터뉴스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.changupnews.kr/news/972566" target="_blank" rel="noopener">창업뉴스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://v.daum.net/v/20260707174939219" target="_blank" rel="noopener">다음뉴스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.te.co.kr/news/article.html?no=29101" target="_blank" rel="noopener">더에듀 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://cpjournal.kr/news/973994" target="_blank" rel="noopener">캠핑저널 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.careyounews.org/news/articleView.html?idxno=10616" target="_blank" rel="noopener">캐어유 뉴스 (서평) <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.readersnews.com/news/articleView.html?idxno=200419" target="_blank" rel="noopener">독서신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.veritas-a.com/news/articleView.html?idxno=620235" target="_blank" rel="noopener">베리타스알파 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.abcn.kr/news/articleView.html?idxno=89708" target="_blank" rel="noopener">ABC뉴스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.stardailynews.co.kr/news/articleView.html?idxno=544014" target="_blank" rel="noopener">스타데일리뉴스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://news.nate.com/view/20260728n23878" target="_blank" rel="noopener">네이트 뉴스 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.newmdtimes.com/news/article.html?no=1136664" target="_blank" rel="noopener">뉴미디어타임즈 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://www.ki-edu.co.kr/news/articleView.html?idxno=5883" target="_blank" rel="noopener">경인미래교육신문 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+        function openPressModal() { var m = document.getElementById('pressModal'); if (m) m.classList.add('open'); }
+        function closePressModal() { var m = document.getElementById('pressModal'); if (m) m.classList.remove('open'); }
+        document.addEventListener('click', function(e) { if (e.target && e.target.id === 'pressModal') closePressModal(); });
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePressModal(); });
+    </script>
+
+<!-- [2026-08-26] 고정 퀵바 (온담 OD-8) — 하단 CTA 밴드에 닿지 못한 방문자를 잡는다 -->
+<nav class="pil-quick" aria-label="바로가기">
+  <a class="hi" href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>강연 섭외</a>
+  <a href="videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 8 6 4-6 4Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg>강연 영상</a>
+  <a href="columns.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2Z"/><path d="M17 8h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2"/><path d="M8 8h5M8 12h5"/></svg>칼럼 보기</a>
+</nav>
+<!-- [QUICKBAR:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json -->
+<div class="pil-quickbar" id="pilQuickbar" role="complementary" aria-label="강연 섭외 문의">
+  <span class="pq-txt">강연 섭외와 일정 문의는 언제든 편하게 주세요</span>
+  <span class="pq-btns">
+    <a class="pq-sub" href="author.html">실적 · 이력 보기</a>
+    <a class="pq-main" href="contact.html">섭외 문의</a>
+  </span>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById("pilQuickbar"); if(!bar) return;
+  /* ⭐ 페이지 끝 CTA 밴드가 보이면 바를 숨긴다 — 같은 말을 두 번 하지 않는다 */
+  var band=document.querySelector(".pil-cta-band"), bandSeen=false;
+  if(band&&"IntersectionObserver" in window){
+    new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
+      .observe(band);
+  }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
+  function paint(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
+    bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
+    /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
+       ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
+    document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
+  }
+  window.addEventListener("scroll",paint,{passive:true});
+  window.addEventListener("resize",paint); paint();
+})();
+</script>
+<!-- [/QUICKBAR:AUTO] -->
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
+<script>
+/* [SEARCH:AUTO] 사이트 내 검색 */
+var __ssIndex=null,__ssLoading=false;
+function openSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.add('on'); document.body.style.overflow='hidden';
+  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
+  loadSiteIndex();
+}
+function closeSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.remove('on'); document.body.style.overflow='';
+}
+function loadSiteIndex(){
+  if(__ssIndex||__ssLoading)return; __ssLoading=true;
+  fetch('search-index.json').then(function(r){return r.json();})
+    .then(function(d){__ssIndex=d;__ssLoading=false;
+      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
+    .catch(function(){__ssLoading=false;
+      var b=document.getElementById('siteSearchResults');
+      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
+}
+function quickSiteSearch(w){
+  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
+}
+function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function __ssSnippet(text,q){
+  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
+  if(i<0)return '';
+  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
+  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
+}
+function runSiteSearch(q){
+  var box=document.getElementById('siteSearchResults'); if(!box)return;
+  q=(q||'').trim();
+  if(q.length<2){box.innerHTML='';return;}
+  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
+  var lq=q.toLowerCase(),out=[];
+  __ssIndex.forEach(function(d){
+    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
+    var n=hay.split(lq).length-1;
+    if(n>0){
+      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      out.push({d:d,sc:sc});
+    }
+  });
+  if(!out.length){
+    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
+  out.sort(function(a,b){return b.sc-a.sc;});
+  box.innerHTML=out.slice(0,40).map(function(o){
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
+      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
+      +'<div class="ssr-s">'+sn+'</div></a>';
+  }).join('');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var i=document.getElementById('siteSearchInput');
+  if(i){
+    var tm=null;
+    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
+  }
+  var l=document.getElementById('siteSearchLayer');
+  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeSiteSearch();
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
+  });
+});
+/* [/SEARCH:AUTO] */
+</script>
+</body>
+</html>

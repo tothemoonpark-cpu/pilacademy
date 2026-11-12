@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박근필 강연·방송 영상 — 수의사 작가 | 박근필성장연구소</title>
+    <meta name="keywords" content="박근필 강연 영상, 진로 특강 영상, 강연 섭외, 강연가 영상, 방송 출연">
+    <meta name="description" content="박근필 강연·인터뷰 영상 모음. 학교 진로 특강, 기업·기관 강연, 방송 출연 영상을 한곳에서. 강연 섭외 참고 자료.">
+    <link rel="alternate" type="text/plain" href="llms.txt" title="박근필성장연구소 — AI 답변엔진용 요약본(llms.txt)">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --ink:#16181d; --sub:#5b6066; --mint:#2bb7ac; --mint-dark:#1f9d93; --mint-soft:#eef8f6; --line:#ececec; --page:#ffffff; }
+        body { font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.65; color:var(--ink); background:var(--page); -webkit-font-smoothing:antialiased; }
+        a { text-decoration:none; color:inherit; }
+
+        header { background:#1f9d93; box-shadow:0 2px 12px rgba(0,0,0,0.07); position:sticky; top:0; z-index:1000; }
+        nav { max-width:1080px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.5rem; }
+        .logo { display:flex; align-items:center; gap:0.45rem; font-size:1.25rem; font-weight:700; color:#fff; letter-spacing:-0.02em; }
+        .logo svg { width:22px; height:22px; color:#fff; }
+        .nav-links { display:flex; gap:1.4rem; list-style:none; align-items:center; flex-wrap:wrap; }
+        .nav-links a { color:#fff; font-weight:600; font-size:0.98rem; transition:opacity 0.2s; }
+        .nav-links a:hover { opacity:0.82; }
+        .menu-toggle { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; }
+        .menu-toggle span { width:24px; height:2px; background:#fff; border-radius:8px; }
+
+        .page-hero { text-align:center; padding:4rem 1.5rem 1.5rem; }
+        .page-hero .hero-icon { width:56px; height:56px; border-radius:14px; background:var(--mint-soft); color:var(--mint-dark); display:flex; align-items:center; justify-content:center; margin:0 auto 1.2rem; }
+        .page-hero .hero-icon svg { width:28px; height:28px; }
+        .page-hero h1 { font-size:2.2rem; font-weight:700; letter-spacing:-0.03em; margin-bottom:0.5rem; }
+        .page-hero p { color:var(--sub); font-size:0.98rem; }
+
+        .wrap { max-width:1080px; margin:0 auto; padding:2.5rem 1.5rem 3.5rem; }
+        .video-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; }
+        .video-card { background:var(--page); border:1px solid var(--line); border-radius:14px; overflow:hidden; transition:transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+        .video-card:hover { transform:translateY(-4px); border-color:#d7eeeb; box-shadow:0 10px 24px rgba(43,183,172,0.12); }
+        .video-frame { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; }
+        .video-frame iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+        .video-info { padding:1.2rem 1.3rem 1.4rem; }
+        .video-info h3 { font-size:0.98rem; font-weight:700; letter-spacing:-0.01em; margin-bottom:0.4rem; line-height:1.5; }
+        .video-info p { color:var(--sub); font-size:0.98rem; }
+
+        .vid-intro { background:var(--mint-soft); border:1px solid #d7eeeb; border-radius:14px; padding:1.6rem 1.8rem; margin-bottom:2.4rem; }
+        .vid-intro p { font-size:0.98rem; color:var(--sub); line-height:1.9; margin-bottom:0.9rem; }
+        .vid-intro p:last-child { margin-bottom:0; }
+        .vid-intro b { color:var(--ink); font-weight:700; }
+        .vid-intro .vid-note { font-size:0.98rem; padding-top:0.9rem; border-top:1px solid #d7eeeb; }
+        .vid-intro a { color:var(--mint-dark); font-weight:700; }
+        .vid-h { font-size:1.25rem; font-weight:700; letter-spacing:-0.02em; margin:2.6rem 0 0.5rem; }
+        .vid-h:first-of-type { margin-top:0; }
+        .vid-sub { font-size:0.98rem; color:var(--sub); line-height:1.8; margin-bottom:1.3rem; }
+        .vid-sub b { color:var(--ink); }
+        @media (max-width:768px) { .vid-intro { padding:1.3rem 1.4rem; } }
+
+        .back-link { display:flex; justify-content:center; margin-top:2.5rem; }
+        .back-link a { display:flex; align-items:center; gap:0.4rem; font-size:0.98rem; font-weight:500; color:var(--sub); border:1px solid var(--line); background:#fff; padding:0.65rem 1.4rem; border-radius:999px; }
+        .back-link a:hover { border-color:#d7eeeb; color:var(--mint-dark); }
+        .back-link svg { width:16px; height:16px; }
+
+        footer { background:#14161a; color:#fff; text-align:center; padding:2.4rem 1.5rem; }
+        .footer-sns { display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap; margin-bottom:1rem; }
+        .footer-sns a { color:rgba(255,255,255,0.85); font-size:0.98rem; }
+        .footer-sns a:hover { color:var(--mint); }
+        .footer-copy { font-size:0.88rem; color:rgba(255,255,255,0.5); line-height:1.8; }
+
+        @media (max-width:768px) {
+            .nav-links { display:none; }
+            .menu-toggle { display:flex; }
+            .nav-links.open { display:flex; flex-direction:column; position:absolute; top:100%; right:1.5rem; background:#2bb7ac; border-radius:14px; padding:1rem 1.3rem; gap:0.9rem; box-shadow:0 12px 30px rgba(0,0,0,0.15); }
+            .video-grid { grid-template-columns:1fr; }
+            .page-hero h1 { font-size:1.6rem; }
+        }
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
+       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
+       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
+       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:0.8rem;font-weight:800;color:#1f9d93;
+    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
+    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
+    /* [/NAVSEP:AUTO] */
+        
+        /* [2026-08-26] 고정 퀵바 — 온담 벤치마킹 OD-8
+           ⭐ 온담은 전 페이지에 「문의하기·강사영상·칼럼보기」 3버튼을 고정 노출한다.
+              하단 CTA 밴드까지 못 내려간 방문자를 잡는 장치다.
+           ⛔ 3개만 둔다(전역지침 「한 화면에 강조 3개」). 모바일에서는 하단 가로 바로 바뀐다. */
+        .pil-quick{position:fixed;right:14px;bottom:22px;z-index:900;display:flex;flex-direction:column;gap:8px;}
+        .pil-quick a{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line,#ececec);
+          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.8rem;font-weight:600;color:var(--ink,#16181d);
+          text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.11);white-space:nowrap;transition:transform .15s;}
+        .pil-quick a:hover{transform:translateY(-2px);}
+        .pil-quick a.hi{background:var(--mint,#2bb7ac);color:#fff;border-color:var(--mint,#2bb7ac);}
+        .pil-quick svg{width:15px;height:15px;flex:0 0 auto;}
+        @media(max-width:760px){
+          .pil-quick{right:0;left:0;bottom:0;flex-direction:row;gap:0;border-top:1px solid var(--line,#ececec);
+            background:#fff;padding:0.45rem 0.5rem calc(0.45rem + env(safe-area-inset-bottom));}
+          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:14px;font-size:0.8rem;padding:0.55rem 0.3rem;}
+          .pil-quick a.hi{border-radius:14px;}
+        }
+
+/* [SEARCH:AUTO] 사이트 내 검색 */
+.site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
+.site-search-btn:hover{background:rgba(255,255,255,.3)}
+.site-search-layer{position:fixed;inset:0;background:rgba(22,24,29,.5);backdrop-filter:blur(3px);
+  z-index:3000;display:none;padding:8vh 1rem 2rem}
+.site-search-layer.on{display:block}
+.site-search-box{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.site-search-bar{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid #ececec;color:#5b6066}
+.site-search-bar input{flex:1;border:0;outline:0;font-size:1.02rem;font-family:inherit;color:#16181d;background:transparent}
+.site-search-close{background:none;border:0;font-size:1.7rem;line-height:1;color:#9aa0a6;cursor:pointer;padding:0 .2rem}
+.site-search-hint{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;padding:.85rem 1.2rem;border-bottom:1px solid #f2f2f2}
+.site-search-hint span{font-size:0.79rem;color:#9aa0a6;margin-right:.2rem}
+.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:0.85rem;font-weight:600;
+  padding:.32rem .7rem;border-radius:999px;cursor:pointer;font-family:inherit}
+.site-search-hint button:hover{background:#2bb7ac;color:#fff}
+.site-search-results{max-height:56vh;overflow-y:auto;padding:.4rem 0}
+.ssr-item{display:block;padding:.9rem 1.2rem;border-bottom:1px solid #f4f4f4;color:inherit}
+.ssr-item:hover{background:#f7f9f9}
+.ssr-item:last-child{border-bottom:0}
+.ssr-t{font-weight:700;font-size:0.94rem;color:#16181d;margin-bottom:.2rem}
+.ssr-k{font-size:0.72rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
+.ssr-s{font-size:0.85rem;color:#5b6066;line-height:1.55}
+.ssr-s mark{background:#fff1a8;color:inherit;padding:0 .1em;border-radius:2px}
+.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
+@media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
+/* [/SEARCH:AUTO] */
+
+        </style>
+    <script src="stats.js"></script>
+    <script src="lightbox.js" defer></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="박근필 강연·인터뷰 영상">
+    <meta property="og:description" content="학교 진로 특강, 기업·기관 강연, 방송 출연 영상 모음.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="박근필성장연구소 — 수의사이자 작가·강연가·커리어 스토리텔러 박근필">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/videos.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="박근필 강연·인터뷰 영상">
+    <meta name="twitter:description" content="학교 진로 특강, 기업·기관 강연, 방송 출연 영상 모음.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/videos.html">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "CollectionPage",
+ "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html",
+ "name": "박근필 대표 영상",
+ "inLanguage": "ko",
+ "description": "강연·인터뷰·방송 출연 등 박근필 대표의 대표 영상 모음. 2·3학년 550명 진로 특강, ONN닥터TV 출연, 〈0교시 부모영역〉 출연 등.",
+ "about": {
+  "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+ },
+ "isPartOf": {
+  "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#website"
+ },
+ "mainEntity": {
+  "@type": "ItemList",
+  "name": "박근필 대표 영상",
+  "numberOfItems": 30,
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+   {
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vchangwon",
+     "name": "창원 스펀지파크 인문학 강연_나는 언제 어른이 될까",
+     "description": "박근필 TV. 경상남도·창원특례시·라온아트앤컬처 「바로슥 클래스」 청춘 인문학 강연 「나는 언제 어른이 될까?」 풀영상. 2026년 11월 8일 공개, 약 81분.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-11-08",
+     "duration": "PT1H21M14S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/b51U6PqjHSo/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/b51U6PqjHSo",
+     "contentUrl": "https://www.youtube.com/watch?v=b51U6PqjHSo",
+     "url": "https://www.youtube.com/watch?v=b51U6PqjHSo",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vgainge",
+     "name": "Ai 시대에 퍼스널 브랜딩으로 대표가 사업 성과 키우는 법",
+     "description": "가인지캠퍼스(가인지컨설팅그룹) 멤버십 구독 콘텐츠. 박근필 수의사가 출연한 7개 클립, 약 9분 18초. 2026년 11월 2일 공개.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-11-02",
+     "duration": "PT9M18S",
+     "thumbnailUrl": "https://tothemoonpark-cpu.github.io/pilacademy/gainge-personal-branding-261102.png",
+     "contentUrl": "https://gainge.com/contents/videos/6970",
+     "url": "https://gainge.com/contents/videos/6970",
+     "isAccessibleForFree": false,
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 3,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vyoungjae",
+     "name": "영재키움 프로젝트_부울경 전문가 멘토링 데이에 진로 특강",
+     "description": "박근필 TV. 영재키움 프로젝트 부울경 전문가 멘토링 데이 진로 특강 영상. 2026년 11월 1일 공개, 약 41분.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-11-01",
+     "duration": "PT41M28S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/bqu_xPV_G1E/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/bqu_xPV_G1E",
+     "contentUrl": "https://www.youtube.com/watch?v=bqu_xPV_G1E",
+     "url": "https://www.youtube.com/watch?v=bqu_xPV_G1E",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 4,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vnasangsa",
+     "name": "부산평생학습주간_벡스코_나는 강사다",
+     "description": "박근필 TV. 부산평생학습주간 「나는 강사다」 발표 영상. 2026년 11월 1일 공개, 약 5분.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-11-01",
+     "duration": "PT5M8S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/62J1W6tPMmU/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/62J1W6tPMmU",
+     "contentUrl": "https://www.youtube.com/watch?v=62J1W6tPMmU",
+     "url": "https://www.youtube.com/watch?v=62J1W6tPMmU",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 5,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vtaein",
+     "name": "태인고등학교 교사 대상 진로독서 연수",
+     "description": "박근필 TV. 태인고등학교 교사 대상 진로독서 연수 영상. 2026년 10월 29일 공개, 약 66분.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-10-29",
+     "duration": "PT1H6M21S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/qJrEH-Md5o4/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/qJrEH-Md5o4",
+     "contentUrl": "https://www.youtube.com/watch?v=qJrEH-Md5o4",
+     "url": "https://www.youtube.com/watch?v=qJrEH-Md5o4",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 6,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vgimhae",
+     "name": "김해 진로 콘서트_김해시청소년센터",
+     "description": "박근필 TV. 김해시청소년센터 진로 콘서트 영상. 2026년 10월 24일 공개, 약 98분.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-10-24",
+     "duration": "PT1H38M10S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/JlT6Gejt2U8/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/JlT6Gejt2U8",
+     "contentUrl": "https://www.youtube.com/watch?v=JlT6Gejt2U8",
+     "url": "https://www.youtube.com/watch?v=JlT6Gejt2U8",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 7,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vonn1024",
+     "name": "내 글이 번번이 거절당한 진짜 이유 (문장력 때문이 아닙니다) | 이 책을 쓴 사람",
+     "description": "ONN TV 〈이 책을 쓴 사람〉 새 영상. 2026년 10월 24일 공개, 약 24분.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-10-24",
+     "duration": "PT24M16S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/HycUwoaHNeE/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/HycUwoaHNeE",
+     "contentUrl": "https://www.youtube.com/watch?v=HycUwoaHNeE",
+     "url": "https://www.youtube.com/watch?v=HycUwoaHNeE",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 8,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vichosaeng",
+     "name": "아이 진로, 직업 이름만 보고 정하면 후회합니다 | 현직 수의사가 말하는 직업의 이면",
+     "description": "유튜브 채널 〈이서윤의 초등생활처방전〉 출연. 2026년 10월 22일 공개, 약 37분.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-10-22",
+     "duration": "PT36M59S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/J9PrLKic3Jo/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/J9PrLKic3Jo",
+     "contentUrl": "https://www.youtube.com/watch?v=J9PrLKic3Jo",
+     "url": "https://www.youtube.com/watch?v=J9PrLKic3Jo",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 9,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vyoopd",
+     "name": "유PD의 오답노트 (수의사가 되면 행복할 줄 알았습니다.)",
+     "description": "〈유정임 채널_리스펙에듀〉의 대담 콘텐츠 「유PD의 오답노트」 게스트 출연. 어릴 적 꿈과 수의사가 된 계기, 첫 직장에서 매일 깨졌던 시절, 「수의사만 되면 행복할 줄 알았다」는 고백, 병원을 떠났다가 다시 돌아온 이유, 좋은 직업의 기준(내일이 설레는 일), 내 인생의 오답을 약 38분에 걸쳐 이야기한다. 2026년 10월 13일 공개.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-10-13",
+     "duration": "PT37M42S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/WGtdzoWHQ1o/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/WGtdzoWHQ1o",
+     "contentUrl": "https://www.youtube.com/watch?v=WGtdzoWHQ1o",
+     "url": "https://www.youtube.com/watch?v=WGtdzoWHQ1o",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 10,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vrich",
+     "name": "10년차 수의사 원장이 병원 접고 작가에 도전하게 된 이유",
+     "description": "자기계발 유튜브 채널 리치파카 출연. 약 10년간 운영하던 동물병원을 정리하고 글쓰기를 시작하게 된 계기, 책을 쓰고 펴내며 달라진 삶을 약 65분에 걸쳐 이야기한다. 2026년 9월 29일 공개.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-09-29",
+     "duration": "PT1H5M2S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/L7CvYSmKldI/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/L7CvYSmKldI",
+     "contentUrl": "https://www.youtube.com/watch?v=L7CvYSmKldI",
+     "url": "https://www.youtube.com/watch?v=L7CvYSmKldI",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 11,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vyoo2",
+     "name": "아이 어릴 때 이미 저지른 부모의 잘못 | 수의사·작가 박근필",
+     "description": "자녀교육 채널 〈유정임 채널_리스펙에듀〉의 부모 토크 코너 「거침없이 부모킥」 출연. 의사 아빠들과 수의사 아빠, 유정임 작가가 함께 미디어 중독을 이야기한다. 2026년 9월 28일 공개(2회분 중 두 번째 편).",
+     "inLanguage": "ko",
+     "uploadDate": "2026-09-28",
+     "duration": "PT10M12S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/2mIioRzaJRo/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/2mIioRzaJRo",
+     "contentUrl": "https://www.youtube.com/watch?v=2mIioRzaJRo",
+     "url": "https://www.youtube.com/watch?v=2mIioRzaJRo",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 12,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vyoo",
+     "name": "최악의 부모는 이렇게 훈수둔다! | 수의사·작가 박근필",
+     "description": "자녀교육 채널 〈유정임 채널_리스펙에듀〉의 부모 토크 코너 「거침없이 부모킥」 출연. 정신과·신경과 의사 아빠들, 수의사 아빠, PD 엄마가 함께 자녀 교육과 진로를 이야기한다. 2026년 9월 21일 공개.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-09-21",
+     "duration": "PT13M52S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/nHXaBHUquY8/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/nHXaBHUquY8",
+     "contentUrl": "https://www.youtube.com/watch?v=nHXaBHUquY8",
+     "url": "https://www.youtube.com/watch?v=nHXaBHUquY8",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 13,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vsaneun",
+     "name": "뭘 시작하기엔 늦었다고 생각하는 분들은 보세요 | 수의사·작가 박근필",
+     "description": "인물 인터뷰 채널 「박준현의 사는 김에」 출연. 수의사에서 작가·강연가·커리어 스토리텔러로 길을 넓혀 온 과정을 약 32분에 걸쳐 이야기한다. 2026년 9월 17일 공개.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-09-17",
+     "duration": "PT32M23S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/QL_QICzT_4M/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/QL_QICzT_4M",
+     "contentUrl": "https://www.youtube.com/watch?v=QL_QICzT_4M",
+     "url": "https://www.youtube.com/watch?v=QL_QICzT_4M",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 14,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vjbnu",
+     "name": "지금 함께하는 시간을 더 잘 사랑하는 법과 건강한 이별 준비",
+     "description": "전북대학교 수의과대학 제38대 학생회 「다온」이 주최한 「2026 반려동물 한마당」(2026년 9월 19일, 전주 전북대학교 JBNU 복합경기장) 초청 강연. 부제는 펫로스 치유 글쓰기. 스무 해 가까이 동물병원에서 마지막 순간을 지켜본 수의사가 수의학도와 시민 앞에서 반려동물과의 이별을 이야기한다. 대한수의사회·전북특별자치도수의사회·전북대학교 국립대학육성사업 등 후원.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-09-20",
+     "thumbnailUrl": "https://i.ytimg.com/vi/qxMwZeOjdik/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/qxMwZeOjdik",
+     "contentUrl": "https://www.youtube.com/watch?v=qxMwZeOjdik",
+     "url": "https://www.youtube.com/watch?v=qxMwZeOjdik",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 15,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vontori",
+     "name": "반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디",
+     "description": "기업기관 교육플랫폼 온담커뮤니케이션의 온토리TV 출연. 스무 해 가까이 동물병원에서 마지막 순간을 지켜본 수의사가 반려동물을 떠나보낸 뒤 자책하는 보호자에게 건네는 이야기. 펫로스 치유 글쓰기(펫러스)를 다룬다. 2026년 9월 15일 공개.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-09-15",
+     "thumbnailUrl": "https://i.ytimg.com/vi/7NgkYHHt47c/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/7NgkYHHt47c",
+     "contentUrl": "https://www.youtube.com/watch?v=7NgkYHHt47c",
+     "url": "https://www.youtube.com/watch?v=7NgkYHHt47c",
+     "about": {"@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"}
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 16,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#vmn",
+     "name": "낮에는 작가, 밤에는 수의사입니다",
+     "description": "브랜드 인터뷰 채널 더 마인드노트(The MindNote) 출연. 수의사로 일하며 지쳐 가던 시기에 한 권의 책에서 시작된 변화, 읽고 쓰고 말하는 삶, 그리고 다른 사람의 성장을 돕는 그로쓰 퍼실리테이터(Growth Facilitator)에 이르기까지를 17분에 걸쳐 이야기한다. 2026년 9월 11일 공개.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-09-11",
+     "duration": "PT17M18S",
+     "thumbnailUrl": "https://i.ytimg.com/vi/YM9RmUTd-TI/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/YM9RmUTd-TI",
+     "contentUrl": "https://www.youtube.com/watch?v=YM9RmUTd-TI",
+     "url": "https://www.youtube.com/watch?v=YM9RmUTd-TI",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 17,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v0",
+     "name": "[신비한 동물 사전 1회] 반려동물 보호자라면 반드시 알아야 할 기본 상식",
+     "description": "의료 전문 채널 ONN TV 〈신비한 동물 사전〉 1회. 수의사 박근필 고정 출연. 반려동물 보호자가 아프기 전에 알아 두면 좋은 기본 상식을 진료실 경험을 바탕으로 다룬다. 2026년 8월 30일 방영(2회는 2026년 9월 27일 방영 · https://www.youtube.com/watch?v=TAK5na5zrUI, 3회 「노령 반려동물과 함께」는 2026년 10월 11일 방영 · https://www.youtube.com/watch?v=1vVLYerjO34), SK Btv 270번·KT 지니TV 252번·LG헬로비전 245번·JCN울산중앙방송 155번·서경방송 260번으로 전국 송출.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-08-31",
+     "thumbnailUrl": "https://i.ytimg.com/vi/2MSBczqKVyI/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/2MSBczqKVyI",
+     "contentUrl": "https://www.youtube.com/watch?v=2MSBczqKVyI",
+     "url": "https://www.youtube.com/watch?v=2MSBczqKVyI",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 18,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v1",
+     "name": "[강연 90초] AI 시대 대체되지 않는 경쟁력은 읽고 쓰는 힘에서 나온다",
+     "description": "강사 전문지 한국강사신문 「강연 90초」 코너 영상. AI가 대신할 수 없는 영역은 나만의 경험, 사람을 움직이는 진정성, 맥락을 읽는 힘, 판단과 최종 검증이며 그 내공은 제대로 읽고 제대로 쓰는 데서 나온다는 내용. 개인의 경쟁력이 모이면 회사와 조직의 경쟁력이 된다 — 읽고 쓰는 힘은 개인의 무기이면서 동시에 조직의 무기다.",
+     "inLanguage": "ko",
+     "uploadDate": "2026-08-06",
+     "thumbnailUrl": "https://i.ytimg.com/vi/iEW2093MslA/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/iEW2093MslA",
+     "contentUrl": "https://www.youtube.com/watch?v=iEW2093MslA",
+     "url": "https://www.youtube.com/watch?v=iEW2093MslA",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 19,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v2",
+     "name": "40대 직장인의 80%가 결국 후회하는 것",
+     "description": "다꿈스쿨 TV 인터뷰 · 수의사 전문지 데일리개원 「Vet Clip」 코너 재게재",
+     "inLanguage": "ko",
+     "uploadDate": "2026-06-15",
+     "thumbnailUrl": "https://i.ytimg.com/vi/AKNnh0UItBU/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/AKNnh0UItBU",
+     "contentUrl": "https://www.youtube.com/watch?v=AKNnh0UItBU",
+     "url": "https://www.youtube.com/watch?v=AKNnh0UItBU",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 20,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v3",
+     "name": "50살 정년, 100세 시대 — N잡이 선택이 아닌 필수인 이유",
+     "description": "다꿈스쿨 TV · 평생 현역 커리어",
+     "inLanguage": "ko",
+     "uploadDate": "2026-06-24",
+     "thumbnailUrl": "https://i.ytimg.com/vi/UODkpNrBnDc/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/UODkpNrBnDc",
+     "contentUrl": "https://www.youtube.com/watch?v=UODkpNrBnDc",
+     "url": "https://www.youtube.com/watch?v=UODkpNrBnDc",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 21,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v4",
+     "name": "수의사가 말하는 직업의 현실과 '글쓰기'가 인생에 가져온 변화",
+     "description": "온닥터tv 인터뷰",
+     "inLanguage": "ko",
+     "uploadDate": "2026-04-30",
+     "thumbnailUrl": "https://i.ytimg.com/vi/2fe0JvvrvbU/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/2fe0JvvrvbU",
+     "contentUrl": "https://www.youtube.com/watch?v=2fe0JvvrvbU",
+     "url": "https://www.youtube.com/watch?v=2fe0JvvrvbU",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 22,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v5",
+     "name": "자녀 교육 대표 채널 <0교시 부모영역> 출연",
+     "description": "자녀 교육 채널 '0교시 부모영역' 출연",
+     "inLanguage": "ko",
+     "uploadDate": "2026-07-22",
+     "thumbnailUrl": "https://i.ytimg.com/vi/6BcenZMpSc4/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/6BcenZMpSc4",
+     "contentUrl": "https://www.youtube.com/watch?v=6BcenZMpSc4",
+     "url": "https://www.youtube.com/watch?v=6BcenZMpSc4",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 23,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v6",
+     "name": "부산시청소년자립지원관 진로 특강",
+     "description": "길이 보이지 않아도 괜찮다, 걸어가면 그게 곧 내 길이다",
+     "inLanguage": "ko",
+     "uploadDate": "2026-04-29",
+     "thumbnailUrl": "https://i.ytimg.com/vi/yXY0kf-uTdw/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/yXY0kf-uTdw",
+     "contentUrl": "https://www.youtube.com/watch?v=yXY0kf-uTdw",
+     "url": "https://www.youtube.com/watch?v=yXY0kf-uTdw",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 24,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v7",
+     "name": "여자중학교 550명 진로 특강",
+     "description": "여자중학교 전교생 대상 진로 특강",
+     "inLanguage": "ko",
+     "uploadDate": "2026-06-19",
+     "thumbnailUrl": "https://i.ytimg.com/vi/fQn5JxAT9bc/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/fQn5JxAT9bc",
+     "contentUrl": "https://www.youtube.com/watch?v=fQn5JxAT9bc",
+     "url": "https://www.youtube.com/watch?v=fQn5JxAT9bc",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 25,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v8",
+     "name": "여중 전교생 306명, 진로 토크 콘서트",
+     "description": "여자중학교 전교생 306명 대상 진로 토크 콘서트",
+     "inLanguage": "ko",
+     "uploadDate": "2026-07-17",
+     "thumbnailUrl": "https://i.ytimg.com/vi/Yicc7oOyCwQ/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/Yicc7oOyCwQ",
+     "contentUrl": "https://www.youtube.com/watch?v=Yicc7oOyCwQ",
+     "url": "https://www.youtube.com/watch?v=Yicc7oOyCwQ",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 26,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v9",
+     "name": "남성여고 글로벌 멘토링 콘서트 — 210명",
+     "description": "여고 210명 대상 글로벌 멘토링 콘서트",
+     "inLanguage": "ko",
+     "uploadDate": "2026-07-14",
+     "thumbnailUrl": "https://i.ytimg.com/vi/1tSCfFlCmog/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/1tSCfFlCmog",
+     "contentUrl": "https://www.youtube.com/watch?v=1tSCfFlCmog",
+     "url": "https://www.youtube.com/watch?v=1tSCfFlCmog",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 27,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v10",
+     "name": "윤중중학교 진로 특강 — 중3 137명",
+     "description": "중3 137명 대상 진로 특강",
+     "inLanguage": "ko",
+     "uploadDate": "2026-07-15",
+     "thumbnailUrl": "https://i.ytimg.com/vi/XyGN-cl_I14/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/XyGN-cl_I14",
+     "contentUrl": "https://www.youtube.com/watch?v=XyGN-cl_I14",
+     "url": "https://www.youtube.com/watch?v=XyGN-cl_I14",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 28,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v11",
+     "name": "중학교 1학년 135명 진로 콘서트, 동기 부여 강연",
+     "description": "중학교 1학년 135명 대상 진로·동기부여 강연",
+     "inLanguage": "ko",
+     "uploadDate": "2026-06-30",
+     "thumbnailUrl": "https://i.ytimg.com/vi/Vw3oT-859ao/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/Vw3oT-859ao",
+     "contentUrl": "https://www.youtube.com/watch?v=Vw3oT-859ao",
+     "url": "https://www.youtube.com/watch?v=Vw3oT-859ao",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 29,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v12",
+     "name": "그린닥터스 노을음악회 방송 출연",
+     "description": "그린닥터스 노을음악회 방송 출연",
+     "inLanguage": "ko",
+     "uploadDate": "2026-07-26",
+     "thumbnailUrl": "https://i.ytimg.com/vi/RiWhXP87mEs/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/RiWhXP87mEs",
+     "contentUrl": "https://www.youtube.com/watch?v=RiWhXP87mEs",
+     "url": "https://www.youtube.com/watch?v=RiWhXP87mEs",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   },
+   {
+    "@type": "ListItem",
+    "position": 30,
+    "item": {
+     "@type": "VideoObject",
+     "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#v13",
+     "name": "인공지능이 말해주는 박근필",
+     "description": "AI가 분석한 박근필 대표의 이야기",
+     "inLanguage": "ko",
+     "uploadDate": "2026-04-09",
+     "thumbnailUrl": "https://i.ytimg.com/vi/hdZun4TPAPY/hqdefault.jpg",
+     "embedUrl": "https://www.youtube.com/embed/hdZun4TPAPY",
+     "contentUrl": "https://www.youtube.com/watch?v=hdZun4TPAPY",
+     "url": "https://www.youtube.com/watch?v=hdZun4TPAPY",
+     "about": {
+      "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+     }
+    }
+   }
+  ]
+ }
+}
+</script>
+
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:14px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  header .nav-links .nav-sub a,
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.98rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  header .nav-links .nav-sub a:hover,
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    header .nav-links .nav-sub a,
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.88rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+</style>
+<style id="vid-tbl-style">
+  .vid-tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid #ececec;border-radius:14px;overflow:hidden;margin-top:1.1rem;}
+  .vid-tbl td{padding:0.9rem 1.1rem;border-bottom:1px solid #ececec;font-size:0.98rem;line-height:1.7;color:#5b6066;vertical-align:top;}
+  .vid-tbl td b{color:#16181d;}
+  .vid-tbl tr:last-child td{border-bottom:none;}
+  .vid-tbl .vt-d{width:96px;font-weight:700;color:#1f9d93;font-size:0.88rem;white-space:nowrap;}
+  .vid-tbl .vt-n{color:#5b6066;font-size:0.88rem;}
+  @media (max-width:600px){ .vid-tbl td{padding:0.7rem 0.8rem;font-size:0.88rem;} .vid-tbl .vt-d{width:70px;font-size:0.8rem;} }
+</style>
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "@id": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html#faq",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "이 영상들만 보고 강연을 판단해도 되나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "대강당 414명부터 소규모까지 규모가 다른 자리가 섞여 있어 구성이 어떻게 달라지는지 보실 수 있습니다. 다만 학교 강연 영상이 많아 성인·기업 강연의 결은 「강연 90초」 영상과 강연 안내 페이지를 함께 보시는 편이 정확합니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "방송 출연은 어떤 것들이 있나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "먼저 방송입니다. 한국시니어TV 〈생각을 바꾸는 시간, S클래스〉 2부작(1부 2026.8.31 방영 · 2부 9.7 방영)에 출연했습니다. ONN TV 〈신비한 동물 사전〉에는 고정 출연합니다(1회 2026.8.30 · 2회 9.27 · 3회 10.11 방영 · 1회 「반려동물 보호자라면 반드시 알아야 할 기본 상식」, 3회 「노령 반려동물과 함께」 영상 공개). 온토리TV 「반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디」(2026.9.15 공개)와 온닥터tv 〈이 책을 쓴 사람〉 전국 송출(2026.4)도 있고, 같은 코너의 새 영상 「내 글이 번번이 거절당한 진짜 이유 (문장력 때문이 아닙니다)」(2026.10.24 공개, 약 24분)도 공개되었습니다. 김해시청소년센터 진로 콘서트 영상(박근필 TV, 2026.10.24 공개, 약 98분)도 있습니다. 태인고등학교 교사 대상 진로독서 연수 영상(박근필 TV, 2026.10.29 공개, 약 66분)도 있습니다. 부울경 영재키움 프로젝트 「전문가 멘토링 데이」 진로 특강 영상(박근필 TV, 2026.11.1 공개, 약 41분)도 있습니다. 부산평생학습주간 「나는 강사다」 발표 영상(박근필 TV, 2026.11.1 공개, 약 5분)도 있습니다. 유튜브 채널 출연도 있습니다. 자녀교육 채널 〈0교시 부모영역〉과 〈유정임 채널_리스펙에듀〉 「거침없이 부모킥」(2026.9.21·9.28 공개, 2편)에 출연했습니다. 같은 채널의 대담 콘텐츠 「유PD의 오답노트」(2026.10.13 공개)에도 게스트로 나갔습니다. 유튜브 채널 〈이서윤의 초등생활처방전〉(2026.10.22 공개)에도 출연했습니다. 다꿈스쿨 2부작(「40대 직장인의 80%가 결국 후회하는 것」·「50살 정년, 100세 시대 — N잡이 선택이 아닌 필수인 이유」)과 그린닥터스 노을음악회에도 나갔습니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "강연 영상을 저희 기관 홍보에 써도 되나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "영상마다 촬영·게시 주체가 달라 개별 확인이 필요합니다. 문의 주시면 확인해 드리겠습니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "강연 전체 영상을 볼 수 있나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "공개된 것은 이 페이지에 모아 두었습니다. 섭외 검토에 더 필요한 자료가 있으면 요청해 주세요."
+   }
+  }
+ ]
+}
+    </script>
+    <link rel="stylesheet" href="pil.css">
+<!-- BREADCRUMB:AUTO:START -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "박근필성장연구소",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "대표 영상",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/videos.html"
+  }
+ ]
+}
+</script>
+<!-- BREADCRUMB:AUTO:END -->
+</head>
+<body>
+<!-- [SKIP:AUTO] --><style>.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#16181d;color:#fff;padding:10px 16px;border-radius:0 0 8px 0;font-weight:700}.pil-skip:focus{left:0}</style><a class="pil-skip" href="#main-content">본문 바로가기</a>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li class="nav-sep">수의사로서</li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petlus-shelter.html">펫러스(PETLUS) 쉼터</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li class="nav-sep">작가 · 강연가로서</li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="career-reading.html">진로독서</a></li>
+                        <li><a href="corporate.html">기업·공공기관 강연</a></li>
+                        <li><a href="senior.html">중장년·시니어 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
+                <li><a href="author.html">대표소개</a></li>
+                <li><a href="vet-notes.html">반려동물 노트</a></li>
+                <li><a href="petlus-shelter.html">펫러스 쉼터</a></li>
+                <li><a href="petlus-board.html">쉼터 게시판</a></li>
+                <li><a href="https://petlusnews.com/" target="_blank" rel="noopener">펫러스뉴스</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="columns.html">칼럼</a></li>
+                <li><a href="videos.html" aria-current="page">대표 영상</a></li>
+                <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
+                <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <li><a href="dokjeoting.html">독저팅</a></li> -->
+                <li><a href="writing-request.html">집필·감수 의뢰</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="podcast.html">팟캐스트</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="resources.html">자료실</a></li>
+                <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
+                <!-- [필라이프 코칭 비활성화 2026-08-14 · 되살릴 때 주석 해제] <li><a href="phillife.html">필라이프 코칭</a></li> -->
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
+<button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+</button>
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
+                                                        </nav>
+    </header>
+
+    <main role="main" id="main-content">
+        <section class="page-hero">
+            <div class="hero-icon"><i data-lucide="clapperboard" aria-hidden="true"></i></div>
+            <h1>대표 영상</h1>
+            <p>박근필 대표의 강연 및 소개 영상</p>
+        </section>
+
+        <div class="wrap">
+            <div class="vid-intro">
+                <p><b>섭외를 검토 중이시라면 이 페이지가 가장 빠릅니다.</b> 소개서나 이력서로는 알 수 없는 것 — <b>강단에서 어떻게 말하는 사람인지</b>를 영상으로 직접 확인하실 수 있습니다.</p>
+                <p>아래 영상은 세 갈래입니다. <b>방송·인터뷰</b>는 진행자와 주고받는 모습을, <b>학교 강연 현장</b>은 실제 강당에서 학생들 앞에 선 모습을, <b>소개 영상</b>은 짧은 시간에 핵심을 전하는 방식을 보여 줍니다. 전교생 414명 대강당부터 중3 137명 교실까지, 인원과 공간이 다를 때 구성이 어떻게 달라지는지도 함께 보실 수 있습니다.</p>
+                <p class="vid-note">더 자세한 강연 주제와 실적은 <a href="lecture.html">강연 안내</a>에, 학교 진로 특강은 <a href="career.html">진로·직업 특강</a>에 정리해 두었습니다.</p>
+            </div>
+
+            <h2 class="vid-h">방송 · 인터뷰</h2>
+            <p class="vid-sub">방송 채널과 전문지에서 진행자와 마주 앉아 나눈 이야기입니다. 준비된 원고가 아니라 <b>즉석에서 답하는 방식</b>을 보실 수 있습니다.</p>
+
+            <div style="background:#f7f8f9;border:1px solid #ececec;border-left:3px solid #1f9d93;border-radius:14px;padding:1.1rem 1.3rem;margin:0 0 1.4rem;">
+                <p style="margin:0 0 .5rem;font-weight:700;color:#16181d;">방송에서 보고 오셨다면</p>
+                <p style="margin:0;color:#5b6066;font-size:0.98rem;line-height:1.8;">
+                    <b>이서윤의 초등생활처방전</b> — 2026년 10월 22일 공개 「아이 진로, 직업 이름만 보고 정하면 후회합니다」 <a href="https://www.youtube.com/watch?v=J9PrLKic3Jo" target="_blank" rel="noopener">영상 보기</a><br>
+                    <b>유정임 채널_리스펙에듀 「유PD의 오답노트」</b> — 2026년 10월 13일 공개 「수의사가 되면 행복할 줄 알았습니다.」 <a href="https://www.youtube.com/watch?v=WGtdzoWHQ1o" target="_blank" rel="noopener">영상 보기</a><br>
+                    <b>리치파카</b> — 2026년 9월 29일 공개 「10년차 수의사 원장이 병원 접고 작가에 도전하게 된 이유」 <a href="https://www.youtube.com/watch?v=L7CvYSmKldI" target="_blank" rel="noopener">영상 보기</a><br>
+                    <b>더 마인드노트</b> — 2026년 9월 11일 공개 「낮에는 작가, 밤에는 수의사입니다」 <a href="https://www.youtube.com/watch?v=YM9RmUTd-TI" target="_blank" rel="noopener">영상 보기</a><br>
+                    <b>ONN TV 〈신비한 동물 사전〉</b> — 2026년 8월 30일(일) 18시 1회 방영, <b>고정 출연</b>입니다. 1회 주제는 「반려동물 보호자라면 반드시 알아야 할 기본 상식」이며 <a href="https://www.youtube.com/watch?v=2MSBczqKVyI" target="_blank" rel="noopener">영상이 공개돼 있습니다</a>. 2026년 10월 11일(일) 15시 30분 방영된 3회는 「노령 반려동물과 함께」입니다 — <a href="https://www.youtube.com/watch?v=1vVLYerjO34" target="_blank" rel="noopener">3회 영상 보기</a>.<br>
+                    <b>한국시니어TV 〈생각을 바꾸는 시간, S클래스〉</b> — 1부 8월 31일 방영 「직장인이 아니라 직업인으로, 평생 현역으로」 · 2부 9월 7일 방영 「누구나 작가가 될 수 있습니다 — 시니어를 위한 책쓰기」<br>
+                    <b>가인지캠퍼스(가인지컨설팅그룹)</b> — 2026년 11월 2일 공개 「Ai 시대에 퍼스널 브랜딩으로 대표가 사업 성과 키우는 법」 (멤버십 구독 콘텐츠) <a href="https://gainge.com/contents/videos/6970" target="_blank" rel="noopener">가인지캠퍼스에서 보기</a><br>
+                    <b>온토리TV</b> — 2026년 9월 15일 「반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디」 공개<br>
+                    <b>유정임 채널_리스펙에듀 「거침없이 부모킥」</b> — 2026년 9월 21일 공개 「최악의 부모는 이렇게 훈수둔다!」 <a href="https://www.youtube.com/watch?v=nHXaBHUquY8" target="_blank" rel="noopener">영상 보기</a> · 9월 28일 공개 「아이 어릴 때 이미 저지른 부모의 잘못」 <a href="https://www.youtube.com/watch?v=2mIioRzaJRo" target="_blank" rel="noopener">영상 보기</a><br>
+                    <b>박준현의 사는 김에</b> — 2026년 9월 17일 공개 「뭘 시작하기엔 늦었다고 생각하는 분들은 보세요」 <a href="https://www.youtube.com/watch?v=QL_QICzT_4M" target="_blank" rel="noopener">영상 보기</a><br>
+                    방송에서 다룬 주제는 강연으로도 진행합니다.
+                    <a href="lecture.html" style="color:#1f9d93;font-weight:600;">강연 안내</a> ·
+                    <a href="contact.html" style="color:#1f9d93;font-weight:600;">섭외 문의</a>
+                </p>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-card" id="vchangwon">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/b51U6PqjHSo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>창원 스펀지파크 인문학 강연_나는 언제 어른이 될까</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 창원 스펀지파크 청춘 인문학 강연(바로슥 클래스) 풀영상입니다 (2026.11.8 공개 · 약 81분).</p></div>
+                </div>
+                <div class="video-card" id="vgainge">
+                    <div class="video-frame"><a href="https://gainge.com/contents/videos/6970" target="_blank" rel="noopener" style="display:block;line-height:0"><img src="gainge-personal-branding-261102.png" alt="가인지캠퍼스 「Ai 시대에 퍼스널 브랜딩으로 대표가 사업 성과 키우는 법」 박근필 수의사 영상 썸네일" style="width:100%;aspect-ratio:16/9;object-fit:cover" loading="lazy"></a></div>
+                    <div class="video-info"><h3>Ai 시대에 퍼스널 브랜딩으로 대표가 사업 성과 키우는 법</h3><p><b>〈가인지캠퍼스〉</b>(가인지컨설팅그룹)에 올라온 영상입니다 (2026.11.2 공개 · 7개 클립, 약 9분). <b>멤버십 구독 후 시청할 수 있는 유료 콘텐츠</b>입니다. <a href="https://gainge.com/contents/videos/6970" target="_blank" rel="noopener">가인지캠퍼스에서 보기</a></p></div>
+                </div>
+                <div class="video-card" id="vyoungjae">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/bqu_xPV_G1E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>영재키움 프로젝트_부울경 전문가 멘토링 데이에 진로 특강</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 부울경 영재키움 프로젝트 「전문가 멘토링 데이」 진로 특강 영상입니다 (2026.11.1 공개 · 약 41분).</p></div>
+                </div>
+                <div class="video-card" id="vnasangsa">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/62J1W6tPMmU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>부산평생학습주간_벡스코_나는 강사다</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 부산평생학습주간 「나는 강사다」 발표 영상입니다 (2026.11.1 공개 · 약 5분).</p></div>
+                </div>
+                <div class="video-card" id="vtaein">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/qJrEH-Md5o4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>태인고등학교 교사 대상 진로독서 연수</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 태인고등학교 교사 대상 진로독서 연수 영상입니다 (2026.10.29 공개 · 약 66분).</p></div>
+                </div>
+                <div class="video-card" id="vgimhae">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/JlT6Gejt2U8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>김해 진로 콘서트_김해시청소년센터</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 김해시청소년센터 진로 콘서트 영상입니다 (2026.10.24 공개 · 약 98분).</p></div>
+                </div>
+                <div class="video-card" id="vonn1024">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/HycUwoaHNeE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>내 글이 번번이 거절당한 진짜 이유 (문장력 때문이 아닙니다)</h3><p><b>ONN TV 〈이 책을 쓴 사람〉</b> 새 영상입니다 (2026.10.24 공개 · 약 24분). 영상 제목은 <b>「내 글이 번번이 거절당한 진짜 이유 (문장력 때문이 아닙니다) | 이 책을 쓴 사람」</b>입니다.</p></div>
+                </div>
+                <div class="video-card" id="vichosaeng">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/J9PrLKic3Jo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>아이 진로, 직업 이름만 보고 정하면 후회합니다</h3><p>유튜브 채널 <b>〈이서윤의 초등생활처방전〉</b> 출연 (2026.10.22 공개 · 약 37분). 영상 제목은 <b>「아이 진로, 직업 이름만 보고 정하면 후회합니다 | 현직 수의사가 말하는 직업의 이면」</b>입니다.</p></div>
+                </div>
+                <div class="video-card" id="vyoopd">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/WGtdzoWHQ1o" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>수의사가 되면 행복할 줄 알았습니다.</h3><p>〈유정임 채널_리스펙에듀〉의 대담 콘텐츠 <b>「유PD의 오답노트」</b> 게스트 출연 (2026.10.13 공개 · 약 38분). 어릴 적 꿈과 수의사가 된 계기, 첫 직장에서 매일 깨졌던 시절, <b>「수의사만 되면 행복할 줄 알았다」</b>는 고백, 병원을 떠났다가 다시 돌아온 이유, 좋은 직업의 기준(내일이 설레는 일), 그리고 내 인생의 오답을 이야기합니다.</p></div>
+                </div>
+                <div class="video-card" id="vrich">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/L7CvYSmKldI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>10년차 수의사 원장이 병원 접고 작가에 도전하게 된 이유</h3><p>자기계발 유튜브 채널 <b>〈리치파카〉</b> · 약 65분 (2026.9.29 공개). 약 10년간 운영하던 동물병원을 정리하고 글쓰기를 시작하게 된 계기, 책을 쓰고 펴내며 달라진 삶을 이야기합니다.</p></div>
+                </div>
+                <div class="video-card" id="vyoo2">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/2mIioRzaJRo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>아이 어릴 때 이미 저지른 부모의 잘못</h3><p>자녀교육 채널 <b>〈유정임 채널_리스펙에듀〉</b>의 부모 토크 코너 <b>「거침없이 부모킥」</b> 두 번째 편 (2026.9.28 공개 · 약 10분). 부모 고민 1순위인 <b>미디어 중독</b>을 두고, 어릴 때 이미 시작된 미디어 접촉에 최선이 아니라면 차선이라도 무엇을 할지 이야기했습니다. <a href="career.html" style="color:#1f9d93;font-weight:600;">진로 강연 안내 →</a></p></div>
+                </div>
+                <div class="video-card" id="vyoo">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/nHXaBHUquY8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>최악의 부모는 이렇게 훈수둔다!</h3><p>자녀교육 채널 <b>〈유정임 채널_리스펙에듀〉</b>의 부모 토크 코너 <b>「거침없이 부모킥」</b> (2026.9.21 공개 · 약 14분). 정신과·신경과 의사 아빠들, 수의사 아빠, PD 엄마가 함께 자녀 교육과 진로를 이야기했습니다. <a href="career.html" style="color:#1f9d93;font-weight:600;">진로 강연 안내 →</a></p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/qxMwZeOjdik" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>지금 함께하는 시간을 더 잘 사랑하는 법과 건강한 이별 준비</h3><p><b>전북대학교 수의과대학 「2026 반려동물 한마당」</b> 강연 (2026.9.19) · 부제 <b>펫로스 치유 글쓰기</b>. 전북대 수의과대학 제38대 학생회 <b>「다온」</b>이 주최하고 대한수의사회·전북특별자치도수의사회·<b>전북대학교 국립대학육성사업</b> 등이 후원한 행사로, 수의학도와 교수부터 <b>반려인을 포함한 시민</b>까지 함께한 자리입니다. <a href="petcare.html" style="color:#1f9d93;font-weight:600;">반려동물·펫로스 강연 안내 →</a></p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/QL_QICzT_4M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>뭘 시작하기엔 늦었다고 생각하는 분들은 보세요</h3><p>인물 인터뷰 채널 <b>「박준현의 사는 김에」</b> (2026.9.17 공개). 찾아가서 묻고 끝까지 듣는 채널입니다. 수의사에서 <b>작가·강연가·커리어 스토리텔러</b>로 길을 넓혀 온 과정을 <b>약 32분</b>에 걸쳐 이야기했습니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/7NgkYHHt47c" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디</h3><p>기업기관 교육플랫폼 <b>온담커뮤니케이션</b>의 <b>온토리TV</b> (2026.9.15 공개). 스무 해 가까이 동물병원에서 마지막 순간을 지켜본 수의사가 <b>자책하는 보호자</b>에게 건네는 이야기입니다. <b>펫로스 치유 글쓰기(펫러스)</b>를 다룹니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/YM9RmUTd-TI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>낮에는 작가, 밤에는 수의사입니다</h3><p>브랜드 인터뷰 채널 <b>〈더 마인드노트〉</b>(The MindNote) · 17분 (2026.9.11 공개). 수의사로 지쳐 가던 시기에 한 권의 책에서 시작된 변화, 그리고 다른 사람의 성장을 돕는 <b>그로쓰 퍼실리테이터</b>에 이르기까지를 이야기합니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/2MSBczqKVyI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>반려동물 보호자라면 반드시 알아야 할 기본 상식</h3><p>의료 전문 채널 <b>ONN TV 〈신비한 동물 사전〉</b> 1회 (2026.8.30 방영) — <b>고정 출연</b>입니다. SK Btv 270번·KT 지니TV 252번·LG헬로비전 245번·JCN울산중앙방송 155번·서경방송 260번으로 전국에 송출됩니다. <b>2회(2부)는 2026.9.27 방영</b> — 바로 아래 영상입니다. <a href="petcare.html" style="color:#1f9d93;font-weight:600;">반려동물 강연 안내 →</a></p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/TAK5na5zrUI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>반려동물 보호자라면 반드시 알아야 할 기본 상식 2부</h3><p>의료 전문 채널 <b>ONN TV 〈신비한 동물 사전〉</b> 2회 (2026.9.27 방영 · 24분) — <b>고정 출연</b> 두 번째 회차입니다. <a href="petcare.html" style="color:#1f9d93;font-weight:600;">반려동물 강연 안내 →</a></p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/1vVLYerjO34" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="노령 반려동물과 함께 — ONN TV 신비한 동물 사전 3회"></iframe></div>
+                    <div class="video-info"><h3>노령 반려동물과 함께</h3><p>의료 전문 채널 <b>ONN TV 〈신비한 동물 사전〉</b> 3회 (2026.10.11 방영 · 26분) — <b>고정 출연</b> 세 번째 회차입니다. <a href="petcare.html" style="color:#1f9d93;font-weight:600;">반려동물 강연 안내 →</a></p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/iEW2093MslA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>AI 시대 대체되지 않는 경쟁력은 읽고 쓰는 힘에서 나온다</h3><p>강사 전문지 <b>한국강사신문 「강연 90초」</b> — 개인의 경쟁력이 모이면 조직의 경쟁력이 됩니다. <a href="https://www.lecturernews.com/news/articleView.html?idxno=207862" target="_blank" rel="noopener">기사 보기 →</a></p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/AKNnh0UItBU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>40대 직장인의 80%가 결국 후회하는 것</h3><p>다꿈스쿨 TV 인터뷰 · 수의사 전문지 데일리개원 「Vet Clip」 코너 재게재</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/UODkpNrBnDc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>50살 정년, 100세 시대 — N잡이 선택이 아닌 필수인 이유</h3><p>다꿈스쿨 TV 인터뷰 2부. 정년은 짧아지고 수명은 길어지는 시대에 <b>일의 형태를 여러 번 바꾸며 사는 법</b>을 다룹니다. 중장년 강연의 결이 여기 있습니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/2fe0JvvrvbU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>수의사가 말하는 직업의 현실과 '글쓰기'가 인생에 가져온 변화</h3><p>의료 전문 채널 온닥터tv 〈이 책을 쓴 사람〉 출연(전국 송출). 수의사가 왜 글을 쓰게 됐는지, 그 글쓰기가 무엇을 바꿨는지를 이야기합니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/6BcenZMpSc4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>자녀 교육 대표 채널 &lt;0교시 부모영역&gt; 출연</h3><p>자녀 교육 대표 채널 출연. AI 시대에 부모가 진짜 준비해야 할 것을 다룹니다. 학부모 대상 강연의 결을 볼 수 있습니다.</p></div>
+                </div>
+            </div>
+
+            <h2 class="vid-h">학교 · 기관 강연 현장</h2>
+            <p class="vid-sub">실제 강당·교실에서 촬영된 영상입니다. <b>전교생 414명 대강당부터 중3 137명 교실까지</b>, 인원과 공간에 따라 구성과 호흡이 어떻게 달라지는지 보실 수 있습니다.</p>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/yXY0kf-uTdw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>부산시청소년자립지원관 진로 특강</h3><p>부산시청소년자립지원관 자립준비청소년 대상 진로 특강. 부산일보·국제신문·동아일보 등 <b>23개 매체</b>가 보도했습니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/fQn5JxAT9bc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>여자중학교 550명 진로 특강</h3><p>유락여자중학교 2·3학년 550명 대상(강당 규모에 맞춰 학년별로 나눠 진행). 큰 인원 앞에서 강연이 어떻게 굴러가는지 볼 수 있는 영상입니다. 직업을 이름이 아니라 그&nbsp;일을 살아가는 사람으로 보라는 이야기를 합니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/Yicc7oOyCwQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>여중 전교생 306명, 진로 토크 콘서트</h3><p>학산여자중학교 전교생 306명, 1시간 40분. 강연형이 아니라 <b>토크 콘서트</b> 형식으로 진행한 자리입니다. 질문을 주고받는 구성이 어떻게 되는지 보실 수 있습니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/1tSCfFlCmog" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>남성여고 글로벌 멘토링 콘서트 — 210명</h3><p>남성여자고등학교 1·2학년 210여 명, 1시간. 고등학생에게는 진학 이후의 삶과 직업 선택으로 무게를 옮깁니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/XyGN-cl_I14" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>윤중중학교 진로 특강 — 중3 137명</h3><p>서울 윤중중학교 3학년 137명, 100분. 구로도서관 「진로동행, 꿈을 잇는 만남」 연계 강연으로, 연계 도서가 저서 『방구석에서 혼자 읽는 직업 토크쇼』였습니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/Vw3oT-859ao" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>중학교 1학년 135명 진로 콘서트, 동기 부여 강연</h3><p>당리중학교 1학년 135명, 1시간. 진로를 아직 고르기 전인 학년이라 「무엇이 될까」보다 「어떻게 살까」에 무게를 둡니다.</p></div>
+                </div>
+            </div>
+
+            <p style="margin:0 0 1.4rem;color:#5b6066;">매일 올리는 반려동물 숏폼과 글은 <a href="vet-notes.html" style="color:#1f9d93;font-weight:700;">수의사의 반려동물 노트</a>에 모아 둡니다.</p>
+            <h2 class="vid-h">그 밖의 출연 · 소개</h2>
+            <p class="vid-sub">방송 출연분과 박근필을 짧게 소개하는 영상입니다.</p>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/RiWhXP87mEs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>그린닥터스 노을음악회 방송 출연</h3><p>그린닥터스 노을음악회 방송 출연 영상입니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/hdZun4TPAPY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>인공지능이 말해주는 박근필</h3><p>AI가 공개 자료만으로 박근필 대표를 소개한 영상입니다.</p></div>
+                </div>
+            </div>
+            <div class="back-link"><a href="index.html"><i data-lucide="arrow-left" aria-hidden="true"></i>홈으로 돌아가기</a></div>
+        </div>
+    
+    <section class="block" id="faq">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">FAQ</p>
+          <h2>자주 묻는 질문</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item"><h3>이 영상들만 보고 강연을 판단해도 되나요?</h3><p>대강당 414명부터 소규모까지 규모가 다른 자리가 섞여 있어 구성이 어떻게 달라지는지 보실 수 있습니다. 다만 학교 강연 영상이 많아 성인·기업 강연의 결은 「강연 90초」 영상과 강연 안내 페이지를 함께 보시는 편이 정확합니다.</p></div>
+          <div class="faq-item"><h3>방송 출연은 어떤 것들이 있나요?</h3><p>먼저 방송입니다. 한국시니어TV 〈생각을 바꾸는 시간, S클래스〉 2부작(1부 2026.8.31 방영 · 2부 9.7 방영)에 출연했습니다. ONN TV 〈신비한 동물 사전〉에는 고정 출연합니다(1회 2026.8.30 · 2회 9.27 · 3회 10.11 방영 · 1회 「반려동물 보호자라면 반드시 알아야 할 기본 상식」, 3회 「노령 반려동물과 함께」 영상 공개). 온토리TV 「반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디」(2026.9.15 공개)와 온닥터tv 〈이 책을 쓴 사람〉 전국 송출(2026.4)도 있고, 같은 코너의 새 영상 「내 글이 번번이 거절당한 진짜 이유 (문장력 때문이 아닙니다)」(2026.10.24 공개, 약 24분)도 공개되었습니다. 김해시청소년센터 진로 콘서트 영상(박근필 TV, 2026.10.24 공개, 약 98분)도 있습니다. 태인고등학교 교사 대상 진로독서 연수 영상(박근필 TV, 2026.10.29 공개, 약 66분)도 있습니다. 부울경 영재키움 프로젝트 「전문가 멘토링 데이」 진로 특강 영상(박근필 TV, 2026.11.1 공개, 약 41분)도 있습니다. 부산평생학습주간 「나는 강사다」 발표 영상(박근필 TV, 2026.11.1 공개, 약 5분)도 있습니다.</p>
+          <p style="margin-top:.7rem">유튜브 채널 출연도 있습니다. 자녀교육 채널 〈0교시 부모영역〉과 〈유정임 채널_리스펙에듀〉 「거침없이 부모킥」(2026.9.21·9.28 공개, 2편)에 출연했습니다. 같은 채널의 대담 콘텐츠 「유PD의 오답노트」(2026.10.13 공개)에도 게스트로 나갔습니다. 유튜브 채널 〈이서윤의 초등생활처방전〉(2026.10.22 공개)에도 출연했습니다. 다꿈스쿨 2부작(「40대 직장인의 80%가 결국 후회하는 것」·「50살 정년, 100세 시대 — N잡이 선택이 아닌 필수인 이유」)과 그린닥터스 노을음악회에도 나갔습니다.</p></div>
+          <div class="faq-item"><h3>강연 영상을 저희 기관 홍보에 써도 되나요?</h3><p>영상마다 촬영·게시 주체가 달라 개별 확인이 필요합니다. 문의 주시면 확인해 드리겠습니다.</p></div>
+          <div class="faq-item"><h3>강연 전체 영상을 볼 수 있나요?</h3><p>공개된 것은 이 페이지에 모아 두었습니다. 섭외 검토에 더 필요한 자료가 있으면 요청해 주세요.</p></div>
+        </div>
+      </div>
+    </section>
+<p style="max-width:920px;margin:1.4rem auto 0;padding:0 1rem;color:#5b6066;font-size:0.98rem">전체 영상은 <a href="https://www.youtube.com/playlist?list=PLHBcCmMl9J70" target="_blank" rel="noopener" style="color:#1f9d93;font-weight:600">박근필 TV 「강연&amp;방송&amp;인터뷰」 재생목록</a>에서 이어서 보실 수 있습니다.</p>
+</main>
+
+    <!-- 공통 강연 섭외 CTA -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+
+        <section class="vid-sec">
+<div class="wrap">
+            <p class="pil-eyebrow">TRACK RECORD</p>
+            <h2>방송 출연 이력</h2>
+            <p class="vid-sub">영상으로 남지 않은 것까지 포함한 목록입니다. 전국 송출·고정 출연 여부를 함께 적었습니다.</p>
+            <table class="vid-tbl">
+              <tbody>
+                <tr><td class="vt-d">2026.11.8</td><td><b>박근필 TV</b> — 창원 스펀지파크 청춘 인문학 강연(바로슥 클래스). 「창원 스펀지파크 인문학 강연_나는 언제 어른이 될까」 약 81분 <a href="https://www.youtube.com/watch?v=b51U6PqjHSo" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.11.1</td><td><b>박근필 TV</b> — 부울경 영재키움 프로젝트 「전문가 멘토링 데이」 진로 특강. 「영재키움 프로젝트_부울경 전문가 멘토링 데이에 진로 특강」 약 41분 <a href="https://www.youtube.com/watch?v=bqu_xPV_G1E" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.11.1</td><td><b>박근필 TV</b> — 부산평생학습주간 「나는 강사다」 발표. 「부산평생학습주간_벡스코_나는 강사다」 약 5분 <a href="https://www.youtube.com/watch?v=62J1W6tPMmU" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.10.29</td><td><b>박근필 TV</b> — 태인고등학교 교사 대상 진로독서 연수. 「태인고등학교 교사 대상 진로독서 연수」 약 66분 <a href="https://www.youtube.com/watch?v=qJrEH-Md5o4" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.10.24</td><td><b>박근필 TV</b> — 김해시청소년센터 진로 콘서트. 「김해 진로 콘서트_김해시청소년센터」 약 98분 <a href="https://www.youtube.com/watch?v=JlT6Gejt2U8" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.10.24</td><td><b>ONN TV 〈이 책을 쓴 사람〉</b> — 새 영상. 「내 글이 번번이 거절당한 진짜 이유 (문장력 때문이 아닙니다)」 약 24분 <a href="https://www.youtube.com/watch?v=HycUwoaHNeE" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.10.22</td><td><b>이서윤의 초등생활처방전</b> — 유튜브 채널 출연. 「아이 진로, 직업 이름만 보고 정하면 후회합니다」 약 37분 <a href="https://www.youtube.com/watch?v=J9PrLKic3Jo" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.10.13</td><td><b>유정임 채널_리스펙에듀 「유PD의 오답노트」</b> — 유정임 작가의 대담 콘텐츠 게스트 출연. 「수의사가 되면 행복할 줄 알았습니다.」 약 38분 <a href="https://www.youtube.com/watch?v=WGtdzoWHQ1o" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.9.29</td><td><b>리치파카</b> — 자기계발 유튜브 채널. 「10년차 수의사 원장이 병원 접고 작가에 도전하게 된 이유」 약 65분 <a href="https://www.youtube.com/watch?v=L7CvYSmKldI" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.9.28</td><td><b>유정임 채널_리스펙에듀 「거침없이 부모킥」 2편</b> — 「아이 어릴 때 이미 저지른 부모의 잘못」 약 10분 · 미디어 중독 <a href="https://www.youtube.com/watch?v=2mIioRzaJRo" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.9.21</td><td><b>유정임 채널_리스펙에듀 「거침없이 부모킥」</b> — 언론인 30년 유정임 작가의 자녀교육 채널. 「최악의 부모는 이렇게 훈수둔다!」 약 14분 (2026.8.20 2회분 녹화) <a href="https://www.youtube.com/watch?v=nHXaBHUquY8" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.9.11</td><td><b>더 마인드노트(The MindNote)</b> — 브랜드와 삶의 이야기를 수집하는 인터뷰 채널. 「낮에는 작가, 밤에는 수의사입니다」 17분 <a href="https://www.youtube.com/watch?v=YM9RmUTd-TI" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.8~</td><td><b>ONN TV 〈신비한 동물 사전〉</b> — <b>고정 출연</b> (2026.8.7 첫 회 녹화 · 1회 8.30 · 2회 9.27 · 3회 10.11 방영). 1회 「반려동물 보호자라면 반드시 알아야 할 기본 상식」 <a href="https://www.youtube.com/watch?v=2MSBczqKVyI" target="_blank" rel="noopener">영상 보기</a> · 3회 「노령 반려동물과 함께」 <a href="https://www.youtube.com/watch?v=1vVLYerjO34" target="_blank" rel="noopener">영상 보기</a></td></tr>
+                <tr><td class="vt-d">2026.8~9</td><td><b>한국시니어TV 〈생각을 바꾸는 시간, S클래스〉</b> — 2주에 걸쳐 방영. 1부(151회) 8.31 「100세 X AI 시대 - 직장인이 아니라 직업인으로, 평생 현역으로」 · 2부(152회) 9.7 「누구나 작가가 될 수 있습니다」 <span class="vt-n">(1부 8.31 방영 · 2부 9.7 방영)</span></td></tr>
+                <tr><td class="vt-d">2026.7</td><td><b>그린닥터스 노을음악회</b> 방송 출연</td></tr>
+                <tr><td class="vt-d">2026.7</td><td>자녀 교육 대표 채널 <b>〈0교시 부모영역〉</b> 출연</td></tr>
+                <tr><td class="vt-d">2026.4</td><td><b>온닥터tv 〈이 책을 쓴 사람〉</b> 방송 출연 — <b>전국 송출</b></td></tr>
+                <tr><td class="vt-d">2026.4</td><td><b>부산시청소년자립지원관</b> 자립준비청소년 진로 특강 「길이 보이지 않아도 괜찮다」 — 언론 23개 매체 보도, 특강 영상 공개</td></tr>
+                <tr><td class="vt-d">2026.6</td><td><b>다꿈스쿨 TV</b> 인터뷰 촬영 — 「40대 직장인의 80%가 결국 후회하는 것」은 수의사 전문지 <b>데일리개원 「Vet Clip」 코너에 소개</b>됐습니다</td></tr>
+              </tbody>
+            </table>
+            <p class="vid-note">방송·촬영 협업 문의는 <a href="contact.html">섭외 문의</a>에서 받습니다. 대본 없는 자리에서 흐름을 만드는 일에 익숙합니다 — 인터뷰 프로그램 「박근필의 피플인사이트」를 2년째 진행하며 직업인 <span data-stat="interviews">60</span>여 명을 만나 왔습니다.</p>
+        </div>
+</section>
+    <style>
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1032px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.98rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.98rem;padding:0.8rem 1.6rem;border-radius:14px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.98rem;padding:0.8rem 1.4rem;border-radius:14px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
+    
+        /* [수리 2026-08-23] 마크업만 이식되고 빠져 있던 공용 클래스 */
+        section.block { padding: 3.2rem 0; }
+        section.block.alt { background: var(--panel); }
+        .sec-head { margin-bottom: 1.6rem; }
+        .sec-head h2 { font-size:1.6rem; letter-spacing: -0.02em; margin: 0 0 .5rem; color: var(--ink); }
+        .sec-head p { color: var(--sub); font-size:0.98rem; line-height: 1.7; margin: 0; }
+        .note { font-size:0.88rem; color: var(--sub); line-height: 1.7; margin-top: .9rem; }
+        .faq-list { display: grid; gap: .8rem; }
+        .faq-item { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.15rem 1.3rem; }
+        .faq-item h3 { font-size:0.98rem; margin: 0 0 .5rem; color: var(--ink); }
+        .faq-item h3::before { content:"Q. "; color: var(--mint-dark); font-weight:800; }
+        .faq-item p { font-size:0.98rem; color: var(--sub); line-height: 1.75; margin: 0; }
+        .vid-sec { padding: 3.2rem 0; }
+</style>
+
+    <footer role="contentinfo">
+        <div class="footer-sns">
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+            <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024–2026 박근필성장연구소 by 박근필. All rights reserved.<br>박근필성장연구소 대표 박근필 · 사업자등록번호 262-95-02242 · <a href="privacy.html" style="color:inherit;text-decoration:underline">개인정보처리방침</a> · <a href="resources.html" style="color:inherit;text-decoration:underline">자료실</a><br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+    </script>
+
+<!-- [2026-08-26] 고정 퀵바 (온담 OD-8) — 하단 CTA 밴드에 닿지 못한 방문자를 잡는다 -->
+<nav class="pil-quick" aria-label="바로가기">
+  <a class="hi" href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>강연 섭외</a>
+  <a href="videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 8 6 4-6 4Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg>강연 영상</a>
+  <a href="columns.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2Z"/><path d="M17 8h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2"/><path d="M8 8h5M8 12h5"/></svg>칼럼 보기</a>
+</nav>
+<!-- [QUICKBAR:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json -->
+<div class="pil-quickbar" id="pilQuickbar" role="complementary" aria-label="강연 섭외 문의">
+  <span class="pq-txt">강연 섭외와 일정 문의는 언제든 편하게 주세요</span>
+  <span class="pq-btns">
+    <a class="pq-sub" href="author.html">실적 · 이력 보기</a>
+    <a class="pq-main" href="contact.html">섭외 문의</a>
+  </span>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById("pilQuickbar"); if(!bar) return;
+  /* ⭐ 페이지 끝 CTA 밴드가 보이면 바를 숨긴다 — 같은 말을 두 번 하지 않는다 */
+  var band=document.querySelector(".pil-cta-band"), bandSeen=false;
+  if(band&&"IntersectionObserver" in window){
+    new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
+      .observe(band);
+  }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
+  function paint(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
+    bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
+    /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
+       ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
+    document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
+  }
+  window.addEventListener("scroll",paint,{passive:true});
+  window.addEventListener("resize",paint); paint();
+})();
+</script>
+<!-- [/QUICKBAR:AUTO] -->
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
+<script>
+/* [SEARCH:AUTO] 사이트 내 검색 */
+var __ssIndex=null,__ssLoading=false;
+function openSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.add('on'); document.body.style.overflow='hidden';
+  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
+  loadSiteIndex();
+}
+function closeSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.remove('on'); document.body.style.overflow='';
+}
+function loadSiteIndex(){
+  if(__ssIndex||__ssLoading)return; __ssLoading=true;
+  fetch('search-index.json').then(function(r){return r.json();})
+    .then(function(d){__ssIndex=d;__ssLoading=false;
+      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
+    .catch(function(){__ssLoading=false;
+      var b=document.getElementById('siteSearchResults');
+      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
+}
+function quickSiteSearch(w){
+  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
+}
+function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function __ssSnippet(text,q){
+  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
+  if(i<0)return '';
+  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
+  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
+}
+function runSiteSearch(q){
+  var box=document.getElementById('siteSearchResults'); if(!box)return;
+  q=(q||'').trim();
+  if(q.length<2){box.innerHTML='';return;}
+  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
+  var lq=q.toLowerCase(),out=[];
+  __ssIndex.forEach(function(d){
+    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
+    var n=hay.split(lq).length-1;
+    if(n>0){
+      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      out.push({d:d,sc:sc});
+    }
+  });
+  if(!out.length){
+    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
+  out.sort(function(a,b){return b.sc-a.sc;});
+  box.innerHTML=out.slice(0,40).map(function(o){
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
+      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
+      +'<div class="ssr-s">'+sn+'</div></a>';
+  }).join('');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var i=document.getElementById('siteSearchInput');
+  if(i){
+    var tm=null;
+    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
+  }
+  var l=document.getElementById('siteSearchLayer');
+  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeSiteSearch();
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
+  });
+});
+/* [/SEARCH:AUTO] */
+</script>
+</body>
+</html>

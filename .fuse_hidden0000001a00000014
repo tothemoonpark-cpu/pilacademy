@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>직업인문학 강사 박근필 — 직업을 이름이 아니라 사람으로 읽는 관점 | 박근필성장연구소</title>
+    <meta name="keywords" content="직업인문학, 박근필 피플인사이트, 인터뷰 프로그램, 인터뷰어, 진행자, 유튜브 인터뷰, 직업 인터뷰, 직업 이야기">
+    <meta name="description" content="직업인문학 강사 박근필 — 수의사이자 작가·커리어 스토리텔러. 직업을 이름이 아니라 그 일을 살아가는 사람의 이야기로 읽는 관점이 '직업인문학'입니다. 강사 전문지 한국강사신문에 「박근필의 직업인문학」을 연재하고 있으며, 인터뷰 프로그램 피플인사이트로 2년간 직업인 60여 명을 만났습니다. 기업·기관·학교 직업인문학 강연 섭외를 받습니다.">
+    <link rel="alternate" type="text/plain" href="llms.txt" title="박근필성장연구소 — AI 답변엔진용 요약본(llms.txt)">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --ink:#16181d; --sub:#5b6066; --muted:#8a9099; --line:#ececec; --panel:#f7f8f9; --page:#ffffff; }
+        body { font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.7; color:var(--ink); background:var(--page); -webkit-font-smoothing:antialiased; }
+        a { text-decoration:none; color:inherit; }
+        header { background:rgba(255,255,255,0.85); backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:1000; }
+        nav { max-width:1080px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.5rem; }
+        .logo { display:flex; align-items:center; gap:0.45rem; font-size:1.25rem; font-weight:700; color:var(--ink); letter-spacing:-0.02em; }
+        .logo svg { width:22px; height:22px; }
+        .nav-links { display:flex; gap:1.35rem; list-style:none; align-items:center; flex-wrap:wrap; }
+        .nav-links a { color:var(--sub); font-weight:600; font-size:0.98rem; transition:color 0.2s; }
+        .nav-links a:hover { color:var(--ink); }
+        .menu-toggle { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; }
+        .menu-toggle span { width:24px; height:2px; background:var(--ink); border-radius:8px; }
+
+        .page-hero { text-align:center; padding:4.5rem 1.5rem 1rem; }
+        .page-hero .icon-badge { width:58px; height:58px; border-radius:14px; background:var(--panel); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; margin:0 auto 1.3rem; }
+        .page-hero .icon-badge svg { width:28px; height:28px; }
+        .page-hero h1 { font-size:2.2rem; font-weight:700; letter-spacing:-0.03em; margin-bottom:0.7rem; }
+        .page-hero p { color:var(--sub); font-size:0.98rem; max-width:560px; margin:0 auto; }
+
+        .wrap { max-width:740px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+        .stat-line { text-align:center; font-size:0.98rem; font-weight:700; color:#1f9d93; background:#eef8f6; border:1px solid #d7eeeb; border-radius:999px; padding:0.9rem 1.5rem; margin-bottom:1.6rem; line-height:1.6; }
+        .lead { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:2.6rem; text-align:center; }
+        .lead p { font-size:1.25rem; line-height:1.95; color:var(--ink); }
+        .lead p + p { margin-top:0.4rem; }
+        .lead .soft { color:var(--sub); font-size:0.98rem; }
+        .jobhum { margin-top:1.6rem; background:#fff; border:1px solid var(--line); border-left:4px solid #2bb7ac; border-radius:0 14px 14px 0; padding:2rem 2.2rem; }
+        .jobhum .tag { display:inline-block; font-size:0.8rem; font-weight:700; color:#1f9d93; background:#eef8f6; border:1px solid #d7eeeb; padding:0.3rem 0.8rem; border-radius:999px; margin-bottom:1rem; }
+        .jobhum h2 { font-size:1.25rem; font-weight:700; letter-spacing:-0.02em; line-height:1.5; margin-bottom:0.9rem; }
+        .jobhum h2 em { font-style:normal; color:#1f9d93; }
+        .jobhum p { font-size:0.98rem; line-height:1.85; color:var(--sub); }
+        .jobhum p + p { margin-top:0.7rem; }
+        .jobhum p b { color:var(--ink); font-weight:700; }
+        .jobhum-more { margin-top:2rem; }
+        .jobhum-more h2 { font-size:1.25rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:1rem; }
+        .jh-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr)); gap:0.9rem; }
+        .jh-card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1.3rem 1.4rem; }
+        .jh-num { display:inline-block; font-size:0.8rem; font-weight:700; color:#1f9d93; letter-spacing:0.06em; margin-bottom:0.5rem; }
+        .jh-card h3 { font-size:0.98rem; font-weight:700; letter-spacing:-0.01em; margin-bottom:0.5rem; }
+        .jh-card p { font-size:0.98rem; color:var(--sub); line-height:1.8; }
+        .jh-card p.jh-evidence { margin-top:0.9rem; padding-top:0.9rem; border-top:1px solid var(--line); color:var(--ink); }
+        .jh-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.7rem; }
+        .jh-list li { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1rem 1.2rem; font-size:0.98rem; color:var(--sub); line-height:1.8; }
+        .jh-list li b { color:var(--ink); }
+        .jh-list li a { color:#1f9d93; font-weight:700; white-space:nowrap; }
+
+        .jobhum-faq { margin-top:1.6rem; }
+        .jobhum-faq h2 { font-size:1.25rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:1rem; }
+        .faq-item { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1.3rem 1.4rem; }
+        .faq-item + .faq-item { margin-top:0.8rem; }
+        .faq-item h3 { font-size:0.98rem; font-weight:700; margin-bottom:0.45rem; letter-spacing:-0.01em; }
+        .faq-item h3::before { content:"Q. "; color:#1f9d93; }
+        .faq-item p { font-size:0.98rem; color:var(--sub); line-height:1.8; }
+        .cta-wrap { text-align:center; margin-top:2.2rem; }
+        .cta-button { display:inline-flex; align-items:center; gap:0.5rem; background:var(--ink); color:#fff; font-size:0.98rem; font-weight:500; padding:0.95rem 1.8rem; border-radius:14px; transition:opacity 0.2s, transform 0.2s; }
+        .cta-button:hover { opacity:0.88; transform:translateY(-1px); }
+        .cta-button svg { width:18px; height:18px; }
+
+        footer { background:#14161a; color:#fff; text-align:center; padding:2.6rem 1.5rem; }
+        .footer-sns { display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap; margin-bottom:1rem; }
+        .footer-sns a { color:rgba(255,255,255,0.85); font-size:0.98rem; transition:color 0.2s; }
+        .footer-sns a:hover { color:#fff; }
+        .footer-copy { font-size:0.88rem; color:rgba(255,255,255,0.5); }
+
+        @media (max-width:768px) {
+            .nav-links { display:none; }
+            .menu-toggle { display:flex; }
+            .nav-links.open { display:flex; flex-direction:column; position:absolute; top:100%; right:1.5rem; background:#fff; border:1px solid var(--line); border-radius:14px; padding:1rem 1.3rem; gap:0.9rem; box-shadow:0 12px 30px rgba(0,0,0,0.1); }
+            .page-hero h1 { font-size:1.6rem; }
+            .lead { padding:1.8rem; }
+        }
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
+       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
+       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
+       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:0.8rem;font-weight:800;color:#1f9d93;
+    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
+    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
+    /* [/NAVSEP:AUTO] */
+        /* [2026-08-26] 강연 사진 그리드 — 온담 벤치마킹 */
+        .ph-band{background:var(--panel,#f7f8f9);padding:2.6rem 1.5rem;}
+        .ph-inner{max-width:1032px;margin:0 auto;}
+        .ph-head{text-align:center;margin-bottom:1.4rem;}
+        .ph-head b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;color:var(--ink);}
+        .ph-head span{display:block;font-size:0.88rem;color:var(--sub);margin-top:0.35rem;}
+        .ph-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.9rem;}
+        .ph-cell{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,0.07);}
+        .ph-cell img{width:100%;height:186px;object-fit:cover;display:block;}
+        .ph-cell figcaption{font-size:0.8rem;color:var(--sub);padding:0.6rem 0.75rem;line-height:1.5;}
+        @media(max-width:820px){.ph-grid{grid-template-columns:repeat(2,1fr);}.ph-cell img{height:150px;}}
+        @media(max-width:520px){.ph-grid{grid-template-columns:1fr;}.ph-cell img{height:200px;}}
+
+      /* [2026-08-26] 기관 그리드 — 온담 파트너 로고 밴드 벤치마킹.
+         ⛔ 40개교·기관이 문장 속에 묻혀 있었다. 이름을 한 화면에 펼쳐 규모가 보이게 한다. */
+      .org-band{padding:2.8rem 1.5rem;background:#fff;border-top:1px solid var(--line,#ececec);}
+      .org-inner{max-width:1032px;margin:0 auto;}
+      .org-head{text-align:center;margin-bottom:1.5rem;}
+      .org-head b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;color:var(--ink,#16181d);}
+      .org-head span{display:block;font-size:0.88rem;color:var(--sub,#5b6066);margin-top:0.35rem;}
+      .org-group{margin-bottom:1.5rem;}
+      .org-label{font-size:0.8rem;font-weight:700;color:var(--mint-dark,#1f9d93);margin-bottom:0.6rem;letter-spacing:0.02em;text-align:center;}
+      .org-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:0.4rem;}
+      .org-chips span{display:inline-block;font-size:0.88rem;color:var(--sub,#5b6066);
+        background:var(--panel,#f7f8f9);border:1px solid var(--line,#ececec);
+        border-radius:999px;padding:0.32rem 0.78rem;line-height:1.4;white-space:nowrap;}
+      .org-chips span.hi{background:#eefaf7;border-color:#bfe6e1;color:#1f9d93;font-weight:700;}
+      .org-note{text-align:center;font-size:0.8rem;color:var(--muted,#9aa0a6);margin-top:0.9rem;line-height:1.6;}
+        
+        /* [2026-08-26] 고정 퀵바 — 온담 벤치마킹 OD-8
+           ⭐ 온담은 전 페이지에 「문의하기·강사영상·칼럼보기」 3버튼을 고정 노출한다.
+              하단 CTA 밴드까지 못 내려간 방문자를 잡는 장치다.
+           ⛔ 3개만 둔다(전역지침 「한 화면에 강조 3개」). 모바일에서는 하단 가로 바로 바뀐다. */
+        .pil-quick{position:fixed;right:14px;bottom:22px;z-index:900;display:flex;flex-direction:column;gap:8px;}
+        .pil-quick a{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line,#ececec);
+          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.8rem;font-weight:600;color:var(--ink,#16181d);
+          text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.11);white-space:nowrap;transition:transform .15s;}
+        .pil-quick a:hover{transform:translateY(-2px);}
+        .pil-quick a.hi{background:var(--mint,#2bb7ac);color:#fff;border-color:var(--mint,#2bb7ac);}
+        .pil-quick svg{width:15px;height:15px;flex:0 0 auto;}
+        @media(max-width:760px){
+          .pil-quick{right:0;left:0;bottom:0;flex-direction:row;gap:0;border-top:1px solid var(--line,#ececec);
+            background:#fff;padding:0.45rem 0.5rem calc(0.45rem + env(safe-area-inset-bottom));}
+          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:14px;font-size:0.8rem;padding:0.55rem 0.3rem;}
+          .pil-quick a.hi{border-radius:14px;}
+        }
+        .hero-video { margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); background:#000; line-height:0; }
+        .hero-video video { width: 100%; height: auto; display: block; }
+        .hero-video.pg-intro { max-width: 880px; margin-left: auto; margin-right: auto; }
+
+/* [SEARCH:AUTO] 사이트 내 검색 */
+.site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
+.site-search-btn:hover{background:rgba(255,255,255,.3)}
+.site-search-layer{position:fixed;inset:0;background:rgba(22,24,29,.5);backdrop-filter:blur(3px);
+  z-index:3000;display:none;padding:8vh 1rem 2rem}
+.site-search-layer.on{display:block}
+.site-search-box{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.site-search-bar{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid #ececec;color:#5b6066}
+.site-search-bar input{flex:1;border:0;outline:0;font-size:1.02rem;font-family:inherit;color:#16181d;background:transparent}
+.site-search-close{background:none;border:0;font-size:1.7rem;line-height:1;color:#9aa0a6;cursor:pointer;padding:0 .2rem}
+.site-search-hint{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;padding:.85rem 1.2rem;border-bottom:1px solid #f2f2f2}
+.site-search-hint span{font-size:0.79rem;color:#9aa0a6;margin-right:.2rem}
+.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:0.85rem;font-weight:600;
+  padding:.32rem .7rem;border-radius:999px;cursor:pointer;font-family:inherit}
+.site-search-hint button:hover{background:#2bb7ac;color:#fff}
+.site-search-results{max-height:56vh;overflow-y:auto;padding:.4rem 0}
+.ssr-item{display:block;padding:.9rem 1.2rem;border-bottom:1px solid #f4f4f4;color:inherit}
+.ssr-item:hover{background:#f7f9f9}
+.ssr-item:last-child{border-bottom:0}
+.ssr-t{font-weight:700;font-size:0.94rem;color:#16181d;margin-bottom:.2rem}
+.ssr-k{font-size:0.72rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
+.ssr-s{font-size:0.85rem;color:#5b6066;line-height:1.55}
+.ssr-s mark{background:#fff1a8;color:inherit;padding:0 .1em;border-radius:2px}
+.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
+@media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
+/* [/SEARCH:AUTO] */
+
+        </style>
+<style id="mint-header-override">
+  header{ background:#1f9d93 !important; border-bottom:none !important; box-shadow:0 2px 12px rgba(0,0,0,0.07) !important; }
+  header .logo, header .logo svg, header .nav-links a, header .dropbtn{ color:#ffffff !important; }
+  header .nav-links a:hover, header .dropbtn:hover{ color:#ffffff !important; opacity:0.82 !important; }
+  .menu-toggle span{ background:#ffffff !important; }
+  .nav-links.open, .nav-links.active{ background:#2bb7ac !important; }
+  .nav-links.open a, .nav-links.active a{ color:#ffffff !important; }
+</style>
+    <script src="stats.js"></script>
+    <script src="lightbox.js" defer></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="직업인문학 — 직업을 이름이 아니라 사람의 이야기로 | 박근필의 피플인사이트">
+    <meta property="og:description" content="직업을 이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기로 풀어냅니다. 2년간 60여 명을 만난 '직업인문학'.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="박근필성장연구소 — 수의사이자 작가·강연가·커리어 스토리텔러 박근필">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="직업인문학 — 직업을 이름이 아니라 사람의 이야기로 | 박근필의 피플인사이트">
+    <meta name="twitter:description" content="직업을 이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기로 풀어냅니다. 2년간 60여 명을 만난 '직업인문학'.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+    <style id="ko-wordbreak">
+      /* 한글이 단어 중간에서 잘리는 것 방지 ("돕습니 / 다" 현상) */
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html#jikeopinmunhak",
+   "name": "직업인문학",
+   "alternateName": "Job Humanities",
+   "description": "직업을 이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기로 풀어내는 관점. 수의사이자 작가인 박근필이 「박근필의 피플인사이트」로 직업인 60여 명을 인터뷰해 온 작업에 붙인 이름이다. 다루는 것은 세 가지다. ① 직업의 이름이 아니라 하루 — 그&nbsp;사람이 무엇에 애를 쓰고 어디서 보람을 느끼는지가 직업의 실체이며, 진로를 이름으로만 고르면 그 실체를 못 보고 고르게 된다. ② 계획대로 간 사람은 드물다 — 인터뷰에서 여러 번 확인된 것으로, 질병·낙방·폐업처럼 스스로 고르지 않은 사건이 방향을 바꾼 경우가 적지 않았고 그럼에도 그 자리에서 다음 걸음이 만들어졌다. ③ 직업은 정체성이 아니다 — 직업을 이름으로 붙들면 그 이름이 흔들릴 때 사람도 흔들리지만, 하는 일로 보면 이름이 바뀌어도 사람은 남는다. 이 관점은 박근필의 학교 진로·직업 특강과 저서 『방구석에서 혼자 읽는 직업 토크쇼』의 바탕이며, 같은 관점을 책에 적용한 것이 「진로독서」다.",
+   "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "박근필성장연구소 용어"
+   },
+   "sameAs": "https://tothemoonpark-cpu.github.io/pilacademy/career.html",
+   "creator": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+   }
+  },
+  {
+   "@type": "DefinedTerm",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html#careerstoryteller",
+   "name": "커리어 스토리텔러",
+   "alternateName": "Career Storyteller",
+   "description": "직업을 이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기로 전하는 사람. 수의사이자 작가인 박근필이 쓰는 직함이다. 직업인문학이 직업을 읽는 관점이라면, 커리어 스토리텔러는 그 관점으로 하는 일이다. 관점에 이름을 붙인 것이 직업인문학이고, 그 관점으로 하는 일에 이름을 붙인 것이 커리어 스토리텔러다. 듣는 자리는 「박근필의 피플인사이트」 인터뷰이고, 전하는 자리는 강단과 책과 칼럼이다. 그래서 대상이 한쪽에 묶이지 않는다. 진로를 처음 그리는 청소년에게도, 진로를 다시 그리는 직장인에게도 같은 이야기를 전한다.",
+   "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "박근필성장연구소 용어"
+   },
+   "sameAs": "https://tothemoonpark-cpu.github.io/pilacademy/author.html"
+  },
+  {
+   "@type": "CreativeWorkSeries",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html#series",
+   "name": "박근필의 피플인사이트",
+   "inLanguage": "ko",
+   "creator": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+   },
+   "about": {
+    "@id": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html#jikeopinmunhak"
+   },
+   "description": "매월 한 분을 모시고 사전 대본 공유 없이 1~2시간 진행하는 인터뷰 프로그램. 2년간 직업인 60여 명을 만났다.",
+   "url": "https://www.youtube.com/playlist?list=PL9gDAK_kh9BJl6wyOhDCvexqOSXNTKitH",
+   "hasPart": [
+    {
+     "@type": "CreativeWork",
+     "name": "박근필의 피플인사이트 예순네 번째 인터뷰 — 김인희(즐거운 호호씨) 님",
+     "position": 64,
+     "url": "https://youtu.be/zcTC6w58psc",
+     "about": "재활운동센터 운영자이자 출판사 이사·강사, 스포츠의학 박사과정. 에세이 『당신이 내게 건넨 삶』 저자."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "직업인문학이란 무엇인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "직업을 이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기로 풀어내는 관점입니다. 「박근필의 피플인사이트」로 직업인 60여 명을 인터뷰해 온 작업에 붙인 이름입니다. 거창한 이론이 아니라 한 사람씩 만나 이야기를 듣는 일, 그것이 전부입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "커리어 스토리텔러란 무엇인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "박근필의 직함입니다. 직업을 이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기로 전하는 사람을 말합니다. 직업인문학이 관점이라면 커리어 스토리텔러는 그 관점으로 하는 일입니다. 듣는 자리가 인터뷰이고, 전하는 자리가 강단과 책입니다. 그래서 강연 대상도 한쪽에 묶이지 않습니다. 진로를 처음 그리는 청소년에게도, 진로를 다시 그리는 직장인에게도 같은 이야기를 합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "왜 직업의 이름만으로는 부족한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "\"무슨 일 하세요?\"라는 질문에 우리는 대개 직업의 이름을 답합니다. 그런데 그&nbsp;사람이 무엇에 애를 쓰고, 어디서 보람을 느끼고, 무엇 때문에 그만두고 싶었는지는 이름 바깥에 있습니다. 진로를 이름으로만 고르면 그 바깥을 못 보고 선택하게 됩니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "피플인사이트는 어떻게 진행되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "매월 한 분을 모시고 회당 1~2시간, 사전 대본 공유 없이 진행합니다. 대본을 미리 나누지 않는 이유는 정리된 답이 아니라 그 자리에서 떠오르는 이야기를 듣기 위해서입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "어떤 분들을 인터뷰했나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "각자의 위치에서 열심히 삶을 살아내는 보통 사람들입니다. 유명해서 부르는 것이 아니라 자신의 일에 최선을 다해 온 사람이면 됩니다. 경력의 길이는 기준이 아닙니다. 2년 동안 60여 명을 만났습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "직업인문학은 진로 교육과 어떻게 연결되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "학교 진로 특강에서 직업을 직업명 목록으로 소개하면 학생은 이름만 고르게 됩니다. 그 일을 살아가는 사람의 하루와 고민을 함께 전하면 학생이 자기 삶에 비춰 볼 수 있습니다. 이 관점이 박근필의 진로·직업 특강 바탕입니다. 같은 관점을 책에 적용한 것이 진로독서입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "직업인문학은 누가 만든 개념인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "수의사이자 작가·커리어 스토리텔러 박근필이 직업을 바라보는 관점입니다. 학계의 용어가 아니라 「박근필의 피플인사이트」로 직업인 60여 명을 인터뷰해 온 실제 작업에서 나왔습니다. 그래서 이론서가 아니라 인터뷰 기록이 근거입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "직업인문학과 일반적인 진로 교육은 무엇이 다른가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "일반적인 진로 교육은 직업의 종류와 진입 경로를 알려 줍니다. 직업인문학은 그 일을 살아가는 사람의 하루와 고민을 전합니다. 전자는 목록을 늘리고, 후자는 자기 삶에 비춰 볼 기준을 만듭니다. 또 하나 다른 점은 성공한 사람만 다루지 않는다는 것입니다. 계획대로 가지 못한 사람의 이야기를 그대로 전합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "인터뷰에서 여러 번 확인한 것은 무엇인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "계획대로 간 사람이 드물다는 것입니다. 많은 분이 원래 가려던 곳과 다른 자리에 서 있었고, 질병·낙방·폐업·복직 불가처럼 스스로 고르지 않은 사건이 방향을 바꾼 경우가 적지 않았습니다. 그런데도 그 자리에서 다음 걸음을 만들어 냈습니다. 진로 특강에서 이 이야기를 전하는 이유가 여기 있습니다. 아이들에게 필요한 건 완벽한 계획이 아니라 계획이 어긋났을 때 다시 서는 법입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "직업인문학 관점의 강연을 요청할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "가능합니다. 초등학교 1학년부터 성인까지 진행합니다. 학교는 진로·직업 특강으로, 대학생·청년·직장인은 커리어 전환을 중심으로 구성을 달리합니다. 도서관·기관 대상 강연도 진행합니다. 섭외 문의 →"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:14px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  header .nav-links .nav-sub a,
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.98rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  header .nav-links .nav-sub a:hover,
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    header .nav-links .nav-sub a,
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.88rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+</style>
+  <link rel="stylesheet" href="pil.css">
+<!-- BREADCRUMB:AUTO:START -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "박근필성장연구소",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "직업인문학 — 피플인사이트",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/people-insight.html"
+  }
+ ]
+}
+</script>
+<!-- BREADCRUMB:AUTO:END -->
+</head>
+<body>
+<!-- [SKIP:AUTO] --><style>.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#16181d;color:#fff;padding:10px 16px;border-radius:0 0 8px 0;font-weight:700}.pil-skip:focus{left:0}</style><a class="pil-skip" href="#main-content">본문 바로가기</a>
+    <header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li class="nav-sep">수의사로서</li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petlus-shelter.html">펫러스(PETLUS) 쉼터</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li class="nav-sep">작가 · 강연가로서</li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="career-reading.html">진로독서</a></li>
+                        <li><a href="corporate.html">기업·공공기관 강연</a></li>
+                        <li><a href="senior.html">중장년·시니어 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
+                <li><a href="author.html">대표소개</a></li>
+                <li><a href="vet-notes.html">반려동물 노트</a></li>
+                <li><a href="petlus-shelter.html">펫러스 쉼터</a></li>
+                <li><a href="petlus-board.html">쉼터 게시판</a></li>
+                <li><a href="https://petlusnews.com/" target="_blank" rel="noopener">펫러스뉴스</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="columns.html">칼럼</a></li>
+                <li><a href="videos.html">대표 영상</a></li>
+                <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
+                <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <li><a href="dokjeoting.html">독저팅</a></li> -->
+                <li><a href="writing-request.html">집필·감수 의뢰</a></li>
+                <li><a href="people-insight.html" aria-current="page">피플인사이트</a></li>
+                <li><a href="podcast.html">팟캐스트</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="resources.html">자료실</a></li>
+                <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
+                <!-- [필라이프 코칭 비활성화 2026-08-14 · 되살릴 때 주석 해제] <li><a href="phillife.html">필라이프 코칭</a></li> -->
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
+<button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+</button>
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
+                                                        </nav>
+    </header>
+
+    <main role="main" id="main-content">
+        <section class="page-hero">
+            <div class="icon-badge"><i data-lucide="users" aria-hidden="true"></i></div>
+            <p class="pil-eyebrow" style="margin:0 0 .4rem;">직업인문학</p>
+            <h1>박근필의 피플인사이트</h1>
+            <p>직업을 이름이 아니라 <b>그 일을 살아가는 사람</b>으로 읽는 관점 — 매월 한 분을 모시고 진행하는 인터뷰 프로그램</p>
+            <div class="hero-video pg-intro" style="max-width:880px;margin:2rem auto 0;border-radius:14px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,0.16);background:#000;line-height:0">
+                <video autoplay muted playsinline controls preload="metadata" poster="page-intro-people-insight-261008.jpg" aria-label="박근필의 피플인사이트 소개 영상 — 직업인 60여 명을 사전 대본 없이 만난 직업인문학 인터뷰" style="width:100%;height:auto;display:block">
+                    <source src="page-intro-people-insight-261008.mp4" type="video/mp4">
+                    <a href="page-intro-people-insight-261008.mp4">영상 내려받기</a>
+                </video>
+            </div>
+        </section>
+
+        <div class="wrap">
+            <div class="stat-line">누적 <span data-stat="interviews">60</span>여 명 · 회당 1~2시간 · 사전 대본 공유 없는 즉흥 인터뷰</div>
+            <div class="lead">
+                <p>'박근필의 피플인사이트'에서는 매월 한 분을 모시고 인터뷰를 진행하고 있습니다.</p>
+                <p class="soft">각자의 위치에서 열심히 삶을 살아내는 분들이죠.</p>
+                <p class="soft">우리와 같은 보통 사람들의 이야기를 들으며 위로와 위안을 받으세요.</p>
+                <p class="soft">통찰을 얻고 희망을 보세요.</p>
+                <p class="soft">내 삶에 대해 진지하게 생각해 보는 시간을 가지세요.</p>
+            </div>
+            <div class="jobhum">
+                <span class="tag">직업인문학</span>
+                <h2>직업을 이름이 아니라<br><em>그&nbsp;일을 살아가는 사람의 이야기</em>로 풀어냅니다.</h2>
+                <p>“무슨 일 하세요?”라는 질문에 우리는 대개 직업의 <b>이름</b>을 답합니다. 그런데 그&nbsp;이름 하나로는 아무것도 알 수 없습니다. 그&nbsp;사람이 무엇에 애를 쓰고, 어디서 보람을 느끼고, 무엇 때문에 그만두고 싶었는지는 이름 바깥에 있습니다.</p>
+                <p>그래서 이름 대신 <b>사람</b>을 묻습니다. 사전 대본 공유 없이 마주 앉아 한두 시간을 듣습니다. 그렇게 <b><span data-stat="interviews">60</span>여 명</b>을 만났습니다.</p>
+                <p>직업을 이렇게 읽는 관점을 <b>‘직업인문학’</b>이라 부릅니다. 거창한 이론은 아닙니다. 한 사람씩 만나 이야기를 듣는 일, 그것이 전부입니다.</p>
+                <p>그리고 <b>그&nbsp;관점으로 직업을 전하는 사람</b>을 <b>‘커리어 스토리텔러’</b>라 부릅니다. 관점에 이름을 붙인 것이 직업인문학이고, 그 관점으로 하는 일에 이름을 붙인 것이 커리어 스토리텔러입니다. 듣는 자리는 인터뷰이고, 전하는 자리는 강단과 책입니다.</p>
+            </div>
+
+            <div class="jobhum-more">
+                <h2>직업인문학이 다루는 세 가지</h2>
+                <div class="jh-grid">
+                    <div class="jh-card">
+                        <span class="jh-num">01</span>
+                        <h3>직업의 이름이 아니라 하루</h3>
+                        <p>수의사라는 이름은 정보를 거의 주지 않습니다. 그 사람이 아침에 무엇을 가장 먼저 확인하는지, 어떤 순간에 손이 떨리는지, 무엇 때문에 그만두고 싶었는지가 그 직업의 실체입니다. 진로를 이름으로만 고르면 그 실체를 못 보고 고르게 됩니다.</p>
+                        <p class="jh-evidence"><b>이건 만들어 낸 관점이 아닙니다.</b> 2026년 7월 한 여자중학교 강연에서 학생들이 적어 낸 질문 열네 장 가운데, 직업이 하는 일을 물은 것은 <b>한 장뿐</b>이었습니다. 나머지는 전부 사람을 물었습니다. 어떻게 견디는지, 지금도 만족하는지, 성적은 어땠는지, 연봉은 얼마인지. <b>아이들은 이미 그렇게 묻고 있었습니다.</b></p>
+                    </div>
+                    <div class="jh-card">
+                        <span class="jh-num">02</span>
+                        <h3>계획대로 간 사람은 드물다</h3>
+                        <p><span data-stat="interviews">60</span>여 명을 만나며 여러 번 확인한 것입니다. 많은 분이 원래 가려던 곳과 다른 자리에 서 있었습니다. 질병, 낙방, 폐업, 복직 불가처럼 <b>스스로 고르지 않은 사건</b>이 방향을 바꾼 경우가 적지 않았습니다. 그런데도 그들은 그 자리에서 다음 걸음을 만들어 냈습니다.</p>
+                    </div>
+                    <div class="jh-card">
+                        <span class="jh-num">03</span>
+                        <h3>직업은 정체성이 아니다</h3>
+                        <p>한 사람이 하나의 직업만 사는 시대가 아닙니다. 저 자신도 수의사이면서 작가이고 강연가입니다. 직업을 이름으로 붙들면 그 이름이 흔들릴 때 사람도 함께 흔들립니다. 직업을 <b>하는 일</b>로 보면, 이름이 바뀌어도 사람은 남습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+<section class="ph-band" aria-label="직업인문학을 전하는 자리">
+  <div class="ph-inner">
+    <div class="ph-head"><b>듣는 자리와 전하는 자리</b><span>듣는 자리는 인터뷰이고, 전하는 자리는 강단과 책입니다.</span></div>
+    <div class="ph-grid">
+      <figure class="ph-cell"><img src="photo-talkconcert.jpg" alt="학산여중 진로 토크 콘서트 306명 — 직업인문학 관점의 진로 특강" loading="lazy"><figcaption>학교 — 진로 토크 콘서트 306명</figcaption></figure>
+      <figure class="ph-cell"><img src="photo-busancity.jpg" alt="부산시청 저자 초청 북세미나 공무원 200여 명" loading="lazy"><figcaption>공공기관 — 부산시청 공무원 200여 명</figcaption></figure>
+      <figure class="ph-cell"><img src="photo-workshop.jpg" alt="성인 연속 과정 강의실 ㄷ자 배치 — 한 사람씩 이야기를 듣는 자리" loading="lazy"><figcaption>도서관 — 한 사람씩 듣는 연속 과정</figcaption></figure>
+    </div>
+  </div>
+</section>
+<div class="jobhum-more">
+                <p class="pil-eyebrow">TOPICS</p>
+                <h2>이 관점은 어디에 쓰이나</h2>
+                <ul class="jh-list">
+                    <li><b>강사 전문지 고정 코너</b> — 한국강사신문에서 <b>「박근필의 직업인문학」</b>이라는 이름으로 칼럼을 연재하고 있습니다(2026.8.16 회차부터 코너명 개명, 누적 <b>19편</b>). <b>사이트에서만 쓰는 말이 아닙니다. 한국강사신문 지면에 실제로 걸린 코너명</b>입니다. <a href="https://www.lecturernews.com/news/articleView.html?idxno=208705" target="_blank" rel="noopener">첫 회 보기 →</a></li>
+                        <li><b>학교 진로·직업 특강</b> — 직업명 목록을 읊는 대신, 그&nbsp;일을 살아가는 사람의 하루와 고민을 전합니다. 학생이 자기 삶에 비춰 볼 수 있게 됩니다. <a href="career.html">진로 특강 안내 →</a></li>
+                        <li><b>진로독서</b> — 같은 관점을 <b>책</b>에 적용한 것입니다. <b>진로 도서를 읽는 것이 아닙니다.</b> 책 안에 진로로 이어 볼 대목이 있으면 그 책이 진로독서 도서입니다. 주인공이 좌절을 어떻게 넘었는지, 첫 번째 꿈이 꺾였을 때 어떻게 다시 갔는지 같은 대목입니다. 그래서 <b>소설도 시도 실용서도 과학서도</b> 씁니다. 2027년부터 초3~4·중1·고1이 「독서교육 집중학년」이 됩니다. <a href="career-reading.html">진로독서 안내 →</a></li>
+                    <li><b>저서 『방구석에서 혼자 읽는 직업 토크쇼』</b> — 심리사·초등교사·놀이치료사·수의사 4인이 각자의 직업을 이름이 아니라 이야기로 풀어낸 청소년 진로서입니다. <a href="books.html">저서 보기 →</a></li>
+                    <li><b>여섯 번째 책 『알지 못하면 꿈꿀 수 없다 — 직업의 세계(가제)』</b>(올 하반기나 내년 상반기 출간 예정) — 사라진 직업, 사라질 직업, 태어날 직업. 진로를 목록이 아니라 <b>세계를 아는 일</b>로 다시 놓습니다.</li>
+                    <li><b>인터뷰 프로그램 「박근필의 피플인사이트」</b> — 이 관점이 만들어진 자리입니다. 매월 한 분, 회당 1~2시간, 사전 대본 공유 없이 진행합니다.</li>
+                </ul>
+            </div>
+
+
+            <!-- 직업인문학 강연 섭외 (2026-09-12 신설 · 검색어 「직업인문학 강사」 대응) -->
+            <div style="background:#f7f8f9;border:1px solid #ececec;border-left:3px solid #1f9d93;border-radius:14px;padding:1.4rem 1.5rem;margin:2rem 0;">
+              <h2 style="margin:0 0 .8rem;font-size:1.25rem;">직업인문학 강연·강의 섭외</h2>
+              <p style="margin:0 0 .9rem;color:#5b6066;line-height:1.85;">
+                <b>직업인문학</b>을 주제로 학교·기업·기관에서 강연합니다. 강사는 <b>수의사이자 작가·커리어 스토리텔러 박근필</b>입니다.
+                스무 해 가까이 동물병원에서 일하며 직업을 안에서 살아 봤고, 인터뷰 프로그램으로 다른 직업인 <b>60여 명</b>을 만났습니다.
+                그 두 가지가 합쳐진 것이 직업인문학입니다.
+              </p>
+              <ul style="margin:0 0 .9rem 1.1rem;color:#5b6066;line-height:1.9;">
+                <li><b>연재</b> — 강사 전문지 <b>한국강사신문</b> 「박근필의 직업인문학」 고정 코너
+                  (<a href="https://www.lecturernews.com/news/articleView.html?idxno=208705" target="_blank" rel="noopener">박근필의 직업인문학 — 그의 이름은 줄곧 간호사였다</a>)</li>
+                <li><b>대상</b> — 중·고등학생 진로 특강 / 대학·청년 / 직장인·중장년 / 기업 사내 교육 / 교원 직무연수</li>
+                <li><b>형태</b> — 단발 60~120분 · 연속 4~6회 과정 · 토크콘서트 · 원격연수</li>
+                <li><b>가까운 갈래</b> — <a href="career-reading.html">진로독서</a>(같은 관점을 책 읽기에 적용한 것 — 갈래를 가리지 않습니다) · <a href="corporate.html">기업·기관 커리어 강연</a> · <a href="career.html">청소년 진로·직업 특강</a></li>
+              </ul>
+              <p style="margin:0;"><a href="contact.html" style="color:#1f9d93;font-weight:600;">직업인문학 강연 섭외 문의 →</a></p>
+            </div>
+
+            <div class="jobhum-faq">
+                <h2>직업인문학, 자주 묻는 질문</h2>
+                <div class="faq-item">
+                    <h3>직업인문학이란 무엇인가요?</h3>
+                    <p>직업을 이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기로 풀어내는 관점입니다. 「박근필의 피플인사이트」로 직업인 <span data-stat="interviews">60</span>여 명을 인터뷰해 온 작업에 붙인 이름입니다. 거창한 이론이 아니라 한 사람씩 만나 이야기를 듣는 일, 그것이 전부입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>커리어 스토리텔러란 무엇인가요?</h3>
+                    <p>박근필의 직함입니다. <b>직업을 이름이 아니라 그&nbsp;일을 살아가는 사람의 이야기로 전하는 사람</b>을 말합니다. 직업인문학이 <b>관점</b>이라면 커리어 스토리텔러는 그 관점으로 하는 <b>일</b>입니다. 듣는 자리가 인터뷰이고, 전하는 자리가 강단과 책입니다. 그래서 강연 대상도 한쪽에 묶이지 않습니다. 진로를 처음 그리는 청소년에게도, 진로를 다시 그리는 직장인에게도 같은 이야기를 합니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>왜 직업의 이름만으로는 부족한가요?</h3>
+                    <p>"무슨 일 하세요?"라는 질문에 우리는 대개 직업의 이름을 답합니다. 그런데 그&nbsp;사람이 무엇에 애를 쓰고, 어디서 보람을 느끼고, 무엇 때문에 그만두고 싶었는지는 이름 바깥에 있습니다. 진로를 이름으로만 고르면 그 바깥을 못 보고 선택하게 됩니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>피플인사이트는 어떻게 진행되나요?</h3>
+                    <p>매월 한 분을 모시고 회당 1~2시간, 사전 대본 공유 없이 진행합니다. 대본을 미리 나누지 않는 이유는 정리된 답이 아니라 그 자리에서 떠오르는 이야기를 듣기 위해서입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>어떤 분들을 인터뷰했나요?</h3>
+                    <p>각자의 위치에서 열심히 삶을 살아내는 보통 사람들입니다. 유명해서 부르는 것이 아니라 <b>자신의 일에 최선을 다해 온 사람</b>이면 됩니다. 경력의 길이는 기준이 아닙니다. 2년 동안 <span data-stat="interviews">60</span>여 명을 만났습니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>직업인문학은 진로 교육과 어떻게 연결되나요?</h3>
+                    <p>학교 진로 특강에서 직업을 직업명 목록으로 소개하면 학생은 이름만 고르게 됩니다. 그&nbsp;일을 살아가는 사람의 하루와 고민을 함께 전하면 학생이 자기 삶에 비춰 볼 수 있습니다. 이 관점이 박근필의 진로·직업 특강 바탕입니다. 같은 관점을 책에 적용한 것이 <a href="career-reading.html" style="color:#1f9d93;font-weight:700;">진로독서</a>입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>직업인문학은 누가 만든 개념인가요?</h3>
+                    <p>수의사이자 작가·커리어 스토리텔러 박근필이 <b>직업을 바라보는 관점</b>입니다. 학계의 용어가 아니라 「박근필의 피플인사이트」로 직업인 <span data-stat="interviews">60</span>여 명을 인터뷰해 온 실제 작업에서 나왔습니다. 그래서 이론서가 아니라 <b>인터뷰 기록이 근거</b>입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>직업인문학과 일반적인 진로 교육은 무엇이 다른가요?</h3>
+                    <p>일반적인 진로 교육은 직업의 종류와 진입 경로를 알려 줍니다. 직업인문학은 그&nbsp;일을 살아가는 사람의 하루와 고민을 전합니다. 전자는 목록을 늘리고, 후자는 <b>자기 삶에 비춰 볼 기준</b>을 만듭니다. 또 하나 다른 점은 성공한 사람만 다루지 않는다는 것입니다. 계획대로 가지 못한 사람의 이야기를 그대로 전합니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>인터뷰에서 여러 번 확인한 것은 무엇인가요?</h3>
+                    <p><b>계획대로 간 사람이 드물다</b>는 것입니다. 많은 분이 원래 가려던 곳과 다른 자리에 서 있었고, 질병·낙방·폐업·복직 불가처럼 스스로 고르지 않은 사건이 방향을 바꾼 경우가 적지 않았습니다. 그런데도 그 자리에서 다음 걸음을 만들어 냈습니다. 진로 특강에서 이 이야기를 전하는 이유가 여기 있습니다. 아이들에게 필요한 건 완벽한 계획이 아니라 <b>계획이 어긋났을 때 다시 서는 법</b>입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>직업인문학 관점의 강연을 요청할 수 있나요?</h3>
+                    <p>가능합니다. 초등학교 1학년부터 성인까지 진행합니다. 학교는 진로·직업 특강으로, 대학생·청년·직장인은 커리어 전환을 중심으로 구성을 달리합니다. 도서관·기관 대상 강연도 진행합니다. <a href="contact.html" style="color:#1f9d93;font-weight:700;">섭외 문의 →</a></p>
+                </div>
+            </div>
+
+            <div id="anniversary-2y" style="margin-top:28px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem;">
+                <img src="people-insight-2y-261105.webp" width="1200" height="675" loading="lazy" alt="박근필의 피플인사이트 2주년 — 2024년 11월 5일 시작, 직업인 64분을 만났습니다" style="width:100%;height:auto;border-radius:10px;margin-bottom:0.8rem;display:block;">
+                <h3 style="font-size:0.98rem;font-weight:700;margin-bottom:0.45rem;"><span style="color:#1f9d93;">2주년</span> · 2026년 11월 5일, 직업인 64분을 만났습니다</h3>
+                <p style="font-size:0.98rem;color:var(--sub);line-height:1.8;">2024년 11월 5일에 첫 인터뷰를 시작해 오늘로 2년이 되었습니다. 그동안 직업인 64분을 만났고, 사전 대본 없이 그 자리에서 묻고 듣는 방식으로 진행했습니다.</p>
+                <p style="font-size:0.98rem;color:var(--sub);line-height:1.8;margin-top:0.5rem;">한 달에 한 번, 앞으로도 꾸준히 이어 가겠습니다. <a href="https://www.youtube.com/playlist?list=PL9gDAK_kh9BJl6wyOhDCvexqOSXNTKitH" target="_blank" rel="noopener" style="color:#1f9d93;font-weight:700;">지난 인터뷰 보기 →</a></p>
+            </div>
+
+            <div id="latest-interview" style="margin-top:28px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem;">
+                <h3 style="font-size:0.98rem;font-weight:700;margin-bottom:0.45rem;"><span style="color:#1f9d93;">최근 인터뷰</span> · 예순네 번째, 김인희(즐거운 호호씨) 님</h3>
+                <p style="font-size:0.98rem;color:var(--sub);line-height:1.8;">서울에서 재활운동센터를 운영하고, 출판사 이사이자 강사로 일하며, 스포츠의학 박사과정을 밟고 있는 분입니다. 남편과의 마지막 시간을 담은 에세이 『당신이 내게 건넨 삶』을 펴냈습니다.</p>
+                <p style="font-size:0.98rem;color:var(--sub);line-height:1.8;margin-top:0.5rem;">여러 일을 해내는 비결, 슬픔을 쓰는 사람의 마음, 일상을 지키는 작은 리추얼에 대해 나눴습니다. <a href="https://youtu.be/zcTC6w58psc" target="_blank" rel="noopener" style="color:#1f9d93;font-weight:700;">인터뷰 영상 보기 →</a></p>
+            </div>
+
+            <div class="cta-wrap">
+                <a href="https://www.youtube.com/playlist?list=PL9gDAK_kh9BJl6wyOhDCvexqOSXNTKitH" target="_blank" rel="noopener" class="cta-button"><i data-lucide="play-circle" aria-hidden="true"></i>피플인사이트 다시 보기</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 공통 강연 섭외 CTA -->
+    <section class="pil-cta-band">
+      <div class="pil-cta-inner">
+        <div class="pil-cta-txt">
+          <b>강연을 검토 중이신가요?</b>
+          <p>학교 진로·직업 특강, 기업·기관 커리어 강연, 교원 연수, 도서관 독서·글쓰기 강좌.<br>
+          한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</p>
+        </div>
+        <div class="pil-cta-btns">
+          <a class="pil-btn-main" href="lecture.html">강연 안내 보기</a>
+          <a class="pil-btn-sub" href="contact.html">섭외 문의</a>
+        </div>
+      </div>
+    </section>
+    <style>
+      .pil-cta-band{background:linear-gradient(135deg,#2bb7ac 0%,#1f9d93 100%);color:#fff;padding:2.4rem 1.5rem;}
+      .pil-cta-inner{max-width:1032px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;}
+      .pil-cta-txt b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.45rem;}
+      .pil-cta-txt p{font-size:0.98rem;line-height:1.65;opacity:0.95;margin:0;}
+      .pil-cta-btns{display:flex;gap:0.65rem;flex-wrap:wrap;justify-content:center;}
+      .pil-btn-main{display:inline-flex;align-items:center;background:#fff;color:#1f9d93;font-weight:700;font-size:0.98rem;padding:0.8rem 1.6rem;border-radius:14px;text-decoration:none;transition:transform .2s;}
+      .pil-btn-main:hover{transform:translateY(-2px);}
+      .pil-btn-sub{display:inline-flex;align-items:center;background:rgba(255,255,255,0.16);color:#fff;font-weight:600;font-size:0.98rem;padding:0.8rem 1.4rem;border-radius:14px;border:1px solid rgba(255,255,255,0.5);text-decoration:none;transition:background .2s;}
+      .pil-btn-sub:hover{background:rgba(255,255,255,0.28);}
+      @media(max-width:768px){.pil-cta-inner{flex-direction:column;align-items:flex-start;}}
+    </style>
+
+    <footer role="contentinfo">
+        <div class="footer-sns">
+            
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+           <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024–2026 박근필성장연구소 by 박근필. All rights reserved.<br>박근필성장연구소 대표 박근필 · 사업자등록번호 262-95-02242 · <a href="privacy.html" style="color:inherit;text-decoration:underline">개인정보처리방침</a> · <a href="resources.html" style="color:inherit;text-decoration:underline">자료실</a><br>여러분의 읽고 쓰고 말하는 삶을 응원합니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+    </script>
+
+<!-- [2026-08-26] 고정 퀵바 (온담 OD-8) — 하단 CTA 밴드에 닿지 못한 방문자를 잡는다 -->
+<nav class="pil-quick" aria-label="바로가기">
+  <a class="hi" href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>강연 섭외</a>
+  <a href="videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 8 6 4-6 4Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg>강연 영상</a>
+  <a href="columns.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2Z"/><path d="M17 8h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2"/><path d="M8 8h5M8 12h5"/></svg>칼럼 보기</a>
+</nav>
+<!-- [QUICKBAR:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json -->
+<div class="pil-quickbar" id="pilQuickbar" role="complementary" aria-label="강연 섭외 문의">
+  <span class="pq-txt">강연 섭외와 일정 문의는 언제든 편하게 주세요</span>
+  <span class="pq-btns">
+    <a class="pq-sub" href="author.html">실적 · 이력 보기</a>
+    <a class="pq-main" href="contact.html">섭외 문의</a>
+  </span>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById("pilQuickbar"); if(!bar) return;
+  /* ⭐ 페이지 끝 CTA 밴드가 보이면 바를 숨긴다 — 같은 말을 두 번 하지 않는다 */
+  var band=document.querySelector(".pil-cta-band"), bandSeen=false;
+  if(band&&"IntersectionObserver" in window){
+    new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
+      .observe(band);
+  }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
+  function paint(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
+    bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
+    /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
+       ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
+    document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
+  }
+  window.addEventListener("scroll",paint,{passive:true});
+  window.addEventListener("resize",paint); paint();
+})();
+</script>
+<!-- [/QUICKBAR:AUTO] -->
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
+<script>
+/* [SEARCH:AUTO] 사이트 내 검색 */
+var __ssIndex=null,__ssLoading=false;
+function openSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.add('on'); document.body.style.overflow='hidden';
+  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
+  loadSiteIndex();
+}
+function closeSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.remove('on'); document.body.style.overflow='';
+}
+function loadSiteIndex(){
+  if(__ssIndex||__ssLoading)return; __ssLoading=true;
+  fetch('search-index.json').then(function(r){return r.json();})
+    .then(function(d){__ssIndex=d;__ssLoading=false;
+      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
+    .catch(function(){__ssLoading=false;
+      var b=document.getElementById('siteSearchResults');
+      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
+}
+function quickSiteSearch(w){
+  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
+}
+function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function __ssSnippet(text,q){
+  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
+  if(i<0)return '';
+  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
+  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
+}
+function runSiteSearch(q){
+  var box=document.getElementById('siteSearchResults'); if(!box)return;
+  q=(q||'').trim();
+  if(q.length<2){box.innerHTML='';return;}
+  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
+  var lq=q.toLowerCase(),out=[];
+  __ssIndex.forEach(function(d){
+    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
+    var n=hay.split(lq).length-1;
+    if(n>0){
+      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      out.push({d:d,sc:sc});
+    }
+  });
+  if(!out.length){
+    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
+  out.sort(function(a,b){return b.sc-a.sc;});
+  box.innerHTML=out.slice(0,40).map(function(o){
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
+      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
+      +'<div class="ssr-s">'+sn+'</div></a>';
+  }).join('');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var i=document.getElementById('siteSearchInput');
+  if(i){
+    var tm=null;
+    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
+  }
+  var l=document.getElementById('siteSearchLayer');
+  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeSiteSearch();
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
+  });
+});
+/* [/SEARCH:AUTO] */
+</script>
+</body>
+</html>

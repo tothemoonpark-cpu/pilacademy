@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중장년·시니어 강연 — 마흔 이후의 커리어와 책쓰기 | 박근필성장연구소</title>
+    <meta name="description" content="중장년·시니어 대상 강연. 마흔에 번아웃으로 동물병원을 정리하고 읽고 써서 다시 선 사람의 이야기입니다. 평생 현역으로 · 시니어를 위한 책쓰기 · N모작 세 주제. 한국시니어TV 2부작 출연, 이모작뉴스 「박근필의 N모작」 연재.">
+    <link rel="alternate" type="text/plain" href="llms.txt" title="박근필성장연구소 — AI 답변엔진용 요약본(llms.txt)">
+    <meta name="keywords" content="중장년 강연, 중장년 강사, 시니어 강연, 50플러스 강의, 평생 현역, 시니어 책쓰기, 자서전 쓰기, 중장년 커리어 전환, N모작, 박근필">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tothemoonpark-cpu.github.io/pilacademy/senior.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="stats.js"></script>
+    <script src="lightbox.js" defer></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="박근필성장연구소">
+    <meta property="og:title" content="중장년·시니어 강연 — 마흔 이후의 커리어와 책쓰기 | 박근필">
+    <meta property="og:description" content="마흔에 무너져 본 사람이 하는 이야기입니다. 위로가 아니라 실제로 한 일을 말합니다.">
+    <meta property="og:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="박근필성장연구소 — 수의사이자 작가·강연가·커리어 스토리텔러 박근필">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:url" content="https://tothemoonpark-cpu.github.io/pilacademy/senior.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="중장년·시니어 강연 | 박근필">
+    <meta name="twitter:description" content="마흔에 무너져 본 사람이 하는 이야기입니다. 중장년·시니어 강연 안내.">
+    <meta name="twitter:image" content="https://tothemoonpark-cpu.github.io/pilacademy/og-image-261112.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2bb7ac">
+<style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --ink: #16181d; --sub: #5b6066; --mint: #2bb7ac; --mint-dark: #1f9d93;
+            --mint-soft: #eef8f6; --line: #ececec; --page: #ffffff; --panel: #f7f9f9;
+        }
+        body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.65; color: var(--ink); background: var(--page); -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+
+        header { background:#1f9d93; box-shadow:0 2px 12px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1160px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.5rem; }
+        .logo { display: flex; align-items: center; gap: 0.45rem; font-size:1.25rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; white-space: nowrap; }
+        .logo svg { width: 22px; height: 22px; color: #ffffff; }
+        .nav-links { display: flex; gap: 1.2rem; list-style: none; align-items: center; flex-wrap: wrap; }
+        .nav-links a { color: #ffffff; font-weight: 600; font-size:0.98rem; transition: opacity 0.2s; }
+        @media (max-width: 1180px) { .nav-links { gap: 0.8rem; } .nav-links a { font-size: 0.88rem; } }
+        @media (max-width: 1100px) { nav { padding: 0.85rem 1rem; } .nav-links { gap: 0.6rem; } .nav-links a { font-size: 0.84rem; } }
+        .nav-links a:hover { opacity: 0.82; }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+        .menu-toggle span { width: 24px; height: 2px; background: #ffffff; border-radius: 8px; }
+
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+        .lec-hero { background: linear-gradient(160deg, #eef8f6 0%, #ffffff 70%); padding: 3.4rem 0 3rem; border-bottom: 1px solid var(--line); }
+        .lec-hero .eyebrow { display:inline-block; font-size:0.8rem; font-weight: 600; color: var(--mint-dark); background: #fff; border:1px solid #d7eeeb; padding: 0.35rem 0.9rem; border-radius: 999px; margin-bottom: 1.1rem; }
+        .lec-hero h1 { font-size:2.2rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.34; margin-bottom: 1rem; }
+        .lec-hero h1 .accent { color: var(--mint); }
+        .lec-hero .lead { font-size:0.98rem; color: var(--sub); max-width: 740px; }
+        .stat-row { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.8rem; }
+        .stat-chip { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0.75rem 1.15rem; }
+        .stat-chip b { display:block; font-size:1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+        .stat-chip > span { font-size:0.8rem; color: var(--sub); }
+        .hero-cta { display: flex; gap: 0.7rem; margin-top: 1.8rem; flex-wrap: wrap; }
+        .btn-primary { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--mint); color: #fff; font-weight: 700; font-size:0.98rem; padding: 0.85rem 1.7rem; border-radius: 14px; transition: background 0.2s, transform 0.2s; }
+        .btn-primary:hover { background: var(--mint-dark); transform: translateY(-2px); }
+        .btn-ghost { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--ink); border: 1px solid var(--line); background:#fff; font-weight: 500; font-size:0.98rem; padding: 0.85rem 1.5rem; border-radius: 14px; transition: border-color 0.2s; }
+        .btn-ghost:hover { border-color: var(--mint); color: var(--mint-dark); }
+        .btn-primary svg, .btn-ghost svg { width: 17px; height: 17px; }
+
+        section.block { padding: 3.2rem 0; }
+        section.block.alt { background: var(--panel); }
+        .sec-head { margin-bottom: 1.9rem; }
+        .sec-head h2 { font-size:1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+        .sec-head p { font-size:0.98rem; color: var(--sub); }
+
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+        .why-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.6rem 1.4rem; }
+        .why-card h3 { font-size:0.98rem; font-weight: 700; margin-bottom: 0.45rem; letter-spacing:-0.01em; }
+        .why-card p { font-size:0.88rem; color: var(--sub); line-height: 1.68; }
+
+        .tbl { width: 100%; border-collapse: collapse; background:#fff; border:1px solid var(--line); border-radius: 14px; overflow: hidden; }
+        .tbl th, .tbl td { padding: 0.95rem 1.15rem; text-align: left; font-size:0.98rem; border-bottom: 1px solid var(--line); line-height: 1.65; vertical-align: top; }
+        .tbl thead th { background: var(--panel); font-weight: 700; color: var(--ink); }
+        .tbl tbody td { color: var(--sub); }
+        .tbl tbody td b { color: var(--ink); }
+        .tbl tr:last-child td { border-bottom: none; }
+/* 「가르치기 전에 썼습니다」 표 — 좌측 제목 칸을 넓혀 두세 줄로 받는다(우측이 좁아져도 무방).
+   좁은 칸에 강제 줄바꿈을 넣으면 남는 빈 영역이 어색해 보이던 문제를 해결. */
+.tbl-wrote .c-name { width: 38%; }
+.tbl-wrote td:first-child { padding-right: 0.6rem; }
+.tbl-wrote td:first-child b { line-height: 1.5; }
+.mag-proof { display:grid; grid-template-columns: 1.5fr 1fr; gap:1rem; align-items:start; margin-top:1.4rem; }
+.mag-proof figure { margin:0; }
+.mag-proof img { width:100%; height:auto; border:1px solid var(--line); border-radius:14px; display:block; }
+.mag-proof figcaption { font-size:0.8rem; color:var(--sub); margin-top:0.5rem; line-height:1.5; }
+@media (max-width: 560px){ .mag-proof { grid-template-columns:1fr; } }
+
+        .note { margin-top: 0.9rem; font-size: 0.88rem; color: var(--sub); line-height: 1.7; }
+
+        .pol-list { display: grid; gap: 0.8rem; }
+        .pol-item { background:#fff; border:1px solid var(--line); border-left: 4px solid var(--mint); border-radius: 0 14px 14px 0; padding: 1.1rem 1.3rem; }
+        .pol-item > b:first-child { display:block; font-size:0.98rem; margin-bottom: 0.25rem; }
+        .pol-item span b { color: var(--ink); font-weight: 700; }
+        .pol-item span { font-size:0.88rem; color: var(--sub); line-height: 1.7; }
+        .pol-src { margin-top: 1.1rem; font-size:0.88rem; color: var(--sub); }
+        .pol-src a { color: var(--mint-dark); font-weight: 600; }
+
+        .faq-list { display:grid; gap:0.9rem; }
+        .faq-item { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.4rem 1.5rem; }
+        .faq-item h3 { font-size:0.98rem; font-weight:700; margin-bottom:0.5rem; letter-spacing:-0.01em; }
+        .faq-item h3::before { content:"Q. "; color:var(--mint-dark); font-weight:700; }
+        .faq-item p { font-size:0.98rem; color:var(--sub); line-height:1.75; }
+
+        footer { background: #14161a; color: #fff; text-align: center; padding: 2.4rem 1.5rem; margin-top: 3rem; }
+        .footer-sns { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .footer-sns a { color: rgba(255,255,255,0.85); font-size:0.98rem; transition: color 0.2s; }
+        .footer-sns a:hover { color: var(--mint); }
+        .footer-copy { font-size:0.88rem; color: rgba(255,255,255,0.5); line-height: 1.8; }
+
+        @media (max-width: 900px) { .why-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 560px) {
+            .lec-hero { padding: 2.4rem 0 2.2rem; }
+            .lec-hero h1 { font-size: 1.6rem; }
+            .lec-hero .lead { font-size:0.98rem; }
+            .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+            .stat-chip { padding: 0.65rem 0.8rem; }
+            .stat-chip b { font-size:1.25rem; }
+            .stat-chip > span { font-size: 0.8rem; }
+            .hero-cta a { flex: 1 1 100%; justify-content: center; }
+            section.block { padding: 2.4rem 0; }
+            .sec-head h2 { font-size:1.25rem; }
+            .tbl th, .tbl td { padding: 0.75rem 0.85rem; font-size:0.88rem; }
+  .tbl-wrote .c-name { width: 42%; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .menu-toggle { display: flex; }
+            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; right: 1.5rem; background: #2bb7ac; border-radius: 14px; padding: 1rem 1.3rem; gap: 0.9rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+            .lec-hero h1 { font-size: 1.6rem; }
+        }
+    
+.tbl-topic .c-topic { width: 30%; }
+.tbl-topic td:first-child b { display:block; line-height:1.5; }
+.tbl-topic .dur { display:block; font-size:0.8rem; color:var(--sub); font-weight:500; margin-top:0.35rem; }
+.tbl .c-k { width: 24%; }
+.tbl .src { display:block; font-size:0.8rem; color:var(--sub); margin-top:0.5rem; line-height:1.6; }
+@media (max-width: 640px){ .tbl-topic .c-topic { width: 36%; } .tbl .c-k { width: 30%; } }
+
+        .host-card { margin: 0; background: #fff; border: 1px solid #d7eeeb; border-top: 4px solid var(--mint); border-radius: 14px; padding: 1.4rem 1.4rem 1.1rem; display: flex; flex-direction: column; }
+        .host-card p { font-size: 0.98rem; color: var(--ink); line-height: 1.75; margin: 0 0 0.9rem; flex-grow: 1; }
+        .host-card cite { font-style: normal; font-size:0.8rem; font-weight: 700; color: var(--mint-dark); border-top: 1px dashed var(--line); padding-top: 0.7rem; }
+        .rv-grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:1.1rem; }
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* [NAVSEP:AUTO] 두 기둥 구분선 — 작가님 확정 2026-08-21
+       메뉴가 여덟 개 평면 나열이라 「이것저것 하는 사람」으로 읽혔다.
+       수의사 / 작가·강연가 두 갈래로 묶어 구조가 보이게 한다.
+       ⭐ 펫로스를 수의사 축 맨 위에 둔다 — 두 기둥이 만나는 자리이자 가장 대체 불가능한 카드 */
+    .nav-sub .nav-sep{padding:.55rem .9rem .25rem;font-size:0.8rem;font-weight:800;color:#1f9d93;
+    letter-spacing:.02em;cursor:default;pointer-events:none;border-top:1px solid #ececec;margin-top:.2rem}
+    .nav-sub .nav-sep:first-child{border-top:0;margin-top:0}
+    /* [/NAVSEP:AUTO] */
+        /* [2026-08-26] 강연 사진 그리드 — 온담 벤치마킹 */
+        .ph-band{background:var(--panel,#f7f8f9);padding:2.6rem 1.5rem;}
+        .ph-inner{max-width:1032px;margin:0 auto;}
+        .ph-head{text-align:center;margin-bottom:1.4rem;}
+        .ph-head b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;color:var(--ink);}
+        .ph-head span{display:block;font-size:0.88rem;color:var(--sub);margin-top:0.35rem;}
+        .ph-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.9rem;}
+        .ph-cell{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,0.07);}
+        .ph-cell img{width:100%;height:186px;object-fit:cover;display:block;}
+        .ph-cell figcaption{font-size:0.8rem;color:var(--sub);padding:0.6rem 0.75rem;line-height:1.5;}
+        @media(max-width:820px){.ph-grid{grid-template-columns:repeat(2,1fr);}.ph-cell img{height:150px;}}
+        @media(max-width:520px){.ph-grid{grid-template-columns:1fr;}.ph-cell img{height:200px;}}
+
+      /* [2026-08-26] 기관 그리드 — 온담 파트너 로고 밴드 벤치마킹.
+         ⛔ 40개교·기관이 문장 속에 묻혀 있었다. 이름을 한 화면에 펼쳐 규모가 보이게 한다. */
+      .org-band{padding:2.8rem 1.5rem;background:#fff;border-top:1px solid var(--line,#ececec);}
+      .org-inner{max-width:1032px;margin:0 auto;}
+      .org-head{text-align:center;margin-bottom:1.5rem;}
+      .org-head b{display:block;font-size:1.25rem;font-weight:700;letter-spacing:-0.02em;color:var(--ink,#16181d);}
+      .org-head span{display:block;font-size:0.88rem;color:var(--sub,#5b6066);margin-top:0.35rem;}
+      .org-group{margin-bottom:1.5rem;}
+      .org-label{font-size:0.8rem;font-weight:700;color:var(--mint-dark,#1f9d93);margin-bottom:0.6rem;letter-spacing:0.02em;text-align:center;}
+      .org-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:0.4rem;}
+      .org-chips span{display:inline-block;font-size:0.88rem;color:var(--sub,#5b6066);
+        background:var(--panel,#f7f8f9);border:1px solid var(--line,#ececec);
+        border-radius:999px;padding:0.32rem 0.78rem;line-height:1.4;white-space:nowrap;}
+      .org-chips span.hi{background:#eefaf7;border-color:#bfe6e1;color:#1f9d93;font-weight:700;}
+      .org-note{text-align:center;font-size:0.8rem;color:var(--muted,#9aa0a6);margin-top:0.9rem;line-height:1.6;}
+        
+        /* [2026-08-26] 고정 퀵바 — 온담 벤치마킹 OD-8
+           ⭐ 온담은 전 페이지에 「문의하기·강사영상·칼럼보기」 3버튼을 고정 노출한다.
+              하단 CTA 밴드까지 못 내려간 방문자를 잡는 장치다.
+           ⛔ 3개만 둔다(전역지침 「한 화면에 강조 3개」). 모바일에서는 하단 가로 바로 바뀐다. */
+        .pil-quick{position:fixed;right:14px;bottom:22px;z-index:900;display:flex;flex-direction:column;gap:8px;}
+        .pil-quick a{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line,#ececec);
+          border-radius:999px;padding:0.62rem 0.95rem;font-size:0.8rem;font-weight:600;color:var(--ink,#16181d);
+          text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.11);white-space:nowrap;transition:transform .15s;}
+        .pil-quick a:hover{transform:translateY(-2px);}
+        .pil-quick a.hi{background:var(--mint,#2bb7ac);color:#fff;border-color:var(--mint,#2bb7ac);}
+        .pil-quick svg{width:15px;height:15px;flex:0 0 auto;}
+        @media(max-width:760px){
+          .pil-quick{right:0;left:0;bottom:0;flex-direction:row;gap:0;border-top:1px solid var(--line,#ececec);
+            background:#fff;padding:0.45rem 0.5rem calc(0.45rem + env(safe-area-inset-bottom));}
+          .pil-quick a{flex:1;justify-content:center;box-shadow:none;border:none;border-radius:14px;font-size:0.8rem;padding:0.55rem 0.3rem;}
+          .pil-quick a.hi{border-radius:14px;}
+        }
+                .hero-video { margin-top: 2.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 34px rgba(0,0,0,0.16); background:#000; line-height:0; }
+        .hero-video video { width: 100%; height: auto; display: block; }
+        .hero-vcap { margin-top: 0.7rem; font-size:0.88rem; color: var(--sub); text-align: center; }
+
+/* [SEARCH:AUTO] 사이트 내 검색 */
+.site-search-btn{background:rgba(255,255,255,.16);border:0;color:#fff;width:38px;height:38px;border-radius:10px;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s;flex-shrink:0;margin-left:.9rem}
+.site-search-btn:hover{background:rgba(255,255,255,.3)}
+.site-search-layer{position:fixed;inset:0;background:rgba(22,24,29,.5);backdrop-filter:blur(3px);
+  z-index:3000;display:none;padding:8vh 1rem 2rem}
+.site-search-layer.on{display:block}
+.site-search-box{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.site-search-bar{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid #ececec;color:#5b6066}
+.site-search-bar input{flex:1;border:0;outline:0;font-size:1.02rem;font-family:inherit;color:#16181d;background:transparent}
+.site-search-close{background:none;border:0;font-size:1.7rem;line-height:1;color:#9aa0a6;cursor:pointer;padding:0 .2rem}
+.site-search-hint{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;padding:.85rem 1.2rem;border-bottom:1px solid #f2f2f2}
+.site-search-hint span{font-size:0.79rem;color:#9aa0a6;margin-right:.2rem}
+.site-search-hint button{background:#eef8f6;border:0;color:#1f9d93;font-size:0.85rem;font-weight:600;
+  padding:.32rem .7rem;border-radius:999px;cursor:pointer;font-family:inherit}
+.site-search-hint button:hover{background:#2bb7ac;color:#fff}
+.site-search-results{max-height:56vh;overflow-y:auto;padding:.4rem 0}
+.ssr-item{display:block;padding:.9rem 1.2rem;border-bottom:1px solid #f4f4f4;color:inherit}
+.ssr-item:hover{background:#f7f9f9}
+.ssr-item:last-child{border-bottom:0}
+.ssr-t{font-weight:700;font-size:0.94rem;color:#16181d;margin-bottom:.2rem}
+.ssr-k{font-size:0.72rem;color:#1f9d93;font-weight:600;margin-left:.4rem}
+.ssr-s{font-size:0.85rem;color:#5b6066;line-height:1.55}
+.ssr-s mark{background:#fff1a8;color:inherit;padding:0 .1em;border-radius:2px}
+.ssr-empty{padding:2rem 1.2rem;text-align:center;color:#9aa0a6;font-size:0.94rem}
+@media(max-width:768px){.site-search-layer{padding:4vh .7rem 1rem}.site-search-btn{margin-left:.4rem;width:34px;height:34px}}
+/* [/SEARCH:AUTO] */
+
+</style>
+<style id="ko-wordbreak">
+      body, p, h1, h2, h3, h4, li, td, th, span, div, a, blockquote, label, button {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    </style>
+<style id="nav-dropdown">
+  .nav-drop{position:relative;}
+  /* 부모와 드롭다운 사이 빈 틈을 hover 영역으로 덮는 투명 다리 — 없으면 커서가 틈을 지날 때 메뉴가 닫힌다 */
+  .nav-drop::after{content:"";position:absolute;left:0;right:0;top:100%;height:0.7rem;background:transparent;}
+  .nav-drop .nav-caret{font-size:0.72em;opacity:0.85;}
+  .nav-sub{position:absolute;top:100%;left:-0.9rem;min-width:200px;background:#fff;
+    border:1px solid #ececec;border-radius:14px;padding:0.5rem 0;margin-top:0;top:calc(100% + 0.55rem);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);list-style:none;display:none;z-index:1200;}
+  .nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{display:block;}
+  .nav-sub li{display:block;}
+  header .nav-links .nav-sub a,
+  .nav-sub a{display:block;padding:0.6rem 1.1rem;font-size:0.98rem;font-weight:500;
+    color:#16181d !important;white-space:nowrap;opacity:1 !important;}
+  header .nav-links .nav-sub a:hover,
+  .nav-sub a:hover{background:#eef8f6;color:#1f9d93 !important;}
+  @media (max-width:768px){
+    .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;
+      padding:0.3rem 0 0.2rem 0.9rem;margin:0;min-width:0;}
+    header .nav-links .nav-sub a,
+    .nav-sub a{padding:0.42rem 0;color:#fff !important;font-size:0.88rem;opacity:0.9 !important;}
+    .nav-sub a:hover{background:transparent;color:#fff !important;}
+    .nav-drop .nav-caret{display:none;}
+  }
+</style>
+      <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "@id": "https://tothemoonpark-cpu.github.io/pilacademy/senior.html#service",
+ "name": "중장년·시니어 강연 — 마흔 이후의 커리어와 책쓰기",
+ "serviceType": "중장년·시니어 대상 강연",
+ "description": "중장년과 시니어를 대상으로 하는 강연이다. 강사 박근필은 임상 수의사로 20년 가까이 일하다 마흔에 번아웃으로 약 10년간 운영하던 동물병원을 정리했고, 그 자리에서 읽고 쓰기 시작해 3년에 다섯 권의 책을 냈다. 커리어 전환을 이론으로 배운 것이 아니라 통과한 사람이다. 세 주제를 다룬다. ① 평생 현역으로 — 마흔 이후의 커리어를 다시 그리는 법 ② 시니어를 위한 책쓰기 — 살아온 이야기를 한 권으로 남기는 법 ③ N모작 시대 — 두 번째 밭을 가는 법. 한국시니어TV 〈생각을 바꾸는 시간, S클래스〉에 2부작으로 출연했고, 중장년 매체 이모작뉴스에 「박근필의 N모작」을, 시니어 매체 캐어유뉴스에 칼럼을 연재해 왔다. 캐어유뉴스 칼럼은 「노후를 지키는 세 가지 힘: 근력·문해력·전달력」, 「기록하지 않으면 나의 역사는 사라진다」, 「살아온 세월, 그 자체가 자산이다」처럼 중장년의 읽고 쓰는 힘과 기록을 다뤄 왔다.",
+ "provider": {
+  "@id": "https://tothemoonpark-cpu.github.io/pilacademy/#organization"
+ },
+ "author": {
+  "@id": "https://tothemoonpark-cpu.github.io/pilacademy/author.html#person"
+ },
+ "areaServed": {
+  "@type": "Country",
+  "name": "대한민국"
+ },
+ "audience": {
+  "@type": "Audience",
+  "audienceType": "중장년, 시니어, 40~60대, 은퇴 준비자, 전직 지원 대상, 평생학습관 수강생, 50플러스 캠퍼스 이용자"
+ },
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "중장년·시니어 강연 주제",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "평생 현역으로 — 마흔 이후의 커리어를 다시 그리는 법",
+     "description": "마흔에 무너지고 다시 세운 3년을 그대로 다룬다. 위로가 아니라 실제로 한 일을 말한다. 한국시니어TV 〈S클래스〉 1부 「100세 X AI 시대 — 직장인이 아니라 직업인으로, 평생 현역으로」와 같은 주제다. 60분·90분."
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "시니어를 위한 책쓰기 — 살아온 이야기를 한 권으로",
+     "description": "누구나 두 권은 쓸 수 있다는 것이 전제다. 책쓰기는 글솜씨가 아니라 기획이라는 관점으로 무엇을 어떻게 남길지를 다룬다. 한국시니어TV 〈S클래스〉 2부 「누구나 작가가 될 수 있습니다 — 시니어를 위한 책쓰기」와 같은 주제다. 60분·90분·4~6회 과정."
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "N모작 시대 — 두 번째 밭을 가는 법",
+     "description": "2모작으로는 부족한 시대에 일의 형태를 여러 번 바꾸며 사는 법을 다룬다. 중장년 매체 이모작뉴스 연재 「박근필의 N모작」에서 다뤄 온 내용이다. 60분·90분."
+    }
+   }
+  ]
+ },
+ "review": [
+  {
+   "@type": "Review",
+   "reviewBody": "마침 평일에 시간이 있어서 신청하게 되었는데 장기적으로 했으면 하는 마음이 들 만큼 좋은 시간이었습니다. 나중에 또 이런 비슷한 강좌가 생기면 신청하고 싶습니다.",
+   "author": {
+    "@type": "Person",
+    "name": "수강생 (성인 4주 과정)"
+   }
+  },
+  {
+   "@type": "Review",
+   "reviewBody": "정말 많이 애써주셨습니다. 소장님 덕분에 따뜻한 분위기로 참가자분들께 의미있는 시간 드릴 수 있었어요. 다음에 또 다른 기회로 함께 수업 진행하면 좋겠습니다.",
+   "author": {
+    "@type": "Person",
+    "name": "김해율하도서관 · 담당 사서"
+   }
+  }
+ ]
+}
+</script>
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "@id": "https://tothemoonpark-cpu.github.io/pilacademy/senior.html#faq",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "중장년·시니어 강연은 어떤 이야기인가요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "마흔에 무너져 본 사람의 이야기입니다. 커리어 전환을 이론으로 배운 것이 아니라 통과했기 때문에 실제로 한 일을 말합니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "「시니어를 위한 책쓰기」는 자서전 강좌인가요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "자서전에 한정하지 않습니다. 살아온 이야기를 어떤 형태로 남길지부터 정합니다. 다섯 권을 내면서 실제로 쓴 방법을 그대로 다룹니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "중장년 대상 강연 실적이 있나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "성인 대상 강연 실적이 있습니다(부산시청 공무원 200여 명, 도서관 4주 과정 등). 중장년·시니어 주제로는 방송과 지면에서 먼저 다뤄 왔습니다 — 한국시니어TV 2부작, 이모작뉴스 「박근필의 N모작」 연재입니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "평생학습관이나 50플러스 캠퍼스에서도 가능한가요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "가능합니다. 성인 대상 연속 과정 경험이 있습니다 — 김해율하도서관 펫로스 치유 글쓰기 4주 과정을 전 회차 완주했습니다. 중장년 주제로도 단발 특강과 연속 과정 모두 설계해 드립니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "수강생이 컴퓨터를 잘 못 다뤄도 되나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "됩니다. 손으로 쓰는 것에서 시작합니다. 도구를 가르치는 수업이 아니라 무엇을 남길지를 정하는 수업입니다."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "강사료와 지역은 어떻게 되나요?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "기관 예산 기준에 맞춰 협의합니다. 부산에 거주하며 전국 출강과 비대면 진행 모두 가능합니다."
+   }
+  }
+ ]
+}
+    </script>
+    <link rel="stylesheet" href="pil.css">
+<!-- BREADCRUMB:AUTO:START -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "박근필성장연구소",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "강연 안내",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/lecture.html"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "중장년·시니어 강연",
+   "item": "https://tothemoonpark-cpu.github.io/pilacademy/senior.html"
+  }
+ ]
+}
+</script>
+<!-- BREADCRUMB:AUTO:END -->
+</head>
+<body>
+<!-- [SKIP:AUTO] --><style>.pil-skip{position:absolute;left:-9999px;top:0;z-index:9999;background:#16181d;color:#fff;padding:10px 16px;border-radius:0 0 8px 0;font-weight:700}.pil-skip:focus{left:0}</style><a class="pil-skip" href="#main-content">본문 바로가기</a>
+<header role="banner">
+        <nav role="navigation" aria-label="주요 메뉴">
+            <a href="index.html" class="logo" aria-label="박근필성장연구소 홈"><i data-lucide="sprout" aria-hidden="true"></i>박근필성장연구소</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-drop">
+                    <a href="lecture.html">강연 안내 <span class="nav-caret">▾</span></a>
+                    <ul class="nav-sub">
+                        <li><a href="lecture.html">전체 강연 안내</a></li>
+                        <li class="nav-sep">수의사로서</li>
+                        <li><a href="petloss.html">펫로스 치유 글쓰기</a></li>
+                        <li><a href="petlus-shelter.html">펫러스(PETLUS) 쉼터</a></li>
+                        <li><a href="petcare.html">반려동물 강연</a></li>
+                        <li class="nav-sep">작가 · 강연가로서</li>
+                        <li><a href="career.html">진로·직업 특강</a></li>
+                        <li><a href="career-reading.html">진로독서</a></li>
+                        <li><a href="corporate.html">기업·공공기관 강연</a></li>
+                        <li><a href="senior.html" aria-current="page">중장년·시니어 강연</a></li>
+                        <li><a href="reading.html">독서·문해력·글쓰기</a></li>
+                    </ul>
+                </li>
+                <li><a href="author.html">대표소개</a></li>
+                <li><a href="vet-notes.html">반려동물 노트</a></li>
+                <li><a href="petlus-shelter.html">펫러스 쉼터</a></li>
+                <li><a href="petlus-board.html">쉼터 게시판</a></li>
+                <li><a href="https://petlusnews.com/" target="_blank" rel="noopener">펫러스뉴스</a></li>
+                <li><a href="books.html">저서</a></li>
+                <li><a href="columns.html">칼럼</a></li>
+                <li><a href="videos.html">대표 영상</a></li>
+                <!-- [VOD 비활성화 2026-08-09 · 되살릴 때 주석 해제] <li><a href="vod.html">VOD 강의</a></li> -->
+                <!-- [독저팅 비활성화 2026-10-08 운영 휴식기 · 되살릴 때 주석 해제] <li><a href="dokjeoting.html">독저팅</a></li> -->
+                <li><a href="writing-request.html">집필·감수 의뢰</a></li>
+                <li><a href="people-insight.html">피플인사이트</a></li>
+                <li><a href="podcast.html">팟캐스트</a></li>
+                <li><a href="newsletter.html">필레터</a></li>
+                <li><a href="resources.html">자료실</a></li>
+                <!-- [필북 비활성화 2026-09-21 무기한 연기 · 되살릴 때 주석 해제] <li><a href="philbook.html">필북</a></li> -->
+                <!-- [필라이프 코칭 비활성화 2026-08-14 · 되살릴 때 주석 해제] <li><a href="phillife.html">필라이프 코칭</a></li> -->
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- [SEARCH:AUTO] 자동 생성 — 손으로 고치지 말 것 (도구/search_build.py) -->
+<button class="site-search-btn" onclick="openSiteSearch()" aria-label="사이트 내 검색" title="검색">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+       stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+</button>
+<div class="site-search-layer" id="siteSearchLayer" role="dialog" aria-modal="true" aria-label="사이트 내 검색">
+  <div class="site-search-box">
+    <div class="site-search-bar">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input type="search" id="siteSearchInput" placeholder="찾으시는 내용을 입력하세요 — 예: 진로독서, 펫로스, 직업인문학"
+             autocomplete="off" aria-label="검색어">
+      <button onclick="closeSiteSearch()" aria-label="닫기" class="site-search-close">&times;</button>
+    </div>
+    <div class="site-search-hint" id="siteSearchHint">
+      <span>자주 찾는 것</span>
+      <button onclick="quickSiteSearch('진로독서')">진로독서</button>
+      <button onclick="quickSiteSearch('직업인문학')">직업인문학</button>
+      <button onclick="quickSiteSearch('펫로스')">펫로스</button>
+      <button onclick="quickSiteSearch('직무 문해력')">직무 문해력</button>
+      <button onclick="quickSiteSearch('평생 현역')">평생 현역</button>
+      <button onclick="quickSiteSearch('강연 문의')">강연 문의</button>
+    </div>
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+<!-- [/SEARCH:AUTO] -->
+                                                        </nav>
+    </header>
+  <main role="main" id="main-content">
+
+    <section class="lec-hero">
+      <div class="wrap">
+        <h1><span class="eyebrow">중장년·시니어 강연 · 수의사 작가 박근필</span><br>마흔에 <span class="accent">무너져 본 사람</span>이 하는 이야기입니다.</h1>
+        <p class="lead">
+          <b>직장인에서 직업인으로, 병행하는 삶, 평생 현역.</b> 나이와 상관없이 늘 이 셋을 말합니다.<br>
+          20년 가까이 임상 수의사로 일하다 마흔에 번아웃으로 약 10년간 운영하던 동물병원을 정리했습니다.
+          그&nbsp;자리에서 책을 읽고 글을 쓰기 시작해 <b>3년에 다섯 권</b>을 냈습니다.
+          커리어 전환을 이론으로 배운 것이 아니라 <b>통과했습니다.</b> 그래서 위로가 아니라 실제로 한 일을 말합니다.
+        </p>
+        <div class="stat-row">
+          <div class="stat-chip"><b>2부작</b><span>한국시니어TV 출연</span></div>
+          <div class="stat-chip"><b>20편</b><span>중장년·시니어 매체 연재</span></div>
+          <div class="stat-chip"><b>저서 5권</b><span>마흔 이후 3년에</span></div>
+          <div class="stat-chip"><b>4주 완주</b><span>도서관 성인 과정</span></div>
+        </div>
+        <div class="hero-cta">
+          <a class="btn-primary" href="contact.html">강연 문의하기</a>
+          <a class="btn-ghost" href="books.html">저서 보기</a>
+        <div class="hero-video">
+          <video autoplay muted playsinline controls preload="metadata" poster="page-intro-senior-260926.jpg">
+            <source src="page-intro-senior-260926.mp4" type="video/mp4">
+            <a href="page-intro-senior-260926.mp4">영상 내려받기</a>
+          </video>
+        </div>
+        <p class="hero-vcap">20초 소개 영상 — 소리를 켜면 배경음악과 함께 보실 수 있습니다</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">TOPICS</p>
+          <h2>강연 주제</h2>
+          <p>세 주제 모두 방송과 지면에서 먼저 다뤄 온 이야기입니다.</p>
+        </div>
+        <table class="tbl tbl-topic">
+          <colgroup><col class="c-topic"><col></colgroup>
+          <tbody>
+            <tr>
+              <td><b>평생 현역으로</b> <span class="dur">60분 / 90분</span></td>
+              <td>마흔 이후의 커리어를 다시 그리는 법입니다. 무너지고 다시 세운 3년을 그대로 씁니다. 무엇을 버리고 무엇을 남겼는지, 그때 무슨 생각을 했는지를 말합니다.
+                <span class="src">근거 — <b>한국시니어TV 〈S클래스〉 1부 「100세 X AI 시대 — 직장인이 아니라 직업인으로, 평생 현역으로」(2026.8.31 방영) · 캐어유뉴스 칼럼 「‘이 나이에 무슨’이 당신을 녹슬게 한다」 · 「노후를 지키는 세 가지 힘: 근력·문해력·전달력」</span></td>
+            </tr>
+            <tr>
+              <td><b>시니어를 위한 책쓰기</b> <span class="dur">60분 / 90분 / 4~6회 과정</span></td>
+              <td>살아온 이야기를 한 권으로 남기는 법입니다. 누구나 두 권은 쓸 수 있다는 것이 전제입니다. 책쓰기는 글솜씨가 아니라 <b>기획이 8할</b>이라, 무엇을 어떻게 남길지부터 정합니다.
+                <span class="src">근거 — 시니어TV 2부 「누구나 작가가 될 수 있습니다 — 시니어를 위한 책쓰기」(2026.9.7 방영) · 캐어유뉴스 칼럼 「기록하지 않으면 나의 역사는 사라진다」 · 「살아온 세월, 그 자체가 자산이다」 · 저서 5권 · 『당신의 원고는 왜 계약되지 않는가』(2026) · 1:1 책쓰기 기획 컨설팅 <a href="dokjeoting.html">독저팅</a> 운영</span></td>
+            </tr>
+            <tr>
+              <td><b>N모작 시대</b> <span class="dur">60분 / 90분</span></td>
+              <td>두 번째 밭을 가는 법입니다. 2모작으로는 부족한 시대에 일의 형태를 여러 번 바꾸며 사는 이야기를 다룹니다.
+                <span class="src">근거 — 중장년 매체 이모작뉴스 「박근필의 N모작」 연재 중 · 캐어유뉴스 칼럼 「재앙과 축복의 분기점」(다중 현금흐름)</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note">※ 대상·인원·희망 시간만 알려 주시면 그에 맞춘 구성안을 보내 드립니다. 기업이 발주하는 전직 지원 교육은 <a href="corporate.html">기업·공공기관 강연 안내</a>를 참고해 주세요.</p>
+      </div>
+    </section>
+
+    <section class="block alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">WHY</p>
+          <h2>왜 이 사람인가</h2>
+          <p>중장년 이야기를 남의 일로 하지 않습니다.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <h3>통과한 사람</h3>
+            <p>마흔 전까지 교과서와 전공서적 말고 읽은 책은 열 손가락 안에 꼽힐 겁니다.</p>
+            <p>무너진 뒤에 읽기 시작했고, 3년에 다섯 권을 썼습니다. <b>늦게 시작해도 된다는 말을 제 이력으로 합니다.</b></p>
+          </div>
+          <div class="why-card">
+            <h3>지금도 두 가지를 하는 사람</h3>
+            <p><b>한 우물을 깊게 파되, 여러 우물도 같이 파야 합니다.</b> 수의사를 그만둔 것이 아닙니다. 지금도 동물병원에서 일하며 작가·강연가를 함께 합니다.</p>
+            <p>일을 놓지 않고 두 번째를 만드는 방법을 <b>매일 하고 있는 사람</b>입니다. 두 번째 책 제목이 『나는 매일 두 번 출근합니다』입니다.</p>
+          </div>
+          <div class="why-card">
+            <h3>쓰는 법을 아는 사람</h3>
+            <p>해마다 한 권 이상 냈고, <b>26곳 매체</b>에 칼럼을 연재합니다.</p>
+            <p>여섯 번째 책은 원고도 기획서도 없이 <b>출판사가 먼저 제안</b>해 계약했습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+<section class="ph-band" aria-label="강연 현장">
+  <div class="ph-inner">
+    <div class="ph-head"><b>중장년·성인 현장</b><span>다시 시작하는 사람들 앞에 서 온 자리입니다.</span></div>
+    <div class="ph-grid">
+      <figure class="ph-cell"><img src="photo-busancity.jpg" alt="부산시청 저자 초청 북세미나 공무원 200여 명" loading="lazy"><figcaption>공공기관 — 부산시청 공무원 200여 명</figcaption></figure>
+      <figure class="ph-cell"><img src="photo-workshop.jpg" alt="성인 연속 과정 강의실 ㄷ자 배치" loading="lazy"><figcaption>성인 — 4~6회 연속 과정</figcaption></figure>
+      <figure class="ph-cell"><img src="photo-stage.jpg" alt="대강당 강연" loading="lazy"><figcaption>대강당 — 규모를 가리지 않습니다</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="block">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">VIDEO</p>
+          <h2>먼저 영상으로 보십시오</h2>
+          <p>마흔 이후의 커리어를 두고 나눈 인터뷰입니다. 강연에서 하는 이야기가 그대로 담겨 있습니다.</p>
+        </div>
+        <div style="max-width:760px;margin:0 auto;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff">
+          <div style="position:relative;padding-bottom:56.25%;height:0">
+            <iframe src="https://www.youtube.com/embed/AKNnh0UItBU"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
+                    title="40대 직장인의 80%가 결국 후회하는 것" loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+          <div style="padding:0.9rem 1.1rem;font-size:0.9rem;font-weight:600;line-height:1.55">40대 직장인의 80%가 결국 후회하는 것 &middot; 다꿈스쿨 TV 인터뷰</div>
+        </div>
+      </div>
+    </section>
+
+<section class="block alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">TRACK RECORD</p>
+          <h2>어디서 다뤄 왔나</h2>
+          <p>강연 전에 방송과 지면에서 먼저 했습니다.</p>
+        </div>
+        <table class="tbl">
+          <colgroup><col class="c-k"><col></colgroup>
+          <tbody>
+            <tr><td><b>방송</b></td><td><b>한국시니어TV 〈생각을 바꾸는 시간, S클래스〉 2부작</b> — 두 회차가 편성됐습니다(1부 2026.8.31 방영 · 2부 9.7 방영)</td></tr>
+            <tr><td><b>중장년 지면</b></td><td>이모작뉴스 <b>「박근필의 N모작」</b> 연재 중 · 시니어 매체 <b>캐어유뉴스</b> 칼럼 연재<br><span style="font-size:0.88rem;color:var(--sub);">「노후를 지키는 세 가지 힘: <b>근력·문해력·전달력</b>」 · 「‘이 나이에 무슨’이 당신을 녹슬게 한다」 · 「기록하지 않으면 나의 역사는 사라진다」 · 「살아온 세월, 그 자체가 자산이다」 · 「시니어에겐 AI가 날개와 같다」</span></td></tr>
+            <tr><td><b>저서</b></td><td>『마흔 더 늦기 전에 생각의 틀을 리셋하라』 — <b>교보문고·예스24 자기계발 온라인 일간 1위</b>. 마흔 전후에 마음의 지진을 겪는 사람을 위한 책입니다</td></tr>
+            <tr><td><b>대학 평생교육원</b></td><td><b>부산대학교 미래시민교육원</b>(부산·양산) · <b>부경대학교 미래교육원</b> — 2026년 1학기 <b>신규 개설 강좌로 선정</b>(「책쓰기의 8할은 기획이다」). 국립대 두 곳이 심사에서 통과시킨 강좌입니다</td></tr>
+            <tr><td><b>영상</b></td><td>다꿈스쿨 TV 인터뷰 — <a href="https://youtu.be/AKNnh0UItBU" target="_blank" rel="noopener">「40대 직장인의 80%가 결국 후회하는 것」(35분)</a> · <a href="https://youtu.be/UODkpNrBnDc" target="_blank" rel="noopener">「50살 정년, 100세 시대, N잡이 선택 아닌 필수인 이유」(27분)</a> — 두 편 모두 <b>마흔 이후의 커리어</b>를 길게 다룬 이야기입니다</td></tr>
+            <tr><td><b>공적 인정</b></td><td><b>예술활동증명</b> 취득(2025.11.10, 한국예술인복지재단)</td></tr>
+            <tr><td><b>성인 강연</b></td><td>부산시청 저자 초청 북세미나 — 공무원 <b>200여 명</b> 대상 2시간 특강 · 클래스101 온라인 강의 「책쓰기와 출판 계약, 성공을 좌우하는 기획력의 모든 것」</td></tr>
+            <tr><td><b>연속 과정</b></td><td><b>김해율하도서관</b> 성인 4주 과정 전 회차 완주 · <b>큐리어스</b> 온라인 5회 연속 강의(중장년 포함 성인 · 5회차 「평생 현역으로 사세요」)</td></tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">REVIEWS</p>
+          <h2>성인 연속 과정에서 받은 반응</h2>
+          <p>김해율하도서관 성인 4주 과정(펫로스 치유 글쓰기) 수강생과 담당 사서께서 남기신 말입니다. 중장년 주제는 아니지만, <b>성인을 상대로 여러 주를 끌고 간 자리</b>에서 어떤 반응이 나왔는지 보여 드립니다.</p>
+        </div>
+        <div class="rv-grid2">
+          <blockquote class="host-card"><p>“마침 평일에 시간이 있어서 신청하게 되었는데 <b>장기적으로 했으면 하는 마음이 들 만큼</b> 좋은 시간이었습니다. 나중에 또 이런 비슷한 강좌가 생기면 신청하고 싶습니다.”</p><cite>수강생 (성인 4주 과정)</cite></blockquote>
+          <blockquote class="host-card"><p>“정말 많이 애써주셨습니다. 소장님 덕분에 <b>따뜻한 분위기로 참가자분들께 의미있는 시간</b> 드릴 수 있었어요. 다음에 또 다른 기회로 함께 수업 진행하면 좋겠습니다.”</p><cite>김해율하도서관 · 담당 사서</cite></blockquote>
+        </div>
+        <p style="font-size:0.8rem;color:var(--sub);margin-top:1rem;">※ 중장년 대상 강좌는 2026년 하반기부터 진행합니다. 위는 성인 대상 연속 과정의 반응입니다.</p>
+      </div>
+    </section>
+
+        <section class="block alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">TOPICS</p>
+          <h2>중장년에게 무슨 이야기를 하는가</h2>
+          <p>강연에서 하는 말은 두 코너에 이미 스무 편으로 쌓여 있습니다. 그중 다섯 편의 논지입니다.</p>
+        </div>
+        <table class="tbl">
+          <colgroup><col class="c-k"><col></colgroup>
+          <tbody>
+            <tr><td><b>이모작은 쉼이 아니다</b></td><td>역할이 없는 은퇴는 만족을 떨어뜨립니다. 이모작은 쉬는 것이 아니라 <b>직장인에서 직업인으로</b> 더 나답게 일하는 전환이어야 합니다. <span style="color:var(--sub);font-size:0.88rem;">— 이모작뉴스 「박근필의 N모작」</span></td></tr>
+            <tr><td><b>노후는 돈만으로 안 된다</b></td><td>돈만 쌓은 노후는 위태롭습니다. <b>돈·관계·건강·지식</b> 네 자본을 함께 쌓아야 살아 있는 노후가 됩니다.</td></tr>
+            <tr><td><b>「이 나이에 무슨」이 녹슬게 한다</b></td><td>도전을 막는 것은 나이가 아니라 자기검열입니다. 결정성 지능과 경험이라는 강점을 믿고 미뤄둔 일을 지금 시작해야 합니다. <span style="color:var(--sub);font-size:0.88rem;">— 캐어유뉴스 「박근필 소장 칼럼」</span></td></tr>
+            <tr><td><b>살아온 세월이 자산이다</b></td><td>직장 명함은 반납되지만 살아온 세월은 나만의 명함 재료입니다. 경험을 한 줄씩 기록해 자산으로 바꾸는 법을 다룹니다.</td></tr>
+            <tr><td><b>쓸모를 증명하지 않아도 된다</b></td><td>나무가 열매 없어도 나무이듯, 증명을 멈출 때 두 번째 밭이 자유로워집니다. 이모작은 인정이 아니라 그 자체로 좋아서 하는 일이어야 합니다.</td></tr>
+          </tbody>
+        </table>
+        <p class="note">두 코너를 합쳐 <b>20편</b>을 연재해 왔습니다. 전체 논지는 <a href="columns.html">칼럼 아카이브</a>에서 보실 수 있습니다.</p>
+      </div>
+    </section>
+        <!-- 이런 분께 권합니다 (MZ-7 · 2026-08-28) -->
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">FOR WHOM</p>
+                    <h2>이런 분께 권합니다</h2>
+                    <p>은퇴가 아니라 일의 형태를 바꾸는 이야기입니다.</p>
+                </div>
+                <ul style="margin:0 0 1.1rem;padding-left:1.15rem;line-height:1.85;">
+                        <li>은퇴 전후 <b>커리어를 다시 그리는</b> 자리를 여는 기관</li>
+                        <li>살아온 이야기를 <b>한 권으로 남기고</b> 싶은 분들이 모이는 곳</li>
+                        <li>「이 나이에 무슨」이라는 말이 <b>걸리는</b> 분들</li>
+                </ul>
+                <p style="margin:0;padding:0.9rem 1.1rem;background:#f7f9f9;border-radius:14px;line-height:1.75;">
+                    이력서 첨삭·면접 실무 같은 재취업 기술이 필요하시면 그 분야 전문가가 낫습니다. 이 강연은 <b>마흔에 무너지고 다시 세운 3년</b>을 그대로 다룹니다.
+                </p>
+            </div>
+        </section>
+
+
+<section class="block alt" id="faq">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">FAQ</p>
+          <h2>자주 묻는 질문</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item"><h3>중장년·시니어 강연은 어떤 이야기인가요?</h3><p><b>마흔에 무너져 본 사람의 이야기</b>입니다. 커리어 전환을 이론으로 배운 것이 아니라 통과했기 때문에 실제로 한 일을 말합니다.</p></div>
+          <div class="faq-item"><h3>「시니어를 위한 책쓰기」는 자서전 강좌인가요?</h3><p>자서전에 한정하지 않습니다. <b>살아온 이야기를 어떤 형태로 남길지부터</b> 정합니다. 다섯 권을 내면서 실제로 쓴 방법을 그대로 다룹니다.</p></div>
+          <div class="faq-item"><h3>중장년 대상 강연 실적이 있나요?</h3><p>성인 대상 강연 실적이 있습니다(부산시청 공무원 200여 명, 도서관 4주 과정 등). 중장년·시니어 주제로는 <b>방송과 지면에서 먼저</b> 다뤄 왔습니다 — 한국시니어TV 2부작, 이모작뉴스 「박근필의 N모작」 연재입니다.</p></div>
+          <div class="faq-item"><h3>평생학습관이나 50플러스 캠퍼스에서도 가능한가요?</h3><p>가능합니다. 성인 대상 연속 과정 경험이 있습니다 — <b>김해율하도서관</b> 펫로스 치유 글쓰기 4주 과정을 전 회차 완주했습니다. 중장년 주제로도 단발 특강과 연속 과정 모두 설계해 드립니다.</p></div>
+          <div class="faq-item"><h3>수강생이 컴퓨터를 잘 못 다뤄도 되나요?</h3><p>됩니다. <b>손으로 쓰는 것에서 시작</b>합니다. 도구를 가르치는 수업이 아니라 무엇을 남길지를 정하는 수업입니다.</p></div>
+          <div class="faq-item"><h3>강사료와 지역은 어떻게 되나요?</h3><p>기관 예산 기준에 맞춰 협의합니다. 부산에 거주하며 전국 출강과 비대면 진행 모두 가능합니다.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap pil-cta-band">
+        <p class="pil-eyebrow">BOOKING</p>
+        <h2>중장년·시니어 강연 문의</h2>
+        <p>대상·인원·희망 날짜만 알려 주시면 구성안을 보내 드립니다.</p>
+        <p class="pil-cta-links"><a class="btn-primary" href="contact.html">강연 문의하기</a></p>
+      </div>
+    </section>
+        <!-- 섭외 진행 안내 (MZ-8 · 2026-08-28) -->
+        <section class="block alt">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">PROCESS</p>
+                    <h2>섭외하면 이렇게 진행됩니다</h2>
+                    <p>기관 일정에 맞춰 회차와 시간을 조정합니다.</p>
+                </div>
+                <ol style="margin:0 0 1rem;padding-left:1.3rem;line-height:1.9;">
+                    <li><b>문의</b> — 대상·인원·희망 날짜만 알려 주시면 됩니다. 주제는 미정이어도 괜찮습니다.
+                        <b>보통 하루 안에 답장</b>드립니다.</li>
+                    <li><b>조건 협의</b> — 대상·시간·장소를 확인하고 예산 기준을 여쭙습니다.
+                        주제가 정해지지 않았다면 이 단계에서 함께 잡습니다.</li>
+                    <li><b>구성안 제안</b> — 대상에 맞춘 구성안을 보내 드립니다.
+                        <b>같은 원고를 대상만 바꿔 쓰지 않습니다.</b></li>
+                    <li><b>확정 · 서류</b> — 기관 서식의 강의계획서·강사 이력서를
+                        <b>제가 작성해</b> 드립니다. 강연 자료는 사전에 보내 드립니다.</li>
+                </ol>
+                <p style="margin:0;line-height:1.75;">
+                    강연 후 요청하시면 후기용 사진·자료도 정리해 드립니다.
+                    자세한 안내와 문의 양식은 <a href="https://tothemoonpark-cpu.github.io/pilacademy/contact.html">섭외 문의 페이지</a>에 있습니다.
+                </p>
+            </div>
+        </section>
+
+<!-- [GIVE:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json · 도구/pil_공통구간_build.py -->
+    <section class="give-band" aria-labelledby="giveTitle">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="pil-eyebrow">WHAT COMES WITH IT</p>
+          <h2 id="giveTitle">강연 하나에 함께 가는 것들</h2>
+          <p>강연은 그날 90분으로 끝나지 않습니다. 준비와 그 뒤에 남는 것까지 함께 만들어 드립니다.</p>
+        </div>
+        <div class="give-grid">
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v4H4z"/><path d="M4 12h10"/><path d="M4 17h7"/></svg>
+        <b>구성안을 먼저 보내 드립니다</b>
+        <span>학년과 인원, 가능한 시간만 알려 주시면 그 자리에 맞춘 구성안을 미리 만들어 보내 드립니다. 확정 전 검토 단계에서도 됩니다.</span>
+      </div>
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 14h6"/></svg>
+        <b>요청하시면 진행 자료도 만들어 드립니다</b>
+        <span>사회자용 질문지나 사전 안내문처럼 진행에 필요한 것이 있으면 말씀해 주세요. 필요하다고 하신 자리에 한해 함께 만들어 드립니다.</span>
+      </div>
+      <div class="give-card">
+        <svg class="give-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <b>요청하시면 앞서 읽을 책을 골라 드립니다</b>
+        <span>연수나 북콘서트 전에 읽어 두시면 좋을 책이 필요하시면 말씀해 주세요. 그 자리의 주제에 맞춰 추천해 드립니다.</span>
+      </div>
+        </div>
+      </div>
+    </section>
+<!-- [/GIVE:AUTO] -->
+</main>
+<footer role="contentinfo">
+        <div class="footer-sns">
+            <a href="https://litt.ly/tothemoonpark" target="_blank" rel="noopener">Litt.ly</a>
+            <a href="https://blog.naver.com/tothemoon_park" target="_blank" rel="noopener">블로그</a>
+            <a href="https://brunch.co.kr/@tothemoonpark" target="_blank" rel="noopener">브런치</a>
+            <a href="https://www.youtube.com/@tothemoonpark" target="_blank" rel="noopener">유튜브</a>
+            <a href="https://www.instagram.com/tothemoon_park/" target="_blank" rel="noopener">인스타그램</a>
+            <a href="https://www.threads.com/@tothemoon_park" target="_blank" rel="noopener">스레드</a>
+            <a href="https://x.com/Tothemoon_Park" target="_blank" rel="noopener">X</a>
+        </div>
+        <div class="footer-copy">© 2024–2026 박근필성장연구소 by 박근필. All rights reserved.<br>박근필성장연구소 대표 박근필 · 사업자등록번호 262-95-02242 · <a href="privacy.html" style="color:inherit;text-decoration:underline">개인정보처리방침</a> · <a href="resources.html" style="color:inherit;text-decoration:underline">자료실</a><br>읽고 쓰고 말하는 삶으로 당신의 성장을 돕습니다</div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) { lucide.createIcons(); }
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            var btn = document.querySelector('.menu-toggle');
+            var open = nav.classList.toggle('open');
+            if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+    </script>
+
+<!-- [2026-08-26] 고정 퀵바 (온담 OD-8) — 하단 CTA 밴드에 닿지 못한 방문자를 잡는다 -->
+<nav class="pil-quick" aria-label="바로가기">
+  <a class="hi" href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>강연 섭외</a>
+  <a href="videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 8 6 4-6 4Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg>강연 영상</a>
+  <a href="columns.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2Z"/><path d="M17 8h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2"/><path d="M8 8h5M8 12h5"/></svg>칼럼 보기</a>
+</nav>
+<!-- [QUICKBAR:AUTO] -->
+<!-- ⛔ 자동 생성 — 손으로 고치지 말 것. 원본: 칼럼/함께드리는것_정본.json -->
+<div class="pil-quickbar" id="pilQuickbar" role="complementary" aria-label="강연 섭외 문의">
+  <span class="pq-txt">강연 섭외와 일정 문의는 언제든 편하게 주세요</span>
+  <span class="pq-btns">
+    <a class="pq-sub" href="author.html">실적 · 이력 보기</a>
+    <a class="pq-main" href="contact.html">섭외 문의</a>
+  </span>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById("pilQuickbar"); if(!bar) return;
+  /* ⭐ 페이지 끝 CTA 밴드가 보이면 바를 숨긴다 — 같은 말을 두 번 하지 않는다 */
+  var band=document.querySelector(".pil-cta-band"), bandSeen=false;
+  if(band&&"IntersectionObserver" in window){
+    new IntersectionObserver(function(es){bandSeen=es[0].isIntersecting;paint();})
+      .observe(band);
+  }
+  /* ⛔ 2026-09-23 — 오른쪽 아래 퀴바(.pil-quick)와 겹쳤다. 있는 페이지는 body 에 표시한다 */
+  if(document.querySelector(".pil-quick")) document.body.classList.add("has-pq");
+  function paint(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var hidden=(getComputedStyle(bar).display==="none");
+    var on=!hidden&&(h>600)&&(y/h>0.22)&&!bandSeen;
+    bar.classList.toggle("on",on);
+    document.body.classList.toggle("pqbar-on",on);
+    document.body.style.setProperty("--pqbar-h",(on?bar.offsetHeight:0)+"px");
+    /* ⛔ 2026-09-17 — 바는 화면 위에 뜰다. 여백을 안 주면 **본문 마지막 줄을 가린다**.
+       ⭐ 높이를 그때그때 재서 준다 — 모바일에서 줄바꿈되면 높이가 달라지기 때문이다. */
+    document.body.style.paddingBottom = on ? (bar.offsetHeight + 8) + "px" : "";
+  }
+  window.addEventListener("scroll",paint,{passive:true});
+  window.addEventListener("resize",paint); paint();
+})();
+</script>
+<!-- [/QUICKBAR:AUTO] -->
+<!-- [MOTION:AUTO] --><script>document.addEventListener('DOMContentLoaded',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;[].forEach.call(document.querySelectorAll('video[autoplay]'),function(v){if(v.dataset.pb)return;v.dataset.pb=1;if(rm){v.removeAttribute('autoplay');v.pause();}if(v.hasAttribute('controls'))return;var w=v.parentElement;if(getComputedStyle(w).position==='static')w.style.position='relative';var b=document.createElement('button');b.type='button';b.className='pil-vpause';b.textContent=rm?'▶ 재생':'❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 '+(rm?'재생':'멈추기'));b.style.cssText='position:absolute;right:10px;bottom:10px;z-index:5;border:0;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;background:rgba(0,0,0,.55);color:#fff;cursor:pointer';b.onclick=function(){if(v.paused){v.play();b.textContent='❚❚ 멈추기';b.setAttribute('aria-label','배경 영상 멈추기');}else{v.pause();b.textContent='▶ 재생';b.setAttribute('aria-label','배경 영상 재생');}};w.appendChild(b);});});</script>
+<script>
+/* [SEARCH:AUTO] 사이트 내 검색 */
+var __ssIndex=null,__ssLoading=false;
+function openSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.add('on'); document.body.style.overflow='hidden';
+  var i=document.getElementById('siteSearchInput'); if(i){i.focus();}
+  loadSiteIndex();
+}
+function closeSiteSearch(){
+  var l=document.getElementById('siteSearchLayer'); if(!l)return;
+  l.classList.remove('on'); document.body.style.overflow='';
+}
+function loadSiteIndex(){
+  if(__ssIndex||__ssLoading)return; __ssLoading=true;
+  fetch('search-index.json').then(function(r){return r.json();})
+    .then(function(d){__ssIndex=d;__ssLoading=false;
+      var q=document.getElementById('siteSearchInput'); if(q&&q.value.trim())runSiteSearch(q.value);})
+    .catch(function(){__ssLoading=false;
+      var b=document.getElementById('siteSearchResults');
+      if(b)b.innerHTML='<div class="ssr-empty">검색 데이터를 불러오지 못했습니다.</div>';});
+}
+function quickSiteSearch(w){
+  var i=document.getElementById('siteSearchInput'); if(i){i.value=w;i.focus();} runSiteSearch(w);
+}
+function __ssEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function __ssSnippet(text,q){
+  var lc=text.toLowerCase(),i=lc.indexOf(q.toLowerCase());
+  if(i<0)return '';
+  var s=Math.max(0,i-45),e=Math.min(text.length,i+q.length+95);
+  var seg=(s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
+}
+function runSiteSearch(q){
+  var box=document.getElementById('siteSearchResults'); if(!box)return;
+  q=(q||'').trim();
+  if(q.length<2){box.innerHTML='';return;}
+  if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
+  var lq=q.toLowerCase(),out=[];
+  __ssIndex.forEach(function(d){
+    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
+    var n=hay.split(lq).length-1;
+    if(n>0){
+      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      out.push({d:d,sc:sc});
+    }
+  });
+  if(!out.length){
+    box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
+  out.sort(function(a,b){return b.sc-a.sc;});
+  box.innerHTML=out.slice(0,40).map(function(o){
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
+      +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
+      +'<div class="ssr-s">'+sn+'</div></a>';
+  }).join('');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var i=document.getElementById('siteSearchInput');
+  if(i){
+    var tm=null;
+    i.addEventListener('input',function(){clearTimeout(tm);var v=this.value;tm=setTimeout(function(){runSiteSearch(v);},140);});
+  }
+  var l=document.getElementById('siteSearchLayer');
+  if(l)l.addEventListener('click',function(e){if(e.target===l)closeSiteSearch();});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeSiteSearch();
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSiteSearch();}
+  });
+});
+/* [/SEARCH:AUTO] */
+</script>
+</body>
+</html>
