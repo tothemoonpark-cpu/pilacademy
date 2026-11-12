@@ -335,3 +335,15 @@ main :is(h2,h3,h4) + p{margin-top:.55rem;}
   .menu-toggle{min-width:44px;min-height:44px}
   td.sum{font-size:11px}
 }
+
+/* [2026-11-12] 상단 메뉴가 두 줄로 꺾이지 않게: 769~1199px 구간도 「≡」 버튼 메뉴로 (팟캐스트 메뉴 추가로 항목 15개) */
+@media (min-width:769px) and (max-width:1199px){
+  header .nav-links{display:none;}
+  header .menu-toggle{display:flex;}
+  header .nav-links.open{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:100%;right:1.5rem;background:#2bb7ac;border-radius:14px;padding:1rem 1.3rem;gap:.9rem;box-shadow:0 12px 30px rgba(0,0,0,.14);max-height:80vh;overflow-y:auto;}
+  header .nav-links.open a{display:block;padding:.35rem 0;font-size:.98rem;}
+  header .nav-links .nav-sub{position:static;display:block;border:none;box-shadow:none;background:transparent;padding:.3rem 0 .2rem .9rem;margin:0;min-width:0;}
+  header .nav-links .nav-sub a{padding:.42rem 0;color:#fff !important;font-size:.88rem;opacity:.9 !important;}
+  header .nav-links .nav-sub a:hover{background:transparent;color:#fff !important;}
+  header .nav-drop .nav-caret{display:none;}
+}
