@@ -336,8 +336,8 @@ main :is(h2,h3,h4) + p{margin-top:.55rem;}
   td.sum{font-size:11px}
 }
 
-/* [2026-11-12] 상단 메뉴가 두 줄로 꺾이지 않게: 769~1199px 구간도 「≡」 버튼 메뉴로 (팟캐스트 메뉴 추가로 항목 15개) */
-@media (min-width:769px) and (max-width:1199px){
+/* [2026-11-12] 상단 메뉴가 두 줄로 꺾이지 않게: 760~1200px 구간도 「≡」 버튼 메뉴로 (팟캐스트 메뉴 추가로 항목 15개) */
+@media (min-width:760px) and (max-width:1200px){
   header .nav-links{display:none;}
   header .menu-toggle{display:flex;}
   header .nav-links.open{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:100%;right:1.5rem;background:#2bb7ac;border-radius:14px;padding:1rem 1.3rem;gap:.9rem;box-shadow:0 12px 30px rgba(0,0,0,.14);max-height:80vh;overflow-y:auto;}
