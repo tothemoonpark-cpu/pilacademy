@@ -84,5 +84,8 @@
       var tk = 0; window.addEventListener('scroll', function () { if (tk) return; tk = 1; requestAnimationFrame(function () { tk = 0; mark(); }); }, { passive: true }); mark();
     }
   }
-  if (document.readyState === 'complete') run(); else window.addEventListener('load', run);
+  /* 영상이 많은 페이지는 load 가 늦다 — load 또는 문서 준비 뒤 2.5초 가운데 먼저 오는 쪽에서 한 번만 실행 */
+  var ran = 0; function go() { if (ran) return; ran = 1; run(); }
+  if (document.readyState === 'complete') go();
+  else { window.addEventListener('load', go); if (document.readyState === 'interactive') setTimeout(go, 2500); else document.addEventListener('DOMContentLoaded', function () { setTimeout(go, 2500); }); }
 })();
