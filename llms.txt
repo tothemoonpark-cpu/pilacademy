@@ -333,7 +333,11 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (609편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (613편)
+- [강아지] 귀는 필요할 때만, 면봉은 쓰지 않고 닦아요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261115_1-1.html
+- [고양이] 화장실은 하루에 한 번 이상 치워요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261115_1-2.html
+- [펫로스] 잘 쓰려 하지 말고 진료 차트처럼 한 줄만 (작가님 자산 QA대장 B-1): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261115_1-3.html
+- [쉼터] 쓰다가 마음이 무거워지면 멈춰도 될 때 (수의사이자 작가가 직접 운영): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261115_1-4.html
 - [강아지] 양치는 매일 하는 것이 기본: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261114_1-1.html
 - [고양이] 사료를 바꿀 때는 7일에서 10일쯤 천천히: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261114_1-2.html
 - [펫로스] 떠난 아이에게 쓴 글, 버리지 않고 둘 자리를 정해 두기 (작가님 자산 QA대장 B-7): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261114_1-3.html

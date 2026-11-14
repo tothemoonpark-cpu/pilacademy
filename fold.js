@@ -20,11 +20,11 @@
   function run() {
     var secs = [].slice.call(document.querySelectorAll('main section, body > section')).filter(function (s) { return !s.closest('header,footer,nav'); });
     if (!secs.length) return;
-    var vh = window.innerHeight || 800, limit = Math.max(520, Math.round(vh * 0.7)), folds = [];
+    var vh = window.innerHeight || 800, limit = Math.max(480, Math.round(vh * 0.6)), folds = [];
     secs.forEach(function (s, i) {
       if (i === 0 || s.getAttribute('data-fold') === 'off' || s.querySelector('form')) return;
       var box = s.querySelector(':scope > .wrap') || s;
-      if (box.scrollHeight < Math.max(1300, vh * 1.5)) return;
+      if (box.scrollHeight < Math.max(1000, vh * 1.15)) return;
       var id = s.id || (s.id = 'pf-sec-' + i), h = s.querySelector('h2,h3'), name = s.getAttribute('data-toc') || (h ? h.textContent.trim() : '이 부분');
       box.classList.add('pf-clip'); box.style.maxHeight = limit + 'px'; box.style.setProperty('--pf-bg', bgOf(s));
       var bar = document.createElement('div'); bar.className = 'pf-bar';
