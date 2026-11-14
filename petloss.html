@@ -26,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="stats.js"></script>
     <script src="lightbox.js" defer></script>
+    <script src="fold.js" defer></script>
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -834,7 +835,7 @@
         <!-- [2026-09-21] 펫로스증후군 — 작가님 제공 원문을 출처 대조 후 반영.
              ⛔ 출처는 문장 끝에 달지 않고 섹션 말미에 작게 모은다(작가님 지시).
              ⛔ AVMA 가 말하지 않은 것을 AVMA 이름으로 쓰지 않는다 — 2026-09-21 원문 대조 결과로 문장 조정. -->
-        <section class="block alt" id="petloss-syndrome">
+        <section data-toc="펫로스 증후군(펫로스 신드롬)" class="block alt" id="petloss-syndrome">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">UNDERSTANDING</p>
@@ -1000,7 +1001,7 @@
         </section>
 
         <!-- 왜 글쓰기인가 (2026-09-21 작가님: 「왜 상담이 아니라」는 상담가·정신과 전문의에게 상담이 필요 없다고 읽힐 수 있어 폐기) -->
-        <section class="block">
+        <section data-toc="왜 글쓰기인가" class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">APPROACH</p>
@@ -1225,7 +1226,7 @@
         </section>
 
         <!-- 왜 이 강연인가 -->
-        <section class="block alt">
+        <section data-toc="왜 수의사인가" class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">WHY</p>
@@ -1293,7 +1294,7 @@
         </section>
 
         <!-- 프로그램 개요 -->
-        <section class="block" id="curriculum">
+        <section data-toc="커리큘럼" class="block" id="curriculum">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">PROGRAM</p>
@@ -1455,7 +1456,7 @@
         </section>
 
         <!-- 진행 실적 -->
-        <section class="block alt">
+        <section data-toc="진행한 자리" class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">TRACK RECORD</p>
@@ -1521,6 +1522,7 @@
                         행사 뒤 <a href="https://www.dailyvet.co.kr/news/college/298148" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">현장 보도(2026.9.23)</a>에서는
                         이날 <b>약 1,600명</b>이 참여했고, 펫로스 강연이 특강으로 소개됐습니다.</p>
                         <p style="font-size:0.98rem;"><a href="https://youtu.be/qxMwZeOjdik" target="_blank" rel="noopener" style="color:var(--mint-dark);font-weight:700;">강연 영상 보기 →</a></p>
+                        <div style="position:relative;width:100%;aspect-ratio:16/9;margin-top:14px;margin-bottom:14px;border-radius:12px;overflow:hidden;background:#000;"><iframe src="https://www.youtube.com/embed/qxMwZeOjdik" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="지금 함께하는 시간을 더 잘 사랑하는 법과 건강한 이별 준비 — 전북대학교 수의과대학 반려동물 한마당 강연 영상"></iframe></div>
                         <img src="jbnu-petfest-260919.png" alt="전북대학교 수의과대학 반려동물 한마당 강연 강사진 포스터 — 윤홍준 수의사 「고양이와 오래 함께하는 방법」, 박근필 수의사 「지금 함께하는 시간을 더 잘 사랑하는 법과 건강한 이별 준비(펫로스 치유 글쓰기)」" loading="lazy" style="display:block;width:100%;max-width:240px;margin:.9rem auto 0;border-radius:14px;border:1px solid var(--line);">
                     </div>
                     <div class="again-card">
@@ -1528,6 +1530,7 @@
                         <h3>온담커뮤니케이션 온토리TV — 펫로스 주제 촬영</h3>
                         <p>기업기관 교육플랫폼 <b>온담커뮤니케이션</b>의 <b>온토리TV</b>에서 펫로스를 주제로 한 영상을 <b>촬영했습니다</b>(2026년 8월 24일, 판교 스튜디오).
                         도서관에서 4주에 걸쳐 나눈 이야기를 <b>영상으로도 남기는 자리</b>였습니다. <b>2026년 9월 15일 공개됐습니다</b> — 「반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디」 <a href="https://www.youtube.com/watch?v=7NgkYHHt47c" target="_blank" rel="noopener">영상 보기 →</a></p>
+                        <div style="position:relative;width:100%;aspect-ratio:16/9;margin-top:14px;border-radius:12px;overflow:hidden;background:#000;"><iframe src="https://www.youtube.com/embed/7NgkYHHt47c" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디 — 온토리TV 펫로스 영상"></iframe></div>
                     </div>
                     <div class="again-card">
                         <div class="again-num">영상</div>
@@ -1553,7 +1556,7 @@
         </section>
 
         <!-- 후기 -->
-        <section class="block">
+        <section data-toc="후기" class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">REVIEWS</p>
@@ -1634,7 +1637,7 @@
 
 
         <!-- 진행 안내 -->
-        <section class="block alt">
+        <section data-toc="진행 방식" class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">PROCESS</p>
@@ -1706,7 +1709,7 @@
 
 
         <!-- 자주 묻는 질문 -->
-        <section class="block alt" id="faq">
+        <section data-toc="자주 묻는 질문" class="block alt" id="faq">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">FAQ</p>
@@ -1770,7 +1773,7 @@
         </section>
 
         <!-- CTA -->
-        <section class="block">
+        <section data-toc="강연 문의" class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">BOOKING</p>
