@@ -333,11 +333,24 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (596편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (609편)
+- [강아지] 양치는 매일 하는 것이 기본: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261114_1-1.html
+- [고양이] 사료를 바꿀 때는 7일에서 10일쯤 천천히: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261114_1-2.html
+- [펫로스] 떠난 아이에게 쓴 글, 버리지 않고 둘 자리를 정해 두기 (작가님 자산 QA대장 B-7): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261114_1-3.html
+- [쉼터] 누가 운영하는지 궁금할 때 (수의사이자 작가가 직접 운영): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261114_1-4.html
+- [강아지] 눈 온 날 산책 뒤 발은 바로 닦아요 (제설제): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261113_1-1.html
+- [고양이] 전기장판·히터 곁에서 자는 고양이, 화상 막기: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261113_1-2.html
+- [펫로스] 슬픔이 오래 이어질 때 도움을 청해도 돼요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261113_1-3.html
+- [쉼터] 돈이 들거나 광고가 붙을까 걱정될 때 (가입 없이 무료, 광고 없음): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261113_1-4.html
+- [강아지] 미끄러운 바닥에는 미끄럼 방지 매트를 깔아 주세요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261112_1-1.html
+- [고양이] 털 뭉치는 빗질로 줄여요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261112_1-2.html
+- [펫로스] 한 줄도 안 써질 땐 「지금은 안 써진다」고 적어 두기: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261112_1-3.html
+- [쉼터] 다른 분의 글과 견주게 되어 망설여질 때 (슬픔을 재거나 비교하지 않는 곳): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261112_1-4.html
 - [강아지] 산책길 낯선 강아지·낯선 소리·미용 앞에서 보이는 겁과 불안, 보호자가 답한 미국 반려견 43,517마리 (텍사스 A&M대): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261111_1-1.html
 - [고양이] 고양이 전용 공간·시간이 있는 동물병원과 없는 병원, 고양이가 겪은 일은 어떻게 달랐을까 — 포르투갈 고양이 보호자 204명: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261111_1-2.html
 - [펫로스] 반려동물의 마지막 결정 앞에서 보호자는 무엇을 겪었나 — 보호자 143명의 이야기 (미국 콜로라도주립대): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261111_1-3.html
 - [쉼터] 펫러스(PETLUS) 쉼터 안내: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261111_1-4.html
+- [긴 글] 마지막 결정이 마음에 남을 때 — 펫로스 증후군(펫로스 신드롬)과 보호자의 이야기: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261111_q.html
 - [강아지] 강아지를 데려오는 방식(어미 확인·판매 시기·마이크로칩)과 이후 건강·병원비 — 영국 강아지 보호자 985명 온라인 설문: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261110_1-1.html
 - [고양이] 고양이가 먹는 사료(건식·반반·습식)에 따라 직접 마시는 물과 총 수분량은 어떻게 달랐을까 — 캐나다 건강한 고양이 22마리: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261110_1-2.html
 - [펫로스] 떠난 아이를 기억하고 이야기하는 일, 슬픔을 인정받는 경험 — 동물을 돌보던 31명의 면담: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261110_1-3.html
@@ -933,8 +946,9 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 <!-- [/NOTES:AUTO] -->
 
 <!-- [STORIES:AUTO] -->
-## 펫로스 이야기 — 수의사가 답하는 반려동물 이별의 질문 (32편)
+## 펫로스 이야기 — 수의사가 답하는 반려동물 이별의 질문 (33편)
 - 모음: https://tothemoonpark-cpu.github.io/pilacademy/petloss-stories.html
+- 마지막 결정이 마음에 남을 때 — 펫로스 증후군(펫로스 신드롬)과 보호자의 이야기: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261111_q.html
 - 떠난 아이를 기억해도 괜찮을까요? — 펫로스 증후군(펫로스 신드롬)과 인정받지 못한 슬픔: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261110_q.html
 - 반려동물을 떠나보낸 슬픔, 어디에 말하면 좋을까요? — 펫로스 증후군(펫로스 신드롬)과 부담 적은 자리: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261109_q.html
 - 반려동물을 잃은 슬픔, 몸속에서는 무슨 일이 일어날까요? — 펫로스 증후군(펫로스 신드롬)과 슬픔의 생물학: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261108_q.html
