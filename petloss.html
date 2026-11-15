@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="stats.js"></script>
     <script src="lightbox.js" defer></script>
-    <script src="fold.js" defer></script>
+    <script src="fold.js" defer data-more=".shorts-grid > .shorts-card|3"></script>
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -94,6 +94,17 @@
         .faq-item p { font-size:0.98rem; color:var(--sub); line-height:1.75; }
         section.block { padding: 3.2rem 0; }
         section.block.alt { background: var(--panel); }
+        /* 숏폼 영상 구역 (261115) — 세로 영상 카드. 처음 3편만 보이고 나머지는 fold.js data-more 로 접힌다 */
+        .shorts-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; max-width:900px; margin:0 auto; }
+        .shorts-card { background:var(--page); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+        .shorts-frame { position:relative; width:100%; aspect-ratio:9/16; background:#000; }
+        .shorts-frame iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+        .shorts-info { padding:1rem 1.1rem 1.2rem; }
+        .shorts-info h3 { font-size:0.98rem; font-weight:700; letter-spacing:-0.01em; line-height:1.5; margin-bottom:0.4rem; word-break:keep-all; }
+        .shorts-info .shorts-src { font-size:0.86rem; color:var(--sub); line-height:1.6; margin:0 0 0.5rem; word-break:keep-all; }
+        .shorts-info a { font-size:0.9rem; color:var(--mint-dark); font-weight:700; }
+        .shorts-grid > .pf-more { grid-column:1 / -1; }
+        @media (max-width:768px) { .shorts-grid { grid-template-columns:repeat(2,1fr); gap:0.9rem; } .shorts-info { padding:0.8rem 0.8rem 1rem; } }
         .sec-head { margin-bottom: 1.9rem; }
         .sec-head h2 { font-size:1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
         .sec-head p { font-size:0.98rem; color: var(--sub); }
@@ -835,7 +846,32 @@
         <!-- [2026-09-21] 펫로스증후군 — 작가님 제공 원문을 출처 대조 후 반영.
              ⛔ 출처는 문장 끝에 달지 않고 섹션 말미에 작게 모은다(작가님 지시).
              ⛔ AVMA 가 말하지 않은 것을 AVMA 이름으로 쓰지 않는다 — 2026-09-21 원문 대조 결과로 문장 조정. -->
-        <section data-toc="펫로스 증후군(펫로스 신드롬)" class="block alt" id="petloss-syndrome">
+        <section data-toc="숏폼 영상" class="block alt" id="petloss-shorts" data-fold="off">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="pil-eyebrow">SHORT VIDEOS</p>
+                    <h2>영상으로 먼저 만나 보세요</h2>
+                    <p>펫로스 증후군(펫로스 신드롬)과 치유 글쓰기 이야기를 짧은 영상으로 나눠 담았습니다. 마음이 가는 제목부터 골라 보세요.</p>
+                </div>
+
+                <div class="shorts-grid">
+                    <div class="shorts-card" id="shorts-_cY4N6qAIPg">
+                        <div class="shorts-frame"><iframe src="https://www.youtube.com/embed/_cY4N6qAIPg" title="펫로스 치유 글쓰기(펫러스)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="shorts-info"><h3>펫로스 치유 글쓰기(펫러스)</h3><p class="shorts-src">출처. 26.8.24_온담커뮤니케이션 온토리TV 펫로스 영상</p><a href="https://www.youtube.com/shorts/_cY4N6qAIPg" target="_blank" rel="noopener">유튜브 쇼츠로 보기</a></div>
+                    </div>
+                    <div class="shorts-card" id="shorts-0SNuyTvufqg">
+                        <div class="shorts-frame"><iframe src="https://www.youtube.com/embed/0SNuyTvufqg" title="펫로스가 힘든 이유, 박탈된 애도" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="shorts-info"><h3>펫로스가 힘든 이유, 박탈된 애도</h3><p class="shorts-src">출처. 26.8.24_온담커뮤니케이션 온토리TV 펫로스 영상</p><a href="https://www.youtube.com/shorts/0SNuyTvufqg" target="_blank" rel="noopener">유튜브 쇼츠로 보기</a></div>
+                    </div>
+                    <div class="shorts-card" id="shorts-_RIS9xjNRuw">
+                        <div class="shorts-frame"><iframe src="https://www.youtube.com/embed/_RIS9xjNRuw" title="반려동물이 지금 곁에 있어도, 미리 써 보세요" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="shorts-info"><h3>반려동물이 지금 곁에 있어도, 미리 써 보세요</h3><p class="shorts-src">출처. 26.8.24_온담커뮤니케이션 온토리TV 펫로스 영상</p><a href="https://www.youtube.com/shorts/_RIS9xjNRuw" target="_blank" rel="noopener">유튜브 쇼츠로 보기</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-toc="펫로스 증후군(펫로스 신드롬)" class="block" id="petloss-syndrome">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">UNDERSTANDING</p>
@@ -1001,7 +1037,7 @@
         </section>
 
         <!-- 왜 글쓰기인가 (2026-09-21 작가님: 「왜 상담이 아니라」는 상담가·정신과 전문의에게 상담이 필요 없다고 읽힐 수 있어 폐기) -->
-        <section data-toc="왜 글쓰기인가" class="block">
+        <section data-toc="왜 글쓰기인가" class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">APPROACH</p>
@@ -1115,7 +1151,7 @@
         </section>
 
         <!-- [2026-09-06] 펫러스 웹 도구 입구. 혼자 쓰는 자리(1층) — 서버 없음·전송 없음. -->
-        <section class="block alt">
+        <section class="block">
             <div class="wrap narrow">
                 <p class="eyebrow">WRITE</p>
                 <p class="pil-eyebrow">ONLINE</p>
@@ -1162,7 +1198,7 @@
 
         <!-- [2026-09-06] 독서치료 축 신설. ⛔ 출처는 1차 문헌(Hynes & Hynes-Berry 1986/1994)이며
              수강 중인 강의를 근거로 쓰지 않는다(전역지침 「남의 강의도 지형도다」 2026-09-01). -->
-        <section class="block">
+        <section class="block alt">
             <div class="wrap narrow">
                 <p class="eyebrow">METHOD</p>
                 <p class="pil-eyebrow">APPROACH</p>
@@ -1226,7 +1262,7 @@
         </section>
 
         <!-- 왜 이 강연인가 -->
-        <section data-toc="왜 수의사인가" class="block alt">
+        <section data-toc="왜 수의사인가" class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">WHY</p>
@@ -1294,7 +1330,7 @@
         </section>
 
         <!-- 프로그램 개요 -->
-        <section data-toc="커리큘럼" class="block" id="curriculum">
+        <section data-toc="커리큘럼" class="block alt" id="curriculum">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">PROGRAM</p>
@@ -1456,7 +1492,7 @@
         </section>
 
         <!-- 진행 실적 -->
-        <section data-toc="진행한 자리" class="block alt">
+        <section data-toc="진행한 자리" class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">TRACK RECORD</p>
@@ -1555,8 +1591,10 @@
             </div>
         </section>
 
+        <!-- 숏폼 영상 (261115) — 유튜브 쇼츠에 실제로 올라간 편만 싣는다. 새 편은 shorts-grid 맨 앞에 카드 한 개를 붙인다 -->
+
         <!-- 후기 -->
-        <section data-toc="후기" class="block">
+        <section data-toc="후기" class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">REVIEWS</p>
@@ -1596,7 +1634,7 @@
         </section>
 
         <!-- 미니 강의 후기 (2026-11-10 추가: 펫로스 치유 글쓰기 미니 강의 11월 9일, 큐리어스 후기 + 구글폼) -->
-        <section class="block alt">
+        <section class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">MINI CLASS</p>
@@ -1618,7 +1656,7 @@
 
 
         <!-- 재신청 이유 (2026-11-11 추가: 미니 강의 후 3주 강의를 다시 신청한 분들이 신청서에 적은 이유) -->
-        <section class="block">
+        <section class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">WHY AGAIN</p>
@@ -1637,7 +1675,7 @@
 
 
         <!-- 진행 안내 -->
-        <section data-toc="진행 방식" class="block alt">
+        <section data-toc="진행 방식" class="block">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">PROCESS</p>
@@ -1688,7 +1726,7 @@
             </div>
         </section>
         <!-- 이런 분께 권합니다 (MZ-7 · 2026-08-28) -->
-        <section class="block">
+        <section class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">FOR WHOM</p>
@@ -1709,7 +1747,7 @@
 
 
         <!-- 자주 묻는 질문 -->
-        <section data-toc="자주 묻는 질문" class="block alt" id="faq">
+        <section data-toc="자주 묻는 질문" class="block" id="faq">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">FAQ</p>
@@ -1773,7 +1811,7 @@
         </section>
 
         <!-- CTA -->
-        <section data-toc="강연 문의" class="block">
+        <section data-toc="강연 문의" class="block alt">
             <div class="wrap">
                 <div class="sec-head">
                     <p class="pil-eyebrow">BOOKING</p>
