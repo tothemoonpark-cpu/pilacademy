@@ -49,6 +49,11 @@
         .vid-intro b { color:var(--ink); font-weight:700; }
         .vid-intro .vid-note { font-size:0.98rem; padding-top:0.9rem; border-top:1px solid #d7eeeb; }
         .vid-intro a { color:var(--mint-dark); font-weight:700; }
+        .vid-nav { display:flex; flex-wrap:wrap; gap:.55rem; margin:0 0 1.6rem; }
+        .vid-nav a { display:inline-flex; align-items:center; gap:.4rem; padding:.5rem .95rem; border:1px solid #d7eeeb; background:#fff; color:var(--ink); border-radius:999px; font-size:0.95rem; font-weight:700; text-decoration:none; }
+        .vid-nav a:hover { background:var(--mint-soft); border-color:var(--mint-dark); }
+        .vid-nav a span { font-size:0.82rem; font-weight:700; color:var(--mint-dark); }
+        .vid-h[id] { scroll-margin-top:90px; }
         .vid-h { font-size:1.25rem; font-weight:700; letter-spacing:-0.02em; margin:2.6rem 0 0.5rem; }
         .vid-h:first-of-type { margin-top:0; }
         .vid-sub { font-size:0.98rem; color:var(--sub); line-height:1.8; margin-bottom:1.3rem; }
@@ -1078,12 +1083,11 @@
         <div class="wrap">
             <div class="vid-intro">
                 <p><b>섭외를 검토 중이시라면 이 페이지가 가장 빠릅니다.</b> 소개서나 이력서로는 알 수 없는 것 — <b>강단에서 어떻게 말하는 사람인지</b>를 영상으로 직접 확인하실 수 있습니다.</p>
-                <p>아래 영상은 세 갈래입니다. <b>방송·인터뷰</b>는 진행자와 주고받는 모습을, <b>학교 강연 현장</b>은 실제 강당에서 학생들 앞에 선 모습을, <b>소개 영상</b>은 짧은 시간에 핵심을 전하는 방식을 보여 줍니다. 전교생 414명 대강당부터 중3 137명 교실까지, 인원과 공간이 다를 때 구성이 어떻게 달라지는지도 함께 보실 수 있습니다.</p>
+                <p>아래 영상은 <b>펫로스·반려동물 / 청소년 진로 특강 현장 / 성인·교사 대상 강연 현장 / 커리어·직업·인생 2막 / 글쓰기·AI 시대·퍼스널 브랜딩 / 자녀 교육·진로 / 기타</b>로 나누어 두었습니다. 궁금한 분야의 버튼을 누르면 바로 이동합니다.</p>
                 <p class="vid-note">더 자세한 강연 주제와 실적은 <a href="lecture.html">강연 안내</a>에, 학교 진로 특강은 <a href="career.html">진로·직업 특강</a>에 정리해 두었습니다.</p>
             </div>
 
-            <h2 class="vid-h">방송 · 인터뷰</h2>
-            <p class="vid-sub">방송 채널과 전문지에서 진행자와 마주 앉아 나눈 이야기입니다. 준비된 원고가 아니라 <b>즉석에서 답하는 방식</b>을 보실 수 있습니다.</p>
+            <nav class="vid-nav" aria-label="영상 분류"><a href="#cat-pet">펫로스 · 반려동물<span>6</span></a><a href="#cat-teen">청소년 진로 특강 현장<span>8</span></a><a href="#cat-adult">성인 · 교사 대상 강연 현장<span>3</span></a><a href="#cat-career">커리어 · 직업 · 인생 2막<span>7</span></a><a href="#cat-write">글쓰기 · AI 시대 · 퍼스널 브랜딩<span>3</span></a><a href="#cat-parent">자녀 교육 · 진로<span>4</span></a><a href="#cat-etc">기타<span>2</span></a></nav>
 
             <div style="background:#f7f8f9;border:1px solid #ececec;border-left:3px solid #1f9d93;border-radius:14px;padding:1.1rem 1.3rem;margin:0 0 1.4rem;">
                 <p style="margin:0 0 .5rem;font-weight:700;color:#16181d;">방송에서 보고 오셨다면</p>
@@ -1105,74 +1109,20 @@
                 </p>
             </div>
 
+            <h2 class="vid-h" id="cat-pet">펫로스 · 반려동물</h2>
+            <p class="vid-sub">펫로스 증후군(펫로스 신드롬), 이별 준비, 반려동물 보호자가 알아야 할 상식을 다룬 영상입니다.</p>
             <div class="video-grid">
                 <div class="video-card" id="vhooh">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/GSN33Bh3QgQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="video-info"><h3>펫로스 증후군, 어디까지가 자연스러운 반응일까? 수의사가 전하는 펫로스 슬픔 치유법</h3><p>기업 교육·컨설팅 기업 <b>호오컨설팅</b>의 유튜브 채널 <b>〈호오인사이트〉</b> (2026.11.14 공개 · 약 16분). 보호자들이 겪는 <b>펫로스 증후군(펫로스 신드롬)</b>의 증상, 이별 뒤 슬픔과 죄책감을 받아들이는 법, 건강하게 애도하는 방법을 다룹니다. <a href="petcare.html" style="color:#1f9d93;font-weight:600;">반려동물·펫로스 강연 안내 →</a></p></div>
-                </div>
-                <div class="video-card" id="vchangwon">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/b51U6PqjHSo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>창원 스펀지파크 인문학 강연_나는 언제 어른이 될까</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 창원 스펀지파크 청춘 인문학 강연(바로슥 클래스) 풀영상입니다 (2026.11.8 공개 · 약 81분).</p></div>
-                </div>
-                <div class="video-card" id="vgainge">
-                    <div class="video-frame"><a href="https://gainge.com/contents/videos/6970" target="_blank" rel="noopener" style="display:block;line-height:0"><img src="gainge-personal-branding-261102.png" alt="가인지캠퍼스 「Ai 시대에 퍼스널 브랜딩으로 대표가 사업 성과 키우는 법」 박근필 수의사 영상 썸네일" style="width:100%;aspect-ratio:16/9;object-fit:cover" loading="lazy"></a></div>
-                    <div class="video-info"><h3>Ai 시대에 퍼스널 브랜딩으로 대표가 사업 성과 키우는 법</h3><p><b>〈가인지캠퍼스〉</b>(가인지컨설팅그룹)에 올라온 영상입니다 (2026.11.2 공개 · 7개 클립, 약 9분). <b>멤버십 구독 후 시청할 수 있는 유료 콘텐츠</b>입니다. <a href="https://gainge.com/contents/videos/6970" target="_blank" rel="noopener">가인지캠퍼스에서 보기</a></p></div>
-                </div>
-                <div class="video-card" id="vyoungjae">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/bqu_xPV_G1E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>영재키움 프로젝트_부울경 전문가 멘토링 데이에 진로 특강</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 부울경 영재키움 프로젝트 「전문가 멘토링 데이」 진로 특강 영상입니다 (2026.11.1 공개 · 약 41분).</p></div>
-                </div>
-                <div class="video-card" id="vnasangsa">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/62J1W6tPMmU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>부산평생학습주간_벡스코_나는 강사다</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 부산평생학습주간 「나는 강사다」 발표 영상입니다 (2026.11.1 공개 · 약 5분).</p></div>
-                </div>
-                <div class="video-card" id="vtaein">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/qJrEH-Md5o4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>태인고등학교 교사 대상 진로독서 연수</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 태인고등학교 교사 대상 진로독서 연수 영상입니다 (2026.10.29 공개 · 약 66분).</p></div>
-                </div>
-                <div class="video-card" id="vgimhae">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/JlT6Gejt2U8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>김해 진로 콘서트_김해시청소년센터</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 김해시청소년센터 진로 콘서트 영상입니다 (2026.10.24 공개 · 약 98분).</p></div>
-                </div>
-                <div class="video-card" id="vonn1024">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/HycUwoaHNeE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>내 글이 번번이 거절당한 진짜 이유 (문장력 때문이 아닙니다)</h3><p><b>ONN TV 〈이 책을 쓴 사람〉</b> 새 영상입니다 (2026.10.24 공개 · 약 24분). 영상 제목은 <b>「내 글이 번번이 거절당한 진짜 이유 (문장력 때문이 아닙니다) | 이 책을 쓴 사람」</b>입니다.</p></div>
-                </div>
-                <div class="video-card" id="vichosaeng">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/J9PrLKic3Jo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>아이 진로, 직업 이름만 보고 정하면 후회합니다</h3><p>유튜브 채널 <b>〈이서윤의 초등생활처방전〉</b> 출연 (2026.10.22 공개 · 약 37분). 영상 제목은 <b>「아이 진로, 직업 이름만 보고 정하면 후회합니다 | 현직 수의사가 말하는 직업의 이면」</b>입니다.</p></div>
-                </div>
-                <div class="video-card" id="vyoopd">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/WGtdzoWHQ1o" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>수의사가 되면 행복할 줄 알았습니다.</h3><p>〈유정임 채널_리스펙에듀〉의 대담 콘텐츠 <b>「유PD의 오답노트」</b> 게스트 출연 (2026.10.13 공개 · 약 38분). 어릴 적 꿈과 수의사가 된 계기, 첫 직장에서 매일 깨졌던 시절, <b>「수의사만 되면 행복할 줄 알았다」</b>는 고백, 병원을 떠났다가 다시 돌아온 이유, 좋은 직업의 기준(내일이 설레는 일), 그리고 내 인생의 오답을 이야기합니다.</p></div>
-                </div>
-                <div class="video-card" id="vrich">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/L7CvYSmKldI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>10년차 수의사 원장이 병원 접고 작가에 도전하게 된 이유</h3><p>자기계발 유튜브 채널 <b>〈리치파카〉</b> · 약 65분 (2026.9.29 공개). 약 10년간 운영하던 동물병원을 정리하고 글쓰기를 시작하게 된 계기, 책을 쓰고 펴내며 달라진 삶을 이야기합니다.</p></div>
-                </div>
-                <div class="video-card" id="vyoo2">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/2mIioRzaJRo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>아이 어릴 때 이미 저지른 부모의 잘못</h3><p>자녀교육 채널 <b>〈유정임 채널_리스펙에듀〉</b>의 부모 토크 코너 <b>「거침없이 부모킥」</b> 두 번째 편 (2026.9.28 공개 · 약 10분). 부모 고민 1순위인 <b>미디어 중독</b>을 두고, 어릴 때 이미 시작된 미디어 접촉에 최선이 아니라면 차선이라도 무엇을 할지 이야기했습니다. <a href="career.html" style="color:#1f9d93;font-weight:600;">진로 강연 안내 →</a></p></div>
-                </div>
-                <div class="video-card" id="vyoo">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/nHXaBHUquY8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>최악의 부모는 이렇게 훈수둔다!</h3><p>자녀교육 채널 <b>〈유정임 채널_리스펙에듀〉</b>의 부모 토크 코너 <b>「거침없이 부모킥」</b> (2026.9.21 공개 · 약 14분). 정신과·신경과 의사 아빠들, 수의사 아빠, PD 엄마가 함께 자녀 교육과 진로를 이야기했습니다. <a href="career.html" style="color:#1f9d93;font-weight:600;">진로 강연 안내 →</a></p></div>
                 </div>
                 <div class="video-card">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/qxMwZeOjdik" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="video-info"><h3>지금 함께하는 시간을 더 잘 사랑하는 법과 건강한 이별 준비</h3><p><b>전북대학교 수의과대학 「2026 반려동물 한마당」</b> 강연 (2026.9.19) · 부제 <b>펫로스 치유 글쓰기</b>. 전북대 수의과대학 제38대 학생회 <b>「다온」</b>이 주최하고 대한수의사회·전북특별자치도수의사회·<b>전북대학교 국립대학육성사업</b> 등이 후원한 행사로, 수의학도와 교수부터 <b>반려인을 포함한 시민</b>까지 함께한 자리입니다. <a href="petcare.html" style="color:#1f9d93;font-weight:600;">반려동물·펫로스 강연 안내 →</a></p></div>
                 </div>
                 <div class="video-card">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/QL_QICzT_4M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>뭘 시작하기엔 늦었다고 생각하는 분들은 보세요</h3><p>인물 인터뷰 채널 <b>「박준현의 사는 김에」</b> (2026.9.17 공개). 찾아가서 묻고 끝까지 듣는 채널입니다. 수의사에서 <b>작가·강연가·커리어 스토리텔러</b>로 길을 넓혀 온 과정을 <b>약 32분</b>에 걸쳐 이야기했습니다.</p></div>
-                </div>
-                <div class="video-card">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/7NgkYHHt47c" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="video-info"><h3>반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디</h3><p>기업기관 교육플랫폼 <b>온담커뮤니케이션</b>의 <b>온토리TV</b> (2026.9.15 공개). 스무 해 가까이 동물병원에서 마지막 순간을 지켜본 수의사가 <b>자책하는 보호자</b>에게 건네는 이야기입니다. <b>펫로스 치유 글쓰기(펫러스)</b>를 다룹니다.</p></div>
-                </div>
-                <div class="video-card">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/YM9RmUTd-TI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>낮에는 작가, 밤에는 수의사입니다</h3><p>브랜드 인터뷰 채널 <b>〈더 마인드노트〉</b>(The MindNote) · 17분 (2026.9.11 공개). 수의사로 지쳐 가던 시기에 한 권의 책에서 시작된 변화, 그리고 다른 사람의 성장을 돕는 <b>그로쓰 퍼실리테이터</b>에 이르기까지를 이야기합니다.</p></div>
                 </div>
                 <div class="video-card">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/2MSBczqKVyI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -1186,31 +1136,19 @@
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/1vVLYerjO34" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="노령 반려동물과 함께 — ONN TV 신비한 동물 사전 3회"></iframe></div>
                     <div class="video-info"><h3>노령 반려동물과 함께</h3><p>의료 전문 채널 <b>ONN TV 〈신비한 동물 사전〉</b> 3회 (2026.10.11 방영 · 26분) — <b>고정 출연</b> 세 번째 회차입니다. <a href="petcare.html" style="color:#1f9d93;font-weight:600;">반려동물 강연 안내 →</a></p></div>
                 </div>
-                <div class="video-card">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/iEW2093MslA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>AI 시대 대체되지 않는 경쟁력은 읽고 쓰는 힘에서 나온다</h3><p>강사 전문지 <b>한국강사신문 「강연 90초」</b> — 개인의 경쟁력이 모이면 조직의 경쟁력이 됩니다. <a href="https://www.lecturernews.com/news/articleView.html?idxno=207862" target="_blank" rel="noopener">기사 보기 →</a></p></div>
-                </div>
-                <div class="video-card">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/AKNnh0UItBU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>40대 직장인의 80%가 결국 후회하는 것</h3><p>다꿈스쿨 TV 인터뷰 · 수의사 전문지 데일리개원 「Vet Clip」 코너 재게재</p></div>
-                </div>
-                <div class="video-card">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/UODkpNrBnDc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>50살 정년, 100세 시대 — N잡이 선택이 아닌 필수인 이유</h3><p>다꿈스쿨 TV 인터뷰 2부. 정년은 짧아지고 수명은 길어지는 시대에 <b>일의 형태를 여러 번 바꾸며 사는 법</b>을 다룹니다. 중장년 강연의 결이 여기 있습니다.</p></div>
-                </div>
-                <div class="video-card">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/2fe0JvvrvbU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>수의사가 말하는 직업의 현실과 '글쓰기'가 인생에 가져온 변화</h3><p>의료 전문 채널 온닥터tv 〈이 책을 쓴 사람〉 출연(전국 송출). 수의사가 왜 글을 쓰게 됐는지, 그 글쓰기가 무엇을 바꿨는지를 이야기합니다.</p></div>
-                </div>
-                <div class="video-card">
-                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/6BcenZMpSc4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div class="video-info"><h3>자녀 교육 대표 채널 &lt;0교시 부모영역&gt; 출연</h3><p>자녀 교육 대표 채널 출연. AI 시대에 부모가 진짜 준비해야 할 것을 다룹니다. 학부모 대상 강연의 결을 볼 수 있습니다.</p></div>
-                </div>
             </div>
 
-            <h2 class="vid-h">학교 · 기관 강연 현장</h2>
+            <h2 class="vid-h" id="cat-teen">청소년 진로 특강 현장</h2>
             <p class="vid-sub">실제 강당·교실에서 촬영된 영상입니다. <b>전교생 414명 대강당부터 중3 137명 교실까지</b>, 인원과 공간에 따라 구성과 호흡이 어떻게 달라지는지 보실 수 있습니다.</p>
             <div class="video-grid">
+                <div class="video-card" id="vyoungjae">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/bqu_xPV_G1E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>영재키움 프로젝트_부울경 전문가 멘토링 데이에 진로 특강</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 부울경 영재키움 프로젝트 「전문가 멘토링 데이」 진로 특강 영상입니다 (2026.11.1 공개 · 약 41분).</p></div>
+                </div>
+                <div class="video-card" id="vgimhae">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/JlT6Gejt2U8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>김해 진로 콘서트_김해시청소년센터</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 김해시청소년센터 진로 콘서트 영상입니다 (2026.10.24 공개 · 약 98분).</p></div>
+                </div>
                 <div class="video-card">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/yXY0kf-uTdw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="video-info"><h3>부산시청소년자립지원관 진로 특강</h3><p>부산시청소년자립지원관 자립준비청소년 대상 진로 특강. 부산일보·국제신문·동아일보 등 <b>23개 매체</b>가 보도했습니다.</p></div>
@@ -1237,9 +1175,96 @@
                 </div>
             </div>
 
-            <p style="margin:0 0 1.4rem;color:#5b6066;">매일 올리는 반려동물 숏폼과 글은 <a href="vet-notes.html" style="color:#1f9d93;font-weight:700;">수의사의 반려동물 노트</a>에 모아 둡니다.</p>
-            <h2 class="vid-h">그 밖의 출연 · 소개</h2>
-            <p class="vid-sub">방송 출연분과 박근필을 짧게 소개하는 영상입니다.</p>
+            <h2 class="vid-h" id="cat-adult">성인 · 교사 대상 강연 현장</h2>
+            <p class="vid-sub">성인과 교사를 대상으로 한 강연·연수 영상입니다.</p>
+            <div class="video-grid">
+                <div class="video-card" id="vchangwon">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/b51U6PqjHSo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>창원 스펀지파크 인문학 강연_나는 언제 어른이 될까</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 창원 스펀지파크 청춘 인문학 강연(바로슥 클래스) 풀영상입니다 (2026.11.8 공개 · 약 81분).</p></div>
+                </div>
+                <div class="video-card" id="vtaein">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/qJrEH-Md5o4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>태인고등학교 교사 대상 진로독서 연수</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 태인고등학교 교사 대상 진로독서 연수 영상입니다 (2026.10.29 공개 · 약 66분).</p></div>
+                </div>
+                <div class="video-card" id="vnasangsa">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/62J1W6tPMmU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>부산평생학습주간_벡스코_나는 강사다</h3><p>유튜브 채널 <b>〈박근필 TV〉</b>에 공개된 부산평생학습주간 「나는 강사다」 발표 영상입니다 (2026.11.1 공개 · 약 5분).</p></div>
+                </div>
+            </div>
+
+            <h2 class="vid-h" id="cat-career">커리어 · 직업 · 인생 2막</h2>
+            <p class="vid-sub">수의사에서 작가·강사로 이어진 경력과 N잡, 직업의 현실을 이야기한 인터뷰입니다.</p>
+            <div class="video-grid">
+                <div class="video-card" id="vyoopd">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/WGtdzoWHQ1o" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>수의사가 되면 행복할 줄 알았습니다.</h3><p>〈유정임 채널_리스펙에듀〉의 대담 콘텐츠 <b>「유PD의 오답노트」</b> 게스트 출연 (2026.10.13 공개 · 약 38분). 어릴 적 꿈과 수의사가 된 계기, 첫 직장에서 매일 깨졌던 시절, <b>「수의사만 되면 행복할 줄 알았다」</b>는 고백, 병원을 떠났다가 다시 돌아온 이유, 좋은 직업의 기준(내일이 설레는 일), 그리고 내 인생의 오답을 이야기합니다.</p></div>
+                </div>
+                <div class="video-card" id="vrich">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/L7CvYSmKldI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>10년차 수의사 원장이 병원 접고 작가에 도전하게 된 이유</h3><p>자기계발 유튜브 채널 <b>〈리치파카〉</b> · 약 65분 (2026.9.29 공개). 약 10년간 운영하던 동물병원을 정리하고 글쓰기를 시작하게 된 계기, 책을 쓰고 펴내며 달라진 삶을 이야기합니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/YM9RmUTd-TI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>낮에는 작가, 밤에는 수의사입니다</h3><p>브랜드 인터뷰 채널 <b>〈더 마인드노트〉</b>(The MindNote) · 17분 (2026.9.11 공개). 수의사로 지쳐 가던 시기에 한 권의 책에서 시작된 변화, 그리고 다른 사람의 성장을 돕는 <b>그로쓰 퍼실리테이터</b>에 이르기까지를 이야기합니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/QL_QICzT_4M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>뭘 시작하기엔 늦었다고 생각하는 분들은 보세요</h3><p>인물 인터뷰 채널 <b>「박준현의 사는 김에」</b> (2026.9.17 공개). 찾아가서 묻고 끝까지 듣는 채널입니다. 수의사에서 <b>작가·강연가·커리어 스토리텔러</b>로 길을 넓혀 온 과정을 <b>약 32분</b>에 걸쳐 이야기했습니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/AKNnh0UItBU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>40대 직장인의 80%가 결국 후회하는 것</h3><p>다꿈스쿨 TV 인터뷰 · 수의사 전문지 데일리개원 「Vet Clip」 코너 재게재</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/UODkpNrBnDc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>50살 정년, 100세 시대 — N잡이 선택이 아닌 필수인 이유</h3><p>다꿈스쿨 TV 인터뷰 2부. 정년은 짧아지고 수명은 길어지는 시대에 <b>일의 형태를 여러 번 바꾸며 사는 법</b>을 다룹니다. 중장년 강연의 결이 여기 있습니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/2fe0JvvrvbU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>수의사가 말하는 직업의 현실과 '글쓰기'가 인생에 가져온 변화</h3><p>의료 전문 채널 온닥터tv 〈이 책을 쓴 사람〉 출연(전국 송출). 수의사가 왜 글을 쓰게 됐는지, 그 글쓰기가 무엇을 바꿨는지를 이야기합니다.</p></div>
+                </div>
+            </div>
+
+            <h2 class="vid-h" id="cat-write">글쓰기 · AI 시대 · 퍼스널 브랜딩</h2>
+            <p class="vid-sub">글쓰기와 읽고 쓰는 힘, AI 시대의 퍼스널 브랜딩을 다룬 영상입니다.</p>
+            <div class="video-grid">
+                <div class="video-card" id="vonn1024">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/HycUwoaHNeE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>내 글이 번번이 거절당한 진짜 이유 (문장력 때문이 아닙니다)</h3><p><b>ONN TV 〈이 책을 쓴 사람〉</b> 새 영상입니다 (2026.10.24 공개 · 약 24분). 영상 제목은 <b>「내 글이 번번이 거절당한 진짜 이유 (문장력 때문이 아닙니다) | 이 책을 쓴 사람」</b>입니다.</p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/iEW2093MslA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>AI 시대 대체되지 않는 경쟁력은 읽고 쓰는 힘에서 나온다</h3><p>강사 전문지 <b>한국강사신문 「강연 90초」</b> — 개인의 경쟁력이 모이면 조직의 경쟁력이 됩니다. <a href="https://www.lecturernews.com/news/articleView.html?idxno=207862" target="_blank" rel="noopener">기사 보기 →</a></p></div>
+                </div>
+                <div class="video-card" id="vgainge">
+                    <div class="video-frame"><a href="https://gainge.com/contents/videos/6970" target="_blank" rel="noopener" style="display:block;line-height:0"><img src="gainge-personal-branding-261102.png" alt="가인지캠퍼스 「Ai 시대에 퍼스널 브랜딩으로 대표가 사업 성과 키우는 법」 박근필 수의사 영상 썸네일" style="width:100%;aspect-ratio:16/9;object-fit:cover" loading="lazy"></a></div>
+                    <div class="video-info"><h3>Ai 시대에 퍼스널 브랜딩으로 대표가 사업 성과 키우는 법</h3><p><b>〈가인지캠퍼스〉</b>(가인지컨설팅그룹)에 올라온 영상입니다 (2026.11.2 공개 · 7개 클립, 약 9분). <b>멤버십 구독 후 시청할 수 있는 유료 콘텐츠</b>입니다. <a href="https://gainge.com/contents/videos/6970" target="_blank" rel="noopener">가인지캠퍼스에서 보기</a></p></div>
+                </div>
+            </div>
+
+            <h2 class="vid-h" id="cat-parent">자녀 교육 · 진로</h2>
+            <p class="vid-sub">부모가 알아야 할 자녀 교육과 진로 이야기를 다룬 채널 출연 영상입니다.</p>
+            <div class="video-grid">
+                <div class="video-card" id="vichosaeng">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/J9PrLKic3Jo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>아이 진로, 직업 이름만 보고 정하면 후회합니다</h3><p>유튜브 채널 <b>〈이서윤의 초등생활처방전〉</b> 출연 (2026.10.22 공개 · 약 37분). 영상 제목은 <b>「아이 진로, 직업 이름만 보고 정하면 후회합니다 | 현직 수의사가 말하는 직업의 이면」</b>입니다.</p></div>
+                </div>
+                <div class="video-card" id="vyoo2">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/2mIioRzaJRo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>아이 어릴 때 이미 저지른 부모의 잘못</h3><p>자녀교육 채널 <b>〈유정임 채널_리스펙에듀〉</b>의 부모 토크 코너 <b>「거침없이 부모킥」</b> 두 번째 편 (2026.9.28 공개 · 약 10분). 부모 고민 1순위인 <b>미디어 중독</b>을 두고, 어릴 때 이미 시작된 미디어 접촉에 최선이 아니라면 차선이라도 무엇을 할지 이야기했습니다. <a href="career.html" style="color:#1f9d93;font-weight:600;">진로 강연 안내 →</a></p></div>
+                </div>
+                <div class="video-card" id="vyoo">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/nHXaBHUquY8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>최악의 부모는 이렇게 훈수둔다!</h3><p>자녀교육 채널 <b>〈유정임 채널_리스펙에듀〉</b>의 부모 토크 코너 <b>「거침없이 부모킥」</b> (2026.9.21 공개 · 약 14분). 정신과·신경과 의사 아빠들, 수의사 아빠, PD 엄마가 함께 자녀 교육과 진로를 이야기했습니다. <a href="career.html" style="color:#1f9d93;font-weight:600;">진로 강연 안내 →</a></p></div>
+                </div>
+                <div class="video-card">
+                    <div class="video-frame"><iframe src="https://www.youtube.com/embed/6BcenZMpSc4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video-info"><h3>자녀 교육 대표 채널 &lt;0교시 부모영역&gt; 출연</h3><p>자녀 교육 대표 채널 출연. AI 시대에 부모가 진짜 준비해야 할 것을 다룹니다. 학부모 대상 강연의 결을 볼 수 있습니다.</p></div>
+                </div>
+            </div>
+
+            <h2 class="vid-h" id="cat-etc">기타</h2>
+            <p class="vid-sub">위 분류에 들지 않는 출연·소개 영상입니다.</p>
             <div class="video-grid">
                 <div class="video-card">
                     <div class="video-frame"><iframe src="https://www.youtube.com/embed/RiWhXP87mEs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -1250,6 +1275,7 @@
                     <div class="video-info"><h3>인공지능이 말해주는 박근필</h3><p>AI가 공개 자료만으로 박근필 대표를 소개한 영상입니다.</p></div>
                 </div>
             </div>
+
             <div class="back-link"><a href="index.html"><i data-lucide="arrow-left" aria-hidden="true"></i>홈으로 돌아가기</a></div>
         </div>
     
