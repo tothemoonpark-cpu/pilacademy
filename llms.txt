@@ -337,11 +337,16 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (622편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (627편)
+- [강아지] 몸무게는 집에서 재 봐요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261118_1-1.html
+- [고양이] 밤마다 뛰면 낮과 저녁을 채워요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261118_1-2.html
+- [펫로스] 아이를 돌보던 시간이 비었을 때 한 줄 써요 (AVMA 보호자 안내): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261118_1-3.html
+- [쉼터] 내 글이 어디에 쓰일지 궁금할 때 (수의사이자 작가가 직접 운영): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261118_1-4.html
 - [강아지] 예방접종을 맞은 날은 곁에서 지켜봐요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261117_1-1.html
 - [고양이] 발톱은 끝만 조금씩 깎아요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261117_1-2.html
 - [펫로스] 다시 무너진 날은 그만두지 말고 세 줄로 줄여요 (작가님 자산 QA대장 E-4): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261117_1-3.html
 - [쉼터] 글을 쓰면 남는 정보가 궁금할 때 (수의사이자 작가가 직접 운영): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261117_1-4.html
+- [긴 글] 고양이와 사는 집에 백합 꽃다발, 왜 위험할까요? 수의사가 알려 드립니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261117_q.html
 - [강아지] 목욕은 강아지용 샴푸로, 사람 샴푸는 쓰지 않아요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261116_1-1.html
 - [고양이] 실과 끈은 놀고 나면 치워 두고, 입에서 나온 실은 당기지 않아요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261116_1-2.html
 - [펫로스] 떠난 아이의 물건, 한꺼번에 정하지 말고 나눠서 정리해요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261116_1-3.html
