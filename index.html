@@ -833,7 +833,7 @@
                          ⛔ 전부 「예정」 명시 (정본표기_기계대장.json) -->
                     <p class="hero-proof"><b>한 번 부른 곳이 다시 부르고, 다른 곳에 소개합니다.</b><br>
                     <b>ONN TV 〈신비한 동물 사전〉 고정 출연</b>(1회 2026.8.30 방영 · 2회 9.27 방영 · <b>3회 10.11 방영</b>) · <b>한국시니어TV 〈생각을 바꾸는 시간, S클래스〉</b> 2부작(1부 8.31 방영 · 2부 9.7 방영) · <b><a href="https://www.youtube.com/watch?v=7NgkYHHt47c" target="_blank" rel="noopener">온토리TV 「반려동물 떠나보낸 뒤 자책하는 분들께, 수의사가 건넨 한마디」</a></b>(2026.9.15 공개) · <b><a href="https://www.youtube.com/watch?v=GSN33Bh3QgQ" target="_blank" rel="noopener">호오컨설팅 〈호오인사이트〉 「펫로스 증후군, 어디까지가 자연스러운 반응일까? 수의사가 전하는 펫로스 슬픔 치유법」</a></b>(2026.11.14 공개)<br>
-                    <b><a href="https://www.gimhae.go.kr/03360/00023/00031.web?amode=view&amp;not_ancmt_mgt_no=111361&amp;section=05" target="_blank" rel="noopener">김해율하도서관 2027년 율하아카데미 교육강사 최종 합격</a></b>(인문 분야 · 2026.11.18 공고) · <b>태인고등학교 교사 대상 진로독서 연수</b>(2026.10.28 · 교장·교감 선생님 참석) · 부산시교육청영재교육진흥원 교원 직무연수 강사 · 부산시청 공무원 200여 명 특강 · 경향신문 인터뷰 · <a href="https://www.peoplewatch.co.kr/article/view/ppw202610210008" target="_blank" rel="noopener">피플워치 인물 인터뷰</a>(2026.10.22) · <a href="https://www.lecturernews.com/news/articleView.html?idxno=213970" target="_blank" rel="noopener">한국강사신문 펫로스 활동 소개 기사</a>(2026.11.17) · <a href="http://www.mkspeaker.co.kr/speaker_view.php?no=424" target="_blank" rel="noopener">매일경제 MK Speaker 연사 등록</a><br>
+                    <b><a href="https://www.gimhae.go.kr/03360/00023/00031.web?amode=view&amp;not_ancmt_mgt_no=111361&amp;section=05" target="_blank" rel="noopener">김해율하도서관 2027년 율하아카데미 교육강사 최종 합격</a></b>(인문 분야 · 2026.11.18 공고) · <b>태인고등학교 교사 대상 진로독서 연수</b>(2026.10.28 · 교장·교감 선생님 참석) · 부산시교육청영재교육진흥원 교원 직무연수 강사 · 부산시청 공무원 200여 명 특강 · 세계일보 「펫 상실학 개론」 연재 · 경향신문 인터뷰 · <a href="https://www.peoplewatch.co.kr/article/view/ppw202610210008" target="_blank" rel="noopener">피플워치 인물 인터뷰</a>(2026.10.22) · <a href="https://www.lecturernews.com/news/articleView.html?idxno=213970" target="_blank" rel="noopener">한국강사신문 펫로스 활동 소개 기사</a>(2026.11.17) · <a href="http://www.mkspeaker.co.kr/speaker_view.php?no=424" target="_blank" rel="noopener">매일경제 MK Speaker 연사 등록</a><br>
                     <!-- [2026-09-17] 방송 줄과 섞지 않는다 — 위는 방송 채널, 여기는 인터뷰 채널.
                          온담 대표 조언 「검색하다가 검증하고 섭외해 간다」의 '검증' 쪽 신호라
                          첫 화면에 두되 방송 신호를 희석하지 않게 줄을 나눈다. -->
@@ -1344,21 +1344,44 @@ function __ssSnippet(text,q){
   var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
   return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
 }
+/* 2026-11-20 대표님 지시 — 「율하 강사」처럼 낱말을 띄어 쓰면, 그 낱말들이 서로 가까이(앞뒤 40자 안) 함께 있는 자리만 찾는다.
+   한 페이지 안 서로 먼 곳에 따로 있는 것은 결과가 아니다. */
+function __ssNear(lc,ws){
+  var out=[],w0=ws[0],i=0,W=40;
+  while((i=lc.indexOf(w0,i))>=0){
+    var a=Math.max(0,i-W),b=Math.min(lc.length,i+w0.length+W),seg=lc.slice(a,b),ok=true;
+    for(var k=1;k<ws.length;k++){ if(seg.indexOf(ws[k])<0){ok=false;break;} }
+    if(ok)out.push(i);
+    i+=w0.length;
+  }
+  return out;
+}
+function __ssMark(seg,ws){
+  var lc=seg.toLowerCase(),m=[];
+  ws.forEach(function(w){var i=0;while((i=lc.indexOf(w,i))>=0){m.push([i,i+w.length]);i+=w.length;}});
+  m.sort(function(x,y){return x[0]-y[0];});
+  var o='',p=0;
+  m.forEach(function(r){ if(r[0]<p)return; o+=__ssEsc(seg.slice(p,r[0]))+'<mark>'+__ssEsc(seg.slice(r[0],r[1]))+'</mark>'; p=r[1]; });
+  return o+__ssEsc(seg.slice(p));
+}
+function __ssSnip2(text,ws){
+  var lc=text.toLowerCase(),pos=__ssNear(lc,ws);
+  if(!pos.length)return '';
+  var i=pos[0],s=Math.max(0,i-60),e=Math.min(text.length,i+ws[0].length+100);
+  return (s>0?'…':'')+__ssMark(text.slice(s,e),ws)+(e<text.length?'…':'');
+}
 function runSiteSearch(q){
   var box=document.getElementById('siteSearchResults'); if(!box)return;
   q=(q||'').trim();
   if(q.length<2){box.innerHTML='';return;}
   if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
   var lq=q.toLowerCase(),out=[];
+  var ws=lq.split(' ').filter(function(w){return w.length>0;});
+  ws.sort(function(x,y){return y.length-x.length;});
   __ssIndex.forEach(function(d){
-    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
-    /* 2026-11-20 — 「율하 강사」처럼 띄어 쓴 낱말은 붙어 있지 않아도 모두 들어 있으면 찾는다 */
-    var ws=lq.split(' ').filter(function(w){return w.length>0;});
-    var all=ws.every(function(w){return hay.indexOf(w)>=0;});
-    var ph=hay.split(lq).length-1;
-    var n=ph*5; ws.forEach(function(w){n+=hay.split(w).length-1;});
-    if(all){
-      var tl=d.t.toLowerCase();
+    var tl=d.t.toLowerCase(), hay=(d.t+' '+(d.d||'')).toLowerCase(), body=(d.x||'').toLowerCase();
+    var n=__ssNear(hay,ws).length*3+__ssNear(body,ws).length;
+    if(n>0){
       var sc=n + (tl.indexOf(lq)>=0?60:0) + (ws.every(function(w){return tl.indexOf(w)>=0;})?30:0) + (d.k==='페이지'?12:0);
       out.push({d:d,sc:sc});
     }
@@ -1367,7 +1390,7 @@ function runSiteSearch(q){
     box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
   out.sort(function(a,b){return b.sc-a.sc;});
   box.innerHTML=out.slice(0,40).map(function(o){
-    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssSnippet(d.x||d.d||'',q.split(' ').filter(function(w){return w.length>0;}).sort(function(x,y){return y.length-x.length;})[0]||q)||__ssEsc((d.d||'').slice(0,110));
+    var d=o.d, sn=__ssSnip2(d.x||'',ws)||__ssSnip2(d.d||'',ws)||__ssEsc((d.d||'').slice(0,110));
     return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
       +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
       +'<div class="ssr-s">'+sn+'</div></a>';

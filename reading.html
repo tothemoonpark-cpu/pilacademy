@@ -805,6 +805,8 @@
               <td style="padding:1rem 1.2rem;border-bottom:1px solid var(--line);font-size:0.98rem;"><b>혁신어울림 작은도서관</b> 어린이 독서문화강좌 — 여름방학 4회 <b>전 회차 완주</b>(2026.8.4~8.25 · 읽기→문해력→질문→쓰기 · 회당 90분 · 초등 4~6학년) · <b>하반기 6회를 먼저 제안받아 확정</b><br>마지막 날 아이들이 손편지를 남겼습니다 — <b>“책은 처음부터 읽지 않고 중간부터 읽어도 된다고 하셔서 중간부터 읽어보기도 했어요.”</b> · <b>“‘대박’과 ‘헐’은 자주 쓰면 좋지 않다는 것을 알게 되었어요.”</b></td></tr>
           <tr><td style="padding:1rem 1.2rem;border-bottom:1px solid var(--line);font-weight:700;color:var(--mint-dark);font-size:0.98rem;">어린이 4주</td>
               <td style="padding:1rem 1.2rem;border-bottom:1px solid var(--line);font-size:0.98rem;"><b>부산진구 기적의 도서관</b> 여름방학 4주 과정 「수의사가 들려주는 반려동물 이야기」(2025.8)</td></tr>
+          <tr><td style="padding:1rem 1.2rem;border-bottom:1px solid var(--line);font-weight:700;color:var(--mint-dark);font-size:0.98rem;">성인 연속 강좌</td>
+              <td style="padding:1rem 1.2rem;border-bottom:1px solid var(--line);font-size:0.98rem;"><b>김해율하도서관 2027년 율하아카데미 교육강사 최종 합격</b> — 성인·인문 분야(화요일 19:00~20:40 비대면 강좌 · 2026.11.18 공고)</td></tr>
           <tr><td style="padding:1rem 1.2rem;border-bottom:1px solid var(--line);font-weight:700;color:var(--mint-dark);font-size:0.98rem;">성인 4주</td>
               <td style="padding:1rem 1.2rem;border-bottom:1px solid var(--line);font-size:0.98rem;"><b>김해율하도서관</b> 「안녕, 나의 반려동물 — 추억과 이별을 쓰는 펫로스 치유 글쓰기」 4주 <b>전 회차 완주</b>(2026.7, 회당 2시간) — <a href="petloss.html" style="color:var(--mint-dark);font-weight:700;">펫로스 강연 보기</a></td></tr>
           <tr><td style="padding:1rem 1.2rem;border-bottom:1px solid var(--line);font-weight:700;color:var(--mint-dark);font-size:0.98rem;">학교</td>
@@ -1104,21 +1106,44 @@ function __ssSnippet(text,q){
   var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
   return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
 }
+/* 2026-11-20 대표님 지시 — 「율하 강사」처럼 낱말을 띄어 쓰면, 그 낱말들이 서로 가까이(앞뒤 40자 안) 함께 있는 자리만 찾는다.
+   한 페이지 안 서로 먼 곳에 따로 있는 것은 결과가 아니다. */
+function __ssNear(lc,ws){
+  var out=[],w0=ws[0],i=0,W=40;
+  while((i=lc.indexOf(w0,i))>=0){
+    var a=Math.max(0,i-W),b=Math.min(lc.length,i+w0.length+W),seg=lc.slice(a,b),ok=true;
+    for(var k=1;k<ws.length;k++){ if(seg.indexOf(ws[k])<0){ok=false;break;} }
+    if(ok)out.push(i);
+    i+=w0.length;
+  }
+  return out;
+}
+function __ssMark(seg,ws){
+  var lc=seg.toLowerCase(),m=[];
+  ws.forEach(function(w){var i=0;while((i=lc.indexOf(w,i))>=0){m.push([i,i+w.length]);i+=w.length;}});
+  m.sort(function(x,y){return x[0]-y[0];});
+  var o='',p=0;
+  m.forEach(function(r){ if(r[0]<p)return; o+=__ssEsc(seg.slice(p,r[0]))+'<mark>'+__ssEsc(seg.slice(r[0],r[1]))+'</mark>'; p=r[1]; });
+  return o+__ssEsc(seg.slice(p));
+}
+function __ssSnip2(text,ws){
+  var lc=text.toLowerCase(),pos=__ssNear(lc,ws);
+  if(!pos.length)return '';
+  var i=pos[0],s=Math.max(0,i-60),e=Math.min(text.length,i+ws[0].length+100);
+  return (s>0?'…':'')+__ssMark(text.slice(s,e),ws)+(e<text.length?'…':'');
+}
 function runSiteSearch(q){
   var box=document.getElementById('siteSearchResults'); if(!box)return;
   q=(q||'').trim();
   if(q.length<2){box.innerHTML='';return;}
   if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
   var lq=q.toLowerCase(),out=[];
+  var ws=lq.split(' ').filter(function(w){return w.length>0;});
+  ws.sort(function(x,y){return y.length-x.length;});
   __ssIndex.forEach(function(d){
-    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
-    /* 2026-11-20 — 「율하 강사」처럼 띄어 쓴 낱말은 붙어 있지 않아도 모두 들어 있으면 찾는다 */
-    var ws=lq.split(' ').filter(function(w){return w.length>0;});
-    var all=ws.every(function(w){return hay.indexOf(w)>=0;});
-    var ph=hay.split(lq).length-1;
-    var n=ph*5; ws.forEach(function(w){n+=hay.split(w).length-1;});
-    if(all){
-      var tl=d.t.toLowerCase();
+    var tl=d.t.toLowerCase(), hay=(d.t+' '+(d.d||'')).toLowerCase(), body=(d.x||'').toLowerCase();
+    var n=__ssNear(hay,ws).length*3+__ssNear(body,ws).length;
+    if(n>0){
       var sc=n + (tl.indexOf(lq)>=0?60:0) + (ws.every(function(w){return tl.indexOf(w)>=0;})?30:0) + (d.k==='페이지'?12:0);
       out.push({d:d,sc:sc});
     }
@@ -1127,7 +1152,7 @@ function runSiteSearch(q){
     box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
   out.sort(function(a,b){return b.sc-a.sc;});
   box.innerHTML=out.slice(0,40).map(function(o){
-    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssSnippet(d.x||d.d||'',q.split(' ').filter(function(w){return w.length>0;}).sort(function(x,y){return y.length-x.length;})[0]||q)||__ssEsc((d.d||'').slice(0,110));
+    var d=o.d, sn=__ssSnip2(d.x||'',ws)||__ssSnip2(d.d||'',ws)||__ssEsc((d.d||'').slice(0,110));
     return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
       +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
       +'<div class="ssr-s">'+sn+'</div></a>';
