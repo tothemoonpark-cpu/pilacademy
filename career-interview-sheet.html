@@ -766,9 +766,14 @@ function runSiteSearch(q){
   var lq=q.toLowerCase(),out=[];
   __ssIndex.forEach(function(d){
     var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
-    var n=hay.split(lq).length-1;
-    if(n>0){
-      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+    /* 2026-11-20 — 「율하 강사」처럼 띄어 쓴 낱말은 붙어 있지 않아도 모두 들어 있으면 찾는다 */
+    var ws=lq.split(' ').filter(function(w){return w.length>0;});
+    var all=ws.every(function(w){return hay.indexOf(w)>=0;});
+    var ph=hay.split(lq).length-1;
+    var n=ph*5; ws.forEach(function(w){n+=hay.split(w).length-1;});
+    if(all){
+      var tl=d.t.toLowerCase();
+      var sc=n + (tl.indexOf(lq)>=0?60:0) + (ws.every(function(w){return tl.indexOf(w)>=0;})?30:0) + (d.k==='페이지'?12:0);
       out.push({d:d,sc:sc});
     }
   });
@@ -776,7 +781,7 @@ function runSiteSearch(q){
     box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
   out.sort(function(a,b){return b.sc-a.sc;});
   box.innerHTML=out.slice(0,40).map(function(o){
-    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssSnippet(d.x||d.d||'',q.split(' ').filter(function(w){return w.length>0;}).sort(function(x,y){return y.length-x.length;})[0]||q)||__ssEsc((d.d||'').slice(0,110));
     return '<a class="ssr-item" href="'+d.u+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
       +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
       +'<div class="ssr-s">'+sn+'</div></a>';
