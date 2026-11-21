@@ -340,11 +340,16 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (642편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (647편)
+- [강아지] 외출할 때는 인식표를 달아요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261122_1-1.html
+- [고양이] 물그릇은 입구가 넓은 것으로 바꿔 보세요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261122_1-2.html
+- [펫로스] 마당에 묻어도 되나요? (법제처 생활법령정보): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261122_1-3.html
+- [쉼터] 다른 분 글에 한마디 남겨도 될지 망설여질 때 (수의사가 운영하는 펫러스 쉼터): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261122_1-4.html
 - [강아지] 목걸이는 손가락 두 개가 들어가게: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261121_1-1.html
 - [고양이] 이동장은 평소에도 꺼내 두어요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261121_1-2.html
 - [펫로스] 가족마다 슬퍼하는 방식이 달라요 (VCA 보호자 안내): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261121_1-3.html
 - [쉼터] 돈이 드는지·광고가 붙는지 궁금할 때 (수의사이자 작가가 직접 운영): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261121_1-4.html
+- [긴 글] 고양이 화장실, 어디에 몇 개를 두면 좋을까요? 수의사가 알려 드립니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261121_q.html
 - [강아지] 간식은 하루 열량의 10%까지: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261120_1-1.html
 - [고양이] 스크래처는 잠자리 옆에 두어요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261120_1-2.html
 - [펫로스] 기억으로 관계를 이어 가요 (AVMA 보호자 안내): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261120_1-3.html
