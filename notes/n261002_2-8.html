@@ -574,7 +574,7 @@
 <p>그 빈자리를 느끼는 건 보호자님만이 아닐 수 있습니다.</p></div><p class="next">혼자 견디기 어려우시면 <a href="../petloss.html">펫로스 치유 글쓰기(펫러스) 안내</a>를 읽어 보시거나, 이름 없이 편지를 남기는 <a href="../petlus-shelter.html">펫러스 쉼터</a>에 들러 주세요.</p>
 <p class="help">이 글은 상담이나 치료를 대신하지 않습니다. 마음이 많이 힘드실 때는 자살예방상담전화 <a href="tel:109">109</a>, 정신건강위기상담 <a href="tel:15770199">1577-0199</a>(24시간)로 먼저 연락해 주세요.</p>
 <p class="note-tools"><button type="button" class="copy-url" data-url="https://tothemoonpark-cpu.github.io/pilacademy/notes/n261002_2-8.html">글 주소 복사</button></p>
-<section class="more"><h2>관련 글 — 펫로스</h2><ul><li><a href="n261120_1-3.html">떠난 아이의 기억을 어떻게 대하면 좋을지 궁금할 때, 정리했어요.</a></li><li><a href="n261119_1-3.html">슬픔을 어떻게 대하면 좋을지 궁금할 때, 정리했어요.</a></li><li><a href="n261118_1-3.html">아이를 돌보던 시간이 비었을 때, 어떻게 보내면 좋을지 정리했어요.</a></li></ul><h2>같은 날 쓴 노트</h2><ul><li><a href="n261002_2-1.html">미용 다녀온 뒤, 강아지가 눈을 잘 못 떠요.</a></li><li><a href="n261002_2-2.html">혼자 있을 때 TV 틀어 주면, 강아지가 정말 볼까요?</a></li><li><a href="n261002_2-3.html">사람 음식처럼 만든 「화식」 사료, 영양은 다 들어 있을까요?</a></li><li><a href="n261002_2-4.html">고양이 키우면 임신 준비 못 하나요?</a></li><li><a href="n261002_2-5.html">레이저 포인터로 놀아 줘도 될까요?</a></li><li><a href="n261002_2-6.html">사료 봉지에 적힌 급여량, 그대로 줘도 될까요?</a></li></ul>
+<section class="more"><h2>관련 글 — 펫로스</h2><ul><li><a href="n261121_1-3.html">가족마다 슬퍼하는 방식이 달라서 서운할 때, 정리했어요.</a></li><li><a href="n261120_1-3.html">떠난 아이의 기억을 어떻게 대하면 좋을지 궁금할 때, 정리했어요.</a></li><li><a href="n261119_1-3.html">슬픔을 어떻게 대하면 좋을지 궁금할 때, 정리했어요.</a></li></ul><h2>같은 날 쓴 노트</h2><ul><li><a href="n261002_2-1.html">미용 다녀온 뒤, 강아지가 눈을 잘 못 떠요.</a></li><li><a href="n261002_2-2.html">혼자 있을 때 TV 틀어 주면, 강아지가 정말 볼까요?</a></li><li><a href="n261002_2-3.html">사람 음식처럼 만든 「화식」 사료, 영양은 다 들어 있을까요?</a></li><li><a href="n261002_2-4.html">고양이 키우면 임신 준비 못 하나요?</a></li><li><a href="n261002_2-5.html">레이저 포인터로 놀아 줘도 될까요?</a></li><li><a href="n261002_2-6.html">사료 봉지에 적힌 급여량, 그대로 줘도 될까요?</a></li></ul>
 <a class="back" href="../vet-notes.html#n261002_2-8">← 노트 전체 보기</a></section>
 </main>
 <section class="pil-cta-band">
@@ -715,17 +715,45 @@ function __ssSnippet(text,q){
   var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
   return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
 }
+/* 2026-11-20 대표님 지시 — 「율하 강사」처럼 낱말을 띄어 쓰면, 그 낱말들이 서로 가까이(앞뒤 40자 안) 함께 있는 자리만 찾는다.
+   한 페이지 안 서로 먼 곳에 따로 있는 것은 결과가 아니다. */
+function __ssNear(lc,ws){
+  var out=[],w0=ws[0],i=0,W=40;
+  while((i=lc.indexOf(w0,i))>=0){
+    var a=Math.max(0,i-W),b=Math.min(lc.length,i+w0.length+W),seg=lc.slice(a,b),ok=true;
+    for(var k=1;k<ws.length;k++){ if(seg.indexOf(ws[k])<0){ok=false;break;} }
+    if(ok)out.push(i);
+    i+=w0.length;
+  }
+  return out;
+}
+function __ssMark(seg,ws){
+  var lc=seg.toLowerCase(),m=[];
+  ws.forEach(function(w){var i=0;while((i=lc.indexOf(w,i))>=0){m.push([i,i+w.length]);i+=w.length;}});
+  m.sort(function(x,y){return x[0]-y[0];});
+  var o='',p=0;
+  m.forEach(function(r){ if(r[0]<p)return; o+=__ssEsc(seg.slice(p,r[0]))+'<mark>'+__ssEsc(seg.slice(r[0],r[1]))+'</mark>'; p=r[1]; });
+  return o+__ssEsc(seg.slice(p));
+}
+function __ssSnip2(text,ws){
+  var lc=text.toLowerCase(),pos=__ssNear(lc,ws);
+  if(!pos.length)return '';
+  var i=pos[0],s=Math.max(0,i-60),e=Math.min(text.length,i+ws[0].length+100);
+  return (s>0?'…':'')+__ssMark(text.slice(s,e),ws)+(e<text.length?'…':'');
+}
 function runSiteSearch(q){
   var box=document.getElementById('siteSearchResults'); if(!box)return;
   q=(q||'').trim();
   if(q.length<2){box.innerHTML='';return;}
   if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
   var lq=q.toLowerCase(),out=[];
+  var ws=lq.split(' ').filter(function(w){return w.length>0;});
+  ws.sort(function(x,y){return y.length-x.length;});
   __ssIndex.forEach(function(d){
-    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
-    var n=hay.split(lq).length-1;
+    var tl=d.t.toLowerCase(), hay=(d.t+' '+(d.d||'')).toLowerCase(), body=(d.x||'').toLowerCase();
+    var n=__ssNear(hay,ws).length*3+__ssNear(body,ws).length;
     if(n>0){
-      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      var sc=n + (tl.indexOf(lq)>=0?60:0) + (ws.every(function(w){return tl.indexOf(w)>=0;})?30:0) + (d.k==='페이지'?12:0);
       out.push({d:d,sc:sc});
     }
   });
@@ -733,7 +761,7 @@ function runSiteSearch(q){
     box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
   out.sort(function(a,b){return b.sc-a.sc;});
   box.innerHTML=out.slice(0,40).map(function(o){
-    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    var d=o.d, sn=__ssSnip2(d.x||'',ws)||__ssSnip2(d.d||'',ws)||__ssEsc((d.d||'').slice(0,110));
     return '<a class="ssr-item" href="'+(/^https?:/.test(d.u)?d.u:'../'+d.u)+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
       +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
       +'<div class="ssr-s">'+sn+'</div></a>';

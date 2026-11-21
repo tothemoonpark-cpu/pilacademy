@@ -574,7 +574,7 @@
 <p>우리 강아지가 가장 겁내는 순간은 언제인가요?</p></div><p class="next">보호자가 가장 많이 묻는 질문에 답한 책 — <a href="https://product.kyobobook.co.kr/detail/S000210401197" target="_blank" rel="noopener">『할퀴고 물려도 나는 수의사니까』</a></p>
 
 <p class="note-tools"><button type="button" class="copy-url" data-url="https://tothemoonpark-cpu.github.io/pilacademy/notes/n261111_1-1.html">글 주소 복사</button></p>
-<section class="more"><h2>관련 글 — 강아지</h2><ul><li><a href="n261120_1-1.html">강아지 간식은 하루에 얼마나 줘도 되는지 정리했어요.</a></li><li><a href="n261119_1-1.html">강아지 물그릇, 얼마나 자주 씻어야 하는지 정리했어요.</a></li><li><a href="n261118_1-1.html">강아지 몸무게를 집에서 재는 방법을 정리했어요.</a></li></ul><h2>같은 날 쓴 노트</h2><ul><li><a href="n261111_1-2.html">동물병원에 고양이 전용 공간이나 시간이 있는지에 따라 고양이가 겪는 일이 어떻게 달라지는지 정리했어요.</a></li><li><a href="n261111_1-3.html">반려동물의 마지막 결정을 해야 했던 보호자들의 마음과, 오늘 해 볼 수 있는 일을 정리했어요.</a></li><li><a href="n261111_1-4.html">쉼터에 글을 남기고 나서, 다시 읽다가 지우고 싶어진 적 있으신가요?</a></li><li><a href="b261111_q.html">마지막 결정이 마음에 남을 때 — 펫로스 증후군(펫로스 신드롬)과 보호자의 이야기</a></li></ul>
+<section class="more"><h2>관련 글 — 강아지</h2><ul><li><a href="n261121_1-1.html">강아지 목걸이가 잘 맞는지 확인하는 방법을 정리했어요.</a></li><li><a href="n261120_1-1.html">강아지 간식은 하루에 얼마나 줘도 되는지 정리했어요.</a></li><li><a href="n261119_1-1.html">강아지 물그릇, 얼마나 자주 씻어야 하는지 정리했어요.</a></li></ul><h2>같은 날 쓴 노트</h2><ul><li><a href="n261111_1-2.html">동물병원에 고양이 전용 공간이나 시간이 있는지에 따라 고양이가 겪는 일이 어떻게 달라지는지 정리했어요.</a></li><li><a href="n261111_1-3.html">반려동물의 마지막 결정을 해야 했던 보호자들의 마음과, 오늘 해 볼 수 있는 일을 정리했어요.</a></li><li><a href="n261111_1-4.html">쉼터에 글을 남기고 나서, 다시 읽다가 지우고 싶어진 적 있으신가요?</a></li><li><a href="b261111_q.html">마지막 결정이 마음에 남을 때 — 펫로스 증후군(펫로스 신드롬)과 보호자의 이야기</a></li></ul>
 <a class="back" href="../vet-notes.html#n261111_1-1">← 노트 전체 보기</a></section>
 </main>
 <section class="pil-cta-band">
@@ -715,17 +715,45 @@ function __ssSnippet(text,q){
   var re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
   return __ssEsc(seg).replace(re,function(m){return '<mark>'+__ssEsc(m)+'</mark>';});
 }
+/* 2026-11-20 대표님 지시 — 「율하 강사」처럼 낱말을 띄어 쓰면, 그 낱말들이 서로 가까이(앞뒤 40자 안) 함께 있는 자리만 찾는다.
+   한 페이지 안 서로 먼 곳에 따로 있는 것은 결과가 아니다. */
+function __ssNear(lc,ws){
+  var out=[],w0=ws[0],i=0,W=40;
+  while((i=lc.indexOf(w0,i))>=0){
+    var a=Math.max(0,i-W),b=Math.min(lc.length,i+w0.length+W),seg=lc.slice(a,b),ok=true;
+    for(var k=1;k<ws.length;k++){ if(seg.indexOf(ws[k])<0){ok=false;break;} }
+    if(ok)out.push(i);
+    i+=w0.length;
+  }
+  return out;
+}
+function __ssMark(seg,ws){
+  var lc=seg.toLowerCase(),m=[];
+  ws.forEach(function(w){var i=0;while((i=lc.indexOf(w,i))>=0){m.push([i,i+w.length]);i+=w.length;}});
+  m.sort(function(x,y){return x[0]-y[0];});
+  var o='',p=0;
+  m.forEach(function(r){ if(r[0]<p)return; o+=__ssEsc(seg.slice(p,r[0]))+'<mark>'+__ssEsc(seg.slice(r[0],r[1]))+'</mark>'; p=r[1]; });
+  return o+__ssEsc(seg.slice(p));
+}
+function __ssSnip2(text,ws){
+  var lc=text.toLowerCase(),pos=__ssNear(lc,ws);
+  if(!pos.length)return '';
+  var i=pos[0],s=Math.max(0,i-60),e=Math.min(text.length,i+ws[0].length+100);
+  return (s>0?'…':'')+__ssMark(text.slice(s,e),ws)+(e<text.length?'…':'');
+}
 function runSiteSearch(q){
   var box=document.getElementById('siteSearchResults'); if(!box)return;
   q=(q||'').trim();
   if(q.length<2){box.innerHTML='';return;}
   if(!__ssIndex){box.innerHTML='<div class="ssr-empty">불러오는 중…</div>';loadSiteIndex();return;}
   var lq=q.toLowerCase(),out=[];
+  var ws=lq.split(' ').filter(function(w){return w.length>0;});
+  ws.sort(function(x,y){return y.length-x.length;});
   __ssIndex.forEach(function(d){
-    var hay=(d.t+' '+(d.d||'')+' '+(d.x||'')).toLowerCase();
-    var n=hay.split(lq).length-1;
+    var tl=d.t.toLowerCase(), hay=(d.t+' '+(d.d||'')).toLowerCase(), body=(d.x||'').toLowerCase();
+    var n=__ssNear(hay,ws).length*3+__ssNear(body,ws).length;
     if(n>0){
-      var sc=n + (d.t.toLowerCase().indexOf(lq)>=0?60:0) + (d.k==='페이지'?12:0);
+      var sc=n + (tl.indexOf(lq)>=0?60:0) + (ws.every(function(w){return tl.indexOf(w)>=0;})?30:0) + (d.k==='페이지'?12:0);
       out.push({d:d,sc:sc});
     }
   });
@@ -733,7 +761,7 @@ function runSiteSearch(q){
     box.innerHTML='<div class="ssr-empty">「'+__ssEsc(q)+'」에 대한 결과가 없습니다.</div>';return;}
   out.sort(function(a,b){return b.sc-a.sc;});
   box.innerHTML=out.slice(0,40).map(function(o){
-    var d=o.d, sn=__ssSnippet(d.x||d.d||'',q)||__ssEsc((d.d||'').slice(0,110));
+    var d=o.d, sn=__ssSnip2(d.x||'',ws)||__ssSnip2(d.d||'',ws)||__ssEsc((d.d||'').slice(0,110));
     return '<a class="ssr-item" href="'+(/^https?:/.test(d.u)?d.u:'../'+d.u)+'"'+(d.k==='칼럼'?' target="_blank" rel="noopener"':'')+'>'
       +'<div class="ssr-t">'+__ssEsc(d.t)+'<span class="ssr-k">'+d.k+'</span></div>'
       +'<div class="ssr-s">'+sn+'</div></a>';
