@@ -1,0 +1,3 @@
+# 숏폼편집기 의존성 (파이썬 3.11 기준)
+# ffmpeg는 pip가 아니라 시스템에 별도 설치 (README 참고)
+openai-whisper>=20231117
