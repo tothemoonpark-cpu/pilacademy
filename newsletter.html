@@ -6,7 +6,7 @@
     <title>필레터 — 박근필의 뉴스레터 | 박근필성장연구소</title>
     
     <!-- SEO 메타 태그 -->
-    <meta name="description" content="매주 수요일, 박근필 대표이 보내는 편지 필레터. 일과 삶에서 흔들릴 때 위로와 희망이 되는 글을 담은 뉴스레터입니다.">
+    <meta name="description" content="매주 수요일, 박근필 대표가 보내는 편지 필레터. 일과 삶에서 흔들릴 때 위로와 희망이 되는 글을 담은 뉴스레터입니다.">
     <link rel="alternate" type="text/plain" href="llms.txt" title="박근필성장연구소 — AI 답변엔진용 요약본(llms.txt)">
     <meta name="keywords" content="필레터, 뉴스레터, 박근필, 메일, 구독">
     <meta name="robots" content="index, follow">
@@ -852,7 +852,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
         <h1 class="page-title">필레터</h1>
         <p class="page-subtitle">매주 수요일, 박근필 대표의 편지</p>
         <div class="hero-video pg-intro" style="max-width:880px;margin:2rem auto 0;border-radius:14px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,0.16);background:#000;line-height:0">
-            <video autoplay muted playsinline controls preload="metadata" poster="page-intro-newsletter-261008.jpg" aria-label="필레터 소개 영상 — 매주 수요일 박근필 대표이 보내는 성장 편지, 미수록 원고와 구독자 전용 이야기" style="width:100%;height:auto;display:block">
+            <video autoplay muted playsinline controls preload="metadata" poster="page-intro-newsletter-261008.jpg" aria-label="필레터 소개 영상 — 매주 수요일 박근필 대표가 보내는 성장 편지, 미수록 원고와 구독자 전용 이야기" style="width:100%;height:auto;display:block">
                 <source src="page-intro-newsletter-261008.mp4" type="video/mp4">
                 <a href="page-intro-newsletter-261008.mp4">영상 내려받기</a>
             </video>
@@ -868,7 +868,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
             </div>
             <div class="sub-btns">
               <a class="sub-main" href="#stb_subscribe" onclick="var d=document.getElementById('detail-section'); if(d && !d.classList.contains('active')){d.click();} setTimeout(function(){var e=document.getElementById('stb_email'); if(e){e.scrollIntoView({behavior:'smooth',block:'center'}); e.focus();}}, 350);">필레터 구독하기</a>
-              <a class="sub-sub" href="https://pilletter.stibee.com/" target="_blank" rel="noopener">지난 호 보기</a>
+              <a class="sub-sub" href="https://pilletter.substack.com/" target="_blank" rel="noopener">지난 호 보기</a>
             </div>
           </div>
         </section>
@@ -885,7 +885,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                         <h2>필레터 상세 안내</h2>
                         
                         <p>
-                            <strong>필레터</strong>는 박근필 대표이 매주 수요일, 여러분의 메일함으로 보내드리는 특별한 편지입니다.
+                            <strong>필레터</strong>는 박근필 대표가 매주 수요일, 여러분의 메일함으로 보내드리는 특별한 편지입니다.
                         </p>
 
                         <div class="highlight-box">
@@ -920,55 +920,18 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             <h2 style="font-size: 2.2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
                             <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
                             
-                            <!-- 스티비 구독 폼 -->
-                            <link rel="stylesheet" href="https://resource.stibee.com/subscribe/stb_subscribe_form_style.css">
-                            <div id="stibee-form-container" style="max-width: 500px; margin: 0 auto; background: white; padding: 2rem; border-radius: 14px;">
-                              <div id="stb_subscribe">
-                                <form action="https://stibee.com/api/v1.0/lists/0fJXgRgUwHa-0b1wHoSg5i47yC2moQ==/public/subscribers" method="POST" target="_blank" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form" data-lang="" novalidate>
-                                  
-                                  <h2 class="stb_form_title" style="color: #16181d;">필레터 구독하기</h2>
-                                  
-                                  <fieldset class="stb_form_set">
-                                    <label for="stb_email" class="stb_form_set_label">이메일 주소<span class="stb_asterisk">*</span>
-                                    </label>
-                                    <input type="text" class="stb_form_set_input" id="stb_email" name="email" required="required">
-                                    <div class="stb_form_msg_error" id="stb_email_error"></div>
-                                  </fieldset>
-                                  
-                                  <div class="stb_form_policy">
-                                    <label>
-                                      <input type="checkbox" id="stb_policy" value="stb_policy_true">
-                                      <span>(필수)</span>
-                                      <button id="stb_form_modal_open" data-modal="stb_form_policy_modal" class="stb_form_modal_open_btn" type="button">개인정보 수집 및 이용</button>에 동의합니다.
-                                    </label>
-                                    <div class="stb_form_msg_error" id="stb_policy_error"></div>
-                                    <div class="stb_form_modal stb_form_policy_text blind" id="stb_form_policy_modal">
-                                      <div class="stb_form_modal_body">
-                                        <h2 class="stb_form_modal_title">개인정보 수집 및 이용</h2>
-                                        <div class="stb_form_modal_text">뉴스레터 발송을 위한 최소한의 개인정보를 수집하고 이용합니다. 수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료되거나 구독을 해지할 경우 즉시 파기됩니다.</div>
-                                        <div class="stb_form_modal_btn">
-                                          <button id="stb_form_modal_close" class="stb_form_modal_close_btn" data-modal="stb_form_policy_modal" type="button">닫기</button>
-                                        </div>
-                                      </div>
-                                      <div class="stb_form_modal_bg" id="stb_form_modal_bg"></div>
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="stb_form_result" id="stb_form_result"></div>
-                                  
-                                  <fieldset class="stb_form_set_submit">
-                                    <button type="submit" class="stb_form_submit_button" id="stb_form_submit_button" style="background-color: #16181d; color: #ffffff;">구독하기</button>
-                                  </fieldset>
-                                </form>
-                              </div>
-                            </div>
-                            <script type="text/javascript" src="https://resource.stibee.com/subscribe/stb_subscribe_form.js"></script>
+                            <!-- 서브스택 구독 폼 (2026-11-23 스티비 → 서브스택 이전) -->
+                            <div id="stb_subscribe"><div id="substack-form-container" style="max-width: 500px; margin: 0 auto; background: white; padding: 1.2rem; border-radius: 14px;">
+                              <h2 style="font-size:1.6rem; margin:0 0 0.8rem; color:#16181d; border:none; padding:0;">필레터 구독하기</h2>
+                              <iframe src="https://pilletter.substack.com/embed" title="필레터 구독 신청" width="100%" height="240" style="border:0; background:#fff;" frameborder="0" scrolling="no" loading="lazy"></iframe>
+                              <p style="font-size:0.95rem; margin:0.8rem 0 0; color:#5b6066;">입력창이 보이지 않으면 <a href="https://pilletter.substack.com/subscribe" target="_blank" rel="noopener" style="color:#1f9d93;font-weight:700;">여기에서 구독하기 →</a></p>
+                            </div></div>
                             
                             <!-- 이메일 인증 프로세스 안내 -->
                             <div style="background:#fff; padding: 1.2rem; border-radius: 14px; font-size:0.98rem; line-height: 1.7; margin-top: 1.5rem; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
                                 <p style="margin: 0; opacity: 0.95; color: #16181d;">
                                      <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
+                                    ① 이메일 입력 후 <strong>Subscribe(구독)</strong> 클릭 → ② 구독 완료!
                                 </p>
                             </div>
                         </div>
@@ -1044,14 +1007,14 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                             <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
                             
                             <!-- 구독 버튼 -->
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 999px; font-size:1.25rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
+                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {var f=document.getElementById('stb_subscribe'); if(f){f.scrollIntoView({behavior:'smooth',block:'center'});}}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 999px; font-size:1.25rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s; margin-bottom: 1.5rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.15)';">필레터 구독하기
                             </a>
                             
                             <!-- 이메일 인증 프로세스 안내 -->
                             <div style="background:#fff; padding: 1.2rem; border-radius: 14px; font-size:0.98rem; line-height: 1.7; margin-top: 0; border:1px dashed #d9dedd; max-width: 500px; margin-left: auto; margin-right: auto;">
                                 <p style="margin: 0; opacity: 0.95; color: #16181d;">
                                      <strong>구독 완료 방법</strong><br>
-                                    ① 이메일 입력 후 구독 신청 → ② 받은 이메일에서 <strong>'구독 확인'</strong> 클릭 → ③ 구독 완료!
+                                    ① 이메일 입력 후 <strong>Subscribe(구독)</strong> 클릭 → ② 구독 완료!
                                 </p>
                             </div>
                         </div>
@@ -2166,7 +2129,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                         <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 14px; text-align: center; color: #16181d;">
                             <h2 style="font-size: 2.2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
                             <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 999px; font-size:1.25rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">필레터 구독하기
+                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {var f=document.getElementById('stb_subscribe'); if(f){f.scrollIntoView({behavior:'smooth',block:'center'});}}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 999px; font-size:1.25rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">필레터 구독하기
                             </a>
                         </div>
                     </div>
@@ -2481,7 +2444,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
                         <div style="margin-top: 3rem; padding: 2.5rem; background: #f6f8f8; border-radius: 14px; text-align: center; color: #16181d;">
                             <h2 style="font-size: 2.2rem; margin-bottom: 1rem; color: #16181d; border: none; padding: 0;">지금 바로 구독하세요</h2>
                             <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95; color: #16181d;">매주 수요일, 여러분의 성장을 응원하는 편지를 받아보세요</p>
-                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {document.getElementById('stb_email').focus();}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 999px; font-size:1.25rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">필레터 구독하기
+                            <a href="#stb_subscribe" onclick="document.getElementById('detail-section').click(); setTimeout(() => {var f=document.getElementById('stb_subscribe'); if(f){f.scrollIntoView({behavior:'smooth',block:'center'});}}, 300);" style="display: inline-block; background: white; color: #16181d; padding: 1.2rem 3rem; border-radius: 999px; font-size:1.25rem; font-weight: bold; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">필레터 구독하기
                             </a>
                         </div>
                     </div>
@@ -2632,15 +2595,15 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
             <div style="margin:2.5rem 0 1.2rem;padding:1.2rem 1.4rem;background:#eef8f6;border:1px solid #d7eeeb;border-radius:12px;">
               <p style="margin:0;font-size:0.94rem;color:#1f9d93;font-weight:700;">지난 호 모아보기</p>
               <p style="margin:0.4rem 0 0;font-size:0.94rem;color:#5b6066;line-height:1.7;">
-                24호 이후 발행분입니다. 제목을 누르면 원문 전체를 읽으실 수 있습니다.
-                <a href="https://pilletter.stibee.com/" target="_blank" rel="noopener" style="color:#1f9d93;font-weight:700;">필레터 전체 아카이브 →</a>
+                24호 이후 발행분의 제목과 요약입니다. 59호부터는 새 필레터에서 원문 전체를 읽으실 수 있습니다.
+                <a href="https://pilletter.substack.com/archive" target="_blank" rel="noopener" style="color:#1f9d93;font-weight:700;">새 필레터 아카이브 →</a>
               </p>
             </div>
             <ol class="pl-list">
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">24호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/24" target="_blank" rel="noopener">공부에도 순서가 있습니다</a>
+                  <span class="pl-title">공부에도 순서가 있습니다</span>
                   <span class="pl-date">2026. 4. 1.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2654,7 +2617,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">25호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/25" target="_blank" rel="noopener">상실, 슬픔 그리고 애도</a>
+                  <span class="pl-title">상실, 슬픔 그리고 애도</span>
                   <span class="pl-date">2026. 4. 8.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2668,7 +2631,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">26호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/26" target="_blank" rel="noopener">쓰는 삶은 복리다</a>
+                  <span class="pl-title">쓰는 삶은 복리다</span>
                   <span class="pl-date">2026. 4. 15.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2682,7 +2645,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">27호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/27" target="_blank" rel="noopener">better보다 different</a>
+                  <span class="pl-title">better보다 different</span>
                   <span class="pl-date">2026. 4. 22.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2696,7 +2659,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">28호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/28" target="_blank" rel="noopener">하지 않으면 알 수 없는 것</a>
+                  <span class="pl-title">하지 않으면 알 수 없는 것</span>
                   <span class="pl-date">2026. 4. 29.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2710,7 +2673,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">29호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/29" target="_blank" rel="noopener">당신의 이야기가 곧 커리어입니다</a>
+                  <span class="pl-title">당신의 이야기가 곧 커리어입니다</span>
                   <span class="pl-date">2026. 5. 6.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2724,7 +2687,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">30호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/30" target="_blank" rel="noopener">항상 이것을 먼저 확인해야 합니다</a>
+                  <span class="pl-title">항상 이것을 먼저 확인해야 합니다</span>
                   <span class="pl-date">2026. 5. 13.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2738,7 +2701,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">31호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/31" target="_blank" rel="noopener">설득은 말이 아니라 모습입니다</a>
+                  <span class="pl-title">설득은 말이 아니라 모습입니다</span>
                   <span class="pl-date">2026. 5. 20.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2752,7 +2715,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">32호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/32" target="_blank" rel="noopener">내가 예외란 법은 없습니다</a>
+                  <span class="pl-title">내가 예외란 법은 없습니다</span>
                   <span class="pl-date">2026. 5. 27.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2766,7 +2729,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">33호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/33" target="_blank" rel="noopener">책쓰기는 소수의 특권이 아닙니다</a>
+                  <span class="pl-title">책쓰기는 소수의 특권이 아닙니다</span>
                   <span class="pl-date">2026. 6. 3.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2780,7 +2743,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">34호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/34" target="_blank" rel="noopener">책쓰기는 글쓰기가 아닙니다</a>
+                  <span class="pl-title">책쓰기는 글쓰기가 아닙니다</span>
                   <span class="pl-date">2026. 6. 10.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2794,7 +2757,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">36호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/36" target="_blank" rel="noopener">뛰어난 책보다 다른 책을 쓰세요</a>
+                  <span class="pl-title">뛰어난 책보다 다른 책을 쓰세요</span>
                   <span class="pl-date">2026. 6. 17.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2808,7 +2771,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">37호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/37" target="_blank" rel="noopener">원고 쓰기 전에 목차부터</a>
+                  <span class="pl-title">원고 쓰기 전에 목차부터</span>
                   <span class="pl-date">2026. 6. 24.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2822,7 +2785,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">38호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/38" target="_blank" rel="noopener">출간 전부터 필요한 저자 브랜딩</a>
+                  <span class="pl-title">출간 전부터 필요한 저자 브랜딩</span>
                   <span class="pl-date">2026. 7. 1.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2836,7 +2799,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">39호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/39" target="_blank" rel="noopener">잘 쓴 글은 잘 고친 글입니다</a>
+                  <span class="pl-title">잘 쓴 글은 잘 고친 글입니다</span>
                   <span class="pl-date">2026. 7. 8.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2850,7 +2813,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">40호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/40" target="_blank" rel="noopener">존재하는 것만 고칠 수 있습니다</a>
+                  <span class="pl-title">존재하는 것만 고칠 수 있습니다</span>
                   <span class="pl-date">2026. 7. 15.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2864,7 +2827,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">41호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/41" target="_blank" rel="noopener">책쓰기에 필요한 건 문장력보다 관점</a>
+                  <span class="pl-title">책쓰기에 필요한 건 문장력보다 관점</span>
                   <span class="pl-date">2026. 7. 22.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2878,7 +2841,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">42호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/42" target="_blank" rel="noopener">편집자는 상품을 고릅니다</a>
+                  <span class="pl-title">편집자는 상품을 고릅니다</span>
                   <span class="pl-date">2026. 7. 29.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2892,7 +2855,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">43호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/43" target="_blank" rel="noopener">이 책은 나를 어디로 데려갈까</a>
+                  <span class="pl-title">이 책은 나를 어디로 데려갈까</span>
                   <span class="pl-date">2026. 8. 5.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2906,7 +2869,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">44호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/44" target="_blank" rel="noopener">계약서에서 네 단어를 찾으세요</a>
+                  <span class="pl-title">계약서에서 네 단어를 찾으세요</span>
                   <span class="pl-date">2026. 8. 12.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2920,7 +2883,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">45호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/45" target="_blank" rel="noopener">편집자는 계산기를 두드리고 있습니다</a>
+                  <span class="pl-title">편집자는 계산기를 두드리고 있습니다</span>
                   <span class="pl-date">2026. 8. 19.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2934,7 +2897,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">46호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/46" target="_blank" rel="noopener">자료를 모을수록 못 쓰게 되는 이유</a>
+                  <span class="pl-title">자료를 모을수록 못 쓰게 되는 이유</span>
                   <span class="pl-date">2026. 8. 26.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2948,7 +2911,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">47호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/47" target="_blank" rel="noopener">편집자가 원고보다 먼저 여는 문서</a>
+                  <span class="pl-title">편집자가 원고보다 먼저 여는 문서</span>
                   <span class="pl-date">2026. 9. 2.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2962,7 +2925,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">48호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/48" target="_blank" rel="noopener">열리지 않으면 읽히지 않습니다</a>
+                  <span class="pl-title">열리지 않으면 읽히지 않습니다</span>
                   <span class="pl-date">2026. 9. 9.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2976,7 +2939,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">49호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/49" target="_blank" rel="noopener">2,000부를 팔면 얼마가 남을까</a>
+                  <span class="pl-title">2,000부를 팔면 얼마가 남을까</span>
                   <span class="pl-date">2026. 9. 16.</span>
                 </div>
                 <ul class="pl-sum">
@@ -2990,7 +2953,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">50호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/50" target="_blank" rel="noopener">같은 기억을 다시 꺼낼 수 있게 되기까지</a>
+                  <span class="pl-title">같은 기억을 다시 꺼낼 수 있게 되기까지</span>
                   <span class="pl-date">2026. 9. 23.</span>
                 </div>
                 <ul class="pl-sum">
@@ -3004,7 +2967,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">51호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/51" target="_blank" rel="noopener">호상이라는 말은 보낸 사람만 할 수 있습니다</a>
+                  <span class="pl-title">호상이라는 말은 보낸 사람만 할 수 있습니다</span>
                   <span class="pl-date">2026. 9. 30.</span>
                 </div>
                 <ul class="pl-sum">
@@ -3018,7 +2981,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">52호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/52" target="_blank" rel="noopener">쉼터에 온 글은 모두 편지였습니다</a>
+                  <span class="pl-title">쉼터에 온 글은 모두 편지였습니다</span>
                   <span class="pl-date">2026. 10. 7.</span>
                 </div>
                 <ul class="pl-sum">
@@ -3032,7 +2995,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">53호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/53" target="_blank" rel="noopener">멈춰 있던 글쓰기가 다시 움직인 날</a>
+                  <span class="pl-title">멈춰 있던 글쓰기가 다시 움직인 날</span>
                   <span class="pl-date">2026. 10. 14.</span>
                 </div>
                 <ul class="pl-sum">
@@ -3046,7 +3009,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">54호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/54" target="_blank" rel="noopener">자책은 막을 수 없어도 곱씹은 장면에서 한 줄은 건질 수 있습니다</a>
+                  <span class="pl-title">자책은 막을 수 없어도 곱씹은 장면에서 한 줄은 건질 수 있습니다</span>
                   <span class="pl-date">2026. 10. 21.</span>
                 </div>
                 <ul class="pl-sum">
@@ -3060,7 +3023,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">55호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/55" target="_blank" rel="noopener">아직 곁에 있는 아이에게도 쓸 수 있는 글이 있습니다</a>
+                  <span class="pl-title">아직 곁에 있는 아이에게도 쓸 수 있는 글이 있습니다</span>
                   <span class="pl-date">2026. 10. 28.</span>
                 </div>
                 <ul class="pl-sum">
@@ -3074,7 +3037,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">56호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/56" target="_blank" rel="noopener">문득 떠오르는 기억을 막지 않으셔도 됩니다</a>
+                  <span class="pl-title">문득 떠오르는 기억을 막지 않으셔도 됩니다</span>
                   <span class="pl-date">2026. 11. 4.</span>
                 </div>
                 <ul class="pl-sum">
@@ -3088,7 +3051,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">57호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/57" target="_blank" rel="noopener">남겨진 물건은 천천히 정리해도 됩니다</a>
+                  <span class="pl-title">남겨진 물건은 천천히 정리해도 됩니다</span>
                   <span class="pl-date">2026. 11. 11.</span>
                 </div>
                 <ul class="pl-sum">
@@ -3102,7 +3065,7 @@ document.addEventListener('DOMContentLoaded', () =>newsletterManifest.check());
               <li class="pl-item">
                 <div class="pl-head">
                   <span class="pl-no">58호</span>
-                  <a class="pl-title" href="https://pilletter.stibee.com/p/58" target="_blank" rel="noopener">반려동물이 떠난 날, 자녀에게 어떻게 말할까요</a>
+                  <span class="pl-title">반려동물이 떠난 날, 자녀에게 어떻게 말할까요</span>
                   <span class="pl-date">2026. 11. 18.</span>
                 </div>
                 <ul class="pl-sum">
