@@ -341,11 +341,16 @@ AI가 대신하지 못하는 것은 경험에서 나온 판단, 맥락을 읽는
 - 최신 실적은 항상 author.html을 기준으로 삼을 것.
 
 <!-- [NOTES:AUTO] -->
-## 수의사의 반려동물 노트 — 글 한 편씩 (657편)
+## 수의사의 반려동물 노트 — 글 한 편씩 (662편)
+- [강아지] 먹고 남은 뼈는 강아지가 열 수 없는 쓰레기통에 버리세요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261125_1-1.html
+- [고양이] 고양이는 아픈 티를 잘 내지 않아요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261125_1-2.html
+- [펫로스] 반려동물 없이 처음 맞는 명절·생일·기일 (미국 동물병원 보호자 안내문): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261125_1-3.html
+- [쉼터] 쓰기 전에 먼저 읽어 보고 싶을 때 (수의사가 운영하는 펫러스 쉼터): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261125_1-4.html
 - [강아지] 초콜릿은 강아지 손이 닿지 않는 곳에 두세요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261124_1-1.html
 - [고양이] 사료는 원래 봉지째 두고 닫아 두세요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261124_1-2.html
 - [펫로스] 집에 남은 반려동물도 슬퍼 보일 때 (미국 동물병원 보호자 안내): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261124_1-3.html
 - [쉼터] 글이 서툴러도 괜찮을지 망설여질 때 (수의사가 운영하는 펫러스 쉼터): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261124_1-4.html
+- [긴 글] 떠난 아이를 찾는 남은 아이, 수의사가 알려 드립니다: https://tothemoonpark-cpu.github.io/pilacademy/notes/b261124_q.html
 - [강아지] 산책할 때는 배변봉투를 챙겨요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261123_1-1.html
 - [고양이] 추운 날 시동 걸기 전에 보닛을 두드려요: https://tothemoonpark-cpu.github.io/pilacademy/notes/n261123_1-2.html
 - [펫로스] 반려동물을 보내고 슬픈 마음이 정상인지 궁금하실 때 (미국수의사회 보호자 안내): https://tothemoonpark-cpu.github.io/pilacademy/notes/n261123_1-3.html
