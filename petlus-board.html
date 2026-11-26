@@ -707,7 +707,7 @@
         <div class="sh-wrap">
             <div class="sh-help" role="note">
                 <b>마음이 많이 힘드신가요?</b> 혼자 견디지 마시고 지금 바로 이야기하세요.<br>
-                자살예방상담전화 <a href="tel:109">109</a> · 정신건강위기상담 <a href="tel:15770199">1577-0199</a> (24시간)<br>
+                24시간 위기상담전화 <a href="tel:109">109</a> · 정신건강위기상담 <a href="tel:15770199">1577-0199</a> (24시간)<br>
                 반려동물을 떠나보낸 슬픔을 전화로 나누고 싶다면 · 사랑의전화복지재단 펫로스 상담 <a href="tel:15662525">1566-2525</a>
             </div>
 
@@ -919,7 +919,7 @@
     row.append(pick,rm,info); w.append(row,prev,e,el("div","sh-photo-note","아이 사진만 올려 주세요. 사람 얼굴·차 번호판·연락처가 보이는 사진은 관리자가 지울 수 있습니다."));
     return { el:w, get:()=>data, removed:()=>removed, clear:()=>{ data=""; removed=false; inp.value=""; prev.innerHTML=""; info.textContent=""; e.textContent=""; rm.hidden=true; } }; }
   function picEl(id){ const a=el("a","sh-pic"); a.href=API+"/api/img/"+id; a.target="_blank"; a.rel="noopener"; const im=el("img"); im.src=a.href; im.loading="lazy"; im.decoding="async"; im.alt="보호자가 올린 아이 사진"; a.append(im); return a; }
-  function crisisBox(){const d=el("div","sh-crisis"); d.innerHTML='혼자 견디지 않으셔도 됩니다. 자살예방상담전화 <a href="tel:109">109</a>, 정신건강위기상담 <a href="tel:15770199">1577-0199</a>에서 24시간 이야기를 들어 줍니다.'; return d;}
+  function crisisBox(){const d=el("div","sh-crisis"); d.innerHTML='혼자 견디지 않으셔도 됩니다. 24시간 위기상담전화 <a href="tel:109">109</a>, 정신건강위기상담 <a href="tel:15770199">1577-0199</a>에서 24시간 이야기를 들어 줍니다.'; return d;}
   let adminKey=""; try{ adminKey=sessionStorage.getItem("sh_admin")||""; }catch(e){}
   let isAdmin=false, ptype="letter", filt="all", posts=[], cursor=null, more=false, page=1, cmts={}, ui={}, viewId=null, qWord="";
   const PER=10;
