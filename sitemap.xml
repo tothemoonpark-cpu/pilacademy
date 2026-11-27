@@ -155,7 +155,7 @@
   </url>
   <url>
     <loc>https://tothemoonpark-cpu.github.io/pilacademy/vet-notes.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -202,6 +202,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://tothemoonpark-cpu.github.io/pilacademy/winter-care-sheet.html</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tothemoonpark-cpu.github.io/pilacademy/vet-dream.html</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -226,10 +232,15 @@
     <priority>0.3</priority>
   </url>
   <!-- [NOTES:AUTO] -->
+  <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261128_1-1.html</loc><lastmod>2026-11-28</lastmod></url>
+  <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261128_1-2.html</loc><lastmod>2026-11-28</lastmod></url>
+  <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261128_1-3.html</loc><lastmod>2026-11-28</lastmod></url>
+  <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261128_1-4.html</loc><lastmod>2026-11-28</lastmod></url>
   <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261127_1-1.html</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261127_1-2.html</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261127_1-3.html</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261127_1-4.html</loc><lastmod>2026-11-27</lastmod></url>
+  <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/b261127_q.html</loc><lastmod>2026-11-27</lastmod></url>
   <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261126_1-1.html</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261126_1-2.html</loc><lastmod>2026-11-26</lastmod></url>
   <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/notes/n261126_1-3.html</loc><lastmod>2026-11-26</lastmod></url>
@@ -912,6 +923,6 @@
     <priority>0.8</priority>
   </url>
   <!-- [STORIES:AUTO] -->
-  <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/petloss-stories.html</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://tothemoonpark-cpu.github.io/pilacademy/petloss-stories.html</loc><lastmod>2026-11-27</lastmod></url>
   <!-- [/STORIES:AUTO] -->
 </urlset>
